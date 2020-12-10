@@ -24,5 +24,5 @@ def parse(setting):
     config.read(config_file)
     return config["settings"][setting]
 
-if __name__ == '__main__':
-    parse('one')
+# if __name__ == '__main__':
+#     parse = parse()
