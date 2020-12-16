@@ -18,6 +18,7 @@ __email__ = "mccarty.justin.f@gmail.com"
 __status__ = "Production"
 
 def process():
+    print(parse('percentiles').split(','))
 
 if __name__ == '__main__':
     process()

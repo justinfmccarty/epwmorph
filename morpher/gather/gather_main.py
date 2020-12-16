@@ -15,6 +15,8 @@ import intake
 import dask
 from dask.diagnostics import progress
 import fsspec
+import xclim as xc
+from xclim import ensembles
 
 __author__ = "Justin McCarty"
 __copyright__ = "Copyright 2020, justinmccarty"
@@ -37,11 +39,15 @@ def processcmip(variable):
     gcs = gcsfs.GCSFileSystem(token='anon')
     col = intake.open_esm_datastore("https://storage.googleapis.com/cmip6/pangeo-cmip6.json")
 
+    sl_df = pd.DataFrame(pd.read_csv(os.path.join(os.path.dirname(__file__), 'modelsources.csv')))
+    sourcelist = sl_df[sl_df['in_ensemble'] == 'Yes']['source_id'].values.tolist()
+
     query = dict(
         experiment_id=pathway,
         table_id='Amon',
         variable_id=variable,
         member_id='r1i1p1f1',
+        source_id=sourcelist
     )
     col_subset = col.search(require_all_on=["source_id"], **query)
 
@@ -114,6 +120,15 @@ def processcmip(variable):
                         for ds in dsets_aligned_.values()],
                        dim=source_da)
     return big_ds
+
+def createensemble(outputs,variable):
+    percentile_list = parse('percentiles').split(',')
+    dataarray = getattr(outputs, variable)
+    ens = ensembles.create_ensemble(dataarray)
+    ens_perc = ensembles.ensemble_percentiles(ens, values=percentile_list, split=False)
+    ens_stats = ensembles.ensemble_mean_std_max_min(ens)
+    return 
+
 
 if __name__ == '__main__':
     processcmip()
