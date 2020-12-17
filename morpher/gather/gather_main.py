@@ -15,7 +15,7 @@ import intake
 import dask
 from dask.diagnostics import progress
 import fsspec
-import xclim as xc
+import pandas as pd
 from xclim import ensembles
 
 __author__ = "Justin McCarty"
@@ -32,16 +32,16 @@ config_file = os.path.join(os.path.dirname(__file__), 'default.config')
 
 def processcmip(variable):
     # bring in the config variables
+
     pathway = parse('pathway')
     latitude = parse('latitude')
     longitude = parse('longitude')
 
     gcs = gcsfs.GCSFileSystem(token='anon')
     col = intake.open_esm_datastore("https://storage.googleapis.com/cmip6/pangeo-cmip6.json")
-
     sl_df = pd.DataFrame(pd.read_csv(os.path.join(os.path.dirname(__file__), 'modelsources.csv')))
     sourcelist = sl_df[sl_df['in_ensemble'] == 'Yes']['source_id'].values.tolist()
-
+    print('Gathering the ensemble members for variable - {}'.format(variable))
     query = dict(
         experiment_id=pathway,
         table_id='Amon',
@@ -71,7 +71,7 @@ def processcmip(variable):
                                             periods=len(data.time.dt.year.values),
                                             freq="MS", calendar="noleap")
         if 'historical' in pathway:
-            data = data.sel(time=slice('1980', '2020'))
+            data = data.sel(time=slice('1960', '2020'))
         else:
             data = data.sel(time=slice('2020', '2100'))
         return drop_all_bounds(data)
@@ -86,6 +86,7 @@ def processcmip(variable):
         # print(group)
         dsets[group[0]][group[1]] = open_delayed(df)
 
+    print('')
     with progress.ProgressBar():
         dsets_ = dask.compute(dict(dsets))[0]
 
@@ -121,14 +122,68 @@ def processcmip(variable):
                        dim=source_da)
     return big_ds
 
-def createensemble(outputs,variable):
+def createensemble(variable):
+    """
+    :param variable: the variable that is being worked on (e.g. tasmax)
+    :return: a dictionary of xarrays for each percentile
+             where key is percentile as integer (dict[15] : 15th percentile)
+    """
+
+    outputs = processcmip(variable)
+    print('Beginning to process the ensemble for variable - {}'.format(variable))
     percentile_list = parse('percentiles').split(',')
+    percentile_list = list(map(int, percentile_list))
     dataarray = getattr(outputs, variable)
     ens = ensembles.create_ensemble(dataarray)
     ens_perc = ensembles.ensemble_percentiles(ens, values=percentile_list, split=False)
-    ens_stats = ensembles.ensemble_mean_std_max_min(ens)
-    return 
+    # ens_stats = ensembles.ensemble_mean_std_max_min(ens)
+    percentile_dict = dict()
+    for ptilekey in percentile_list:
+        print('Creating ensemble for {}th percentile'.format(ptilekey))
+        percentile_dict.update({ptilekey: getattr(ens_perc, variable).sel(percentiles=ptilekey)[0]})
+    return percentile_dict
 
+def gathercmipmain():
+    """
+    processes the cmip6 cloud query and the ensemble creator for each variable returning a dictionary of dictionaries
+    :return: a dictionary where keys are variables and return subdictionaries for each percentile being computed
+    """
+
+    variable_list = parse('variables').split(',')
+    variable_dict = dict()
+    for varkey in variable_list:
+        variable_dict.update({varkey: createensemble(varkey)})
+        print('Creating dictionary member for variable - {}.'.format(varkey))
+    print('Returning a dictionary for each variable with subdictionaires for each percentile.')
+    return variable_dict
+
+def exportcmip():
+    """
+    Exports the percentile dict to a csv
+    :return: csv
+    """
+    pathway = parse('pathway')
+    percentile_list = parse('percentiles').split(',')
+    percentile_list = list(map(int, percentile_list))
+    variable_list = parse('variables').split(',')
+    name = parse('project-name')
+
+    os.makedirs(os.path.join(os.pardir, 'output', '{}'.format(name)), exist_ok=True)
+
+    vardict = gathercmipmain()
+
+    for varkey in variable_list:
+        path = os.path.join(os.pardir, 'output', '{}'.format(name), '{}-{}.csv'.format(pathway, varkey))
+        pdict = vardict[varkey]
+        data = pd.DataFrame()
+
+        for i in percentile_list:
+            data[i] = pd.Series(pdict[i].values)
+
+        data['date'] = pdict[percentile_list[0]].coords['time'].values
+        data.to_csv(path, index=True)
+        print('Variable  - {} saved.'.format(varkey))
+    return print('All files saved.')
 
 if __name__ == '__main__':
-    processcmip()
+    exportcmip()
