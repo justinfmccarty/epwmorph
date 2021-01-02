@@ -15,6 +15,8 @@ import dask
 from dask.diagnostics import progress
 import fsspec
 from math import radians, cos, sin, asin, sqrt
+import metpy.calc as mpcalc
+from metpy.units import units
 
 __author__ = "Justin McCarty"
 __copyright__ = "Copyright 2020, justinmccarty"
@@ -41,3 +43,22 @@ def haversine(lon1, lat1, lon2, lat2):
     c = 2 * asin(sqrt(a))
     r = 3956 # Radius of earth in miles. Use 6371 for kilometers
     return c * r
+
+def calc_sat_pr(pressure, dbt, rel_hum):
+    # pressure units in in Pa
+    # pressure units out in kPa
+    # temp units in C
+    mixing = mpcalc.mixing_ratio_from_relative_humidity(pressure,
+                                                        dbt,
+                                                        rel_hum)
+    return mpcalc.vapor_pressure(pressure * units.Pa, mixing)
+
+def calc_partial_water_pr(pressure, dbt, rel_hum):
+    # pressure units in in Pa
+    # pressure units out in kPa
+    # temp units in C
+    # rel hum in %
+    return (rh * calc_sat_pr(pressure, dbt, rel_hum)) / 1000
+
+
+
