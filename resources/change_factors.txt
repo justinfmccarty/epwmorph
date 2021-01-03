@@ -1,0 +1,1 @@
+huss -> provided in kg/kg and a relative change is sought (1 - ((future_huss - historical_huss) / historical_huss))

@@ -40,6 +40,19 @@ def haversine(lon1, lat1, lon2, lat2):
     r = 3956 # Radius of earth in miles. Use 6371 for kilometers
     return c * r
 
+def means(series):
+    series_max = series.resample('D').max().resample('M').mean().reset_index(drop=True)
+    series_min = series.resample('D').min().resample('M').mean().reset_index(drop=True)
+    series_mean = series.resample('D').mean().resample('M').mean().reset_index(drop=True)
+    return series_max, series_min, series_mean
+
+
+def change(fut_tas, hist_tas, fut_tmax, hist_tmax, fut_tmin, hist_tmin):
+    tas = fut_tas - hist_tas
+    tmax = fut_tmax - hist_tmax
+    tmin = fut_tmin - hist_tmin
+    return tas, tmax, tmin
+
 def calc_sat_pr(pressure, dbt, rel_hum):
     # pressure units in in Pa
     # pressure units out in kPa
@@ -150,7 +163,7 @@ def uas_vas_2_sfcwind(uas,vas,calm_wind_thresh=0.5,out='SPD'):
     return windfromdir
 
 def prep_wind(uas, vas):
-  return uas_vas_2_sfcwind(uas,vas,out='SPD'
+  return uas_vas_2_sfcwind(uas,vas,out='SPD')
 
 def persistence(hourly_clearness, rise_set, row_number):
     if rise_set == 'Sunrise':

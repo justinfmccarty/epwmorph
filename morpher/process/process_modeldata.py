@@ -24,7 +24,7 @@ def calc_model_climatologies(var, percentile, futurestart, futureend):
     baselinestart = parse('baselinestart')
     baselineend = parse('baselineend')
 
-    hist_path = os.path.join(os.pardir, 'output', '{}'.format(name), '{}-{}.csv'.format(pathway, var))
+    hist_path = os.path.join(os.pardir, 'output', '{}'.format(name), 'historical-{}.csv'.format(var))
     var_path = os.path.join(os.pardir, 'output', '{}'.format(name), '{}-{}.csv'.format(pathway, var))
 
     hist_init = pd.DataFrame(pd.read_csv(hist_path, usecols=[percentile,'date']))
@@ -32,11 +32,23 @@ def calc_model_climatologies(var, percentile, futurestart, futureend):
     hist_init = hist_init.set_index('date')
     hist_init = hist_init['{}-01-01'.format(baselinestart) :'{}-12-01'.format(baselineend)]
     hist_init = hist_init.groupby(hist_init.index.month).mean()
+    hist_init = pd.Series(hist_init[percentile]).rename(var)
 
     var_init = pd.DataFrame(pd.read_csv(var_path, usecols=[percentile,'date']))
     var_init['date'] = pd.to_datetime(var_init['date'])
     var_init = var_init.set_index('date')
     var_init = var_init['{}-01-01'.format(futurestart) :'{}-12-01'.format(futureend)]
     var_init = var_init.groupby(var_init.index.month).mean()
+    var_init = pd.Series(var_init[percentile]).rename(var)
 
-    return var_init - hist_init
+    return var_init, hist_init
+
+def climatologies(percentile, futurestart, futureend):
+    variable_list = parse('variables').split(',')
+    historical = pd.DataFrame()
+    pathway = pd.DataFrame()
+    for var in variable_list:
+        fut_var, hist_var = calc_model_climatologies(var, percentile, futurestart, futureend)
+        historical[var] = pd.Series(hist_var)
+        pathway[var] = pd.Series(fut_var)
+    return pathway, historical
