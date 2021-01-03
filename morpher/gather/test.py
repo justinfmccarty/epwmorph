@@ -28,26 +28,38 @@ def test():
     futurestart = parse('futurestart')
     futureend = parse('futureend')
 
-    orig_epw = manipulate_epw.epw_to_dataframe(weather_path)
-    orig_epw.index = pd.to_datetime(orig_epw.apply(lambda row: dt.datetime(2011,
-                                                               int(row.month),
-                                                               int(row.day),
-                                                               int(row.hour) - 1,
-                                                               int(row.minute)), axis=1))
 
+
+
+
+    def morph_routine(future_climatolgy, historical_climatology):
+        orig_epw = manipulate_epw.epw_to_dataframe(weather_path)
+        orig_epw.index = pd.to_datetime(orig_epw.apply(lambda row: dt.datetime(2011,
+                                                                               int(row.month),
+                                                                               int(row.day),
+                                                                               int(row.hour) - 1,
+                                                                               int(row.minute)), axis=1))
+        fut = future_climatolgy
+        hist = historical_climatology
+        dbt = mm.morph_dbt(orig_epw,
+                           fut['tas'].values,
+                           hist['tas'].values,
+                           fut['tasmax'].values,
+                           hist['tasmax'].values,
+                           fut['tasmin'].values,
+                           hist['tasmin'].values).values
+        hurs = mm.morph_relhum(orig_epw, fut['huss'], hist['huss']).values
+
+        # fut_df = fromdict?
+        return fut_df
 
     pathway, historical = process_modeldata.climatologies('50',
-                                                          int(futurestart)+30,
-                                                          int(futureend)+30)
+                                                          int(futurestart) + 30,
+                                                          int(futureend) + 30)
 
-    dbt = mm.morph_dbt(orig_epw,
-                       pathway['tas'].values,
-                       historical['tas'].values,
-                       pathway['tasmax'].values,
-                       historical['tasmax'].values,
-                       pathway['tasmin'].values,
-                       historical['tasmin'].values).values
-    hurs = mm.morph_relhum(orig_epw, pathway['huss'], historical['huss']).values
+    morph_routine(pathway, historical)
+    # year = (int(futurestart)+30 + int(futureend)+30) / 2
+    # out_epw(fut_df, year, outputpath)
     return print()
 
 
