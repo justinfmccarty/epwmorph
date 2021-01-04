@@ -137,7 +137,7 @@ def createensemble(variable,pathway):
     # ens_stats = ensembles.ensemble_mean_std_max_min(ens)
     percentile_dict = dict()
     for ptilekey in percentile_list:
-        print('Creating ensemble for {}th percentile'.format(ptilekey))
+        print('Creating ensemble for {}-{}th percentile'.format(pathway,ptilekey))
         percentile_dict.update({ptilekey: getattr(ens_perc, variable).sel(percentiles=ptilekey)[0]})
     return percentile_dict
 
@@ -200,8 +200,9 @@ def initialize_project():
         os.makedirs(os.path.join(os.pardir, 'output', '{}'.format(name), 'historical'))
         exportcmip('historical')
         for pathway in parse('pathwaylist').split(','):
+            os.makedirs(os.path.join(os.pardir, 'output', '{}'.format(name), '{}'.format(pathway)))
             print('Continuing with {} CMIP6 data download.'.format(pathway))
-            exportcmip(parse('pathway'))
+            exportcmip(pathway)
     return print('Climate model data has been downloaded.')
 
 if __name__ == '__main__':
