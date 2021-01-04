@@ -30,10 +30,9 @@ __status__ = "Production"
 # set universal variables
 config_file = os.path.join(os.path.dirname(__file__), 'default.config')
 
-def processcmip(variable):
+def processcmip(variable,pathway):
     # bring in the config variables
 
-    pathway = parse('pathway')
     latitude = parse('latitude')
     longitude = parse('longitude')
 
@@ -73,7 +72,7 @@ def processcmip(variable):
         if 'historical' in pathway:
             data = data.sel(time=slice('1960', '2020'))
         else:
-            data = data.sel(time=slice('2020', '2100'))
+            data = data.sel(time=slice('2015', '2100'))
         return drop_all_bounds(data)
 
     def open_delayed(df):
@@ -122,14 +121,14 @@ def processcmip(variable):
                        dim=source_da)
     return big_ds
 
-def createensemble(variable):
+def createensemble(variable,pathway):
     """
     :param variable: the variable that is being worked on (e.g. tasmax)
     :return: a dictionary of xarrays for each percentile
              where key is percentile as integer (dict[15] : 15th percentile)
     """
 
-    outputs = processcmip(variable)
+    outputs = processcmip(variable,pathway)
     print('Beginning to process the ensemble for variable - {}'.format(variable))
     percentile_list = parse('percentiles').split(',')
     percentile_list = list(map(int, percentile_list))
@@ -143,7 +142,7 @@ def createensemble(variable):
         percentile_dict.update({ptilekey: getattr(ens_perc, variable).sel(percentiles=ptilekey)[0]})
     return percentile_dict
 
-def gathercmipmain():
+def gathercmipmain(pathway):
     """
     processes the cmip6 cloud query and the ensemble creator for each variable returning a dictionary of dictionaries
     :return: a dictionary where keys are variables and return subdictionaries for each percentile being computed
@@ -152,25 +151,23 @@ def gathercmipmain():
     variable_list = parse('variables').split(',')
     variable_dict = dict()
     for varkey in variable_list:
-        variable_dict.update({varkey: createensemble(varkey)})
+        variable_dict.update({varkey: createensemble(varkey,pathway)})
         print('Creating dictionary member for variable - {}.'.format(varkey))
     print('Returning a dictionary for each variable with subdictionaires for each percentile.')
     return variable_dict
 
-def exportcmip():
+def exportcmip(pathway):
     """
     Exports the percentile dict to a csv
     :return: csv
     """
-    pathway = parse('pathway')
+
     percentile_list = parse('percentiles').split(',')
     percentile_list = list(map(int, percentile_list))
     variable_list = parse('variables').split(',')
-    name = parse('project-name')
 
-    os.makedirs(os.path.join(os.pardir, 'output', '{}'.format(name)), exist_ok=True)
 
-    vardict = gathercmipmain()
+    vardict = gathercmipmain(pathway)
 
     for varkey in variable_list:
         path = os.path.join(os.pardir, 'output', '{}'.format(name), '{}-{}.csv'.format(pathway, varkey))
@@ -183,7 +180,22 @@ def exportcmip():
         data['date'] = pdict[percentile_list[0]].coords['time'].values
         data.to_csv(path, index=True)
         print('Variable  - {} saved.'.format(varkey))
-    return print('All files saved.')
+    return print('All {} files saved.'.format(pathway))
+
+def initialize_project():
+    name = parse('project-name')
+    output_dir = os.path.join(os.pardir, 'output', '{}'.format(name))
+    if os.path.exists(output_dir):
+        print('Downloading {} CMIP6 data.'.format(pathway))
+        exportcmip(parse('pathway'))
+        print('Yes')
+    else:
+        os.makedirs(os.path.join(os.pardir, 'output', '{}'.format(name)))
+        print('Initializing project with historical CMIP6 data download.')
+        exportcmip('historical')
+        print('Continuing with {} CMIP6 data download.'.format(pathway))
+        exportcmip(parse('pathway'))
+        print('Yes,Yes')
 
 if __name__ == '__main__':
-    exportcmip()
+    initialize_project()

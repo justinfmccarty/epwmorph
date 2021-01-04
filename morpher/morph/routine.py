@@ -73,4 +73,6 @@ def morph_routine(weather_path, future_climatolgy, historical_climatology, longi
     fut_df['totskycvr_tenths'] = tsc.values
     osc = mm.calc_osc(orig_epw, fut_df)
     fut_df['opaqskycvr_tenths'] = osc.values
+    wspd = mm.morph_wspd(orig_epw, future_climatolgy, historical_climatology)
+    fut_df['windspd_ms'] = wspd.values
     return fut_df

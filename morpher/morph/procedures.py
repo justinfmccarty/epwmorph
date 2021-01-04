@@ -108,3 +108,12 @@ def calc_osc(orig_epw, future_df):
         else:
             return (totskycvr_tenths * present_osc) / present_tsc
     return data.apply(lambda x: calc(x['totskycvr_tenths'], x['fut_totskycvr_tenths'], x['opaqskycvr_tenths']), axis=1).astype(int)
+
+def morph_wspd(orig_epw, future_climatolgy, historical_climatology):
+    # requires fut_ and hist_ inputs to be monthly climatologies
+    fut_spd = util.uas_vas_2_sfcwind(future_climatolgy['vas'],future_climatolgy['uas'])
+    hist_spd = util.uas_vas_2_sfcwind(historical_climatology['vas'],historical_climatology['uas'])
+    months = list(range(1,12+1,1))
+    rel_change = 100 * ((fut_spd - hist_spd) / hist_spd)
+    scale_factor_wspd = dict(zip(months, 1 + (rel_change/100)))
+    return orig_epw.apply(lambda x: x['windspd_ms'] * scale_factor_wspd[x['month']],axis=1).rename("windspd_ms").astype(float)

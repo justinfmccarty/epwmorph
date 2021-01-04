@@ -5,6 +5,7 @@ Testing.
 
 # imports
 from morpher.config import parse
+import os
 import gather_main
 from xclim import ensembles
 from epw import epw
@@ -30,18 +31,27 @@ def test():
     futureend = parse('futureend')
     longitude = parse('longitude')
     latitude = parse('latitude')
+    name = parse('project-name')
+    outputpath = parse('output')
 
+    percentile_list = parse('percentiles').split(',')
+    percentile_list = list(map(int, percentile_list))
 
-    year = (futurestart + futureend) / 2
-    pathway, historical = process_modeldata.climatologies('50',
-                                                          year)
-    df = routine.morph_routine(weather_path, pathway, historical, longitude, latitude)
+    year_list = parse('yearlist').split(',')
+    year_list = list(map(int, year_list))
 
-    manipulate_epw.out_epw(df, 2065)
-    # year = (int(futurestart)+30 + int(futureend)+30) / 2
-    # out_epw(fut_df, year, outputpath)
-    df.to_csv(r"C:\Users\justi\Desktop\test.csv")
-    return print(df.head(24))
+    for ptile in percentile_list:
+        print(ptile)
+        year = year_list[0]
+        pathway, historical = process_modeldata.climatologies(str(ptile), year, 5, 15)
+        df = routine.morph_routine(weather_path, pathway, historical, longitude, latitude)
+        filename = '{}_year_out.epw'.format(ptile,year)
+        outputpath = os.path.join(os.pardir, 'output', '{}'.format(name), filename)
+        manipulate_epw.out_epw(ptile, df, year, outputpath)
 
+def test2():
+    yearranges = parse('yearranges').split('|')
+    for i in yearranges:
+        print(int(list(i.split(','))[0]))
 if __name__ == '__main__':
-    print(test())
+    test2()
