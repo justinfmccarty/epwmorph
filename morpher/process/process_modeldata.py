@@ -43,8 +43,11 @@ def calc_model_climatologies(var, percentile, futurestart, futureend):
 
     return var_init, hist_init
 
-def climatologies(percentile, futurestart, futureend):
+def climatologies(percentile, year):
     variable_list = parse('variables').split(',')
+    futurestart = year - 15
+    futureend = year + 15
+
     historical = pd.DataFrame()
     pathway = pd.DataFrame()
     for var in variable_list:

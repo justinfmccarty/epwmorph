@@ -49,7 +49,9 @@ def morph_psl(df, fut_pr, hist_pr):
 
 
 def morph_dewpt(fut_dbt, fut_rh):
-    df = pd.concat([fut_dbt, fut_rh], axis=1)
+    dbt = pd.Series(fut_dbt)
+    rh = pd.Series(fut_rh)
+    df = np.clip(pd.concat([dbt, rh], axis=1), 0, 100)
     return round(df.apply(lambda x: calcdewpt(x[0], x[1]), axis=1).astype(float), 1)
 
 
@@ -76,11 +78,14 @@ def morph_glohor(df, hist_glohor, fut_glohor):
         "glohorrad_Whm2").astype(int)
 
 
-def calc_diffhor(future_df):
-    return future_df.apply(lambda x: x['glohorrad_Whm2'] * (1 / (1 + math.exp(
-        -5.38 + 6.63 * x['hourly_clearness'] + 0.006 * x['local_solar_time'] - 0.007 * x['solar_alt'] + 1.75 * x[
-            'daily_clearness'] + 1.31 * x['persisted_index']))), axis=1).astype(int)
-
+def calc_diffhor(future_df, longitude, latitude):
+    solar_df = util.solar_geometry(future_df, longitude, latitude)
+    future_df['local_solar_time'] = solar_df['local_solar_time']
+    future_df['solar_alt'] = solar_df['solar_alt']
+    return future_df.apply(lambda x: x['glohorrad_Whm2'] * (1 / (1 + math.exp(-5.38 + 6.63 * x['hourly_clearness'] +
+                                                                              0.006 * x['local_solar_time'] - 0.007 *
+                                                                              x['solar_alt'] + 1.75 * x['daily_clearness'] +
+                                                                              1.31 * x['persisted_index']))), axis=1)#.astype(int)
 
 def calc_dirnor(future_df):
     return future_df.apply(lambda x: (x['glohorrad_Whm2'] - x['difhorrad_Whm2']) / np.sin(np.deg2rad(x['solar_alt'])),
@@ -94,14 +99,12 @@ def calc_tsc(df, hist_clt, fut_clt):
     return np.clip(df.apply(lambda x: x['totskycvr_tenths'] + cc_change[x['month']], axis=1).rename("totskycvr_tenths"),
                    0, 10).astype(int)
 
-
-def calc_osc(df):
+def calc_osc(orig_epw, future_df):
+    data = orig_epw[['totskycvr_tenths', 'opaqskycvr_tenths']].copy()
+    data['fut_totskycvr_tenths'] = future_df['totskycvr_tenths'].copy().values
     def calc(present_tsc, totskycvr_tenths, present_osc):
         if present_tsc == 0:
             return 0
         else:
             return (totskycvr_tenths * present_osc) / present_tsc
-
-    return df.apply(lambda x: calc(x['present_tsc'],
-                                   x['totskycvr_tenths'],
-                                   x['present_osc']), axis=1).astype(int)
+    return data.apply(lambda x: calc(x['totskycvr_tenths'], x['fut_totskycvr_tenths'], x['opaqskycvr_tenths']), axis=1).astype(int)

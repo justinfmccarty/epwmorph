@@ -10,6 +10,7 @@ from metpy.units import units
 import math
 from datetime import timedelta
 import datetime as dt
+from morpher.config import parse
 from skyfield import api, almanac
 import numpy as np
 import pandas as pd
@@ -92,7 +93,7 @@ def calc_local_time_meridian(utc_offset):
   return 15*utc_offset
 
 def calc_time_correction(longitude, local_time_meridian, equation_of_time):
-  return 4 * (longitude - local_time_meridian) + equation_of_time
+  return 4 * (float(longitude) - local_time_meridian) + equation_of_time
 
 def calc_local_solar_time(local_time, time_correction):
   return local_time + (time_correction / 60)
@@ -104,17 +105,19 @@ def calc_declination(dayofyear):
   return 23.45*np.sin(np.deg2rad((360/365)*dayofyear-81))
 
 def calc_solar_altitude(longitude, latitude, utc_offset, dayofyear, local_time):
-  dayangle = calc_simple_day_angle(dayofyear)
-  bday = calc_bday(dayangle)
-  local_time_meridian = calc_local_time_meridian(utc_offset)
-  equation_of_time = calc_equation_of_time(bday)
-  time_correction = calc_time_correction(longitude, local_time_meridian, equation_of_time)
-  solar_time = calc_local_solar_time(local_time, time_correction)
-  hour_angle = calc_hour_angle(solar_time)
-  declination = calc_declination(dayofyear)
-  return np.rad2deg(np.arcsin(np.sin(np.deg2rad(latitude))*np.sin(np.deg2rad(declination)) \
-                   +np.cos(np.deg2rad(latitude))*np.cos(np.deg2rad(declination)) \
-                   *np.cos(np.deg2rad(hour_angle))))
+    longitude = float(longitude)
+    latitude = float(latitude)
+    dayangle = calc_simple_day_angle(dayofyear)
+    bday = calc_bday(dayangle)
+    local_time_meridian = calc_local_time_meridian(utc_offset)
+    equation_of_time = calc_equation_of_time(bday)
+    time_correction = calc_time_correction(longitude, local_time_meridian, equation_of_time)
+    solar_time = calc_local_solar_time(local_time, time_correction)
+    hour_angle = calc_hour_angle(solar_time)
+    declination = calc_declination(dayofyear)
+    return np.rad2deg(np.arcsin(np.sin(np.deg2rad(latitude)) * np.sin(np.deg2rad(declination)) +
+                              np.cos(np.deg2rad(latitude))*np.cos(np.deg2rad(declination)) *
+                              np.cos(np.deg2rad(hour_angle))))
 
 def calc_zenith(solar_altitude):
   return 90 - solar_altitude
@@ -170,27 +173,30 @@ def persistence(hourly_clearness, rise_set, row_number):
         return hourly_clearness[row_number + 1]
     elif rise_set == 'Sunset':
         return hourly_clearness[row_number - 1]
+    elif row_number==0:
+        return hourly_clearness[row_number]
+    elif row_number==8759:
+        return hourly_clearness[row_number]
     else:
-        clearness = np.where(row_number < 8759,
-                             hourly_clearness[row_number - 1] + hourly_clearness[row_number] / 2,
-                             0)
-        return clearness
+        return (hourly_clearness[row_number - 1] + hourly_clearness[row_number + 1]) / 2
+
 
 def solar_geometry(df, longitude, latitude):
+    utc = int(parse('utcoffset'))
     df['simple_day_angle'] = df.apply(lambda x: calc_simple_day_angle(x['dayofyear']), axis=1)
     df['bday'] = df.apply(lambda x: calc_bday(x['simple_day_angle']), axis=1)
     df['equation_of_time'] = df.apply(lambda x: calc_equation_of_time(x['bday']), axis=1)
-    df['local_time_meridian'] = df.apply(lambda x: calc_local_time_meridian(-8), axis=1)
+    df['local_time_meridian'] = df.apply(lambda x: calc_local_time_meridian(utc), axis=1)
     df['time_correction'] = df.apply(lambda x: calc_time_correction(longitude,
-                                                                         x['local_time_meridian'],
-                                                                         x['equation_of_time']), axis=1)
+                                                                     x['local_time_meridian'],
+                                                                     x['equation_of_time']), axis=1)
     df['local_solar_time'] = df.apply(lambda x: calc_local_solar_time(x['hour'],
-                                                                           x['time_correction']), axis=1)
+                                                                       x['time_correction']), axis=1)
     df['hour_angle'] = df.apply(lambda x: calc_hour_angle(x['local_solar_time']), axis=1)
     df['declination'] = df.apply(lambda x: calc_declination(x['dayofyear']), axis=1)
     df['solar_alt'] = df.apply(lambda x: calc_solar_altitude(longitude,
                                                               latitude,
-                                                              -8,
+                                                              utc,
                                                               x['dayofyear'],
                                                               x['hour']), axis=1)
     return df
@@ -198,15 +204,27 @@ def solar_geometry(df, longitude, latitude):
 def calc_clearness(new_glohor, exthor):
     days = list(range(1, 365 + 1, 1))
 
-    def calc_clearness_hourly(new_glohor, exthor):
-        return pd.Series(new_glohor / exthor).rename("clearness").fillna(0)
+    df = pd.DataFrame()
+    df['exthor'] = exthor
+    df['glohor'] = new_glohor.values
 
-    def calc_clearness_daily(new_glohor, exthor):
-        daily = pd.Series(new_glohor.resample('D').sum() / exthor.resample('D').sum())
-        return daily.rename("clearness").fillna(0)
+    def divide_clearness(x, y):
+        if y==0:
+            return 0
+        else:
+            return np.divide(x, y)
 
-    clearness = calc_clearness_hourly(new_glohor, exthor)
-    clearness_daily = calc_clearness_daily(new_glohor, exthor)
+    def calc_clearness_hourly(df):
+        clearness = df.apply(lambda x: divide_clearness(x['glohor'], x['exthor']), axis=1)
+        return clearness.values
+
+    def calc_clearness_daily(df):
+        daily = df.resample('D').sum()
+        clearness_daily = daily.apply(lambda x: divide_clearness(x['glohor'], x['exthor']), axis=1)
+        return clearness_daily.values
+
+    clearness = calc_clearness_hourly(df)
+    clearness_daily = calc_clearness_daily(df)
 
     clearness_day_list = dict(zip(days, clearness_daily.tolist()))
     return clearness, clearness_day_list
@@ -217,8 +235,10 @@ def calc_rise_set(df, latitude, longitude):
 
     location = api.Topos(latitude, longitude)
 
-    t0 = ts.utc(2011 - 1, 12, 31, 0)
-    t1 = ts.utc(2011 + 1, 1, 2, 0)
+    year = int(df['year'][0:1].values)
+
+    t0 = ts.utc(year - 1, 12, 31, 0)
+    t1 = ts.utc(year + 1, 1, 2, 0)
 
     t, y = almanac.find_discrete(t0, t1, almanac.sunrise_sunset(eph, location))
     times = pd.Series(t.utc_datetime()).rename('datetimes')
@@ -232,14 +252,14 @@ def calc_rise_set(df, latitude, longitude):
     join['day'] = join['datetimes'].dt.day
     join['hour'] = join['datetimes'].dt.hour
     join['minute'] = 0
-    join = join[join['year'] == 2011]
+    join = join[join['year'] == year]
     join['Timestamp'] = join.apply(lambda row: dt.datetime(row.year, row.month, row.day, row.hour), axis=1)
     join.set_index('Timestamp', inplace=True)
-
     join_sub = pd.DataFrame(join['Rise_Set'])
     join_sub['dtime'] = join.index
     df['dtime'] = df.index
     df = df.merge(join_sub, how='left', left_on='dtime', right_on='dtime')
     df['Rise_Set'] = df['Rise_Set'].fillna('Neither')
     df.set_index(df['dtime'], inplace=True)
-    return df['Rise_Set']
+
+    return pd.Series(df['Rise_Set'].values)

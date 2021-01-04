@@ -13,6 +13,7 @@ import pandas as pd
 from morpher.utilities import util
 from morpher.process import manipulate_epw
 from morpher.process import process_modeldata
+from morpher.morph import routine
 import morpher.morph.procedures as mm
 __author__ = "Justin McCarty"
 __copyright__ = "Copyright 2020, justinmccarty"
@@ -27,45 +28,20 @@ def test():
     weather_path = parse('epw')
     futurestart = parse('futurestart')
     futureend = parse('futureend')
+    longitude = parse('longitude')
+    latitude = parse('latitude')
 
 
-
-
-
-    def morph_routine(future_climatolgy, historical_climatology):
-        orig_epw = manipulate_epw.epw_to_dataframe(weather_path)
-        orig_epw.index = pd.to_datetime(orig_epw.apply(lambda row: dt.datetime(2011,
-                                                                               int(row.month),
-                                                                               int(row.day),
-                                                                               int(row.hour) - 1,
-                                                                               int(row.minute)), axis=1))
-        fut = future_climatolgy
-        hist = historical_climatology
-        dbt = mm.morph_dbt(orig_epw,
-                           fut['tas'].values,
-                           hist['tas'].values,
-                           fut['tasmax'].values,
-                           hist['tasmax'].values,
-                           fut['tasmin'].values,
-                           hist['tasmin'].values).values
-        hurs = mm.morph_relhum(orig_epw, fut['huss'], hist['huss']).values
-
-        # fut_df = fromdict?
-        return fut_df
-
+    year = (futurestart + futureend) / 2
     pathway, historical = process_modeldata.climatologies('50',
-                                                          int(futurestart) + 30,
-                                                          int(futureend) + 30)
+                                                          year)
+    df = routine.morph_routine(weather_path, pathway, historical, longitude, latitude)
 
-    morph_routine(pathway, historical)
+    manipulate_epw.out_epw(df, 2065)
     # year = (int(futurestart)+30 + int(futureend)+30) / 2
     # out_epw(fut_df, year, outputpath)
-    return print()
+    df.to_csv(r"C:\Users\justi\Desktop\test.csv")
+    return print(df.head(24))
 
-
-
-
-    
-    
 if __name__ == '__main__':
     print(test())
