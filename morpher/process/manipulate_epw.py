@@ -26,8 +26,7 @@ def epw_to_dataframe(weather_path):
                   'days_last_snow', 'Albedo', 'liq_precip_depth_mm', 'liq_precip_rate_Hour']
     return pd.DataFrame(pd.read_csv(weather_path, skiprows=8, header=None, names=epw_labels).drop('datasource', axis=1))
 
-def out_epw(percentile, fut_df, year, outputpath):
-  pathway = parse('pathway')
+def out_epw(percentile, fut_df, year, outputpath, pathway):
   base_epw = parse('epw')
   a = epw()
   a.read(base_epw)

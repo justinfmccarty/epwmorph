@@ -6,6 +6,9 @@ Sequence of the morphing routines returning a messy dataframe with the new serie
 # imports
 
 import datetime as dt
+from morpher.config import parse
+from morpher.process import process_modeldata
+import os
 import pandas as pd
 from morpher.utilities import util
 from morpher.process import manipulate_epw
@@ -76,3 +79,36 @@ def morph_routine(weather_path, future_climatolgy, historical_climatology, longi
     wspd = mm.morph_wspd(orig_epw, future_climatolgy, historical_climatology)
     fut_df['windspd_ms'] = wspd.values
     return fut_df
+
+def morph_main():
+    weather_path = parse('epw')
+    longitude = parse('longitude')
+    latitude = parse('latitude')
+    name = parse('project-name')
+    # outputpath = parse('output')
+
+
+    for pathway in parse('pathwaylist').split(','):
+        outputpath = os.path.join(os.pardir, 'output', '{}'.format(name), pathway, 'EPWs')
+        if os.path.exists(outputpath):
+            pass
+        else:
+            os.makedirs(outputpath)
+        print(pathway)
+        for ptile in list(map(int, parse('percentiles').split(','))):
+            print(str(ptile) + 'th Percentile')
+            for i in parse('yearranges').split('|'):
+                print(i)
+                start = int(list(i.split(','))[0])
+                end = int(list(i.split(','))[1])
+                year = int((start + end) / 2)
+                pathway_df, historical_df = process_modeldata.climatologies(str(ptile), start, end, pathway)
+                df = morph_routine(weather_path, pathway_df, historical_df, longitude, latitude)
+                filename = '{}_{}_{}-{}.epw'.format(pathway,ptile,start,end)
+                out = os.path.join(outputpath, filename)
+                manipulate_epw.out_epw(ptile, df, year, out, pathway)
+
+    return print('Morphing completed.')
+
+if __name__ == '__main__':
+    morph_main()

@@ -9,7 +9,6 @@ from morpher.config import parse
 import os
 from tqdm import tqdm
 import xarray as xr
-import gcsfs
 import tqdm
 import intake
 import dask
@@ -36,7 +35,7 @@ def processcmip(variable,pathway):
     latitude = parse('latitude')
     longitude = parse('longitude')
 
-    gcs = gcsfs.GCSFileSystem(token='anon')
+    # gcs = gcsfs.GCSFileSystem(token='anon')
     col = intake.open_esm_datastore("https://storage.googleapis.com/cmip6/pangeo-cmip6.json")
     sl_df = pd.DataFrame(pd.read_csv(os.path.join(os.path.dirname(__file__), 'modelsources.csv')))
     sourcelist = sl_df[sl_df['in_ensemble'] == 'Yes']['source_id'].values.tolist()
@@ -170,7 +169,8 @@ def exportcmip(pathway):
     vardict = gathercmipmain(pathway)
 
     for varkey in variable_list:
-        path = os.path.join(os.pardir, 'output', '{}'.format(name), '{}-{}.csv'.format(pathway, varkey))
+        name = parse('project-name')
+        path = os.path.join(os.pardir, 'output', '{}'.format(name), '{}'.format(pathway), '{}-{}.csv'.format(pathway, varkey))
         pdict = vardict[varkey]
         data = pd.DataFrame()
 
@@ -184,18 +184,25 @@ def exportcmip(pathway):
 
 def initialize_project():
     name = parse('project-name')
-    output_dir = os.path.join(os.pardir, 'output', '{}'.format(name))
-    if os.path.exists(output_dir):
-        print('Downloading {} CMIP6 data.'.format(pathway))
-        exportcmip(parse('pathway'))
-        print('Yes')
+    print(os.pardir)
+    if os.path.exists(os.path.join(os.pardir, 'output', '{}'.format(name))):
+        for pathway in parse('pathwaylist').split(','):
+            if os.path.exists(os.path.join(os.pardir, 'output', '{}'.format(name), '{}'.format(pathway))):
+                print('{} exists, moving on.'.format(pathway))
+                continue
+            else:
+                os.makedirs(os.path.join(os.pardir, 'output', '{}'.format(name), '{}'.format(pathway)))
+                print('Downloading {} CMIP6 data.'.format(pathway))
+                exportcmip(pathway)
     else:
         os.makedirs(os.path.join(os.pardir, 'output', '{}'.format(name)))
         print('Initializing project with historical CMIP6 data download.')
+        os.makedirs(os.path.join(os.pardir, 'output', '{}'.format(name), 'historical'))
         exportcmip('historical')
-        print('Continuing with {} CMIP6 data download.'.format(pathway))
-        exportcmip(parse('pathway'))
-        print('Yes,Yes')
+        for pathway in parse('pathwaylist').split(','):
+            print('Continuing with {} CMIP6 data download.'.format(pathway))
+            exportcmip(parse('pathway'))
+    return print('Climate model data has been downloaded.')
 
 if __name__ == '__main__':
     initialize_project()

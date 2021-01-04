@@ -24,5 +24,13 @@ def parse(setting):
     config.read(config_file)
     return config["settings"][setting]
 
+def parse_set(setting, value):
+    config = configparser.ConfigParser()
+    config.read(config_file)
+    config.set('settings', setting, value)
+    with open(config_file, 'w+') as configfile:
+        config.write(configfile)
+    return print('{} changed to {}'.format(setting, value))
+
 # if __name__ == '__main__':
 #     parse = parse()
