@@ -34,6 +34,7 @@ def test2():
     # parse_set('elevation(m)', '90')
     startTime = time.time()
     # Your code here !
+    util.build_epw_list()
     print('The script took {0} second !'.format(time.time() - startTime))
 if __name__ == '__main__':
     test2()

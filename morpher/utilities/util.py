@@ -8,9 +8,11 @@ from math import radians, cos, sin, asin, sqrt
 import metpy.calc as mpcalc
 from metpy.units import units
 import math
+import os
 from datetime import timedelta
 import datetime as dt
 from morpher.config import parse
+from morpher.config import parse_set
 from skyfield import api, almanac
 import numpy as np
 import pandas as pd
@@ -263,3 +265,41 @@ def calc_rise_set(df, latitude, longitude):
     df.set_index(df['dtime'], inplace=True)
 
     return pd.Series(df['Rise_Set'].values)
+
+def query_epw_period(epw_orig_path):
+    record = pd.read_csv(epw_orig_path,skiprows=3).iloc[1,1]
+    record_years_start = record.split('=')[2].split(';')[0].split('-')[0]
+    record_years_end = record.split('=')[2].split(';')[0].split('-')[1]
+    return record_years_start, record_years_end
+
+def set_config_loop(row):
+    settings_df = pd.DataFrame(pd.read_csv(parse('loop_settings_file')))
+    parse_set('epw', settings_df['epw_file'][row])
+    start, end = query_epw_period(parse('epw'))
+    parse_set('baselinestart', start)
+    parse_set('baselineend', end)
+    parse_set('project-name', settings_df['population_center'][row])
+    parse_set('latitude', str(settings_df['latitude'][row]))
+    parse_set('longitude', str(settings_df['longitude'][row]))
+    parse_set('utcoffset', str(settings_df['utcoffset'][row]))
+    return print('Configuration file set for this loop.')
+
+def build_epw_list():
+    df = pd.DataFrame()
+    epwdir = parse('epwdir')
+    epw_files = [f for f in os.listdir(epwdir) if f.endswith('.epw')]
+    for filepath in epw_files:
+        # print(os.path.join(epwdir,filepath))
+        data = pd.read_csv(os.path.join(epwdir,filepath), header=None, nrows=1, usecols=[1, 2, 3, 4, 5, 6, 7, 8, 9])
+        data = data.rename(columns={1: 'location',
+                                    2: 'province',
+                                    3: 'country',
+                                    4: 'type',
+                                    5: 'usaf',
+                                    6: 'longitude',
+                                    7: 'latitude',
+                                    8: 'utc',
+                                    9: 'elevation'})
+        df = df.append(data, ignore_index=True)
+    df.to_csv(os.path.join(epwdir, 'epwlist.csv'))
+    return df
