@@ -29,7 +29,7 @@ def morph_routine(weather_path, future_climatolgy, historical_climatology, longi
     orig_epw.index = pd.to_datetime(orig_epw.apply(lambda row: dt.datetime(year,
                                                                            int(row.month),
                                                                            int(row.day),
-                                                                           int(row.hour) - 1,
+                                                                           int(row.hour),
                                                                            int(row.minute)), axis=1))
     fut = future_climatolgy
     hist = historical_climatology

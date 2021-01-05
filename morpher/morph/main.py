@@ -10,6 +10,7 @@ import morpher.gather.gather_main as gather
 import pandas as pd
 from morpher.utilities import util
 from morpher.config import parse
+import os
 from morpher.config import parse_set
 
 __author__ = "Justin McCarty"
@@ -23,25 +24,25 @@ __status__ = "Production"
 
 
 def begin():
-    return print('Beginning morphing routine.')
+    return print('---Beginning morphing routine.---')
 
 def end():
-    return (print('All processes completed.'))
+    return (print('---All processes completed.---'))
 
 def run():
     if parse('loop')=='True':
-        settings_df = pd.DataFrame(pd.read_csv(parse('loop_settings_file')))
+        settings_df = pd.DataFrame(pd.read_csv(os.path.join(parse('epwdir'),'epwlist.csv')))
         for row in list(range(len(settings_df))):
             util.set_config_loop(row)
-            print(parse('project-name'))
+            print('Starting {}'.format(parse('project-name')))
             begin()
-            # gather.initialize_project()
-            # morph.morph_main()
+            gather.initialize_project()
+            morph.morph_main()
             end()
     else:
         begin()
-        # gather.initialize_project()
-        # morph.morph_main()
+        gather.initialize_project()
+        morph.morph_main()
         end()
 
 def query(epw_orig_path):

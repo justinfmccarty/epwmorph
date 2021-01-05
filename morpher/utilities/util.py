@@ -184,7 +184,7 @@ def persistence(hourly_clearness, rise_set, row_number):
 
 
 def solar_geometry(df, longitude, latitude):
-    utc = int(parse('utcoffset'))
+    utc = int(float(parse('utcoffset')))
     df['simple_day_angle'] = df.apply(lambda x: calc_simple_day_angle(x['dayofyear']), axis=1)
     df['bday'] = df.apply(lambda x: calc_bday(x['simple_day_angle']), axis=1)
     df['equation_of_time'] = df.apply(lambda x: calc_equation_of_time(x['bday']), axis=1)
@@ -273,15 +273,16 @@ def query_epw_period(epw_orig_path):
     return record_years_start, record_years_end
 
 def set_config_loop(row):
-    settings_df = pd.DataFrame(pd.read_csv(parse('loop_settings_file')))
+    settings_df = pd.DataFrame(pd.read_csv(os.path.join(parse('epwdir'),'epwlist.csv'))).astype(str)
     parse_set('epw', settings_df['epw_file'][row])
     start, end = query_epw_period(parse('epw'))
     parse_set('baselinestart', start)
     parse_set('baselineend', end)
-    parse_set('project-name', settings_df['population_center'][row])
-    parse_set('latitude', str(settings_df['latitude'][row]))
-    parse_set('longitude', str(settings_df['longitude'][row]))
-    parse_set('utcoffset', str(settings_df['utcoffset'][row]))
+    parse_set('project-name', settings_df['location'][row])
+    parse_set('elevation', settings_df['elevation'][row])
+    parse_set('latitude', settings_df['latitude'][row])
+    parse_set('longitude', settings_df['longitude'][row])
+    parse_set('utcoffset', settings_df['utc'][row])
     return print('Configuration file set for this loop.')
 
 def build_epw_list():
@@ -300,6 +301,8 @@ def build_epw_list():
                                     7: 'latitude',
                                     8: 'utc',
                                     9: 'elevation'})
+        data['epw_file'] = os.path.join(epwdir,filepath)
+        data['utc'] = data['utc'].astype(float).astype(int)
         df = df.append(data, ignore_index=True)
     df.to_csv(os.path.join(epwdir, 'epwlist.csv'))
     return df
