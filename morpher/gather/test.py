@@ -38,8 +38,8 @@ def test2():
     print('The script took {0} second !'.format(time.time() - startTime))
 
 def view_epw():
-    df = manipulate_epw.epw_to_dataframe(parse('epw'))
-    print(df[['hour','minute']])
+    import gcsfs
+
 
 if __name__ == '__main__':
     view_epw()

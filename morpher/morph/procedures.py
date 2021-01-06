@@ -37,7 +37,7 @@ def morph_relhum(df, fut_relhum, hist_relhum):
     months = list(range(1, 12 + 1, 1))
     delta = 1 + ((fut_relhum - hist_relhum) / hist_relhum)
     relhum_change = dict(zip(months, delta.values.tolist()))
-    return df.apply(lambda x: x['relhum_percent'] * relhum_change[x['month']], axis=1).rename("relhum_percent")
+    return np.clip(df.apply(lambda x: x['relhum_percent'] * relhum_change[x['month']], axis=1).rename("relhum_percent"), 1, 100)
 
 
 def morph_psl(df, fut_pr, hist_pr):
@@ -50,8 +50,8 @@ def morph_psl(df, fut_pr, hist_pr):
 
 def morph_dewpt(fut_dbt, fut_rh):
     dbt = pd.Series(fut_dbt)
-    rh = pd.Series(fut_rh)
-    df = np.clip(pd.concat([dbt, rh], axis=1), 0, 100)
+    rh = np.clip(pd.Series(fut_rh), 1, 100)
+    df = pd.concat([dbt, rh], axis=1)
     return round(df.apply(lambda x: calcdewpt(x[0], x[1]), axis=1).astype(float), 1)
 
 

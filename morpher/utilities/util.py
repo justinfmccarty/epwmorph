@@ -26,6 +26,8 @@ __maintainer__ = "Justin McCarty"
 __email__ = "mccarty.justin.f@gmail.com"
 __status__ = "Production"
 
+#TODO build in an input locator to set the root directory and spawn file paths based on that
+
 
 def haversine(lon1, lat1, lon2, lat2):
     """

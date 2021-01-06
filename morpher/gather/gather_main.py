@@ -11,6 +11,7 @@ from tqdm import tqdm
 import xarray as xr
 import tqdm
 import intake
+import gcsfs
 import dask
 from dask.diagnostics import progress
 import fsspec
@@ -35,8 +36,8 @@ def processcmip(variable,pathway):
     latitude = parse('latitude')
     longitude = parse('longitude')
 
-    # gcs = gcsfs.GCSFileSystem(token='anon')
-    col = intake.open_esm_datastore("https://storage.googleapis.com/cmip6/pangeo-cmip6.json")
+    gcsfs.GCSFileSystem(token='anon')
+    col = intake.open_esm_datastore("https://storage.googleapis.com/cmip6/pangeo-cmip6.json") #TODO make local
     sl_df = pd.DataFrame(pd.read_csv(os.path.join(os.path.dirname(__file__), 'modelsources.csv')))
     sourcelist = sl_df[sl_df['in_ensemble'] == 'Yes']['source_id'].values.tolist()
     print('Gathering the ensemble members for variable - {}'.format(variable))
@@ -45,7 +46,7 @@ def processcmip(variable,pathway):
         table_id='Amon',
         variable_id=variable,
         member_id='r1i1p1f1',
-        source_id=sourcelist
+        source_id=sourcelist #TODO add an if for all
     )
     col_subset = col.search(require_all_on=["source_id"], **query)
 
@@ -100,7 +101,7 @@ def processcmip(variable,pathway):
             continue
 
         for ds in expt_dsets:
-            ds.coords['year'] = ds.time.dt.year
+            ds.coords['year'] = ds.time.dt.year #TODO Align all
 
         dsets_ann_mean = [v[pathway]]
 

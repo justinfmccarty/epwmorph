@@ -33,12 +33,16 @@ def run():
     if parse('loop')=='True':
         settings_df = pd.DataFrame(pd.read_csv(os.path.join(parse('epwdir'),'epwlist.csv')))
         for row in list(range(len(settings_df))):
-            util.set_config_loop(row)
-            print('Starting {}'.format(parse('project-name')))
-            begin()
-            gather.initialize_project()
-            morph.morph_main()
-            end()
+            if settings_df['completed'][row]=='Yes':
+                pass
+            else:
+                util.set_config_loop(row)
+                print('Starting {}'.format(parse('project-name')))
+                begin()
+                gather.initialize_project()
+                morph.morph_main()
+                end()
+                settings_df['completed'][row] = 'Yes'
     else:
         begin()
         gather.initialize_project()

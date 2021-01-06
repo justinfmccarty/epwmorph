@@ -1,0 +1,5 @@
+Jan 5
+The script to gather data from CMIP6 cloud can be improved in a few ways:
+1. rewrite to cut down on the uneccesary unpacking events. This was begun in the notebook. (this has the added benefit of making sure no time slice occurs before the ensemble is created.) However, this duplicates the download of "historical" at the moment. The trick may be to preserve the current methdology of downloading each part discretley instead of mixing the timelines.
+2. after the rewrite dask integration will become easier and if this cannot be accomplished the "source_id" list can be split and used as a moment for multithreading.
+3. before the ensemble is created send the source_id to a txt file so the user knows what models were used
