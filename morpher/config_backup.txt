@@ -1,16 +1,16 @@
 [settings]
 project-name = YVR_bigmacc
-percentiles = 50
+percentiles = 1,5,25,50,75,95,99
 output = C:\Users\justi\Desktop
 epw = C:\Users\justi\Downloads\TMYx\CAN_BC_Vancouver.Intl.AP.718920_TMYx.epw
-latitude = 49.253
-longitude = -123.237
+latitude = -123.237
+longitude = 49.253
 elevation(m) = 80
-utcoffset = -8
+utcoffset = -7
 baselinestart = 1994
 baselineend = 2018
-pathwaylist = ssp126
-yearranges = 2025,2055
+pathwaylist = ssp126,ssp245,ssp585
+yearranges = 2015,2035|2025,2055|2055,2085
 uwg = no
 usaf = none
 wban = none

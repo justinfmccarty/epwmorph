@@ -23,7 +23,7 @@ __email__ = "mccarty.justin.f@gmail.com"
 __status__ = "Production"
 
 
-def morph_routine(weather_path, future_climatolgy, historical_climatology, longitude, latitude):
+def morph_routine(weather_path, future_climatolgy, historical_climatology, longitude, latitude, pathway):
     orig_epw = manipulate_epw.epw_to_dataframe(weather_path)
     year = int(orig_epw['year'][0:1].values)
     orig_epw.index = pd.to_datetime(orig_epw.apply(lambda row: dt.datetime(year,
@@ -78,6 +78,8 @@ def morph_routine(weather_path, future_climatolgy, historical_climatology, longi
     fut_df['opaqskycvr_tenths'] = osc.values
     wspd = mm.morph_wspd(orig_epw, future_climatolgy, historical_climatology)
     fut_df['windspd_ms'] = wspd.values
+    dataframe_path = os.path.join(os.pardir, 'output', '{}'.format(parse('project-name')), pathway, 'EPWs')
+    fut_df.to_csv(os.path.join(dataframe_path, 'calculations.csv'))
     return fut_df
 
 def morph_main():
@@ -103,7 +105,7 @@ def morph_main():
                 end = int(list(i.split(','))[1])
                 year = int((start + end) / 2)
                 pathway_df, historical_df = process_modeldata.climatologies(str(ptile), start, end, pathway)
-                df = morph_routine(weather_path, pathway_df, historical_df, longitude, latitude)
+                df = morph_routine(weather_path, pathway_df, historical_df, longitude, latitude, pathway)
                 filename = '{}_{}_{}-{}.epw'.format(pathway,ptile,start,end)
                 out = os.path.join(outputpath, filename)
                 manipulate_epw.out_epw(ptile, df, year, out, pathway)

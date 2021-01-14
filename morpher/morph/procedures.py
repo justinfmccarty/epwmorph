@@ -78,19 +78,32 @@ def morph_glohor(df, hist_glohor, fut_glohor):
         "glohorrad_Whm2").astype(int)
 
 
-def calc_diffhor(future_df, longitude, latitude):
-    solar_df = util.solar_geometry(future_df, longitude, latitude)
-    future_df['local_solar_time'] = solar_df['local_solar_time']
-    future_df['solar_alt'] = solar_df['solar_alt']
-    return future_df.apply(lambda x: x['glohorrad_Whm2'] * (1 / (1 + math.exp(-5.38 + 6.63 * x['hourly_clearness'] +
+def calc_diffhor(f_df, longitude, latitude):
+    # print(f_df['solar_alt'])
+    solar_df = util.solar_geometry(f_df, longitude, latitude)
+    # print(f_df.columns)
+    f_df['local_solar_time'] = solar_df['local_solar_time'].values.tolist()
+    f_df['zenith'] = solar_df['zenith'].values.tolist()
+    f_df['solar_alt'] = f_df.apply(lambda x: util.calc_solar_alt(x['zenith']),axis=1)
+
+    return f_df.apply(lambda x: x['glohorrad_Whm2'] * (1 / (1 + math.exp(-5.38 + 6.63 * x['hourly_clearness'] +
                                                                               0.006 * x['local_solar_time'] - 0.007 *
                                                                               x['solar_alt'] + 1.75 * x['daily_clearness'] +
-                                                                              1.31 * x['persisted_index']))), axis=1)#.astype(int)
+                                                                              1.31 * x['persisted_index']))), axis=1).astype(int)
+# def calc_dirnor(future_df):
+#     return future_df.apply(lambda x: (x['glohorrad_Whm2'] - x['difhorrad_Whm2']) / np.sin(np.deg2rad(x['solar_alt'])),
+#                     axis=1).astype(int)
+
+
+
 
 def calc_dirnor(future_df):
-    return future_df.apply(lambda x: (x['glohorrad_Whm2'] - x['difhorrad_Whm2']) / np.sin(np.deg2rad(x['solar_alt'])),
-                    axis=1).astype(int)
-
+    return future_df.apply(lambda x: util.dni(x['glohorrad_Whm2'],
+                                              x['difhorrad_Whm2'],
+                                              x['zenith'],
+                                              clearsky_tolerance=1.1,
+                                              zenith_threshold_for_zero_dni=88.0,
+                                              zenith_threshold_for_clearsky_limit=80.0),axis=1)
 
 def calc_tsc(df, hist_clt, fut_clt):
     months = list(range(1, 12 + 1, 1))
@@ -117,3 +130,4 @@ def morph_wspd(orig_epw, future_climatolgy, historical_climatology):
     rel_change = 100 * ((fut_spd - hist_spd) / hist_spd)
     scale_factor_wspd = dict(zip(months, 1 + (rel_change/100)))
     return orig_epw.apply(lambda x: x['windspd_ms'] * scale_factor_wspd[x['month']],axis=1).rename("windspd_ms").astype(float)
+
