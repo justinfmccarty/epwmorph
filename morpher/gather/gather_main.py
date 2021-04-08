@@ -42,7 +42,7 @@ def processcmip(variable, pathway):
 
     gcsfs.GCSFileSystem(token='anon')
     col = intake.open_esm_datastore("https://storage.googleapis.com/cmip6/pangeo-cmip6.json")  # TODO make local
-    sl_df = pd.DataFrame(pd.read_csv(os.path.join(os.path.dirname(__file__), 'modelsources.csv')))
+    sl_df = pd.DataFrame(pd.read_csv(parse('modelsources')))
     sourcelist = sl_df[sl_df['in_ensemble'] == 'Yes']['source_id'].values.tolist()
     print('Gathering the ensemble members for variable - {}'.format(variable))
 

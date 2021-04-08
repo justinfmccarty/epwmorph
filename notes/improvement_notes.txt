@@ -1,5 +1,13 @@
 Jan 5
 The script to gather data from CMIP6 cloud can be improved in a few ways:
-1. rewrite to cut down on the uneccesary unpacking events. This was begun in the notebook. (this has the added benefit of making sure no time slice occurs before the ensemble is created.) However, this duplicates the download of "historical" at the moment. The trick may be to preserve the current methdology of downloading each part discretley instead of mixing the timelines.
+1. DONE rewrite to cut down on the uneccesary unpacking events. This was begun in the notebook. (this has the added benefit of making sure no time slice occurs before the ensemble is created.) However, this duplicates the download of "historical" at the moment. The trick may be to preserve the current methdology of downloading each part discretley instead of mixing the timelines.
 2. after the rewrite dask integration will become easier and if this cannot be accomplished the "source_id" list can be split and used as a moment for multithreading.
 3. before the ensemble is created send the source_id to a txt file so the user knows what models were used
+
+Jan 14 
+1. DONE change the model source to a config file path
+2. in calculating the dt.year add a try step to accept none CFtime dt indexes
+3. move borrowed scripts into their own utils/modules
+
+Feb 02
+1. Add a feature that can be sued to filter morphed variables based on confidence tiers. (Page 4 http://publications.gc.ca/collections/collection_2021/eccc/En4-415-2020-eng.pdf) 
