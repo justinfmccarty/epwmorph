@@ -17,7 +17,7 @@ __email__ = "mccarty.justin.f@gmail.com"
 __status__ = "Production"
 
 # set universal variables
-config_file = os.path.join(os.path.dirname(__file__), 'default.config')
+config_file = os.path.join(os.path.dirname(__file__), 'user.config')
 
 def parse(setting):
     config = configparser.ConfigParser()

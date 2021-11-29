@@ -18,13 +18,11 @@ __email__ = "mccarty.justin.f@gmail.com"
 __status__ = "Production"
 
 def calc_model_climatologies(var, percentile, futurestart, futureend, pathway):
-
-    name = parse('project-name')
     baselinestart = parse('baselinestart')
     baselineend = parse('baselineend')
-
-    hist_path = os.path.join(os.pardir, 'output', '{}'.format(name), 'historical','historical-{}.csv'.format(var))
-    var_path = os.path.join(os.pardir, 'output', '{}'.format(name), '{}'.format(pathway),'{}-{}.csv'.format(pathway, var))
+    outputs_path = parse('output')
+    hist_path = os.path.join(outputs_path, 'historical', f'historical-{var}.csv')
+    var_path = os.path.join(outputs_path, pathway, f'{pathway}-{var}.csv')
 
     hist_init = pd.DataFrame(pd.read_csv(hist_path, usecols=[percentile,'date']))
     hist_init['date'] = pd.to_datetime(hist_init['date'])

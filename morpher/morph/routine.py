@@ -24,7 +24,7 @@ __status__ = "Production"
 
 
 def morph_routine(weather_path, future_climatolgy, historical_climatology, longitude, latitude, pathway):
-    orig_epw = manipulate_epw.epw_to_dataframe(weather_path)
+    orig_epw = manipulate_epw.epw_to_dataframe(weather_path, urban=parse('uwg'))
     year = int(orig_epw['year'][0:1].values)
     orig_epw.index = pd.to_datetime(orig_epw.apply(lambda row: dt.datetime(year,
                                                                            int(row.month),
@@ -78,24 +78,24 @@ def morph_routine(weather_path, future_climatolgy, historical_climatology, longi
     fut_df['opaqskycvr_tenths'] = osc.values
     wspd = mm.morph_wspd(orig_epw, future_climatolgy, historical_climatology)
     fut_df['windspd_ms'] = wspd.values
-    dataframe_path = os.path.join(os.pardir, 'output', '{}'.format(parse('project-name')), pathway, 'EPWs')
-    fut_df.to_csv(os.path.join(dataframe_path, 'calculations.csv'))
+    fut_df.to_csv(os.path.join(parse('output'), pathway, 'EPWs', 'calculations.csv'))
     return fut_df
 
 def morph_main():
     weather_path = parse('epw')
     longitude = parse('longitude')
     latitude = parse('latitude')
-    name = parse('project-name')
-    # outputpath = parse('output')
+    output_config = parse('output')
 
 
     for pathway in parse('pathwaylist').split(','):
-        outputpath = os.path.join(os.pardir, 'output', '{}'.format(name), pathway, 'EPWs')
-        if os.path.exists(outputpath):
+
+        epw_outputpath = os.path.join(output_config, pathway, 'EPWs')
+
+        if os.path.exists(epw_outputpath):
             pass
         else:
-            os.makedirs(outputpath)
+            os.makedirs(epw_outputpath)
         print(pathway)
         for ptile in list(map(int, parse('percentiles').split(','))):
             print(str(ptile) + 'th Percentile')
@@ -107,8 +107,8 @@ def morph_main():
                 pathway_df, historical_df = process_modeldata.climatologies(str(ptile), start, end, pathway)
                 df = morph_routine(weather_path, pathway_df, historical_df, longitude, latitude, pathway)
                 filename = '{}_{}_{}-{}.epw'.format(pathway,ptile,start,end)
-                out = os.path.join(outputpath, filename)
-                manipulate_epw.out_epw(ptile, df, year, out, pathway)
+                out = os.path.join(epw_outputpath, filename)
+                manipulate_epw.out_epw(ptile, df, out, pathway, year=year)
 
     return print('Morphing completed.')
 

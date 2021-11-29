@@ -5,10 +5,12 @@ The primary moprhing script.
 
 # imports
 import time
+import sys
 import morpher.morph.routine as morph
 import morpher.gather.gather_main as gather
 import pandas as pd
 from morpher.utilities import util
+from morpher.utilities import call_uwg
 from morpher.config import parse
 import os
 from morpher.config import parse_set
@@ -24,12 +26,32 @@ __status__ = "Production"
 
 
 def begin():
+    if parse('output')=='':
+        new_output = os.path.join(os.pardir, 'output', parse('project-name'))
+        parse_set('output', new_output)
+        print(f'Set project output folder at {new_output}')
+    else:
+        print(f"Output will be saved to {os.path.join(parse('output'))}")
     return print('---Beginning morphing routine.---')
 
 def end():
-    return (print('---All processes completed.---'))
+    print('---All processes completed.---')
+    return print(f"Look for results in {os.path.join(parse('output'))}")
+
 
 def run():
+
+    # check for Urban Weather Generator
+    if parse('uwg')=='Only':
+        print('Running UWG script and then exiting protocol')
+        call_uwg.run_UWG()
+        sys.exit()
+    elif parse('uwg')=='True':
+        print('Running UWG script and then continuing to morph')
+        call_uwg.run_UWG()
+    else:
+        pass
+
     if parse('loop')=='True':
         settings_df = pd.DataFrame(pd.read_csv(os.path.join(parse('epwdir'),'epwlist.csv')))
         for row in list(range(len(settings_df))):
@@ -58,6 +80,5 @@ def query(epw_orig_path):
 
 if __name__ == '__main__':
     startTime = time.time()
-
     run()
     print('The script took {0} second !'.format(time.time() - startTime))

@@ -136,10 +136,10 @@ def exportcmip(pathway):
 
 
     vardict = gathercmipmain(pathway)
-
+    # TODO parallelize from here (per each scenario or hist open thread per variable)
     for varkey in variable_list:
-        name = parse('project-name')
-        path = os.path.join(os.pardir, 'output', '{}'.format(name), '{}'.format(pathway), '{}-{}.csv'.format(pathway, varkey))
+        output_path = parse('output')
+        path = os.path.join(output_path, f'{pathway}', f'{pathway}-{varkey}.csv')
         pdict = vardict[varkey]
         data = pd.DataFrame()
 
@@ -148,29 +148,29 @@ def exportcmip(pathway):
 
         data['date'] = pdict[percentile_list[0]].coords['time'].values
         data.to_csv(path, index=True)
-        print('Variable  - {} saved.'.format(varkey))
-    return print('All {} files saved.'.format(pathway))
+        print(f'Variable  - {varkey} saved.')
+    return print(f'All {pathway} files saved.')
 
 def initialize_project():
-    name = parse('project-name')
+    output_path = parse('output')
     print(os.pardir)
-    if os.path.exists(os.path.join(os.pardir, 'output', '{}'.format(name))):
+    if os.path.exists(output_path):
         for pathway in parse('pathwaylist').split(','):
-            if os.path.exists(os.path.join(os.pardir, 'output', '{}'.format(name), '{}'.format(pathway))):
-                print('{} exists, moving on.'.format(pathway))
+            if os.path.exists(os.path.join(output_path, pathway)):
+                print(f'{pathway} exists, moving on.')
                 continue
             else:
-                os.makedirs(os.path.join(os.pardir, 'output', '{}'.format(name), '{}'.format(pathway)))
-                print('Downloading {} CMIP6 data.'.format(pathway))
+                os.makedirs(os.path.join(output_path, pathway))
+                print(f'Downloading {pathway} CMIP6 data.')
                 exportcmip(pathway)
     else:
-        os.makedirs(os.path.join(os.pardir, 'output', '{}'.format(name)))
+        os.makedirs(output_path)
         print('Initializing project with historical CMIP6 data download.')
-        os.makedirs(os.path.join(os.pardir, 'output', '{}'.format(name), 'historical'))
+        os.makedirs(os.path.join(output_path, 'historical'))
         exportcmip('historical')
         for pathway in parse('pathwaylist').split(','):
-            os.makedirs(os.path.join(os.pardir, 'output', '{}'.format(name), '{}'.format(pathway)))
-            print('Continuing with {} CMIP6 data download.'.format(pathway))
+            os.makedirs(os.path.join(output_path, pathway))
+            print(f'Continuing with {pathway} CMIP6 data download.')
             exportcmip(pathway)
     return print('Climate model data has been downloaded.')
 

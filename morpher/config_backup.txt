@@ -12,6 +12,7 @@ baselineend = 2018
 pathwaylist = ssp126,ssp245,ssp585
 yearranges = 2015,2035|2025,2055|2055,2085
 uwg = no
+uwg_params_path =
 usaf = none
 wban = none
 variables = tas,tasmax,tasmin,clt,psl,pr,huss,vas,uas,rsds

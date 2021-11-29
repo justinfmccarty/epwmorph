@@ -217,7 +217,9 @@ def prep_wind(uas, vas):
 
 
 def persistence(hourly_clearness, rise_set, row_number):
-    if rise_set == 'Sunrise':
+    if row_number == 8759:
+        return hourly_clearness[row_number]
+    elif rise_set == 'Sunrise':
         return hourly_clearness[row_number + 1]
     elif rise_set == 'Sunset':
         return hourly_clearness[row_number - 1]
@@ -395,3 +397,5 @@ def dni(ghi, dhi, zenith, clearsky_dni=None,
             (zenith < zenith_threshold_for_zero_dni) &
             (dni > max_dni)] = max_dni
     return dni
+
+
