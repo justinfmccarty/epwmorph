@@ -35,11 +35,6 @@ def processcmip(variable, pathway):
     latitude = float(parse('latitude'))
     longitude = float(parse('longitude'))
 
-    if longitude < 180:
-        longitude = longitude + 360
-    else:
-        longitude = longitude
-
     gcsfs.GCSFileSystem(token='anon')
     col = intake.open_esm_datastore("https://storage.googleapis.com/cmip6/pangeo-cmip6.json")  # TODO make local
     sl_df = pd.DataFrame(pd.read_csv(parse('modelsources')))
