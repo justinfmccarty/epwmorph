@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        xclim=xclim.cli:cli
+    

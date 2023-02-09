@@ -1,0 +1,247 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "aiohttp",
+    "decorator >4.1.2",
+    "fsspec 2021.11.0",
+    "google-auth >=1.2",
+    "google-auth-oauthlib",
+    "google-cloud-storage >1.40",
+    "python >=3.6",
+    "requests"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/gcsfs-2021.11.0-pyhd8ed1ab_0",
+  "features": "",
+  "files": [
+    "lib/python3.9/site-packages/gcsfs-2021.11.0.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/gcsfs-2021.11.0.dist-info/LICENSE.txt",
+    "lib/python3.9/site-packages/gcsfs-2021.11.0.dist-info/METADATA",
+    "lib/python3.9/site-packages/gcsfs-2021.11.0.dist-info/RECORD",
+    "lib/python3.9/site-packages/gcsfs-2021.11.0.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/gcsfs-2021.11.0.dist-info/WHEEL",
+    "lib/python3.9/site-packages/gcsfs-2021.11.0.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/gcsfs-2021.11.0.dist-info/pbr.json",
+    "lib/python3.9/site-packages/gcsfs-2021.11.0.dist-info/top_level.txt",
+    "lib/python3.9/site-packages/gcsfs/__init__.py",
+    "lib/python3.9/site-packages/gcsfs/_version.py",
+    "lib/python3.9/site-packages/gcsfs/checkers.py",
+    "lib/python3.9/site-packages/gcsfs/cli/__init__.py",
+    "lib/python3.9/site-packages/gcsfs/cli/gcsfuse.py",
+    "lib/python3.9/site-packages/gcsfs/core.py",
+    "lib/python3.9/site-packages/gcsfs/credentials.py",
+    "lib/python3.9/site-packages/gcsfs/dask_link.py",
+    "lib/python3.9/site-packages/gcsfs/mapping.py",
+    "lib/python3.9/site-packages/gcsfs/retry.py",
+    "lib/python3.9/site-packages/gcsfs/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/gcsfs/__pycache__/_version.cpython-39.pyc",
+    "lib/python3.9/site-packages/gcsfs/__pycache__/checkers.cpython-39.pyc",
+    "lib/python3.9/site-packages/gcsfs/cli/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/gcsfs/cli/__pycache__/gcsfuse.cpython-39.pyc",
+    "lib/python3.9/site-packages/gcsfs/__pycache__/core.cpython-39.pyc",
+    "lib/python3.9/site-packages/gcsfs/__pycache__/credentials.cpython-39.pyc",
+    "lib/python3.9/site-packages/gcsfs/__pycache__/dask_link.cpython-39.pyc",
+    "lib/python3.9/site-packages/gcsfs/__pycache__/mapping.cpython-39.pyc",
+    "lib/python3.9/site-packages/gcsfs/__pycache__/retry.cpython-39.pyc"
+  ],
+  "fn": "gcsfs-2021.11.0-pyhd8ed1ab_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/gcsfs-2021.11.0-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "2142b216c85ef43edfee7cb1cf14520e",
+  "name": "gcsfs",
+  "noarch": "python",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/gcsfs-2021.11.0-pyhd8ed1ab_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/gcsfs-2021.11.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/gcsfs-2021.11.0.dist-info/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "3c5de927b69fcf3d42b8f1d22e8699b98cd46ebf6d83ccb896d2b22836e1581f",
+        "sha256_in_prefix": "3c5de927b69fcf3d42b8f1d22e8699b98cd46ebf6d83ccb896d2b22836e1581f",
+        "size_in_bytes": 1539
+      },
+      {
+        "_path": "site-packages/gcsfs-2021.11.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "076a5716df1497c5984ee29f2668b758699e8cba98d6f91c486164c47a6d8894",
+        "sha256_in_prefix": "076a5716df1497c5984ee29f2668b758699e8cba98d6f91c486164c47a6d8894",
+        "size_in_bytes": 1605
+      },
+      {
+        "_path": "site-packages/gcsfs-2021.11.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "41d8fec8337e92eeee3e56b6d8f87d494bc451498a6fb1863a69912a6b4b3757",
+        "sha256_in_prefix": "41d8fec8337e92eeee3e56b6d8f87d494bc451498a6fb1863a69912a6b4b3757",
+        "size_in_bytes": 1982
+      },
+      {
+        "_path": "site-packages/gcsfs-2021.11.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/gcsfs-2021.11.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "5b367c7308e1f25d23b542cd8d8ab51e9afe582a824603ebfbe4d7e0fe48d56a",
+        "sha256_in_prefix": "5b367c7308e1f25d23b542cd8d8ab51e9afe582a824603ebfbe4d7e0fe48d56a",
+        "size_in_bytes": 110
+      },
+      {
+        "_path": "site-packages/gcsfs-2021.11.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "0d724bf40e06e400e51bdaa1ad8719c9ae03d4a06110bd507f4a2ddb5d81c7bc",
+        "sha256_in_prefix": "0d724bf40e06e400e51bdaa1ad8719c9ae03d4a06110bd507f4a2ddb5d81c7bc",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "site-packages/gcsfs-2021.11.0.dist-info/pbr.json",
+        "path_type": "hardlink",
+        "sha256": "2fa6ab86718cfe11216a92098ae0ff0e52606ff50592aa77244cabf9791bcda2",
+        "sha256_in_prefix": "2fa6ab86718cfe11216a92098ae0ff0e52606ff50592aa77244cabf9791bcda2",
+        "size_in_bytes": 46
+      },
+      {
+        "_path": "site-packages/gcsfs-2021.11.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "a1bb8cc2239716c4d0738b9046978e6cb412cba09380430cca8309b1e3629be6",
+        "sha256_in_prefix": "a1bb8cc2239716c4d0738b9046978e6cb412cba09380430cca8309b1e3629be6",
+        "size_in_bytes": 6
+      },
+      {
+        "_path": "site-packages/gcsfs/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "987bfad903042a415adb91521e4bff4f67a3f35030be22a5bc4aa62400a36f87",
+        "sha256_in_prefix": "987bfad903042a415adb91521e4bff4f67a3f35030be22a5bc4aa62400a36f87",
+        "size_in_bytes": 192
+      },
+      {
+        "_path": "site-packages/gcsfs/_version.py",
+        "path_type": "hardlink",
+        "sha256": "bd4da4aed3b83cee25239b34a0739e7b9520bb55d352eb9c3588e4f969aa9e75",
+        "sha256_in_prefix": "bd4da4aed3b83cee25239b34a0739e7b9520bb55d352eb9c3588e4f969aa9e75",
+        "size_in_bytes": 501
+      },
+      {
+        "_path": "site-packages/gcsfs/checkers.py",
+        "path_type": "hardlink",
+        "sha256": "973e50c560de58d80b85b889bc9c84af7d8bfcc54027f7bfb5a03370ae77040e",
+        "sha256_in_prefix": "973e50c560de58d80b85b889bc9c84af7d8bfcc54027f7bfb5a03370ae77040e",
+        "size_in_bytes": 3618
+      },
+      {
+        "_path": "site-packages/gcsfs/cli/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/gcsfs/cli/gcsfuse.py",
+        "path_type": "hardlink",
+        "sha256": "9823a2b2b00a128f6b2d297e479aac35599124c60bb617cbe0e9757cc39ff94d",
+        "sha256_in_prefix": "9823a2b2b00a128f6b2d297e479aac35599124c60bb617cbe0e9757cc39ff94d",
+        "size_in_bytes": 1949
+      },
+      {
+        "_path": "site-packages/gcsfs/core.py",
+        "path_type": "hardlink",
+        "sha256": "7358f3fae0bbc6e16c236f4385ae890f56e89e8943f63c006c1ab0925e751e12",
+        "sha256_in_prefix": "7358f3fae0bbc6e16c236f4385ae890f56e89e8943f63c006c1ab0925e751e12",
+        "size_in_bytes": 52480
+      },
+      {
+        "_path": "site-packages/gcsfs/credentials.py",
+        "path_type": "hardlink",
+        "sha256": "1852e59e95fdf57b82c0462fed9d4fa50cfd49d756c120c04cd669ddfbc902ca",
+        "sha256_in_prefix": "1852e59e95fdf57b82c0462fed9d4fa50cfd49d756c120c04cd669ddfbc902ca",
+        "size_in_bytes": 8025
+      },
+      {
+        "_path": "site-packages/gcsfs/dask_link.py",
+        "path_type": "hardlink",
+        "sha256": "1f01d9d0de574137699498b97313478ea32cbba6a158cee2d8123a89ced36d98",
+        "sha256_in_prefix": "1f01d9d0de574137699498b97313478ea32cbba6a158cee2d8123a89ced36d98",
+        "size_in_bytes": 68
+      },
+      {
+        "_path": "site-packages/gcsfs/mapping.py",
+        "path_type": "hardlink",
+        "sha256": "edab91c6fc81ccbd09e28f06a4a52c8af5f051cda894d1757d3c0c2697360762",
+        "sha256_in_prefix": "edab91c6fc81ccbd09e28f06a4a52c8af5f051cda894d1757d3c0c2697360762",
+        "size_in_bytes": 227
+      },
+      {
+        "_path": "site-packages/gcsfs/retry.py",
+        "path_type": "hardlink",
+        "sha256": "efa6dbefdc70ecd1577de59e3c65d859e65f9f0f1b1347d0ee159cd1d76dd4d0",
+        "sha256_in_prefix": "efa6dbefdc70ecd1577de59e3c65d859e65f9f0f1b1347d0ee159cd1d76dd4d0",
+        "size_in_bytes": 4785
+      },
+      {
+        "_path": "lib/python3.9/site-packages/gcsfs/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/gcsfs/__pycache__/_version.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/gcsfs/__pycache__/checkers.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/gcsfs/cli/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/gcsfs/cli/__pycache__/gcsfuse.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/gcsfs/__pycache__/core.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/gcsfs/__pycache__/credentials.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/gcsfs/__pycache__/dask_link.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/gcsfs/__pycache__/mapping.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/gcsfs/__pycache__/retry.cpython-39.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "gcsfs==2021.11.0=pyhd8ed1ab_0",
+  "sha256": "b2ac2eb666e40fd8ab4bee81a3a33d001070ff408539b4baf5659b6eb2faeac0",
+  "size": 25466,
+  "subdir": "noarch",
+  "timestamp": 1636221933996,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/gcsfs-2021.11.0-pyhd8ed1ab_0.tar.bz2",
+  "version": "2021.11.0"
+}

@@ -1,0 +1,107 @@
+{
+  "build": "pyhd8ed1ab_1003",
+  "build_number": 1003,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python >=3.6"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/entrypoints-0.3-pyhd8ed1ab_1003",
+  "features": "",
+  "files": [
+    "lib/python3.9/site-packages/entrypoints-0.3.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/entrypoints-0.3.dist-info/LICENSE",
+    "lib/python3.9/site-packages/entrypoints-0.3.dist-info/METADATA",
+    "lib/python3.9/site-packages/entrypoints-0.3.dist-info/RECORD",
+    "lib/python3.9/site-packages/entrypoints-0.3.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/entrypoints-0.3.dist-info/WHEEL",
+    "lib/python3.9/site-packages/entrypoints-0.3.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/entrypoints.py",
+    "lib/python3.9/site-packages/__pycache__/entrypoints.cpython-39.pyc"
+  ],
+  "fn": "entrypoints-0.3-pyhd8ed1ab_1003.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/entrypoints-0.3-pyhd8ed1ab_1003",
+    "type": 1
+  },
+  "md5": "bbf9a201f6ce99a506f4955374d9a9f4",
+  "name": "entrypoints",
+  "noarch": "python",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/entrypoints-0.3-pyhd8ed1ab_1003.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/entrypoints-0.3.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/entrypoints-0.3.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "de5fcd7349cdf399b0707a2a024833c4704743650133c72d6f0ff7561a03a848",
+        "sha256_in_prefix": "de5fcd7349cdf399b0707a2a024833c4704743650133c72d6f0ff7561a03a848",
+        "size_in_bytes": 1098
+      },
+      {
+        "_path": "site-packages/entrypoints-0.3.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "7f8f223153f613613b8a1ea11b66c8213b2a561d02a9df41687aff6156ce014c",
+        "sha256_in_prefix": "7f8f223153f613613b8a1ea11b66c8213b2a561d02a9df41687aff6156ce014c",
+        "size_in_bytes": 1347
+      },
+      {
+        "_path": "site-packages/entrypoints-0.3.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "4b63d61ea7907a883aa1a200fe2ca99a3700b19fca47e029ed4f9f51c0731c0d",
+        "sha256_in_prefix": "4b63d61ea7907a883aa1a200fe2ca99a3700b19fca47e029ed4f9f51c0731c0d",
+        "size_in_bytes": 698
+      },
+      {
+        "_path": "site-packages/entrypoints-0.3.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/entrypoints-0.3.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "34baa6b31f99159ea00dabd8821da81f465237e2919a971d1172190e7632f4f8",
+        "sha256_in_prefix": "34baa6b31f99159ea00dabd8821da81f465237e2919a971d1172190e7632f4f8",
+        "size_in_bytes": 99
+      },
+      {
+        "_path": "site-packages/entrypoints-0.3.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "47927ca180ce6290e5a16d32ae53b4f2b7152ede1ea12568f4bec65823be99f4",
+        "sha256_in_prefix": "47927ca180ce6290e5a16d32ae53b4f2b7152ede1ea12568f4bec65823be99f4",
+        "size_in_bytes": 153
+      },
+      {
+        "_path": "site-packages/entrypoints.py",
+        "path_type": "hardlink",
+        "sha256": "68a5307fc9444bce2f15b1bf04a97bd233c20ffdd7d8277205e5e546503be1f0",
+        "sha256_in_prefix": "68a5307fc9444bce2f15b1bf04a97bd233c20ffdd7d8277205e5e546503be1f0",
+        "size_in_bytes": 8262
+      },
+      {
+        "_path": "lib/python3.9/site-packages/__pycache__/entrypoints.cpython-39.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "entrypoints==0.3=pyhd8ed1ab_1003",
+  "sha256": "f3f4c5ba63c7e1ee6914a021485579a7dfae82d0b56fe0033a7f2557eef11abd",
+  "size": 8541,
+  "subdir": "noarch",
+  "timestamp": 1605122093951,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/entrypoints-0.3-pyhd8ed1ab_1003.tar.bz2",
+  "version": "0.3"
+}

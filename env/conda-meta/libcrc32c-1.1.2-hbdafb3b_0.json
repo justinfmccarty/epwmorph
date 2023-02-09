@@ -1,0 +1,98 @@
+{
+  "build": "hbdafb3b_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "libcxx >=11.1.0"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libcrc32c-1.1.2-hbdafb3b_0",
+  "features": "",
+  "files": [
+    "include/crc32c/crc32c.h",
+    "lib/cmake/Crc32c/Crc32cConfig.cmake",
+    "lib/cmake/Crc32c/Crc32cConfigVersion.cmake",
+    "lib/cmake/Crc32c/Crc32cTargets-release.cmake",
+    "lib/cmake/Crc32c/Crc32cTargets.cmake",
+    "lib/libcrc32c.1.1.0.dylib",
+    "lib/libcrc32c.1.dylib",
+    "lib/libcrc32c.dylib"
+  ],
+  "fn": "libcrc32c-1.1.2-hbdafb3b_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libcrc32c-1.1.2-hbdafb3b_0",
+    "type": 1
+  },
+  "md5": "32bd82a6a625ea6ce090a81c3d34edeb",
+  "name": "libcrc32c",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libcrc32c-1.1.2-hbdafb3b_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/crc32c/crc32c.h",
+        "path_type": "hardlink",
+        "sha256": "2ad42dff3ba9ea9f8059564fa5731111443ba9da52680d04de89611172fb565f",
+        "sha256_in_prefix": "2ad42dff3ba9ea9f8059564fa5731111443ba9da52680d04de89611172fb565f",
+        "size_in_bytes": 2285
+      },
+      {
+        "_path": "lib/cmake/Crc32c/Crc32cConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "de5126af1a83b699712bdc2d5b9fa42a2cfdbf143cad6b54df7889c6eedef418",
+        "sha256_in_prefix": "de5126af1a83b699712bdc2d5b9fa42a2cfdbf143cad6b54df7889c6eedef418",
+        "size_in_bytes": 1181
+      },
+      {
+        "_path": "lib/cmake/Crc32c/Crc32cConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "cf6bd88a9f57a05d885b045c803aba54b6339f86503445fb4fe52d50dc94833d",
+        "sha256_in_prefix": "cf6bd88a9f57a05d885b045c803aba54b6339f86503445fb4fe52d50dc94833d",
+        "size_in_bytes": 2878
+      },
+      {
+        "_path": "lib/cmake/Crc32c/Crc32cTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "ae42870b65596e3444298b9816aac3b77229188d7a35ea3af1365fb7dedbecdb",
+        "sha256_in_prefix": "ae42870b65596e3444298b9816aac3b77229188d7a35ea3af1365fb7dedbecdb",
+        "size_in_bytes": 854
+      },
+      {
+        "_path": "lib/cmake/Crc32c/Crc32cTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "1d9257e331a8d74b7df454cafe5791c125dd2ba6212cf021dfc6e934b6919fd3",
+        "sha256_in_prefix": "1d9257e331a8d74b7df454cafe5791c125dd2ba6212cf021dfc6e934b6919fd3",
+        "size_in_bytes": 3258
+      },
+      {
+        "_path": "lib/libcrc32c.1.1.0.dylib",
+        "path_type": "hardlink",
+        "sha256": "f2a5a918367cfd0d42b9c184555e7a6d4b0925b3ba718fce91745c6eca7811b3",
+        "sha256_in_prefix": "f2a5a918367cfd0d42b9c184555e7a6d4b0925b3ba718fce91745c6eca7811b3",
+        "size_in_bytes": 68000
+      },
+      {
+        "_path": "lib/libcrc32c.1.dylib",
+        "path_type": "softlink",
+        "sha256": "f2a5a918367cfd0d42b9c184555e7a6d4b0925b3ba718fce91745c6eca7811b3",
+        "size_in_bytes": 68000
+      },
+      {
+        "_path": "lib/libcrc32c.dylib",
+        "path_type": "softlink",
+        "sha256": "f2a5a918367cfd0d42b9c184555e7a6d4b0925b3ba718fce91745c6eca7811b3",
+        "size_in_bytes": 68000
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "libcrc32c==1.1.2=hbdafb3b_0",
+  "sha256": "58477b67cc719060b5b069ba57161e20ba69b8695d154a719cb4b60caf577929",
+  "size": 18765,
+  "subdir": "osx-arm64",
+  "timestamp": 1633683992603,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libcrc32c-1.1.2-hbdafb3b_0.tar.bz2",
+  "version": "1.1.2"
+}

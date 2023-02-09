@@ -1,0 +1,667 @@
+
+=====================
+ Almanac Computation
+=====================
+
+The highest-level routines in Skyfield let you search back and forward
+through time for the exact moments when the Earth, Sun, and Moon are in
+special configurations.
+
+They all require you to start by loading up a timescale object and also
+an ephemeris file that provides positions from the planets:
+
+.. testcode::
+
+    from skyfield import api
+
+    ts = api.load.timescale()
+    eph = api.load('de421.bsp')
+
+Then, load the “almanac” module.
+
+.. testcode::
+
+    from skyfield import almanac
+
+Note that almanac computation can be slow and expensive.  To determine
+the moment of sunrise, for example, Skyfield has to search back and
+forth through time asking for the altitude of the Sun over and over
+until it finally works out the moment at which it crests the horizon.
+
+Rounding time to the nearest minute
+===================================
+
+If you compare almanac results to official sources like the `United
+States Naval Observatory <http://aa.usno.navy.mil/data/index.php>`_, the
+printed time will often differ because the Naval Observatory results are
+rounded to the nearest minute — any time with ``:30`` or more seconds at
+the end gets named as the next minute.
+
+If you try to display a date that needs to be rounded to the nearest
+minute by simply stopping at ``%M`` and leaving off the ``%S`` seconds,
+the output will be one minute too early.  For example, the Naval
+Observatory would round ``14:59`` up to ``:15`` in the following date.
+
+.. testcode::
+
+    t = ts.utc(2018, 9, 10, 5, 14, 59)
+    dt = t.utc_datetime()
+    print(dt.strftime('%Y-%m-%d %H:%M'))
+
+.. testoutput::
+
+    2018-09-10 05:14
+
+To do the same rounding yourself, simply add 30 seconds to the time
+before truncating the seconds.
+
+.. testcode::
+
+    from datetime import timedelta
+
+    def nearest_minute(dt):
+        return (dt + timedelta(seconds=30)).replace(second=0, microsecond=0)
+
+    dt = nearest_minute(t.utc_datetime())
+    print(dt.strftime('%Y-%m-%d %H:%M'))
+
+.. testoutput::
+
+    2018-09-10 05:15
+
+The results should then agree with the tables produced by the USNO.
+
+The Seasons
+===========
+
+Create a start time and an end time to ask for all of the equinoxes and
+solstices that fall in between.
+
+.. testcode::
+
+    t0 = ts.utc(2018, 1, 1)
+    t1 = ts.utc(2018, 12, 31)
+    t, y = almanac.find_discrete(t0, t1, almanac.seasons(eph))
+
+    for yi, ti in zip(y, t):
+        print(yi, almanac.SEASON_EVENTS[yi], ti.utc_iso(' '))
+
+.. testoutput::
+
+    0 Vernal Equinox 2018-03-20 16:15:27Z
+    1 Summer Solstice 2018-06-21 10:07:18Z
+    2 Autumnal Equinox 2018-09-23 01:54:06Z
+    3 Winter Solstice 2018-12-21 22:22:44Z
+
+The result ``t`` will be an array of times, and ``y`` will be ``0``
+through ``3`` for the Vernal Equinox through the Winter Solstice.
+
+If you or some of your users live in the Southern Hemisphere,
+you can use the ``SEASON_EVENTS_NEUTRAL`` array.
+Instead of naming specific seasons,
+it names the equinoxes and solstices by the month in which they occur —
+so the ``March Equinox``, for example, is followed by the ``June Solstice``.
+
+Phases of the Moon
+==================
+
+The phases of the Moon are the same for everyone on Earth, so you don’t
+need to specify the longitude and latitude of your location.  Simply ask
+for the current phase of the Moon as an angle, where 0° is New Moon and
+180° is Full:
+
+.. testcode::
+
+    t = ts.utc(2020, 11, 19)
+    phase = almanac.moon_phase(eph, t)
+    print('Moon phase: {:.1f} degrees'.format(phase.degrees))
+
+.. testoutput::
+
+    Moon phase: 51.3 degrees
+
+Or you can have Skyfield search over a range of dates for the moments
+when the Moon reaches First Quarter, Full, Last Quarter, and New:
+
+.. testcode::
+
+    t0 = ts.utc(2018, 9, 1)
+    t1 = ts.utc(2018, 9, 10)
+    t, y = almanac.find_discrete(t0, t1, almanac.moon_phases(eph))
+
+    print(t.utc_iso())
+    print(y)
+    print([almanac.MOON_PHASES[yi] for yi in y])
+
+.. testoutput::
+
+    ['2018-09-03T02:37:24Z', '2018-09-09T18:01:28Z']
+    [3 0]
+    ['Last Quarter', 'New Moon']
+
+The result ``t`` will be an array of times, and ``y`` will be a
+corresponding array of Moon phases with 0 for New Moon and 3 for Last
+Quarter.  You can use the array ``MOON_PHASES`` to retrieve names for
+each phase.
+
+.. _lunar-nodes:
+
+Lunar Nodes
+===========
+
+The Moon’s ascending node and descending node are the moments each lunar
+month when the Moon crosses the plane of Earth’s orbit and eclipses are
+possible.
+
+.. testcode::
+
+    t0 = ts.utc(2020, 4, 22)
+    t1 = ts.utc(2020, 5, 22)
+    t, y = almanac.find_discrete(t0, t1, almanac.moon_nodes(eph))
+
+    print(t.utc_iso())
+    print(y)
+    print([almanac.MOON_NODES[yi] for yi in y])
+
+.. testoutput::
+
+    ['2020-04-27T17:54:17Z', '2020-05-10T09:01:42Z']
+    [1 0]
+    ['ascending', 'descending']
+
+.. _oppositions-conjunctions:
+
+Opposition and Conjunction
+==========================
+
+The moment at which a planet is in opposition with the Sun or in
+conjunction with the Sun is when their ecliptic longitudes are at 0° or
+180° difference.
+
+.. testcode::
+
+    t0 = ts.utc(2019, 1, 1)
+    t1 = ts.utc(2021, 1, 1)
+    f = almanac.oppositions_conjunctions(eph, eph['mars'])
+    t, y = almanac.find_discrete(t0, t1, f)
+
+    print(t.utc_iso())
+    print(y)
+
+.. testoutput::
+
+    ['2019-09-02T10:42:14Z', '2020-10-13T23:25:47Z']
+    [0 1]
+
+The result ``t`` will be an array of times, and ``y`` will be an array
+of integers indicating which half of the sky the body has just entered:
+0 means the half of the sky west of the Sun along the ecliptic, and 1
+means the half of the sky east of the Sun.  This means different things
+for different bodies:
+
+* For the outer planets Mars, Jupiter, Saturn, Uranus, and all other
+  bodies out beyond our orbit, 0 means the moment of conjunction with
+  the Sun and 1 means the moment of opposition.
+
+* Because the Moon moves eastward across our sky relative to the Sun,
+  not westward, the output is reversed compared to the outer planets: 0
+  means the moment of opposition or Full Moon, while 1 means the moment
+  of conjunction or New Moon.
+
+* The inner planets Mercury and Venus only ever experience conjunctions
+  with the Sun from our point of view, never oppositions, with 0
+  indicating an inferior conjunction and 1 a superior conjunction.
+
+.. _transits:
+
+Meridian Transits
+=================
+
+Every day the Earth’s rotation
+swings the sky through nearly 360°,
+leaving the celestial poles stationary
+while bringing each star and planet in turn
+across your *meridian* —
+the “line of longitude” in the sky above you
+that runs from the South Pole to the North Pole
+through the zenith point directly above your location on Earth.
+You can ask Skyfield for the times at which a body
+crosses your meridian,
+and then the antimeridian on the opposite side of the celestial globe:
+
+.. testcode::
+
+    bluffton = api.wgs84.latlon(+40.8939, -83.8917)
+
+    t0 = ts.utc(2020, 11, 6)
+    t1 = ts.utc(2020, 11, 7)
+    f = almanac.meridian_transits(eph, eph['Mars'], bluffton)
+    t, y = almanac.find_discrete(t0, t1, f)
+
+    print(t.utc_strftime('%Y-%m-%d %H:%M'))
+    print(y)
+    print([almanac.MERIDIAN_TRANSITS[yi] for yi in y])
+
+.. testoutput::
+
+    ['2020-11-06 03:32', '2020-11-06 15:30']
+    [1 0]
+    ['Meridian transit', 'Antimeridian transit']
+
+Some astronomers call these moments
+“upper culmination” and “lower culmination” instead.
+
+Observers often think of transit as the moment
+when an object is highest in the sky,
+which is roughly true.
+But at very high precision,
+if the body has any north or south velocity
+then its moment of highest altitude will be slightly earlier or later.
+
+Bodies near the poles are exceptions to the general rule
+that a body is visible at transit but below the horizon at antitransit.
+For a body that’s circumpolar from your location,
+transit and antitransit are both moments of visibility,
+when it stands above and below the pole;
+and objects close to the opposite pole will always be below the horizon,
+even as they invisibly transit your line of longitude
+down below your horizon.
+
+Sunrise and Sunset
+==================
+
+Because sunrise and sunset differ depending on your location on the
+Earth’s surface, you will need to specify a latitude and longitude.
+
+Then you can create a start time and an end time and ask for all of the
+sunrises and sunsets in between.
+Skyfield uses the
+`official definition of sunrise and sunset
+<http://aa.usno.navy.mil/faq/docs/RST_defs.php>`_
+from the United States Naval Observatory,
+which defines them as the moment when the center — not the limb —
+of the sun is 0.8333 degrees below the horizon,
+to account for both the average radius of the Sun itself
+and for the average refraction of the atmosphere at the horizon.
+
+.. testcode::
+
+    t0 = ts.utc(2018, 9, 12, 4)
+    t1 = ts.utc(2018, 9, 13, 4)
+    t, y = almanac.find_discrete(t0, t1, almanac.sunrise_sunset(eph, bluffton))
+
+    print(t.utc_iso())
+    print(y)
+
+.. testoutput::
+
+    ['2018-09-12T11:13:13Z', '2018-09-12T23:49:38Z']
+    [1 0]
+
+The result ``t`` will be an array of times, and ``y`` will be ``1`` if
+the sun rises at the corresponding time and ``0`` if it sets.
+
+If you need to provide your own custom value for refraction, adjust the
+estimate of the Sun’s radius, or account for a vantage point above the
+Earth’s surface, see :ref:`risings-and-settings` to learn about the more
+versatile :func:`~skyfield.almanac.risings_and_settings()` routine.
+
+Note that a location near one of the poles during polar summer or polar
+winter will not experience sunrise and sunset.  To learn whether the sun
+is up or down, call the sunrise-sunset function at the time that
+interests you, and the return value will indicate whether the sun is up.
+
+.. testcode::
+
+    far_north = api.wgs84.latlon(89, -80)
+    f = almanac.sunrise_sunset(eph, far_north)
+    t, y = almanac.find_discrete(t0, t1, f)
+
+    print(t.utc_iso())  # Empty list: no sunrise or sunset
+    print(f(t0))        # But we can ask if the sun is up
+
+    print('polar day' if f(t0) else 'polar night')
+
+.. testoutput::
+
+    []
+    True
+    polar day
+
+Twilight
+========
+
+An expanded version of the sunrise-sunset routine
+named :func:`~skyfield.almanac.dark_twilight_day()`
+returns a separate code for each of the phases of twilight:
+
+0. Dark of night.
+1. Astronomical twilight.
+2. Nautical twilight.
+3. Civil twilight.
+4. Daytime.
+
+You can find a full example of its use
+at the :ref:`dark_twilight_day() example`.
+
+.. _risings-and-settings:
+
+Risings and Settings
+====================
+
+Skyfield can compute when a given body rises and sets.
+The routine is designed for bodies at the Moon’s distance or farther,
+that tend to rise and set about once a day.
+But it might be caught off guard
+if you pass it an Earth satellite
+that rises several times a day;
+for that case, see :ref:`satellite-rising-and-setting`.
+
+Rising and setting predictions can be generated
+using the :func:`~skyfield.almanac.risings_and_settings()` routine:
+
+.. testcode::
+
+    t0 = ts.utc(2020, 2, 1)
+    t1 = ts.utc(2020, 2, 2)
+    f = almanac.risings_and_settings(eph, eph['Mars'], bluffton)
+    t, y = almanac.find_discrete(t0, t1, f)
+
+    for ti, yi in zip(t, y):
+        print(ti.utc_iso(), 'Rise' if yi else 'Set')
+
+.. testoutput::
+
+    2020-02-01T09:29:16Z Rise
+    2020-02-01T18:42:57Z Set
+
+As with sunrise and sunset above,
+``1`` means the moment of rising and ``0`` means the moment of setting.
+
+The routine also offers some optional parameters,
+whose several uses are covered in the following sections.
+
+Computing your own refraction angle
+-----------------------------------
+
+Instead of accepting the standard estimate of 34 arcminutes
+for the angle by which refraction will raise the image
+of a body at the horizon,
+you can compute atmospheric refraction yourself
+and supply the resulting angle to ``horizon_degrees``.
+Note that the value passed should be a small negative angle.
+In this example it makes a 3 second difference
+in both the rising and setting time:
+
+.. testcode::
+
+    from skyfield.earthlib import refraction
+
+    r = refraction(0.0, temperature_C=15.0, pressure_mbar=1030.0)
+    print('Arcminutes refraction for body seen at horizon: %.2f\n' % (r * 60.0))
+
+    f = almanac.risings_and_settings(eph, eph['Mars'], bluffton, horizon_degrees=-r)
+    t, y = almanac.find_discrete(t0, t1, f)
+
+    for ti, yi in zip(t, y):
+        print(ti.utc_iso(), 'Rise' if yi else 'Set')
+
+.. testoutput::
+
+    Arcminutes refraction for body seen at horizon: 34.53
+
+    2020-02-01T09:29:13Z Rise
+    2020-02-01T18:43:00Z Set
+
+Adjusting for apparent radius
+-----------------------------
+
+Planets and especially the Sun and Moon have an appreciable radius,
+and we usually consider the moment of sunrise
+to be the moment when its bright limb crests the horizon —
+not the later moment when its center finally rises into view.
+Set the parameter ``radius_degrees`` to the body’s apparent radius
+to generate an earlier rising and later setting;
+the value ``0.25``, for example,
+would be a rough estimate for the Sun or Moon.
+
+The difference in rising time can be a minute or more:
+
+.. testcode::
+
+    f = almanac.risings_and_settings(eph, eph['Sun'], bluffton, radius_degrees=0.25)
+    t, y = almanac.find_discrete(t0, t1, f)
+    print(t[0].utc_iso(' '), 'Limb of the Sun crests the horizon')
+
+    f = almanac.risings_and_settings(eph, eph['Sun'], bluffton)
+    t, y = almanac.find_discrete(t0, t1, f)
+    print(t[0].utc_iso(' '), 'Center of the Sun reaches the horizon')
+
+.. testoutput::
+
+    2020-02-01 12:46:27Z Limb of the Sun crests the horizon
+    2020-02-01 12:47:53Z Center of the Sun reaches the horizon
+
+Elevated vantage points
+-----------------------
+
+Rising and setting predictions usually assume a flat local horizon
+that does not vary with elevation.
+Yes, Denver is the Mile High City,
+but it sees the sun rise against a local horizon that’s also a mile high.
+Since the city’s high altitude
+is matched by the high altitude of the terrain around it,
+the horizon winds up in the same place it would be for a city at sea level.
+
+But sometimes you need to account not only for local elevation,
+but for *altitude* above the surrounding terrain.
+Some observatories, for example, are located on mountaintops
+that are much higher than the elevation of the terrain
+that forms their horizon.
+And Earth satellites can be hundreds of kilometers
+above the surface of the Earth that produces their sunrises and sunsets.
+
+You can account for high altitude above the horizon’s terrain
+by setting an artificially negative value for ``horizon_degrees``.
+If we consider the Earth to be approximately a sphere,
+then we can use a bit of trigonometry
+to estimate the position of the horizon for an observer at altitude:
+
+.. testcode::
+
+    from numpy import arccos
+    from skyfield.units import Angle
+
+    # When does the Sun rise in the ionosphere’s F-layer, 300km up?
+    altitude_m = 300e3
+
+    earth_radius_m = 6378136.6
+    side_over_hypotenuse = earth_radius_m / (earth_radius_m + altitude_m)
+    h = Angle(radians = -arccos(side_over_hypotenuse))
+    print('The horizon from 300km up is at %.2f degrees' % h.degrees)
+
+    f = almanac.risings_and_settings(
+        eph, eph['Sun'], bluffton, horizon_degrees=h.degrees,
+        radius_degrees=0.25,
+    )
+    t, y = almanac.find_discrete(t0, t1, f)
+    print(t[0].utc_iso(' '), 'Limb of the Sun crests the horizon')
+
+.. testoutput::
+
+    The horizon from 300km up is at -17.24 degrees
+    2020-02-01 00:22:42Z Limb of the Sun crests the horizon
+
+When writing code for this situation,
+we need to be very careful to keep straight
+the two different meanings of *altitude*.
+
+1. The *altitude above sea level* is a linear distance measured in meters
+   between the ground and the location at which
+   we want to compute rises and settings.
+
+2. The *altitude of the horizon* names a quite different measure.
+   It’s an angle measured in degrees
+   that is one of the two angles
+   of the altitude-azimuth (“altazimuth”) system
+   oriented around an observer on a planet’s surface.
+   While azimuth measures horizontally around the horizon
+   from north through east, south, and west,
+   the altitude angle measures up towards the zenith (positive)
+   and down towards the nadir (negative).
+   The altitude is zero all along the great circle between zenith and nadir.
+
+The problem of an elevated observer
+unfortunately involves both kinds of altitude at the same time:
+for each extra meter of “altitude” above the ground,
+there is a slight additional depression in the angular “altitude”
+of the horizon on the altazimuth globe.
+
+When a right ascension and declination rises and sets
+-----------------------------------------------------
+
+If you are interested in finding the times
+when a fixed point in the sky rises and sets,
+simply create a star object with the coordinates
+of the position you are interested in
+(see :doc:`stars`).
+Here, for example, are rising and setting times for the Galactic Center:
+
+.. testcode::
+
+    galactic_center = api.Star(ra_hours=(17, 45, 40.04),
+                               dec_degrees=(-29, 0, 28.1))
+
+    f = almanac.risings_and_settings(eph, galactic_center, bluffton)
+    t, y = almanac.find_discrete(t0, t1, f)
+
+    for ti, yi in zip(t, y):
+        verb = 'rises above' if yi else 'sets below'
+        print(ti.utc_iso(' '), '- Galactic Center', verb, 'the horizon')
+
+.. testoutput::
+
+    2020-02-01 10:29:00Z - Galactic Center rises above the horizon
+    2020-02-01 18:45:46Z - Galactic Center sets below the horizon
+
+Solar terms
+===========
+
+The solar terms are widely used in East Asian calendars.
+
+.. testcode::
+
+    from skyfield import almanac_east_asia as almanac_ea
+
+    t0 = ts.utc(2019, 12, 1)
+    t1 = ts.utc(2019, 12, 31)
+    t, tm = almanac.find_discrete(t0, t1, almanac_ea.solar_terms(eph))
+
+    for tmi, ti in zip(tm, t):
+        print(tmi, almanac_ea.SOLAR_TERMS_ZHS[tmi], ti.utc_iso(' '))
+
+.. testoutput::
+
+    17 大雪 2019-12-07 10:18:28Z
+    18 冬至 2019-12-22 04:19:26Z
+
+The result ``t`` will be an array of times, and ``y`` will be integers
+in the range 0–23 which are each the index of a solar term.  Localized
+names for the solar terms in different East Asia languages are provided
+as ``SOLAR_TERMS_JP`` for Japanese, ``SOLAR_TERMS_VN`` for Vietnamese,
+``SOLAR_TERMS_ZHT`` for Traditional Chinese, and (as shown above)
+``SOLAR_TERMS_ZHS`` for Simplified Chinese.
+
+.. _lunar-eclipses:
+
+Lunar eclipses
+==============
+
+Skyfield can find the dates of lunar eclipses.
+
+.. testcode::
+
+    from skyfield import eclipselib
+
+    t0 = ts.utc(2019, 1, 1)
+    t1 = ts.utc(2020, 1, 1)
+    t, y, details = eclipselib.lunar_eclipses(t0, t1, eph)
+
+    for ti, yi in zip(t, y):
+        print(ti.utc_strftime('%Y-%m-%d %H:%M'),
+              'y={}'.format(yi),
+              eclipselib.LUNAR_ECLIPSES[yi])
+
+.. testoutput::
+
+    2019-01-21 05:12 y=2 Total
+    2019-07-16 21:31 y=1 Partial
+
+Note that any eclipse forecast
+is forced to make arbitrary distinctions
+when eclipses fall very close to the boundary
+between the categories “partial”, “penumbral”, and “total”.
+Skyfield searches for lunar eclipses using the techniques described
+in the *Explanatory Supplement to the Astronomical Almanac.*
+
+* Some disagreement is inevitable —
+  for example,
+  because Skyfield uses a modern ephemeris
+  while the *Supplement* used the old VSOP87 theory.
+
+* However,
+  Skyfield does currently find every one of the 7,238 lunar eclipses
+  between the years 1 and 2999
+  that are listed in NASA’s
+  `Five Millennium Canon of Lunar Eclipses
+  <https://eclipse.gsfc.nasa.gov/SEpubs/5MCLE.html>`_
+  by Espenak and Meeus.
+  While tweaks might be made to Skyfield’s routine in the future,
+  it is expected to always at least return every eclipse
+  listed in the *Canon*.
+
+* Skyfield tends to return eclipse times
+  that are a few seconds earlier than those given by the *Canon*.
+  For decades near the present the disagreement
+  rarely exceeds 2 seconds,
+  but for eclipses 2,000 years ago the difference
+  can be as large as 20 seconds.
+
+* Skyfield also finds 71 barely partial eclipses
+  beyond those listed in the *Canon*.
+
+* Skyfield agrees with the *Canon*\ ’s category
+  (partial, penumbral, total) for more than 99.6% of the eclipses.
+
+To help you study each eclipse in greater detail,
+Skyfield returns a ``details`` dictionary of extra arrays
+that provide the dimensions of the Moon and Earth’s shadow
+at the height of the eclipse.
+The dictionary currently offers the following arrays,
+whose meanings are hopefully self-explanatory:
+
+* ``closest_approach_radians``
+* ``moon_radius_radians``
+* ``penumbra_radius_radians``
+* ``umbra_radius_radians``
+
+By combining these dimensions
+with the position of the Moon at the height of the eclipse
+(which you can generate using Skyfield’s usual approach
+to computing a position),
+you should be able to produce a detailed diagram of each eclipse.
+
+For a review of the parameters that differ between eclipse forecasts,
+see NASA’s
+`Enlargement of Earth's shadows
+<https://eclipse.gsfc.nasa.gov/LEcat5/shadow.html>`_
+page on their Five Millennium Canon site.
+If you need lunar eclipse forecasts
+generated by a very specific set of parameters,
+try cutting and pasting Skyfield’s ``lunar_eclipses()`` function
+into your own code
+and making your adjustments there —
+you will have complete control of the outcome,
+and your application will be immune
+to any tweaking that takes place in Skyfield in the future
+if it’s found that Skyfield’s eclipse accuracy can become even better.

@@ -1,0 +1,3820 @@
+{
+  "build": "hbdafb3b_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "libcxx >=11.1.0"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/geos-3.10.1-hbdafb3b_1",
+  "features": "",
+  "files": [
+    "bin/geos-config",
+    "bin/geosop",
+    "include/geos/algorithm/Angle.h",
+    "include/geos/algorithm/Area.h",
+    "include/geos/algorithm/BoundaryNodeRule.h",
+    "include/geos/algorithm/CGAlgorithmsDD.h",
+    "include/geos/algorithm/CGAlgorithmsDD.inl",
+    "include/geos/algorithm/CentralEndpointIntersector.h",
+    "include/geos/algorithm/Centroid.h",
+    "include/geos/algorithm/ConvexHull.h",
+    "include/geos/algorithm/ConvexHull.inl",
+    "include/geos/algorithm/Distance.h",
+    "include/geos/algorithm/HCoordinate.h",
+    "include/geos/algorithm/InteriorPointArea.h",
+    "include/geos/algorithm/InteriorPointLine.h",
+    "include/geos/algorithm/InteriorPointPoint.h",
+    "include/geos/algorithm/Intersection.h",
+    "include/geos/algorithm/Length.h",
+    "include/geos/algorithm/LineIntersector.h",
+    "include/geos/algorithm/LineIntersector.inl",
+    "include/geos/algorithm/MinimumBoundingCircle.h",
+    "include/geos/algorithm/MinimumDiameter.h",
+    "include/geos/algorithm/NotRepresentableException.h",
+    "include/geos/algorithm/Orientation.h",
+    "include/geos/algorithm/PointInRing.h",
+    "include/geos/algorithm/PointLocation.h",
+    "include/geos/algorithm/PointLocator.h",
+    "include/geos/algorithm/RayCrossingCounter.h",
+    "include/geos/algorithm/RayCrossingCounterDD.h",
+    "include/geos/algorithm/RobustDeterminant.h",
+    "include/geos/algorithm/SimplePointInRing.h",
+    "include/geos/algorithm/construct/LargestEmptyCircle.h",
+    "include/geos/algorithm/construct/MaximumInscribedCircle.h",
+    "include/geos/algorithm/distance/DiscreteFrechetDistance.h",
+    "include/geos/algorithm/distance/DiscreteHausdorffDistance.h",
+    "include/geos/algorithm/distance/DistanceToPoint.h",
+    "include/geos/algorithm/distance/PointPairDistance.h",
+    "include/geos/algorithm/locate/IndexedPointInAreaLocator.h",
+    "include/geos/algorithm/locate/PointOnGeometryLocator.h",
+    "include/geos/algorithm/locate/SimplePointInAreaLocator.h",
+    "include/geos/constants.h",
+    "include/geos/edgegraph/EdgeGraph.h",
+    "include/geos/edgegraph/EdgeGraphBuilder.h",
+    "include/geos/edgegraph/HalfEdge.h",
+    "include/geos/edgegraph/MarkHalfEdge.h",
+    "include/geos/export.h",
+    "include/geos/geom.h",
+    "include/geos/geom/Coordinate.h",
+    "include/geos/geom/Coordinate.inl",
+    "include/geos/geom/CoordinateArraySequence.h",
+    "include/geos/geom/CoordinateArraySequenceFactory.h",
+    "include/geos/geom/CoordinateArraySequenceFactory.inl",
+    "include/geos/geom/CoordinateFilter.h",
+    "include/geos/geom/CoordinateList.h",
+    "include/geos/geom/CoordinateSequence.h",
+    "include/geos/geom/CoordinateSequenceFactory.h",
+    "include/geos/geom/CoordinateSequenceFilter.h",
+    "include/geos/geom/DefaultCoordinateSequenceFactory.h",
+    "include/geos/geom/Dimension.h",
+    "include/geos/geom/Envelope.h",
+    "include/geos/geom/Envelope.inl",
+    "include/geos/geom/FixedSizeCoordinateSequence.h",
+    "include/geos/geom/Geometry.h",
+    "include/geos/geom/GeometryCollection.h",
+    "include/geos/geom/GeometryCollection.inl",
+    "include/geos/geom/GeometryComponentFilter.h",
+    "include/geos/geom/GeometryFactory.h",
+    "include/geos/geom/GeometryFactory.inl",
+    "include/geos/geom/GeometryFilter.h",
+    "include/geos/geom/HeuristicOverlay.h",
+    "include/geos/geom/IntersectionMatrix.h",
+    "include/geos/geom/LineSegment.h",
+    "include/geos/geom/LineSegment.inl",
+    "include/geos/geom/LineString.h",
+    "include/geos/geom/LinearRing.h",
+    "include/geos/geom/Location.h",
+    "include/geos/geom/MultiLineString.h",
+    "include/geos/geom/MultiLineString.inl",
+    "include/geos/geom/MultiPoint.h",
+    "include/geos/geom/MultiPolygon.h",
+    "include/geos/geom/MultiPolygon.inl",
+    "include/geos/geom/Point.h",
+    "include/geos/geom/Polygon.h",
+    "include/geos/geom/Position.h",
+    "include/geos/geom/PrecisionModel.h",
+    "include/geos/geom/PrecisionModel.inl",
+    "include/geos/geom/Quadrant.h",
+    "include/geos/geom/Quadrant.inl",
+    "include/geos/geom/Triangle.h",
+    "include/geos/geom/prep/AbstractPreparedPolygonContains.h",
+    "include/geos/geom/prep/BasicPreparedGeometry.h",
+    "include/geos/geom/prep/PreparedGeometry.h",
+    "include/geos/geom/prep/PreparedGeometryFactory.h",
+    "include/geos/geom/prep/PreparedLineString.h",
+    "include/geos/geom/prep/PreparedLineStringDistance.h",
+    "include/geos/geom/prep/PreparedLineStringIntersects.h",
+    "include/geos/geom/prep/PreparedLineStringNearestPoints.h",
+    "include/geos/geom/prep/PreparedPoint.h",
+    "include/geos/geom/prep/PreparedPolygon.h",
+    "include/geos/geom/prep/PreparedPolygonContains.h",
+    "include/geos/geom/prep/PreparedPolygonContainsProperly.h",
+    "include/geos/geom/prep/PreparedPolygonCovers.h",
+    "include/geos/geom/prep/PreparedPolygonDistance.h",
+    "include/geos/geom/prep/PreparedPolygonIntersects.h",
+    "include/geos/geom/prep/PreparedPolygonPredicate.h",
+    "include/geos/geom/util/ComponentCoordinateExtracter.h",
+    "include/geos/geom/util/CoordinateOperation.h",
+    "include/geos/geom/util/Densifier.h",
+    "include/geos/geom/util/GeometryCombiner.h",
+    "include/geos/geom/util/GeometryEditor.h",
+    "include/geos/geom/util/GeometryEditorOperation.h",
+    "include/geos/geom/util/GeometryExtracter.h",
+    "include/geos/geom/util/GeometryFixer.h",
+    "include/geos/geom/util/GeometryTransformer.h",
+    "include/geos/geom/util/LinearComponentExtracter.h",
+    "include/geos/geom/util/NoOpGeometryOperation.h",
+    "include/geos/geom/util/PointExtracter.h",
+    "include/geos/geom/util/PolygonExtracter.h",
+    "include/geos/geom/util/ShortCircuitedGeometryVisitor.h",
+    "include/geos/geom/util/SineStarFactory.h",
+    "include/geos/geomgraph/Depth.h",
+    "include/geos/geomgraph/Depth.inl",
+    "include/geos/geomgraph/DirectedEdge.h",
+    "include/geos/geomgraph/DirectedEdge.inl",
+    "include/geos/geomgraph/DirectedEdgeStar.h",
+    "include/geos/geomgraph/Edge.h",
+    "include/geos/geomgraph/EdgeEnd.h",
+    "include/geos/geomgraph/EdgeEndStar.h",
+    "include/geos/geomgraph/EdgeIntersection.h",
+    "include/geos/geomgraph/EdgeIntersectionList.h",
+    "include/geos/geomgraph/EdgeList.h",
+    "include/geos/geomgraph/EdgeNodingValidator.h",
+    "include/geos/geomgraph/EdgeRing.h",
+    "include/geos/geomgraph/GeometryGraph.h",
+    "include/geos/geomgraph/GeometryGraph.inl",
+    "include/geos/geomgraph/GraphComponent.h",
+    "include/geos/geomgraph/Label.h",
+    "include/geos/geomgraph/Label.inl",
+    "include/geos/geomgraph/Node.h",
+    "include/geos/geomgraph/NodeFactory.h",
+    "include/geos/geomgraph/NodeMap.h",
+    "include/geos/geomgraph/PlanarGraph.h",
+    "include/geos/geomgraph/TopologyLocation.h",
+    "include/geos/geomgraph/TopologyLocation.inl",
+    "include/geos/geomgraph/index/EdgeSetIntersector.h",
+    "include/geos/geomgraph/index/MonotoneChain.h",
+    "include/geos/geomgraph/index/MonotoneChainEdge.h",
+    "include/geos/geomgraph/index/MonotoneChainIndexer.h",
+    "include/geos/geomgraph/index/SegmentIntersector.h",
+    "include/geos/geomgraph/index/SegmentIntersector.inl",
+    "include/geos/geomgraph/index/SimpleEdgeSetIntersector.h",
+    "include/geos/geomgraph/index/SimpleMCSweepLineIntersector.h",
+    "include/geos/geomgraph/index/SimpleSweepLineIntersector.h",
+    "include/geos/geomgraph/index/SweepLineEvent.h",
+    "include/geos/geomgraph/index/SweepLineEventObj.h",
+    "include/geos/geomgraph/index/SweepLineSegment.h",
+    "include/geos/index/ItemVisitor.h",
+    "include/geos/index/SpatialIndex.h",
+    "include/geos/index/bintree/Bintree.h",
+    "include/geos/index/bintree/Interval.h",
+    "include/geos/index/bintree/Key.h",
+    "include/geos/index/bintree/Node.h",
+    "include/geos/index/bintree/NodeBase.h",
+    "include/geos/index/bintree/Root.h",
+    "include/geos/index/chain/MonotoneChain.h",
+    "include/geos/index/chain/MonotoneChainBuilder.h",
+    "include/geos/index/chain/MonotoneChainOverlapAction.h",
+    "include/geos/index/chain/MonotoneChainSelectAction.h",
+    "include/geos/index/intervalrtree/IntervalRTreeBranchNode.h",
+    "include/geos/index/intervalrtree/IntervalRTreeLeafNode.h",
+    "include/geos/index/intervalrtree/IntervalRTreeNode.h",
+    "include/geos/index/intervalrtree/SortedPackedIntervalRTree.h",
+    "include/geos/index/kdtree/KdNode.h",
+    "include/geos/index/kdtree/KdNodeVisitor.h",
+    "include/geos/index/kdtree/KdTree.h",
+    "include/geos/index/quadtree/IntervalSize.h",
+    "include/geos/index/quadtree/Key.h",
+    "include/geos/index/quadtree/Node.h",
+    "include/geos/index/quadtree/NodeBase.h",
+    "include/geos/index/quadtree/Quadtree.h",
+    "include/geos/index/quadtree/Root.h",
+    "include/geos/index/strtree/AbstractNode.h",
+    "include/geos/index/strtree/AbstractSTRtree.h",
+    "include/geos/index/strtree/Boundable.h",
+    "include/geos/index/strtree/BoundablePair.h",
+    "include/geos/index/strtree/EnvelopeUtil.h",
+    "include/geos/index/strtree/GeometryItemDistance.h",
+    "include/geos/index/strtree/Interval.h",
+    "include/geos/index/strtree/ItemBoundable.h",
+    "include/geos/index/strtree/ItemDistance.h",
+    "include/geos/index/strtree/SIRtree.h",
+    "include/geos/index/strtree/STRtree.h",
+    "include/geos/index/strtree/SimpleSTRdistance.h",
+    "include/geos/index/strtree/SimpleSTRnode.h",
+    "include/geos/index/strtree/SimpleSTRtree.h",
+    "include/geos/index/strtree/TemplateSTRNode.h",
+    "include/geos/index/strtree/TemplateSTRNodePair.h",
+    "include/geos/index/strtree/TemplateSTRtree.h",
+    "include/geos/index/strtree/TemplateSTRtreeDistance.h",
+    "include/geos/index/sweepline/SweepLineEvent.h",
+    "include/geos/index/sweepline/SweepLineIndex.h",
+    "include/geos/index/sweepline/SweepLineInterval.h",
+    "include/geos/index/sweepline/SweepLineOverlapAction.h",
+    "include/geos/inline.h",
+    "include/geos/io/ByteOrderDataInStream.h",
+    "include/geos/io/ByteOrderDataInStream.inl",
+    "include/geos/io/ByteOrderValues.h",
+    "include/geos/io/CLocalizer.h",
+    "include/geos/io/GeoJSON.h",
+    "include/geos/io/GeoJSONReader.h",
+    "include/geos/io/GeoJSONWriter.h",
+    "include/geos/io/ParseException.h",
+    "include/geos/io/StringTokenizer.h",
+    "include/geos/io/WKBConstants.h",
+    "include/geos/io/WKBReader.h",
+    "include/geos/io/WKBWriter.h",
+    "include/geos/io/WKTReader.h",
+    "include/geos/io/WKTReader.inl",
+    "include/geos/io/WKTWriter.h",
+    "include/geos/io/Writer.h",
+    "include/geos/linearref/ExtractLineByLocation.h",
+    "include/geos/linearref/LengthIndexOfPoint.h",
+    "include/geos/linearref/LengthIndexedLine.h",
+    "include/geos/linearref/LengthLocationMap.h",
+    "include/geos/linearref/LinearGeometryBuilder.h",
+    "include/geos/linearref/LinearIterator.h",
+    "include/geos/linearref/LinearLocation.h",
+    "include/geos/linearref/LocationIndexOfLine.h",
+    "include/geos/linearref/LocationIndexOfPoint.h",
+    "include/geos/linearref/LocationIndexedLine.h",
+    "include/geos/math/DD.h",
+    "include/geos/namespaces.h",
+    "include/geos/noding/BasicSegmentString.h",
+    "include/geos/noding/BasicSegmentString.inl",
+    "include/geos/noding/FastNodingValidator.h",
+    "include/geos/noding/FastSegmentSetIntersectionFinder.h",
+    "include/geos/noding/GeometryNoder.h",
+    "include/geos/noding/IntersectionAdder.h",
+    "include/geos/noding/IntersectionFinderAdder.h",
+    "include/geos/noding/IteratedNoder.h",
+    "include/geos/noding/MCIndexNoder.h",
+    "include/geos/noding/MCIndexNoder.inl",
+    "include/geos/noding/MCIndexSegmentSetMutualIntersector.h",
+    "include/geos/noding/NodableSegmentString.h",
+    "include/geos/noding/NodedSegmentString.h",
+    "include/geos/noding/NodedSegmentString.inl",
+    "include/geos/noding/Noder.h",
+    "include/geos/noding/NodingIntersectionFinder.h",
+    "include/geos/noding/NodingIntersectionFinder.inl",
+    "include/geos/noding/NodingValidator.h",
+    "include/geos/noding/Octant.h",
+    "include/geos/noding/OrientedCoordinateArray.h",
+    "include/geos/noding/ScaledNoder.h",
+    "include/geos/noding/SegmentIntersectionDetector.h",
+    "include/geos/noding/SegmentIntersector.h",
+    "include/geos/noding/SegmentNode.h",
+    "include/geos/noding/SegmentNode.inl",
+    "include/geos/noding/SegmentNodeList.h",
+    "include/geos/noding/SegmentPointComparator.h",
+    "include/geos/noding/SegmentSetMutualIntersector.h",
+    "include/geos/noding/SegmentString.h",
+    "include/geos/noding/SegmentStringUtil.h",
+    "include/geos/noding/SimpleNoder.h",
+    "include/geos/noding/SinglePassNoder.h",
+    "include/geos/noding/ValidatingNoder.h",
+    "include/geos/noding/snap/SnappingIntersectionAdder.h",
+    "include/geos/noding/snap/SnappingNoder.h",
+    "include/geos/noding/snap/SnappingPointIndex.h",
+    "include/geos/noding/snapround/HotPixel.h",
+    "include/geos/noding/snapround/HotPixel.inl",
+    "include/geos/noding/snapround/HotPixelIndex.h",
+    "include/geos/noding/snapround/MCIndexPointSnapper.h",
+    "include/geos/noding/snapround/MCIndexSnapRounder.h",
+    "include/geos/noding/snapround/SnapRoundingIntersectionAdder.h",
+    "include/geos/noding/snapround/SnapRoundingNoder.h",
+    "include/geos/operation/GeometryGraphOperation.h",
+    "include/geos/operation/buffer/BufferBuilder.h",
+    "include/geos/operation/buffer/BufferInputLineSimplifier.h",
+    "include/geos/operation/buffer/BufferOp.h",
+    "include/geos/operation/buffer/BufferParameters.h",
+    "include/geos/operation/buffer/BufferSubgraph.h",
+    "include/geos/operation/buffer/OffsetCurveBuilder.h",
+    "include/geos/operation/buffer/OffsetCurveSetBuilder.h",
+    "include/geos/operation/buffer/OffsetSegmentGenerator.h",
+    "include/geos/operation/buffer/OffsetSegmentString.h",
+    "include/geos/operation/buffer/RightmostEdgeFinder.h",
+    "include/geos/operation/buffer/SubgraphDepthLocater.h",
+    "include/geos/operation/distance/ConnectedElementLocationFilter.h",
+    "include/geos/operation/distance/ConnectedElementPointFilter.h",
+    "include/geos/operation/distance/DistanceOp.h",
+    "include/geos/operation/distance/FacetSequence.h",
+    "include/geos/operation/distance/FacetSequenceTreeBuilder.h",
+    "include/geos/operation/distance/GeometryLocation.h",
+    "include/geos/operation/distance/IndexedFacetDistance.h",
+    "include/geos/operation/intersection/Rectangle.h",
+    "include/geos/operation/intersection/RectangleIntersection.h",
+    "include/geos/operation/intersection/RectangleIntersectionBuilder.h",
+    "include/geos/operation/linemerge/EdgeString.h",
+    "include/geos/operation/linemerge/LineMergeDirectedEdge.h",
+    "include/geos/operation/linemerge/LineMergeEdge.h",
+    "include/geos/operation/linemerge/LineMergeGraph.h",
+    "include/geos/operation/linemerge/LineMerger.h",
+    "include/geos/operation/linemerge/LineSequencer.h",
+    "include/geos/operation/overlay/EdgeSetNoder.h",
+    "include/geos/operation/overlay/ElevationMatrix.h",
+    "include/geos/operation/overlay/ElevationMatrixCell.h",
+    "include/geos/operation/overlay/LineBuilder.h",
+    "include/geos/operation/overlay/MaximalEdgeRing.h",
+    "include/geos/operation/overlay/MinimalEdgeRing.h",
+    "include/geos/operation/overlay/MinimalEdgeRing.inl",
+    "include/geos/operation/overlay/OverlayNodeFactory.h",
+    "include/geos/operation/overlay/OverlayOp.h",
+    "include/geos/operation/overlay/PointBuilder.h",
+    "include/geos/operation/overlay/PolygonBuilder.h",
+    "include/geos/operation/overlay/snap/GeometrySnapper.h",
+    "include/geos/operation/overlay/snap/LineStringSnapper.h",
+    "include/geos/operation/overlay/snap/SnapOverlayOp.h",
+    "include/geos/operation/overlay/validate/FuzzyPointLocator.h",
+    "include/geos/operation/overlay/validate/OffsetPointGenerator.h",
+    "include/geos/operation/overlay/validate/OverlayResultValidator.h",
+    "include/geos/operation/overlayng/Edge.h",
+    "include/geos/operation/overlayng/Edge.inl",
+    "include/geos/operation/overlayng/EdgeKey.h",
+    "include/geos/operation/overlayng/EdgeKey.inl",
+    "include/geos/operation/overlayng/EdgeMerger.h",
+    "include/geos/operation/overlayng/EdgeNodingBuilder.h",
+    "include/geos/operation/overlayng/EdgeSourceInfo.h",
+    "include/geos/operation/overlayng/ElevationModel.h",
+    "include/geos/operation/overlayng/IndexedPointOnLineLocator.h",
+    "include/geos/operation/overlayng/InputGeometry.h",
+    "include/geos/operation/overlayng/IntersectionPointBuilder.h",
+    "include/geos/operation/overlayng/LineBuilder.h",
+    "include/geos/operation/overlayng/LineLimiter.h",
+    "include/geos/operation/overlayng/MaximalEdgeRing.h",
+    "include/geos/operation/overlayng/OverlayEdge.h",
+    "include/geos/operation/overlayng/OverlayEdge.inl",
+    "include/geos/operation/overlayng/OverlayEdgeRing.h",
+    "include/geos/operation/overlayng/OverlayGraph.h",
+    "include/geos/operation/overlayng/OverlayLabel.h",
+    "include/geos/operation/overlayng/OverlayLabel.inl",
+    "include/geos/operation/overlayng/OverlayLabeller.h",
+    "include/geos/operation/overlayng/OverlayMixedPoints.h",
+    "include/geos/operation/overlayng/OverlayNG.h",
+    "include/geos/operation/overlayng/OverlayNGRobust.h",
+    "include/geos/operation/overlayng/OverlayPoints.h",
+    "include/geos/operation/overlayng/OverlayUtil.h",
+    "include/geos/operation/overlayng/PolygonBuilder.h",
+    "include/geos/operation/overlayng/PrecisionReducer.h",
+    "include/geos/operation/overlayng/PrecisionUtil.h",
+    "include/geos/operation/overlayng/RingClipper.h",
+    "include/geos/operation/overlayng/RobustClipEnvelopeComputer.h",
+    "include/geos/operation/overlayng/UnaryUnionNG.h",
+    "include/geos/operation/polygonize/BuildArea.h",
+    "include/geos/operation/polygonize/EdgeRing.h",
+    "include/geos/operation/polygonize/HoleAssigner.h",
+    "include/geos/operation/polygonize/PolygonizeDirectedEdge.h",
+    "include/geos/operation/polygonize/PolygonizeEdge.h",
+    "include/geos/operation/polygonize/PolygonizeGraph.h",
+    "include/geos/operation/polygonize/Polygonizer.h",
+    "include/geos/operation/predicate/RectangleContains.h",
+    "include/geos/operation/predicate/RectangleIntersects.h",
+    "include/geos/operation/predicate/SegmentIntersectionTester.h",
+    "include/geos/operation/relate/EdgeEndBuilder.h",
+    "include/geos/operation/relate/EdgeEndBundle.h",
+    "include/geos/operation/relate/EdgeEndBundleStar.h",
+    "include/geos/operation/relate/RelateComputer.h",
+    "include/geos/operation/relate/RelateNode.h",
+    "include/geos/operation/relate/RelateNodeFactory.h",
+    "include/geos/operation/relate/RelateNodeGraph.h",
+    "include/geos/operation/relate/RelateOp.h",
+    "include/geos/operation/sharedpaths/SharedPathsOp.h",
+    "include/geos/operation/union/CascadedPolygonUnion.h",
+    "include/geos/operation/union/CoverageUnion.h",
+    "include/geos/operation/union/OverlapUnion.h",
+    "include/geos/operation/union/PointGeometryUnion.h",
+    "include/geos/operation/union/UnaryUnionOp.h",
+    "include/geos/operation/union/UnionStrategy.h",
+    "include/geos/operation/valid/ConnectedInteriorTester.h",
+    "include/geos/operation/valid/ConsistentAreaTester.h",
+    "include/geos/operation/valid/IndexedNestedHoleTester.h",
+    "include/geos/operation/valid/IndexedNestedPolygonTester.h",
+    "include/geos/operation/valid/IsSimpleOp.h",
+    "include/geos/operation/valid/IsValidOp.h",
+    "include/geos/operation/valid/MakeValid.h",
+    "include/geos/operation/valid/PolygonIntersectionAnalyzer.h",
+    "include/geos/operation/valid/PolygonNode.h",
+    "include/geos/operation/valid/PolygonRing.h",
+    "include/geos/operation/valid/PolygonRingSelfNode.h",
+    "include/geos/operation/valid/PolygonRingTouch.h",
+    "include/geos/operation/valid/PolygonTopologyAnalyzer.h",
+    "include/geos/operation/valid/RepeatedPointRemover.h",
+    "include/geos/operation/valid/RepeatedPointTester.h",
+    "include/geos/operation/valid/TopologyValidationError.h",
+    "include/geos/planargraph/DirectedEdge.h",
+    "include/geos/planargraph/DirectedEdgeStar.h",
+    "include/geos/planargraph/Edge.h",
+    "include/geos/planargraph/GraphComponent.h",
+    "include/geos/planargraph/Node.h",
+    "include/geos/planargraph/NodeMap.h",
+    "include/geos/planargraph/PlanarGraph.h",
+    "include/geos/planargraph/Subgraph.h",
+    "include/geos/planargraph/algorithm/ConnectedSubgraphFinder.h",
+    "include/geos/precision/CommonBits.h",
+    "include/geos/precision/CommonBitsOp.h",
+    "include/geos/precision/CommonBitsRemover.h",
+    "include/geos/precision/EnhancedPrecisionOp.h",
+    "include/geos/precision/GeometryPrecisionReducer.h",
+    "include/geos/precision/MinimumClearance.h",
+    "include/geos/precision/PointwisePrecisionReducerTransformer.h",
+    "include/geos/precision/PrecisionReducerCoordinateOperation.h",
+    "include/geos/precision/PrecisionReducerTransformer.h",
+    "include/geos/precision/SimpleGeometryPrecisionReducer.h",
+    "include/geos/profiler.h",
+    "include/geos/shape/fractal/HilbertCode.h",
+    "include/geos/shape/fractal/HilbertEncoder.h",
+    "include/geos/shape/fractal/MortonCode.h",
+    "include/geos/simplify/DouglasPeuckerLineSimplifier.h",
+    "include/geos/simplify/DouglasPeuckerSimplifier.h",
+    "include/geos/simplify/LineSegmentIndex.h",
+    "include/geos/simplify/TaggedLineSegment.h",
+    "include/geos/simplify/TaggedLineString.h",
+    "include/geos/simplify/TaggedLineStringSimplifier.h",
+    "include/geos/simplify/TaggedLinesSimplifier.h",
+    "include/geos/simplify/TopologyPreservingSimplifier.h",
+    "include/geos/triangulate/DelaunayTriangulationBuilder.h",
+    "include/geos/triangulate/IncrementalDelaunayTriangulator.h",
+    "include/geos/triangulate/VoronoiDiagramBuilder.h",
+    "include/geos/triangulate/polygon/ConstrainedDelaunayTriangulator.h",
+    "include/geos/triangulate/polygon/PolygonEarClipper.h",
+    "include/geos/triangulate/polygon/PolygonHoleJoiner.h",
+    "include/geos/triangulate/polygon/PolygonTriangulator.h",
+    "include/geos/triangulate/polygon/TriDelaunayImprover.h",
+    "include/geos/triangulate/polygon/VertexSequencePackedRtree.h",
+    "include/geos/triangulate/quadedge/LastFoundQuadEdgeLocator.h",
+    "include/geos/triangulate/quadedge/LocateFailureException.h",
+    "include/geos/triangulate/quadedge/QuadEdge.h",
+    "include/geos/triangulate/quadedge/QuadEdgeLocator.h",
+    "include/geos/triangulate/quadedge/QuadEdgeQuartet.h",
+    "include/geos/triangulate/quadedge/QuadEdgeSubdivision.h",
+    "include/geos/triangulate/quadedge/TrianglePredicate.h",
+    "include/geos/triangulate/quadedge/TriangleVisitor.h",
+    "include/geos/triangulate/quadedge/Vertex.h",
+    "include/geos/triangulate/tri/Tri.h",
+    "include/geos/triangulate/tri/TriEdge.h",
+    "include/geos/triangulate/tri/TriList.h",
+    "include/geos/triangulate/tri/TriangulationBuilder.h",
+    "include/geos/unload.h",
+    "include/geos/util.h",
+    "include/geos/util/Assert.h",
+    "include/geos/util/AssertionFailedException.h",
+    "include/geos/util/CoordinateArrayFilter.h",
+    "include/geos/util/GEOSException.h",
+    "include/geos/util/GeometricShapeFactory.h",
+    "include/geos/util/IllegalArgumentException.h",
+    "include/geos/util/IllegalStateException.h",
+    "include/geos/util/Interrupt.h",
+    "include/geos/util/Machine.h",
+    "include/geos/util/TopologyException.h",
+    "include/geos/util/UniqueCoordinateArrayFilter.h",
+    "include/geos/util/UnsupportedOperationException.h",
+    "include/geos/util/math.h",
+    "include/geos/version.h",
+    "include/geos_c.h",
+    "lib/cmake/GEOS/geos-config-version.cmake",
+    "lib/cmake/GEOS/geos-config.cmake",
+    "lib/cmake/GEOS/geos-targets-release.cmake",
+    "lib/cmake/GEOS/geos-targets.cmake",
+    "lib/libgeos.3.10.1.dylib",
+    "lib/libgeos.dylib",
+    "lib/libgeos_c.1.16.0.dylib",
+    "lib/libgeos_c.1.dylib",
+    "lib/libgeos_c.dylib",
+    "lib/pkgconfig/geos.pc"
+  ],
+  "fn": "geos-3.10.1-hbdafb3b_1.tar.bz2",
+  "license": "LGPL-2.1-only",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/geos-3.10.1-hbdafb3b_1",
+    "type": 1
+  },
+  "md5": "15e1ba9b963ebc1d561ec8f07e2426d1",
+  "name": "geos",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/geos-3.10.1-hbdafb3b_1.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/geos-config",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/geos_1637034168373/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "12417c60ade325507cae78f2883a475b287fd50807d845a57efd4178c93596b9",
+        "sha256_in_prefix": "d434a47011cfd1c80843c655dc494984d4fc8afa68cc56e5175183db00d18328",
+        "size_in_bytes": 1516
+      },
+      {
+        "_path": "bin/geosop",
+        "path_type": "hardlink",
+        "sha256": "20444632efc04ceba8b939089f409dff8b58ab8b7e28da5c13af32eb48ad44dc",
+        "sha256_in_prefix": "20444632efc04ceba8b939089f409dff8b58ab8b7e28da5c13af32eb48ad44dc",
+        "size_in_bytes": 532784
+      },
+      {
+        "_path": "include/geos/algorithm/Angle.h",
+        "path_type": "hardlink",
+        "sha256": "ee0fee57439b84e33858ee1527a3b8638554ec13ecf5945bc1fc8e8e6a5f73eb",
+        "sha256_in_prefix": "ee0fee57439b84e33858ee1527a3b8638554ec13ecf5945bc1fc8e8e6a5f73eb",
+        "size_in_bytes": 7638
+      },
+      {
+        "_path": "include/geos/algorithm/Area.h",
+        "path_type": "hardlink",
+        "sha256": "257023317d56130d7e23b61b7a14e806ab2fbfc9d652c922afad29d7648fb918",
+        "sha256_in_prefix": "257023317d56130d7e23b61b7a14e806ab2fbfc9d652c922afad29d7648fb918",
+        "size_in_bytes": 2182
+      },
+      {
+        "_path": "include/geos/algorithm/BoundaryNodeRule.h",
+        "path_type": "hardlink",
+        "sha256": "6a6f4a12f2f7f2c1d6d7688a89bde31b3ced80c0698fc6b3a96a621032ba2528",
+        "sha256_in_prefix": "6a6f4a12f2f7f2c1d6d7688a89bde31b3ced80c0698fc6b3a96a621032ba2528",
+        "size_in_bytes": 5515
+      },
+      {
+        "_path": "include/geos/algorithm/CGAlgorithmsDD.h",
+        "path_type": "hardlink",
+        "sha256": "4b6d843c001c6715434fa51ec53553d4c57ebd7c00bf7bce86be7f545533776b",
+        "sha256_in_prefix": "4b6d843c001c6715434fa51ec53553d4c57ebd7c00bf7bce86be7f545533776b",
+        "size_in_bytes": 5382
+      },
+      {
+        "_path": "include/geos/algorithm/CGAlgorithmsDD.inl",
+        "path_type": "hardlink",
+        "sha256": "3b988fa04143449f4ab0a661d988cbd46144c0158e19086658910b0173e50abb",
+        "sha256_in_prefix": "3b988fa04143449f4ab0a661d988cbd46144c0158e19086658910b0173e50abb",
+        "size_in_bytes": 1923
+      },
+      {
+        "_path": "include/geos/algorithm/CentralEndpointIntersector.h",
+        "path_type": "hardlink",
+        "sha256": "cfddc51a187f023ebe5b514f0ef8b6800e9700360da0d458c64747eb92f4aa1b",
+        "sha256_in_prefix": "cfddc51a187f023ebe5b514f0ef8b6800e9700360da0d458c64747eb92f4aa1b",
+        "size_in_bytes": 4528
+      },
+      {
+        "_path": "include/geos/algorithm/Centroid.h",
+        "path_type": "hardlink",
+        "sha256": "0688c2f9e96131b6d3b50cad92e249a7483d51151eb62e0765055e5d2335a3a0",
+        "sha256_in_prefix": "0688c2f9e96131b6d3b50cad92e249a7483d51151eb62e0765055e5d2335a3a0",
+        "size_in_bytes": 4771
+      },
+      {
+        "_path": "include/geos/algorithm/ConvexHull.h",
+        "path_type": "hardlink",
+        "sha256": "7e186d2443af0de82b3cf43de77427173f2d687a7df478d859a463480d7f6246",
+        "sha256_in_prefix": "7e186d2443af0de82b3cf43de77427173f2d687a7df478d859a463480d7f6246",
+        "size_in_bytes": 6182
+      },
+      {
+        "_path": "include/geos/algorithm/ConvexHull.inl",
+        "path_type": "hardlink",
+        "sha256": "e85108189ab46ee93f9980d3a3092f9c0b49c113fc4928f42bcfe93c457aacb5",
+        "sha256_in_prefix": "e85108189ab46ee93f9980d3a3092f9c0b49c113fc4928f42bcfe93c457aacb5",
+        "size_in_bytes": 1353
+      },
+      {
+        "_path": "include/geos/algorithm/Distance.h",
+        "path_type": "hardlink",
+        "sha256": "ad9bccb6f4943381d14120823dd37e99d4df35027a90568af5451cc1e9ef743a",
+        "sha256_in_prefix": "ad9bccb6f4943381d14120823dd37e99d4df35027a90568af5451cc1e9ef743a",
+        "size_in_bytes": 3448
+      },
+      {
+        "_path": "include/geos/algorithm/HCoordinate.h",
+        "path_type": "hardlink",
+        "sha256": "9ab2e3158bab5ee3ea3c1b065f90be1b6b8dbc74c82ebdf667985cc80aeecce9",
+        "sha256_in_prefix": "9ab2e3158bab5ee3ea3c1b065f90be1b6b8dbc74c82ebdf667985cc80aeecce9",
+        "size_in_bytes": 2973
+      },
+      {
+        "_path": "include/geos/algorithm/InteriorPointArea.h",
+        "path_type": "hardlink",
+        "sha256": "099ad29b0d6d207d3c755f530fad2ac38cef3850601fb5ac4a2063031171b74e",
+        "sha256_in_prefix": "099ad29b0d6d207d3c755f530fad2ac38cef3850601fb5ac4a2063031171b74e",
+        "size_in_bytes": 3394
+      },
+      {
+        "_path": "include/geos/algorithm/InteriorPointLine.h",
+        "path_type": "hardlink",
+        "sha256": "ecd332b959d7796369670c299124c248e2834fb159917c3e00b2dae3ca70b01a",
+        "sha256_in_prefix": "ecd332b959d7796369670c299124c248e2834fb159917c3e00b2dae3ca70b01a",
+        "size_in_bytes": 1969
+      },
+      {
+        "_path": "include/geos/algorithm/InteriorPointPoint.h",
+        "path_type": "hardlink",
+        "sha256": "60899168a6761f6bc0cf2fc8da8dad376ef72642b82ec08c04a37d193eeec28d",
+        "sha256_in_prefix": "60899168a6761f6bc0cf2fc8da8dad376ef72642b82ec08c04a37d193eeec28d",
+        "size_in_bytes": 1712
+      },
+      {
+        "_path": "include/geos/algorithm/Intersection.h",
+        "path_type": "hardlink",
+        "sha256": "a1a98682d8ed1b86d207eb9d1f8818e95d37024328d838a08be2c72b13af35b3",
+        "sha256_in_prefix": "a1a98682d8ed1b86d207eb9d1f8818e95d37024328d838a08be2c72b13af35b3",
+        "size_in_bytes": 1928
+      },
+      {
+        "_path": "include/geos/algorithm/Length.h",
+        "path_type": "hardlink",
+        "sha256": "77cd5cda29f20d01b1cba7698dba54e6657b1bd9dc50d5c50022293a2c892eae",
+        "sha256_in_prefix": "77cd5cda29f20d01b1cba7698dba54e6657b1bd9dc50d5c50022293a2c892eae",
+        "size_in_bytes": 1322
+      },
+      {
+        "_path": "include/geos/algorithm/LineIntersector.h",
+        "path_type": "hardlink",
+        "sha256": "ba77e8e7699728f79240f59b0bb64cfb56628616a199254630e9cff1085dcf2b",
+        "sha256_in_prefix": "ba77e8e7699728f79240f59b0bb64cfb56628616a199254630e9cff1085dcf2b",
+        "size_in_bytes": 14388
+      },
+      {
+        "_path": "include/geos/algorithm/LineIntersector.inl",
+        "path_type": "hardlink",
+        "sha256": "257d3d14f3ac8cda278557ca5fc56299e1471705ba12008dee6918d8b7f28377",
+        "sha256_in_prefix": "257d3d14f3ac8cda278557ca5fc56299e1471705ba12008dee6918d8b7f28377",
+        "size_in_bytes": 3224
+      },
+      {
+        "_path": "include/geos/algorithm/MinimumBoundingCircle.h",
+        "path_type": "hardlink",
+        "sha256": "a372f710105d77c596ac830a8136dd30d851ad37817d7931facd6f5ba5aca11c",
+        "sha256_in_prefix": "a372f710105d77c596ac830a8136dd30d851ad37817d7931facd6f5ba5aca11c",
+        "size_in_bytes": 4277
+      },
+      {
+        "_path": "include/geos/algorithm/MinimumDiameter.h",
+        "path_type": "hardlink",
+        "sha256": "b54d84ce6d5d0956df81312c5c33bad189090f8bd6cde49f9864ca2d777f7e2f",
+        "sha256_in_prefix": "b54d84ce6d5d0956df81312c5c33bad189090f8bd6cde49f9864ca2d777f7e2f",
+        "size_in_bytes": 5787
+      },
+      {
+        "_path": "include/geos/algorithm/NotRepresentableException.h",
+        "path_type": "hardlink",
+        "sha256": "01afab2707894439488e258aa6e122d98182645eb7ca6e84274965a79872fc94",
+        "sha256_in_prefix": "01afab2707894439488e258aa6e122d98182645eb7ca6e84274965a79872fc94",
+        "size_in_bytes": 1259
+      },
+      {
+        "_path": "include/geos/algorithm/Orientation.h",
+        "path_type": "hardlink",
+        "sha256": "9753363d6a17ab160c0c6c7492983383ebddb9ebcee7d346e54ab2d4c5a5247b",
+        "sha256_in_prefix": "9753363d6a17ab160c0c6c7492983383ebddb9ebcee7d346e54ab2d4c5a5247b",
+        "size_in_bytes": 4649
+      },
+      {
+        "_path": "include/geos/algorithm/PointInRing.h",
+        "path_type": "hardlink",
+        "sha256": "3dcc43856c995f6742e0f155bd1cb1cc2b0017ef73bd0e84878c4df7053d064b",
+        "sha256_in_prefix": "3dcc43856c995f6742e0f155bd1cb1cc2b0017ef73bd0e84878c4df7053d064b",
+        "size_in_bytes": 977
+      },
+      {
+        "_path": "include/geos/algorithm/PointLocation.h",
+        "path_type": "hardlink",
+        "sha256": "15ec2b193856b105af17d8b7bd45928b4f52c286976e5d2bb89aac1fb8f93376",
+        "sha256_in_prefix": "15ec2b193856b105af17d8b7bd45928b4f52c286976e5d2bb89aac1fb8f93376",
+        "size_in_bytes": 3219
+      },
+      {
+        "_path": "include/geos/algorithm/PointLocator.h",
+        "path_type": "hardlink",
+        "sha256": "6a4606247b5f1eb61ed356bc296001da37a5ce615c665ade1800f3bd28466a5a",
+        "sha256_in_prefix": "6a4606247b5f1eb61ed356bc296001da37a5ce615c665ade1800f3bd28466a5a",
+        "size_in_bytes": 3218
+      },
+      {
+        "_path": "include/geos/algorithm/RayCrossingCounter.h",
+        "path_type": "hardlink",
+        "sha256": "f0b14b549fc2fcf25ae05fa93e1fb8aebcb48cc8cfb3ce722b9e9de15acc667c",
+        "sha256_in_prefix": "f0b14b549fc2fcf25ae05fa93e1fb8aebcb48cc8cfb3ce722b9e9de15acc667c",
+        "size_in_bytes": 4925
+      },
+      {
+        "_path": "include/geos/algorithm/RayCrossingCounterDD.h",
+        "path_type": "hardlink",
+        "sha256": "0d3d94fc96fd729f72f0240a04f0cf11f63059741e8bbbdca665532c2da2d4b4",
+        "sha256_in_prefix": "0d3d94fc96fd729f72f0240a04f0cf11f63059741e8bbbdca665532c2da2d4b4",
+        "size_in_bytes": 5535
+      },
+      {
+        "_path": "include/geos/algorithm/RobustDeterminant.h",
+        "path_type": "hardlink",
+        "sha256": "bfff65088f48097169f57c6da86c60e9ba19c7527d354e08a99c6418868b7cbd",
+        "sha256_in_prefix": "bfff65088f48097169f57c6da86c60e9ba19c7527d354e08a99c6418868b7cbd",
+        "size_in_bytes": 2246
+      },
+      {
+        "_path": "include/geos/algorithm/SimplePointInRing.h",
+        "path_type": "hardlink",
+        "sha256": "93662370322cfe4b7084bf64febb29035470728bb0f21db6fc1f4843da7c58e7",
+        "sha256_in_prefix": "93662370322cfe4b7084bf64febb29035470728bb0f21db6fc1f4843da7c58e7",
+        "size_in_bytes": 1261
+      },
+      {
+        "_path": "include/geos/algorithm/construct/LargestEmptyCircle.h",
+        "path_type": "hardlink",
+        "sha256": "773ab9ba070c3e3c4a057071cdcf00393ff8472278836857d5f4c0b71f6c8545",
+        "sha256_in_prefix": "773ab9ba070c3e3c4a057071cdcf00393ff8472278836857d5f4c0b71f6c8545",
+        "size_in_bytes": 7088
+      },
+      {
+        "_path": "include/geos/algorithm/construct/MaximumInscribedCircle.h",
+        "path_type": "hardlink",
+        "sha256": "01d5cbbdcb9cf347fa21ab70c3f5a15fd5649b362fa7cc2b7e38c6513374ec5b",
+        "sha256_in_prefix": "01d5cbbdcb9cf347fa21ab70c3f5a15fd5649b362fa7cc2b7e38c6513374ec5b",
+        "size_in_bytes": 5757
+      },
+      {
+        "_path": "include/geos/algorithm/distance/DiscreteFrechetDistance.h",
+        "path_type": "hardlink",
+        "sha256": "5bbc29c51bdfffb09d87372b0d52cdd95e53d1f376037adb441fe031a80ac189",
+        "sha256_in_prefix": "5bbc29c51bdfffb09d87372b0d52cdd95e53d1f376037adb441fe031a80ac189",
+        "size_in_bytes": 5563
+      },
+      {
+        "_path": "include/geos/algorithm/distance/DiscreteHausdorffDistance.h",
+        "path_type": "hardlink",
+        "sha256": "3459d64c92fa37d9e8eb1ba9a37be5b3fa1b0474f75a5eb142eae244b758b139",
+        "sha256_in_prefix": "3459d64c92fa37d9e8eb1ba9a37be5b3fa1b0474f75a5eb142eae244b758b139",
+        "size_in_bytes": 7662
+      },
+      {
+        "_path": "include/geos/algorithm/distance/DistanceToPoint.h",
+        "path_type": "hardlink",
+        "sha256": "eeb42071fdefa327ca552efcf5c66e5825e1c8639b847d2e1eb095597946d15a",
+        "sha256_in_prefix": "eeb42071fdefa327ca552efcf5c66e5825e1c8639b847d2e1eb095597946d15a",
+        "size_in_bytes": 2140
+      },
+      {
+        "_path": "include/geos/algorithm/distance/PointPairDistance.h",
+        "path_type": "hardlink",
+        "sha256": "925d463a8da8af4919ad40c62dfc414750ce2bde57e849fd18218beea87988d6",
+        "sha256_in_prefix": "925d463a8da8af4919ad40c62dfc414750ce2bde57e849fd18218beea87988d6",
+        "size_in_bytes": 3433
+      },
+      {
+        "_path": "include/geos/algorithm/locate/IndexedPointInAreaLocator.h",
+        "path_type": "hardlink",
+        "sha256": "885c99312e9b9fd5ce80f12ad19d5218461775eb8d199a3fbca8364357903209",
+        "sha256_in_prefix": "885c99312e9b9fd5ce80f12ad19d5218461775eb8d199a3fbca8364357903209",
+        "size_in_bytes": 3946
+      },
+      {
+        "_path": "include/geos/algorithm/locate/PointOnGeometryLocator.h",
+        "path_type": "hardlink",
+        "sha256": "5926d05b411bc767f19486e922c40698ec74c452dc2cd21930e36e68471ac29c",
+        "sha256_in_prefix": "5926d05b411bc767f19486e922c40698ec74c452dc2cd21930e36e68471ac29c",
+        "size_in_bytes": 1561
+      },
+      {
+        "_path": "include/geos/algorithm/locate/SimplePointInAreaLocator.h",
+        "path_type": "hardlink",
+        "sha256": "d7674a25cf397fd6fb244361d6e5c8c62fe2f0997f0f22ec6813577265dbd175",
+        "sha256_in_prefix": "d7674a25cf397fd6fb244361d6e5c8c62fe2f0997f0f22ec6813577265dbd175",
+        "size_in_bytes": 3517
+      },
+      {
+        "_path": "include/geos/constants.h",
+        "path_type": "hardlink",
+        "sha256": "24cad230ab748916f6efb09f7c3234e6781df609102d9e870cbfdfc3a3b7dd9f",
+        "sha256_in_prefix": "24cad230ab748916f6efb09f7c3234e6781df609102d9e870cbfdfc3a3b7dd9f",
+        "size_in_bytes": 1286
+      },
+      {
+        "_path": "include/geos/edgegraph/EdgeGraph.h",
+        "path_type": "hardlink",
+        "sha256": "7e0d723ffaa3b7846d8b7c8b1f2ef7b9c22ce2cecc9e266c47687d0cff133398",
+        "sha256_in_prefix": "7e0d723ffaa3b7846d8b7c8b1f2ef7b9c22ce2cecc9e266c47687d0cff133398",
+        "size_in_bytes": 3490
+      },
+      {
+        "_path": "include/geos/edgegraph/EdgeGraphBuilder.h",
+        "path_type": "hardlink",
+        "sha256": "3915a7abf8d1148d69d21ee811e0f69201a0fb13acb9feb7a856211c36958199",
+        "sha256_in_prefix": "3915a7abf8d1148d69d21ee811e0f69201a0fb13acb9feb7a856211c36958199",
+        "size_in_bytes": 1904
+      },
+      {
+        "_path": "include/geos/edgegraph/HalfEdge.h",
+        "path_type": "hardlink",
+        "sha256": "c2f7002ff8a0ed744772905733a5bcb94b5658603f52ade32b0feae2d9990790",
+        "sha256_in_prefix": "c2f7002ff8a0ed744772905733a5bcb94b5658603f52ade32b0feae2d9990790",
+        "size_in_bytes": 9200
+      },
+      {
+        "_path": "include/geos/edgegraph/MarkHalfEdge.h",
+        "path_type": "hardlink",
+        "sha256": "71a3dd3be7cf5db62e956d7eb5c61cbd26b27ce5fc255ec59248223953ec7537",
+        "sha256_in_prefix": "71a3dd3be7cf5db62e956d7eb5c61cbd26b27ce5fc255ec59248223953ec7537",
+        "size_in_bytes": 2402
+      },
+      {
+        "_path": "include/geos/export.h",
+        "path_type": "hardlink",
+        "sha256": "b4aa649c934fac4479a380df2f83472c2d425295f93189c278e6608e9c510065",
+        "sha256_in_prefix": "b4aa649c934fac4479a380df2f83472c2d425295f93189c278e6608e9c510065",
+        "size_in_bytes": 1057
+      },
+      {
+        "_path": "include/geos/geom.h",
+        "path_type": "hardlink",
+        "sha256": "d4e664b2d98748a235e52307beea6dd18c39f39fd63b6621c3a0d0fc6dc40d21",
+        "sha256_in_prefix": "d4e664b2d98748a235e52307beea6dd18c39f39fd63b6621c3a0d0fc6dc40d21",
+        "size_in_bytes": 5043
+      },
+      {
+        "_path": "include/geos/geom/Coordinate.h",
+        "path_type": "hardlink",
+        "sha256": "097122f2ec42e3252d9ba7d6e2698c9daab74604b050c432c37244105b9b75ff",
+        "sha256_in_prefix": "097122f2ec42e3252d9ba7d6e2698c9daab74604b050c432c37244105b9b75ff",
+        "size_in_bytes": 4432
+      },
+      {
+        "_path": "include/geos/geom/Coordinate.inl",
+        "path_type": "hardlink",
+        "sha256": "8ed67e0f4a64760ad4e10245efabd206b269c9b1c23daef1aea44ac94484ea9f",
+        "sha256_in_prefix": "8ed67e0f4a64760ad4e10245efabd206b269c9b1c23daef1aea44ac94484ea9f",
+        "size_in_bytes": 3447
+      },
+      {
+        "_path": "include/geos/geom/CoordinateArraySequence.h",
+        "path_type": "hardlink",
+        "sha256": "6874aa9a53b008a5250d94d44588581bd73e1568445f8e64b5e4193e69342b0a",
+        "sha256_in_prefix": "6874aa9a53b008a5250d94d44588581bd73e1568445f8e64b5e4193e69342b0a",
+        "size_in_bytes": 3980
+      },
+      {
+        "_path": "include/geos/geom/CoordinateArraySequenceFactory.h",
+        "path_type": "hardlink",
+        "sha256": "442875b5702e821dae35fd997deec2430a37cbf02e0fc7ec6f58145c6ce1131b",
+        "sha256_in_prefix": "442875b5702e821dae35fd997deec2430a37cbf02e0fc7ec6f58145c6ce1131b",
+        "size_in_bytes": 2157
+      },
+      {
+        "_path": "include/geos/geom/CoordinateArraySequenceFactory.inl",
+        "path_type": "hardlink",
+        "sha256": "6017c5c8d86594feb7cf0d1f4c9fed0fa1ec3afeb3cf8d68f962f2a7551ab85f",
+        "sha256_in_prefix": "6017c5c8d86594feb7cf0d1f4c9fed0fa1ec3afeb3cf8d68f962f2a7551ab85f",
+        "size_in_bytes": 1887
+      },
+      {
+        "_path": "include/geos/geom/CoordinateFilter.h",
+        "path_type": "hardlink",
+        "sha256": "6443267f7e221ad591c34ffea61f2e495726a649eb9a4b5339c150a1e90ecb2d",
+        "sha256_in_prefix": "6443267f7e221ad591c34ffea61f2e495726a649eb9a4b5339c150a1e90ecb2d",
+        "size_in_bytes": 2058
+      },
+      {
+        "_path": "include/geos/geom/CoordinateList.h",
+        "path_type": "hardlink",
+        "sha256": "f0802af69b8912694a057bc8ed27b42251eb9f09feb08a1a9e70512d044fdf53",
+        "sha256_in_prefix": "f0802af69b8912694a057bc8ed27b42251eb9f09feb08a1a9e70512d044fdf53",
+        "size_in_bytes": 4822
+      },
+      {
+        "_path": "include/geos/geom/CoordinateSequence.h",
+        "path_type": "hardlink",
+        "sha256": "091190a6c6737497aab7bb01a79876c23543d09fbf9e554407452fd5175346b8",
+        "sha256_in_prefix": "091190a6c6737497aab7bb01a79876c23543d09fbf9e554407452fd5175346b8",
+        "size_in_bytes": 9744
+      },
+      {
+        "_path": "include/geos/geom/CoordinateSequenceFactory.h",
+        "path_type": "hardlink",
+        "sha256": "d71af74b67380c481799fc89097d385f0956565dfb571aa87feddbccbaa5eb45",
+        "sha256_in_prefix": "d71af74b67380c481799fc89097d385f0956565dfb571aa87feddbccbaa5eb45",
+        "size_in_bytes": 3664
+      },
+      {
+        "_path": "include/geos/geom/CoordinateSequenceFilter.h",
+        "path_type": "hardlink",
+        "sha256": "1a5402ad2cad31f929b46c24a0ea2e8b120ef701aec889d868c7b021882f4c34",
+        "sha256_in_prefix": "1a5402ad2cad31f929b46c24a0ea2e8b120ef701aec889d868c7b021882f4c34",
+        "size_in_bytes": 3585
+      },
+      {
+        "_path": "include/geos/geom/DefaultCoordinateSequenceFactory.h",
+        "path_type": "hardlink",
+        "sha256": "fc82a6f98cc17e3edb1c38a4c9bd0198d7fdf840ae68d89aea769cb6d8e87296",
+        "sha256_in_prefix": "fc82a6f98cc17e3edb1c38a4c9bd0198d7fdf840ae68d89aea769cb6d8e87296",
+        "size_in_bytes": 2532
+      },
+      {
+        "_path": "include/geos/geom/Dimension.h",
+        "path_type": "hardlink",
+        "sha256": "80cbde2c28cf5fba081d615321ac35ad6ac7da1a7f12184b68143781594c1adc",
+        "sha256_in_prefix": "80cbde2c28cf5fba081d615321ac35ad6ac7da1a7f12184b68143781594c1adc",
+        "size_in_bytes": 2125
+      },
+      {
+        "_path": "include/geos/geom/Envelope.h",
+        "path_type": "hardlink",
+        "sha256": "36fa2e29df0fb0d6d0c2525b8a695d5f01f368f8479d0baf73f80e09f1174c54",
+        "sha256_in_prefix": "36fa2e29df0fb0d6d0c2525b8a695d5f01f368f8479d0baf73f80e09f1174c54",
+        "size_in_bytes": 16487
+      },
+      {
+        "_path": "include/geos/geom/Envelope.inl",
+        "path_type": "hardlink",
+        "sha256": "4c1560f26ffcd4de163da3812eae7964f8422e7e229086d38d41de6edcbc093b",
+        "sha256_in_prefix": "4c1560f26ffcd4de163da3812eae7964f8422e7e229086d38d41de6edcbc093b",
+        "size_in_bytes": 7318
+      },
+      {
+        "_path": "include/geos/geom/FixedSizeCoordinateSequence.h",
+        "path_type": "hardlink",
+        "sha256": "c0aa814803f1db891be17f336d36e48a44adf23f79e1ba447d193f24ff46adff",
+        "sha256_in_prefix": "c0aa814803f1db891be17f336d36e48a44adf23f79e1ba447d193f24ff46adff",
+        "size_in_bytes": 3910
+      },
+      {
+        "_path": "include/geos/geom/Geometry.h",
+        "path_type": "hardlink",
+        "sha256": "bd4c5f7f0d1bbd4cd2a9b4b8731562841f5fe7358e7616d9b1ef2d1ae9170ec8",
+        "sha256_in_prefix": "bd4c5f7f0d1bbd4cd2a9b4b8731562841f5fe7358e7616d9b1ef2d1ae9170ec8",
+        "size_in_bytes": 33966
+      },
+      {
+        "_path": "include/geos/geom/GeometryCollection.h",
+        "path_type": "hardlink",
+        "sha256": "26d4885d73a5ccc3e775e5c5cb1a0262f7ddc8b9590ecd537da0986455636a18",
+        "sha256_in_prefix": "26d4885d73a5ccc3e775e5c5cb1a0262f7ddc8b9590ecd537da0986455636a18",
+        "size_in_bytes": 7457
+      },
+      {
+        "_path": "include/geos/geom/GeometryCollection.inl",
+        "path_type": "hardlink",
+        "sha256": "0780c482b8c480992e98e60b8d080f429e2e5bcb0be16bd02d756708124d4a0e",
+        "sha256_in_prefix": "0780c482b8c480992e98e60b8d080f429e2e5bcb0be16bd02d756708124d4a0e",
+        "size_in_bytes": 1109
+      },
+      {
+        "_path": "include/geos/geom/GeometryComponentFilter.h",
+        "path_type": "hardlink",
+        "sha256": "1fec6d232790ecda543c32a6b27f29dbffe2cc1b63a20b3a33fdae30cd7e4c88",
+        "sha256_in_prefix": "1fec6d232790ecda543c32a6b27f29dbffe2cc1b63a20b3a33fdae30cd7e4c88",
+        "size_in_bytes": 1801
+      },
+      {
+        "_path": "include/geos/geom/GeometryFactory.h",
+        "path_type": "hardlink",
+        "sha256": "b89c8b838306ba46b3cd37c0beb79e923c8faa960c6e34fdd3ceb4d90baa6aca",
+        "sha256_in_prefix": "b89c8b838306ba46b3cd37c0beb79e923c8faa960c6e34fdd3ceb4d90baa6aca",
+        "size_in_bytes": 18599
+      },
+      {
+        "_path": "include/geos/geom/GeometryFactory.inl",
+        "path_type": "hardlink",
+        "sha256": "5656b69b03af035c0cbf055212a462222ac7b8390413a5d4f6ed4c3cc269d65c",
+        "sha256_in_prefix": "5656b69b03af035c0cbf055212a462222ac7b8390413a5d4f6ed4c3cc269d65c",
+        "size_in_bytes": 1375
+      },
+      {
+        "_path": "include/geos/geom/GeometryFilter.h",
+        "path_type": "hardlink",
+        "sha256": "a2a8b56e7a281cd558c9f62d5e28a114e4c3415c598e90cac2f515150edcaa7f",
+        "sha256_in_prefix": "a2a8b56e7a281cd558c9f62d5e28a114e4c3415c598e90cac2f515150edcaa7f",
+        "size_in_bytes": 1970
+      },
+      {
+        "_path": "include/geos/geom/HeuristicOverlay.h",
+        "path_type": "hardlink",
+        "sha256": "c228f3a6c4214334f4288a2c8eb923320e42d24553c1653a3914ab1e6b67d04d",
+        "sha256_in_prefix": "c228f3a6c4214334f4288a2c8eb923320e42d24553c1653a3914ab1e6b67d04d",
+        "size_in_bytes": 1046
+      },
+      {
+        "_path": "include/geos/geom/IntersectionMatrix.h",
+        "path_type": "hardlink",
+        "sha256": "e725659ded108e1c0e59ef91bfe2bf925d674395ccc6ac32593b195b5e50d3b2",
+        "sha256_in_prefix": "e725659ded108e1c0e59ef91bfe2bf925d674395ccc6ac32593b195b5e50d3b2",
+        "size_in_bytes": 13387
+      },
+      {
+        "_path": "include/geos/geom/LineSegment.h",
+        "path_type": "hardlink",
+        "sha256": "2eb1c17c8bb13eb44ab99ee054e54c87b3e97899fbefafec60b47d9f325565e0",
+        "sha256_in_prefix": "2eb1c17c8bb13eb44ab99ee054e54c87b3e97899fbefafec60b47d9f325565e0",
+        "size_in_bytes": 13561
+      },
+      {
+        "_path": "include/geos/geom/LineSegment.inl",
+        "path_type": "hardlink",
+        "sha256": "23f250a908f4ba372ddb8e2aeed801685f34c35986f378c5360eb0ccffe8885e",
+        "sha256_in_prefix": "23f250a908f4ba372ddb8e2aeed801685f34c35986f378c5360eb0ccffe8885e",
+        "size_in_bytes": 3770
+      },
+      {
+        "_path": "include/geos/geom/LineString.h",
+        "path_type": "hardlink",
+        "sha256": "7069ad4b655082d7b6d8d29017b818845f0e918bb07085e3aa2b3548012343cf",
+        "sha256_in_prefix": "7069ad4b655082d7b6d8d29017b818845f0e918bb07085e3aa2b3548012343cf",
+        "size_in_bytes": 6964
+      },
+      {
+        "_path": "include/geos/geom/LinearRing.h",
+        "path_type": "hardlink",
+        "sha256": "b2f2eda785c8ed9e46d87785d1131746e917611c1ffc3fd5745cf0df30fb9e9f",
+        "sha256_in_prefix": "b2f2eda785c8ed9e46d87785d1131746e917611c1ffc3fd5745cf0df30fb9e9f",
+        "size_in_bytes": 3752
+      },
+      {
+        "_path": "include/geos/geom/Location.h",
+        "path_type": "hardlink",
+        "sha256": "e1f7b24150fe0375d960201264dd8d04100d3df2f184d0551d8a80a6241dd59a",
+        "sha256_in_prefix": "e1f7b24150fe0375d960201264dd8d04100d3df2f184d0551d8a80a6241dd59a",
+        "size_in_bytes": 1943
+      },
+      {
+        "_path": "include/geos/geom/MultiLineString.h",
+        "path_type": "hardlink",
+        "sha256": "fd7c38a184b6974cb1ed6e0cb6521bb90ecf181020e0c9696bac43e91f293d33",
+        "sha256_in_prefix": "fd7c38a184b6974cb1ed6e0cb6521bb90ecf181020e0c9696bac43e91f293d33",
+        "size_in_bytes": 4270
+      },
+      {
+        "_path": "include/geos/geom/MultiLineString.inl",
+        "path_type": "hardlink",
+        "sha256": "634faaa562730a1be2fd88746880d705bebd7143e021abc2f1e50fc4fee350df",
+        "sha256_in_prefix": "634faaa562730a1be2fd88746880d705bebd7143e021abc2f1e50fc4fee350df",
+        "size_in_bytes": 1229
+      },
+      {
+        "_path": "include/geos/geom/MultiPoint.h",
+        "path_type": "hardlink",
+        "sha256": "845bc9146ffa3784edaf845cd3ad8b89164c5ed5cb6e8052994741e5eae68c5e",
+        "sha256_in_prefix": "845bc9146ffa3784edaf845cd3ad8b89164c5ed5cb6e8052994741e5eae68c5e",
+        "size_in_bytes": 4043
+      },
+      {
+        "_path": "include/geos/geom/MultiPolygon.h",
+        "path_type": "hardlink",
+        "sha256": "c8f5caaf4e6f824abb4ad31d5d19b1eb86824b67c8e3ae3972e88a23b63c4087",
+        "sha256_in_prefix": "c8f5caaf4e6f824abb4ad31d5d19b1eb86824b67c8e3ae3972e88a23b63c4087",
+        "size_in_bytes": 4224
+      },
+      {
+        "_path": "include/geos/geom/MultiPolygon.inl",
+        "path_type": "hardlink",
+        "sha256": "30f8abb20d7f20e03a9f4c059da29061274c08f1c6f4bfc688a60ebee660c062",
+        "sha256_in_prefix": "30f8abb20d7f20e03a9f4c059da29061274c08f1c6f4bfc688a60ebee660c062",
+        "size_in_bytes": 1123
+      },
+      {
+        "_path": "include/geos/geom/Point.h",
+        "path_type": "hardlink",
+        "sha256": "aa50701d952d1692a6d18e1a16c9ec682986cd96f0ea950a41c36dd292f9c57d",
+        "sha256_in_prefix": "aa50701d952d1692a6d18e1a16c9ec682986cd96f0ea950a41c36dd292f9c57d",
+        "size_in_bytes": 5507
+      },
+      {
+        "_path": "include/geos/geom/Polygon.h",
+        "path_type": "hardlink",
+        "sha256": "dae39493799de1e9affe126c8f0ac10f2a3170e1378ededf8fb180285160e80b",
+        "sha256_in_prefix": "dae39493799de1e9affe126c8f0ac10f2a3170e1378ededf8fb180285160e80b",
+        "size_in_bytes": 7001
+      },
+      {
+        "_path": "include/geos/geom/Position.h",
+        "path_type": "hardlink",
+        "sha256": "d5a42e86df2eb21e90592ab31f23a127acd15216ab7752583d012357ed0ff114",
+        "sha256_in_prefix": "d5a42e86df2eb21e90592ab31f23a127acd15216ab7752583d012357ed0ff114",
+        "size_in_bytes": 1713
+      },
+      {
+        "_path": "include/geos/geom/PrecisionModel.h",
+        "path_type": "hardlink",
+        "sha256": "12d870684ee928b4acf63f76edb5923dfdea47f7590ae628502f11bcb2837949",
+        "sha256_in_prefix": "12d870684ee928b4acf63f76edb5923dfdea47f7590ae628502f11bcb2837949",
+        "size_in_bytes": 10848
+      },
+      {
+        "_path": "include/geos/geom/PrecisionModel.inl",
+        "path_type": "hardlink",
+        "sha256": "9b323e11f2e2c412f047c4cb5c23f30684c6f415d49bbb97d51e84ef77ccfd30",
+        "sha256_in_prefix": "9b323e11f2e2c412f047c4cb5c23f30684c6f415d49bbb97d51e84ef77ccfd30",
+        "size_in_bytes": 1556
+      },
+      {
+        "_path": "include/geos/geom/Quadrant.h",
+        "path_type": "hardlink",
+        "sha256": "f85d2f2a4f8c21f87a19915aea127488f61b08a09a663ea7685b2f92776bbb80",
+        "sha256_in_prefix": "f85d2f2a4f8c21f87a19915aea127488f61b08a09a663ea7685b2f92776bbb80",
+        "size_in_bytes": 2606
+      },
+      {
+        "_path": "include/geos/geom/Quadrant.inl",
+        "path_type": "hardlink",
+        "sha256": "b4c4372a779717ff960204c506ba3020a1c9eef412a80c5b85f2ffa718be5597",
+        "sha256_in_prefix": "b4c4372a779717ff960204c506ba3020a1c9eef412a80c5b85f2ffa718be5597",
+        "size_in_bytes": 2415
+      },
+      {
+        "_path": "include/geos/geom/Triangle.h",
+        "path_type": "hardlink",
+        "sha256": "51ddb8a0f7beda0503ff84c26f3ccf58e460196656c02c8495770b8c25323386",
+        "sha256_in_prefix": "51ddb8a0f7beda0503ff84c26f3ccf58e460196656c02c8495770b8c25323386",
+        "size_in_bytes": 5188
+      },
+      {
+        "_path": "include/geos/geom/prep/AbstractPreparedPolygonContains.h",
+        "path_type": "hardlink",
+        "sha256": "8f527604fa36d1c42bd8255ec45bab2941f963e86d7a4041b2c3a3e2d468704d",
+        "sha256_in_prefix": "8f527604fa36d1c42bd8255ec45bab2941f963e86d7a4041b2c3a3e2d468704d",
+        "size_in_bytes": 4580
+      },
+      {
+        "_path": "include/geos/geom/prep/BasicPreparedGeometry.h",
+        "path_type": "hardlink",
+        "sha256": "376dacf92dfe6dafa66fe2965bed1b130f94e4102850aedce7b04997863faafb",
+        "sha256_in_prefix": "376dacf92dfe6dafa66fe2965bed1b130f94e4102850aedce7b04997863faafb",
+        "size_in_bytes": 5038
+      },
+      {
+        "_path": "include/geos/geom/prep/PreparedGeometry.h",
+        "path_type": "hardlink",
+        "sha256": "514aecfd8ec0f9734f35f20cfbb5733d8a8cdfa6d6879c64803f35b9d8537875",
+        "sha256_in_prefix": "514aecfd8ec0f9734f35f20cfbb5733d8a8cdfa6d6879c64803f35b9d8537875",
+        "size_in_bytes": 7753
+      },
+      {
+        "_path": "include/geos/geom/prep/PreparedGeometryFactory.h",
+        "path_type": "hardlink",
+        "sha256": "07f2c953a3cee5f385efdd1e3c1ef9d4c49d27b2d0b80ca5f27afe52089b60de",
+        "sha256_in_prefix": "07f2c953a3cee5f385efdd1e3c1ef9d4c49d27b2d0b80ca5f27afe52089b60de",
+        "size_in_bytes": 2377
+      },
+      {
+        "_path": "include/geos/geom/prep/PreparedLineString.h",
+        "path_type": "hardlink",
+        "sha256": "fdf12cd09ce85db7a1b087c78aa7c5dc840c7eca87bf21211ba6c985929added",
+        "sha256_in_prefix": "fdf12cd09ce85db7a1b087c78aa7c5dc840c7eca87bf21211ba6c985929added",
+        "size_in_bytes": 2234
+      },
+      {
+        "_path": "include/geos/geom/prep/PreparedLineStringDistance.h",
+        "path_type": "hardlink",
+        "sha256": "f8a89ebeed0a79a99dbaf33de9e2488459d29f4739b7503a6ee331ff2a5aa891",
+        "sha256_in_prefix": "f8a89ebeed0a79a99dbaf33de9e2488459d29f4739b7503a6ee331ff2a5aa891",
+        "size_in_bytes": 1590
+      },
+      {
+        "_path": "include/geos/geom/prep/PreparedLineStringIntersects.h",
+        "path_type": "hardlink",
+        "sha256": "beeb1174a4786e8496f3a4550df0af77ccb2071711c7823d80823700843f7402",
+        "sha256_in_prefix": "beeb1174a4786e8496f3a4550df0af77ccb2071711c7823d80823700843f7402",
+        "size_in_bytes": 3054
+      },
+      {
+        "_path": "include/geos/geom/prep/PreparedLineStringNearestPoints.h",
+        "path_type": "hardlink",
+        "sha256": "3c8fe557f4a162cceb5dc39dbbaa9b893bb0d55ae78c459f9fa7be32c1046a46",
+        "sha256_in_prefix": "3c8fe557f4a162cceb5dc39dbbaa9b893bb0d55ae78c459f9fa7be32c1046a46",
+        "size_in_bytes": 1702
+      },
+      {
+        "_path": "include/geos/geom/prep/PreparedPoint.h",
+        "path_type": "hardlink",
+        "sha256": "b34a11c3f85b4f71764fafbe5864e9cab4bfeb4cd3ff00e145498f6f6fdb5525",
+        "sha256_in_prefix": "b34a11c3f85b4f71764fafbe5864e9cab4bfeb4cd3ff00e145498f6f6fdb5525",
+        "size_in_bytes": 1570
+      },
+      {
+        "_path": "include/geos/geom/prep/PreparedPolygon.h",
+        "path_type": "hardlink",
+        "sha256": "46c1c94f25e67c9ccd66082790bfb8471e0beed70b87aef6110fc33b985a0f13",
+        "sha256_in_prefix": "46c1c94f25e67c9ccd66082790bfb8471e0beed70b87aef6110fc33b985a0f13",
+        "size_in_bytes": 2480
+      },
+      {
+        "_path": "include/geos/geom/prep/PreparedPolygonContains.h",
+        "path_type": "hardlink",
+        "sha256": "18db7d03feaa0167c323d88860cca9707dec988ed0a5d225b21708127226a608",
+        "sha256_in_prefix": "18db7d03feaa0167c323d88860cca9707dec988ed0a5d225b21708127226a608",
+        "size_in_bytes": 2930
+      },
+      {
+        "_path": "include/geos/geom/prep/PreparedPolygonContainsProperly.h",
+        "path_type": "hardlink",
+        "sha256": "dde7737a9f7befce94d3d3655502b276b6fb28be5a7652f703980feb465380c9",
+        "sha256_in_prefix": "dde7737a9f7befce94d3d3655502b276b6fb28be5a7652f703980feb465380c9",
+        "size_in_bytes": 3018
+      },
+      {
+        "_path": "include/geos/geom/prep/PreparedPolygonCovers.h",
+        "path_type": "hardlink",
+        "sha256": "681a50d4a60a4be968b7c3eff30946d0256380564cf0a27fe34783c36ee995df",
+        "sha256_in_prefix": "681a50d4a60a4be968b7c3eff30946d0256380564cf0a27fe34783c36ee995df",
+        "size_in_bytes": 2989
+      },
+      {
+        "_path": "include/geos/geom/prep/PreparedPolygonDistance.h",
+        "path_type": "hardlink",
+        "sha256": "fb057207e2c7a1dc781ae4e398556195834fc24eafa1a06b20f478f248c7f3b8",
+        "sha256_in_prefix": "fb057207e2c7a1dc781ae4e398556195834fc24eafa1a06b20f478f248c7f3b8",
+        "size_in_bytes": 1713
+      },
+      {
+        "_path": "include/geos/geom/prep/PreparedPolygonIntersects.h",
+        "path_type": "hardlink",
+        "sha256": "fa8b8f6f064db9b4ae426d259440bd31842d9048e68cb461ef3e7ffd1e71dc33",
+        "sha256_in_prefix": "fa8b8f6f064db9b4ae426d259440bd31842d9048e68cb461ef3e7ffd1e71dc33",
+        "size_in_bytes": 2427
+      },
+      {
+        "_path": "include/geos/geom/prep/PreparedPolygonPredicate.h",
+        "path_type": "hardlink",
+        "sha256": "a077c5c2cf472571ee689035f7296b6c7b55ddac06c71e7dd00c0dac8a2bdbb7",
+        "sha256_in_prefix": "a077c5c2cf472571ee689035f7296b6c7b55ddac06c71e7dd00c0dac8a2bdbb7",
+        "size_in_bytes": 4195
+      },
+      {
+        "_path": "include/geos/geom/util/ComponentCoordinateExtracter.h",
+        "path_type": "hardlink",
+        "sha256": "413d3a195e2e14edaa4b4b5646cc960fe1394c35a467121fa0e745f3cfa19403",
+        "sha256_in_prefix": "413d3a195e2e14edaa4b4b5646cc960fe1394c35a467121fa0e745f3cfa19403",
+        "size_in_bytes": 2371
+      },
+      {
+        "_path": "include/geos/geom/util/CoordinateOperation.h",
+        "path_type": "hardlink",
+        "sha256": "413f8a4db327dc70fdd941fb7b4b77925c89f3b3730b21376278d67e88c99858",
+        "sha256_in_prefix": "413f8a4db327dc70fdd941fb7b4b77925c89f3b3730b21376278d67e88c99858",
+        "size_in_bytes": 2009
+      },
+      {
+        "_path": "include/geos/geom/util/Densifier.h",
+        "path_type": "hardlink",
+        "sha256": "40645479edecfa1779feae3b73271875ed0d70918aba7a0e9823e050d016734d",
+        "sha256_in_prefix": "40645479edecfa1779feae3b73271875ed0d70918aba7a0e9823e050d016734d",
+        "size_in_bytes": 2974
+      },
+      {
+        "_path": "include/geos/geom/util/GeometryCombiner.h",
+        "path_type": "hardlink",
+        "sha256": "da0752bf40aaf68cc225ef811f643cab414b350d944e8775d31742d47e0fd2b0",
+        "sha256_in_prefix": "da0752bf40aaf68cc225ef811f643cab414b350d944e8775d31742d47e0fd2b0",
+        "size_in_bytes": 5061
+      },
+      {
+        "_path": "include/geos/geom/util/GeometryEditor.h",
+        "path_type": "hardlink",
+        "sha256": "f247b3727a379c2c85c2ea2d0fb3d58ab88603f71cbc630e218acc3792ea43d6",
+        "sha256_in_prefix": "f247b3727a379c2c85c2ea2d0fb3d58ab88603f71cbc630e218acc3792ea43d6",
+        "size_in_bytes": 4095
+      },
+      {
+        "_path": "include/geos/geom/util/GeometryEditorOperation.h",
+        "path_type": "hardlink",
+        "sha256": "fc1be34a307596cf93df1cf20d0b5d74daacb35482574f3005bb0ddb62dbc7d8",
+        "sha256_in_prefix": "fc1be34a307596cf93df1cf20d0b5d74daacb35482574f3005bb0ddb62dbc7d8",
+        "size_in_bytes": 1668
+      },
+      {
+        "_path": "include/geos/geom/util/GeometryExtracter.h",
+        "path_type": "hardlink",
+        "sha256": "d005bb5c02142b1bf7b13eb7986f4d894cccfd8c91bf197ede124f021101a46e",
+        "sha256_in_prefix": "d005bb5c02142b1bf7b13eb7986f4d894cccfd8c91bf197ede124f021101a46e",
+        "size_in_bytes": 2954
+      },
+      {
+        "_path": "include/geos/geom/util/GeometryFixer.h",
+        "path_type": "hardlink",
+        "sha256": "278dc4e71e77380631f52d1cb8790ae604e2bcd2e6b3736d9115dc808b123f20",
+        "sha256_in_prefix": "278dc4e71e77380631f52d1cb8790ae604e2bcd2e6b3736d9115dc808b123f20",
+        "size_in_bytes": 6087
+      },
+      {
+        "_path": "include/geos/geom/util/GeometryTransformer.h",
+        "path_type": "hardlink",
+        "sha256": "3cb6fbde3aa243b5027d9ec07a56ecb4f31bceea0362f5ae024ccba9fcbf0c0b",
+        "sha256_in_prefix": "3cb6fbde3aa243b5027d9ec07a56ecb4f31bceea0362f5ae024ccba9fcbf0c0b",
+        "size_in_bytes": 5887
+      },
+      {
+        "_path": "include/geos/geom/util/LinearComponentExtracter.h",
+        "path_type": "hardlink",
+        "sha256": "7bf1dd217ea2c7e167e695abef6526d10305e192c400547a48a099e5024f7df7",
+        "sha256_in_prefix": "7bf1dd217ea2c7e167e695abef6526d10305e192c400547a48a099e5024f7df7",
+        "size_in_bytes": 2124
+      },
+      {
+        "_path": "include/geos/geom/util/NoOpGeometryOperation.h",
+        "path_type": "hardlink",
+        "sha256": "1f5196ad4f193ecf7b686e8924569842dfac3512b48d3c167eb5560093481c35",
+        "sha256_in_prefix": "1f5196ad4f193ecf7b686e8924569842dfac3512b48d3c167eb5560093481c35",
+        "size_in_bytes": 1252
+      },
+      {
+        "_path": "include/geos/geom/util/PointExtracter.h",
+        "path_type": "hardlink",
+        "sha256": "676844ba8248ec263e4411201d4c25d0784226946979913d4737dc970b9cff30",
+        "sha256_in_prefix": "676844ba8248ec263e4411201d4c25d0784226946979913d4737dc970b9cff30",
+        "size_in_bytes": 1818
+      },
+      {
+        "_path": "include/geos/geom/util/PolygonExtracter.h",
+        "path_type": "hardlink",
+        "sha256": "50a167f6855cb1c94a57e4c975e47ccdff340a4e067206a9478118aa672c5a0a",
+        "sha256_in_prefix": "50a167f6855cb1c94a57e4c975e47ccdff340a4e067206a9478118aa672c5a0a",
+        "size_in_bytes": 1949
+      },
+      {
+        "_path": "include/geos/geom/util/ShortCircuitedGeometryVisitor.h",
+        "path_type": "hardlink",
+        "sha256": "61b3fc2da320d5969cf6ebfc3d2512f27c51708ee5c7e3930957cb3d8a21f5b4",
+        "sha256_in_prefix": "61b3fc2da320d5969cf6ebfc3d2512f27c51708ee5c7e3930957cb3d8a21f5b4",
+        "size_in_bytes": 1454
+      },
+      {
+        "_path": "include/geos/geom/util/SineStarFactory.h",
+        "path_type": "hardlink",
+        "sha256": "0679f4f260431799c392f4de442c159335148de159f1beb738148224446c1231",
+        "sha256_in_prefix": "0679f4f260431799c392f4de442c159335148de159f1beb738148224446c1231",
+        "size_in_bytes": 2886
+      },
+      {
+        "_path": "include/geos/geomgraph/Depth.h",
+        "path_type": "hardlink",
+        "sha256": "6dd43a542411cfa32c7e443ff9d1ece3f30150d8018ef85de15a220ba13da1ff",
+        "sha256_in_prefix": "6dd43a542411cfa32c7e443ff9d1ece3f30150d8018ef85de15a220ba13da1ff",
+        "size_in_bytes": 2007
+      },
+      {
+        "_path": "include/geos/geomgraph/Depth.inl",
+        "path_type": "hardlink",
+        "sha256": "e78e90efa3113233b60f52a1c20edcec45946073879161ec844d78c82f10c81b",
+        "sha256_in_prefix": "e78e90efa3113233b60f52a1c20edcec45946073879161ec844d78c82f10c81b",
+        "size_in_bytes": 2635
+      },
+      {
+        "_path": "include/geos/geomgraph/DirectedEdge.h",
+        "path_type": "hardlink",
+        "sha256": "a5e5830fbfefba76112e2f18e148e7cbd697024f630373fdf81fa67358d1f262",
+        "sha256_in_prefix": "a5e5830fbfefba76112e2f18e148e7cbd697024f630373fdf81fa67358d1f262",
+        "size_in_bytes": 4676
+      },
+      {
+        "_path": "include/geos/geomgraph/DirectedEdge.inl",
+        "path_type": "hardlink",
+        "sha256": "2ba5f45675fea7e411a6a2cdbe31c3976eb5ead060352065b0d6493f3a63b4cb",
+        "sha256_in_prefix": "2ba5f45675fea7e411a6a2cdbe31c3976eb5ead060352065b0d6493f3a63b4cb",
+        "size_in_bytes": 2241
+      },
+      {
+        "_path": "include/geos/geomgraph/DirectedEdgeStar.h",
+        "path_type": "hardlink",
+        "sha256": "10c0d9d230abbdce8131e24fd0b5fda1ef3e798e18cff3e1ce898d4d4aca24ce",
+        "sha256_in_prefix": "10c0d9d230abbdce8131e24fd0b5fda1ef3e798e18cff3e1ce898d4d4aca24ce",
+        "size_in_bytes": 4562
+      },
+      {
+        "_path": "include/geos/geomgraph/Edge.h",
+        "path_type": "hardlink",
+        "sha256": "831d8a6bf357b78a72e00ff4e10e78f445524e48a179759eb0af29d4c0d23b06",
+        "sha256_in_prefix": "831d8a6bf357b78a72e00ff4e10e78f445524e48a179759eb0af29d4c0d23b06",
+        "size_in_bytes": 6675
+      },
+      {
+        "_path": "include/geos/geomgraph/EdgeEnd.h",
+        "path_type": "hardlink",
+        "sha256": "3d82a616ad16190d4b95587d05028fbbfbe352d22318fbf334981dbc6084debc",
+        "sha256_in_prefix": "3d82a616ad16190d4b95587d05028fbbfbe352d22318fbf334981dbc6084debc",
+        "size_in_bytes": 4660
+      },
+      {
+        "_path": "include/geos/geomgraph/EdgeEndStar.h",
+        "path_type": "hardlink",
+        "sha256": "437eb98dc50c98ec4ffd43c65a4690bd3a986be8cbacdefa66495cb4f6574ad3",
+        "sha256_in_prefix": "437eb98dc50c98ec4ffd43c65a4690bd3a986be8cbacdefa66495cb4f6574ad3",
+        "size_in_bytes": 5041
+      },
+      {
+        "_path": "include/geos/geomgraph/EdgeIntersection.h",
+        "path_type": "hardlink",
+        "sha256": "14734ad2265ea741aedc342a9adad73db60c5b26c4d1166aeec7c5c2dfcd99d5",
+        "sha256_in_prefix": "14734ad2265ea741aedc342a9adad73db60c5b26c4d1166aeec7c5c2dfcd99d5",
+        "size_in_bytes": 3801
+      },
+      {
+        "_path": "include/geos/geomgraph/EdgeIntersectionList.h",
+        "path_type": "hardlink",
+        "sha256": "f3c1eb2e09bfa0ea97d154817884d2d1d60874e3c54a194388b83c71e0d3e006",
+        "sha256_in_prefix": "f3c1eb2e09bfa0ea97d154817884d2d1d60874e3c54a194388b83c71e0d3e006",
+        "size_in_bytes": 3665
+      },
+      {
+        "_path": "include/geos/geomgraph/EdgeList.h",
+        "path_type": "hardlink",
+        "sha256": "3f83f5238dc24198159ad07f0783592b512b3a33b3f48778b11b979427b190f3",
+        "sha256_in_prefix": "3f83f5238dc24198159ad07f0783592b512b3a33b3f48778b11b979427b190f3",
+        "size_in_bytes": 2851
+      },
+      {
+        "_path": "include/geos/geomgraph/EdgeNodingValidator.h",
+        "path_type": "hardlink",
+        "sha256": "dc2d831f4549fa92e6c23c30528a3e11f69ea1919b27785edf0c13c34c7bb599",
+        "sha256_in_prefix": "dc2d831f4549fa92e6c23c30528a3e11f69ea1919b27785edf0c13c34c7bb599",
+        "size_in_bytes": 3106
+      },
+      {
+        "_path": "include/geos/geomgraph/EdgeRing.h",
+        "path_type": "hardlink",
+        "sha256": "1394279ef85db18590454f22fcc297b782c3f6d9b74f0b04d50a94da460782c8",
+        "sha256_in_prefix": "1394279ef85db18590454f22fcc297b782c3f6d9b74f0b04d50a94da460782c8",
+        "size_in_bytes": 5194
+      },
+      {
+        "_path": "include/geos/geomgraph/GeometryGraph.h",
+        "path_type": "hardlink",
+        "sha256": "aeb2af4c89f9653e710624ee8393dd6bf5058a8c0f373caf125205087d76308f",
+        "sha256_in_prefix": "aeb2af4c89f9653e710624ee8393dd6bf5058a8c0f373caf125205087d76308f",
+        "size_in_bytes": 7938
+      },
+      {
+        "_path": "include/geos/geomgraph/GeometryGraph.inl",
+        "path_type": "hardlink",
+        "sha256": "ec58ee85675bb02f796faefafec9143df08625c43960de9adf137497f2dea769",
+        "sha256_in_prefix": "ec58ee85675bb02f796faefafec9143df08625c43960de9adf137497f2dea769",
+        "size_in_bytes": 1291
+      },
+      {
+        "_path": "include/geos/geomgraph/GraphComponent.h",
+        "path_type": "hardlink",
+        "sha256": "9ab12fbde4d9a41d7dd4374443c3866bb821ad3205f722fff51b3e094a3daf60",
+        "sha256_in_prefix": "9ab12fbde4d9a41d7dd4374443c3866bb821ad3205f722fff51b3e094a3daf60",
+        "size_in_bytes": 2583
+      },
+      {
+        "_path": "include/geos/geomgraph/Label.h",
+        "path_type": "hardlink",
+        "sha256": "6d57df2c8fba52b18bd65032a39311e6d31a612eddc0ae05980c0dec33f21372",
+        "sha256_in_prefix": "6d57df2c8fba52b18bd65032a39311e6d31a612eddc0ae05980c0dec33f21372",
+        "size_in_bytes": 5301
+      },
+      {
+        "_path": "include/geos/geomgraph/Label.inl",
+        "path_type": "hardlink",
+        "sha256": "088ed8a78fa817fa7d382aaa953448b05e9492a1642ea9cc4117cc5267afb603",
+        "sha256_in_prefix": "088ed8a78fa817fa7d382aaa953448b05e9492a1642ea9cc4117cc5267afb603",
+        "size_in_bytes": 5468
+      },
+      {
+        "_path": "include/geos/geomgraph/Node.h",
+        "path_type": "hardlink",
+        "sha256": "f88ad9b9c810927807faee40a1967565c377d91ffaf5de2377bb1682a049d578",
+        "sha256_in_prefix": "f88ad9b9c810927807faee40a1967565c377d91ffaf5de2377bb1682a049d578",
+        "size_in_bytes": 5054
+      },
+      {
+        "_path": "include/geos/geomgraph/NodeFactory.h",
+        "path_type": "hardlink",
+        "sha256": "d40a1b7dfc23ec6582ef5b1e325fa015a8f59466e9216c6c139973d5b674812e",
+        "sha256_in_prefix": "d40a1b7dfc23ec6582ef5b1e325fa015a8f59466e9216c6c139973d5b674812e",
+        "size_in_bytes": 1296
+      },
+      {
+        "_path": "include/geos/geomgraph/NodeMap.h",
+        "path_type": "hardlink",
+        "sha256": "3f458f3715268d899bb12b32e475214cc40d53c750d7501786215fe1ee57e59c",
+        "sha256_in_prefix": "3f458f3715268d899bb12b32e475214cc40d53c750d7501786215fe1ee57e59c",
+        "size_in_bytes": 3173
+      },
+      {
+        "_path": "include/geos/geomgraph/PlanarGraph.h",
+        "path_type": "hardlink",
+        "sha256": "bf307180576ec89b52968a37114f7ee78ac688391b4f1c4f5100406b22f3fc0e",
+        "sha256_in_prefix": "bf307180576ec89b52968a37114f7ee78ac688391b4f1c4f5100406b22f3fc0e",
+        "size_in_bytes": 5874
+      },
+      {
+        "_path": "include/geos/geomgraph/TopologyLocation.h",
+        "path_type": "hardlink",
+        "sha256": "ffaa097d7de26db8875440a19b933473a4ce52b5586c79628c93c6555386bf1b",
+        "sha256_in_prefix": "ffaa097d7de26db8875440a19b933473a4ce52b5586c79628c93c6555386bf1b",
+        "size_in_bytes": 4047
+      },
+      {
+        "_path": "include/geos/geomgraph/TopologyLocation.inl",
+        "path_type": "hardlink",
+        "sha256": "92cbd7adbb6b6d5e9db94aca0f133ef8fe26258ccd29f72d4fd14d693fa07e2c",
+        "sha256_in_prefix": "92cbd7adbb6b6d5e9db94aca0f133ef8fe26258ccd29f72d4fd14d693fa07e2c",
+        "size_in_bytes": 4130
+      },
+      {
+        "_path": "include/geos/geomgraph/index/EdgeSetIntersector.h",
+        "path_type": "hardlink",
+        "sha256": "3a304947de53a713be676e91e3ffec6e1636dbedac83c70d76c61886bfa0d9ff",
+        "sha256_in_prefix": "3a304947de53a713be676e91e3ffec6e1636dbedac83c70d76c61886bfa0d9ff",
+        "size_in_bytes": 2064
+      },
+      {
+        "_path": "include/geos/geomgraph/index/MonotoneChain.h",
+        "path_type": "hardlink",
+        "sha256": "cb56a670c526332c5ce59982f81294b96d2b14861f7ae8281de92acb65d58cef",
+        "sha256_in_prefix": "cb56a670c526332c5ce59982f81294b96d2b14861f7ae8281de92acb65d58cef",
+        "size_in_bytes": 1947
+      },
+      {
+        "_path": "include/geos/geomgraph/index/MonotoneChainEdge.h",
+        "path_type": "hardlink",
+        "sha256": "5c25580f107a12dd591d37b2308a7914e87e2a2da08d2bdcdaeebdf735b753b6",
+        "sha256_in_prefix": "5c25580f107a12dd591d37b2308a7914e87e2a2da08d2bdcdaeebdf735b753b6",
+        "size_in_bytes": 2797
+      },
+      {
+        "_path": "include/geos/geomgraph/index/MonotoneChainIndexer.h",
+        "path_type": "hardlink",
+        "sha256": "1c055cc6d74ca8a166ab6f28cb33ffc59c657c55b1a1355ad9159c9a94a896d1",
+        "sha256_in_prefix": "1c055cc6d74ca8a166ab6f28cb33ffc59c657c55b1a1355ad9159c9a94a896d1",
+        "size_in_bytes": 2386
+      },
+      {
+        "_path": "include/geos/geomgraph/index/SegmentIntersector.h",
+        "path_type": "hardlink",
+        "sha256": "f34258f7ae6d871279eb3be72b72b73f066b05bd77b28228a86d2bd2a3b6262c",
+        "sha256_in_prefix": "f34258f7ae6d871279eb3be72b72b73f066b05bd77b28228a86d2bd2a3b6262c",
+        "size_in_bytes": 3778
+      },
+      {
+        "_path": "include/geos/geomgraph/index/SegmentIntersector.inl",
+        "path_type": "hardlink",
+        "sha256": "94c467787b51b7546c8dba6e3973b8ccfe97873fef31a051c052f5b8677991d0",
+        "sha256_in_prefix": "94c467787b51b7546c8dba6e3973b8ccfe97873fef31a051c052f5b8677991d0",
+        "size_in_bytes": 2500
+      },
+      {
+        "_path": "include/geos/geomgraph/index/SimpleEdgeSetIntersector.h",
+        "path_type": "hardlink",
+        "sha256": "32b4373f8193683d12a36ef5328ec4c8a2d8fec99875ebb2dd78eb90f2a89b43",
+        "sha256_in_prefix": "32b4373f8193683d12a36ef5328ec4c8a2d8fec99875ebb2dd78eb90f2a89b43",
+        "size_in_bytes": 1888
+      },
+      {
+        "_path": "include/geos/geomgraph/index/SimpleMCSweepLineIntersector.h",
+        "path_type": "hardlink",
+        "sha256": "d0a6de8e0fe42f0d30498ba477bd2653719cb9e6e6f0b383f12e6d058bedbc98",
+        "sha256_in_prefix": "d0a6de8e0fe42f0d30498ba477bd2653719cb9e6e6f0b383f12e6d058bedbc98",
+        "size_in_bytes": 3599
+      },
+      {
+        "_path": "include/geos/geomgraph/index/SimpleSweepLineIntersector.h",
+        "path_type": "hardlink",
+        "sha256": "0c75c87740e5f13a1ec7304ef3b8e81caf3ac368e75dab9c8b2ee5ff4f60e83b",
+        "sha256_in_prefix": "0c75c87740e5f13a1ec7304ef3b8e81caf3ac368e75dab9c8b2ee5ff4f60e83b",
+        "size_in_bytes": 2574
+      },
+      {
+        "_path": "include/geos/geomgraph/index/SweepLineEvent.h",
+        "path_type": "hardlink",
+        "sha256": "02ea38b547716b0ff5847ae8175cf576188c206f9b9f9214b3b835b966e509c3",
+        "sha256_in_prefix": "02ea38b547716b0ff5847ae8175cf576188c206f9b9f9214b3b835b966e509c3",
+        "size_in_bytes": 2708
+      },
+      {
+        "_path": "include/geos/geomgraph/index/SweepLineEventObj.h",
+        "path_type": "hardlink",
+        "sha256": "8a4503d3899576d177ef19f181bf2ffd20c0c185ee079c613d8857eb55f875d5",
+        "sha256_in_prefix": "8a4503d3899576d177ef19f181bf2ffd20c0c185ee079c613d8857eb55f875d5",
+        "size_in_bytes": 1104
+      },
+      {
+        "_path": "include/geos/geomgraph/index/SweepLineSegment.h",
+        "path_type": "hardlink",
+        "sha256": "b4a11c447616024e092c8af9f769bd76d24b2fd84a7c9e33658fae00e28f8edb",
+        "sha256_in_prefix": "b4a11c447616024e092c8af9f769bd76d24b2fd84a7c9e33658fae00e28f8edb",
+        "size_in_bytes": 1516
+      },
+      {
+        "_path": "include/geos/index/ItemVisitor.h",
+        "path_type": "hardlink",
+        "sha256": "b11d48eeb09b5051e613bb00c472c4671b0541594b64ac5b804c238711e70026",
+        "sha256_in_prefix": "b11d48eeb09b5051e613bb00c472c4671b0541594b64ac5b804c238711e70026",
+        "size_in_bytes": 973
+      },
+      {
+        "_path": "include/geos/index/SpatialIndex.h",
+        "path_type": "hardlink",
+        "sha256": "1d28f9136f1a5dc96c4ae460d5dd5103033d5eefd2bdbfbe14b826f808bfdcf8",
+        "sha256_in_prefix": "1d28f9136f1a5dc96c4ae460d5dd5103033d5eefd2bdbfbe14b826f808bfdcf8",
+        "size_in_bytes": 3185
+      },
+      {
+        "_path": "include/geos/index/bintree/Bintree.h",
+        "path_type": "hardlink",
+        "sha256": "843bd549b99f3b9809f0c8c7dd173fab3510f170fe4e1b760f92b9374af6ad07",
+        "sha256_in_prefix": "843bd549b99f3b9809f0c8c7dd173fab3510f170fe4e1b760f92b9374af6ad07",
+        "size_in_bytes": 3525
+      },
+      {
+        "_path": "include/geos/index/bintree/Interval.h",
+        "path_type": "hardlink",
+        "sha256": "b327d491fff2d616f82e9a48ff0c3d954c8bc46efbec4813154c68dae6643236",
+        "sha256_in_prefix": "b327d491fff2d616f82e9a48ff0c3d954c8bc46efbec4813154c68dae6643236",
+        "size_in_bytes": 1502
+      },
+      {
+        "_path": "include/geos/index/bintree/Key.h",
+        "path_type": "hardlink",
+        "sha256": "38e9c9f4449c7be3848211f38b63b74b6edfd46e61ebb4924ffd0cd39b574a83",
+        "sha256_in_prefix": "38e9c9f4449c7be3848211f38b63b74b6edfd46e61ebb4924ffd0cd39b574a83",
+        "size_in_bytes": 1589
+      },
+      {
+        "_path": "include/geos/index/bintree/Node.h",
+        "path_type": "hardlink",
+        "sha256": "1d33f19ea9785625181626ded958d56a9de8a7c84c20c18c1ffcaa15526c3a16",
+        "sha256_in_prefix": "1d33f19ea9785625181626ded958d56a9de8a7c84c20c18c1ffcaa15526c3a16",
+        "size_in_bytes": 1591
+      },
+      {
+        "_path": "include/geos/index/bintree/NodeBase.h",
+        "path_type": "hardlink",
+        "sha256": "6103e3f974a526998a044e9f943eb9350cd8f1945250ab6fa22510023b623ac4",
+        "sha256_in_prefix": "6103e3f974a526998a044e9f943eb9350cd8f1945250ab6fa22510023b623ac4",
+        "size_in_bytes": 1797
+      },
+      {
+        "_path": "include/geos/index/bintree/Root.h",
+        "path_type": "hardlink",
+        "sha256": "c42a28c300693c91b6384921852fcc10d5e5547220a909ee80aa90102c3dc6ee",
+        "sha256_in_prefix": "c42a28c300693c91b6384921852fcc10d5e5547220a909ee80aa90102c3dc6ee",
+        "size_in_bytes": 1767
+      },
+      {
+        "_path": "include/geos/index/chain/MonotoneChain.h",
+        "path_type": "hardlink",
+        "sha256": "2960c51c1e5b07624ade9c0378772ee85007555a38bf2313c9dc798daee524b0",
+        "sha256_in_prefix": "2960c51c1e5b07624ade9c0378772ee85007555a38bf2313c9dc798daee524b0",
+        "size_in_bytes": 6512
+      },
+      {
+        "_path": "include/geos/index/chain/MonotoneChainBuilder.h",
+        "path_type": "hardlink",
+        "sha256": "38c3c8d7d4e6657a7fd327e560b699e5cd5427a9b887078f0e84ee0690b9f41b",
+        "sha256_in_prefix": "38c3c8d7d4e6657a7fd327e560b699e5cd5427a9b887078f0e84ee0690b9f41b",
+        "size_in_bytes": 2248
+      },
+      {
+        "_path": "include/geos/index/chain/MonotoneChainOverlapAction.h",
+        "path_type": "hardlink",
+        "sha256": "db9dd9aada38a39fab23e67a25c1cb0484cb835b9dce3bf0bf2f93c809700849",
+        "sha256_in_prefix": "db9dd9aada38a39fab23e67a25c1cb0484cb835b9dce3bf0bf2f93c809700849",
+        "size_in_bytes": 2312
+      },
+      {
+        "_path": "include/geos/index/chain/MonotoneChainSelectAction.h",
+        "path_type": "hardlink",
+        "sha256": "a6ae012fe2754d130d84792eebeb32c8214cc8e7cc2a9fdbd6b01a66a80e6dca",
+        "sha256_in_prefix": "a6ae012fe2754d130d84792eebeb32c8214cc8e7cc2a9fdbd6b01a66a80e6dca",
+        "size_in_bytes": 1875
+      },
+      {
+        "_path": "include/geos/index/intervalrtree/IntervalRTreeBranchNode.h",
+        "path_type": "hardlink",
+        "sha256": "177ef0b4d1632e97adf47b3233b088c948421b56ae26c5e31283aee3958e454a",
+        "sha256_in_prefix": "177ef0b4d1632e97adf47b3233b088c948421b56ae26c5e31283aee3958e454a",
+        "size_in_bytes": 1462
+      },
+      {
+        "_path": "include/geos/index/intervalrtree/IntervalRTreeLeafNode.h",
+        "path_type": "hardlink",
+        "sha256": "1829824057cf8815b598b057e093752ff285273a19d21357e13db77d00fa22ad",
+        "sha256_in_prefix": "1829824057cf8815b598b057e093752ff285273a19d21357e13db77d00fa22ad",
+        "size_in_bytes": 1396
+      },
+      {
+        "_path": "include/geos/index/intervalrtree/IntervalRTreeNode.h",
+        "path_type": "hardlink",
+        "sha256": "a04c8d6c4cc619d1d2193f1d2dd02e41934d49a79503e08b7faac0da2d4887f3",
+        "sha256_in_prefix": "a04c8d6c4cc619d1d2193f1d2dd02e41934d49a79503e08b7faac0da2d4887f3",
+        "size_in_bytes": 2143
+      },
+      {
+        "_path": "include/geos/index/intervalrtree/SortedPackedIntervalRTree.h",
+        "path_type": "hardlink",
+        "sha256": "8429609151c694d01067c97c1885ab6876d023ff194606d320a7ede0ebb4cc8c",
+        "sha256_in_prefix": "8429609151c694d01067c97c1885ab6876d023ff194606d320a7ede0ebb4cc8c",
+        "size_in_bytes": 3501
+      },
+      {
+        "_path": "include/geos/index/kdtree/KdNode.h",
+        "path_type": "hardlink",
+        "sha256": "02de9681790fe2e6c1e2a8c20a1dbc6cd46385709741b72ff8d495138e0dcde0",
+        "sha256_in_prefix": "02de9681790fe2e6c1e2a8c20a1dbc6cd46385709741b72ff8d495138e0dcde0",
+        "size_in_bytes": 1709
+      },
+      {
+        "_path": "include/geos/index/kdtree/KdNodeVisitor.h",
+        "path_type": "hardlink",
+        "sha256": "6f9422ed3e12796e38055572ff6f6a1aba20ebc548ba9dcdd58d8b7a0fd9ef0a",
+        "sha256_in_prefix": "6f9422ed3e12796e38055572ff6f6a1aba20ebc548ba9dcdd58d8b7a0fd9ef0a",
+        "size_in_bytes": 1001
+      },
+      {
+        "_path": "include/geos/index/kdtree/KdTree.h",
+        "path_type": "hardlink",
+        "sha256": "8e918517cc0ab017a6cd78a49b81820d286556228b182e541acc9093e9061a27",
+        "sha256_in_prefix": "8e918517cc0ab017a6cd78a49b81820d286556228b182e541acc9093e9061a27",
+        "size_in_bytes": 5740
+      },
+      {
+        "_path": "include/geos/index/quadtree/IntervalSize.h",
+        "path_type": "hardlink",
+        "sha256": "e687e979c4cd37b39e678b922a4ad96b7c547a9e6586df7f315b8e4974373b16",
+        "sha256_in_prefix": "e687e979c4cd37b39e678b922a4ad96b7c547a9e6586df7f315b8e4974373b16",
+        "size_in_bytes": 2060
+      },
+      {
+        "_path": "include/geos/index/quadtree/Key.h",
+        "path_type": "hardlink",
+        "sha256": "d49f262a217b3010c8810de7698ef02a3d9bee76383110faaec078939b04a490",
+        "sha256_in_prefix": "d49f262a217b3010c8810de7698ef02a3d9bee76383110faaec078939b04a490",
+        "size_in_bytes": 2541
+      },
+      {
+        "_path": "include/geos/index/quadtree/Node.h",
+        "path_type": "hardlink",
+        "sha256": "d0a074d58755f2a0ad553a2f8dca16ecb6b12c13a660e1567862b97f3b0aae1c",
+        "sha256_in_prefix": "d0a074d58755f2a0ad553a2f8dca16ecb6b12c13a660e1567862b97f3b0aae1c",
+        "size_in_bytes": 3506
+      },
+      {
+        "_path": "include/geos/index/quadtree/NodeBase.h",
+        "path_type": "hardlink",
+        "sha256": "56a6b008079bbbd9c34a7dcd34001a8c75bc7dec29f4694d5254464f5fe864dd",
+        "sha256_in_prefix": "56a6b008079bbbd9c34a7dcd34001a8c75bc7dec29f4694d5254464f5fe864dd",
+        "size_in_bytes": 3570
+      },
+      {
+        "_path": "include/geos/index/quadtree/Quadtree.h",
+        "path_type": "hardlink",
+        "sha256": "64c311f85e377ba7b10b4ad8cb07fac5cd8a22dcba310501cebc49b86bd4fafd",
+        "sha256_in_prefix": "64c311f85e377ba7b10b4ad8cb07fac5cd8a22dcba310501cebc49b86bd4fafd",
+        "size_in_bytes": 6514
+      },
+      {
+        "_path": "include/geos/index/quadtree/Root.h",
+        "path_type": "hardlink",
+        "sha256": "15c8269ab6561beb0cfdfa8fb8d46522708aa0f4a7081c0467dd33c72f4939e6",
+        "sha256_in_prefix": "15c8269ab6561beb0cfdfa8fb8d46522708aa0f4a7081c0467dd33c72f4939e6",
+        "size_in_bytes": 2077
+      },
+      {
+        "_path": "include/geos/index/strtree/AbstractNode.h",
+        "path_type": "hardlink",
+        "sha256": "369c5370ede777c4110ffcef62a9daa293e326ce2dde170e71b49282901f4201",
+        "sha256_in_prefix": "369c5370ede777c4110ffcef62a9daa293e326ce2dde170e71b49282901f4201",
+        "size_in_bytes": 3605
+      },
+      {
+        "_path": "include/geos/index/strtree/AbstractSTRtree.h",
+        "path_type": "hardlink",
+        "sha256": "052d9c6417d12d6191914d6190ca17e03e61af4e0e4c22409058a2410ff8d191",
+        "sha256_in_prefix": "052d9c6417d12d6191914d6190ca17e03e61af4e0e4c22409058a2410ff8d191",
+        "size_in_bytes": 8561
+      },
+      {
+        "_path": "include/geos/index/strtree/Boundable.h",
+        "path_type": "hardlink",
+        "sha256": "5312d5fc340ce43c21c5dfee16e1ea7533eb4a0cdd749512a0facbe0444558cb",
+        "sha256_in_prefix": "5312d5fc340ce43c21c5dfee16e1ea7533eb4a0cdd749512a0facbe0444558cb",
+        "size_in_bytes": 1526
+      },
+      {
+        "_path": "include/geos/index/strtree/BoundablePair.h",
+        "path_type": "hardlink",
+        "sha256": "9091edc242b4e0d9c12f19cf5982b6bc1934428878872979ab734a70f6d697d9",
+        "sha256_in_prefix": "9091edc242b4e0d9c12f19cf5982b6bc1934428878872979ab734a70f6d697d9",
+        "size_in_bytes": 3791
+      },
+      {
+        "_path": "include/geos/index/strtree/EnvelopeUtil.h",
+        "path_type": "hardlink",
+        "sha256": "a4d294f9e3bf304fc682292304a829316dffef438d355e125f5a25771f83b6f5",
+        "sha256_in_prefix": "a4d294f9e3bf304fc682292304a829316dffef438d355e125f5a25771f83b6f5",
+        "size_in_bytes": 1079
+      },
+      {
+        "_path": "include/geos/index/strtree/GeometryItemDistance.h",
+        "path_type": "hardlink",
+        "sha256": "853acb965e3056489917863edb68be553c89bb29dff68db10dce9587308eabcf",
+        "sha256_in_prefix": "853acb965e3056489917863edb68be553c89bb29dff68db10dce9587308eabcf",
+        "size_in_bytes": 1417
+      },
+      {
+        "_path": "include/geos/index/strtree/Interval.h",
+        "path_type": "hardlink",
+        "sha256": "195c60908f7220574e18d1927d18dd4e2e0dd7ab08443929f05a95bd636c1dfc",
+        "sha256_in_prefix": "195c60908f7220574e18d1927d18dd4e2e0dd7ab08443929f05a95bd636c1dfc",
+        "size_in_bytes": 1729
+      },
+      {
+        "_path": "include/geos/index/strtree/ItemBoundable.h",
+        "path_type": "hardlink",
+        "sha256": "9df475ccff801fafb2dfe78d2aa4425274dc59b33151575d3cb2ac34d082e850",
+        "sha256_in_prefix": "9df475ccff801fafb2dfe78d2aa4425274dc59b33151575d3cb2ac34d082e850",
+        "size_in_bytes": 1534
+      },
+      {
+        "_path": "include/geos/index/strtree/ItemDistance.h",
+        "path_type": "hardlink",
+        "sha256": "4d2fde463e18fd158ac7cfc277b69c102807128e7a0c3b2c2c58191056460148",
+        "sha256_in_prefix": "4d2fde463e18fd158ac7cfc277b69c102807128e7a0c3b2c2c58191056460148",
+        "size_in_bytes": 1420
+      },
+      {
+        "_path": "include/geos/index/strtree/SIRtree.h",
+        "path_type": "hardlink",
+        "sha256": "9b1aee254a2eeaaae3ed67d39c7b43b8573d57d0ad09909641c05e4c99fd98cb",
+        "sha256_in_prefix": "9b1aee254a2eeaaae3ed67d39c7b43b8573d57d0ad09909641c05e4c99fd98cb",
+        "size_in_bytes": 3328
+      },
+      {
+        "_path": "include/geos/index/strtree/STRtree.h",
+        "path_type": "hardlink",
+        "sha256": "9e549d72f79f06940ee344e6fac5a192ec08888b3efb24cc894bf0f30e703ec7",
+        "sha256_in_prefix": "9e549d72f79f06940ee344e6fac5a192ec08888b3efb24cc894bf0f30e703ec7",
+        "size_in_bytes": 5468
+      },
+      {
+        "_path": "include/geos/index/strtree/SimpleSTRdistance.h",
+        "path_type": "hardlink",
+        "sha256": "36c3e422eefc2829ea7ff4f220097f768da5eaea64f3e903117fd86d92df1a52",
+        "sha256_in_prefix": "36c3e422eefc2829ea7ff4f220097f768da5eaea64f3e903117fd86d92df1a52",
+        "size_in_bytes": 4291
+      },
+      {
+        "_path": "include/geos/index/strtree/SimpleSTRnode.h",
+        "path_type": "hardlink",
+        "sha256": "727db32189d98966d5f9e4e88b4197e04ae2ae41a6c63c01421fc2ca8318489d",
+        "sha256_in_prefix": "727db32189d98966d5f9e4e88b4197e04ae2ae41a6c63c01421fc2ca8318489d",
+        "size_in_bytes": 3041
+      },
+      {
+        "_path": "include/geos/index/strtree/SimpleSTRtree.h",
+        "path_type": "hardlink",
+        "sha256": "f5226e75a7e78528b0e022585177f995ec75200ef0b1ae5704fcdbda320e5e11",
+        "sha256_in_prefix": "f5226e75a7e78528b0e022585177f995ec75200ef0b1ae5704fcdbda320e5e11",
+        "size_in_bytes": 5118
+      },
+      {
+        "_path": "include/geos/index/strtree/TemplateSTRNode.h",
+        "path_type": "hardlink",
+        "sha256": "124d4a5a198164a67314a88f6b067b215be3d29708a0ec18fd629a120a83c251",
+        "sha256_in_prefix": "124d4a5a198164a67314a88f6b067b215be3d29708a0ec18fd629a120a83c251",
+        "size_in_bytes": 3690
+      },
+      {
+        "_path": "include/geos/index/strtree/TemplateSTRNodePair.h",
+        "path_type": "hardlink",
+        "sha256": "bd558e7fbc8a042bc59d4b4d6466dcd02a165bec51d1bf393f2c55694e84cd8e",
+        "sha256_in_prefix": "bd558e7fbc8a042bc59d4b4d6466dcd02a165bec51d1bf393f2c55694e84cd8e",
+        "size_in_bytes": 1740
+      },
+      {
+        "_path": "include/geos/index/strtree/TemplateSTRtree.h",
+        "path_type": "hardlink",
+        "sha256": "daaf4cfe501ce7b5f6fd8326f934972d95544815f17b139af3c6a43c55d49200",
+        "sha256_in_prefix": "daaf4cfe501ce7b5f6fd8326f934972d95544815f17b139af3c6a43c55d49200",
+        "size_in_bytes": 24374
+      },
+      {
+        "_path": "include/geos/index/strtree/TemplateSTRtreeDistance.h",
+        "path_type": "hardlink",
+        "sha256": "17533aee1acf87e682838d68a7eb2c74d683a369ae378d179e7fcef04c2101d3",
+        "sha256_in_prefix": "17533aee1acf87e682838d68a7eb2c74d683a369ae378d179e7fcef04c2101d3",
+        "size_in_bytes": 5222
+      },
+      {
+        "_path": "include/geos/index/sweepline/SweepLineEvent.h",
+        "path_type": "hardlink",
+        "sha256": "c0517186e8854d52d6afeff7e6ad802a717c9d947ee2d9b594ae692f799f9cf8",
+        "sha256_in_prefix": "c0517186e8854d52d6afeff7e6ad802a717c9d947ee2d9b594ae692f799f9cf8",
+        "size_in_bytes": 2291
+      },
+      {
+        "_path": "include/geos/index/sweepline/SweepLineIndex.h",
+        "path_type": "hardlink",
+        "sha256": "c33693bff5500c64a4590f71871765f23d1371f5b58c7a8c1a5c14cb4c4dd270",
+        "sha256_in_prefix": "c33693bff5500c64a4590f71871765f23d1371f5b58c7a8c1a5c14cb4c4dd270",
+        "size_in_bytes": 2158
+      },
+      {
+        "_path": "include/geos/index/sweepline/SweepLineInterval.h",
+        "path_type": "hardlink",
+        "sha256": "f6e86943f63808abf2d95bfdc073e4838ad455902e1127aeb28f5b0ed7763079",
+        "sha256_in_prefix": "f6e86943f63808abf2d95bfdc073e4838ad455902e1127aeb28f5b0ed7763079",
+        "size_in_bytes": 1077
+      },
+      {
+        "_path": "include/geos/index/sweepline/SweepLineOverlapAction.h",
+        "path_type": "hardlink",
+        "sha256": "7013f0229a5b123e598683356641a1d99e6bd72de15d775c496991fd2519e7ce",
+        "sha256_in_prefix": "7013f0229a5b123e598683356641a1d99e6bd72de15d775c496991fd2519e7ce",
+        "size_in_bytes": 1146
+      },
+      {
+        "_path": "include/geos/inline.h",
+        "path_type": "hardlink",
+        "sha256": "9c96b3130bded26f18dad784d3b0c9577758255f8b7dd866ae508e7c770670c5",
+        "sha256_in_prefix": "9c96b3130bded26f18dad784d3b0c9577758255f8b7dd866ae508e7c770670c5",
+        "size_in_bytes": 640
+      },
+      {
+        "_path": "include/geos/io/ByteOrderDataInStream.h",
+        "path_type": "hardlink",
+        "sha256": "e5cea85a1cbb7bdc0f0a7563b42937d5bcabec2c7043428459b5cd034665ec52",
+        "sha256_in_prefix": "e5cea85a1cbb7bdc0f0a7563b42937d5bcabec2c7043428459b5cd034665ec52",
+        "size_in_bytes": 1940
+      },
+      {
+        "_path": "include/geos/io/ByteOrderDataInStream.inl",
+        "path_type": "hardlink",
+        "sha256": "ef1831b7ffe5acff21dd51078d1a3057ff1846025f6fc3ec96d26815c0bd0e1a",
+        "sha256_in_prefix": "ef1831b7ffe5acff21dd51078d1a3057ff1846025f6fc3ec96d26815c0bd0e1a",
+        "size_in_bytes": 2682
+      },
+      {
+        "_path": "include/geos/io/ByteOrderValues.h",
+        "path_type": "hardlink",
+        "sha256": "427b29d91de2823ea1a70ada552f35c091e1c1af8a6c37cd1ce237dd01fa304d",
+        "sha256_in_prefix": "427b29d91de2823ea1a70ada552f35c091e1c1af8a6c37cd1ce237dd01fa304d",
+        "size_in_bytes": 1867
+      },
+      {
+        "_path": "include/geos/io/CLocalizer.h",
+        "path_type": "hardlink",
+        "sha256": "1ac2d2f83499a8ccaa290e01355b8e1d8aaeea2ce20474ce37feffbdc6097513",
+        "sha256_in_prefix": "1ac2d2f83499a8ccaa290e01355b8e1d8aaeea2ce20474ce37feffbdc6097513",
+        "size_in_bytes": 1147
+      },
+      {
+        "_path": "include/geos/io/GeoJSON.h",
+        "path_type": "hardlink",
+        "sha256": "1e3fec91577e4090ec44508564cb8f36a054b65b262e6cdbbafea675ae9f08bd",
+        "sha256_in_prefix": "1e3fec91577e4090ec44508564cb8f36a054b65b262e6cdbbafea675ae9f08bd",
+        "size_in_bytes": 3219
+      },
+      {
+        "_path": "include/geos/io/GeoJSONReader.h",
+        "path_type": "hardlink",
+        "sha256": "1450e91ed1aed2cfea0bc8e9d6b1b507f3b76a02981e7fb43852a3695c67e74f",
+        "sha256_in_prefix": "1450e91ed1aed2cfea0bc8e9d6b1b507f3b76a02981e7fb43852a3695c67e74f",
+        "size_in_bytes": 3590
+      },
+      {
+        "_path": "include/geos/io/GeoJSONWriter.h",
+        "path_type": "hardlink",
+        "sha256": "dc20b958705afcbc8545c644f65d486832e45ca460d3c4bf5230b40b17df7c39",
+        "sha256_in_prefix": "dc20b958705afcbc8545c644f65d486832e45ca460d3c4bf5230b40b17df7c39",
+        "size_in_bytes": 3313
+      },
+      {
+        "_path": "include/geos/io/ParseException.h",
+        "path_type": "hardlink",
+        "sha256": "b4730106de520bc6dee06dcc4a28331295ac3c210f9ab5726a799c8f01f2bcbc",
+        "sha256_in_prefix": "b4730106de520bc6dee06dcc4a28331295ac3c210f9ab5726a799c8f01f2bcbc",
+        "size_in_bytes": 1359
+      },
+      {
+        "_path": "include/geos/io/StringTokenizer.h",
+        "path_type": "hardlink",
+        "sha256": "c5c221305c5944e06ea27809b7a57f91919664727294b0a4830ffb786b322aad",
+        "sha256_in_prefix": "c5c221305c5944e06ea27809b7a57f91919664727294b0a4830ffb786b322aad",
+        "size_in_bytes": 1697
+      },
+      {
+        "_path": "include/geos/io/WKBConstants.h",
+        "path_type": "hardlink",
+        "sha256": "ded6f7a1389e82fa443c88ac56b525ab1e9d3d9eb0514705a2b2d2bc9aa64d46",
+        "sha256_in_prefix": "ded6f7a1389e82fa443c88ac56b525ab1e9d3d9eb0514705a2b2d2bc9aa64d46",
+        "size_in_bytes": 1202
+      },
+      {
+        "_path": "include/geos/io/WKBReader.h",
+        "path_type": "hardlink",
+        "sha256": "6f1abe75b86802006debe1f9ca55d70e1460ae6a7e4f943329b3b0f2be3de41d",
+        "sha256_in_prefix": "6f1abe75b86802006debe1f9ca55d70e1460ae6a7e4f943329b3b0f2be3de41d",
+        "size_in_bytes": 4584
+      },
+      {
+        "_path": "include/geos/io/WKBWriter.h",
+        "path_type": "hardlink",
+        "sha256": "cb1527ab5cab83c1cb0eba16338be29009a1c63105fa4345ce80bae9b774cd3c",
+        "sha256_in_prefix": "cb1527ab5cab83c1cb0eba16338be29009a1c63105fa4345ce80bae9b774cd3c",
+        "size_in_bytes": 6176
+      },
+      {
+        "_path": "include/geos/io/WKTReader.h",
+        "path_type": "hardlink",
+        "sha256": "b601d78ada927ecfddec40365b9ae5453c1fafb30715fbd4f17229745646aaa8",
+        "sha256_in_prefix": "b601d78ada927ecfddec40365b9ae5453c1fafb30715fbd4f17229745646aaa8",
+        "size_in_bytes": 4341
+      },
+      {
+        "_path": "include/geos/io/WKTReader.inl",
+        "path_type": "hardlink",
+        "sha256": "89f1d822143fc607333726fa2cc706187f38036248df959f76d68230d6bc61ce",
+        "sha256_in_prefix": "89f1d822143fc607333726fa2cc706187f38036248df959f76d68230d6bc61ce",
+        "size_in_bytes": 1767
+      },
+      {
+        "_path": "include/geos/io/WKTWriter.h",
+        "path_type": "hardlink",
+        "sha256": "ef99872473e0da5395a4369ae1458cb9e288cf6407c3e7b6a3329708e3af2801",
+        "sha256_in_prefix": "ef99872473e0da5395a4369ae1458cb9e288cf6407c3e7b6a3329708e3af2801",
+        "size_in_bytes": 7244
+      },
+      {
+        "_path": "include/geos/io/Writer.h",
+        "path_type": "hardlink",
+        "sha256": "1d3ce2d194b7a6c381b7554fdf66c8b8703447865808e4aae6905b7a9e5370e7",
+        "sha256_in_prefix": "1d3ce2d194b7a6c381b7554fdf66c8b8703447865808e4aae6905b7a9e5370e7",
+        "size_in_bytes": 1306
+      },
+      {
+        "_path": "include/geos/linearref/ExtractLineByLocation.h",
+        "path_type": "hardlink",
+        "sha256": "19b2064e957484d6aa0f4146cfec6eb009054a4ab70d32de0d78bfb435fe2b37",
+        "sha256_in_prefix": "19b2064e957484d6aa0f4146cfec6eb009054a4ab70d32de0d78bfb435fe2b37",
+        "size_in_bytes": 2725
+      },
+      {
+        "_path": "include/geos/linearref/LengthIndexOfPoint.h",
+        "path_type": "hardlink",
+        "sha256": "66bb37d261fba3bf307e8243e8b19fac13556d72bb92c6f4cc1abb08334a911e",
+        "sha256_in_prefix": "66bb37d261fba3bf307e8243e8b19fac13556d72bb92c6f4cc1abb08334a911e",
+        "size_in_bytes": 2852
+      },
+      {
+        "_path": "include/geos/linearref/LengthIndexedLine.h",
+        "path_type": "hardlink",
+        "sha256": "cab247f8a6deb7312161ba18c4ab3f0b4a702e05c77afd05b9b3ef235beba986",
+        "sha256_in_prefix": "cab247f8a6deb7312161ba18c4ab3f0b4a702e05c77afd05b9b3ef235beba986",
+        "size_in_bytes": 7402
+      },
+      {
+        "_path": "include/geos/linearref/LengthLocationMap.h",
+        "path_type": "hardlink",
+        "sha256": "fe5d6cd4fe00d1d6d14d0c876bfb699b26b814d68916649af2ffb2b7be11d7e6",
+        "sha256_in_prefix": "fe5d6cd4fe00d1d6d14d0c876bfb699b26b814d68916649af2ffb2b7be11d7e6",
+        "size_in_bytes": 4319
+      },
+      {
+        "_path": "include/geos/linearref/LinearGeometryBuilder.h",
+        "path_type": "hardlink",
+        "sha256": "f3eefb6885a5349ba068b8c3cd8fa5ea275efb4d76c3a0c7f49b838ea36e5455",
+        "sha256_in_prefix": "f3eefb6885a5349ba068b8c3cd8fa5ea275efb4d76c3a0c7f49b838ea36e5455",
+        "size_in_bytes": 3041
+      },
+      {
+        "_path": "include/geos/linearref/LinearIterator.h",
+        "path_type": "hardlink",
+        "sha256": "ef6ce1831c301d8e591a806d0c4a24ece11127e47b6059500d3a3d4681c51389",
+        "sha256_in_prefix": "ef6ce1831c301d8e591a806d0c4a24ece11127e47b6059500d3a3d4681c51389",
+        "size_in_bytes": 4596
+      },
+      {
+        "_path": "include/geos/linearref/LinearLocation.h",
+        "path_type": "hardlink",
+        "sha256": "6fc2865835e0ed565e35cbcee5f3265c6ddf3337f19981ca4c58601471d23e34",
+        "sha256_in_prefix": "6fc2865835e0ed565e35cbcee5f3265c6ddf3337f19981ca4c58601471d23e34",
+        "size_in_bytes": 8474
+      },
+      {
+        "_path": "include/geos/linearref/LocationIndexOfLine.h",
+        "path_type": "hardlink",
+        "sha256": "19000b11bfa7969ee9cd29c9a8af397f8794a72445d58a818c8deca0841b50d8",
+        "sha256_in_prefix": "19000b11bfa7969ee9cd29c9a8af397f8794a72445d58a818c8deca0841b50d8",
+        "size_in_bytes": 2583
+      },
+      {
+        "_path": "include/geos/linearref/LocationIndexOfPoint.h",
+        "path_type": "hardlink",
+        "sha256": "fdcb9ff817b99515d6c9020a3f847ec90a5e5552170bb5f3740cbe0ceda4a48e",
+        "sha256_in_prefix": "fdcb9ff817b99515d6c9020a3f847ec90a5e5552170bb5f3740cbe0ceda4a48e",
+        "size_in_bytes": 2886
+      },
+      {
+        "_path": "include/geos/linearref/LocationIndexedLine.h",
+        "path_type": "hardlink",
+        "sha256": "cf9015177aa57f0fec44998c5653bbc3071df11c21ed03e073219e26701e11ca",
+        "sha256_in_prefix": "cf9015177aa57f0fec44998c5653bbc3071df11c21ed03e073219e26701e11ca",
+        "size_in_bytes": 8386
+      },
+      {
+        "_path": "include/geos/math/DD.h",
+        "path_type": "hardlink",
+        "sha256": "1740cb490aee8543ecd563b0ef611d1995047def94dea1ae73698775ecc4636d",
+        "sha256_in_prefix": "1740cb490aee8543ecd563b0ef611d1995047def94dea1ae73698775ecc4636d",
+        "size_in_bytes": 7016
+      },
+      {
+        "_path": "include/geos/namespaces.h",
+        "path_type": "hardlink",
+        "sha256": "14d87f5f862d745f4ef100e6ec36b3cb51c3a77b29be85161aab2b171ff301b3",
+        "sha256_in_prefix": "14d87f5f862d745f4ef100e6ec36b3cb51c3a77b29be85161aab2b171ff301b3",
+        "size_in_bytes": 13022
+      },
+      {
+        "_path": "include/geos/noding/BasicSegmentString.h",
+        "path_type": "hardlink",
+        "sha256": "85454f8eeeb6165f1d0c458b219847d49e3f1c694281e31a703e37c9eec75f4c",
+        "sha256_in_prefix": "85454f8eeeb6165f1d0c458b219847d49e3f1c694281e31a703e37c9eec75f4c",
+        "size_in_bytes": 3200
+      },
+      {
+        "_path": "include/geos/noding/BasicSegmentString.inl",
+        "path_type": "hardlink",
+        "sha256": "5266cdb0197512a143897892d695f7421c9d7cf13d28beb998b0c72416a46f94",
+        "sha256_in_prefix": "5266cdb0197512a143897892d695f7421c9d7cf13d28beb998b0c72416a46f94",
+        "size_in_bytes": 1462
+      },
+      {
+        "_path": "include/geos/noding/FastNodingValidator.h",
+        "path_type": "hardlink",
+        "sha256": "65739cffb03efb382e32b7d56e70fd82a2fa788daf05095b1dbb6fc4e72f7735",
+        "sha256_in_prefix": "65739cffb03efb382e32b7d56e70fd82a2fa788daf05095b1dbb6fc4e72f7735",
+        "size_in_bytes": 3531
+      },
+      {
+        "_path": "include/geos/noding/FastSegmentSetIntersectionFinder.h",
+        "path_type": "hardlink",
+        "sha256": "3a8abfc6c15246ee88307effb38d88d951ee292e719c03d756b0bce4ad9ec901",
+        "sha256_in_prefix": "3a8abfc6c15246ee88307effb38d88d951ee292e719c03d756b0bce4ad9ec901",
+        "size_in_bytes": 2393
+      },
+      {
+        "_path": "include/geos/noding/GeometryNoder.h",
+        "path_type": "hardlink",
+        "sha256": "3eabc81d521f919147a9dac490329c044ea6975f583ac4c920829b645199fb6b",
+        "sha256_in_prefix": "3eabc81d521f919147a9dac490329c044ea6975f583ac4c920829b645199fb6b",
+        "size_in_bytes": 1783
+      },
+      {
+        "_path": "include/geos/noding/IntersectionAdder.h",
+        "path_type": "hardlink",
+        "sha256": "f1526b0473e278bc14a38ec80bbfa5b66dbd87ca0a18a7823ca9ec3a774663fc",
+        "sha256_in_prefix": "f1526b0473e278bc14a38ec80bbfa5b66dbd87ca0a18a7823ca9ec3a774663fc",
+        "size_in_bytes": 5499
+      },
+      {
+        "_path": "include/geos/noding/IntersectionFinderAdder.h",
+        "path_type": "hardlink",
+        "sha256": "1794b27ab456ae3eee7713969b99cd83ddf2557383cd7e568839c20b1509cd8d",
+        "sha256_in_prefix": "1794b27ab456ae3eee7713969b99cd83ddf2557383cd7e568839c20b1509cd8d",
+        "size_in_bytes": 3060
+      },
+      {
+        "_path": "include/geos/noding/IteratedNoder.h",
+        "path_type": "hardlink",
+        "sha256": "6e7094f6e44a781f08ffb442ffb83113811b3420fb75279bd1548fee4f5f4e87",
+        "sha256_in_prefix": "6e7094f6e44a781f08ffb442ffb83113811b3420fb75279bd1548fee4f5f4e87",
+        "size_in_bytes": 3316
+      },
+      {
+        "_path": "include/geos/noding/MCIndexNoder.h",
+        "path_type": "hardlink",
+        "sha256": "c9967748cc4d0d3560ca5e707b1edea9abf5a84c2042ee39c5886ea9cb047769",
+        "sha256_in_prefix": "c9967748cc4d0d3560ca5e707b1edea9abf5a84c2042ee39c5886ea9cb047769",
+        "size_in_bytes": 3880
+      },
+      {
+        "_path": "include/geos/noding/MCIndexNoder.inl",
+        "path_type": "hardlink",
+        "sha256": "21028be9de46801b9130b5a985fd725e8ca7e725f5a6a3910475ae981bfe90cd",
+        "sha256_in_prefix": "21028be9de46801b9130b5a985fd725e8ca7e725f5a6a3910475ae981bfe90cd",
+        "size_in_bytes": 1282
+      },
+      {
+        "_path": "include/geos/noding/MCIndexSegmentSetMutualIntersector.h",
+        "path_type": "hardlink",
+        "sha256": "ff319ec6337cafe87284df3f7648bf81e1ad74f5edb1dc1bf3e6ee132fceedbb",
+        "sha256_in_prefix": "ff319ec6337cafe87284df3f7648bf81e1ad74f5edb1dc1bf3e6ee132fceedbb",
+        "size_in_bytes": 4056
+      },
+      {
+        "_path": "include/geos/noding/NodableSegmentString.h",
+        "path_type": "hardlink",
+        "sha256": "818dcb489c409760780903a7405097bae3de0d3dd17a26dfd1b1cda93263f1f8",
+        "sha256_in_prefix": "818dcb489c409760780903a7405097bae3de0d3dd17a26dfd1b1cda93263f1f8",
+        "size_in_bytes": 1515
+      },
+      {
+        "_path": "include/geos/noding/NodedSegmentString.h",
+        "path_type": "hardlink",
+        "sha256": "b29cc53ee83fbbb5fc31c12d4f3b52c042fc6d38a100b37cacba800282e1bf56",
+        "sha256_in_prefix": "b29cc53ee83fbbb5fc31c12d4f3b52c042fc6d38a100b37cacba800282e1bf56",
+        "size_in_bytes": 6032
+      },
+      {
+        "_path": "include/geos/noding/NodedSegmentString.inl",
+        "path_type": "hardlink",
+        "sha256": "7f4bc27e815e27095bd6cda5e4e941c699b0fb66cc5e87d24bf45a5a9e966ce6",
+        "sha256_in_prefix": "7f4bc27e815e27095bd6cda5e4e941c699b0fb66cc5e87d24bf45a5a9e966ce6",
+        "size_in_bytes": 3322
+      },
+      {
+        "_path": "include/geos/noding/Noder.h",
+        "path_type": "hardlink",
+        "sha256": "368321357a031f2b7d3d3dc2844926741298f0f816a0858d33219002238e2a49",
+        "sha256_in_prefix": "368321357a031f2b7d3d3dc2844926741298f0f816a0858d33219002238e2a49",
+        "size_in_bytes": 2470
+      },
+      {
+        "_path": "include/geos/noding/NodingIntersectionFinder.h",
+        "path_type": "hardlink",
+        "sha256": "020df24e37f02720977b40500895156922300ab8142b9e42e21915bb50209dde",
+        "sha256_in_prefix": "020df24e37f02720977b40500895156922300ab8142b9e42e21915bb50209dde",
+        "size_in_bytes": 6810
+      },
+      {
+        "_path": "include/geos/noding/NodingIntersectionFinder.inl",
+        "path_type": "hardlink",
+        "sha256": "379a7064c9ed6aa3fe9d90437da87f794838a1943b1153b1a48b4d5f63c21a2d",
+        "sha256_in_prefix": "379a7064c9ed6aa3fe9d90437da87f794838a1943b1153b1a48b4d5f63c21a2d",
+        "size_in_bytes": 2026
+      },
+      {
+        "_path": "include/geos/noding/NodingValidator.h",
+        "path_type": "hardlink",
+        "sha256": "96465686f2771b3babb7fc2e49080e1f693b17da84207751bbdb8f8a69d4e1ed",
+        "sha256_in_prefix": "96465686f2771b3babb7fc2e49080e1f693b17da84207751bbdb8f8a69d4e1ed",
+        "size_in_bytes": 3135
+      },
+      {
+        "_path": "include/geos/noding/Octant.h",
+        "path_type": "hardlink",
+        "sha256": "58f4f69bffee46f041271254bacda72dce93e7e7c6dbe537ccb59b3895034981",
+        "sha256_in_prefix": "58f4f69bffee46f041271254bacda72dce93e7e7c6dbe537ccb59b3895034981",
+        "size_in_bytes": 1772
+      },
+      {
+        "_path": "include/geos/noding/OrientedCoordinateArray.h",
+        "path_type": "hardlink",
+        "sha256": "223bb73aa9c3b49d117e7087bb65c6f3f395b6588e099d39ac674510eed852bd",
+        "sha256_in_prefix": "223bb73aa9c3b49d117e7087bb65c6f3f395b6588e099d39ac674510eed852bd",
+        "size_in_bytes": 3091
+      },
+      {
+        "_path": "include/geos/noding/ScaledNoder.h",
+        "path_type": "hardlink",
+        "sha256": "cdef47245285004e9dd0d066e549c096cad86fa10f18f431c074e896bd58ba85",
+        "sha256_in_prefix": "cdef47245285004e9dd0d066e549c096cad86fa10f18f431c074e896bd58ba85",
+        "size_in_bytes": 3158
+      },
+      {
+        "_path": "include/geos/noding/SegmentIntersectionDetector.h",
+        "path_type": "hardlink",
+        "sha256": "dd6453a9cd991676ad81f3b4739be5cc7285d7b4b68232332efa1c1fb35fd522",
+        "sha256_in_prefix": "dd6453a9cd991676ad81f3b4739be5cc7285d7b4b68232332efa1c1fb35fd522",
+        "size_in_bytes": 4713
+      },
+      {
+        "_path": "include/geos/noding/SegmentIntersector.h",
+        "path_type": "hardlink",
+        "sha256": "aee734618c4eb05a2292652675074167ef6f2e474a907240632a4e3d83e07ff6",
+        "sha256_in_prefix": "aee734618c4eb05a2292652675074167ef6f2e474a907240632a4e3d83e07ff6",
+        "size_in_bytes": 2387
+      },
+      {
+        "_path": "include/geos/noding/SegmentNode.h",
+        "path_type": "hardlink",
+        "sha256": "87a666a18a103b9550e9673d1044bb039481971ccdb1b2eae2836eb50ed95105",
+        "sha256_in_prefix": "87a666a18a103b9550e9673d1044bb039481971ccdb1b2eae2836eb50ed95105",
+        "size_in_bytes": 3244
+      },
+      {
+        "_path": "include/geos/noding/SegmentNode.inl",
+        "path_type": "hardlink",
+        "sha256": "48437addafe576cf36a489cb05af23bbe3cd38fc78179c6325e211add586d6eb",
+        "sha256_in_prefix": "48437addafe576cf36a489cb05af23bbe3cd38fc78179c6325e211add586d6eb",
+        "size_in_bytes": 2255
+      },
+      {
+        "_path": "include/geos/noding/SegmentNodeList.h",
+        "path_type": "hardlink",
+        "sha256": "81de9ebd531b93e4841b2e4bea0ff9adae5ca89af176401595ce9c253849215f",
+        "sha256_in_prefix": "81de9ebd531b93e4841b2e4bea0ff9adae5ca89af176401595ce9c253849215f",
+        "size_in_bytes": 7066
+      },
+      {
+        "_path": "include/geos/noding/SegmentPointComparator.h",
+        "path_type": "hardlink",
+        "sha256": "75fcb1f4ba68de96487a553fe370bfb04986d771412d963712b8cbf512a0f37a",
+        "sha256_in_prefix": "75fcb1f4ba68de96487a553fe370bfb04986d771412d963712b8cbf512a0f37a",
+        "size_in_bytes": 3150
+      },
+      {
+        "_path": "include/geos/noding/SegmentSetMutualIntersector.h",
+        "path_type": "hardlink",
+        "sha256": "10bcc337e129bc58b4f3160d55d22ca0fd35349b9f08574f61a005dcf5a05f40",
+        "sha256_in_prefix": "10bcc337e129bc58b4f3160d55d22ca0fd35349b9f08574f61a005dcf5a05f40",
+        "size_in_bytes": 2221
+      },
+      {
+        "_path": "include/geos/noding/SegmentString.h",
+        "path_type": "hardlink",
+        "sha256": "f7d499a4cfc33231b0bd37d61a99e04557d37ae0f22775a337be46ed4927010d",
+        "sha256_in_prefix": "f7d499a4cfc33231b0bd37d61a99e04557d37ae0f22775a337be46ed4927010d",
+        "size_in_bytes": 3008
+      },
+      {
+        "_path": "include/geos/noding/SegmentStringUtil.h",
+        "path_type": "hardlink",
+        "sha256": "06ee48849c2b6b97f64c874f887ed326e4a13d7d616cd4e69f23d46265bb1ccd",
+        "sha256_in_prefix": "06ee48849c2b6b97f64c874f887ed326e4a13d7d616cd4e69f23d46265bb1ccd",
+        "size_in_bytes": 2281
+      },
+      {
+        "_path": "include/geos/noding/SimpleNoder.h",
+        "path_type": "hardlink",
+        "sha256": "0e0615d7aa51bdf201f6cb484dad769fe2d3bcbad31ef64b983f0735b6971b4f",
+        "sha256_in_prefix": "0e0615d7aa51bdf201f6cb484dad769fe2d3bcbad31ef64b983f0735b6971b4f",
+        "size_in_bytes": 1890
+      },
+      {
+        "_path": "include/geos/noding/SinglePassNoder.h",
+        "path_type": "hardlink",
+        "sha256": "872057b1016ce94e6ec273a02781683e7e37bf1e02cbe7f42870da774a6aec9f",
+        "sha256_in_prefix": "872057b1016ce94e6ec273a02781683e7e37bf1e02cbe7f42870da774a6aec9f",
+        "size_in_bytes": 2580
+      },
+      {
+        "_path": "include/geos/noding/ValidatingNoder.h",
+        "path_type": "hardlink",
+        "sha256": "c561f02c16f93bb2fbbccc2ad7e930ac9be321467266610f8688ad5bbd528dc6",
+        "sha256_in_prefix": "c561f02c16f93bb2fbbccc2ad7e930ac9be321467266610f8688ad5bbd528dc6",
+        "size_in_bytes": 1653
+      },
+      {
+        "_path": "include/geos/noding/snap/SnappingIntersectionAdder.h",
+        "path_type": "hardlink",
+        "sha256": "927312fa7884d36b34c27fab5480c765e9edb1f2997e4d659cec5df243f883a1",
+        "sha256_in_prefix": "927312fa7884d36b34c27fab5480c765e9edb1f2997e4d659cec5df243f883a1",
+        "size_in_bytes": 3197
+      },
+      {
+        "_path": "include/geos/noding/snap/SnappingNoder.h",
+        "path_type": "hardlink",
+        "sha256": "3f4177cd7383de598c96a6531e998d411e678eced52361c85b1c1b236f5c2e96",
+        "sha256_in_prefix": "3f4177cd7383de598c96a6531e998d411e678eced52361c85b1c1b236f5c2e96",
+        "size_in_bytes": 3555
+      },
+      {
+        "_path": "include/geos/noding/snap/SnappingPointIndex.h",
+        "path_type": "hardlink",
+        "sha256": "6444f04532eaba0ed171c1774330b03b8f46504cdf21923b653c71a3f7ad1572",
+        "sha256_in_prefix": "6444f04532eaba0ed171c1774330b03b8f46504cdf21923b653c71a3f7ad1572",
+        "size_in_bytes": 1558
+      },
+      {
+        "_path": "include/geos/noding/snapround/HotPixel.h",
+        "path_type": "hardlink",
+        "sha256": "38776a6cae4e542388b02ef6b95f795a1b4cb6251f08a93dbcc20af87a9476b7",
+        "sha256_in_prefix": "38776a6cae4e542388b02ef6b95f795a1b4cb6251f08a93dbcc20af87a9476b7",
+        "size_in_bytes": 4196
+      },
+      {
+        "_path": "include/geos/noding/snapround/HotPixel.inl",
+        "path_type": "hardlink",
+        "sha256": "3b6015889cd79914a890818fadd35fbe03f4a2fc794a77b480639b6a3f23e3ed",
+        "sha256_in_prefix": "3b6015889cd79914a890818fadd35fbe03f4a2fc794a77b480639b6a3f23e3ed",
+        "size_in_bytes": 1178
+      },
+      {
+        "_path": "include/geos/noding/snapround/HotPixelIndex.h",
+        "path_type": "hardlink",
+        "sha256": "0b58e0cbdff70fe1aad2e0977819c56d7868adcaf45e799ef1f5ea160aa6af85",
+        "sha256_in_prefix": "0b58e0cbdff70fe1aad2e0977819c56d7868adcaf45e799ef1f5ea160aa6af85",
+        "size_in_bytes": 2556
+      },
+      {
+        "_path": "include/geos/noding/snapround/MCIndexPointSnapper.h",
+        "path_type": "hardlink",
+        "sha256": "d454916e70639cfd6884f8a9bd71a71d679c4dd311c87e80b8b172d37eb2dc7b",
+        "sha256_in_prefix": "d454916e70639cfd6884f8a9bd71a71d679c4dd311c87e80b8b172d37eb2dc7b",
+        "size_in_bytes": 2690
+      },
+      {
+        "_path": "include/geos/noding/snapround/MCIndexSnapRounder.h",
+        "path_type": "hardlink",
+        "sha256": "215edff30bf34696ff4e5f1575d9883a964ebcdbd474a04d8f8070e54458967e",
+        "sha256_in_prefix": "215edff30bf34696ff4e5f1575d9883a964ebcdbd474a04d8f8070e54458967e",
+        "size_in_bytes": 4751
+      },
+      {
+        "_path": "include/geos/noding/snapround/SnapRoundingIntersectionAdder.h",
+        "path_type": "hardlink",
+        "sha256": "33abbe9b7f1bafced0c5f20a032cce92c4b22609c02cb289060e9960544940ca",
+        "sha256_in_prefix": "33abbe9b7f1bafced0c5f20a032cce92c4b22609c02cb289060e9960544940ca",
+        "size_in_bytes": 3980
+      },
+      {
+        "_path": "include/geos/noding/snapround/SnapRoundingNoder.h",
+        "path_type": "hardlink",
+        "sha256": "749c664d21ccae01a04cfea8b9dab42e3232ed9312b0b3b5608d9b6d277c1e6e",
+        "sha256_in_prefix": "749c664d21ccae01a04cfea8b9dab42e3232ed9312b0b3b5608d9b6d277c1e6e",
+        "size_in_bytes": 5417
+      },
+      {
+        "_path": "include/geos/operation/GeometryGraphOperation.h",
+        "path_type": "hardlink",
+        "sha256": "56a2ee309894dace25b70d8084450309b0bda5032b66967d5074f41c6184c073",
+        "sha256_in_prefix": "56a2ee309894dace25b70d8084450309b0bda5032b66967d5074f41c6184c073",
+        "size_in_bytes": 2292
+      },
+      {
+        "_path": "include/geos/operation/buffer/BufferBuilder.h",
+        "path_type": "hardlink",
+        "sha256": "4a2ed3bb65e2dff6232ed2c85e5c6fe55bd31842c8d5edbbb1d657dc64be00bc",
+        "sha256_in_prefix": "4a2ed3bb65e2dff6232ed2c85e5c6fe55bd31842c8d5edbbb1d657dc64be00bc",
+        "size_in_bytes": 7965
+      },
+      {
+        "_path": "include/geos/operation/buffer/BufferInputLineSimplifier.h",
+        "path_type": "hardlink",
+        "sha256": "4037eab212c4c912efb91006111d102c6f1316510618ec4934f44bff970609a3",
+        "sha256_in_prefix": "4037eab212c4c912efb91006111d102c6f1316510618ec4934f44bff970609a3",
+        "size_in_bytes": 6175
+      },
+      {
+        "_path": "include/geos/operation/buffer/BufferOp.h",
+        "path_type": "hardlink",
+        "sha256": "1e93562cc8bc92da60db2230f566a1b0768cb0d5b3773f3214cec71649124864",
+        "sha256_in_prefix": "1e93562cc8bc92da60db2230f566a1b0768cb0d5b3773f3214cec71649124864",
+        "size_in_bytes": 9312
+      },
+      {
+        "_path": "include/geos/operation/buffer/BufferParameters.h",
+        "path_type": "hardlink",
+        "sha256": "0e38a1c4fb698bee5a74f87d1f16c9144403f42d089fdf5082c646fff729d5d2",
+        "sha256_in_prefix": "0e38a1c4fb698bee5a74f87d1f16c9144403f42d089fdf5082c646fff729d5d2",
+        "size_in_bytes": 8749
+      },
+      {
+        "_path": "include/geos/operation/buffer/BufferSubgraph.h",
+        "path_type": "hardlink",
+        "sha256": "0bad7a0859cf9457cc29e8ba5414b7a1aa3d43d7a0d257e92b47535aec14b214",
+        "sha256_in_prefix": "0bad7a0859cf9457cc29e8ba5414b7a1aa3d43d7a0d257e92b47535aec14b214",
+        "size_in_bytes": 5383
+      },
+      {
+        "_path": "include/geos/operation/buffer/OffsetCurveBuilder.h",
+        "path_type": "hardlink",
+        "sha256": "4dc428deb4069afeeb6f858ca08ec3de878da9bb601bcd680317f847f9c29ccf",
+        "sha256_in_prefix": "4dc428deb4069afeeb6f858ca08ec3de878da9bb601bcd680317f847f9c29ccf",
+        "size_in_bytes": 7173
+      },
+      {
+        "_path": "include/geos/operation/buffer/OffsetCurveSetBuilder.h",
+        "path_type": "hardlink",
+        "sha256": "2da6723bda18b6cb7ed13d297dc524e11dba9ebed10c99eda5f8ecb52ab5a495",
+        "sha256_in_prefix": "2da6723bda18b6cb7ed13d297dc524e11dba9ebed10c99eda5f8ecb52ab5a495",
+        "size_in_bytes": 9666
+      },
+      {
+        "_path": "include/geos/operation/buffer/OffsetSegmentGenerator.h",
+        "path_type": "hardlink",
+        "sha256": "b37bce23f90176c1b086412090c0aaaf1ba4e4bfec0756a0099e469b1c595a82",
+        "sha256_in_prefix": "b37bce23f90176c1b086412090c0aaaf1ba4e4bfec0756a0099e469b1c595a82",
+        "size_in_bytes": 11301
+      },
+      {
+        "_path": "include/geos/operation/buffer/OffsetSegmentString.h",
+        "path_type": "hardlink",
+        "sha256": "62ce7ebbd7267a7270da6fa9492ac0ce6846851e88d8c4ac6218905f60dfe5e2",
+        "sha256_in_prefix": "62ce7ebbd7267a7270da6fa9492ac0ce6846851e88d8c4ac6218905f60dfe5e2",
+        "size_in_bytes": 5485
+      },
+      {
+        "_path": "include/geos/operation/buffer/RightmostEdgeFinder.h",
+        "path_type": "hardlink",
+        "sha256": "0904b46f60c8495346d9a18d11a7e05c7b47af2716bb367f7c42e2b77d034a04",
+        "sha256_in_prefix": "0904b46f60c8495346d9a18d11a7e05c7b47af2716bb367f7c42e2b77d034a04",
+        "size_in_bytes": 2561
+      },
+      {
+        "_path": "include/geos/operation/buffer/SubgraphDepthLocater.h",
+        "path_type": "hardlink",
+        "sha256": "2df2799d5c394effbd0a387cdacb32bfa5251efc8e724819c63651379af35921",
+        "sha256_in_prefix": "2df2799d5c394effbd0a387cdacb32bfa5251efc8e724819c63651379af35921",
+        "size_in_bytes": 3609
+      },
+      {
+        "_path": "include/geos/operation/distance/ConnectedElementLocationFilter.h",
+        "path_type": "hardlink",
+        "sha256": "f91ff70682cc979750b7a262a0b147c94043d7dccad93c2c21a4f85786f10598",
+        "sha256_in_prefix": "f91ff70682cc979750b7a262a0b147c94043d7dccad93c2c21a4f85786f10598",
+        "size_in_bytes": 2584
+      },
+      {
+        "_path": "include/geos/operation/distance/ConnectedElementPointFilter.h",
+        "path_type": "hardlink",
+        "sha256": "ce4e177887d7b69c0bba18a92be3a3a009e8187b5225219c4465adf87757b94d",
+        "sha256_in_prefix": "ce4e177887d7b69c0bba18a92be3a3a009e8187b5225219c4465adf87757b94d",
+        "size_in_bytes": 2094
+      },
+      {
+        "_path": "include/geos/operation/distance/DistanceOp.h",
+        "path_type": "hardlink",
+        "sha256": "8a0df3b4b0dc1d8d0ea640ac89c8d0c437d9e0314f7956c6daa195ef0bb2defe",
+        "sha256_in_prefix": "8a0df3b4b0dc1d8d0ea640ac89c8d0c437d9e0314f7956c6daa195ef0bb2defe",
+        "size_in_bytes": 7346
+      },
+      {
+        "_path": "include/geos/operation/distance/FacetSequence.h",
+        "path_type": "hardlink",
+        "sha256": "8ec4e189d7edc5e156b882d030747ca545a9fb7681c74b5d89002b944cd81959",
+        "sha256_in_prefix": "8ec4e189d7edc5e156b882d030747ca545a9fb7681c74b5d89002b944cd81959",
+        "size_in_bytes": 3081
+      },
+      {
+        "_path": "include/geos/operation/distance/FacetSequenceTreeBuilder.h",
+        "path_type": "hardlink",
+        "sha256": "cc93ca2805e2e6181d36eec6aca67c39ba0eb19dbba970503b34f9da386a9df6",
+        "sha256_in_prefix": "cc93ca2805e2e6181d36eec6aca67c39ba0eb19dbba970503b34f9da386a9df6",
+        "size_in_bytes": 2532
+      },
+      {
+        "_path": "include/geos/operation/distance/GeometryLocation.h",
+        "path_type": "hardlink",
+        "sha256": "43528a5721845d29877c729716e240826e93b3ba2f4cf33c3ee88c0b27a9c6b0",
+        "sha256_in_prefix": "43528a5721845d29877c729716e240826e93b3ba2f4cf33c3ee88c0b27a9c6b0",
+        "size_in_bytes": 3573
+      },
+      {
+        "_path": "include/geos/operation/distance/IndexedFacetDistance.h",
+        "path_type": "hardlink",
+        "sha256": "f2e26bbf091e2c05e03713b254687224e8d0100d675892523f73760c61fc0d4f",
+        "sha256_in_prefix": "f2e26bbf091e2c05e03713b254687224e8d0100d675892523f73760c61fc0d4f",
+        "size_in_bytes": 4151
+      },
+      {
+        "_path": "include/geos/operation/intersection/Rectangle.h",
+        "path_type": "hardlink",
+        "sha256": "b21999227cc94ed263eaa174c6f46cebd83384970652b95ac560f3fe624346e2",
+        "sha256_in_prefix": "b21999227cc94ed263eaa174c6f46cebd83384970652b95ac560f3fe624346e2",
+        "size_in_bytes": 5695
+      },
+      {
+        "_path": "include/geos/operation/intersection/RectangleIntersection.h",
+        "path_type": "hardlink",
+        "sha256": "ef419c2d74ee4f7662ae1dae8e312685d2909edace845bd4377a433147f039d7",
+        "sha256_in_prefix": "ef419c2d74ee4f7662ae1dae8e312685d2909edace845bd4377a433147f039d7",
+        "size_in_bytes": 5952
+      },
+      {
+        "_path": "include/geos/operation/intersection/RectangleIntersectionBuilder.h",
+        "path_type": "hardlink",
+        "sha256": "ae4596cbee25bac0effb5328d74a05bf6af94ba61538b6d1ca51e8a81a8b5696",
+        "sha256_in_prefix": "ae4596cbee25bac0effb5328d74a05bf6af94ba61538b6d1ca51e8a81a8b5696",
+        "size_in_bytes": 4502
+      },
+      {
+        "_path": "include/geos/operation/linemerge/EdgeString.h",
+        "path_type": "hardlink",
+        "sha256": "97ab50d431479c6de883e1df6d89d81d5046fd445a24c7b98187e4db2ee615f8",
+        "sha256_in_prefix": "97ab50d431479c6de883e1df6d89d81d5046fd445a24c7b98187e4db2ee615f8",
+        "size_in_bytes": 2383
+      },
+      {
+        "_path": "include/geos/operation/linemerge/LineMergeDirectedEdge.h",
+        "path_type": "hardlink",
+        "sha256": "a0986801ebd7d5911b6ce61fd251ec916add4de17efec1748c7c67a8c3a96236",
+        "sha256_in_prefix": "a0986801ebd7d5911b6ce61fd251ec916add4de17efec1748c7c67a8c3a96236",
+        "size_in_bytes": 2477
+      },
+      {
+        "_path": "include/geos/operation/linemerge/LineMergeEdge.h",
+        "path_type": "hardlink",
+        "sha256": "193fa436baffd022051bbe7500c3b51d765813c406e79a9a16ed397714cab442",
+        "sha256_in_prefix": "193fa436baffd022051bbe7500c3b51d765813c406e79a9a16ed397714cab442",
+        "size_in_bytes": 1737
+      },
+      {
+        "_path": "include/geos/operation/linemerge/LineMergeGraph.h",
+        "path_type": "hardlink",
+        "sha256": "89a950c50ce1bd0d38b5a636daf26d6ee10410570294d1f977a4a096e86b7cc8",
+        "sha256_in_prefix": "89a950c50ce1bd0d38b5a636daf26d6ee10410570294d1f977a4a096e86b7cc8",
+        "size_in_bytes": 2453
+      },
+      {
+        "_path": "include/geos/operation/linemerge/LineMerger.h",
+        "path_type": "hardlink",
+        "sha256": "83c44f160c17f200202ae040bf6aa10700830b0eb5df966e1b5314a3aa808233",
+        "sha256_in_prefix": "83c44f160c17f200202ae040bf6aa10700830b0eb5df966e1b5314a3aa808233",
+        "size_in_bytes": 3859
+      },
+      {
+        "_path": "include/geos/operation/linemerge/LineSequencer.h",
+        "path_type": "hardlink",
+        "sha256": "782cb17f50acb0b6aecf9f8ffc6f4f7991c39063102def2ad632cd1eb2d0f902",
+        "sha256_in_prefix": "782cb17f50acb0b6aecf9f8ffc6f4f7991c39063102def2ad632cd1eb2d0f902",
+        "size_in_bytes": 9286
+      },
+      {
+        "_path": "include/geos/operation/overlay/EdgeSetNoder.h",
+        "path_type": "hardlink",
+        "sha256": "19e09f4f5677e2446eb8d3c9cf7830f89e5648ac9796f1bb738acba120883453",
+        "sha256_in_prefix": "19e09f4f5677e2446eb8d3c9cf7830f89e5648ac9796f1bb738acba120883453",
+        "size_in_bytes": 1918
+      },
+      {
+        "_path": "include/geos/operation/overlay/ElevationMatrix.h",
+        "path_type": "hardlink",
+        "sha256": "9d21d70c426549f8f9b073d8874db21af249372d57f5a05bac1c53c0d24f4b4e",
+        "sha256_in_prefix": "9d21d70c426549f8f9b073d8874db21af249372d57f5a05bac1c53c0d24f4b4e",
+        "size_in_bytes": 3192
+      },
+      {
+        "_path": "include/geos/operation/overlay/ElevationMatrixCell.h",
+        "path_type": "hardlink",
+        "sha256": "e747f2f234e9a8b3d5ce5716381df7fca00a376c7bffc07de8bfaf66526be6be",
+        "sha256_in_prefix": "e747f2f234e9a8b3d5ce5716381df7fca00a376c7bffc07de8bfaf66526be6be",
+        "size_in_bytes": 1595
+      },
+      {
+        "_path": "include/geos/operation/overlay/LineBuilder.h",
+        "path_type": "hardlink",
+        "sha256": "fcf21fe9d6980af7eb5309bfe44cd23e6f5f22092113762937a992494c0b2ec7",
+        "sha256_in_prefix": "fcf21fe9d6980af7eb5309bfe44cd23e6f5f22092113762937a992494c0b2ec7",
+        "size_in_bytes": 4067
+      },
+      {
+        "_path": "include/geos/operation/overlay/MaximalEdgeRing.h",
+        "path_type": "hardlink",
+        "sha256": "830e1626db0c82558d6876003a906d41de5d7ca251076a6c704502bde9256fd2",
+        "sha256_in_prefix": "830e1626db0c82558d6876003a906d41de5d7ca251076a6c704502bde9256fd2",
+        "size_in_bytes": 3274
+      },
+      {
+        "_path": "include/geos/operation/overlay/MinimalEdgeRing.h",
+        "path_type": "hardlink",
+        "sha256": "601d2165f0874aad79771a477b02a54ff3cbae4020f91c4ded986ddc1d98be3d",
+        "sha256_in_prefix": "601d2165f0874aad79771a477b02a54ff3cbae4020f91c4ded986ddc1d98be3d",
+        "size_in_bytes": 2072
+      },
+      {
+        "_path": "include/geos/operation/overlay/MinimalEdgeRing.inl",
+        "path_type": "hardlink",
+        "sha256": "a86ea7cb5f759920eb5ec438a5ae680dc7ffb2ace838c5e47902f6ed65fa29f0",
+        "sha256_in_prefix": "a86ea7cb5f759920eb5ec438a5ae680dc7ffb2ace838c5e47902f6ed65fa29f0",
+        "size_in_bytes": 1459
+      },
+      {
+        "_path": "include/geos/operation/overlay/OverlayNodeFactory.h",
+        "path_type": "hardlink",
+        "sha256": "28a823122f192b2efd7e5fe6eab0b815705d6fa19332057c38cd76fc948d35ae",
+        "sha256_in_prefix": "28a823122f192b2efd7e5fe6eab0b815705d6fa19332057c38cd76fc948d35ae",
+        "size_in_bytes": 1621
+      },
+      {
+        "_path": "include/geos/operation/overlay/OverlayOp.h",
+        "path_type": "hardlink",
+        "sha256": "b820dea132825f76b977bd13bf3734a8804d219d60e8f7ad4f1ee00366fa94ac",
+        "sha256_in_prefix": "b820dea132825f76b977bd13bf3734a8804d219d60e8f7ad4f1ee00366fa94ac",
+        "size_in_bytes": 13600
+      },
+      {
+        "_path": "include/geos/operation/overlay/PointBuilder.h",
+        "path_type": "hardlink",
+        "sha256": "74e9291f7ade271f51cf0c92e420939b56ad2b70f93afa4b8e76e2acc53bbc26",
+        "sha256_in_prefix": "74e9291f7ade271f51cf0c92e420939b56ad2b70f93afa4b8e76e2acc53bbc26",
+        "size_in_bytes": 2929
+      },
+      {
+        "_path": "include/geos/operation/overlay/PolygonBuilder.h",
+        "path_type": "hardlink",
+        "sha256": "b4bdcbebd65a4cc06e013aa9df72a3c81bb05c427c84a3ab5a765bf5a8cb298c",
+        "sha256_in_prefix": "b4bdcbebd65a4cc06e013aa9df72a3c81bb05c427c84a3ab5a765bf5a8cb298c",
+        "size_in_bytes": 6966
+      },
+      {
+        "_path": "include/geos/operation/overlay/snap/GeometrySnapper.h",
+        "path_type": "hardlink",
+        "sha256": "72b4aead9dc2ca9d2d48309501dff154ac14c7802d885089b6e6e0f3055055bf",
+        "sha256_in_prefix": "72b4aead9dc2ca9d2d48309501dff154ac14c7802d885089b6e6e0f3055055bf",
+        "size_in_bytes": 4900
+      },
+      {
+        "_path": "include/geos/operation/overlay/snap/LineStringSnapper.h",
+        "path_type": "hardlink",
+        "sha256": "8a873799b076a0f61be87420e821931ee314c8dcbd7f3ca8048680eb80b01088",
+        "sha256_in_prefix": "8a873799b076a0f61be87420e821931ee314c8dcbd7f3ca8048680eb80b01088",
+        "size_in_bytes": 5539
+      },
+      {
+        "_path": "include/geos/operation/overlay/snap/SnapOverlayOp.h",
+        "path_type": "hardlink",
+        "sha256": "52bf06debe128d31f179ba0e2957f60527f65576a45b7443d25a593fbbf342df",
+        "sha256_in_prefix": "52bf06debe128d31f179ba0e2957f60527f65576a45b7443d25a593fbbf342df",
+        "size_in_bytes": 3933
+      },
+      {
+        "_path": "include/geos/operation/overlay/validate/FuzzyPointLocator.h",
+        "path_type": "hardlink",
+        "sha256": "c4a57d9af0e4c86c2e925456ad9bb90741693e1773395cafcda0077a7c004057",
+        "sha256_in_prefix": "c4a57d9af0e4c86c2e925456ad9bb90741693e1773395cafcda0077a7c004057",
+        "size_in_bytes": 2984
+      },
+      {
+        "_path": "include/geos/operation/overlay/validate/OffsetPointGenerator.h",
+        "path_type": "hardlink",
+        "sha256": "94e8cbddbf61e38d56e8bce5b9ec3ac808b6791b0d9a5c65d4fec683dd3487df",
+        "sha256_in_prefix": "94e8cbddbf61e38d56e8bce5b9ec3ac808b6791b0d9a5c65d4fec683dd3487df",
+        "size_in_bytes": 2570
+      },
+      {
+        "_path": "include/geos/operation/overlay/validate/OverlayResultValidator.h",
+        "path_type": "hardlink",
+        "sha256": "531aa4d01b3afb9c5ca403e8745872aa875a3709a6bad633fc267430d6b0cc9d",
+        "sha256_in_prefix": "531aa4d01b3afb9c5ca403e8745872aa875a3709a6bad633fc267430d6b0cc9d",
+        "size_in_bytes": 3773
+      },
+      {
+        "_path": "include/geos/operation/overlayng/Edge.h",
+        "path_type": "hardlink",
+        "sha256": "46280ffbfa3bd09b2e352ade6646741a98adee5e394d1961919f8885a1ec1b7f",
+        "sha256_in_prefix": "46280ffbfa3bd09b2e352ade6646741a98adee5e394d1961919f8885a1ec1b7f",
+        "size_in_bytes": 5754
+      },
+      {
+        "_path": "include/geos/operation/overlayng/Edge.inl",
+        "path_type": "hardlink",
+        "sha256": "f1523911b4c539c6347ff10f709efe3e39a9489a69e34e07fc9e0ace65411625",
+        "sha256_in_prefix": "f1523911b4c539c6347ff10f709efe3e39a9489a69e34e07fc9e0ace65411625",
+        "size_in_bytes": 6111
+      },
+      {
+        "_path": "include/geos/operation/overlayng/EdgeKey.h",
+        "path_type": "hardlink",
+        "sha256": "69b029af60f48bdb931b6a650c696653b1d7018f7ada9279b9ae41d0910301dc",
+        "sha256_in_prefix": "69b029af60f48bdb931b6a650c696653b1d7018f7ada9279b9ae41d0910301dc",
+        "size_in_bytes": 1848
+      },
+      {
+        "_path": "include/geos/operation/overlayng/EdgeKey.inl",
+        "path_type": "hardlink",
+        "sha256": "b9ac507ccbd28d26fd4d02ae25e345ae21e17f58944b6a12a72fbbaa27674bb0",
+        "sha256_in_prefix": "b9ac507ccbd28d26fd4d02ae25e345ae21e17f58944b6a12a72fbbaa27674bb0",
+        "size_in_bytes": 2075
+      },
+      {
+        "_path": "include/geos/operation/overlayng/EdgeMerger.h",
+        "path_type": "hardlink",
+        "sha256": "b2a739d0f172daef1501131ddcd74dbdcdffa3d899bc45080253b23df59b0fde",
+        "sha256_in_prefix": "b2a739d0f172daef1501131ddcd74dbdcdffa3d899bc45080253b23df59b0fde",
+        "size_in_bytes": 2386
+      },
+      {
+        "_path": "include/geos/operation/overlayng/EdgeNodingBuilder.h",
+        "path_type": "hardlink",
+        "sha256": "05b8363faf0de5cfdb1f80c422353a88b4f814440f6032b7a5e4c87df58acb68",
+        "sha256_in_prefix": "05b8363faf0de5cfdb1f80c422353a88b4f814440f6032b7a5e4c87df58acb68",
+        "size_in_bytes": 8641
+      },
+      {
+        "_path": "include/geos/operation/overlayng/EdgeSourceInfo.h",
+        "path_type": "hardlink",
+        "sha256": "15b7c3cdf547afb4a58f4e3edc19944ed606b499040f88857f8abf081fa7ed7c",
+        "sha256_in_prefix": "15b7c3cdf547afb4a58f4e3edc19944ed606b499040f88857f8abf081fa7ed7c",
+        "size_in_bytes": 1758
+      },
+      {
+        "_path": "include/geos/operation/overlayng/ElevationModel.h",
+        "path_type": "hardlink",
+        "sha256": "6b561b3d002439273df5be1d3676b9618844950ed99f41b96ae741b12e1a2a24",
+        "sha256_in_prefix": "6b561b3d002439273df5be1d3676b9618844950ed99f41b96ae741b12e1a2a24",
+        "size_in_bytes": 4124
+      },
+      {
+        "_path": "include/geos/operation/overlayng/IndexedPointOnLineLocator.h",
+        "path_type": "hardlink",
+        "sha256": "0631e06c5d7a17fae9308e093dd4601fd162ec74580241ebf0a183848102650d",
+        "sha256_in_prefix": "0631e06c5d7a17fae9308e093dd4601fd162ec74580241ebf0a183848102650d",
+        "size_in_bytes": 1404
+      },
+      {
+        "_path": "include/geos/operation/overlayng/InputGeometry.h",
+        "path_type": "hardlink",
+        "sha256": "86835d95fe4d7d467328c6337a2d02e0570193dd2c887c3a9b5edad66fbae687",
+        "sha256_in_prefix": "86835d95fe4d7d467328c6337a2d02e0570193dd2c887c3a9b5edad66fbae687",
+        "size_in_bytes": 2766
+      },
+      {
+        "_path": "include/geos/operation/overlayng/IntersectionPointBuilder.h",
+        "path_type": "hardlink",
+        "sha256": "5df43a6991d850ea552929a51000e00a9d8d74b05dbf312e1816c9a149f5c2aa",
+        "sha256_in_prefix": "5df43a6991d850ea552929a51000e00a9d8d74b05dbf312e1816c9a149f5c2aa",
+        "size_in_bytes": 2876
+      },
+      {
+        "_path": "include/geos/operation/overlayng/LineBuilder.h",
+        "path_type": "hardlink",
+        "sha256": "ecd6f0428183bac6a49b2939d15e9abfb441e307baefc7f7e5a8f6b6cecabf7e",
+        "sha256_in_prefix": "ecd6f0428183bac6a49b2939d15e9abfb441e307baefc7f7e5a8f6b6cecabf7e",
+        "size_in_bytes": 5679
+      },
+      {
+        "_path": "include/geos/operation/overlayng/LineLimiter.h",
+        "path_type": "hardlink",
+        "sha256": "a53e775ea32c304a33fd3d4815a7a933bb7bdd8ed6215b07666786e192da26df",
+        "sha256_in_prefix": "a53e775ea32c304a33fd3d4815a7a933bb7bdd8ed6215b07666786e192da26df",
+        "size_in_bytes": 2418
+      },
+      {
+        "_path": "include/geos/operation/overlayng/MaximalEdgeRing.h",
+        "path_type": "hardlink",
+        "sha256": "e87356199239829957716454eb0b2990dec5e7cd80c23b3adb5695d62a19c41e",
+        "sha256_in_prefix": "e87356199239829957716454eb0b2990dec5e7cd80c23b3adb5695d62a19c41e",
+        "size_in_bytes": 4109
+      },
+      {
+        "_path": "include/geos/operation/overlayng/OverlayEdge.h",
+        "path_type": "hardlink",
+        "sha256": "33731100a39e06afd650f8055c985e173c035fc0679d4bcff14b242e1f56dcf6",
+        "sha256_in_prefix": "33731100a39e06afd650f8055c985e173c035fc0679d4bcff14b242e1f56dcf6",
+        "size_in_bytes": 4283
+      },
+      {
+        "_path": "include/geos/operation/overlayng/OverlayEdge.inl",
+        "path_type": "hardlink",
+        "sha256": "0ccccc91dd84a80e91676fe2f6b0d0a9d6b6f2f914c288ee2eb99b4a5d777f39",
+        "sha256_in_prefix": "0ccccc91dd84a80e91676fe2f6b0d0a9d6b6f2f914c288ee2eb99b4a5d777f39",
+        "size_in_bytes": 4120
+      },
+      {
+        "_path": "include/geos/operation/overlayng/OverlayEdgeRing.h",
+        "path_type": "hardlink",
+        "sha256": "3f480532b0674b946e47e135cd2c7767ee92bcf67bb45de940cd03c1593b93b9",
+        "sha256_in_prefix": "3f480532b0674b946e47e135cd2c7767ee92bcf67bb45de940cd03c1593b93b9",
+        "size_in_bytes": 4397
+      },
+      {
+        "_path": "include/geos/operation/overlayng/OverlayGraph.h",
+        "path_type": "hardlink",
+        "sha256": "c326562cc06d640344bf9593f3194e973ceb2c106a671a6c9de7bba7a2372dec",
+        "sha256_in_prefix": "c326562cc06d640344bf9593f3194e973ceb2c106a671a6c9de7bba7a2372dec",
+        "size_in_bytes": 3893
+      },
+      {
+        "_path": "include/geos/operation/overlayng/OverlayLabel.h",
+        "path_type": "hardlink",
+        "sha256": "6b15fe880877d92d8f84b32d153021fe331151cc6f9d07586418fa9edc9189f8",
+        "sha256_in_prefix": "6b15fe880877d92d8f84b32d153021fe331151cc6f9d07586418fa9edc9189f8",
+        "size_in_bytes": 7981
+      },
+      {
+        "_path": "include/geos/operation/overlayng/OverlayLabel.inl",
+        "path_type": "hardlink",
+        "sha256": "4af7928ef6ac55032b9d55a2dfc3bd4487977bd3d64e8f0f6af69695f1d9fdd8",
+        "sha256_in_prefix": "4af7928ef6ac55032b9d55a2dfc3bd4487977bd3d64e8f0f6af69695f1d9fdd8",
+        "size_in_bytes": 4475
+      },
+      {
+        "_path": "include/geos/operation/overlayng/OverlayLabeller.h",
+        "path_type": "hardlink",
+        "sha256": "a745eccbc9f951e5e9af9c5857113585114e92fb5607efff7287d158c79682a8",
+        "sha256_in_prefix": "a745eccbc9f951e5e9af9c5857113585114e92fb5607efff7287d158c79682a8",
+        "size_in_bytes": 7201
+      },
+      {
+        "_path": "include/geos/operation/overlayng/OverlayMixedPoints.h",
+        "path_type": "hardlink",
+        "sha256": "b047b9fb05635827326e094153547db9229dfa505aec336c59f4453509c44d34",
+        "sha256_in_prefix": "b047b9fb05635827326e094153547db9229dfa505aec336c59f4453509c44d34",
+        "size_in_bytes": 4075
+      },
+      {
+        "_path": "include/geos/operation/overlayng/OverlayNG.h",
+        "path_type": "hardlink",
+        "sha256": "72e7e972cdb120fcf46804dda51748ebb2708055075382aed2cb67c67bf12150",
+        "sha256_in_prefix": "72e7e972cdb120fcf46804dda51748ebb2708055075382aed2cb67c67bf12150",
+        "size_in_bytes": 14462
+      },
+      {
+        "_path": "include/geos/operation/overlayng/OverlayNGRobust.h",
+        "path_type": "hardlink",
+        "sha256": "8a69badd5d2fe8d549bc3fce22e698ac9e41e598151d261d7f604a3409179f6d",
+        "sha256_in_prefix": "8a69badd5d2fe8d549bc3fce22e698ac9e41e598151d261d7f604a3409179f6d",
+        "size_in_bytes": 5402
+      },
+      {
+        "_path": "include/geos/operation/overlayng/OverlayPoints.h",
+        "path_type": "hardlink",
+        "sha256": "f81fe484bdac5f1e7348438973735e25d1eac118299fbe6b7572e8a6b6d297bd",
+        "sha256_in_prefix": "f81fe484bdac5f1e7348438973735e25d1eac118299fbe6b7572e8a6b6d297bd",
+        "size_in_bytes": 3428
+      },
+      {
+        "_path": "include/geos/operation/overlayng/OverlayUtil.h",
+        "path_type": "hardlink",
+        "sha256": "752f1bcfb5957134df7e5ba208184d8ded3af7969b7086b1952f82e698f8823a",
+        "sha256_in_prefix": "752f1bcfb5957134df7e5ba208184d8ded3af7969b7086b1952f82e698f8823a",
+        "size_in_bytes": 6337
+      },
+      {
+        "_path": "include/geos/operation/overlayng/PolygonBuilder.h",
+        "path_type": "hardlink",
+        "sha256": "1d0d34b0210939e983e3ca32c3a47423e1a7e7ffde9a043a53a38148b564077a",
+        "sha256_in_prefix": "1d0d34b0210939e983e3ca32c3a47423e1a7e7ffde9a043a53a38148b564077a",
+        "size_in_bytes": 4844
+      },
+      {
+        "_path": "include/geos/operation/overlayng/PrecisionReducer.h",
+        "path_type": "hardlink",
+        "sha256": "d864720167f9814ae830eccdb838a2e0781143d84bbd4994b36b0343543bbb7e",
+        "sha256_in_prefix": "d864720167f9814ae830eccdb838a2e0781143d84bbd4994b36b0343543bbb7e",
+        "size_in_bytes": 1701
+      },
+      {
+        "_path": "include/geos/operation/overlayng/PrecisionUtil.h",
+        "path_type": "hardlink",
+        "sha256": "3ca01845efe9ad864ab48be79f5dc67072a9a78b75a0e9aacb19dbf19508c582",
+        "sha256_in_prefix": "3ca01845efe9ad864ab48be79f5dc67072a9a78b75a0e9aacb19dbf19508c582",
+        "size_in_bytes": 6944
+      },
+      {
+        "_path": "include/geos/operation/overlayng/RingClipper.h",
+        "path_type": "hardlink",
+        "sha256": "1ddca3881da5da747cd271dcecc57bfb45bf733d89f1902977580ca3d6d68190",
+        "sha256_in_prefix": "1ddca3881da5da747cd271dcecc57bfb45bf733d89f1902977580ca3d6d68190",
+        "size_in_bytes": 3334
+      },
+      {
+        "_path": "include/geos/operation/overlayng/RobustClipEnvelopeComputer.h",
+        "path_type": "hardlink",
+        "sha256": "53b76c44d83563379975614a57c3d59923ac6e28a61ac98bde6a3c44599e027e",
+        "sha256_in_prefix": "53b76c44d83563379975614a57c3d59923ac6e28a61ac98bde6a3c44599e027e",
+        "size_in_bytes": 2083
+      },
+      {
+        "_path": "include/geos/operation/overlayng/UnaryUnionNG.h",
+        "path_type": "hardlink",
+        "sha256": "d7f2bdb16151ba56079b80d8645e3240ce9bf65b687222a4e9c5a797e424b10b",
+        "sha256_in_prefix": "d7f2bdb16151ba56079b80d8645e3240ce9bf65b687222a4e9c5a797e424b10b",
+        "size_in_bytes": 2058
+      },
+      {
+        "_path": "include/geos/operation/polygonize/BuildArea.h",
+        "path_type": "hardlink",
+        "sha256": "0597ddf9f0df52782c3375f59c9fcb7806812be2297878058b19620c2a0a496d",
+        "sha256_in_prefix": "0597ddf9f0df52782c3375f59c9fcb7806812be2297878058b19620c2a0a496d",
+        "size_in_bytes": 2263
+      },
+      {
+        "_path": "include/geos/operation/polygonize/EdgeRing.h",
+        "path_type": "hardlink",
+        "sha256": "511f617aec1b9b44bd28622856700e8b1ad5f24946cfd024a48302e80da725c7",
+        "sha256_in_prefix": "511f617aec1b9b44bd28622856700e8b1ad5f24946cfd024a48302e80da725c7",
+        "size_in_bytes": 10300
+      },
+      {
+        "_path": "include/geos/operation/polygonize/HoleAssigner.h",
+        "path_type": "hardlink",
+        "sha256": "9493df95a854d11f20db25b0b23504b28712c64fbde04ef3da2c6963076849d7",
+        "sha256_in_prefix": "9493df95a854d11f20db25b0b23504b28712c64fbde04ef3da2c6963076849d7",
+        "size_in_bytes": 1858
+      },
+      {
+        "_path": "include/geos/operation/polygonize/PolygonizeDirectedEdge.h",
+        "path_type": "hardlink",
+        "sha256": "552ac4a35153058db92f9b40682ff0bae21622f88ef44283de98878145290070",
+        "sha256_in_prefix": "552ac4a35153058db92f9b40682ff0bae21622f88ef44283de98878145290070",
+        "size_in_bytes": 3429
+      },
+      {
+        "_path": "include/geos/operation/polygonize/PolygonizeEdge.h",
+        "path_type": "hardlink",
+        "sha256": "e6f86f4b98c663274f7ded33dda3ab02dc2eed2a4085e4125df815e4669b98a9",
+        "sha256_in_prefix": "e6f86f4b98c663274f7ded33dda3ab02dc2eed2a4085e4125df815e4669b98a9",
+        "size_in_bytes": 1601
+      },
+      {
+        "_path": "include/geos/operation/polygonize/PolygonizeGraph.h",
+        "path_type": "hardlink",
+        "sha256": "ca0371a93781f10a665cdd7d83feef1cf0a5e94e67629cfe3ed2145823424403",
+        "sha256_in_prefix": "ca0371a93781f10a665cdd7d83feef1cf0a5e94e67629cfe3ed2145823424403",
+        "size_in_bytes": 6323
+      },
+      {
+        "_path": "include/geos/operation/polygonize/Polygonizer.h",
+        "path_type": "hardlink",
+        "sha256": "5228e1a92868c9469e7b0ae7ec1d3c5140b51421bd336a56afba5a41ae56b6f1",
+        "sha256_in_prefix": "5228e1a92868c9469e7b0ae7ec1d3c5140b51421bd336a56afba5a41ae56b6f1",
+        "size_in_bytes": 7737
+      },
+      {
+        "_path": "include/geos/operation/predicate/RectangleContains.h",
+        "path_type": "hardlink",
+        "sha256": "9f6ee6b89ba74e386496bab0698ddb0cc78d14d458420e7bb68d4e5f22a9e63a",
+        "sha256_in_prefix": "9f6ee6b89ba74e386496bab0698ddb0cc78d14d458420e7bb68d4e5f22a9e63a",
+        "size_in_bytes": 3335
+      },
+      {
+        "_path": "include/geos/operation/predicate/RectangleIntersects.h",
+        "path_type": "hardlink",
+        "sha256": "c346c9fd1be2ce75401d6a65b541362c42ca1c2e733227a4b8128349e93f6e13",
+        "sha256_in_prefix": "c346c9fd1be2ce75401d6a65b541362c42ca1c2e733227a4b8128349e93f6e13",
+        "size_in_bytes": 2684
+      },
+      {
+        "_path": "include/geos/operation/predicate/SegmentIntersectionTester.h",
+        "path_type": "hardlink",
+        "sha256": "68039843dcaebe94912f5cf3312a9cfb74c634285fcac8841aefba6445dfe49c",
+        "sha256_in_prefix": "68039843dcaebe94912f5cf3312a9cfb74c634285fcac8841aefba6445dfe49c",
+        "size_in_bytes": 2813
+      },
+      {
+        "_path": "include/geos/operation/relate/EdgeEndBuilder.h",
+        "path_type": "hardlink",
+        "sha256": "45557e6f0217ad3b791ceb78b823a920b16d50c46ea17eae0e57e8911b2c54b2",
+        "sha256_in_prefix": "45557e6f0217ad3b791ceb78b823a920b16d50c46ea17eae0e57e8911b2c54b2",
+        "size_in_bytes": 2080
+      },
+      {
+        "_path": "include/geos/operation/relate/EdgeEndBundle.h",
+        "path_type": "hardlink",
+        "sha256": "a576ee524f97f119fa81c85b39e90d5dc6c051fc7be9bdd5e5fc33113572a991",
+        "sha256_in_prefix": "a576ee524f97f119fa81c85b39e90d5dc6c051fc7be9bdd5e5fc33113572a991",
+        "size_in_bytes": 3272
+      },
+      {
+        "_path": "include/geos/operation/relate/EdgeEndBundleStar.h",
+        "path_type": "hardlink",
+        "sha256": "0d96d242f8fe4427dc35d0176ed31a48463093ca20aa75112c539bb1052ca3fe",
+        "sha256_in_prefix": "0d96d242f8fe4427dc35d0176ed31a48463093ca20aa75112c539bb1052ca3fe",
+        "size_in_bytes": 1802
+      },
+      {
+        "_path": "include/geos/operation/relate/RelateComputer.h",
+        "path_type": "hardlink",
+        "sha256": "dc43ce69c7219ff6cc2d914c0321c614479aaee6b3f24d0dc3cc20a87f5d5ac8",
+        "sha256_in_prefix": "dc43ce69c7219ff6cc2d914c0321c614479aaee6b3f24d0dc3cc20a87f5d5ac8",
+        "size_in_bytes": 5322
+      },
+      {
+        "_path": "include/geos/operation/relate/RelateNode.h",
+        "path_type": "hardlink",
+        "sha256": "967bc287e18341a62edb21b969d513e5cec244a220e6363650d26d60a60944b1",
+        "sha256_in_prefix": "967bc287e18341a62edb21b969d513e5cec244a220e6363650d26d60a60944b1",
+        "size_in_bytes": 1685
+      },
+      {
+        "_path": "include/geos/operation/relate/RelateNodeFactory.h",
+        "path_type": "hardlink",
+        "sha256": "a72824e29234689d1163ab32595797b28a0bd040326ddcb9322eb8470f49c584",
+        "sha256_in_prefix": "a72824e29234689d1163ab32595797b28a0bd040326ddcb9322eb8470f49c584",
+        "size_in_bytes": 1535
+      },
+      {
+        "_path": "include/geos/operation/relate/RelateNodeGraph.h",
+        "path_type": "hardlink",
+        "sha256": "7a7dc1534a0256313955db9742c9c914823ce856ab88e03893411654d57c7239",
+        "sha256_in_prefix": "7a7dc1534a0256313955db9742c9c914823ce856ab88e03893411654d57c7239",
+        "size_in_bytes": 2893
+      },
+      {
+        "_path": "include/geos/operation/relate/RelateOp.h",
+        "path_type": "hardlink",
+        "sha256": "a5b4c9014beaae4716c5a530f6fd29721cd78083eb1b7df0c217db23f2947cba",
+        "sha256_in_prefix": "a5b4c9014beaae4716c5a530f6fd29721cd78083eb1b7df0c217db23f2947cba",
+        "size_in_bytes": 4374
+      },
+      {
+        "_path": "include/geos/operation/sharedpaths/SharedPathsOp.h",
+        "path_type": "hardlink",
+        "sha256": "a11bf2109fba0c3d4a857fea7275ce6e44dcdc9131d9709fc8d0c0f5752b5749",
+        "sha256_in_prefix": "a11bf2109fba0c3d4a857fea7275ce6e44dcdc9131d9709fc8d0c0f5752b5749",
+        "size_in_bytes": 5036
+      },
+      {
+        "_path": "include/geos/operation/union/CascadedPolygonUnion.h",
+        "path_type": "hardlink",
+        "sha256": "6f45f909737b50263a841a1488fafca0005318f2e5dd6e43005f0e7a7849ebe3",
+        "sha256_in_prefix": "6f45f909737b50263a841a1488fafca0005318f2e5dd6e43005f0e7a7849ebe3",
+        "size_in_bytes": 8242
+      },
+      {
+        "_path": "include/geos/operation/union/CoverageUnion.h",
+        "path_type": "hardlink",
+        "sha256": "e0354cdd3140cc4427392a33b74ce6b00f63db1b758907f4377c81f7845328f3",
+        "sha256_in_prefix": "e0354cdd3140cc4427392a33b74ce6b00f63db1b758907f4377c81f7845328f3",
+        "size_in_bytes": 1489
+      },
+      {
+        "_path": "include/geos/operation/union/OverlapUnion.h",
+        "path_type": "hardlink",
+        "sha256": "a10dcab256b778bd12753ccc492ba7cc1617c682ec049fe85144610d20a6dd3b",
+        "sha256_in_prefix": "a10dcab256b778bd12753ccc492ba7cc1617c682ec049fe85144610d20a6dd3b",
+        "size_in_bytes": 5526
+      },
+      {
+        "_path": "include/geos/operation/union/PointGeometryUnion.h",
+        "path_type": "hardlink",
+        "sha256": "193d86f552554b58b99cae490618bfb3bd7942d8de569e1aa93bd793b96f1d44",
+        "sha256_in_prefix": "193d86f552554b58b99cae490618bfb3bd7942d8de569e1aa93bd793b96f1d44",
+        "size_in_bytes": 1901
+      },
+      {
+        "_path": "include/geos/operation/union/UnaryUnionOp.h",
+        "path_type": "hardlink",
+        "sha256": "8b354274c0fa70f9aa282a3e1d7100f9f4e0435f87b49661c4a838bd89747c28",
+        "sha256_in_prefix": "8b354274c0fa70f9aa282a3e1d7100f9f4e0435f87b49661c4a838bd89747c28",
+        "size_in_bytes": 7134
+      },
+      {
+        "_path": "include/geos/operation/union/UnionStrategy.h",
+        "path_type": "hardlink",
+        "sha256": "6a8efcee617ef0f2b680d03861b4d3f72252d03ffabecd9ba7273341d9d1b921",
+        "sha256_in_prefix": "6a8efcee617ef0f2b680d03861b4d3f72252d03ffabecd9ba7273341d9d1b921",
+        "size_in_bytes": 1965
+      },
+      {
+        "_path": "include/geos/operation/valid/ConnectedInteriorTester.h",
+        "path_type": "hardlink",
+        "sha256": "04b11a632af51eaa6013f35fccc2a6d83db8b78f524b2c267efafb9465bd29df",
+        "sha256_in_prefix": "04b11a632af51eaa6013f35fccc2a6d83db8b78f524b2c267efafb9465bd29df",
+        "size_in_bytes": 4671
+      },
+      {
+        "_path": "include/geos/operation/valid/ConsistentAreaTester.h",
+        "path_type": "hardlink",
+        "sha256": "8cc3b6b3d04e78152492e845a8aa36e759374b29cf7fe51d1c0f494288d95ce0",
+        "sha256_in_prefix": "8cc3b6b3d04e78152492e845a8aa36e759374b29cf7fe51d1c0f494288d95ce0",
+        "size_in_bytes": 4212
+      },
+      {
+        "_path": "include/geos/operation/valid/IndexedNestedHoleTester.h",
+        "path_type": "hardlink",
+        "sha256": "c998a393f9ccac27ee6e0cc691c7e479322ef202279bafdeeeac3a7656c0a614",
+        "sha256_in_prefix": "c998a393f9ccac27ee6e0cc691c7e479322ef202279bafdeeeac3a7656c0a614",
+        "size_in_bytes": 1799
+      },
+      {
+        "_path": "include/geos/operation/valid/IndexedNestedPolygonTester.h",
+        "path_type": "hardlink",
+        "sha256": "6938558e0d16ee52b93d231f1713c636a2aa716b5b1c7c611bbd900b633752c5",
+        "sha256_in_prefix": "6938558e0d16ee52b93d231f1713c636a2aa716b5b1c7c611bbd900b633752c5",
+        "size_in_bytes": 3081
+      },
+      {
+        "_path": "include/geos/operation/valid/IsSimpleOp.h",
+        "path_type": "hardlink",
+        "sha256": "99e718f452a544a9eb76bb62ab7dc03a1a2e6ca0946e313e67f384834a2ce48e",
+        "sha256_in_prefix": "99e718f452a544a9eb76bb62ab7dc03a1a2e6ca0946e313e67f384834a2ce48e",
+        "size_in_bytes": 9402
+      },
+      {
+        "_path": "include/geos/operation/valid/IsValidOp.h",
+        "path_type": "hardlink",
+        "sha256": "b05d57e72a327b5fa651812f1bd8b31164682b4153aae8a00922a8619552b72d",
+        "sha256_in_prefix": "b05d57e72a327b5fa651812f1bd8b31164682b4153aae8a00922a8619552b72d",
+        "size_in_bytes": 9013
+      },
+      {
+        "_path": "include/geos/operation/valid/MakeValid.h",
+        "path_type": "hardlink",
+        "sha256": "58ebc684982c8cc6cdc2da03fef6a0229082d00f3c39d2f6b273861e2b481e3c",
+        "sha256_in_prefix": "58ebc684982c8cc6cdc2da03fef6a0229082d00f3c39d2f6b273861e2b481e3c",
+        "size_in_bytes": 2352
+      },
+      {
+        "_path": "include/geos/operation/valid/PolygonIntersectionAnalyzer.h",
+        "path_type": "hardlink",
+        "sha256": "13c8ee2f5800fb8860ff289db5b1122028deba734d1b25771edfbf3272c24faf",
+        "sha256_in_prefix": "13c8ee2f5800fb8860ff289db5b1122028deba734d1b25771edfbf3272c24faf",
+        "size_in_bytes": 3237
+      },
+      {
+        "_path": "include/geos/operation/valid/PolygonNode.h",
+        "path_type": "hardlink",
+        "sha256": "17180c29ce817143f841ef6a43511c8e03f9123f97bad185d9a1abe3fbefa181",
+        "sha256_in_prefix": "17180c29ce817143f841ef6a43511c8e03f9123f97bad185d9a1abe3fbefa181",
+        "size_in_bytes": 3453
+      },
+      {
+        "_path": "include/geos/operation/valid/PolygonRing.h",
+        "path_type": "hardlink",
+        "sha256": "b0ef8d62ba9a4ba5153810e1fa9a0412172901fcb38e583e0cb6bf596225559f",
+        "sha256_in_prefix": "b0ef8d62ba9a4ba5153810e1fa9a0412172901fcb38e583e0cb6bf596225559f",
+        "size_in_bytes": 6380
+      },
+      {
+        "_path": "include/geos/operation/valid/PolygonRingSelfNode.h",
+        "path_type": "hardlink",
+        "sha256": "a0e61512457e983bad4f2395580852fc553e13286f1cfb605f2260709e5b0f4a",
+        "sha256_in_prefix": "a0e61512457e983bad4f2395580852fc553e13286f1cfb605f2260709e5b0f4a",
+        "size_in_bytes": 2071
+      },
+      {
+        "_path": "include/geos/operation/valid/PolygonRingTouch.h",
+        "path_type": "hardlink",
+        "sha256": "5fd18c4372a2bac9b987989aa6877e91bd7443908c1c2749938565c68908b58e",
+        "sha256_in_prefix": "5fd18c4372a2bac9b987989aa6877e91bd7443908c1c2749938565c68908b58e",
+        "size_in_bytes": 1343
+      },
+      {
+        "_path": "include/geos/operation/valid/PolygonTopologyAnalyzer.h",
+        "path_type": "hardlink",
+        "sha256": "d0f2579289c9cddd44335f1c685ac7bc114e9c81f702f5e1bc7eecca719caa45",
+        "sha256_in_prefix": "d0f2579289c9cddd44335f1c685ac7bc114e9c81f702f5e1bc7eecca719caa45",
+        "size_in_bytes": 6197
+      },
+      {
+        "_path": "include/geos/operation/valid/RepeatedPointRemover.h",
+        "path_type": "hardlink",
+        "sha256": "d890e0cb5ad853334411b476cc4b0ec2dd1ee2c8a7a42062033d1a3b591c1f63",
+        "sha256_in_prefix": "d890e0cb5ad853334411b476cc4b0ec2dd1ee2c8a7a42062033d1a3b591c1f63",
+        "size_in_bytes": 1384
+      },
+      {
+        "_path": "include/geos/operation/valid/RepeatedPointTester.h",
+        "path_type": "hardlink",
+        "sha256": "a648adafd6b6980cdc87fbe843a0b0a62bd027707b4821e2237293649ca82b15",
+        "sha256_in_prefix": "a648adafd6b6980cdc87fbe843a0b0a62bd027707b4821e2237293649ca82b15",
+        "size_in_bytes": 1944
+      },
+      {
+        "_path": "include/geos/operation/valid/TopologyValidationError.h",
+        "path_type": "hardlink",
+        "sha256": "2487c1c6cbd198e38344e1106d15b9e19b0a47fafd5b9058d8a3cd3a5b8517ed",
+        "sha256_in_prefix": "2487c1c6cbd198e38344e1106d15b9e19b0a47fafd5b9058d8a3cd3a5b8517ed",
+        "size_in_bytes": 2115
+      },
+      {
+        "_path": "include/geos/planargraph/DirectedEdge.h",
+        "path_type": "hardlink",
+        "sha256": "1e31577908d64ebc215570aa05a5c220e782c9fab13bbeacc00431d325c7d2ef",
+        "sha256_in_prefix": "1e31577908d64ebc215570aa05a5c220e782c9fab13bbeacc00431d325c7d2ef",
+        "size_in_bytes": 7237
+      },
+      {
+        "_path": "include/geos/planargraph/DirectedEdgeStar.h",
+        "path_type": "hardlink",
+        "sha256": "1d8932e18da1828df13bb5fdf21b1ed7a20c8a043d2a9879b8dcd1f324b8f994",
+        "sha256_in_prefix": "1d8932e18da1828df13bb5fdf21b1ed7a20c8a043d2a9879b8dcd1f324b8f994",
+        "size_in_bytes": 3862
+      },
+      {
+        "_path": "include/geos/planargraph/Edge.h",
+        "path_type": "hardlink",
+        "sha256": "89fbd9832c8e98b6ac12c4c979798de7514ddac84a179912e2560cefafe846ee",
+        "sha256_in_prefix": "89fbd9832c8e98b6ac12c4c979798de7514ddac84a179912e2560cefafe846ee",
+        "size_in_bytes": 3733
+      },
+      {
+        "_path": "include/geos/planargraph/GraphComponent.h",
+        "path_type": "hardlink",
+        "sha256": "2d3e619b07644ff9425337959da2abe9bbbb16d8ef918f724a30f15562a31cc9",
+        "sha256_in_prefix": "2d3e619b07644ff9425337959da2abe9bbbb16d8ef918f724a30f15562a31cc9",
+        "size_in_bytes": 4989
+      },
+      {
+        "_path": "include/geos/planargraph/Node.h",
+        "path_type": "hardlink",
+        "sha256": "bec6c435ef7692aa67dfc2f90706ebca6313a55ca998a85b5bd27570aa021f1c",
+        "sha256_in_prefix": "bec6c435ef7692aa67dfc2f90706ebca6313a55ca998a85b5bd27570aa021f1c",
+        "size_in_bytes": 3707
+      },
+      {
+        "_path": "include/geos/planargraph/NodeMap.h",
+        "path_type": "hardlink",
+        "sha256": "6df4914892dd17d2edd8b544049ee91c4a85ee58ddfcb8a515ced01e43b85d2c",
+        "sha256_in_prefix": "6df4914892dd17d2edd8b544049ee91c4a85ee58ddfcb8a515ced01e43b85d2c",
+        "size_in_bytes": 2953
+      },
+      {
+        "_path": "include/geos/planargraph/PlanarGraph.h",
+        "path_type": "hardlink",
+        "sha256": "4d10d3016e52cce724234d038130d82dfc57c2c638362a8f9bada9670adf99de",
+        "sha256_in_prefix": "4d10d3016e52cce724234d038130d82dfc57c2c638362a8f9bada9670adf99de",
+        "size_in_bytes": 6690
+      },
+      {
+        "_path": "include/geos/planargraph/Subgraph.h",
+        "path_type": "hardlink",
+        "sha256": "9fb6de957703dbc096f3198793ad2cf78716fd6ceb095df612900a965f1ea71f",
+        "sha256_in_prefix": "9fb6de957703dbc096f3198793ad2cf78716fd6ceb095df612900a965f1ea71f",
+        "size_in_bytes": 4414
+      },
+      {
+        "_path": "include/geos/planargraph/algorithm/ConnectedSubgraphFinder.h",
+        "path_type": "hardlink",
+        "sha256": "8d9ed67daf0e5c43d1385bcdefbfbcca3b962edc7db74a5b2db5282f1a97bbac",
+        "sha256_in_prefix": "8d9ed67daf0e5c43d1385bcdefbfbcca3b962edc7db74a5b2db5282f1a97bbac",
+        "size_in_bytes": 2620
+      },
+      {
+        "_path": "include/geos/precision/CommonBits.h",
+        "path_type": "hardlink",
+        "sha256": "0cc077ac016886cfd22cb024c61ef0e927c2dfb735beb3b59960979a683f5ff2",
+        "sha256_in_prefix": "0cc077ac016886cfd22cb024c61ef0e927c2dfb735beb3b59960979a683f5ff2",
+        "size_in_bytes": 2573
+      },
+      {
+        "_path": "include/geos/precision/CommonBitsOp.h",
+        "path_type": "hardlink",
+        "sha256": "c971faa0de76dbb9751b597735f61112d7ad3b8587c38292c6721abf73b87984",
+        "sha256_in_prefix": "c971faa0de76dbb9751b597735f61112d7ad3b8587c38292c6721abf73b87984",
+        "size_in_bytes": 5342
+      },
+      {
+        "_path": "include/geos/precision/CommonBitsRemover.h",
+        "path_type": "hardlink",
+        "sha256": "686fd86789a74fde8c1262d05e99799a2930d33ec82564573a61bf8f5e5fd4b8",
+        "sha256_in_prefix": "686fd86789a74fde8c1262d05e99799a2930d33ec82564573a61bf8f5e5fd4b8",
+        "size_in_bytes": 2487
+      },
+      {
+        "_path": "include/geos/precision/EnhancedPrecisionOp.h",
+        "path_type": "hardlink",
+        "sha256": "499f16b075baf95a9c54cf01f96be2218645c459cfec0235437f993b7bf08ac8",
+        "sha256_in_prefix": "499f16b075baf95a9c54cf01f96be2218645c459cfec0235437f993b7bf08ac8",
+        "size_in_bytes": 3407
+      },
+      {
+        "_path": "include/geos/precision/GeometryPrecisionReducer.h",
+        "path_type": "hardlink",
+        "sha256": "4090cfd295369fd9240db84331ffa7bd5437b4a03c8dae5cc77baf94a6fc0fbf",
+        "sha256_in_prefix": "4090cfd295369fd9240db84331ffa7bd5437b4a03c8dae5cc77baf94a6fc0fbf",
+        "size_in_bytes": 6376
+      },
+      {
+        "_path": "include/geos/precision/MinimumClearance.h",
+        "path_type": "hardlink",
+        "sha256": "8e5efb1b5d4c3be357b52f9b57e75fd7241651c1869575183b8a0e3dc0034dec",
+        "sha256_in_prefix": "8e5efb1b5d4c3be357b52f9b57e75fd7241651c1869575183b8a0e3dc0034dec",
+        "size_in_bytes": 1692
+      },
+      {
+        "_path": "include/geos/precision/PointwisePrecisionReducerTransformer.h",
+        "path_type": "hardlink",
+        "sha256": "05e9c5f4d6e98f4d09035088c1f36223e837a6597e3834c8b2ef58f4d613eeef",
+        "sha256_in_prefix": "05e9c5f4d6e98f4d09035088c1f36223e837a6597e3834c8b2ef58f4d613eeef",
+        "size_in_bytes": 1650
+      },
+      {
+        "_path": "include/geos/precision/PrecisionReducerCoordinateOperation.h",
+        "path_type": "hardlink",
+        "sha256": "ec13fb18c78e43e2fc64447f9205c43906602cf249f6e61739627d966143f207",
+        "sha256_in_prefix": "ec13fb18c78e43e2fc64447f9205c43906602cf249f6e61739627d966143f207",
+        "size_in_bytes": 2047
+      },
+      {
+        "_path": "include/geos/precision/PrecisionReducerTransformer.h",
+        "path_type": "hardlink",
+        "sha256": "e753f766d0038b8a909ef3aa7579c02809c82191a1ac06e21e40a9a5763be58e",
+        "sha256_in_prefix": "e753f766d0038b8a909ef3aa7579c02809c82191a1ac06e21e40a9a5763be58e",
+        "size_in_bytes": 2595
+      },
+      {
+        "_path": "include/geos/precision/SimpleGeometryPrecisionReducer.h",
+        "path_type": "hardlink",
+        "sha256": "5ee7cc0eb5d2b3ae4c384e9bf53f857bc2e3fef5b470621293d71181ec63e351",
+        "sha256_in_prefix": "5ee7cc0eb5d2b3ae4c384e9bf53f857bc2e3fef5b470621293d71181ec63e351",
+        "size_in_bytes": 2744
+      },
+      {
+        "_path": "include/geos/profiler.h",
+        "path_type": "hardlink",
+        "sha256": "68a1f56f1441076c0a74ab656099d08cc8fa8096e33d1fd4d27ec961b43a84f1",
+        "sha256_in_prefix": "68a1f56f1441076c0a74ab656099d08cc8fa8096e33d1fd4d27ec961b43a84f1",
+        "size_in_bytes": 4032
+      },
+      {
+        "_path": "include/geos/shape/fractal/HilbertCode.h",
+        "path_type": "hardlink",
+        "sha256": "fb3890df0d67062682fed2384c28bc5ad905fc13e76b0721a0ab1e5f808e1233",
+        "sha256_in_prefix": "fb3890df0d67062682fed2384c28bc5ad905fc13e76b0721a0ab1e5f808e1233",
+        "size_in_bytes": 3616
+      },
+      {
+        "_path": "include/geos/shape/fractal/HilbertEncoder.h",
+        "path_type": "hardlink",
+        "sha256": "d99abdf54e0f15ba17890703d9ac38b7056d3f3a4456a572cf53121f0123b165",
+        "sha256_in_prefix": "d99abdf54e0f15ba17890703d9ac38b7056d3f3a4456a572cf53121f0123b165",
+        "size_in_bytes": 1192
+      },
+      {
+        "_path": "include/geos/shape/fractal/MortonCode.h",
+        "path_type": "hardlink",
+        "sha256": "27450745e9987179f247b712e991a6ddc3f8c324caaebd4411c584c9b011f524",
+        "sha256_in_prefix": "27450745e9987179f247b712e991a6ddc3f8c324caaebd4411c584c9b011f524",
+        "size_in_bytes": 3899
+      },
+      {
+        "_path": "include/geos/simplify/DouglasPeuckerLineSimplifier.h",
+        "path_type": "hardlink",
+        "sha256": "d10f4c2efaa4427551115c1066119d37fba1915d0a5f16018af6a8950b878c17",
+        "sha256_in_prefix": "d10f4c2efaa4427551115c1066119d37fba1915d0a5f16018af6a8950b878c17",
+        "size_in_bytes": 2769
+      },
+      {
+        "_path": "include/geos/simplify/DouglasPeuckerSimplifier.h",
+        "path_type": "hardlink",
+        "sha256": "68b2d921e8fac327b29b27cc0cb89b6f26ee463f6fdcf7464b33086e68bd56aa",
+        "sha256_in_prefix": "68b2d921e8fac327b29b27cc0cb89b6f26ee463f6fdcf7464b33086e68bd56aa",
+        "size_in_bytes": 2369
+      },
+      {
+        "_path": "include/geos/simplify/LineSegmentIndex.h",
+        "path_type": "hardlink",
+        "sha256": "e9b16d5eaa3e58fa154c143669b0a1dbadbf40136c839efcdcfdd16b2cd93c01",
+        "sha256_in_prefix": "e9b16d5eaa3e58fa154c143669b0a1dbadbf40136c839efcdcfdd16b2cd93c01",
+        "size_in_bytes": 2190
+      },
+      {
+        "_path": "include/geos/simplify/TaggedLineSegment.h",
+        "path_type": "hardlink",
+        "sha256": "2bfe78545736152cf21ba9e42ba4aed40a4b1730a63ba1906742935519758717",
+        "sha256_in_prefix": "2bfe78545736152cf21ba9e42ba4aed40a4b1730a63ba1906742935519758717",
+        "size_in_bytes": 2260
+      },
+      {
+        "_path": "include/geos/simplify/TaggedLineString.h",
+        "path_type": "hardlink",
+        "sha256": "657e7d2beca7a20ceaa7c654c7791e26529ff43fb0667dac2360570857432651",
+        "sha256_in_prefix": "657e7d2beca7a20ceaa7c654c7791e26529ff43fb0667dac2360570857432651",
+        "size_in_bytes": 3243
+      },
+      {
+        "_path": "include/geos/simplify/TaggedLineStringSimplifier.h",
+        "path_type": "hardlink",
+        "sha256": "bf380e46d5c9792fc13567b2b02247f3813c64fbb52a3b3df26fe194d1a4283c",
+        "sha256_in_prefix": "bf380e46d5c9792fc13567b2b02247f3813c64fbb52a3b3df26fe194d1a4283c",
+        "size_in_bytes": 4577
+      },
+      {
+        "_path": "include/geos/simplify/TaggedLinesSimplifier.h",
+        "path_type": "hardlink",
+        "sha256": "30865e6edf6a3ea269d945e8afde4fefc520c1897afe4f98e3a53d0cb450898d",
+        "sha256_in_prefix": "30865e6edf6a3ea269d945e8afde4fefc520c1897afe4f98e3a53d0cb450898d",
+        "size_in_bytes": 3301
+      },
+      {
+        "_path": "include/geos/simplify/TopologyPreservingSimplifier.h",
+        "path_type": "hardlink",
+        "sha256": "379f2444a917d6c9409ed37fa5b6f9552a15dc1be5db0203c54d80191f574ac3",
+        "sha256_in_prefix": "379f2444a917d6c9409ed37fa5b6f9552a15dc1be5db0203c54d80191f574ac3",
+        "size_in_bytes": 2804
+      },
+      {
+        "_path": "include/geos/triangulate/DelaunayTriangulationBuilder.h",
+        "path_type": "hardlink",
+        "sha256": "f6d2ea0f298eea71c682300dad89858c4196c292f9033422689befbfed75a2cc",
+        "sha256_in_prefix": "f6d2ea0f298eea71c682300dad89858c4196c292f9033422689befbfed75a2cc",
+        "size_in_bytes": 5108
+      },
+      {
+        "_path": "include/geos/triangulate/IncrementalDelaunayTriangulator.h",
+        "path_type": "hardlink",
+        "sha256": "9e54efa0b55b4525ee620b45669a9969ee6a62924929d7be1f017b8486417204",
+        "sha256_in_prefix": "9e54efa0b55b4525ee620b45669a9969ee6a62924929d7be1f017b8486417204",
+        "size_in_bytes": 2661
+      },
+      {
+        "_path": "include/geos/triangulate/VoronoiDiagramBuilder.h",
+        "path_type": "hardlink",
+        "sha256": "95adc0fd113c35e94c20fd7ae773f4f8ccf2a34b6144fe3f8fc1ba30f15378a2",
+        "sha256_in_prefix": "95adc0fd113c35e94c20fd7ae773f4f8ccf2a34b6144fe3f8fc1ba30f15378a2",
+        "size_in_bytes": 4335
+      },
+      {
+        "_path": "include/geos/triangulate/polygon/ConstrainedDelaunayTriangulator.h",
+        "path_type": "hardlink",
+        "sha256": "aed1505c01ae5f9b4963f14b2c869acf2bfc42c9dc721661c5d1d2b6e32892ec",
+        "sha256_in_prefix": "aed1505c01ae5f9b4963f14b2c869acf2bfc42c9dc721661c5d1d2b6e32892ec",
+        "size_in_bytes": 2357
+      },
+      {
+        "_path": "include/geos/triangulate/polygon/PolygonEarClipper.h",
+        "path_type": "hardlink",
+        "sha256": "a50eb0ebfee4e326d4e57886b446609437de2df3210f8767dcebcaac6d5ac097",
+        "sha256_in_prefix": "a50eb0ebfee4e326d4e57886b446609437de2df3210f8767dcebcaac6d5ac097",
+        "size_in_bytes": 6456
+      },
+      {
+        "_path": "include/geos/triangulate/polygon/PolygonHoleJoiner.h",
+        "path_type": "hardlink",
+        "sha256": "fdaccea0d296eea4d0e53355a3ab269d6a628a2bf32c59301ba4d758a42d3513",
+        "sha256_in_prefix": "fdaccea0d296eea4d0e53355a3ab269d6a628a2bf32c59301ba4d758a42d3513",
+        "size_in_bytes": 5362
+      },
+      {
+        "_path": "include/geos/triangulate/polygon/PolygonTriangulator.h",
+        "path_type": "hardlink",
+        "sha256": "64b91634e1404a61e646c490a29d952e5d6a5c6c05ac6b447f553ac71efe71dd",
+        "sha256_in_prefix": "64b91634e1404a61e646c490a29d952e5d6a5c6c05ac6b447f553ac71efe71dd",
+        "size_in_bytes": 2608
+      },
+      {
+        "_path": "include/geos/triangulate/polygon/TriDelaunayImprover.h",
+        "path_type": "hardlink",
+        "sha256": "079909908289efd70dce5893986d0f4a46b1418c65a901ebfe23fd1346290ccc",
+        "sha256_in_prefix": "079909908289efd70dce5893986d0f4a46b1418c65a901ebfe23fd1346290ccc",
+        "size_in_bytes": 4279
+      },
+      {
+        "_path": "include/geos/triangulate/polygon/VertexSequencePackedRtree.h",
+        "path_type": "hardlink",
+        "sha256": "9b91dcf1e02a46da4d5f85b56f770a16181cd4228f26385422745062962fb4da",
+        "sha256_in_prefix": "9b91dcf1e02a46da4d5f85b56f770a16181cd4228f26385422745062962fb4da",
+        "size_in_bytes": 4347
+      },
+      {
+        "_path": "include/geos/triangulate/quadedge/LastFoundQuadEdgeLocator.h",
+        "path_type": "hardlink",
+        "sha256": "0523068f46a484235f95b58a5b856a1b6d9cf255e1b41ad9ab6d01dca560dcd3",
+        "sha256_in_prefix": "0523068f46a484235f95b58a5b856a1b6d9cf255e1b41ad9ab6d01dca560dcd3",
+        "size_in_bytes": 1984
+      },
+      {
+        "_path": "include/geos/triangulate/quadedge/LocateFailureException.h",
+        "path_type": "hardlink",
+        "sha256": "e08febf4204e622f88844bd54a4e2e28f2bd8da156dd9aa3f572a8757e08c281",
+        "sha256_in_prefix": "e08febf4204e622f88844bd54a4e2e28f2bd8da156dd9aa3f572a8757e08c281",
+        "size_in_bytes": 1178
+      },
+      {
+        "_path": "include/geos/triangulate/quadedge/QuadEdge.h",
+        "path_type": "hardlink",
+        "sha256": "86a5d5ab0a9a267b1c0b8c8175aaf449b509eedbe2bc7238fd5d95a6fb778cf0",
+        "sha256_in_prefix": "86a5d5ab0a9a267b1c0b8c8175aaf449b509eedbe2bc7238fd5d95a6fb778cf0",
+        "size_in_bytes": 11065
+      },
+      {
+        "_path": "include/geos/triangulate/quadedge/QuadEdgeLocator.h",
+        "path_type": "hardlink",
+        "sha256": "ec691f8ade733940b81242c163786ac50e706fa7b01868def276e884f424ef13",
+        "sha256_in_prefix": "ec691f8ade733940b81242c163786ac50e706fa7b01868def276e884f424ef13",
+        "size_in_bytes": 1505
+      },
+      {
+        "_path": "include/geos/triangulate/quadedge/QuadEdgeQuartet.h",
+        "path_type": "hardlink",
+        "sha256": "333aa2a4db664460892d8b389dcebf57f2b00f1ad68ad9a12b06785ca58635a6",
+        "sha256_in_prefix": "333aa2a4db664460892d8b389dcebf57f2b00f1ad68ad9a12b06785ca58635a6",
+        "size_in_bytes": 1489
+      },
+      {
+        "_path": "include/geos/triangulate/quadedge/QuadEdgeSubdivision.h",
+        "path_type": "hardlink",
+        "sha256": "0333817708dc2ecfa512244c6d926e5f0268a01fee2539f0160df8776fc993ea",
+        "sha256_in_prefix": "0333817708dc2ecfa512244c6d926e5f0268a01fee2539f0160df8776fc993ea",
+        "size_in_bytes": 18278
+      },
+      {
+        "_path": "include/geos/triangulate/quadedge/TrianglePredicate.h",
+        "path_type": "hardlink",
+        "sha256": "2ff09150e10881064be9f23504da105614bcf9c56250fa3332c8d06f9fb77b80",
+        "sha256_in_prefix": "2ff09150e10881064be9f23504da105614bcf9c56250fa3332c8d06f9fb77b80",
+        "size_in_bytes": 3809
+      },
+      {
+        "_path": "include/geos/triangulate/quadedge/TriangleVisitor.h",
+        "path_type": "hardlink",
+        "sha256": "3e29abf6d482d97b615aaf0932fc00d9dc68c067f1183caccdc8b183d962e881",
+        "sha256_in_prefix": "3e29abf6d482d97b615aaf0932fc00d9dc68c067f1183caccdc8b183d962e881",
+        "size_in_bytes": 1503
+      },
+      {
+        "_path": "include/geos/triangulate/quadedge/Vertex.h",
+        "path_type": "hardlink",
+        "sha256": "b1a6421e828068c45e9257fe544af17d01985fbfeb6a8ce7e8114067af86b629",
+        "sha256_in_prefix": "b1a6421e828068c45e9257fe544af17d01985fbfeb6a8ce7e8114067af86b629",
+        "size_in_bytes": 8809
+      },
+      {
+        "_path": "include/geos/triangulate/tri/Tri.h",
+        "path_type": "hardlink",
+        "sha256": "eb56b04e3d66cbe1f5b1ce13819293fa9c91c68d5f0cb73a12356844daeeb1c7",
+        "sha256_in_prefix": "eb56b04e3d66cbe1f5b1ce13819293fa9c91c68d5f0cb73a12356844daeeb1c7",
+        "size_in_bytes": 3984
+      },
+      {
+        "_path": "include/geos/triangulate/tri/TriEdge.h",
+        "path_type": "hardlink",
+        "sha256": "8661b4af0c678fe03b56fd0cadeaedf6fa80d2bc61d263c6ade0dcd4e18888e2",
+        "sha256_in_prefix": "8661b4af0c678fe03b56fd0cadeaedf6fa80d2bc61d263c6ade0dcd4e18888e2",
+        "size_in_bytes": 1606
+      },
+      {
+        "_path": "include/geos/triangulate/tri/TriList.h",
+        "path_type": "hardlink",
+        "sha256": "337f30b8fa77d1366778b438bbd73f0698bb15c811f35308fa5e417a7f78ef49",
+        "sha256_in_prefix": "337f30b8fa77d1366778b438bbd73f0698bb15c811f35308fa5e417a7f78ef49",
+        "size_in_bytes": 2503
+      },
+      {
+        "_path": "include/geos/triangulate/tri/TriangulationBuilder.h",
+        "path_type": "hardlink",
+        "sha256": "73aad3124585bd24d07c3a755ecdae5197282034f501f4a633d89e214ffa4605",
+        "sha256_in_prefix": "73aad3124585bd24d07c3a755ecdae5197282034f501f4a633d89e214ffa4605",
+        "size_in_bytes": 1647
+      },
+      {
+        "_path": "include/geos/unload.h",
+        "path_type": "hardlink",
+        "sha256": "2375818e97c187f2a5c8b9d2e93ed106daf1494a0d8c5e087e836a558c4299c3",
+        "sha256_in_prefix": "2375818e97c187f2a5c8b9d2e93ed106daf1494a0d8c5e087e836a558c4299c3",
+        "size_in_bytes": 761
+      },
+      {
+        "_path": "include/geos/util.h",
+        "path_type": "hardlink",
+        "sha256": "cccc2fc22971714a9b3c11fa0a5db9879aeb6a81ce38bf4639a6ee563eac29cf",
+        "sha256_in_prefix": "cccc2fc22971714a9b3c11fa0a5db9879aeb6a81ce38bf4639a6ee563eac29cf",
+        "size_in_bytes": 3198
+      },
+      {
+        "_path": "include/geos/util/Assert.h",
+        "path_type": "hardlink",
+        "sha256": "7af7de143213b906d54ab4b28b316e73e70cab0ae3f2a5c5aaedbf6c91313fce",
+        "sha256_in_prefix": "7af7de143213b906d54ab4b28b316e73e70cab0ae3f2a5c5aaedbf6c91313fce",
+        "size_in_bytes": 1574
+      },
+      {
+        "_path": "include/geos/util/AssertionFailedException.h",
+        "path_type": "hardlink",
+        "sha256": "f430470621fba74d0bf2d8ba46bcf56cf89bb4ca07872b20a86dd5c5896d449f",
+        "sha256_in_prefix": "f430470621fba74d0bf2d8ba46bcf56cf89bb4ca07872b20a86dd5c5896d449f",
+        "size_in_bytes": 1305
+      },
+      {
+        "_path": "include/geos/util/CoordinateArrayFilter.h",
+        "path_type": "hardlink",
+        "sha256": "a92a9c66d2c588a8eeb029437df7606ce884d4d7d699f86f4e61e24f853547b1",
+        "sha256_in_prefix": "a92a9c66d2c588a8eeb029437df7606ce884d4d7d699f86f4e61e24f853547b1",
+        "size_in_bytes": 1631
+      },
+      {
+        "_path": "include/geos/util/GEOSException.h",
+        "path_type": "hardlink",
+        "sha256": "d4bf631192bf74d0218da66f9996865e60e5b4b9036aa3dcc26061a582b18db8",
+        "sha256_in_prefix": "d4bf631192bf74d0218da66f9996865e60e5b4b9036aa3dcc26061a582b18db8",
+        "size_in_bytes": 1604
+      },
+      {
+        "_path": "include/geos/util/GeometricShapeFactory.h",
+        "path_type": "hardlink",
+        "sha256": "d7a21086bbfaaa32f5054153d6525d9957632a9d247492f99d001722113a7400",
+        "sha256_in_prefix": "d7a21086bbfaaa32f5054153d6525d9957632a9d247492f99d001722113a7400",
+        "size_in_bytes": 5307
+      },
+      {
+        "_path": "include/geos/util/IllegalArgumentException.h",
+        "path_type": "hardlink",
+        "sha256": "e519a65cea2f05477116960c882ed165f486c530bd54da16a248bc7ffbf93486",
+        "sha256_in_prefix": "e519a65cea2f05477116960c882ed165f486c530bd54da16a248bc7ffbf93486",
+        "size_in_bytes": 1398
+      },
+      {
+        "_path": "include/geos/util/IllegalStateException.h",
+        "path_type": "hardlink",
+        "sha256": "15f80637d24297951e34533e01994e60a892d6caac4417863534b6b0e7aa8636",
+        "sha256_in_prefix": "15f80637d24297951e34533e01994e60a892d6caac4417863534b6b0e7aa8636",
+        "size_in_bytes": 1171
+      },
+      {
+        "_path": "include/geos/util/Interrupt.h",
+        "path_type": "hardlink",
+        "sha256": "7c13fee1a5507f3690235e669e6adf087d8b59423073df20d8a37cead9e89cac",
+        "sha256_in_prefix": "7c13fee1a5507f3690235e669e6adf087d8b59423073df20d8a37cead9e89cac",
+        "size_in_bytes": 1861
+      },
+      {
+        "_path": "include/geos/util/Machine.h",
+        "path_type": "hardlink",
+        "sha256": "13a489f85ab709f603689169827a348c23b469658145bec49e03ff9476bf31a9",
+        "sha256_in_prefix": "13a489f85ab709f603689169827a348c23b469658145bec49e03ff9476bf31a9",
+        "size_in_bytes": 803
+      },
+      {
+        "_path": "include/geos/util/TopologyException.h",
+        "path_type": "hardlink",
+        "sha256": "763d30bd7c4363d937748a4d9aab7abfb19f48be0617c64274a72949e7fc3df7",
+        "sha256_in_prefix": "763d30bd7c4363d937748a4d9aab7abfb19f48be0617c64274a72949e7fc3df7",
+        "size_in_bytes": 1677
+      },
+      {
+        "_path": "include/geos/util/UniqueCoordinateArrayFilter.h",
+        "path_type": "hardlink",
+        "sha256": "25fcc3c82b7d7626f25520cfee9d35a98e4cbf42137a9fe5c55dd9281f1eaf3b",
+        "sha256_in_prefix": "25fcc3c82b7d7626f25520cfee9d35a98e4cbf42137a9fe5c55dd9281f1eaf3b",
+        "size_in_bytes": 2655
+      },
+      {
+        "_path": "include/geos/util/UnsupportedOperationException.h",
+        "path_type": "hardlink",
+        "sha256": "6befadb71a5a0164196a52c55ce2a27e1cd6d9dd7e250c017e56994ecc40cbc1",
+        "sha256_in_prefix": "6befadb71a5a0164196a52c55ce2a27e1cd6d9dd7e250c017e56994ecc40cbc1",
+        "size_in_bytes": 1489
+      },
+      {
+        "_path": "include/geos/util/math.h",
+        "path_type": "hardlink",
+        "sha256": "b4f32518660ee5b55315214053a7ea57829a3b0fec1eb5bdb16a99aa6a097b49",
+        "sha256_in_prefix": "b4f32518660ee5b55315214053a7ea57829a3b0fec1eb5bdb16a99aa6a097b49",
+        "size_in_bytes": 1116
+      },
+      {
+        "_path": "include/geos/version.h",
+        "path_type": "hardlink",
+        "sha256": "440e707d72d76d0fbb1987b84404f9d9fae98e86305e90d5a74896ffcd3cd672",
+        "sha256_in_prefix": "440e707d72d76d0fbb1987b84404f9d9fae98e86305e90d5a74896ffcd3cd672",
+        "size_in_bytes": 899
+      },
+      {
+        "_path": "include/geos_c.h",
+        "path_type": "hardlink",
+        "sha256": "003ab268b3a4e3e9b784b9311c6bd8e1d38ff17af0266bc4154ca2621dfde20a",
+        "sha256_in_prefix": "003ab268b3a4e3e9b784b9311c6bd8e1d38ff17af0266bc4154ca2621dfde20a",
+        "size_in_bytes": 151720
+      },
+      {
+        "_path": "lib/cmake/GEOS/geos-config-version.cmake",
+        "path_type": "hardlink",
+        "sha256": "be47d7b22cbd4ec44330b8904c9769b839035700d3848ea9b0460e252a482558",
+        "sha256_in_prefix": "be47d7b22cbd4ec44330b8904c9769b839035700d3848ea9b0460e252a482558",
+        "size_in_bytes": 1978
+      },
+      {
+        "_path": "lib/cmake/GEOS/geos-config.cmake",
+        "path_type": "hardlink",
+        "sha256": "389caa44b5a79f2acb4bfb7d8da36e933b8de39b35d5af441f7dbab3da8efaca",
+        "sha256_in_prefix": "389caa44b5a79f2acb4bfb7d8da36e933b8de39b35d5af441f7dbab3da8efaca",
+        "size_in_bytes": 533
+      },
+      {
+        "_path": "lib/cmake/GEOS/geos-targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "d9eb491d529a6e6eaeba02f6c8c3c88ec741474f1e9782b2dee4e42143623e9f",
+        "sha256_in_prefix": "d9eb491d529a6e6eaeba02f6c8c3c88ec741474f1e9782b2dee4e42143623e9f",
+        "size_in_bytes": 1360
+      },
+      {
+        "_path": "lib/cmake/GEOS/geos-targets.cmake",
+        "path_type": "hardlink",
+        "sha256": "fea95e6088f0ab6581c12f9ef14087243ea3a1226a53bb4d35c1e65dfc885c5b",
+        "sha256_in_prefix": "fea95e6088f0ab6581c12f9ef14087243ea3a1226a53bb4d35c1e65dfc885c5b",
+        "size_in_bytes": 4342
+      },
+      {
+        "_path": "lib/libgeos.3.10.1.dylib",
+        "path_type": "hardlink",
+        "sha256": "66caeb59cbd6cf6335fb41ac0568653d424c4753cbb2dccd39d02572072cc7ee",
+        "sha256_in_prefix": "66caeb59cbd6cf6335fb41ac0568653d424c4753cbb2dccd39d02572072cc7ee",
+        "size_in_bytes": 2257040
+      },
+      {
+        "_path": "lib/libgeos.dylib",
+        "path_type": "softlink",
+        "sha256": "66caeb59cbd6cf6335fb41ac0568653d424c4753cbb2dccd39d02572072cc7ee",
+        "size_in_bytes": 2257040
+      },
+      {
+        "_path": "lib/libgeos_c.1.16.0.dylib",
+        "path_type": "hardlink",
+        "sha256": "e023dfde025af6fe6026b4648917ac516ed18826069d3128929fb7d6cb9f89ab",
+        "sha256_in_prefix": "e023dfde025af6fe6026b4648917ac516ed18826069d3128929fb7d6cb9f89ab",
+        "size_in_bytes": 290928
+      },
+      {
+        "_path": "lib/libgeos_c.1.dylib",
+        "path_type": "softlink",
+        "sha256": "e023dfde025af6fe6026b4648917ac516ed18826069d3128929fb7d6cb9f89ab",
+        "size_in_bytes": 290928
+      },
+      {
+        "_path": "lib/libgeos_c.dylib",
+        "path_type": "softlink",
+        "sha256": "e023dfde025af6fe6026b4648917ac516ed18826069d3128929fb7d6cb9f89ab",
+        "size_in_bytes": 290928
+      },
+      {
+        "_path": "lib/pkgconfig/geos.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/geos_1637034168373/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "32775c178efe4187a3f9d84fbf2c172f401187149ab50a18c23addf408df0605",
+        "sha256_in_prefix": "da7fb4cfa7ae83b0911601e6bba1872f2da476f5398f79306565b3a3f8f60b07",
+        "size_in_bytes": 513
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "geos==3.10.1=hbdafb3b_1",
+  "sha256": "ce7692f39e835c6b4a85e90ef2c4fde933e22e8934ae2a83b2b4d8fd5502c973",
+  "size": 1207410,
+  "subdir": "osx-arm64",
+  "timestamp": 1637035029830,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/geos-3.10.1-hbdafb3b_1.tar.bz2",
+  "version": "3.10.1"
+}

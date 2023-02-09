@@ -8,6 +8,7 @@ import os
 from uwg import UWG
 from morpher.config import parse_set
 from morpher.process import manipulate_epw as mepw
+import intake
 
 
 def test_config():
@@ -54,5 +55,7 @@ def run_UWG():
 
 if __name__ == '__main__':
     startTime = time.time()
-    epw_to_dataframe(parse('epw'))
+    url = "https://storage.googleapis.com/cmip6/pangeo-cmip6.json"
+    col = intake.open_esm_datastore('/Users/jmccarty/GitHub/epwmorph/morpher/gather/cloud_resources/pangeo-cmip6.json')
+    print(col.df.head())
     print('The script took {0} second !'.format(time.time() - startTime))

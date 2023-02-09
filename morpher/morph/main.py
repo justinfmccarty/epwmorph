@@ -40,7 +40,6 @@ def end():
 
 
 def run():
-
     # check for Urban Weather Generator
     if parse('uwg')=='Only':
         print('Running UWG script and then exiting protocol')

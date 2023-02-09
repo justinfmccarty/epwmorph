@@ -1,0 +1,62 @@
+{
+  "build": "openmp_h5dd58f0_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [
+    "openblas >=0.3.18,<0.3.19.0a0"
+  ],
+  "depends": [
+    "libgfortran 5.*",
+    "libgfortran5 >=11.0.1.dev0",
+    "llvm-openmp >=11.1.0"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libopenblas-0.3.18-openmp_h5dd58f0_0",
+  "features": "",
+  "files": [
+    "lib/libopenblas.0.dylib",
+    "lib/libopenblas_vortexp-r0.3.18.dylib",
+    "lib/libopenblasp-r0.3.18.dylib"
+  ],
+  "fn": "libopenblas-0.3.18-openmp_h5dd58f0_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libopenblas-0.3.18-openmp_h5dd58f0_0",
+    "type": 1
+  },
+  "md5": "8860a24cd05b691ea33f8c85f9981d4b",
+  "name": "libopenblas",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libopenblas-0.3.18-openmp_h5dd58f0_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libopenblas.0.dylib",
+        "path_type": "softlink",
+        "sha256": "fa18b1a47cc8978d90fda25df27f691a4f7857533696059ae6854b57b00714e8",
+        "size_in_bytes": 10570608
+      },
+      {
+        "_path": "lib/libopenblas_vortexp-r0.3.18.dylib",
+        "path_type": "hardlink",
+        "sha256": "fa18b1a47cc8978d90fda25df27f691a4f7857533696059ae6854b57b00714e8",
+        "sha256_in_prefix": "fa18b1a47cc8978d90fda25df27f691a4f7857533696059ae6854b57b00714e8",
+        "size_in_bytes": 10570608
+      },
+      {
+        "_path": "lib/libopenblasp-r0.3.18.dylib",
+        "path_type": "softlink",
+        "sha256": "fa18b1a47cc8978d90fda25df27f691a4f7857533696059ae6854b57b00714e8",
+        "size_in_bytes": 10570608
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "libopenblas==0.3.18=openmp_h5dd58f0_0",
+  "sha256": "7e79d0b42fe33ed65fa326dea76577cf22192a1811c1e566f3aca3ce515431f6",
+  "size": 4061220,
+  "subdir": "osx-arm64",
+  "timestamp": 1633297543748,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libopenblas-0.3.18-openmp_h5dd58f0_0.tar.bz2",
+  "version": "0.3.18"
+}

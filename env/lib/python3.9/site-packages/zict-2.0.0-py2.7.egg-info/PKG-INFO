@@ -1,0 +1,25 @@
+Metadata-Version: 1.2
+Name: zict
+Version: 2.0.0
+Summary: Mutable mapping tools
+Home-page: http://zict.readthedocs.io/en/latest/
+Maintainer: Matthew Rocklin
+Maintainer-email: mrocklin@gmail.com
+License: BSD
+Description: Zict
+        ====
+        
+        |Build Status|
+        
+        Mutable Mapping interfaces.  See documentation_.
+        
+        .. _documentation: http://zict.readthedocs.io/en/latest/
+        .. |Build Status| image:: https://travis-ci.org/dask/zict.svg?branch=master
+           :target: https://travis-ci.org/dask/zict
+        
+Keywords: mutable mapping,dict,dask
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8

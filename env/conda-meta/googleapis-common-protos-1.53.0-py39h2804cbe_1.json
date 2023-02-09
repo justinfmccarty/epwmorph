@@ -1,0 +1,1487 @@
+{
+  "build": "py39h2804cbe_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "protobuf >=3.12.0",
+    "python >=3.9,<3.10.0a0",
+    "python >=3.9,<3.10.0a0 *_cpython",
+    "python_abi 3.9.* *_cp39"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/googleapis-common-protos-1.53.0-py39h2804cbe_1",
+  "features": "",
+  "files": [
+    "lib/python3.9/site-packages/google/api/__init__.py",
+    "lib/python3.9/site-packages/google/api/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/annotations_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/auth_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/backend_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/billing_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/client_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/config_change_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/consumer_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/context_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/control_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/distribution_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/documentation_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/endpoint_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/field_behavior_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/http_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/httpbody_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/label_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/launch_stage_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/log_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/logging_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/metric_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/monitored_resource_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/monitoring_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/quota_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/resource_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/service_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/source_info_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/system_parameter_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/__pycache__/usage_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/api/annotations.proto",
+    "lib/python3.9/site-packages/google/api/annotations_pb2.py",
+    "lib/python3.9/site-packages/google/api/auth.proto",
+    "lib/python3.9/site-packages/google/api/auth_pb2.py",
+    "lib/python3.9/site-packages/google/api/backend.proto",
+    "lib/python3.9/site-packages/google/api/backend_pb2.py",
+    "lib/python3.9/site-packages/google/api/billing.proto",
+    "lib/python3.9/site-packages/google/api/billing_pb2.py",
+    "lib/python3.9/site-packages/google/api/client.proto",
+    "lib/python3.9/site-packages/google/api/client_pb2.py",
+    "lib/python3.9/site-packages/google/api/config_change.proto",
+    "lib/python3.9/site-packages/google/api/config_change_pb2.py",
+    "lib/python3.9/site-packages/google/api/consumer.proto",
+    "lib/python3.9/site-packages/google/api/consumer_pb2.py",
+    "lib/python3.9/site-packages/google/api/context.proto",
+    "lib/python3.9/site-packages/google/api/context_pb2.py",
+    "lib/python3.9/site-packages/google/api/control.proto",
+    "lib/python3.9/site-packages/google/api/control_pb2.py",
+    "lib/python3.9/site-packages/google/api/distribution.proto",
+    "lib/python3.9/site-packages/google/api/distribution_pb2.py",
+    "lib/python3.9/site-packages/google/api/documentation.proto",
+    "lib/python3.9/site-packages/google/api/documentation_pb2.py",
+    "lib/python3.9/site-packages/google/api/endpoint.proto",
+    "lib/python3.9/site-packages/google/api/endpoint_pb2.py",
+    "lib/python3.9/site-packages/google/api/field_behavior.proto",
+    "lib/python3.9/site-packages/google/api/field_behavior_pb2.py",
+    "lib/python3.9/site-packages/google/api/http.proto",
+    "lib/python3.9/site-packages/google/api/http_pb2.py",
+    "lib/python3.9/site-packages/google/api/httpbody.proto",
+    "lib/python3.9/site-packages/google/api/httpbody_pb2.py",
+    "lib/python3.9/site-packages/google/api/label.proto",
+    "lib/python3.9/site-packages/google/api/label_pb2.py",
+    "lib/python3.9/site-packages/google/api/launch_stage.proto",
+    "lib/python3.9/site-packages/google/api/launch_stage_pb2.py",
+    "lib/python3.9/site-packages/google/api/log.proto",
+    "lib/python3.9/site-packages/google/api/log_pb2.py",
+    "lib/python3.9/site-packages/google/api/logging.proto",
+    "lib/python3.9/site-packages/google/api/logging_pb2.py",
+    "lib/python3.9/site-packages/google/api/metric.proto",
+    "lib/python3.9/site-packages/google/api/metric_pb2.py",
+    "lib/python3.9/site-packages/google/api/monitored_resource.proto",
+    "lib/python3.9/site-packages/google/api/monitored_resource_pb2.py",
+    "lib/python3.9/site-packages/google/api/monitoring.proto",
+    "lib/python3.9/site-packages/google/api/monitoring_pb2.py",
+    "lib/python3.9/site-packages/google/api/quota.proto",
+    "lib/python3.9/site-packages/google/api/quota_pb2.py",
+    "lib/python3.9/site-packages/google/api/resource.proto",
+    "lib/python3.9/site-packages/google/api/resource_pb2.py",
+    "lib/python3.9/site-packages/google/api/service.proto",
+    "lib/python3.9/site-packages/google/api/service_pb2.py",
+    "lib/python3.9/site-packages/google/api/source_info.proto",
+    "lib/python3.9/site-packages/google/api/source_info_pb2.py",
+    "lib/python3.9/site-packages/google/api/system_parameter.proto",
+    "lib/python3.9/site-packages/google/api/system_parameter_pb2.py",
+    "lib/python3.9/site-packages/google/api/usage.proto",
+    "lib/python3.9/site-packages/google/api/usage_pb2.py",
+    "lib/python3.9/site-packages/google/gapic/metadata/__init__.py",
+    "lib/python3.9/site-packages/google/gapic/metadata/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/gapic/metadata/__pycache__/gapic_metadata_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/gapic/metadata/gapic_metadata.proto",
+    "lib/python3.9/site-packages/google/gapic/metadata/gapic_metadata_pb2.py",
+    "lib/python3.9/site-packages/google/logging/type/__init__.py",
+    "lib/python3.9/site-packages/google/logging/type/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/logging/type/__pycache__/http_request_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/logging/type/__pycache__/log_severity_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/logging/type/http_request.proto",
+    "lib/python3.9/site-packages/google/logging/type/http_request_pb2.py",
+    "lib/python3.9/site-packages/google/logging/type/log_severity.proto",
+    "lib/python3.9/site-packages/google/logging/type/log_severity_pb2.py",
+    "lib/python3.9/site-packages/google/longrunning/__init__.py",
+    "lib/python3.9/site-packages/google/longrunning/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/longrunning/__pycache__/operations_grpc.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/longrunning/__pycache__/operations_grpc_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/longrunning/__pycache__/operations_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/longrunning/__pycache__/operations_pb2_grpc.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/longrunning/__pycache__/operations_proto.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/longrunning/__pycache__/operations_proto_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/longrunning/operations.proto",
+    "lib/python3.9/site-packages/google/longrunning/operations_grpc.py",
+    "lib/python3.9/site-packages/google/longrunning/operations_grpc_pb2.py",
+    "lib/python3.9/site-packages/google/longrunning/operations_pb2.py",
+    "lib/python3.9/site-packages/google/longrunning/operations_pb2_grpc.py",
+    "lib/python3.9/site-packages/google/longrunning/operations_proto.py",
+    "lib/python3.9/site-packages/google/longrunning/operations_proto_pb2.py",
+    "lib/python3.9/site-packages/google/rpc/__init__.py",
+    "lib/python3.9/site-packages/google/rpc/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/rpc/__pycache__/code_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/rpc/__pycache__/error_details_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/rpc/__pycache__/status_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/rpc/code.proto",
+    "lib/python3.9/site-packages/google/rpc/code_pb2.py",
+    "lib/python3.9/site-packages/google/rpc/context/__init__.py",
+    "lib/python3.9/site-packages/google/rpc/context/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/rpc/context/__pycache__/attribute_context_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/rpc/context/attribute_context.proto",
+    "lib/python3.9/site-packages/google/rpc/context/attribute_context_pb2.py",
+    "lib/python3.9/site-packages/google/rpc/error_details.proto",
+    "lib/python3.9/site-packages/google/rpc/error_details_pb2.py",
+    "lib/python3.9/site-packages/google/rpc/status.proto",
+    "lib/python3.9/site-packages/google/rpc/status_pb2.py",
+    "lib/python3.9/site-packages/google/type/__init__.py",
+    "lib/python3.9/site-packages/google/type/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/type/__pycache__/calendar_period_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/type/__pycache__/color_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/type/__pycache__/date_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/type/__pycache__/datetime_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/type/__pycache__/dayofweek_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/type/__pycache__/expr_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/type/__pycache__/fraction_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/type/__pycache__/latlng_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/type/__pycache__/money_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/type/__pycache__/month_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/type/__pycache__/postal_address_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/type/__pycache__/quaternion_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/type/__pycache__/timeofday_pb2.cpython-39.pyc",
+    "lib/python3.9/site-packages/google/type/calendar_period.proto",
+    "lib/python3.9/site-packages/google/type/calendar_period_pb2.py",
+    "lib/python3.9/site-packages/google/type/color.proto",
+    "lib/python3.9/site-packages/google/type/color_pb2.py",
+    "lib/python3.9/site-packages/google/type/date.proto",
+    "lib/python3.9/site-packages/google/type/date_pb2.py",
+    "lib/python3.9/site-packages/google/type/datetime.proto",
+    "lib/python3.9/site-packages/google/type/datetime_pb2.py",
+    "lib/python3.9/site-packages/google/type/dayofweek.proto",
+    "lib/python3.9/site-packages/google/type/dayofweek_pb2.py",
+    "lib/python3.9/site-packages/google/type/expr.proto",
+    "lib/python3.9/site-packages/google/type/expr_pb2.py",
+    "lib/python3.9/site-packages/google/type/fraction.proto",
+    "lib/python3.9/site-packages/google/type/fraction_pb2.py",
+    "lib/python3.9/site-packages/google/type/latlng.proto",
+    "lib/python3.9/site-packages/google/type/latlng_pb2.py",
+    "lib/python3.9/site-packages/google/type/money.proto",
+    "lib/python3.9/site-packages/google/type/money_pb2.py",
+    "lib/python3.9/site-packages/google/type/month.proto",
+    "lib/python3.9/site-packages/google/type/month_pb2.py",
+    "lib/python3.9/site-packages/google/type/postal_address.proto",
+    "lib/python3.9/site-packages/google/type/postal_address_pb2.py",
+    "lib/python3.9/site-packages/google/type/quaternion.proto",
+    "lib/python3.9/site-packages/google/type/quaternion_pb2.py",
+    "lib/python3.9/site-packages/google/type/timeofday.proto",
+    "lib/python3.9/site-packages/google/type/timeofday_pb2.py",
+    "lib/python3.9/site-packages/googleapis_common_protos-1.53.0-py3.9-nspkg.pth",
+    "lib/python3.9/site-packages/googleapis_common_protos-1.53.0.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/googleapis_common_protos-1.53.0.dist-info/LICENSE",
+    "lib/python3.9/site-packages/googleapis_common_protos-1.53.0.dist-info/METADATA",
+    "lib/python3.9/site-packages/googleapis_common_protos-1.53.0.dist-info/RECORD",
+    "lib/python3.9/site-packages/googleapis_common_protos-1.53.0.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/googleapis_common_protos-1.53.0.dist-info/WHEEL",
+    "lib/python3.9/site-packages/googleapis_common_protos-1.53.0.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/googleapis_common_protos-1.53.0.dist-info/namespace_packages.txt",
+    "lib/python3.9/site-packages/googleapis_common_protos-1.53.0.dist-info/top_level.txt"
+  ],
+  "fn": "googleapis-common-protos-1.53.0-py39h2804cbe_1.tar.bz2",
+  "license": "Apache-2.0",
+  "license_family": "APACHE",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/googleapis-common-protos-1.53.0-py39h2804cbe_1",
+    "type": 1
+  },
+  "md5": "67b9f8707b561b25e7b802caf110c844",
+  "name": "googleapis-common-protos",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/googleapis-common-protos-1.53.0-py39h2804cbe_1.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "c511b7acda4249e20f94edfc0df69eb15ab2d5b9acdeece11d134804790b2c43",
+        "sha256_in_prefix": "c511b7acda4249e20f94edfc0df69eb15ab2d5b9acdeece11d134804790b2c43",
+        "size_in_bytes": 141
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/annotations_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "4993e4ec612d91fceedf9f680e9f0babee92f04b21249164a4dca6396b7c4d60",
+        "sha256_in_prefix": "4993e4ec612d91fceedf9f680e9f0babee92f04b21249164a4dca6396b7c4d60",
+        "size_in_bytes": 1747
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/auth_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "4d85caf6963487c5fd6bff47ade1b490a73df3425d92db4caf2971068a43da21",
+        "sha256_in_prefix": "4d85caf6963487c5fd6bff47ade1b490a73df3425d92db4caf2971068a43da21",
+        "size_in_bytes": 5255
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/backend_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "f95d32f7ac00affc74f4e36f77a06f1c09a266dcb72cd070bdd12332904cde57",
+        "sha256_in_prefix": "f95d32f7ac00affc74f4e36f77a06f1c09a266dcb72cd070bdd12332904cde57",
+        "size_in_bytes": 2760
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/billing_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "96214611764f33fd4176548e1998aba2a9a103f3296f3d446f876fca75c8d05e",
+        "sha256_in_prefix": "96214611764f33fd4176548e1998aba2a9a103f3296f3d446f876fca75c8d05e",
+        "size_in_bytes": 2764
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/client_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "815139af4c33837f4894600c91c7cc99ee21eef03c6d79bca7b1476abafa5ba1",
+        "sha256_in_prefix": "815139af4c33837f4894600c91c7cc99ee21eef03c6d79bca7b1476abafa5ba1",
+        "size_in_bytes": 2169
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/config_change_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "b17817319a766ae5464e7ad14808e86c58de0daa5f1c9c72ce9b504779fc38d8",
+        "sha256_in_prefix": "b17817319a766ae5464e7ad14808e86c58de0daa5f1c9c72ce9b504779fc38d8",
+        "size_in_bytes": 3735
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/consumer_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "e83c394671f073380794e5f88bb2b505ad3485588d4d2d7be55ae4d0366b4825",
+        "sha256_in_prefix": "e83c394671f073380794e5f88bb2b505ad3485588d4d2d7be55ae4d0366b4825",
+        "size_in_bytes": 3287
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/context_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "7af6bea45a43505382dab75e27e668674c8a928859720c4e1eda1ecd22dade3a",
+        "sha256_in_prefix": "7af6bea45a43505382dab75e27e668674c8a928859720c4e1eda1ecd22dade3a",
+        "size_in_bytes": 2580
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/control_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "231b59ae0da5bc58668bf2f3a59f7ff08c64c4f8cf018f610c54bc1be580ed8a",
+        "sha256_in_prefix": "231b59ae0da5bc58668bf2f3a59f7ff08c64c4f8cf018f610c54bc1be580ed8a",
+        "size_in_bytes": 1859
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/distribution_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "fef44e4bb8a2ed2b2b32b0e0a25355d6a5efa6030e388b3fe3aa1edb10d379a5",
+        "sha256_in_prefix": "fef44e4bb8a2ed2b2b32b0e0a25355d6a5efa6030e388b3fe3aa1edb10d379a5",
+        "size_in_bytes": 8060
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/documentation_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "46b7c2c102c512466de64718a2862fbd1613ede9a3a535685c59c1ad72ab2d6f",
+        "sha256_in_prefix": "46b7c2c102c512466de64718a2862fbd1613ede9a3a535685c59c1ad72ab2d6f",
+        "size_in_bytes": 4063
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/endpoint_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "4fd4986812d9fcee91db48fd00d7c82a7e6f617d3a45d102b394269028591295",
+        "sha256_in_prefix": "4fd4986812d9fcee91db48fd00d7c82a7e6f617d3a45d102b394269028591295",
+        "size_in_bytes": 2585
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/field_behavior_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "996038d905b3d51913e74860891637f8ac558aabbfd6b9d68ca73486b8bafd1c",
+        "sha256_in_prefix": "996038d905b3d51913e74860891637f8ac558aabbfd6b9d68ca73486b8bafd1c",
+        "size_in_bytes": 2742
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/http_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "8512c44530af5fbfc90aa5358745cade98832eaabb1762e112ee6e675781b915",
+        "sha256_in_prefix": "8512c44530af5fbfc90aa5358745cade98832eaabb1762e112ee6e675781b915",
+        "size_in_bytes": 4854
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/httpbody_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "74a50afd75b121dec119a433cc42a64bf5317503d289f99eaff2792d3eaefc56",
+        "sha256_in_prefix": "74a50afd75b121dec119a433cc42a64bf5317503d289f99eaff2792d3eaefc56",
+        "size_in_bytes": 2329
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/label_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "728afdec6880939e58e47c36d3c845c9faefbf8a6f444eb0d0a254d641156ee7",
+        "sha256_in_prefix": "728afdec6880939e58e47c36d3c845c9faefbf8a6f444eb0d0a254d641156ee7",
+        "size_in_bytes": 2741
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/launch_stage_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "9a77a013e54f57dac73564e9a1d5ed316e08d8abed4ad495f34141b55991b03b",
+        "sha256_in_prefix": "9a77a013e54f57dac73564e9a1d5ed316e08d8abed4ad495f34141b55991b03b",
+        "size_in_bytes": 1899
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/log_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "0b6442d3d7bb3659f4047dcfa74575420c1b4479e9945d6344c189884e00ba0c",
+        "sha256_in_prefix": "0b6442d3d7bb3659f4047dcfa74575420c1b4479e9945d6344c189884e00ba0c",
+        "size_in_bytes": 2541
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/logging_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "0c257b77f3313e19ef887eee8363248b2625d7b2604a64ee484fdfeec2044a37",
+        "sha256_in_prefix": "0c257b77f3313e19ef887eee8363248b2625d7b2604a64ee484fdfeec2044a37",
+        "size_in_bytes": 2988
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/metric_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "4d9032eed137633ca5acfce3f09c4668b917e498f5f2525d73dee158d85dc7e9",
+        "sha256_in_prefix": "4d9032eed137633ca5acfce3f09c4668b917e498f5f2525d73dee158d85dc7e9",
+        "size_in_bytes": 5582
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/monitored_resource_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "a0201f2e7a920ccb693920f7564e278ce9ed4c26e034d8f146e0e1c843946492",
+        "sha256_in_prefix": "a0201f2e7a920ccb693920f7564e278ce9ed4c26e034d8f146e0e1c843946492",
+        "size_in_bytes": 5607
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/monitoring_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "a0dc83b83aa101de3af35747d1257162f6b7ddd0f257de4ce36947dddff94acd",
+        "sha256_in_prefix": "a0dc83b83aa101de3af35747d1257162f6b7ddd0f257de4ce36947dddff94acd",
+        "size_in_bytes": 3075
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/quota_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "37f18ebc38237bb8603d316ff79c4e5f6ffcbcef32dbf3276b77e11f556a77db",
+        "sha256_in_prefix": "37f18ebc38237bb8603d316ff79c4e5f6ffcbcef32dbf3276b77e11f556a77db",
+        "size_in_bytes": 5727
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/resource_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "2ba9b5fb2dd41ffaaeac6a917f338d7075bf3fd860339030ed732d1d47c48087",
+        "sha256_in_prefix": "2ba9b5fb2dd41ffaaeac6a917f338d7075bf3fd860339030ed732d1d47c48087",
+        "size_in_bytes": 5570
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/service_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "06674c63f29fc61f1e53853ed725d8932645a8d0e2457319000a84b258e4954a",
+        "sha256_in_prefix": "06674c63f29fc61f1e53853ed725d8932645a8d0e2457319000a84b258e4954a",
+        "size_in_bytes": 8825
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/source_info_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "a0d7c110270b90a5572e01cc09c10bf977bf0872bd63ca9fa02a8dd2ec95ff8e",
+        "sha256_in_prefix": "a0d7c110270b90a5572e01cc09c10bf977bf0872bd63ca9fa02a8dd2ec95ff8e",
+        "size_in_bytes": 2067
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/system_parameter_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "ead511bab653063555f4c393eabad49945576a0f00b78db78e7cb5a5ceddf65e",
+        "sha256_in_prefix": "ead511bab653063555f4c393eabad49945576a0f00b78db78e7cb5a5ceddf65e",
+        "size_in_bytes": 3367
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/__pycache__/usage_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "f5e276e08a33272d75bbd502b0cba4a5f4cbc4a7bca6ec4bb99166cbed7c7cbd",
+        "sha256_in_prefix": "f5e276e08a33272d75bbd502b0cba4a5f4cbc4a7bca6ec4bb99166cbed7c7cbd",
+        "size_in_bytes": 3132
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/annotations.proto",
+        "path_type": "hardlink",
+        "sha256": "bff7c47b78bd25d34e70efc06f49764ec24f55e665067b9be49e53e825250ce8",
+        "sha256_in_prefix": "bff7c47b78bd25d34e70efc06f49764ec24f55e665067b9be49e53e825250ce8",
+        "size_in_bytes": 1051
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/annotations_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "5585344dce29c92db266be8212396c754b8df3744e08d9eede8ea0c7801b7276",
+        "sha256_in_prefix": "5585344dce29c92db266be8212396c754b8df3744e08d9eede8ea0c7801b7276",
+        "size_in_bytes": 2811
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/auth.proto",
+        "path_type": "hardlink",
+        "sha256": "a60c0b693be5b71df3ab5c648a19373cd917cd9b0571c1429fe5dac0a3d8fbfb",
+        "sha256_in_prefix": "a60c0b693be5b71df3ab5c648a19373cd917cd9b0571c1429fe5dac0a3d8fbfb",
+        "size_in_bytes": 7374
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/auth_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "6c1ec4bca1bc77f756c9e9858d33b5660def282b49a64b134da3731d026041da",
+        "sha256_in_prefix": "6c1ec4bca1bc77f756c9e9858d33b5660def282b49a64b134da3731d026041da",
+        "size_in_bytes": 15927
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/backend.proto",
+        "path_type": "hardlink",
+        "sha256": "2f024da6e73435957c0ffbdce53a8cf1776027f4cdd2b779db98958cf72206ca",
+        "sha256_in_prefix": "2f024da6e73435957c0ffbdce53a8cf1776027f4cdd2b779db98958cf72206ca",
+        "size_in_bytes": 1808
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/backend_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "09871414defc289bf488173b6506357e8a8f3229c770804b48c60e26b45d1cb6",
+        "sha256_in_prefix": "09871414defc289bf488173b6506357e8a8f3229c770804b48c60e26b45d1cb6",
+        "size_in_bytes": 6687
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/billing.proto",
+        "path_type": "hardlink",
+        "sha256": "54dcc59d7a3a40d0ed778cef076525b3cb089bc345579d509d8b0f2c7d0d9a45",
+        "sha256_in_prefix": "54dcc59d7a3a40d0ed778cef076525b3cb089bc345579d509d8b0f2c7d0d9a45",
+        "size_in_bytes": 2504
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/billing_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "ebd4dcb919469dd4cae5aef8538b717020ca124a072419019e5970312d9aaf74",
+        "sha256_in_prefix": "ebd4dcb919469dd4cae5aef8538b717020ca124a072419019e5970312d9aaf74",
+        "size_in_bytes": 5897
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/client.proto",
+        "path_type": "hardlink",
+        "sha256": "683886c9d7c67506bceb83951046a6a42bedaac81d1978493d7d7cc790c7f689",
+        "sha256_in_prefix": "683886c9d7c67506bceb83951046a6a42bedaac81d1978493d7d7cc790c7f689",
+        "size_in_bytes": 3392
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/client_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "ba23dde949abd8b1b823c31ee53f64108c8790d66d43ce38ab0e0aa73fb46749",
+        "sha256_in_prefix": "ba23dde949abd8b1b823c31ee53f64108c8790d66d43ce38ab0e0aa73fb46749",
+        "size_in_bytes": 4093
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/config_change.proto",
+        "path_type": "hardlink",
+        "sha256": "e6d46b7df29f9d98ff0f5afadc0a76dac8748c4ea8dde65eecca3a81e2afc33a",
+        "sha256_in_prefix": "e6d46b7df29f9d98ff0f5afadc0a76dac8748c4ea8dde65eecca3a81e2afc33a",
+        "size_in_bytes": 3169
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/config_change_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "7458c5e4ae16352d1f5140bb593afdaf30a2632e6e44e059622e7aceed7e3f1c",
+        "sha256_in_prefix": "7458c5e4ae16352d1f5140bb593afdaf30a2632e6e44e059622e7aceed7e3f1c",
+        "size_in_bytes": 9216
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/consumer.proto",
+        "path_type": "hardlink",
+        "sha256": "99b1b32b09decfee9abc4fbcf1b6219c514a7b5723b47a9c9c37b2ed456750b4",
+        "sha256_in_prefix": "99b1b32b09decfee9abc4fbcf1b6219c514a7b5723b47a9c9c37b2ed456750b4",
+        "size_in_bytes": 2719
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/consumer_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "3904d022b874341dffad8cc619f27e658dc448b2a0954457b34d7bbed7bf986c",
+        "sha256_in_prefix": "3904d022b874341dffad8cc619f27e658dc448b2a0954457b34d7bbed7bf986c",
+        "size_in_bytes": 7994
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/context.proto",
+        "path_type": "hardlink",
+        "sha256": "b4d3565f6215aecb636eef64fa6dd71f146a932c4ca8b381a3695a28ae4af8a7",
+        "sha256_in_prefix": "b4d3565f6215aecb636eef64fa6dd71f146a932c4ca8b381a3695a28ae4af8a7",
+        "size_in_bytes": 2008
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/context_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "81a6e793b586ded6eba326ec64b2bf6a951ec552c92c877fa4e58f3bdbef0c40",
+        "sha256_in_prefix": "81a6e793b586ded6eba326ec64b2bf6a951ec552c92c877fa4e58f3bdbef0c40",
+        "size_in_bytes": 5975
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/control.proto",
+        "path_type": "hardlink",
+        "sha256": "9aea45db36e82cf45c618ea9b67d05473ec7d52f309d2cd06a9500689a952d75",
+        "sha256_in_prefix": "9aea45db36e82cf45c618ea9b67d05473ec7d52f309d2cd06a9500689a952d75",
+        "size_in_bytes": 1225
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/control_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "5b9fb402ae4ad7f09d24079dd29eafbe841309685bbf23063f03d4df34cd2131",
+        "sha256_in_prefix": "5b9fb402ae4ad7f09d24079dd29eafbe841309685bbf23063f03d4df34cd2131",
+        "size_in_bytes": 3161
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/distribution.proto",
+        "path_type": "hardlink",
+        "sha256": "3060912cc528c2fed5aabfab0ce7189222f675608dab97b3215b44d4795e374e",
+        "sha256_in_prefix": "3060912cc528c2fed5aabfab0ce7189222f675608dab97b3215b44d4795e374e",
+        "size_in_bytes": 8657
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/distribution_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "cb11738de7f47913c8fb5bc3ddf211dd713eebcb243c749d49b3a3e814af1fca",
+        "sha256_in_prefix": "cb11738de7f47913c8fb5bc3ddf211dd713eebcb243c749d49b3a3e814af1fca",
+        "size_in_bytes": 26262
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/documentation.proto",
+        "path_type": "hardlink",
+        "sha256": "c48028b62a6b4ec0281b6c4f906c2305f137cfb2a0090fa56e681a0de42d5d26",
+        "sha256_in_prefix": "c48028b62a6b4ec0281b6c4f906c2305f137cfb2a0090fa56e681a0de42d5d26",
+        "size_in_bytes": 6132
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/documentation_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "d5dcc5d88c74a7a8c73218980957b1b072923a15a0f27febe6a4325fc49495f9",
+        "sha256_in_prefix": "d5dcc5d88c74a7a8c73218980957b1b072923a15a0f27febe6a4325fc49495f9",
+        "size_in_bytes": 11742
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/endpoint.proto",
+        "path_type": "hardlink",
+        "sha256": "454d5e6d74063a07efc6f4f733720a1c896fb27f3c7a057de6026a1d59324455",
+        "sha256_in_prefix": "454d5e6d74063a07efc6f4f733720a1c896fb27f3c7a057de6026a1d59324455",
+        "size_in_bytes": 2824
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/endpoint_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "0bb76b127320d5a481d8c82cdea690b174622f7d225f1b7e9aaffbf4c06edb21",
+        "sha256_in_prefix": "0bb76b127320d5a481d8c82cdea690b174622f7d225f1b7e9aaffbf4c06edb21",
+        "size_in_bytes": 5868
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/field_behavior.proto",
+        "path_type": "hardlink",
+        "sha256": "f97c2e136ee3414458684c91da8835bc7a78f58783008a339cd5385530dec2ae",
+        "sha256_in_prefix": "f97c2e136ee3414458684c91da8835bc7a78f58783008a339cd5385530dec2ae",
+        "size_in_bytes": 3318
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/field_behavior_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "830781dac44df621186f0290f0629684fd266c25faceb7532aeebc946d1538f5",
+        "sha256_in_prefix": "830781dac44df621186f0290f0629684fd266c25faceb7532aeebc946d1538f5",
+        "size_in_bytes": 5382
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/http.proto",
+        "path_type": "hardlink",
+        "sha256": "e2706b549f04b1814be792f74fe5eb4f8141f96c95c191f4f1697679d55eb259",
+        "sha256_in_prefix": "e2706b549f04b1814be792f74fe5eb4f8141f96c95c191f4f1697679d55eb259",
+        "size_in_bytes": 12099
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/http_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "2e01bd3b04f1f7f148cff35845557891f032584ae1e9e7cfde053d8edbbb4706",
+        "sha256_in_prefix": "2e01bd3b04f1f7f148cff35845557891f032584ae1e9e7cfde053d8edbbb4706",
+        "size_in_bytes": 14846
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/httpbody.proto",
+        "path_type": "hardlink",
+        "sha256": "5da784568c0f1c47131ff352a9620abf558e2a908539e57a0bf378d6edf664a9",
+        "sha256_in_prefix": "5da784568c0f1c47131ff352a9620abf558e2a908539e57a0bf378d6edf664a9",
+        "size_in_bytes": 2605
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/httpbody_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "930f2714649b9be2a40a6b8f7d12ddbe81bde2110f68035f331a1c8a446c2a76",
+        "sha256_in_prefix": "930f2714649b9be2a40a6b8f7d12ddbe81bde2110f68035f331a1c8a446c2a76",
+        "size_in_bytes": 4703
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/label.proto",
+        "path_type": "hardlink",
+        "sha256": "144c8bc4d18e9d8353b4c6bdb95e7e88542b1c9c0e6a688477c14019f9ddfbd2",
+        "sha256_in_prefix": "144c8bc4d18e9d8353b4c6bdb95e7e88542b1c9c0e6a688477c14019f9ddfbd2",
+        "size_in_bytes": 1391
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/label_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "74122ecdf14b3a7cf1056da62519ab0335db88f3353d1142f6459b6475b91901",
+        "sha256_in_prefix": "74122ecdf14b3a7cf1056da62519ab0335db88f3353d1142f6459b6475b91901",
+        "size_in_bytes": 5947
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/launch_stage.proto",
+        "path_type": "hardlink",
+        "sha256": "b30710fd0a18fa11d169f158d8be5ddc50bc42c883e732e4204c79f5e1a0d213",
+        "sha256_in_prefix": "b30710fd0a18fa11d169f158d8be5ddc50bc42c883e732e4204c79f5e1a0d213",
+        "size_in_bytes": 2910
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/launch_stage_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "f49f086bb3409ec44c7f66edff1f956947b24becafc9e7fed82174f632c7ba64",
+        "sha256_in_prefix": "f49f086bb3409ec44c7f66edff1f956947b24becafc9e7fed82174f632c7ba64",
+        "size_in_bytes": 3976
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/log.proto",
+        "path_type": "hardlink",
+        "sha256": "93d7166221dab29672a714fb0751a14f364420ee197ef03162be4001630aac36",
+        "sha256_in_prefix": "93d7166221dab29672a714fb0751a14f364420ee197ef03162be4001630aac36",
+        "size_in_bytes": 2045
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/log_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "a4224a716e24cc4700deabf54de5937ea4c985d979a8ccc53bd4ff872060f56a",
+        "sha256_in_prefix": "a4224a716e24cc4700deabf54de5937ea4c985d979a8ccc53bd4ff872060f56a",
+        "size_in_bytes": 5430
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/logging.proto",
+        "path_type": "hardlink",
+        "sha256": "b1a95038763391bade764e7945d21d5c5b3aef6206862fed0e2486d3e40629e0",
+        "sha256_in_prefix": "b1a95038763391bade764e7945d21d5c5b3aef6206862fed0e2486d3e40629e0",
+        "size_in_bytes": 3209
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/logging_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "15dfee87880f42246ac6e25694feb98ffb496b96874619ef3d2815b2857ad1b5",
+        "sha256_in_prefix": "15dfee87880f42246ac6e25694feb98ffb496b96874619ef3d2815b2857ad1b5",
+        "size_in_bytes": 6686
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/metric.proto",
+        "path_type": "hardlink",
+        "sha256": "b0d2a1eb884c7083816dc31469c4e4992e5916a39c02a9c3d2c965c0d0532720",
+        "sha256_in_prefix": "b0d2a1eb884c7083816dc31469c4e4992e5916a39c02a9c3d2c965c0d0532720",
+        "size_in_bytes": 6628
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/metric_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "41aeaf0d512f1f4baeb5244eacd192088c3498afd650d745abc73cff789cb649",
+        "sha256_in_prefix": "41aeaf0d512f1f4baeb5244eacd192088c3498afd650d745abc73cff789cb649",
+        "size_in_bytes": 16811
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/monitored_resource.proto",
+        "path_type": "hardlink",
+        "sha256": "bac90d3d6216f4819cb65a0d0a43c737a768cc6750257381109bdb2dab9a618f",
+        "sha256_in_prefix": "bac90d3d6216f4819cb65a0d0a43c737a768cc6750257381109bdb2dab9a618f",
+        "size_in_bytes": 5512
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/monitored_resource_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "11511cb8b0b4ea7fda208aee31fa7f2d58c6a16b9e94b066da487581daa92e0e",
+        "sha256_in_prefix": "11511cb8b0b4ea7fda208aee31fa7f2d58c6a16b9e94b066da487581daa92e0e",
+        "size_in_bytes": 16660
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/monitoring.proto",
+        "path_type": "hardlink",
+        "sha256": "ffd692b62316f3a02bb15c20229c0eaeacb21c6ce403de1e62c7b8d2b812f837",
+        "sha256_in_prefix": "ffd692b62316f3a02bb15c20229c0eaeacb21c6ce403de1e62c7b8d2b812f837",
+        "size_in_bytes": 3524
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/monitoring_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "1496da37ffedf389ae5b6b16bf39f4d19054732530283d42f9d46c393603595c",
+        "sha256_in_prefix": "1496da37ffedf389ae5b6b16bf39f4d19054732530283d42f9d46c393603595c",
+        "size_in_bytes": 6849
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/quota.proto",
+        "path_type": "hardlink",
+        "sha256": "6209b2868cd5345b3ae4173ff845f626efbc8ea151157f9b69270d102a7a1168",
+        "sha256_in_prefix": "6209b2868cd5345b3ae4173ff845f626efbc8ea151157f9b69270d102a7a1168",
+        "size_in_bytes": 10854
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/quota_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "7a116fef072dc9e49b1b5b6d1945fc739fa0d57223cbbb5b1bedfe0edf4ce936",
+        "sha256_in_prefix": "7a116fef072dc9e49b1b5b6d1945fc739fa0d57223cbbb5b1bedfe0edf4ce936",
+        "size_in_bytes": 18437
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/resource.proto",
+        "path_type": "hardlink",
+        "sha256": "837e7c800d67faf5ed5f77af5c4b2bbeaba4302b459482fd4ca0cf25c03c3186",
+        "sha256_in_prefix": "837e7c800d67faf5ed5f77af5c4b2bbeaba4302b459482fd4ca0cf25c03c3186",
+        "size_in_bytes": 11347
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/resource_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "f85a70f801f4e7bee489ab76b8b56479eae0c2192f04c63fbc755d4bc815e3b4",
+        "sha256_in_prefix": "f85a70f801f4e7bee489ab76b8b56479eae0c2192f04c63fbc755d4bc815e3b4",
+        "size_in_bytes": 14810
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/service.proto",
+        "path_type": "hardlink",
+        "sha256": "00cf058a8dd8d5f2f568409718770daebf34eb568dcbe7ce863d19671fa0e815",
+        "sha256_in_prefix": "00cf058a8dd8d5f2f568409718770daebf34eb568dcbe7ce863d19671fa0e815",
+        "size_in_bytes": 6099
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/service_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "c6646fd2738d4ce38a4454fea9b8d6bf81e8156521a39ad2d3b87048e50bed00",
+        "sha256_in_prefix": "c6646fd2738d4ce38a4454fea9b8d6bf81e8156521a39ad2d3b87048e50bed00",
+        "size_in_bytes": 24531
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/source_info.proto",
+        "path_type": "hardlink",
+        "sha256": "b2ddda9d81269137d7e45aa4f113833710aaeb07b7ffeddcb028b8f364c00cf3",
+        "sha256_in_prefix": "b2ddda9d81269137d7e45aa4f113833710aaeb07b7ffeddcb028b8f364c00cf3",
+        "size_in_bytes": 1093
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/source_info_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "f7dc54f6c46509e22a465e66778d0fdb800dfbb533996205f2320acfc481e6b9",
+        "sha256_in_prefix": "f7dc54f6c46509e22a465e66778d0fdb800dfbb533996205f2320acfc481e6b9",
+        "size_in_bytes": 3494
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/system_parameter.proto",
+        "path_type": "hardlink",
+        "sha256": "95f419fbb21565d52fa5ee636c58055e23ff549363d3aaa8c47c1acaa563c42c",
+        "sha256_in_prefix": "95f419fbb21565d52fa5ee636c58055e23ff549363d3aaa8c47c1acaa563c42c",
+        "size_in_bytes": 3472
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/system_parameter_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "0fa544b4cb5928f62f9a8faa3cce7ecc6324b91e3bf9cb757e75e6d4ed526f32",
+        "sha256_in_prefix": "0fa544b4cb5928f62f9a8faa3cce7ecc6324b91e3bf9cb757e75e6d4ed526f32",
+        "size_in_bytes": 8643
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/usage.proto",
+        "path_type": "hardlink",
+        "sha256": "1f10a3cbe3b09e7935a142eaa962ea8b3e933f0fd80e9196c6585dbe38c1e2b7",
+        "sha256_in_prefix": "1f10a3cbe3b09e7935a142eaa962ea8b3e933f0fd80e9196c6585dbe38c1e2b7",
+        "size_in_bytes": 3513
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/api/usage_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "f5faa174256a6cdcc17e635f63c1e5ce2127932caaab7d8261065634e3ed1ce3",
+        "sha256_in_prefix": "f5faa174256a6cdcc17e635f63c1e5ce2127932caaab7d8261065634e3ed1ce3",
+        "size_in_bytes": 7505
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/gapic/metadata/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/gapic/metadata/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "1f8860b4f90c248627eea441e2fb8d65f5128adb1c806c1e40d9fad7504c2a9a",
+        "sha256_in_prefix": "1f8860b4f90c248627eea441e2fb8d65f5128adb1c806c1e40d9fad7504c2a9a",
+        "size_in_bytes": 152
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/gapic/metadata/__pycache__/gapic_metadata_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "e3664fc6b93db69a22e6cb127f33bb71ed24d2a30f83b484c55e23082a13ef6d",
+        "sha256_in_prefix": "e3664fc6b93db69a22e6cb127f33bb71ed24d2a30f83b484c55e23082a13ef6d",
+        "size_in_bytes": 7021
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/gapic/metadata/gapic_metadata.proto",
+        "path_type": "hardlink",
+        "sha256": "42e84bba5fbadc0ff571dae4e7b1949b776d6e29ada5248209b8c8b7aa25ca6f",
+        "sha256_in_prefix": "42e84bba5fbadc0ff571dae4e7b1949b776d6e29ada5248209b8c8b7aa25ca6f",
+        "size_in_bytes": 3393
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/gapic/metadata/gapic_metadata_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "62af5228741d241826fe2e2a89ee4306e6f01814d3b6847f92febd80cce03f09",
+        "sha256_in_prefix": "62af5228741d241826fe2e2a89ee4306e6f01814d3b6847f92febd80cce03f09",
+        "size_in_bytes": 21787
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/logging/type/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/logging/type/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "5ba13a5868995f410dd28d55eff5021f6c6539fec3b11faa7b5f375ef3a56791",
+        "sha256_in_prefix": "5ba13a5868995f410dd28d55eff5021f6c6539fec3b11faa7b5f375ef3a56791",
+        "size_in_bytes": 150
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/logging/type/__pycache__/http_request_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "67dabc668d8d25a842b65205323f96d46edacb261228079e549dedb220e0f4bb",
+        "sha256_in_prefix": "67dabc668d8d25a842b65205323f96d46edacb261228079e549dedb220e0f4bb",
+        "size_in_bytes": 4812
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/logging/type/__pycache__/log_severity_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "c8fd249300ec7d9a486f6a0ef4d37701960eb7674e330bc8a25dcec5b91b733f",
+        "sha256_in_prefix": "c8fd249300ec7d9a486f6a0ef4d37701960eb7674e330bc8a25dcec5b91b733f",
+        "size_in_bytes": 2463
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/logging/type/http_request.proto",
+        "path_type": "hardlink",
+        "sha256": "4ea8fb628d7cdcc86b789949dd03d540294aa0bc31d36608803e9f70ad79cdde",
+        "sha256_in_prefix": "4ea8fb628d7cdcc86b789949dd03d540294aa0bc31d36608803e9f70ad79cdde",
+        "size_in_bytes": 3389
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/logging/type/http_request_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "ef28359b4d679864a09ca772efd2b7c28ae18c1a0c37501f4e935eaf2faa0c79",
+        "sha256_in_prefix": "ef28359b4d679864a09ca772efd2b7c28ae18c1a0c37501f4e935eaf2faa0c79",
+        "size_in_bytes": 13178
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/logging/type/log_severity.proto",
+        "path_type": "hardlink",
+        "sha256": "3f3e5a3acc163dd9cde12f4f898a1988df179244f5c39342298ac321a670981a",
+        "sha256_in_prefix": "3f3e5a3acc163dd9cde12f4f898a1988df179244f5c39342298ac321a670981a",
+        "size_in_bytes": 2508
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/logging/type/log_severity_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "f41a77696d598ccac7a3b88d73ad0b01ec5660f509341fd2da39ebc83bdfc2b6",
+        "sha256_in_prefix": "f41a77696d598ccac7a3b88d73ad0b01ec5660f509341fd2da39ebc83bdfc2b6",
+        "size_in_bytes": 5232
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/longrunning/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/longrunning/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "df83c35408a3c261179b1dc65f3368392a3fac8bbbf43e97a4b31f7cab9e8d20",
+        "sha256_in_prefix": "df83c35408a3c261179b1dc65f3368392a3fac8bbbf43e97a4b31f7cab9e8d20",
+        "size_in_bytes": 149
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/longrunning/__pycache__/operations_grpc.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "272bc6646524aab3bb52f498f1dec3adbaec98cff9b5739fdedf21ed6c172c80",
+        "sha256_in_prefix": "272bc6646524aab3bb52f498f1dec3adbaec98cff9b5739fdedf21ed6c172c80",
+        "size_in_bytes": 261
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/longrunning/__pycache__/operations_grpc_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "4d13e0d249f0ac183d4546e2ee06453eb331c4ef17a8eba7c602ce825de2f80e",
+        "sha256_in_prefix": "4d13e0d249f0ac183d4546e2ee06453eb331c4ef17a8eba7c602ce825de2f80e",
+        "size_in_bytes": 266
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/longrunning/__pycache__/operations_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "796220620e8ee97ce6ff39944c530cf7f8371caf973258d648411aba962adb50",
+        "sha256_in_prefix": "796220620e8ee97ce6ff39944c530cf7f8371caf973258d648411aba962adb50",
+        "size_in_bytes": 615
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/longrunning/__pycache__/operations_pb2_grpc.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "5ca006549f45397968bbd33d1380ee31b64dcfdaebd38ae122f3ea9d0a34ab8c",
+        "sha256_in_prefix": "5ca006549f45397968bbd33d1380ee31b64dcfdaebd38ae122f3ea9d0a34ab8c",
+        "size_in_bytes": 8250
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/longrunning/__pycache__/operations_proto.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "90a5ce05bc44d83ed2f172459d82805c09925dde374cd162339f60930dfc5d60",
+        "sha256_in_prefix": "90a5ce05bc44d83ed2f172459d82805c09925dde374cd162339f60930dfc5d60",
+        "size_in_bytes": 263
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/longrunning/__pycache__/operations_proto_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "dc199f0421bbfc25f7ec7ba35e1683f358695ee71a89fcd3a571d0b01b240f41",
+        "sha256_in_prefix": "dc199f0421bbfc25f7ec7ba35e1683f358695ee71a89fcd3a571d0b01b240f41",
+        "size_in_bytes": 10125
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/longrunning/operations.proto",
+        "path_type": "hardlink",
+        "sha256": "a056ea54fcfe8bce368b3a3129a43790639f78a32812f7418c3a5ac5012dffe9",
+        "sha256_in_prefix": "a056ea54fcfe8bce368b3a3129a43790639f78a32812f7418c3a5ac5012dffe9",
+        "size_in_bytes": 10515
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/longrunning/operations_grpc.py",
+        "path_type": "hardlink",
+        "sha256": "9ee963d99d74585da08079f72cc27822151bb409936c84a4eb36fb4432897377",
+        "sha256_in_prefix": "9ee963d99d74585da08079f72cc27822151bb409936c84a4eb36fb4432897377",
+        "size_in_bytes": 797
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/longrunning/operations_grpc_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "39cdbbb83fa097a711421844338986aeaad776f1b583b3617e780408e4886e15",
+        "sha256_in_prefix": "39cdbbb83fa097a711421844338986aeaad776f1b583b3617e780408e4886e15",
+        "size_in_bytes": 281
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/longrunning/operations_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "d2f429d06e57018a13f0d837045ec5d91635a509a5b0744ef632f6f957757983",
+        "sha256_in_prefix": "d2f429d06e57018a13f0d837045ec5d91635a509a5b0744ef632f6f957757983",
+        "size_in_bytes": 1123
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/longrunning/operations_pb2_grpc.py",
+        "path_type": "hardlink",
+        "sha256": "ee840e0016dd4f792ef239f98b8fe2ec8421c1a6a8816ecc73dc25eb02c0f87d",
+        "sha256_in_prefix": "ee840e0016dd4f792ef239f98b8fe2ec8421c1a6a8816ecc73dc25eb02c0f87d",
+        "size_in_bytes": 14471
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/longrunning/operations_proto.py",
+        "path_type": "hardlink",
+        "sha256": "6573c8069ed6599a19f709ff0ebe54062ed70d876ea1d06a3258a19b7d1fe8d3",
+        "sha256_in_prefix": "6573c8069ed6599a19f709ff0ebe54062ed70d876ea1d06a3258a19b7d1fe8d3",
+        "size_in_bytes": 222
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/longrunning/operations_proto_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "b5053274e3cd6b53c14e3a887c2ad0fc814b97bb480a89a94e92d00a54cb6141",
+        "sha256_in_prefix": "b5053274e3cd6b53c14e3a887c2ad0fc814b97bb480a89a94e92d00a54cb6141",
+        "size_in_bytes": 28329
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/rpc/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "079e2eaa8bc253affc64719cc678f5d62c6552eb791fc36bdb575005892d230f",
+        "sha256_in_prefix": "079e2eaa8bc253affc64719cc678f5d62c6552eb791fc36bdb575005892d230f",
+        "size_in_bytes": 774
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/rpc/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "4c014ef8c03d7d1f07d1230c2d9f511849cc21a0118c741dfb0c59441a1f674d",
+        "sha256_in_prefix": "4c014ef8c03d7d1f07d1230c2d9f511849cc21a0118c741dfb0c59441a1f674d",
+        "size_in_bytes": 304
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/rpc/__pycache__/code_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "d78d49636458dcf0dc032c1d188931a199338b39c0aabb15aaa67fbf72c899d8",
+        "sha256_in_prefix": "d78d49636458dcf0dc032c1d188931a199338b39c0aabb15aaa67fbf72c899d8",
+        "size_in_bytes": 2826
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/rpc/__pycache__/error_details_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "026d6d4f635c60f5cd411f77553deccfae1beb3dea9f7c0d4bc396bf9e3524e2",
+        "sha256_in_prefix": "026d6d4f635c60f5cd411f77553deccfae1beb3dea9f7c0d4bc396bf9e3524e2",
+        "size_in_bytes": 9919
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/rpc/__pycache__/status_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "8dbddeaca23bb5e8dfec0df52bb4dac64b3f892cf7f76e4f2dffd3ad9e7e10da",
+        "sha256_in_prefix": "8dbddeaca23bb5e8dfec0df52bb4dac64b3f892cf7f76e4f2dffd3ad9e7e10da",
+        "size_in_bytes": 2272
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/rpc/code.proto",
+        "path_type": "hardlink",
+        "sha256": "55ba84362212a7440830330d47279a78549a5cd9a7632017c7acc796ea5aa18c",
+        "sha256_in_prefix": "55ba84362212a7440830330d47279a78549a5cd9a7632017c7acc796ea5aa18c",
+        "size_in_bytes": 7125
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/rpc/code_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "3817f7277e72a2dab7c06aee44e67343fbfde5efb69743a7e155844b3675250e",
+        "sha256_in_prefix": "3817f7277e72a2dab7c06aee44e67343fbfde5efb69743a7e155844b3675250e",
+        "size_in_bytes": 7206
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/rpc/context/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/rpc/context/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "35acb7c7f12ecbca357d201d32ececebeec1baef8f2eb4b0387f329634439aea",
+        "sha256_in_prefix": "35acb7c7f12ecbca357d201d32ececebeec1baef8f2eb4b0387f329634439aea",
+        "size_in_bytes": 149
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/rpc/context/__pycache__/attribute_context_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "22a0bee7a602a8442663ebbb914684a4193a60223f9620643d9adf1821eb37d3",
+        "sha256_in_prefix": "22a0bee7a602a8442663ebbb914684a4193a60223f9620643d9adf1821eb37d3",
+        "size_in_bytes": 13678
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/rpc/context/attribute_context.proto",
+        "path_type": "hardlink",
+        "sha256": "57e3adad99e090174aff28f0c51dff2e2b6fd80214ee78169e0305a78f545df0",
+        "sha256_in_prefix": "57e3adad99e090174aff28f0c51dff2e2b6fd80214ee78169e0305a78f545df0",
+        "size_in_bytes": 12015
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/rpc/context/attribute_context_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "e0e24f52cd72aa62f404d46b9e561584dbe253d7e9b5bdd5e5fe93fc7edfadf3",
+        "sha256_in_prefix": "e0e24f52cd72aa62f404d46b9e561584dbe253d7e9b5bdd5e5fe93fc7edfadf3",
+        "size_in_bytes": 48851
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/rpc/error_details.proto",
+        "path_type": "hardlink",
+        "sha256": "e07507d44010e5e6b1004cb1e95013a50861769e024c57bb93d05ddf6f3a5307",
+        "sha256_in_prefix": "e07507d44010e5e6b1004cb1e95013a50861769e024c57bb93d05ddf6f3a5307",
+        "size_in_bytes": 9504
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/rpc/error_details_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "1e2e33af91e7c0cc7eece2a4cd2943c1589460a634b18655a1dc8d8ae753dfc3",
+        "sha256_in_prefix": "1e2e33af91e7c0cc7eece2a4cd2943c1589460a634b18655a1dc8d8ae753dfc3",
+        "size_in_bytes": 35150
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/rpc/status.proto",
+        "path_type": "hardlink",
+        "sha256": "108562c2d7854812908cdcd0d988132880822b05ab5e4f28960e1a5572217854",
+        "sha256_in_prefix": "108562c2d7854812908cdcd0d988132880822b05ab5e4f28960e1a5572217854",
+        "size_in_bytes": 1924
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/rpc/status_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "085f4a11eac903f7e180c3f3363d29472239196352678380b7fd4bfa7622f91e",
+        "sha256_in_prefix": "085f4a11eac903f7e180c3f3363d29472239196352678380b7fd4bfa7622f91e",
+        "size_in_bytes": 4645
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "68a686223b25440fdb088bf6b5bb05bd3277327e19c4b512f70fdd7c722a81e3",
+        "sha256_in_prefix": "68a686223b25440fdb088bf6b5bb05bd3277327e19c4b512f70fdd7c722a81e3",
+        "size_in_bytes": 142
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/__pycache__/calendar_period_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "2c3da4242096851caa98aae2a35def73a3bd19a4b5a7a6f7b3ec735551cbf6ce",
+        "sha256_in_prefix": "2c3da4242096851caa98aae2a35def73a3bd19a4b5a7a6f7b3ec735551cbf6ce",
+        "size_in_bytes": 2122
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/__pycache__/color_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "578010af8be38f77eabb81d7d91895e9addfb92821c6b1cd870e412735e191a9",
+        "sha256_in_prefix": "578010af8be38f77eabb81d7d91895e9addfb92821c6b1cd870e412735e191a9",
+        "size_in_bytes": 2412
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/__pycache__/date_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "aea564d9eaf524c7f3037bd769c4dcb37094ef72ef58a467fe429209183743c8",
+        "sha256_in_prefix": "aea564d9eaf524c7f3037bd769c4dcb37094ef72ef58a467fe429209183743c8",
+        "size_in_bytes": 2019
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/__pycache__/datetime_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "43b4335e9ef840e15e9b9f8021eb616e103e45524b30d4dcc7fa3c284a5b0380",
+        "sha256_in_prefix": "43b4335e9ef840e15e9b9f8021eb616e103e45524b30d4dcc7fa3c284a5b0380",
+        "size_in_bytes": 4025
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/__pycache__/dayofweek_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "0643f7ef67bbc68d33061f0d084e9a2f87fabb74ac3a3653c8f5343d0870d13b",
+        "sha256_in_prefix": "0643f7ef67bbc68d33061f0d084e9a2f87fabb74ac3a3653c8f5343d0870d13b",
+        "size_in_bytes": 2075
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/__pycache__/expr_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "807cb438e86268b54aeee536a6b91702313a78533dce187dee39b38464e88041",
+        "sha256_in_prefix": "807cb438e86268b54aeee536a6b91702313a78533dce187dee39b38464e88041",
+        "size_in_bytes": 2241
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/__pycache__/fraction_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "9cefd9128b68daacd78c0551f6a199ba4868839069791fd08cacfe43aee6d1e9",
+        "sha256_in_prefix": "9cefd9128b68daacd78c0551f6a199ba4868839069791fd08cacfe43aee6d1e9",
+        "size_in_bytes": 1983
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/__pycache__/latlng_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "ce60e2135046bfcc5b0cd1cdf296d856da4964964f82ce111a73adff158e6e34",
+        "sha256_in_prefix": "ce60e2135046bfcc5b0cd1cdf296d856da4964964f82ce111a73adff158e6e34",
+        "size_in_bytes": 1963
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/__pycache__/money_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "8de5fc1c5dc87089ddec5d9784a922b1b07082b3afd23d1ed03a4b9a9cc9494c",
+        "sha256_in_prefix": "8de5fc1c5dc87089ddec5d9784a922b1b07082b3afd23d1ed03a4b9a9cc9494c",
+        "size_in_bytes": 2100
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/__pycache__/month_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "f6a3957a1a6a29c75e31d31477962979fb2919e0532bbbdac2f11122624e0ba4",
+        "sha256_in_prefix": "f6a3957a1a6a29c75e31d31477962979fb2919e0532bbbdac2f11122624e0ba4",
+        "size_in_bytes": 2369
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/__pycache__/postal_address_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "855b2121383ccbe622bd675a9cc5cc62b8f0dd64018d815e5dc37e2810a026e5",
+        "sha256_in_prefix": "855b2121383ccbe622bd675a9cc5cc62b8f0dd64018d815e5dc37e2810a026e5",
+        "size_in_bytes": 3612
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/__pycache__/quaternion_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "6d25855d9f614dd598f890e8a59bfe43cdb11073bfd7b499954969722b21efa1",
+        "sha256_in_prefix": "6d25855d9f614dd598f890e8a59bfe43cdb11073bfd7b499954969722b21efa1",
+        "size_in_bytes": 2244
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/__pycache__/timeofday_pb2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "08e8e697261ad3b1ea3ef298ac9304012e43a191ae8c2635cdea29516eedccfb",
+        "sha256_in_prefix": "08e8e697261ad3b1ea3ef298ac9304012e43a191ae8c2635cdea29516eedccfb",
+        "size_in_bytes": 2263
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/calendar_period.proto",
+        "path_type": "hardlink",
+        "sha256": "5fc2018e33dd712eca9b6f1daeef256533838db5b046aea9b2257c329c184b10",
+        "sha256_in_prefix": "5fc2018e33dd712eca9b6f1daeef256533838db5b046aea9b2257c329c184b10",
+        "size_in_bytes": 1766
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/calendar_period_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "f1ef9b548e4db565e06a40519c7c44d5027f1d0fdf5e91dc68b0b9ba0f19df05",
+        "sha256_in_prefix": "f1ef9b548e4db565e06a40519c7c44d5027f1d0fdf5e91dc68b0b9ba0f19df05",
+        "size_in_bytes": 4625
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/color.proto",
+        "path_type": "hardlink",
+        "sha256": "2b6513ae72c5f9bf25ae9e9c1ec9dca3631908789b5127ae18eb02f0df54fa95",
+        "sha256_in_prefix": "2b6513ae72c5f9bf25ae9e9c1ec9dca3631908789b5127ae18eb02f0df54fa95",
+        "size_in_bytes": 6193
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/color_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "bd2e1df901ea4936bcb553859b08249c68be2b506ce41ca8d69db47612add3fe",
+        "sha256_in_prefix": "bd2e1df901ea4936bcb553859b08249c68be2b506ce41ca8d69db47612add3fe",
+        "size_in_bytes": 5279
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/date.proto",
+        "path_type": "hardlink",
+        "sha256": "847405fdd5ce472231d002a22e697db975020299b65f122bf95a6343a0a2c0ab",
+        "sha256_in_prefix": "847405fdd5ce472231d002a22e697db975020299b65f122bf95a6343a0a2c0ab",
+        "size_in_bytes": 1933
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/date_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "7a5fea6bed1b96b42c81e1c888ac7c900cf2fa4bf8d543e8c6c34297ad7e4dd2",
+        "sha256_in_prefix": "7a5fea6bed1b96b42c81e1c888ac7c900cf2fa4bf8d543e8c6c34297ad7e4dd2",
+        "size_in_bytes": 4293
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/datetime.proto",
+        "path_type": "hardlink",
+        "sha256": "ab13e1962652736080262c77ccb240e8b6e788370f0dae82a7b71939918d128d",
+        "sha256_in_prefix": "ab13e1962652736080262c77ccb240e8b6e788370f0dae82a7b71939918d128d",
+        "size_in_bytes": 3508
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/datetime_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "3dd43397a93ba2af5a65787fc86e842d1c343b1d655ac756188ffa3e3cdce17f",
+        "sha256_in_prefix": "3dd43397a93ba2af5a65787fc86e842d1c343b1d655ac756188ffa3e3cdce17f",
+        "size_in_bytes": 11373
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/dayofweek.proto",
+        "path_type": "hardlink",
+        "sha256": "89bfda7e7c1634d2a94d873bc639f8366f7bc98d230c90e044f7b313446520d8",
+        "sha256_in_prefix": "89bfda7e7c1634d2a94d873bc639f8366f7bc98d230c90e044f7b313446520d8",
+        "size_in_bytes": 1337
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/dayofweek_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "a6ece080739f46e69d2d911dd10c3aeef424156d5f3aacfece5efa58835b8eae",
+        "sha256_in_prefix": "a6ece080739f46e69d2d911dd10c3aeef424156d5f3aacfece5efa58835b8eae",
+        "size_in_bytes": 4554
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/expr.proto",
+        "path_type": "hardlink",
+        "sha256": "3f610798729c87ce6248ff774bf7c90136db5f1f9675f708f7efe414a8d5e765",
+        "sha256_in_prefix": "3f610798729c87ce6248ff774bf7c90136db5f1f9675f708f7efe414a8d5e765",
+        "size_in_bytes": 1834
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/expr_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "46867b9009f96132aa55b22e7d61ee2c57d98e95bb5160ac2fbb2205f308f760",
+        "sha256_in_prefix": "46867b9009f96132aa55b22e7d61ee2c57d98e95bb5160ac2fbb2205f308f760",
+        "size_in_bytes": 4992
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/fraction.proto",
+        "path_type": "hardlink",
+        "sha256": "26b121196074b2a7f34125117c80c6e02c6e7b99de82f28bafece4c25f586eb8",
+        "sha256_in_prefix": "26b121196074b2a7f34125117c80c6e02c6e7b99de82f28bafece4c25f586eb8",
+        "size_in_bytes": 1176
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/fraction_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "0756a0841b647d3a5bc3a55bcdeb080fa337e2e62e5640e29d2c9672e79904f7",
+        "sha256_in_prefix": "0756a0841b647d3a5bc3a55bcdeb080fa337e2e62e5640e29d2c9672e79904f7",
+        "size_in_bytes": 3785
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/latlng.proto",
+        "path_type": "hardlink",
+        "sha256": "f6ade734d5ef32ab827b6999a81750d6115b622b06fe8a8e4f1dc98221b0ff18",
+        "sha256_in_prefix": "f6ade734d5ef32ab827b6999a81750d6115b622b06fe8a8e4f1dc98221b0ff18",
+        "size_in_bytes": 1447
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/latlng_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "47697c3624eed70e3ec58268bc448b34e9c3d675251d5d7cd1df70b2373de9d1",
+        "sha256_in_prefix": "47697c3624eed70e3ec58268bc448b34e9c3d675251d5d7cd1df70b2373de9d1",
+        "size_in_bytes": 3763
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/money.proto",
+        "path_type": "hardlink",
+        "sha256": "86514f55e606d7ce9e6462a8ac95e2a91c0b31eb7ad5dc46471efa25cabc7009",
+        "sha256_in_prefix": "86514f55e606d7ce9e6462a8ac95e2a91c0b31eb7ad5dc46471efa25cabc7009",
+        "size_in_bytes": 1603
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/money_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "fe5098dcb024b754e2d23862f9c0680040783828c1d6847d59f24a36acf650e4",
+        "sha256_in_prefix": "fe5098dcb024b754e2d23862f9c0680040783828c1d6847d59f24a36acf650e4",
+        "size_in_bytes": 4351
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/month.proto",
+        "path_type": "hardlink",
+        "sha256": "880d76d132eca146ee5a2614c41ecc0770a2fa7b4c381d29912703c439fc2f11",
+        "sha256_in_prefix": "880d76d132eca146ee5a2614c41ecc0770a2fa7b4c381d29912703c439fc2f11",
+        "size_in_bytes": 1482
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/month_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "7d418fc895871596db6598ee1a35012730e3bcd1de93208b954777c45a5ae4fe",
+        "sha256_in_prefix": "7d418fc895871596db6598ee1a35012730e3bcd1de93208b954777c45a5ae4fe",
+        "size_in_bytes": 5851
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/postal_address.proto",
+        "path_type": "hardlink",
+        "sha256": "4d14936f594154986308ca8d856126d2351b3313b61fe36b3932c4d581021ae6",
+        "sha256_in_prefix": "4d14936f594154986308ca8d856126d2351b3313b61fe36b3932c4d581021ae6",
+        "size_in_bytes": 6239
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/postal_address_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "8521a9c339e6f2da3dda26396e2371749e917fbba4f661958219d89fb4ceebee",
+        "sha256_in_prefix": "8521a9c339e6f2da3dda26396e2371749e917fbba4f661958219d89fb4ceebee",
+        "size_in_bytes": 9852
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/quaternion.proto",
+        "path_type": "hardlink",
+        "sha256": "13d99dfe83d1303661e0525d0816be8ce34cb0d95e4250c20ad7f123241eda41",
+        "sha256_in_prefix": "13d99dfe83d1303661e0525d0816be8ce34cb0d95e4250c20ad7f123241eda41",
+        "size_in_bytes": 3795
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/quaternion_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "58b16379090fc525ee13a91c8d6f14808673e4f35b13d301c679690d4dab23f6",
+        "sha256_in_prefix": "58b16379090fc525ee13a91c8d6f14808673e4f35b13d301c679690d4dab23f6",
+        "size_in_bytes": 5032
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/timeofday.proto",
+        "path_type": "hardlink",
+        "sha256": "91cd7b42b0763a5eccc25a169ace3399f0a014015dc08286efabca0015a35675",
+        "sha256_in_prefix": "91cd7b42b0763a5eccc25a169ace3399f0a014015dc08286efabca0015a35675",
+        "size_in_bytes": 1668
+      },
+      {
+        "_path": "lib/python3.9/site-packages/google/type/timeofday_pb2.py",
+        "path_type": "hardlink",
+        "sha256": "09cc0025077ae517eaf14adc1de252729977fc9450cb06564f8f14362cda8956",
+        "sha256_in_prefix": "09cc0025077ae517eaf14adc1de252729977fc9450cb06564f8f14362cda8956",
+        "size_in_bytes": 5043
+      },
+      {
+        "_path": "lib/python3.9/site-packages/googleapis_common_protos-1.53.0-py3.9-nspkg.pth",
+        "path_type": "hardlink",
+        "sha256": "4e0e2ba637b0171ece4364f416026bd37ab5a630eebf4b37fcab7b3a6e8d4536",
+        "sha256_in_prefix": "4e0e2ba637b0171ece4364f416026bd37ab5a630eebf4b37fcab7b3a6e8d4536",
+        "size_in_bytes": 1710
+      },
+      {
+        "_path": "lib/python3.9/site-packages/googleapis_common_protos-1.53.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.9/site-packages/googleapis_common_protos-1.53.0.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "sha256_in_prefix": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "size_in_bytes": 11358
+      },
+      {
+        "_path": "lib/python3.9/site-packages/googleapis_common_protos-1.53.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "362ac87c394925d205c438fb501916b6b0ee017ccbba1c8bac3d50789c7aa9ab",
+        "sha256_in_prefix": "362ac87c394925d205c438fb501916b6b0ee017ccbba1c8bac3d50789c7aa9ab",
+        "size_in_bytes": 1342
+      },
+      {
+        "_path": "lib/python3.9/site-packages/googleapis_common_protos-1.53.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "09049c580ba930fb0a2cc11d9b967330309a4e1177240e8ccaeb5980f01a7a8d",
+        "sha256_in_prefix": "09049c580ba930fb0a2cc11d9b967330309a4e1177240e8ccaeb5980f01a7a8d",
+        "size_in_bytes": 13967
+      },
+      {
+        "_path": "lib/python3.9/site-packages/googleapis_common_protos-1.53.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.9/site-packages/googleapis_common_protos-1.53.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "5b367c7308e1f25d23b542cd8d8ab51e9afe582a824603ebfbe4d7e0fe48d56a",
+        "sha256_in_prefix": "5b367c7308e1f25d23b542cd8d8ab51e9afe582a824603ebfbe4d7e0fe48d56a",
+        "size_in_bytes": 110
+      },
+      {
+        "_path": "lib/python3.9/site-packages/googleapis_common_protos-1.53.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "e0b8d8e10aeafd8e90176fae5856c9097fad96daa92dbeda3d9a7485c48af759",
+        "sha256_in_prefix": "e0b8d8e10aeafd8e90176fae5856c9097fad96daa92dbeda3d9a7485c48af759",
+        "size_in_bytes": 122
+      },
+      {
+        "_path": "lib/python3.9/site-packages/googleapis_common_protos-1.53.0.dist-info/namespace_packages.txt",
+        "path_type": "hardlink",
+        "sha256": "6580d6bbdbc28194ec0144ed5fad011fdbd8c76b633c51909d48e024093fbaeb",
+        "sha256_in_prefix": "6580d6bbdbc28194ec0144ed5fad011fdbd8c76b633c51909d48e024093fbaeb",
+        "size_in_bytes": 22
+      },
+      {
+        "_path": "lib/python3.9/site-packages/googleapis_common_protos-1.53.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "ff542f48922114019fc5befd0fa0e107b494c365fa4f8af09f3fcb2eb6dc0f77",
+        "sha256_in_prefix": "ff542f48922114019fc5befd0fa0e107b494c365fa4f8af09f3fcb2eb6dc0f77",
+        "size_in_bytes": 7
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "googleapis-common-protos==1.53.0=py39h2804cbe_1",
+  "sha256": "2b02f12599f241954bfcf8765633b1012e71492b4d32939ab4acc1cff55a4ae5",
+  "size": 131046,
+  "subdir": "osx-arm64",
+  "timestamp": 1636053650526,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/googleapis-common-protos-1.53.0-py39h2804cbe_1.tar.bz2",
+  "version": "1.53.0"
+}

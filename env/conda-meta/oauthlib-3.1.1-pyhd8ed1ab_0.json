@@ -1,0 +1,937 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "blinker",
+    "cryptography",
+    "pyjwt >=1.0.0",
+    "python >=3.6"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/oauthlib-3.1.1-pyhd8ed1ab_0",
+  "features": "",
+  "files": [
+    "lib/python3.9/site-packages/oauthlib-3.1.1.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/oauthlib-3.1.1.dist-info/LICENSE",
+    "lib/python3.9/site-packages/oauthlib-3.1.1.dist-info/METADATA",
+    "lib/python3.9/site-packages/oauthlib-3.1.1.dist-info/RECORD",
+    "lib/python3.9/site-packages/oauthlib-3.1.1.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/oauthlib-3.1.1.dist-info/WHEEL",
+    "lib/python3.9/site-packages/oauthlib-3.1.1.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/oauthlib-3.1.1.dist-info/top_level.txt",
+    "lib/python3.9/site-packages/oauthlib/__init__.py",
+    "lib/python3.9/site-packages/oauthlib/common.py",
+    "lib/python3.9/site-packages/oauthlib/oauth1/__init__.py",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/__init__.py",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/endpoints/__init__.py",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/endpoints/access_token.py",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/endpoints/authorization.py",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/endpoints/base.py",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/endpoints/pre_configured.py",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/endpoints/request_token.py",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/endpoints/resource.py",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/endpoints/signature_only.py",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/errors.py",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/parameters.py",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/request_validator.py",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/signature.py",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/utils.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/__init__.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/__init__.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/clients/__init__.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/clients/backend_application.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/clients/base.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/clients/legacy_application.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/clients/mobile_application.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/clients/service_application.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/clients/web_application.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/__init__.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/authorization.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/base.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/introspect.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/metadata.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/pre_configured.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/resource.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/revocation.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/token.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/errors.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/grant_types/__init__.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/grant_types/authorization_code.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/grant_types/base.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/grant_types/client_credentials.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/grant_types/implicit.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/grant_types/refresh_token.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/grant_types/resource_owner_password_credentials.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/parameters.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/request_validator.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/tokens.py",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/utils.py",
+    "lib/python3.9/site-packages/oauthlib/openid/__init__.py",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/__init__.py",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/__init__.py",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/endpoints/__init__.py",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/endpoints/pre_configured.py",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/endpoints/userinfo.py",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/exceptions.py",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/grant_types/__init__.py",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/grant_types/authorization_code.py",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/grant_types/base.py",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/grant_types/dispatchers.py",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/grant_types/hybrid.py",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/grant_types/implicit.py",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/request_validator.py",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/tokens.py",
+    "lib/python3.9/site-packages/oauthlib/signals.py",
+    "lib/python3.9/site-packages/oauthlib/uri_validate.py",
+    "lib/python3.9/site-packages/oauthlib/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/__pycache__/common.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth1/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/endpoints/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/endpoints/__pycache__/access_token.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/endpoints/__pycache__/authorization.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/endpoints/__pycache__/base.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/endpoints/__pycache__/pre_configured.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/endpoints/__pycache__/request_token.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/endpoints/__pycache__/resource.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/endpoints/__pycache__/signature_only.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/__pycache__/errors.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/__pycache__/parameters.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/__pycache__/request_validator.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/__pycache__/signature.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/__pycache__/utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/clients/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/clients/__pycache__/backend_application.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/clients/__pycache__/base.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/clients/__pycache__/legacy_application.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/clients/__pycache__/mobile_application.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/clients/__pycache__/service_application.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/clients/__pycache__/web_application.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/__pycache__/authorization.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/__pycache__/base.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/__pycache__/introspect.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/__pycache__/metadata.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/__pycache__/pre_configured.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/__pycache__/resource.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/__pycache__/revocation.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/__pycache__/token.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/__pycache__/errors.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/grant_types/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/grant_types/__pycache__/authorization_code.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/grant_types/__pycache__/base.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/grant_types/__pycache__/client_credentials.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/grant_types/__pycache__/implicit.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/grant_types/__pycache__/refresh_token.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/grant_types/__pycache__/resource_owner_password_credentials.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/__pycache__/parameters.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/__pycache__/request_validator.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/__pycache__/tokens.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/__pycache__/utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/openid/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/endpoints/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/endpoints/__pycache__/pre_configured.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/endpoints/__pycache__/userinfo.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/__pycache__/exceptions.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/grant_types/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/grant_types/__pycache__/authorization_code.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/grant_types/__pycache__/base.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/grant_types/__pycache__/dispatchers.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/grant_types/__pycache__/hybrid.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/grant_types/__pycache__/implicit.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/__pycache__/request_validator.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/openid/connect/core/__pycache__/tokens.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/__pycache__/signals.cpython-39.pyc",
+    "lib/python3.9/site-packages/oauthlib/__pycache__/uri_validate.cpython-39.pyc"
+  ],
+  "fn": "oauthlib-3.1.1-pyhd8ed1ab_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/oauthlib-3.1.1-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "34bb0b023e083aa8a4af74311031a352",
+  "name": "oauthlib",
+  "noarch": "python",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/oauthlib-3.1.1-pyhd8ed1ab_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/oauthlib-3.1.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/oauthlib-3.1.1.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "3d1e12d8ac52c0b6c148af6d291f72400b8720ed16c0ac4a89868b6d14b1c939",
+        "sha256_in_prefix": "3d1e12d8ac52c0b6c148af6d291f72400b8720ed16c0ac4a89868b6d14b1c939",
+        "size_in_bytes": 1530
+      },
+      {
+        "_path": "site-packages/oauthlib-3.1.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "d21bed1cdfd902a5eb95f983503bfd9ddf1e90c244588c5fbe73eb4c3d33070b",
+        "sha256_in_prefix": "d21bed1cdfd902a5eb95f983503bfd9ddf1e90c244588c5fbe73eb4c3d33070b",
+        "size_in_bytes": 7330
+      },
+      {
+        "_path": "site-packages/oauthlib-3.1.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "89b4e5e7294857a66593244a57b357c1e5d459f9cf5f51534b8e6ecb72b97c14",
+        "sha256_in_prefix": "89b4e5e7294857a66593244a57b357c1e5d459f9cf5f51534b8e6ecb72b97c14",
+        "size_in_bytes": 11757
+      },
+      {
+        "_path": "site-packages/oauthlib-3.1.1.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/oauthlib-3.1.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "67e9f2629c2b712ab17ddbb1e4c6e7fc3439db988fec9d831b72601af398c934",
+        "sha256_in_prefix": "67e9f2629c2b712ab17ddbb1e4c6e7fc3439db988fec9d831b72601af398c934",
+        "size_in_bytes": 110
+      },
+      {
+        "_path": "site-packages/oauthlib-3.1.1.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "741670024a8e241f8863794ebaeee7e6dc4a0ff77fe0dd5423994fbc85b641f6",
+        "sha256_in_prefix": "741670024a8e241f8863794ebaeee7e6dc4a0ff77fe0dd5423994fbc85b641f6",
+        "size_in_bytes": 104
+      },
+      {
+        "_path": "site-packages/oauthlib-3.1.1.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "833da9cb47c5b350211b53bb2a91cf7085ce8173b07488826929e62e4891d764",
+        "sha256_in_prefix": "833da9cb47c5b350211b53bb2a91cf7085ce8173b07488826929e62e4891d764",
+        "size_in_bytes": 9
+      },
+      {
+        "_path": "site-packages/oauthlib/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "221fd0771688fc34ff0dd68bff49851324ca4ba1e19bf869c57f5a797c814255",
+        "sha256_in_prefix": "221fd0771688fc34ff0dd68bff49851324ca4ba1e19bf869c57f5a797c814255",
+        "size_in_bytes": 686
+      },
+      {
+        "_path": "site-packages/oauthlib/common.py",
+        "path_type": "hardlink",
+        "sha256": "1629971c87e093e5d5833bb796aebec2fdc9b2aee1cc682cbabc06bd39b7b770",
+        "sha256_in_prefix": "1629971c87e093e5d5833bb796aebec2fdc9b2aee1cc682cbabc06bd39b7b770",
+        "size_in_bytes": 13422
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth1/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "53feb21dc07c8dd60f6dc6ace0205e97bb44fd86023794b5df4d14df35655a51",
+        "sha256_in_prefix": "53feb21dc07c8dd60f6dc6ace0205e97bb44fd86023794b5df4d14df35655a51",
+        "size_in_bytes": 1187
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth1/rfc5849/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "fb9b091c31b72516504496250a3923dc23f68d982a120d0e639a552311389b11",
+        "sha256_in_prefix": "fb9b091c31b72516504496250a3923dc23f68d982a120d0e639a552311389b11",
+        "size_in_bytes": 16744
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth1/rfc5849/endpoints/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "49e2040b3889f92bff3421a7a301b73fd5275ff55d14d95d46a472c04689bf16",
+        "sha256_in_prefix": "49e2040b3889f92bff3421a7a301b73fd5275ff55d14d95d46a472c04689bf16",
+        "size_in_bytes": 327
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth1/rfc5849/endpoints/access_token.py",
+        "path_type": "hardlink",
+        "sha256": "09180b5790ea0e2c15bdba3c3221f249b4c42abc444c9576f7e546bbeda443b6",
+        "sha256_in_prefix": "09180b5790ea0e2c15bdba3c3221f249b4c42abc444c9576f7e546bbeda443b6",
+        "size_in_bytes": 9347
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth1/rfc5849/endpoints/authorization.py",
+        "path_type": "hardlink",
+        "sha256": "cdb53b4f33ba9c1ebce77508aad4e4871515f894c739d39cf82bdd42c2102969",
+        "sha256_in_prefix": "cdb53b4f33ba9c1ebce77508aad4e4871515f894c739d39cf82bdd42c2102969",
+        "size_in_bytes": 6724
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth1/rfc5849/endpoints/base.py",
+        "path_type": "hardlink",
+        "sha256": "a41392d4ca88ac9571c9d4c3ea39f365c199461fcd31b4664f573f736212295b",
+        "sha256_in_prefix": "a41392d4ca88ac9571c9d4c3ea39f365c199461fcd31b4664f573f736212295b",
+        "size_in_bytes": 11643
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth1/rfc5849/endpoints/pre_configured.py",
+        "path_type": "hardlink",
+        "sha256": "21ee68054abf253b1741dbdf5a170c463847dce3b14bf9911db28143d4e9b068",
+        "sha256_in_prefix": "21ee68054abf253b1741dbdf5a170c463847dce3b14bf9911db28143d4e9b068",
+        "size_in_bytes": 543
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth1/rfc5849/endpoints/request_token.py",
+        "path_type": "hardlink",
+        "sha256": "373f9ded28550791e587d700293a7e2877871ffb797fb921bed0954fc6af33d4",
+        "sha256_in_prefix": "373f9ded28550791e587d700293a7e2877871ffb797fb921bed0954fc6af33d4",
+        "size_in_bytes": 9293
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth1/rfc5849/endpoints/resource.py",
+        "path_type": "hardlink",
+        "sha256": "ae6cc1b85d05cab2d3a5a01e845c74c248f495a0287bb5d375b6de453ad40994",
+        "sha256_in_prefix": "ae6cc1b85d05cab2d3a5a01e845c74c248f495a0287bb5d375b6de453ad40994",
+        "size_in_bytes": 7376
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth1/rfc5849/endpoints/signature_only.py",
+        "path_type": "hardlink",
+        "sha256": "317e7357aeafe3ec2b47872eece98e77f185dcbf32b0ceb41e61221ed451d25f",
+        "sha256_in_prefix": "317e7357aeafe3ec2b47872eece98e77f185dcbf32b0ceb41e61221ed451d25f",
+        "size_in_bytes": 3327
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth1/rfc5849/errors.py",
+        "path_type": "hardlink",
+        "sha256": "58fbca5633e5824098a7a4d7bdcc02f15113921b19073a6128291324a0cf35f3",
+        "sha256_in_prefix": "58fbca5633e5824098a7a4d7bdcc02f15113921b19073a6128291324a0cf35f3",
+        "size_in_bytes": 2474
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth1/rfc5849/parameters.py",
+        "path_type": "hardlink",
+        "sha256": "01b9f1a62c7f632ecfdc0def6e4ad5d9b905c6d9d1e534534ca74ebbd30ac9da",
+        "sha256_in_prefix": "01b9f1a62c7f632ecfdc0def6e4ad5d9b905c6d9d1e534534ca74ebbd30ac9da",
+        "size_in_bytes": 4802
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth1/rfc5849/request_validator.py",
+        "path_type": "hardlink",
+        "sha256": "c7573c11d17176f4af8a51d0fd96af9224838cfcba82461bd203215ea2ebedcc",
+        "sha256_in_prefix": "c7573c11d17176f4af8a51d0fd96af9224838cfcba82461bd203215ea2ebedcc",
+        "size_in_bytes": 30988
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth1/rfc5849/signature.py",
+        "path_type": "hardlink",
+        "sha256": "141ae2ce5a6fce51e3b096d3dc032660ec810ff3a7a4e784752c570a0fb58806",
+        "sha256_in_prefix": "141ae2ce5a6fce51e3b096d3dc032660ec810ff3a7a4e784752c570a0fb58806",
+        "size_in_bytes": 32024
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth1/rfc5849/utils.py",
+        "path_type": "hardlink",
+        "sha256": "21aa46fe333a88c7b87b40d859676cd63a7ec1c7b62dffdcba116bb423ffda5b",
+        "sha256_in_prefix": "21aa46fe333a88c7b87b40d859676cd63a7ec1c7b62dffdcba116bb423ffda5b",
+        "size_in_bytes": 2613
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "da27f8d7e99ba2961a7b353eceb4b53af1d0d17ca4a4521715bc77f285faefb1",
+        "sha256_in_prefix": "da27f8d7e99ba2961a7b353eceb4b53af1d0d17ca4a4521715bc77f285faefb1",
+        "size_in_bytes": 1555
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "b097317dd1ba1d39685f38641bcf8f4c94d5416a0278db67c3a38334224dc39f",
+        "sha256_in_prefix": "b097317dd1ba1d39685f38641bcf8f4c94d5416a0278db67c3a38334224dc39f",
+        "size_in_bytes": 404
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/clients/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "4ee62d884adfa34fc48f4f35ead22fe6b06caf003d063633dedbbf64cd17dfae",
+        "sha256_in_prefix": "4ee62d884adfa34fc48f4f35ead22fe6b06caf003d063633dedbbf64cd17dfae",
+        "size_in_bytes": 504
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/clients/backend_application.py",
+        "path_type": "hardlink",
+        "sha256": "0808661cf637bc9d7e31c8eb310e138095d7ab1d8bb3d3cb7ee3d6515d0912d6",
+        "sha256_in_prefix": "0808661cf637bc9d7e31c8eb310e138095d7ab1d8bb3d3cb7ee3d6515d0912d6",
+        "size_in_bytes": 3223
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/clients/base.py",
+        "path_type": "hardlink",
+        "sha256": "ae8e0c1176943454c53825759bf45b3cdc8ae1f8a761ff2e607123d6df5a0e45",
+        "sha256_in_prefix": "ae8e0c1176943454c53825759bf45b3cdc8ae1f8a761ff2e607123d6df5a0e45",
+        "size_in_bytes": 22046
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/clients/legacy_application.py",
+        "path_type": "hardlink",
+        "sha256": "1550dc64dc892beb924803c951030cdd477ff84033249f29679aebf77edcecd6",
+        "sha256_in_prefix": "1550dc64dc892beb924803c951030cdd477ff84033249f29679aebf77edcecd6",
+        "size_in_bytes": 4031
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/clients/mobile_application.py",
+        "path_type": "hardlink",
+        "sha256": "9ee33a1a9ee366d63ac4ff398f5850529d67bd6ffa32933f74adf0267b4ac5be",
+        "sha256_in_prefix": "9ee33a1a9ee366d63ac4ff398f5850529d67bd6ffa32933f74adf0267b4ac5be",
+        "size_in_bytes": 8877
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/clients/service_application.py",
+        "path_type": "hardlink",
+        "sha256": "7c1c41f9e63a906d4d2ab9798c67c508914026dfcf24ff28a54751298eeca230",
+        "sha256_in_prefix": "7c1c41f9e63a906d4d2ab9798c67c508914026dfcf24ff28a54751298eeca230",
+        "size_in_bytes": 7810
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/clients/web_application.py",
+        "path_type": "hardlink",
+        "sha256": "2f012e8ae3d025660fe99ae9b5a8e9563346693a3d1cc6bd013586ff71881f94",
+        "sha256_in_prefix": "2f012e8ae3d025660fe99ae9b5a8e9563346693a3d1cc6bd013586ff71881f94",
+        "size_in_bytes": 10615
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/endpoints/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "44bfedc6150b977e40ef875bbe527b9efab0a7718c0920a983fe13be3a0ef979",
+        "sha256_in_prefix": "44bfedc6150b977e40ef875bbe527b9efab0a7718c0920a983fe13be3a0ef979",
+        "size_in_bytes": 553
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/endpoints/authorization.py",
+        "path_type": "hardlink",
+        "sha256": "d8dd826ff4d0b6950f72a0c8725b099d9111b5a30a987f6e4a01a83192c59d42",
+        "sha256_in_prefix": "d8dd826ff4d0b6950f72a0c8725b099d9111b5a30a987f6e4a01a83192c59d42",
+        "size_in_bytes": 4584
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/endpoints/base.py",
+        "path_type": "hardlink",
+        "sha256": "7d484219a7ed0f96e6e4fb2d03a2f60aa50d6fd9070e9523e3f06cbcb45b8b8c",
+        "sha256_in_prefix": "7d484219a7ed0f96e6e4fb2d03a2f60aa50d6fd9070e9523e3f06cbcb45b8b8c",
+        "size_in_bytes": 4130
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/endpoints/introspect.py",
+        "path_type": "hardlink",
+        "sha256": "486548d232352a6b2d85e4cdc4c59f9e03560adbdd90d4e2f87fe8dcc450bc71",
+        "sha256_in_prefix": "486548d232352a6b2d85e4cdc4c59f9e03560adbdd90d4e2f87fe8dcc450bc71",
+        "size_in_bytes": 4983
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/endpoints/metadata.py",
+        "path_type": "hardlink",
+        "sha256": "4dd39d5e3a87be416deaf7e1fc586f53117b8d52ea3909c086fcde6337f1dd45",
+        "sha256_in_prefix": "4dd39d5e3a87be416deaf7e1fc586f53117b8d52ea3909c086fcde6337f1dd45",
+        "size_in_bytes": 10467
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/endpoints/pre_configured.py",
+        "path_type": "hardlink",
+        "sha256": "0a184e45aa3bf171869678a426c2dbe9dfc566f29a2c605433eb5efbce0d789f",
+        "sha256_in_prefix": "0a184e45aa3bf171869678a426c2dbe9dfc566f29a2c605433eb5efbce0d789f",
+        "size_in_bytes": 11954
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/endpoints/resource.py",
+        "path_type": "hardlink",
+        "sha256": "be95e8a2f829981c98f88b96d0f0dc712e482461681622d58cb2d4a461665d7e",
+        "sha256_in_prefix": "be95e8a2f829981c98f88b96d0f0dc712e482461681622d58cb2d4a461665d7e",
+        "size_in_bytes": 3248
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/endpoints/revocation.py",
+        "path_type": "hardlink",
+        "sha256": "847dc5d86dfe426a82435b44e323760107da436944078e9890ee7e9f5a298461",
+        "sha256_in_prefix": "847dc5d86dfe426a82435b44e323760107da436944078e9890ee7e9f5a298461",
+        "size_in_bytes": 5212
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/endpoints/token.py",
+        "path_type": "hardlink",
+        "sha256": "8890e569291547c53ab35fd3f5f8b25672e07c280e5acabd3c50dc9b32fbe07e",
+        "sha256_in_prefix": "8890e569291547c53ab35fd3f5f8b25672e07c280e5acabd3c50dc9b32fbe07e",
+        "size_in_bytes": 4595
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/errors.py",
+        "path_type": "hardlink",
+        "sha256": "f79baa563122045d87d50f4031db16039b1e48c15b3708541b9c17f14d4397ad",
+        "sha256_in_prefix": "f79baa563122045d87d50f4031db16039b1e48c15b3708541b9c17f14d4397ad",
+        "size_in_bytes": 12991
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/grant_types/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "8a6fd7c045a6c377619b371d7f2864377f31668a4184bddc452866982b6a42cd",
+        "sha256_in_prefix": "8a6fd7c045a6c377619b371d7f2864377f31668a4184bddc452866982b6a42cd",
+        "size_in_bytes": 368
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/grant_types/authorization_code.py",
+        "path_type": "hardlink",
+        "sha256": "3b99da0b125f7f029e7b3b4a3e32ceb4e453dec17f3a7af2ed65c8da10025f55",
+        "sha256_in_prefix": "3b99da0b125f7f029e7b3b4a3e32ceb4e453dec17f3a7af2ed65c8da10025f55",
+        "size_in_bytes": 25945
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/grant_types/base.py",
+        "path_type": "hardlink",
+        "sha256": "04c72ed3f2acd2485fa74074c36b7c0a04fa871f580e352d908c7de5f1dff0c3",
+        "sha256_in_prefix": "04c72ed3f2acd2485fa74074c36b7c0a04fa871f580e352d908c7de5f1dff0c3",
+        "size_in_bytes": 10213
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/grant_types/client_credentials.py",
+        "path_type": "hardlink",
+        "sha256": "5abd02a560d5987ac87ce04f4d8a7d4719c84937d8769e528d269102eefbbd46",
+        "sha256_in_prefix": "5abd02a560d5987ac87ce04f4d8a7d4719c84937d8769e528d269102eefbbd46",
+        "size_in_bytes": 5079
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/grant_types/implicit.py",
+        "path_type": "hardlink",
+        "sha256": "85800460ec13a31a3778da46442f52c89b9ef77b6edfb8d954becc622684ac3b",
+        "sha256_in_prefix": "85800460ec13a31a3778da46442f52c89b9ef77b6edfb8d954becc622684ac3b",
+        "size_in_bytes": 16852
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/grant_types/refresh_token.py",
+        "path_type": "hardlink",
+        "sha256": "4a334e4c1f68d8647381098b2c649acc5ac94e4446ce9c0a348e7840d7a88f5e",
+        "sha256_in_prefix": "4a334e4c1f68d8647381098b2c649acc5ac94e4446ce9c0a348e7840d7a88f5e",
+        "size_in_bytes": 5808
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/grant_types/resource_owner_password_credentials.py",
+        "path_type": "hardlink",
+        "sha256": "f45b036eb48d3729562a412f81d69f243ce53677134423a1219383a3e7f86483",
+        "sha256_in_prefix": "f45b036eb48d3729562a412f81d69f243ce53677134423a1219383a3e7f86483",
+        "size_in_bytes": 8516
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/parameters.py",
+        "path_type": "hardlink",
+        "sha256": "2254994e916d934d6514d7beb7b54ac28de8fea418f9716c601ef67c1e3ef2d5",
+        "sha256_in_prefix": "2254994e916d934d6514d7beb7b54ac28de8fea418f9716c601ef67c1e3ef2d5",
+        "size_in_bytes": 17936
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/request_validator.py",
+        "path_type": "hardlink",
+        "sha256": "3b9266f37ad13702fd3e1ab071c236b42ce5ccc800a909db3ec2a431fb891475",
+        "sha256_in_prefix": "3b9266f37ad13702fd3e1ab071c236b42ce5ccc800a909db3ec2a431fb891475",
+        "size_in_bytes": 27845
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/tokens.py",
+        "path_type": "hardlink",
+        "sha256": "1fa40e20c3465c51210de05f39d2b623f5296ab3f9291af3e79499409e16a556",
+        "sha256_in_prefix": "1fa40e20c3465c51210de05f39d2b623f5296ab3f9291af3e79499409e16a556",
+        "size_in_bytes": 11097
+      },
+      {
+        "_path": "site-packages/oauthlib/oauth2/rfc6749/utils.py",
+        "path_type": "hardlink",
+        "sha256": "10a954fd4f8571891d77c3ef5e8d62aed1d3a815c5ee02aa74528169db5e67ae",
+        "sha256_in_prefix": "10a954fd4f8571891d77c3ef5e8d62aed1d3a815c5ee02aa74528169db5e67ae",
+        "size_in_bytes": 2207
+      },
+      {
+        "_path": "site-packages/oauthlib/openid/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "a99402282750b78d26cad7bf9f1498ad6bf37f5555003a9197ca26d3eb7a2f31",
+        "sha256_in_prefix": "a99402282750b78d26cad7bf9f1498ad6bf37f5555003a9197ca26d3eb7a2f31",
+        "size_in_bytes": 162
+      },
+      {
+        "_path": "site-packages/oauthlib/openid/connect/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/oauthlib/openid/connect/core/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/oauthlib/openid/connect/core/endpoints/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "9d0ea61a789468cf57d44346d2d6653e05a06cb76514449618afb9fdef26a796",
+        "sha256_in_prefix": "9d0ea61a789468cf57d44346d2d6653e05a06cb76514449618afb9fdef26a796",
+        "size_in_bytes": 229
+      },
+      {
+        "_path": "site-packages/oauthlib/openid/connect/core/endpoints/pre_configured.py",
+        "path_type": "hardlink",
+        "sha256": "a7806ae071d44ef0816179531ebdcf5e4b4004a8c71460b7c819b0c5689fcca7",
+        "sha256_in_prefix": "a7806ae071d44ef0816179531ebdcf5e4b4004a8c71460b7c819b0c5689fcca7",
+        "size_in_bytes": 5426
+      },
+      {
+        "_path": "site-packages/oauthlib/openid/connect/core/endpoints/userinfo.py",
+        "path_type": "hardlink",
+        "sha256": "8133b9047a787af06a23d09c40a43324d16cd6bc7c4092e506d7e8ed2ebbb342",
+        "sha256_in_prefix": "8133b9047a787af06a23d09c40a43324d16cd6bc7c4092e506d7e8ed2ebbb342",
+        "size_in_bytes": 3847
+      },
+      {
+        "_path": "site-packages/oauthlib/openid/connect/core/exceptions.py",
+        "path_type": "hardlink",
+        "sha256": "b8c32313b54c735ea3c8bed3221a5b0b1e3cfccb070f60bf6ada0c21e9812950",
+        "sha256_in_prefix": "b8c32313b54c735ea3c8bed3221a5b0b1e3cfccb070f60bf6ada0c21e9812950",
+        "size_in_bytes": 4790
+      },
+      {
+        "_path": "site-packages/oauthlib/openid/connect/core/grant_types/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "05e0b27c845d605c0afaa065ec1b13a21fd093fd81ee1c7d08eb2cef07a5eb0d",
+        "sha256_in_prefix": "05e0b27c845d605c0afaa065ec1b13a21fd093fd81ee1c7d08eb2cef07a5eb0d",
+        "size_in_bytes": 381
+      },
+      {
+        "_path": "site-packages/oauthlib/openid/connect/core/grant_types/authorization_code.py",
+        "path_type": "hardlink",
+        "sha256": "58e952e519528c893654d3660b93b8b2fc5f4de509897a4bde8e4caa7e4450b9",
+        "sha256_in_prefix": "58e952e519528c893654d3660b93b8b2fc5f4de509897a4bde8e4caa7e4450b9",
+        "size_in_bytes": 1441
+      },
+      {
+        "_path": "site-packages/oauthlib/openid/connect/core/grant_types/base.py",
+        "path_type": "hardlink",
+        "sha256": "4ad312a020fe96bbfed3519930b29d2ccbd394083e564434970e2376154e126b",
+        "sha256_in_prefix": "4ad312a020fe96bbfed3519930b29d2ccbd394083e564434970e2376154e126b",
+        "size_in_bytes": 15386
+      },
+      {
+        "_path": "site-packages/oauthlib/openid/connect/core/grant_types/dispatchers.py",
+        "path_type": "hardlink",
+        "sha256": "920608dd2a5365defde8dfdb9e4a9d6930e2b3f5a6c21ce470c4bd02fc3fd733",
+        "sha256_in_prefix": "920608dd2a5365defde8dfdb9e4a9d6930e2b3f5a6c21ce470c4bd02fc3fd733",
+        "size_in_bytes": 3979
+      },
+      {
+        "_path": "site-packages/oauthlib/openid/connect/core/grant_types/hybrid.py",
+        "path_type": "hardlink",
+        "sha256": "3c75816b3c5edeaa49ab4daba54f778da2bb511c48febd7397411ee226dc68f0",
+        "sha256_in_prefix": "3c75816b3c5edeaa49ab4daba54f778da2bb511c48febd7397411ee226dc68f0",
+        "size_in_bytes": 2742
+      },
+      {
+        "_path": "site-packages/oauthlib/openid/connect/core/grant_types/implicit.py",
+        "path_type": "hardlink",
+        "sha256": "5080b19c336878f65f4d46cbe50081580db7d68f17210127c68712acfa7d833c",
+        "sha256_in_prefix": "5080b19c336878f65f4d46cbe50081580db7d68f17210127c68712acfa7d833c",
+        "size_in_bytes": 1971
+      },
+      {
+        "_path": "site-packages/oauthlib/openid/connect/core/request_validator.py",
+        "path_type": "hardlink",
+        "sha256": "98e3c8cf55aad44804bd667eb98236b07e5d93c034a223bb72fa9aa66964dcc2",
+        "sha256_in_prefix": "98e3c8cf55aad44804bd667eb98236b07e5d93c034a223bb72fa9aa66964dcc2",
+        "size_in_bytes": 13448
+      },
+      {
+        "_path": "site-packages/oauthlib/openid/connect/core/tokens.py",
+        "path_type": "hardlink",
+        "sha256": "ba21f0a4589585a40315d2a2cd5ef801c04fb84887c5943d9ad67c9f929fbc55",
+        "sha256_in_prefix": "ba21f0a4589585a40315d2a2cd5ef801c04fb84887c5943d9ad67c9f929fbc55",
+        "size_in_bytes": 1596
+      },
+      {
+        "_path": "site-packages/oauthlib/signals.py",
+        "path_type": "hardlink",
+        "sha256": "fcf2835d6a8a5ba5f721b414c46a96e1e279622de9f2374ea973c029f23de7a1",
+        "sha256_in_prefix": "fcf2835d6a8a5ba5f721b414c46a96e1e279622de9f2374ea973c029f23de7a1",
+        "size_in_bytes": 1489
+      },
+      {
+        "_path": "site-packages/oauthlib/uri_validate.py",
+        "path_type": "hardlink",
+        "sha256": "5cb10ed664a85cae63f64600d762719d392d5a1b091f8d263c9f66f2aee30d8c",
+        "sha256_in_prefix": "5cb10ed664a85cae63f64600d762719d392d5a1b091f8d263c9f66f2aee30d8c",
+        "size_in_bytes": 6107
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/__pycache__/common.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth1/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/endpoints/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/endpoints/__pycache__/access_token.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/endpoints/__pycache__/authorization.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/endpoints/__pycache__/base.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/endpoints/__pycache__/pre_configured.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/endpoints/__pycache__/request_token.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/endpoints/__pycache__/resource.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/endpoints/__pycache__/signature_only.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/__pycache__/errors.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/__pycache__/parameters.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/__pycache__/request_validator.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/__pycache__/signature.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth1/rfc5849/__pycache__/utils.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/clients/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/clients/__pycache__/backend_application.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/clients/__pycache__/base.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/clients/__pycache__/legacy_application.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/clients/__pycache__/mobile_application.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/clients/__pycache__/service_application.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/clients/__pycache__/web_application.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/__pycache__/authorization.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/__pycache__/base.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/__pycache__/introspect.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/__pycache__/metadata.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/__pycache__/pre_configured.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/__pycache__/resource.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/__pycache__/revocation.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/endpoints/__pycache__/token.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/__pycache__/errors.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/grant_types/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/grant_types/__pycache__/authorization_code.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/grant_types/__pycache__/base.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/grant_types/__pycache__/client_credentials.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/grant_types/__pycache__/implicit.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/grant_types/__pycache__/refresh_token.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/grant_types/__pycache__/resource_owner_password_credentials.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/__pycache__/parameters.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/__pycache__/request_validator.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/__pycache__/tokens.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/oauth2/rfc6749/__pycache__/utils.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/openid/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/openid/connect/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/openid/connect/core/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/openid/connect/core/endpoints/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/openid/connect/core/endpoints/__pycache__/pre_configured.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/openid/connect/core/endpoints/__pycache__/userinfo.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/openid/connect/core/__pycache__/exceptions.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/openid/connect/core/grant_types/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/openid/connect/core/grant_types/__pycache__/authorization_code.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/openid/connect/core/grant_types/__pycache__/base.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/openid/connect/core/grant_types/__pycache__/dispatchers.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/openid/connect/core/grant_types/__pycache__/hybrid.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/openid/connect/core/grant_types/__pycache__/implicit.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/openid/connect/core/__pycache__/request_validator.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/openid/connect/core/__pycache__/tokens.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/__pycache__/signals.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/oauthlib/__pycache__/uri_validate.cpython-39.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "oauthlib==3.1.1=pyhd8ed1ab_0",
+  "sha256": "0d3d3f467f892958be20188a10743e808dfb6e75d21f169b4dd382281e3e6806",
+  "size": 88775,
+  "subdir": "noarch",
+  "timestamp": 1622563352706,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/oauthlib-3.1.1-pyhd8ed1ab_0.tar.bz2",
+  "version": "3.1.1"
+}

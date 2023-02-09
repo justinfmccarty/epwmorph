@@ -1,0 +1,68 @@
+{
+  "build": "h3422bc3_6",
+  "build_number": 6,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "libbrotlicommon 1.0.9 h3422bc3_6"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libbrotlienc-1.0.9-h3422bc3_6",
+  "features": "",
+  "files": [
+    "lib/libbrotlienc.1.0.9.dylib",
+    "lib/libbrotlienc.1.dylib",
+    "lib/libbrotlienc.dylib",
+    "lib/pkgconfig/libbrotlienc.pc"
+  ],
+  "fn": "libbrotlienc-1.0.9-h3422bc3_6.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libbrotlienc-1.0.9-h3422bc3_6",
+    "type": 1
+  },
+  "md5": "be28e048477fc17a4b59a66f4f4418a7",
+  "name": "libbrotlienc",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libbrotlienc-1.0.9-h3422bc3_6.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libbrotlienc.1.0.9.dylib",
+        "path_type": "hardlink",
+        "sha256": "47aa27f442d469f65ddbb099ac089740980a672d210cf4dbaabd443ca2d433de",
+        "sha256_in_prefix": "47aa27f442d469f65ddbb099ac089740980a672d210cf4dbaabd443ca2d433de",
+        "size_in_bytes": 656064
+      },
+      {
+        "_path": "lib/libbrotlienc.1.dylib",
+        "path_type": "softlink",
+        "sha256": "47aa27f442d469f65ddbb099ac089740980a672d210cf4dbaabd443ca2d433de",
+        "size_in_bytes": 656064
+      },
+      {
+        "_path": "lib/libbrotlienc.dylib",
+        "path_type": "softlink",
+        "sha256": "47aa27f442d469f65ddbb099ac089740980a672d210cf4dbaabd443ca2d433de",
+        "size_in_bytes": 656064
+      },
+      {
+        "_path": "lib/pkgconfig/libbrotlienc.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/brotli-split_1635846045218/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh",
+        "sha256": "143915599e5f58228e4faa69f7c27fddefb9a55a441412f34a8025521fb399ae",
+        "sha256_in_prefix": "90ac05f138c8e2cbb41b5e7a1421dae16e2a5a2894f7c2e237edf28aa20dcc2a",
+        "size_in_bytes": 787
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "libbrotlienc==1.0.9=h3422bc3_6",
+  "sha256": "f0b6dad4bd1449840cd3fd4f5a42079e8a8fc133ac9035d14435982e6abb425c",
+  "size": 297817,
+  "subdir": "osx-arm64",
+  "timestamp": 1635846398070,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libbrotlienc-1.0.9-h3422bc3_6.tar.bz2",
+  "version": "1.0.9"
+}

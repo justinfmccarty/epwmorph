@@ -1,0 +1,1597 @@
+{
+  "build": "pyh6c4a22f_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "certifi >=2017.4.17",
+    "jplephem >=2.13",
+    "numpy",
+    "python >=3.3",
+    "sgp4 >=2.2"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/skyfield-1.40-pyh6c4a22f_1",
+  "features": "",
+  "files": [
+    "lib/python3.9/site-packages/skyfield-1.40.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/skyfield-1.40.dist-info/LICENSE",
+    "lib/python3.9/site-packages/skyfield-1.40.dist-info/METADATA",
+    "lib/python3.9/site-packages/skyfield-1.40.dist-info/RECORD",
+    "lib/python3.9/site-packages/skyfield-1.40.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/skyfield-1.40.dist-info/WHEEL",
+    "lib/python3.9/site-packages/skyfield-1.40.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/skyfield-1.40.dist-info/top_level.txt",
+    "lib/python3.9/site-packages/skyfield/__init__.py",
+    "lib/python3.9/site-packages/skyfield/__main__.py",
+    "lib/python3.9/site-packages/skyfield/_compatibility.py",
+    "lib/python3.9/site-packages/skyfield/almanac.py",
+    "lib/python3.9/site-packages/skyfield/almanac_east_asia.py",
+    "lib/python3.9/site-packages/skyfield/api.py",
+    "lib/python3.9/site-packages/skyfield/charting.py",
+    "lib/python3.9/site-packages/skyfield/constants.py",
+    "lib/python3.9/site-packages/skyfield/constellationlib.py",
+    "lib/python3.9/site-packages/skyfield/curvelib.py",
+    "lib/python3.9/site-packages/skyfield/data/__init__.py",
+    "lib/python3.9/site-packages/skyfield/data/constellations.gz",
+    "lib/python3.9/site-packages/skyfield/data/constellations.npz",
+    "lib/python3.9/site-packages/skyfield/data/delta_t.npz",
+    "lib/python3.9/site-packages/skyfield/data/earth_orientation.py",
+    "lib/python3.9/site-packages/skyfield/data/gravitational_parameters.py",
+    "lib/python3.9/site-packages/skyfield/data/hipparcos.py",
+    "lib/python3.9/site-packages/skyfield/data/historic_deltat.npy",
+    "lib/python3.9/site-packages/skyfield/data/horizons.py",
+    "lib/python3.9/site-packages/skyfield/data/iers.npz",
+    "lib/python3.9/site-packages/skyfield/data/iers.py",
+    "lib/python3.9/site-packages/skyfield/data/morrison_stephenson_deltat.npy",
+    "lib/python3.9/site-packages/skyfield/data/mpc.py",
+    "lib/python3.9/site-packages/skyfield/data/nutation.npz",
+    "lib/python3.9/site-packages/skyfield/data/spice.py",
+    "lib/python3.9/site-packages/skyfield/data/stellarium.py",
+    "lib/python3.9/site-packages/skyfield/data/text_pck.py",
+    "lib/python3.9/site-packages/skyfield/descriptorlib.py",
+    "lib/python3.9/site-packages/skyfield/documentation/accuracy-efficiency.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/almanac.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/api-almanac.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/api-elements.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/api-ephemeris.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/api-framelib.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/api-iokit.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/api-planetary.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/api-position.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/api-satellites.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/api-stars.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/api-time.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/api-topos.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/api-trigonometry.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/api-units.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/api-vectors.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/api.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/astropy.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/bibliography.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/design.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/earth-satellites.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/elements.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/example-plots.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/examples.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/files.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/index.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/installation.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/kepler-orbits.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/planetary.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/planets.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/positions.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/searches.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/stars.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/time.rst",
+    "lib/python3.9/site-packages/skyfield/documentation/toc.rst",
+    "lib/python3.9/site-packages/skyfield/earthlib.py",
+    "lib/python3.9/site-packages/skyfield/eclipselib.py",
+    "lib/python3.9/site-packages/skyfield/elementslib.py",
+    "lib/python3.9/site-packages/skyfield/errors.py",
+    "lib/python3.9/site-packages/skyfield/framelib.py",
+    "lib/python3.9/site-packages/skyfield/functions.py",
+    "lib/python3.9/site-packages/skyfield/geometry.py",
+    "lib/python3.9/site-packages/skyfield/io_timescale.py",
+    "lib/python3.9/site-packages/skyfield/iokit.py",
+    "lib/python3.9/site-packages/skyfield/jpllib.py",
+    "lib/python3.9/site-packages/skyfield/keplerlib.py",
+    "lib/python3.9/site-packages/skyfield/magnitudelib.py",
+    "lib/python3.9/site-packages/skyfield/naifcodes.py",
+    "lib/python3.9/site-packages/skyfield/named_stars.py",
+    "lib/python3.9/site-packages/skyfield/nutationlib.py",
+    "lib/python3.9/site-packages/skyfield/planetarylib.py",
+    "lib/python3.9/site-packages/skyfield/positionlib.py",
+    "lib/python3.9/site-packages/skyfield/precessionlib.py",
+    "lib/python3.9/site-packages/skyfield/projections.py",
+    "lib/python3.9/site-packages/skyfield/relativity.py",
+    "lib/python3.9/site-packages/skyfield/searchlib.py",
+    "lib/python3.9/site-packages/skyfield/sgp4lib.py",
+    "lib/python3.9/site-packages/skyfield/starlib.py",
+    "lib/python3.9/site-packages/skyfield/tests/__init__.py",
+    "lib/python3.9/site-packages/skyfield/tests/conventions.py",
+    "lib/python3.9/site-packages/skyfield/tests/data/de430-2015-03-02.bsp",
+    "lib/python3.9/site-packages/skyfield/tests/data/jup310-2015-03-02.bsp",
+    "lib/python3.9/site-packages/skyfield/tests/data/jup310-2053-10-08.bsp",
+    "lib/python3.9/site-packages/skyfield/tests/fixes.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_against_horizons.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_against_novas.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_almanac.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_almanac_east_asia.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_almanac_searches.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_api.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_broadcastability.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_constellations.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_curves.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_data_iers.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_earth_deflection.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_earth_satellites.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_earthlib.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_eclipselib.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_elementslib.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_frames.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_functions.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_geometry.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_io.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_io_parsing.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_keplerlib.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_magnitudes.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_magnitudes_raw.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_planetarylib.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_positions.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_satellite_events.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_searchlib.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_stars.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_strs_and_reprs.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_text_pck.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_timelib.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_topos.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_trigonometry.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_units.py",
+    "lib/python3.9/site-packages/skyfield/tests/test_vectors.py",
+    "lib/python3.9/site-packages/skyfield/timelib.py",
+    "lib/python3.9/site-packages/skyfield/toposlib.py",
+    "lib/python3.9/site-packages/skyfield/trigonometry.py",
+    "lib/python3.9/site-packages/skyfield/units.py",
+    "lib/python3.9/site-packages/skyfield/vectorlib.py",
+    "lib/python3.9/site-packages/skyfield/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/__main__.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/_compatibility.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/almanac.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/almanac_east_asia.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/api.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/charting.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/constants.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/constellationlib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/curvelib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/data/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/data/__pycache__/earth_orientation.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/data/__pycache__/gravitational_parameters.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/data/__pycache__/hipparcos.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/data/__pycache__/horizons.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/data/__pycache__/iers.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/data/__pycache__/mpc.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/data/__pycache__/spice.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/data/__pycache__/stellarium.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/data/__pycache__/text_pck.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/descriptorlib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/earthlib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/eclipselib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/elementslib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/errors.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/framelib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/functions.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/geometry.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/io_timescale.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/iokit.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/jpllib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/keplerlib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/magnitudelib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/naifcodes.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/named_stars.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/nutationlib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/planetarylib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/positionlib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/precessionlib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/projections.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/relativity.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/searchlib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/sgp4lib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/starlib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/conventions.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/fixes.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_against_horizons.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_against_novas.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_almanac.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_almanac_east_asia.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_almanac_searches.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_api.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_broadcastability.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_constellations.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_curves.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_data_iers.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_earth_deflection.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_earth_satellites.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_earthlib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_eclipselib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_elementslib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_frames.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_functions.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_geometry.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_io.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_io_parsing.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_keplerlib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_magnitudes.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_magnitudes_raw.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_planetarylib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_positions.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_satellite_events.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_searchlib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_stars.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_strs_and_reprs.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_text_pck.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_timelib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_topos.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_trigonometry.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_units.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_vectors.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/timelib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/toposlib.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/trigonometry.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/units.cpython-39.pyc",
+    "lib/python3.9/site-packages/skyfield/__pycache__/vectorlib.cpython-39.pyc"
+  ],
+  "fn": "skyfield-1.40-pyh6c4a22f_1.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/skyfield-1.40-pyh6c4a22f_1",
+    "type": 1
+  },
+  "md5": "15f3115b00fece97fd1d0627c610f920",
+  "name": "skyfield",
+  "noarch": "python",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/skyfield-1.40-pyh6c4a22f_1.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/skyfield-1.40.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/skyfield-1.40.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "4b3cad9301fc389f9545079b43384659b908e94d6ab271474b3f6da2bd20d65a",
+        "sha256_in_prefix": "4b3cad9301fc389f9545079b43384659b908e94d6ab271474b3f6da2bd20d65a",
+        "size_in_bytes": 1101
+      },
+      {
+        "_path": "site-packages/skyfield-1.40.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "c6c21ca363efb3117406c6d96ea483b11b7120d6cde6e775b265a39c9c0dba3f",
+        "sha256_in_prefix": "c6c21ca363efb3117406c6d96ea483b11b7120d6cde6e775b265a39c9c0dba3f",
+        "size_in_bytes": 2442
+      },
+      {
+        "_path": "site-packages/skyfield-1.40.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "6f8d05d9b87e32b98657f3922471f7ea67904d759ffceefc54c5a3ace1b6897d",
+        "sha256_in_prefix": "6f8d05d9b87e32b98657f3922471f7ea67904d759ffceefc54c5a3ace1b6897d",
+        "size_in_bytes": 17046
+      },
+      {
+        "_path": "site-packages/skyfield-1.40.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/skyfield-1.40.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "7b0c04b9e8a8d42d977874ef4f5ee7f1d6542603afc82582b7459534b0a53fda",
+        "sha256_in_prefix": "7b0c04b9e8a8d42d977874ef4f5ee7f1d6542603afc82582b7459534b0a53fda",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "site-packages/skyfield-1.40.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "9fba51cf2331d8b5bb1642fdd9778189fe9301324f7b308d2702cda00828f50c",
+        "sha256_in_prefix": "9fba51cf2331d8b5bb1642fdd9778189fe9301324f7b308d2702cda00828f50c",
+        "size_in_bytes": 104
+      },
+      {
+        "_path": "site-packages/skyfield-1.40.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "a14ac269c6acdb5bef317463f5572326adca013d3651f0ebd17e17cc7b600a0a",
+        "sha256_in_prefix": "a14ac269c6acdb5bef317463f5572326adca013d3651f0ebd17e17cc7b600a0a",
+        "size_in_bytes": 9
+      },
+      {
+        "_path": "site-packages/skyfield/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "5e3c8d91d289ad034ea1c4f68e49d5e5de17d969fe7aff6b357847fb1cc3e70f",
+        "sha256_in_prefix": "5e3c8d91d289ad034ea1c4f68e49d5e5de17d969fe7aff6b357847fb1cc3e70f",
+        "size_in_bytes": 314
+      },
+      {
+        "_path": "site-packages/skyfield/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "7d28d1c2eea5b32edc28ab6cf899deb40c456bcfdeb56dd9be9e2c7c77a70db9",
+        "sha256_in_prefix": "7d28d1c2eea5b32edc28ab6cf899deb40c456bcfdeb56dd9be9e2c7c77a70db9",
+        "size_in_bytes": 1139
+      },
+      {
+        "_path": "site-packages/skyfield/_compatibility.py",
+        "path_type": "hardlink",
+        "sha256": "4826f68d5e81be2da4d7bc479d4ca49b26cab4e026b0b22e73bac228b4896152",
+        "sha256_in_prefix": "4826f68d5e81be2da4d7bc479d4ca49b26cab4e026b0b22e73bac228b4896152",
+        "size_in_bytes": 296
+      },
+      {
+        "_path": "site-packages/skyfield/almanac.py",
+        "path_type": "hardlink",
+        "sha256": "a4e94c24206a492963a2f14a84acc4f702ce44a2aaef49e36baeb8584a171158",
+        "sha256_in_prefix": "a4e94c24206a492963a2f14a84acc4f702ce44a2aaef49e36baeb8584a171158",
+        "size_in_bytes": 10961
+      },
+      {
+        "_path": "site-packages/skyfield/almanac_east_asia.py",
+        "path_type": "hardlink",
+        "sha256": "753d12ba6ad4f162f4f3c6db7d3be7be96273076a403cccde46ac617f08f88db",
+        "sha256_in_prefix": "753d12ba6ad4f162f4f3c6db7d3be7be96273076a403cccde46ac617f08f88db",
+        "size_in_bytes": 2826
+      },
+      {
+        "_path": "site-packages/skyfield/api.py",
+        "path_type": "hardlink",
+        "sha256": "ff9ed9909ee7eac765cc561f75cd76e926ce9e4f13a31bc551bd50f593e34bce",
+        "sha256_in_prefix": "ff9ed9909ee7eac765cc561f75cd76e926ce9e4f13a31bc551bd50f593e34bce",
+        "size_in_bytes": 1354
+      },
+      {
+        "_path": "site-packages/skyfield/charting.py",
+        "path_type": "hardlink",
+        "sha256": "68010c1e8a22241df526de0980962ff4bb52a2a0d8d6dbd6408a7c4be49be304",
+        "sha256_in_prefix": "68010c1e8a22241df526de0980962ff4bb52a2a0d8d6dbd6408a7c4be49be304",
+        "size_in_bytes": 7605
+      },
+      {
+        "_path": "site-packages/skyfield/constants.py",
+        "path_type": "hardlink",
+        "sha256": "3349791bb0630a08688a1cc6eae1366ca023fce3e63cbc21ddd1e77baa328e9e",
+        "sha256_in_prefix": "3349791bb0630a08688a1cc6eae1366ca023fce3e63cbc21ddd1e77baa328e9e",
+        "size_in_bytes": 862
+      },
+      {
+        "_path": "site-packages/skyfield/constellationlib.py",
+        "path_type": "hardlink",
+        "sha256": "c947286521718277bfed284f1f4eea90f3b4513c7f643e89bd6c753862ed0583",
+        "sha256_in_prefix": "c947286521718277bfed284f1f4eea90f3b4513c7f643e89bd6c753862ed0583",
+        "size_in_bytes": 3334
+      },
+      {
+        "_path": "site-packages/skyfield/curvelib.py",
+        "path_type": "hardlink",
+        "sha256": "7074e301829fc41065471a1ca6dd5dfe2d05a6891a9358896fe7366fe5156964",
+        "sha256_in_prefix": "7074e301829fc41065471a1ca6dd5dfe2d05a6891a9358896fe7366fe5156964",
+        "size_in_bytes": 1477
+      },
+      {
+        "_path": "site-packages/skyfield/data/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "7115590e981f4f852267d5d5f219bd924b1ef51dfb3dc80db2c7243e53a156a1",
+        "sha256_in_prefix": "7115590e981f4f852267d5d5f219bd924b1ef51dfb3dc80db2c7243e53a156a1",
+        "size_in_bytes": 72
+      },
+      {
+        "_path": "site-packages/skyfield/data/constellations.gz",
+        "path_type": "hardlink",
+        "sha256": "f923c765bc9d15344d8c64488d1a1873401d704ff218a3eb5e9645d8d6f17a78",
+        "sha256_in_prefix": "f923c765bc9d15344d8c64488d1a1873401d704ff218a3eb5e9645d8d6f17a78",
+        "size_in_bytes": 627
+      },
+      {
+        "_path": "site-packages/skyfield/data/constellations.npz",
+        "path_type": "hardlink",
+        "sha256": "febb2947d9062443c2c4803d2c6a5427e3ea381f0f8f00413d710ba588a54b13",
+        "sha256_in_prefix": "febb2947d9062443c2c4803d2c6a5427e3ea381f0f8f00413d710ba588a54b13",
+        "size_in_bytes": 3506
+      },
+      {
+        "_path": "site-packages/skyfield/data/delta_t.npz",
+        "path_type": "hardlink",
+        "sha256": "2d12bd3e789543b78a1f53c8b76ed7fecffdf7e5149cfb6a0aed21a8b3db5ff6",
+        "sha256_in_prefix": "2d12bd3e789543b78a1f53c8b76ed7fecffdf7e5149cfb6a0aed21a8b3db5ff6",
+        "size_in_bytes": 1547
+      },
+      {
+        "_path": "site-packages/skyfield/data/earth_orientation.py",
+        "path_type": "hardlink",
+        "sha256": "ce4995fb5ab8b364c53349e59df746def616761c026496b947a528c17707cb84",
+        "sha256_in_prefix": "ce4995fb5ab8b364c53349e59df746def616761c026496b947a528c17707cb84",
+        "size_in_bytes": 1486
+      },
+      {
+        "_path": "site-packages/skyfield/data/gravitational_parameters.py",
+        "path_type": "hardlink",
+        "sha256": "bf7f1beb4b578d0764a4e84fb5f8e9febd94ac35385d468dacf61836631b7f00",
+        "sha256_in_prefix": "bf7f1beb4b578d0764a4e84fb5f8e9febd94ac35385d468dacf61836631b7f00",
+        "size_in_bytes": 2453
+      },
+      {
+        "_path": "site-packages/skyfield/data/hipparcos.py",
+        "path_type": "hardlink",
+        "sha256": "03bd5aeb90f6a881224ceedfe83742f95fa49532759eddfd1057e6127da6f756",
+        "sha256_in_prefix": "03bd5aeb90f6a881224ceedfe83742f95fa49532759eddfd1057e6127da6f756",
+        "size_in_bytes": 2816
+      },
+      {
+        "_path": "site-packages/skyfield/data/historic_deltat.npy",
+        "path_type": "hardlink",
+        "sha256": "f5346b780b36a0325b1847dc6c0083d66edc7e88b7f648b4c98a67bbd02b5d3f",
+        "sha256_in_prefix": "f5346b780b36a0325b1847dc6c0083d66edc7e88b7f648b4c98a67bbd02b5d3f",
+        "size_in_bytes": 10576
+      },
+      {
+        "_path": "site-packages/skyfield/data/horizons.py",
+        "path_type": "hardlink",
+        "sha256": "261874e2cb1b034174e7d9b568a66e59abe948b02a5be5c1a9e728099a99c331",
+        "sha256_in_prefix": "261874e2cb1b034174e7d9b568a66e59abe948b02a5be5c1a9e728099a99c331",
+        "size_in_bytes": 706
+      },
+      {
+        "_path": "site-packages/skyfield/data/iers.npz",
+        "path_type": "hardlink",
+        "sha256": "f2c6491fbe7de4462945c30cc815e1de8e2f8b4de74d9d95ef0c896d67c846bb",
+        "sha256_in_prefix": "f2c6491fbe7de4462945c30cc815e1de8e2f8b4de74d9d95ef0c896d67c846bb",
+        "size_in_bytes": 56897
+      },
+      {
+        "_path": "site-packages/skyfield/data/iers.py",
+        "path_type": "hardlink",
+        "sha256": "d62f9799ee1bf68a46d9cac29239a1100bc1a492cc568d75cb378da66ab5a62b",
+        "sha256_in_prefix": "d62f9799ee1bf68a46d9cac29239a1100bc1a492cc568d75cb378da66ab5a62b",
+        "size_in_bytes": 2091
+      },
+      {
+        "_path": "site-packages/skyfield/data/morrison_stephenson_deltat.npy",
+        "path_type": "hardlink",
+        "sha256": "439e05269890df41dd75820f3f2ef467539e36eb36753e8ee8b4b78d29baad52",
+        "sha256_in_prefix": "439e05269890df41dd75820f3f2ef467539e36eb36753e8ee8b4b78d29baad52",
+        "size_in_bytes": 528
+      },
+      {
+        "_path": "site-packages/skyfield/data/mpc.py",
+        "path_type": "hardlink",
+        "sha256": "e27cd6fdf5b666a2f2c8bec5be83e1bb716fa1580e6c2f4044b148d2f4410623",
+        "sha256_in_prefix": "e27cd6fdf5b666a2f2c8bec5be83e1bb716fa1580e6c2f4044b148d2f4410623",
+        "size_in_bytes": 8353
+      },
+      {
+        "_path": "site-packages/skyfield/data/nutation.npz",
+        "path_type": "hardlink",
+        "sha256": "db231254da3bcbef24faa994eadb80f378d39460aa407026c156e6627c30f11a",
+        "sha256_in_prefix": "db231254da3bcbef24faa994eadb80f378d39460aa407026c156e6627c30f11a",
+        "size_in_bytes": 15728
+      },
+      {
+        "_path": "site-packages/skyfield/data/spice.py",
+        "path_type": "hardlink",
+        "sha256": "2ae2ee588d1a6106d84c8ac41d5ec116f9385b4c9ea7d9c258913840cf70c799",
+        "sha256_in_prefix": "2ae2ee588d1a6106d84c8ac41d5ec116f9385b4c9ea7d9c258913840cf70c799",
+        "size_in_bytes": 4682
+      },
+      {
+        "_path": "site-packages/skyfield/data/stellarium.py",
+        "path_type": "hardlink",
+        "sha256": "a6e28c913722d139f8f9607b44ea0b78c8f65ac3a642e17803898d867d0b9466",
+        "sha256_in_prefix": "a6e28c913722d139f8f9607b44ea0b78c8f65ac3a642e17803898d867d0b9466",
+        "size_in_bytes": 1868
+      },
+      {
+        "_path": "site-packages/skyfield/data/text_pck.py",
+        "path_type": "hardlink",
+        "sha256": "0f5e611c8b6d5fd9b12bd1c85eddeae15c561a5aa7673ec89fdd45a1a817d7ff",
+        "sha256_in_prefix": "0f5e611c8b6d5fd9b12bd1c85eddeae15c561a5aa7673ec89fdd45a1a817d7ff",
+        "size_in_bytes": 2901
+      },
+      {
+        "_path": "site-packages/skyfield/descriptorlib.py",
+        "path_type": "hardlink",
+        "sha256": "41147668a55e011d92b78839e46bade16b40d1e9d8fdaaef655c6802ab619c23",
+        "sha256_in_prefix": "41147668a55e011d92b78839e46bade16b40d1e9d8fdaaef655c6802ab619c23",
+        "size_in_bytes": 430
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/accuracy-efficiency.rst",
+        "path_type": "hardlink",
+        "sha256": "372d391a6a837109b0daea24d133b761bc6ff788e95eb61498a96bb156869513",
+        "sha256_in_prefix": "372d391a6a837109b0daea24d133b761bc6ff788e95eb61498a96bb156869513",
+        "size_in_bytes": 2313
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/almanac.rst",
+        "path_type": "hardlink",
+        "sha256": "4b2195a2abeadf702dbbb2653d890b4bfe4686f0939568ad1b4a44b591aeb1f8",
+        "sha256_in_prefix": "4b2195a2abeadf702dbbb2653d890b4bfe4686f0939568ad1b4a44b591aeb1f8",
+        "size_in_bytes": 21600
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/api-almanac.rst",
+        "path_type": "hardlink",
+        "sha256": "e06671a70059f7bb63e3a53bf31106d57860939e5bc7616319dacb5c460f07c8",
+        "sha256_in_prefix": "e06671a70059f7bb63e3a53bf31106d57860939e5bc7616319dacb5c460f07c8",
+        "size_in_bytes": 733
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/api-elements.rst",
+        "path_type": "hardlink",
+        "sha256": "70ce064bfb60a1276a250c3fbe028ee2ad13b87c73e79c0e2d04b3bf181d7554",
+        "sha256_in_prefix": "70ce064bfb60a1276a250c3fbe028ee2ad13b87c73e79c0e2d04b3bf181d7554",
+        "size_in_bytes": 238
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/api-ephemeris.rst",
+        "path_type": "hardlink",
+        "sha256": "fd7afd74030864203c5aa746ff33f124e696e29f7c0c9c2b398d9b2765a7e8d0",
+        "sha256_in_prefix": "fd7afd74030864203c5aa746ff33f124e696e29f7c0c9c2b398d9b2765a7e8d0",
+        "size_in_bytes": 529
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/api-framelib.rst",
+        "path_type": "hardlink",
+        "sha256": "0f669fe0cc06fe52758d630f24641563b3970e27870c6895da45ea1069204eba",
+        "sha256_in_prefix": "0f669fe0cc06fe52758d630f24641563b3970e27870c6895da45ea1069204eba",
+        "size_in_bytes": 437
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/api-iokit.rst",
+        "path_type": "hardlink",
+        "sha256": "55a84097d5607791a952951070750fc2015c5d600a7beb7dc45c82a880b47100",
+        "sha256_in_prefix": "55a84097d5607791a952951070750fc2015c5d600a7beb7dc45c82a880b47100",
+        "size_in_bytes": 665
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/api-planetary.rst",
+        "path_type": "hardlink",
+        "sha256": "68ed184cd95d47e98de13b97f7c0ed68d9710229d89afe30b710228ae28b9d54",
+        "sha256_in_prefix": "68ed184cd95d47e98de13b97f7c0ed68d9710229d89afe30b710228ae28b9d54",
+        "size_in_bytes": 364
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/api-position.rst",
+        "path_type": "hardlink",
+        "sha256": "b5aa33cb406ee54d5f814155b0158e707fffda9e7b5426af0ba8ce58402509ee",
+        "sha256_in_prefix": "b5aa33cb406ee54d5f814155b0158e707fffda9e7b5426af0ba8ce58402509ee",
+        "size_in_bytes": 2484
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/api-satellites.rst",
+        "path_type": "hardlink",
+        "sha256": "07cd54091f4b00647122a5d435fa0ae96d6b85784a511ce5713e95746131626c",
+        "sha256_in_prefix": "07cd54091f4b00647122a5d435fa0ae96d6b85784a511ce5713e95746131626c",
+        "size_in_bytes": 339
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/api-stars.rst",
+        "path_type": "hardlink",
+        "sha256": "a523a5e2566baed5e46e77e1b511a2c2bcbd67377a3f610ad77a598baa989b16",
+        "sha256_in_prefix": "a523a5e2566baed5e46e77e1b511a2c2bcbd67377a3f610ad77a598baa989b16",
+        "size_in_bytes": 309
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/api-time.rst",
+        "path_type": "hardlink",
+        "sha256": "68fe4d650fbf9368917ab4cdc34562978215564bd16b4b3bdcd35b8a0aab86c1",
+        "sha256_in_prefix": "68fe4d650fbf9368917ab4cdc34562978215564bd16b4b3bdcd35b8a0aab86c1",
+        "size_in_bytes": 2363
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/api-topos.rst",
+        "path_type": "hardlink",
+        "sha256": "2ff3190296783bc63a0d3e6e518198a019f07d2d88c0b92ac891ef18ca37db79",
+        "sha256_in_prefix": "2ff3190296783bc63a0d3e6e518198a019f07d2d88c0b92ac891ef18ca37db79",
+        "size_in_bytes": 2093
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/api-trigonometry.rst",
+        "path_type": "hardlink",
+        "sha256": "bcf28061e429e3b7469a577ab881e2419347431b44507c75dcc13c93249195ef",
+        "sha256_in_prefix": "bcf28061e429e3b7469a577ab881e2419347431b44507c75dcc13c93249195ef",
+        "size_in_bytes": 174
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/api-units.rst",
+        "path_type": "hardlink",
+        "sha256": "d90e1f4a70e59659823fab075721ca7b4bfd2e388c33e3ba90a8278aa94ff696",
+        "sha256_in_prefix": "d90e1f4a70e59659823fab075721ca7b4bfd2e388c33e3ba90a8278aa94ff696",
+        "size_in_bytes": 4406
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/api-vectors.rst",
+        "path_type": "hardlink",
+        "sha256": "6d6e92d377b171ec22534ba8a97ecb5843c1047cd58634175644312f9d2ff511",
+        "sha256_in_prefix": "6d6e92d377b171ec22534ba8a97ecb5843c1047cd58634175644312f9d2ff511",
+        "size_in_bytes": 2012
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/api.rst",
+        "path_type": "hardlink",
+        "sha256": "7c22882292c02ad4667ff6ca104428c8ed16f4a1238c4a431bad2a503899b1e3",
+        "sha256_in_prefix": "7c22882292c02ad4667ff6ca104428c8ed16f4a1238c4a431bad2a503899b1e3",
+        "size_in_bytes": 11552
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/astropy.rst",
+        "path_type": "hardlink",
+        "sha256": "47291974ecd44fc49e1ef02bb2370f35c46d6d07b1a488b9cd27ea5b5317f89a",
+        "sha256_in_prefix": "47291974ecd44fc49e1ef02bb2370f35c46d6d07b1a488b9cd27ea5b5317f89a",
+        "size_in_bytes": 2605
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/bibliography.rst",
+        "path_type": "hardlink",
+        "sha256": "cc125c9327bdb854438e596ecb01f2b83ef1d6bc4fa070b0f9baacb0c2f099c9",
+        "sha256_in_prefix": "cc125c9327bdb854438e596ecb01f2b83ef1d6bc4fa070b0f9baacb0c2f099c9",
+        "size_in_bytes": 4178
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/design.rst",
+        "path_type": "hardlink",
+        "sha256": "d441ffa2c6042ef769a8f9695a7d1648e27db534ef9d15d9b2d5e08d39b1c281",
+        "sha256_in_prefix": "d441ffa2c6042ef769a8f9695a7d1648e27db534ef9d15d9b2d5e08d39b1c281",
+        "size_in_bytes": 11437
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/earth-satellites.rst",
+        "path_type": "hardlink",
+        "sha256": "4b30468aa6d460870f52aba02628e4ef4b62abfc0b71b36b15cf4436d234091e",
+        "sha256_in_prefix": "4b30468aa6d460870f52aba02628e4ef4b62abfc0b71b36b15cf4436d234091e",
+        "size_in_bytes": 28735
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/elements.rst",
+        "path_type": "hardlink",
+        "sha256": "38aa3f0707e5f0d0278f460b2888b03bc4f14925d1a868ff9a988b96123e46c0",
+        "sha256_in_prefix": "38aa3f0707e5f0d0278f460b2888b03bc4f14925d1a868ff9a988b96123e46c0",
+        "size_in_bytes": 4452
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/example-plots.rst",
+        "path_type": "hardlink",
+        "sha256": "8c72377546556c0ced986cc04ba50a5d3dd3fc42b67f101c436760ab7d97e0b9",
+        "sha256_in_prefix": "8c72377546556c0ced986cc04ba50a5d3dd3fc42b67f101c436760ab7d97e0b9",
+        "size_in_bytes": 4695
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/examples.rst",
+        "path_type": "hardlink",
+        "sha256": "3cf42d5b7865736efd9672f8a22b5fdefa5413f688b4ac966ce66ccc0221aa79",
+        "sha256_in_prefix": "3cf42d5b7865736efd9672f8a22b5fdefa5413f688b4ac966ce66ccc0221aa79",
+        "size_in_bytes": 15897
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/files.rst",
+        "path_type": "hardlink",
+        "sha256": "a32f2d3856d8522a0a6e4b5a3bd6e484176dadfbd71f449a5b85ca4dc7eb45b5",
+        "sha256_in_prefix": "a32f2d3856d8522a0a6e4b5a3bd6e484176dadfbd71f449a5b85ca4dc7eb45b5",
+        "size_in_bytes": 2386
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/index.rst",
+        "path_type": "hardlink",
+        "sha256": "25726630f15f7682ff92a8ee444102e4ab3bea19f905db9af3dfd64d56ce2bc9",
+        "sha256_in_prefix": "25726630f15f7682ff92a8ee444102e4ab3bea19f905db9af3dfd64d56ce2bc9",
+        "size_in_bytes": 3297
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/installation.rst",
+        "path_type": "hardlink",
+        "sha256": "88515d85cdb1b69a76c9bdac114062bd40283dd5fc663946c9f78e94fd6f919d",
+        "sha256_in_prefix": "88515d85cdb1b69a76c9bdac114062bd40283dd5fc663946c9f78e94fd6f919d",
+        "size_in_bytes": 4034
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/kepler-orbits.rst",
+        "path_type": "hardlink",
+        "sha256": "3878bfc9f1252620dfa56d016e4c6ad3264bf881cb086760cab3ddbabc054570",
+        "sha256_in_prefix": "3878bfc9f1252620dfa56d016e4c6ad3264bf881cb086760cab3ddbabc054570",
+        "size_in_bytes": 7535
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/planetary.rst",
+        "path_type": "hardlink",
+        "sha256": "cfcea5e61ab7074fb9debf3b2a8e3e2ccf0640f1ba75c6dbc4b565ff63f2a6e2",
+        "sha256_in_prefix": "cfcea5e61ab7074fb9debf3b2a8e3e2ccf0640f1ba75c6dbc4b565ff63f2a6e2",
+        "size_in_bytes": 6757
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/planets.rst",
+        "path_type": "hardlink",
+        "sha256": "d1541bc03542843ba09f362858e7c18c42c8b96bf2e4e713fedbe7b7fd7bd05b",
+        "sha256_in_prefix": "d1541bc03542843ba09f362858e7c18c42c8b96bf2e4e713fedbe7b7fd7bd05b",
+        "size_in_bytes": 17119
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/positions.rst",
+        "path_type": "hardlink",
+        "sha256": "5a842ba9eebe7e5257a8bab7f236b1af13c7b7a0e34e8285324ad136b7d7f248",
+        "sha256_in_prefix": "5a842ba9eebe7e5257a8bab7f236b1af13c7b7a0e34e8285324ad136b7d7f248",
+        "size_in_bytes": 24287
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/searches.rst",
+        "path_type": "hardlink",
+        "sha256": "ab5e0b27685fc0f7d919ab0cc207efd75f6073b11a10c63fa77d10428ff5d6f3",
+        "sha256_in_prefix": "ab5e0b27685fc0f7d919ab0cc207efd75f6073b11a10c63fa77d10428ff5d6f3",
+        "size_in_bytes": 16524
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/stars.rst",
+        "path_type": "hardlink",
+        "sha256": "cc187b1177f06931a8d45bb0c7b1404a61454c460881035d7dd8c00830f3af24",
+        "sha256_in_prefix": "cc187b1177f06931a8d45bb0c7b1404a61454c460881035d7dd8c00830f3af24",
+        "size_in_bytes": 11600
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/time.rst",
+        "path_type": "hardlink",
+        "sha256": "67641b7229193e67ccd5d5e3e380343525388223ff33d85af284fdd3d5503853",
+        "sha256_in_prefix": "67641b7229193e67ccd5d5e3e380343525388223ff33d85af284fdd3d5503853",
+        "size_in_bytes": 31333
+      },
+      {
+        "_path": "site-packages/skyfield/documentation/toc.rst",
+        "path_type": "hardlink",
+        "sha256": "75d52946f42f358c156c7636a74b91d0a79184905bfb8c40f5eea7282fd9aa4e",
+        "sha256_in_prefix": "75d52946f42f358c156c7636a74b91d0a79184905bfb8c40f5eea7282fd9aa4e",
+        "size_in_bytes": 684
+      },
+      {
+        "_path": "site-packages/skyfield/earthlib.py",
+        "path_type": "hardlink",
+        "sha256": "d0d8d6bf7ab5bbd7c306d1aeec940b7d9262ada354ae47a7123daf716d29b0f1",
+        "sha256_in_prefix": "d0d8d6bf7ab5bbd7c306d1aeec940b7d9262ada354ae47a7123daf716d29b0f1",
+        "size_in_bytes": 5400
+      },
+      {
+        "_path": "site-packages/skyfield/eclipselib.py",
+        "path_type": "hardlink",
+        "sha256": "b44c320b5471440236f06017458c8dbd1d02aedd520ed82ce19e1062c9cbe55d",
+        "sha256_in_prefix": "b44c320b5471440236f06017458c8dbd1d02aedd520ed82ce19e1062c9cbe55d",
+        "size_in_bytes": 4244
+      },
+      {
+        "_path": "site-packages/skyfield/elementslib.py",
+        "path_type": "hardlink",
+        "sha256": "f3f16e15b6c337f4e499e1457835166010214e2126bf8f8fe9c89593ed6dc0e3",
+        "sha256_in_prefix": "f3f16e15b6c337f4e499e1457835166010214e2126bf8f8fe9c89593ed6dc0e3",
+        "size_in_bytes": 13597
+      },
+      {
+        "_path": "site-packages/skyfield/errors.py",
+        "path_type": "hardlink",
+        "sha256": "f9887f51b0b2c53798e935ae40bb4d2c699582b1e2fee6fd83118ab83feff48d",
+        "sha256_in_prefix": "f9887f51b0b2c53798e935ae40bb4d2c699582b1e2fee6fd83118ab83feff48d",
+        "size_in_bytes": 746
+      },
+      {
+        "_path": "site-packages/skyfield/framelib.py",
+        "path_type": "hardlink",
+        "sha256": "890eec415b9b00893f64d9578b7ce6f005cdacb0a199fd23caf6c5d51851c11e",
+        "sha256_in_prefix": "890eec415b9b00893f64d9578b7ce6f005cdacb0a199fd23caf6c5d51851c11e",
+        "size_in_bytes": 5229
+      },
+      {
+        "_path": "site-packages/skyfield/functions.py",
+        "path_type": "hardlink",
+        "sha256": "88bb9647ee307a456b9d6dfd1607fab8028f9c948aa4c426c4bd3096b2913e82",
+        "sha256_in_prefix": "88bb9647ee307a456b9d6dfd1607fab8028f9c948aa4c426c4bd3096b2913e82",
+        "size_in_bytes": 5918
+      },
+      {
+        "_path": "site-packages/skyfield/geometry.py",
+        "path_type": "hardlink",
+        "sha256": "af5ada77eb916ab0f913ab0c743eb9e64b1123d000d9dbc406af8b3e6461a6fc",
+        "sha256_in_prefix": "af5ada77eb916ab0f913ab0c743eb9e64b1123d000d9dbc406af8b3e6461a6fc",
+        "size_in_bytes": 1185
+      },
+      {
+        "_path": "site-packages/skyfield/io_timescale.py",
+        "path_type": "hardlink",
+        "sha256": "f2c92cdd2ab82a8297d02918ab31d787e20285707caa8fb0f5e28a28a3124fa9",
+        "sha256_in_prefix": "f2c92cdd2ab82a8297d02918ab31d787e20285707caa8fb0f5e28a28a3124fa9",
+        "size_in_bytes": 3400
+      },
+      {
+        "_path": "site-packages/skyfield/iokit.py",
+        "path_type": "hardlink",
+        "sha256": "b6a05718d9ec452dffa343d6e9339a65d7a4ab3f6d134442828d83016e2c58da",
+        "sha256_in_prefix": "b6a05718d9ec452dffa343d6e9339a65d7a4ab3f6d134442828d83016e2c58da",
+        "size_in_bytes": 22697
+      },
+      {
+        "_path": "site-packages/skyfield/jpllib.py",
+        "path_type": "hardlink",
+        "sha256": "04f6c0b6060c75fd6c4c9a17ef34d644485aa35f94a2ad50b4c6f7d07086268d",
+        "sha256_in_prefix": "04f6c0b6060c75fd6c4c9a17ef34d644485aa35f94a2ad50b4c6f7d07086268d",
+        "size_in_bytes": 9581
+      },
+      {
+        "_path": "site-packages/skyfield/keplerlib.py",
+        "path_type": "hardlink",
+        "sha256": "3fc8bf5e611ea71b84e4602bb49f282bebd24dd3be26e099e636a977277a27ec",
+        "sha256_in_prefix": "3fc8bf5e611ea71b84e4602bb49f282bebd24dd3be26e099e636a977277a27ec",
+        "size_in_bytes": 19998
+      },
+      {
+        "_path": "site-packages/skyfield/magnitudelib.py",
+        "path_type": "hardlink",
+        "sha256": "1b6267c74c8f80c7b85c1f22d2c094a151d4fa02d04a572835d268e2325eb578",
+        "sha256_in_prefix": "1b6267c74c8f80c7b85c1f22d2c094a151d4fa02d04a572835d268e2325eb578",
+        "size_in_bytes": 10528
+      },
+      {
+        "_path": "site-packages/skyfield/naifcodes.py",
+        "path_type": "hardlink",
+        "sha256": "98d1417f6061dbafe2580a4c394587962ada8fe5774a68f30c3921d3ed4b78c0",
+        "sha256_in_prefix": "98d1417f6061dbafe2580a4c394587962ada8fe5774a68f30c3921d3ed4b78c0",
+        "size_in_bytes": 797
+      },
+      {
+        "_path": "site-packages/skyfield/named_stars.py",
+        "path_type": "hardlink",
+        "sha256": "9b7c3c0ebfd291ee8f698723db9cad74a9983a943bf8b2030e09892f4afdb001",
+        "sha256_in_prefix": "9b7c3c0ebfd291ee8f698723db9cad74a9983a943bf8b2030e09892f4afdb001",
+        "size_in_bytes": 2438
+      },
+      {
+        "_path": "site-packages/skyfield/nutationlib.py",
+        "path_type": "hardlink",
+        "sha256": "fdd9a3c684e6cd94d17a99f45e5d67b618942a65a10b4bdc2dd5ebbd2fd10567",
+        "sha256_in_prefix": "fdd9a3c684e6cd94d17a99f45e5d67b618942a65a10b4bdc2dd5ebbd2fd10567",
+        "size_in_bytes": 12248
+      },
+      {
+        "_path": "site-packages/skyfield/planetarylib.py",
+        "path_type": "hardlink",
+        "sha256": "d15954e93d88e0344e81f8e5c93bcb879441e6b202fa967ca0aef4d3546ce804",
+        "sha256_in_prefix": "d15954e93d88e0344e81f8e5c93bcb879441e6b202fa967ca0aef4d3546ce804",
+        "size_in_bytes": 9586
+      },
+      {
+        "_path": "site-packages/skyfield/positionlib.py",
+        "path_type": "hardlink",
+        "sha256": "cfdf831a6257aed8a46e8b091f031368814fd481598bc6d53ed0abc1c13b23a8",
+        "sha256_in_prefix": "cfdf831a6257aed8a46e8b091f031368814fd481598bc6d53ed0abc1c13b23a8",
+        "size_in_bytes": 35656
+      },
+      {
+        "_path": "site-packages/skyfield/precessionlib.py",
+        "path_type": "hardlink",
+        "sha256": "3da871b705f8a4af62cacfcf3d144c0f10e4cdc66b7493f20fbac4c92290b056",
+        "sha256_in_prefix": "3da871b705f8a4af62cacfcf3d144c0f10e4cdc66b7493f20fbac4c92290b056",
+        "size_in_bytes": 2145
+      },
+      {
+        "_path": "site-packages/skyfield/projections.py",
+        "path_type": "hardlink",
+        "sha256": "7af695233e826ff0711522e6231b7f4bba006fc6f7a50ba9950acec5ac3051f3",
+        "sha256_in_prefix": "7af695233e826ff0711522e6231b7f4bba006fc6f7a50ba9950acec5ac3051f3",
+        "size_in_bytes": 2287
+      },
+      {
+        "_path": "site-packages/skyfield/relativity.py",
+        "path_type": "hardlink",
+        "sha256": "a8f8ec8b3b101067868a6456b5aad2614f30a79b8f7ae14b3edbdd165e4cc481",
+        "sha256_in_prefix": "a8f8ec8b3b101067868a6456b5aad2614f30a79b8f7ae14b3edbdd165e4cc481",
+        "size_in_bytes": 6375
+      },
+      {
+        "_path": "site-packages/skyfield/searchlib.py",
+        "path_type": "hardlink",
+        "sha256": "a4d2a5b7ea48cafda6d312ecee4688eb2cf4394d05145b0ef76252376d5da19f",
+        "sha256_in_prefix": "a4d2a5b7ea48cafda6d312ecee4688eb2cf4394d05145b0ef76252376d5da19f",
+        "size_in_bytes": 8191
+      },
+      {
+        "_path": "site-packages/skyfield/sgp4lib.py",
+        "path_type": "hardlink",
+        "sha256": "8b69613e32aa38b702becdbd9db0c60b93955cc8ebc5630ad68936e24615ae6d",
+        "sha256_in_prefix": "8b69613e32aa38b702becdbd9db0c60b93955cc8ebc5630ad68936e24615ae6d",
+        "size_in_bytes": 13183
+      },
+      {
+        "_path": "site-packages/skyfield/starlib.py",
+        "path_type": "hardlink",
+        "sha256": "06e885d376f9c13a7025084c0fc4e0e27da52363226c33b1d37ba35abf316a9a",
+        "sha256_in_prefix": "06e885d376f9c13a7025084c0fc4e0e27da52363226c33b1d37ba35abf316a9a",
+        "size_in_bytes": 7251
+      },
+      {
+        "_path": "site-packages/skyfield/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/skyfield/tests/conventions.py",
+        "path_type": "hardlink",
+        "sha256": "0db572a560fb09a93c5c3fc645b7ac359b4109a97ee84a8baeb0e4b885704be2",
+        "sha256_in_prefix": "0db572a560fb09a93c5c3fc645b7ac359b4109a97ee84a8baeb0e4b885704be2",
+        "size_in_bytes": 72
+      },
+      {
+        "_path": "site-packages/skyfield/tests/data/de430-2015-03-02.bsp",
+        "path_type": "hardlink",
+        "sha256": "1cf9db35f974915b4d78984339631c24aee8ca29a863c9d7f0d59f34ae869684",
+        "sha256_in_prefix": "1cf9db35f974915b4d78984339631c24aee8ca29a863c9d7f0d59f34ae869684",
+        "size_in_bytes": 9376
+      },
+      {
+        "_path": "site-packages/skyfield/tests/data/jup310-2015-03-02.bsp",
+        "path_type": "hardlink",
+        "sha256": "0d315bf0d242530400cee1c9bc98974a7742e618a423953b49fb13cd6144e1cf",
+        "sha256_in_prefix": "0d315bf0d242530400cee1c9bc98974a7742e618a423953b49fb13cd6144e1cf",
+        "size_in_bytes": 27024
+      },
+      {
+        "_path": "site-packages/skyfield/tests/data/jup310-2053-10-08.bsp",
+        "path_type": "hardlink",
+        "sha256": "f43013725c118c9a63a27bcbfc2e035a74c5d5ffd33ff16f3159a44187523f50",
+        "sha256_in_prefix": "f43013725c118c9a63a27bcbfc2e035a74c5d5ffd33ff16f3159a44187523f50",
+        "size_in_bytes": 27840
+      },
+      {
+        "_path": "site-packages/skyfield/tests/fixes.py",
+        "path_type": "hardlink",
+        "sha256": "6fa9cb797bf928d07ee9cf241bea37144e4f732a147b7c0cfb70867e2e462258",
+        "sha256_in_prefix": "6fa9cb797bf928d07ee9cf241bea37144e4f732a147b7c0cfb70867e2e462258",
+        "size_in_bytes": 1886
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_against_horizons.py",
+        "path_type": "hardlink",
+        "sha256": "5e9b4ff5d02b3ee8ced55a72af9ca5496d6c40330e88e5eb0acab7678630fdf1",
+        "sha256_in_prefix": "5e9b4ff5d02b3ee8ced55a72af9ca5496d6c40330e88e5eb0acab7678630fdf1",
+        "size_in_bytes": 5733
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_against_novas.py",
+        "path_type": "hardlink",
+        "sha256": "46811833eacb05ab9581a2a6973807b9da41e63a06d6ae3071deb817aa1553e5",
+        "sha256_in_prefix": "46811833eacb05ab9581a2a6973807b9da41e63a06d6ae3071deb817aa1553e5",
+        "size_in_bytes": 140183
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_almanac.py",
+        "path_type": "hardlink",
+        "sha256": "55bdb8e6585e81d6140051f6c2ceca4b2c3d86c3eec830987cecec2cad9a6dfd",
+        "sha256_in_prefix": "55bdb8e6585e81d6140051f6c2ceca4b2c3d86c3eec830987cecec2cad9a6dfd",
+        "size_in_bytes": 3649
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_almanac_east_asia.py",
+        "path_type": "hardlink",
+        "sha256": "b8d90446613a7d5706134792df2e626d095622b27c28e785594661e4a684e03e",
+        "sha256_in_prefix": "b8d90446613a7d5706134792df2e626d095622b27c28e785594661e4a684e03e",
+        "size_in_bytes": 1374
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_almanac_searches.py",
+        "path_type": "hardlink",
+        "sha256": "2a0b8e8968279b9e56eed68995f9d6e12d3c2fc733536c5e2c33ade082ebfd2f",
+        "sha256_in_prefix": "2a0b8e8968279b9e56eed68995f9d6e12d3c2fc733536c5e2c33ade082ebfd2f",
+        "size_in_bytes": 4230
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_api.py",
+        "path_type": "hardlink",
+        "sha256": "3c08754191d038bcb44e225af6613e2d21adb1dae9f9765c53b228a7ecf63761",
+        "sha256_in_prefix": "3c08754191d038bcb44e225af6613e2d21adb1dae9f9765c53b228a7ecf63761",
+        "size_in_bytes": 5196
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_broadcastability.py",
+        "path_type": "hardlink",
+        "sha256": "13bd8e074a01ba6c722f655f8cb7ee3beab7a7de1a232abe7f36e2fd1669c9ea",
+        "sha256_in_prefix": "13bd8e074a01ba6c722f655f8cb7ee3beab7a7de1a232abe7f36e2fd1669c9ea",
+        "size_in_bytes": 241
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_constellations.py",
+        "path_type": "hardlink",
+        "sha256": "001b1479b5e155b8153b5b8ae1e1b2917101517e5588250a97a5cea1da277831",
+        "sha256_in_prefix": "001b1479b5e155b8153b5b8ae1e1b2917101517e5588250a97a5cea1da277831",
+        "size_in_bytes": 845
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_curves.py",
+        "path_type": "hardlink",
+        "sha256": "72c99f3e1117fda2ff5fc4049a73b8468d2e145fae84921e9f00fc39f5bdc7d2",
+        "sha256_in_prefix": "72c99f3e1117fda2ff5fc4049a73b8468d2e145fae84921e9f00fc39f5bdc7d2",
+        "size_in_bytes": 1145
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_data_iers.py",
+        "path_type": "hardlink",
+        "sha256": "07835bd64f26d0adef99b9eb5cb6dbb4f165fc2d61156de10fc4d047d1cb4b41",
+        "sha256_in_prefix": "07835bd64f26d0adef99b9eb5cb6dbb4f165fc2d61156de10fc4d047d1cb4b41",
+        "size_in_bytes": 1337
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_earth_deflection.py",
+        "path_type": "hardlink",
+        "sha256": "8476c70b7637851604be017e4b947b1e6f13088bc258198324ae0ea987ad2479",
+        "sha256_in_prefix": "8476c70b7637851604be017e4b947b1e6f13088bc258198324ae0ea987ad2479",
+        "size_in_bytes": 1520
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_earth_satellites.py",
+        "path_type": "hardlink",
+        "sha256": "2e86398458e4445a786d52daa3e0fb5e24e788aa58a9b5212c8ac4106553230a",
+        "sha256_in_prefix": "2e86398458e4445a786d52daa3e0fb5e24e788aa58a9b5212c8ac4106553230a",
+        "size_in_bytes": 6768
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_earthlib.py",
+        "path_type": "hardlink",
+        "sha256": "434efddd17edbd4d3a7e7822eb72883413a354d07760aac6ac1508719da0f8dd",
+        "sha256_in_prefix": "434efddd17edbd4d3a7e7822eb72883413a354d07760aac6ac1508719da0f8dd",
+        "size_in_bytes": 455
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_eclipselib.py",
+        "path_type": "hardlink",
+        "sha256": "a3b5c892caf0d83f12757be4017185bbd564e9f6ecf0ebd250b9e3e6dba86623",
+        "sha256_in_prefix": "a3b5c892caf0d83f12757be4017185bbd564e9f6ecf0ebd250b9e3e6dba86623",
+        "size_in_bytes": 506
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_elementslib.py",
+        "path_type": "hardlink",
+        "sha256": "ac0a266798bcd5ef34b0a384c4be11c8b3361e18b601aa85c30f1d8670c17153",
+        "sha256_in_prefix": "ac0a266798bcd5ef34b0a384c4be11c8b3361e18b601aa85c30f1d8670c17153",
+        "size_in_bytes": 22555
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_frames.py",
+        "path_type": "hardlink",
+        "sha256": "f86c58d1c696102614881395f752bdf6c5a93b9371fddd8936797ad8322ff308",
+        "sha256_in_prefix": "f86c58d1c696102614881395f752bdf6c5a93b9371fddd8936797ad8322ff308",
+        "size_in_bytes": 3697
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_functions.py",
+        "path_type": "hardlink",
+        "sha256": "844913f98dff2404f68f8613348051b8e1aa86a86ccd3b12f3c595bcb4e34108",
+        "sha256_in_prefix": "844913f98dff2404f68f8613348051b8e1aa86a86ccd3b12f3c595bcb4e34108",
+        "size_in_bytes": 1207
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_geometry.py",
+        "path_type": "hardlink",
+        "sha256": "329e484d51328a2bfc89961c2d973667c2b473d02e0f8f4b7e12f63106e6873d",
+        "sha256_in_prefix": "329e484d51328a2bfc89961c2d973667c2b473d02e0f8f4b7e12f63106e6873d",
+        "size_in_bytes": 903
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_io.py",
+        "path_type": "hardlink",
+        "sha256": "6c40ef202057a4249e615f4d177ddc85ed9718b653c9626037cc435ea4541248",
+        "sha256_in_prefix": "6c40ef202057a4249e615f4d177ddc85ed9718b653c9626037cc435ea4541248",
+        "size_in_bytes": 4876
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_io_parsing.py",
+        "path_type": "hardlink",
+        "sha256": "0d7b0ba6aa8892d7d70a99813ac58eb77c4aa27b87ed34208669f68330ce93bb",
+        "sha256_in_prefix": "0d7b0ba6aa8892d7d70a99813ac58eb77c4aa27b87ed34208669f68330ce93bb",
+        "size_in_bytes": 5310
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_keplerlib.py",
+        "path_type": "hardlink",
+        "sha256": "db77fce3bf809e89e08a0566c2eb9376ce46473581e68425b00b18494ccb63bf",
+        "sha256_in_prefix": "db77fce3bf809e89e08a0566c2eb9376ce46473581e68425b00b18494ccb63bf",
+        "size_in_bytes": 8537
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_magnitudes.py",
+        "path_type": "hardlink",
+        "sha256": "9065f0a40a9897244eb937d607cc321c9fc1a2d6be8b438e84cdb77511f98f08",
+        "sha256_in_prefix": "9065f0a40a9897244eb937d607cc321c9fc1a2d6be8b438e84cdb77511f98f08",
+        "size_in_bytes": 685
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_magnitudes_raw.py",
+        "path_type": "hardlink",
+        "sha256": "3319bbf575d35c2b1d02a24b03c733c83b5c50f9ccbcb710f0c9a2180d5a31cc",
+        "sha256_in_prefix": "3319bbf575d35c2b1d02a24b03c733c83b5c50f9ccbcb710f0c9a2180d5a31cc",
+        "size_in_bytes": 6817
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_planetarylib.py",
+        "path_type": "hardlink",
+        "sha256": "4afb0f8d7870b46284107cce58a88cb7ca821e5d3005bf712ce7e0539c9522ff",
+        "sha256_in_prefix": "4afb0f8d7870b46284107cce58a88cb7ca821e5d3005bf712ce7e0539c9522ff",
+        "size_in_bytes": 10465
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_positions.py",
+        "path_type": "hardlink",
+        "sha256": "ac004de3002ccec723667e881f5f7f7fb2486a7e80953983e49c75e69ea1af75",
+        "sha256_in_prefix": "ac004de3002ccec723667e881f5f7f7fb2486a7e80953983e49c75e69ea1af75",
+        "size_in_bytes": 10919
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_satellite_events.py",
+        "path_type": "hardlink",
+        "sha256": "ea1f6f2278d6a38ead6baaefcef09ac38c7b86313289a2f9a07527a3e0f1a0fc",
+        "sha256_in_prefix": "ea1f6f2278d6a38ead6baaefcef09ac38c7b86313289a2f9a07527a3e0f1a0fc",
+        "size_in_bytes": 5246
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_searchlib.py",
+        "path_type": "hardlink",
+        "sha256": "80d26e828706028d3037efbd540650651389e7320c56360f6efc42df3c7eedf5",
+        "sha256_in_prefix": "80d26e828706028d3037efbd540650651389e7320c56360f6efc42df3c7eedf5",
+        "size_in_bytes": 1446
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_stars.py",
+        "path_type": "hardlink",
+        "sha256": "ffc2aa6cf27f9f289f95f20446a4c00451b3cec33e7a7acb9e9e8c6ad3f458c8",
+        "sha256_in_prefix": "ffc2aa6cf27f9f289f95f20446a4c00451b3cec33e7a7acb9e9e8c6ad3f458c8",
+        "size_in_bytes": 380
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_strs_and_reprs.py",
+        "path_type": "hardlink",
+        "sha256": "ffbba07aca3f2f40a31bf03c97ecbd86cfef7e019c7ddb1c2e4885e53b86a35f",
+        "sha256_in_prefix": "ffbba07aca3f2f40a31bf03c97ecbd86cfef7e019c7ddb1c2e4885e53b86a35f",
+        "size_in_bytes": 4414
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_text_pck.py",
+        "path_type": "hardlink",
+        "sha256": "d1aa1b39b0be7cb3d92a66820a6197c5ca3d6f1d9cc36d863e4c2338d157a1bc",
+        "sha256_in_prefix": "d1aa1b39b0be7cb3d92a66820a6197c5ca3d6f1d9cc36d863e4c2338d157a1bc",
+        "size_in_bytes": 801
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_timelib.py",
+        "path_type": "hardlink",
+        "sha256": "ab692bb8d5075708a5826cb3feb7dec02388f177bacdb707953bd84986e4d592",
+        "sha256_in_prefix": "ab692bb8d5075708a5826cb3feb7dec02388f177bacdb707953bd84986e4d592",
+        "size_in_bytes": 26293
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_topos.py",
+        "path_type": "hardlink",
+        "sha256": "0f88fcadb0f1e73b5383e8926b118bb81751be66f81a5fa43d05819b8b177147",
+        "sha256_in_prefix": "0f88fcadb0f1e73b5383e8926b118bb81751be66f81a5fa43d05819b8b177147",
+        "size_in_bytes": 8099
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_trigonometry.py",
+        "path_type": "hardlink",
+        "sha256": "04c3944397b5d4a07c96b90682f12b89f72d571ec238a654910f2ff02838521c",
+        "sha256_in_prefix": "04c3944397b5d4a07c96b90682f12b89f72d571ec238a654910f2ff02838521c",
+        "size_in_bytes": 260
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_units.py",
+        "path_type": "hardlink",
+        "sha256": "aa4a9b959760ae8bc826e126ec572ccbfad22ffab6a32c85069a5b0f843ab59b",
+        "sha256_in_prefix": "aa4a9b959760ae8bc826e126ec572ccbfad22ffab6a32c85069a5b0f843ab59b",
+        "size_in_bytes": 5959
+      },
+      {
+        "_path": "site-packages/skyfield/tests/test_vectors.py",
+        "path_type": "hardlink",
+        "sha256": "51a3d9079e5f2d14db510d5bbd4d44ec301c81022accafe5caa62e1752a41bdf",
+        "sha256_in_prefix": "51a3d9079e5f2d14db510d5bbd4d44ec301c81022accafe5caa62e1752a41bdf",
+        "size_in_bytes": 3760
+      },
+      {
+        "_path": "site-packages/skyfield/timelib.py",
+        "path_type": "hardlink",
+        "sha256": "6fe48929bcbc8a3c5d9596db8063d27db62c0f7b244976f5c8a236479500942d",
+        "sha256_in_prefix": "6fe48929bcbc8a3c5d9596db8063d27db62c0f7b244976f5c8a236479500942d",
+        "size_in_bytes": 44949
+      },
+      {
+        "_path": "site-packages/skyfield/toposlib.py",
+        "path_type": "hardlink",
+        "sha256": "13757283ca960f9c26f469cd9bc289058d605169db77ebd36b55b21ee63479ed",
+        "sha256_in_prefix": "13757283ca960f9c26f469cd9bc289058d605169db77ebd36b55b21ee63479ed",
+        "size_in_bytes": 12168
+      },
+      {
+        "_path": "site-packages/skyfield/trigonometry.py",
+        "path_type": "hardlink",
+        "sha256": "659a8aad02c90da94d611618d618dcd3c53b761154cf4004734432911489daf3",
+        "sha256_in_prefix": "659a8aad02c90da94d611618d618dcd3c53b761154cf4004734432911489daf3",
+        "size_in_bytes": 2212
+      },
+      {
+        "_path": "site-packages/skyfield/units.py",
+        "path_type": "hardlink",
+        "sha256": "b8c3c9f0c18eabd8ee1affa73a414c334e1e7449e520a06dd4875752830cbf49",
+        "sha256_in_prefix": "b8c3c9f0c18eabd8ee1affa73a414c334e1e7449e520a06dd4875752830cbf49",
+        "size_in_bytes": 18639
+      },
+      {
+        "_path": "site-packages/skyfield/vectorlib.py",
+        "path_type": "hardlink",
+        "sha256": "2903333479aeb85278e5887ec3a6f533ecf00e339944691cdbbf6c2762217ca3",
+        "sha256_in_prefix": "2903333479aeb85278e5887ec3a6f533ecf00e339944691cdbbf6c2762217ca3",
+        "size_in_bytes": 9234
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/__main__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/_compatibility.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/almanac.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/almanac_east_asia.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/api.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/charting.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/constants.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/constellationlib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/curvelib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/data/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/data/__pycache__/earth_orientation.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/data/__pycache__/gravitational_parameters.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/data/__pycache__/hipparcos.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/data/__pycache__/horizons.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/data/__pycache__/iers.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/data/__pycache__/mpc.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/data/__pycache__/spice.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/data/__pycache__/stellarium.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/data/__pycache__/text_pck.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/descriptorlib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/earthlib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/eclipselib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/elementslib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/errors.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/framelib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/functions.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/geometry.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/io_timescale.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/iokit.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/jpllib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/keplerlib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/magnitudelib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/naifcodes.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/named_stars.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/nutationlib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/planetarylib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/positionlib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/precessionlib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/projections.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/relativity.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/searchlib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/sgp4lib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/starlib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/conventions.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/fixes.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_against_horizons.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_against_novas.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_almanac.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_almanac_east_asia.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_almanac_searches.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_api.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_broadcastability.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_constellations.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_curves.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_data_iers.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_earth_deflection.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_earth_satellites.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_earthlib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_eclipselib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_elementslib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_frames.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_functions.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_geometry.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_io.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_io_parsing.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_keplerlib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_magnitudes.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_magnitudes_raw.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_planetarylib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_positions.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_satellite_events.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_searchlib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_stars.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_strs_and_reprs.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_text_pck.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_timelib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_topos.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_trigonometry.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_units.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/tests/__pycache__/test_vectors.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/timelib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/toposlib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/trigonometry.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/units.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/skyfield/__pycache__/vectorlib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "skyfield==1.40=pyh6c4a22f_1",
+  "sha256": "dea5e871491c203c05813b92f3e0786b9cbb05bc273e3efbd609462fc864e525",
+  "size": 366765,
+  "subdir": "noarch",
+  "timestamp": 1637183097365,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/skyfield-1.40-pyh6c4a22f_1.tar.bz2",
+  "version": "1.40"
+}

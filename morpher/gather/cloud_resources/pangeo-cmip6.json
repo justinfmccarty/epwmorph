@@ -4,7 +4,7 @@
   "description": "This is an ESM collection for CMIP6 Zarr data residing in Pangeo's Google Storage.",
   "feedback_url": "https://docs.google.com/forms/d/e/1FAIpQLSeISi54dqekkknPp8IrBr-uioM2TGGiW7xGpW6Q_9-9WFlWTQ/viewform",
   "request_url": "https://docs.google.com/forms/d/e/1FAIpQLScFjA5IddqBs2Rc0xGbzn32NPq12TKr-b-8KGtXWyNDK5sJCg/viewform",
-  "catalog_file": "https://storage.googleapis.com/cmip6/pangeo-cmip6.csv",
+  "catalog_file": "pangeo-cmip6.csv",
   "attributes": [
     {
       "column_name": "activity_id",

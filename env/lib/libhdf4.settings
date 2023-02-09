@@ -1,0 +1,38 @@
+	    SUMMARY OF THE HDF4 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF4 Version: 4.2.15
+		  Configured on: Wed May 19 14:45:38 UTC 2021
+		  Configured by: runner@Mac-1621434890826.local
+		 Configure mode: production
+		    Host system: aarch64-apple-darwin20.0.0
+              Uname information: Darwin Mac-1621434890826.local 19.6.0 Darwin Kernel Version 19.6.0: Mon Apr 12 20:57:45 PDT 2021; root:xnu-6153.141.28.1~1/RELEASE_X86_64 x86_64
+		      Libraries: 
+	     Installation point: /Users/jmccarty/GitHub/epwmorph/env
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C compiler: /Users/runner/miniforge3/conda-bld/hdf4_1621435344834/_build_env/bin/arm64-apple-darwin20.0.0-clang
+                         CFLAGS:  -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /Users/jmccarty/GitHub/epwmorph/env/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/hdf4_1621435344834/work=/usr/local/src/conda/hdf4-4.2.15 -fdebug-prefix-map=/Users/jmccarty/GitHub/epwmorph/env=/usr/local/src/conda-prefix -O2
+                       CPPFLAGS: -Wl,-rpath,/Users/jmccarty/GitHub/epwmorph/env/lib -I/Users/jmccarty/GitHub/epwmorph/env/include 
+               Shared Libraries: yes
+               Static Libraries: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/Users/jmccarty/GitHub/epwmorph/env/lib -Wl,-rpath,/Users/jmccarty/GitHub/epwmorph/env/lib -headerpad_max_install_names
+ 	 	Extra libraries: -ljpeg -lz 
+ 		       Archiver: arm64-apple-darwin20.0.0-ar
+ 		 	 Ranlib: arm64-apple-darwin20.0.0-ranlib
+
+Languages:
+----------
+                        Fortran: no
+
+                           Java: no
+
+Features:
+---------
+               SZIP compression: disabled
+   Support for netCDF API 2.3.2: no

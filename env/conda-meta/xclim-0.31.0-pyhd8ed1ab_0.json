@@ -1,0 +1,1581 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "boltons >=20.1",
+    "bottleneck >=1.3.1,<1.4",
+    "cftime >=1.4.1",
+    "click",
+    "dask >=2.6",
+    "jsonpickle",
+    "numba",
+    "numpy >=1.16",
+    "packaging >=20.0",
+    "pandas >=0.23",
+    "pint >=0.9",
+    "python >=3.7",
+    "pyyaml",
+    "scikit-learn >=0.21.3",
+    "scipy >=1.2",
+    "xarray >=0.17"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/xclim-0.31.0-pyhd8ed1ab_0",
+  "features": "",
+  "files": [
+    "bin/xclim",
+    "lib/python3.9/site-packages/xclim-0.31.0.dist-info/AUTHORS.rst",
+    "lib/python3.9/site-packages/xclim-0.31.0.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/xclim-0.31.0.dist-info/LICENSE",
+    "lib/python3.9/site-packages/xclim-0.31.0.dist-info/METADATA",
+    "lib/python3.9/site-packages/xclim-0.31.0.dist-info/RECORD",
+    "lib/python3.9/site-packages/xclim-0.31.0.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/xclim-0.31.0.dist-info/WHEEL",
+    "lib/python3.9/site-packages/xclim-0.31.0.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/xclim-0.31.0.dist-info/entry_points.txt",
+    "lib/python3.9/site-packages/xclim-0.31.0.dist-info/top_level.txt",
+    "lib/python3.9/site-packages/xclim/__init__.py",
+    "lib/python3.9/site-packages/xclim/analog.py",
+    "lib/python3.9/site-packages/xclim/cli.py",
+    "lib/python3.9/site-packages/xclim/core/__init__.py",
+    "lib/python3.9/site-packages/xclim/core/bootstrapping.py",
+    "lib/python3.9/site-packages/xclim/core/calendar.py",
+    "lib/python3.9/site-packages/xclim/core/cfchecks.py",
+    "lib/python3.9/site-packages/xclim/core/datachecks.py",
+    "lib/python3.9/site-packages/xclim/core/dataflags.py",
+    "lib/python3.9/site-packages/xclim/core/formatting.py",
+    "lib/python3.9/site-packages/xclim/core/indicator.py",
+    "lib/python3.9/site-packages/xclim/core/locales.py",
+    "lib/python3.9/site-packages/xclim/core/missing.py",
+    "lib/python3.9/site-packages/xclim/core/options.py",
+    "lib/python3.9/site-packages/xclim/core/units.py",
+    "lib/python3.9/site-packages/xclim/core/utils.py",
+    "lib/python3.9/site-packages/xclim/data/__init__.py",
+    "lib/python3.9/site-packages/xclim/data/anuclim.yml",
+    "lib/python3.9/site-packages/xclim/data/cf.yml",
+    "lib/python3.9/site-packages/xclim/data/fr.json",
+    "lib/python3.9/site-packages/xclim/data/icclim.yml",
+    "lib/python3.9/site-packages/xclim/data/schema.yml",
+    "lib/python3.9/site-packages/xclim/data/variables.yml",
+    "lib/python3.9/site-packages/xclim/ensembles/__init__.py",
+    "lib/python3.9/site-packages/xclim/ensembles/_base.py",
+    "lib/python3.9/site-packages/xclim/ensembles/_reduce.py",
+    "lib/python3.9/site-packages/xclim/ensembles/_robustness.py",
+    "lib/python3.9/site-packages/xclim/indicators/__init__.py",
+    "lib/python3.9/site-packages/xclim/indicators/atmos/__init__.py",
+    "lib/python3.9/site-packages/xclim/indicators/atmos/_conversion.py",
+    "lib/python3.9/site-packages/xclim/indicators/atmos/_precip.py",
+    "lib/python3.9/site-packages/xclim/indicators/atmos/_preciptemp.py",
+    "lib/python3.9/site-packages/xclim/indicators/atmos/_temperature.py",
+    "lib/python3.9/site-packages/xclim/indicators/atmos/_wind.py",
+    "lib/python3.9/site-packages/xclim/indicators/land/__init__.py",
+    "lib/python3.9/site-packages/xclim/indicators/land/_snow.py",
+    "lib/python3.9/site-packages/xclim/indicators/land/_streamflow.py",
+    "lib/python3.9/site-packages/xclim/indicators/seaIce/__init__.py",
+    "lib/python3.9/site-packages/xclim/indicators/seaIce/_seaice.py",
+    "lib/python3.9/site-packages/xclim/indices/__init__.py",
+    "lib/python3.9/site-packages/xclim/indices/_agro.py",
+    "lib/python3.9/site-packages/xclim/indices/_anuclim.py",
+    "lib/python3.9/site-packages/xclim/indices/_conversion.py",
+    "lib/python3.9/site-packages/xclim/indices/_hydrology.py",
+    "lib/python3.9/site-packages/xclim/indices/_multivariate.py",
+    "lib/python3.9/site-packages/xclim/indices/_simple.py",
+    "lib/python3.9/site-packages/xclim/indices/_threshold.py",
+    "lib/python3.9/site-packages/xclim/indices/fwi.py",
+    "lib/python3.9/site-packages/xclim/indices/generic.py",
+    "lib/python3.9/site-packages/xclim/indices/run_length.py",
+    "lib/python3.9/site-packages/xclim/indices/stats.py",
+    "lib/python3.9/site-packages/xclim/sdba/__init__.py",
+    "lib/python3.9/site-packages/xclim/sdba/_adjustment.py",
+    "lib/python3.9/site-packages/xclim/sdba/_processing.py",
+    "lib/python3.9/site-packages/xclim/sdba/adjustment.py",
+    "lib/python3.9/site-packages/xclim/sdba/base.py",
+    "lib/python3.9/site-packages/xclim/sdba/detrending.py",
+    "lib/python3.9/site-packages/xclim/sdba/loess.py",
+    "lib/python3.9/site-packages/xclim/sdba/nbutils.py",
+    "lib/python3.9/site-packages/xclim/sdba/processing.py",
+    "lib/python3.9/site-packages/xclim/sdba/utils.py",
+    "lib/python3.9/site-packages/xclim/subset.py",
+    "lib/python3.9/site-packages/xclim/testing/__init__.py",
+    "lib/python3.9/site-packages/xclim/testing/_utils.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/__init__.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/conftest.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/data.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/data/callendar_1938.txt",
+    "lib/python3.9/site-packages/xclim/testing/tests/data/eastern_canada.json",
+    "lib/python3.9/site-packages/xclim/testing/tests/data/meridian.json",
+    "lib/python3.9/site-packages/xclim/testing/tests/data/meridian_multi.json",
+    "lib/python3.9/site-packages/xclim/testing/tests/data/multi_regions.json",
+    "lib/python3.9/site-packages/xclim/testing/tests/data/poslons.json",
+    "lib/python3.9/site-packages/xclim/testing/tests/data/small_geojson.json",
+    "lib/python3.9/site-packages/xclim/testing/tests/data/southern_qc_geojson.json",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_analog.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_atmos.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_bootstrapping.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_calendar.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_checks.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_cli.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_ensembles.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_flags.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_formatting.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_fwi.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_generic.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_hydrology.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_indicators.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_indices.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_land.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_locales.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_missing.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_modules.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_options.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_precip.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_preciptemp.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_run_length.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/__init__.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/conftest.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/diagnostics.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/test_adjustment.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/test_base.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/test_detrending.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/test_loess.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/test_processing.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/test_utils.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/utils.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_seaice.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_snow.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_stats.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_subset.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_temperature.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_testing_utils.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_units.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_utils.py",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_wind.py",
+    "lib/python3.9/site-packages/xclim/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/__pycache__/analog.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/__pycache__/cli.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/core/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/core/__pycache__/bootstrapping.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/core/__pycache__/calendar.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/core/__pycache__/cfchecks.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/core/__pycache__/datachecks.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/core/__pycache__/dataflags.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/core/__pycache__/formatting.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/core/__pycache__/indicator.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/core/__pycache__/locales.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/core/__pycache__/missing.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/core/__pycache__/options.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/core/__pycache__/units.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/core/__pycache__/utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/data/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/ensembles/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/ensembles/__pycache__/_base.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/ensembles/__pycache__/_reduce.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/ensembles/__pycache__/_robustness.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/indicators/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/indicators/atmos/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/indicators/atmos/__pycache__/_conversion.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/indicators/atmos/__pycache__/_precip.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/indicators/atmos/__pycache__/_preciptemp.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/indicators/atmos/__pycache__/_temperature.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/indicators/atmos/__pycache__/_wind.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/indicators/land/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/indicators/land/__pycache__/_snow.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/indicators/land/__pycache__/_streamflow.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/indicators/seaIce/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/indicators/seaIce/__pycache__/_seaice.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/indices/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/indices/__pycache__/_agro.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/indices/__pycache__/_anuclim.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/indices/__pycache__/_conversion.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/indices/__pycache__/_hydrology.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/indices/__pycache__/_multivariate.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/indices/__pycache__/_simple.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/indices/__pycache__/_threshold.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/indices/__pycache__/fwi.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/indices/__pycache__/generic.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/indices/__pycache__/run_length.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/indices/__pycache__/stats.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/sdba/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/sdba/__pycache__/_adjustment.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/sdba/__pycache__/_processing.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/sdba/__pycache__/adjustment.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/sdba/__pycache__/base.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/sdba/__pycache__/detrending.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/sdba/__pycache__/loess.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/sdba/__pycache__/nbutils.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/sdba/__pycache__/processing.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/sdba/__pycache__/utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/__pycache__/subset.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/__pycache__/_utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/conftest.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/data.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_analog.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_atmos.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_bootstrapping.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_calendar.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_checks.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_cli.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_ensembles.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_flags.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_formatting.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_fwi.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_generic.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_hydrology.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_indicators.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_indices.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_land.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_locales.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_missing.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_modules.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_options.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_precip.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_preciptemp.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_run_length.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/__pycache__/conftest.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/__pycache__/diagnostics.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/__pycache__/test_adjustment.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/__pycache__/test_base.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/__pycache__/test_detrending.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/__pycache__/test_loess.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/__pycache__/test_processing.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/__pycache__/test_utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/__pycache__/utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_seaice.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_snow.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_stats.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_subset.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_temperature.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_testing_utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_units.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_wind.cpython-39.pyc"
+  ],
+  "fn": "xclim-0.31.0-pyhd8ed1ab_0.tar.bz2",
+  "license": "Apache-2.0",
+  "license_family": "Apache",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/xclim-0.31.0-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "cf398950c51dca67a958c597202739c2",
+  "name": "xclim",
+  "noarch": "python",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/xclim-0.31.0-pyhd8ed1ab_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "python-scripts/xclim",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/xclim_1636381264866/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "9504e8eb2478c5f1ae68159789d7bcf956e8ff180c1f6d43b498e4028dc38959",
+        "sha256_in_prefix": "65d57d0ba921b42e6ce5d98f63a0c7cb3d879da1320498408b4f8ebb5ee29ccd",
+        "size_in_bytes": 489
+      },
+      {
+        "_path": "site-packages/xclim-0.31.0.dist-info/AUTHORS.rst",
+        "path_type": "hardlink",
+        "sha256": "f1c284af7ebd1e56f85024140208ac1d224f933ad5f68968917308a6ac2755d4",
+        "sha256_in_prefix": "f1c284af7ebd1e56f85024140208ac1d224f933ad5f68968917308a6ac2755d4",
+        "size_in_bytes": 1349
+      },
+      {
+        "_path": "site-packages/xclim-0.31.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/xclim-0.31.0.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "sha256_in_prefix": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "size_in_bytes": 11357
+      },
+      {
+        "_path": "site-packages/xclim-0.31.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "3b936038dc0b3c0076665460577066062c7a5d1f76c2e97b8787fc1e501f9ffb",
+        "sha256_in_prefix": "3b936038dc0b3c0076665460577066062c7a5d1f76c2e97b8787fc1e501f9ffb",
+        "size_in_bytes": 70624
+      },
+      {
+        "_path": "site-packages/xclim-0.31.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "17963f12fefe55099fb5766976d3108e562f80c7ce67463b34a12a9e2134c366",
+        "sha256_in_prefix": "17963f12fefe55099fb5766976d3108e562f80c7ce67463b34a12a9e2134c366",
+        "size_in_bytes": 17211
+      },
+      {
+        "_path": "site-packages/xclim-0.31.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/xclim-0.31.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "7b0c04b9e8a8d42d977874ef4f5ee7f1d6542603afc82582b7459534b0a53fda",
+        "sha256_in_prefix": "7b0c04b9e8a8d42d977874ef4f5ee7f1d6542603afc82582b7459534b0a53fda",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "site-packages/xclim-0.31.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "4aa49fc0e2b7938bb09272f3db459ae17d7a0beea2a06f285c51754a2cc42d65",
+        "sha256_in_prefix": "4aa49fc0e2b7938bb09272f3db459ae17d7a0beea2a06f285c51754a2cc42d65",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "site-packages/xclim-0.31.0.dist-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "ff5cc35ad862273748e3be061361abe4e6fc7c442d4371970b6acfe844e322d5",
+        "sha256_in_prefix": "ff5cc35ad862273748e3be061361abe4e6fc7c442d4371970b6acfe844e322d5",
+        "size_in_bytes": 59
+      },
+      {
+        "_path": "site-packages/xclim-0.31.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "5368bc4b243b7893aa3b3b6a17aa206ca4b1dda7330e0a5d16dda521cf10238b",
+        "sha256_in_prefix": "5368bc4b243b7893aa3b3b6a17aa206ca4b1dda7330e0a5d16dda521cf10238b",
+        "size_in_bytes": 6
+      },
+      {
+        "_path": "site-packages/xclim/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "a2cca3e724f06516d59c082b0d1d14d13865b7e72a15b0f3e9044034e0191626",
+        "sha256_in_prefix": "a2cca3e724f06516d59c082b0d1d14d13865b7e72a15b0f3e9044034e0191626",
+        "size_in_bytes": 1164
+      },
+      {
+        "_path": "site-packages/xclim/analog.py",
+        "path_type": "hardlink",
+        "sha256": "c5a674d7470bb5ffd5cffbae8335d6b46cf24b2d7859f18ede8881c47bf93f7b",
+        "sha256_in_prefix": "c5a674d7470bb5ffd5cffbae8335d6b46cf24b2d7859f18ede8881c47bf93f7b",
+        "size_in_bytes": 18898
+      },
+      {
+        "_path": "site-packages/xclim/cli.py",
+        "path_type": "hardlink",
+        "sha256": "81dc3b29ea035828e6db2ff63d38a4a8c4c3bed34532a6d8fe8c4e2817a47299",
+        "sha256_in_prefix": "81dc3b29ea035828e6db2ff63d38a4a8c4c3bed34532a6d8fe8c4e2817a47299",
+        "size_in_bytes": 13037
+      },
+      {
+        "_path": "site-packages/xclim/core/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "efb52b4aec0e5b15af57d0f4c1ef7b4d92b67d350076a64c5c63199b357ef60a",
+        "sha256_in_prefix": "efb52b4aec0e5b15af57d0f4c1ef7b4d92b67d350076a64c5c63199b357ef60a",
+        "size_in_bytes": 41
+      },
+      {
+        "_path": "site-packages/xclim/core/bootstrapping.py",
+        "path_type": "hardlink",
+        "sha256": "32b61145528d8535b484cd9a6605c5f01a2d6fbbc8f69b47d25cc1a4d5bc8963",
+        "sha256_in_prefix": "32b61145528d8535b484cd9a6605c5f01a2d6fbbc8f69b47d25cc1a4d5bc8963",
+        "size_in_bytes": 7905
+      },
+      {
+        "_path": "site-packages/xclim/core/calendar.py",
+        "path_type": "hardlink",
+        "sha256": "9fa792be19d7ce29c15b4e511cc8d1fc3770fc28193ecfacf6601f73e03e1be2",
+        "sha256_in_prefix": "9fa792be19d7ce29c15b4e511cc8d1fc3770fc28193ecfacf6601f73e03e1be2",
+        "size_in_bytes": 41769
+      },
+      {
+        "_path": "site-packages/xclim/core/cfchecks.py",
+        "path_type": "hardlink",
+        "sha256": "5b9fc747681925db7a1bf4cb88c8d8ea876c49aef13a3a2955874e56c286582a",
+        "sha256_in_prefix": "5b9fc747681925db7a1bf4cb88c8d8ea876c49aef13a3a2955874e56c286582a",
+        "size_in_bytes": 2020
+      },
+      {
+        "_path": "site-packages/xclim/core/datachecks.py",
+        "path_type": "hardlink",
+        "sha256": "1ff8718db27f1668b47f3aead25393c669ecdf8aa41eb10b4854265dd512f44e",
+        "sha256_in_prefix": "1ff8718db27f1668b47f3aead25393c669ecdf8aa41eb10b4854265dd512f44e",
+        "size_in_bytes": 2077
+      },
+      {
+        "_path": "site-packages/xclim/core/dataflags.py",
+        "path_type": "hardlink",
+        "sha256": "c85f85ad490169391908ddb5eb6854e3d4f2be634e633d70fe32930e1b7e8ab4",
+        "sha256_in_prefix": "c85f85ad490169391908ddb5eb6854e3d4f2be634e633d70fe32930e1b7e8ab4",
+        "size_in_bytes": 23356
+      },
+      {
+        "_path": "site-packages/xclim/core/formatting.py",
+        "path_type": "hardlink",
+        "sha256": "a3206ea8cff68975b3ec9480d8e9d9c6b9d04b0cc115f3a66b5f127ececf4543",
+        "sha256_in_prefix": "a3206ea8cff68975b3ec9480d8e9d9c6b9d04b0cc115f3a66b5f127ececf4543",
+        "size_in_bytes": 19464
+      },
+      {
+        "_path": "site-packages/xclim/core/indicator.py",
+        "path_type": "hardlink",
+        "sha256": "159c0e318a4ea68a69779ad74d58b324c8968e8730a41bd441722f1cdee4469e",
+        "sha256_in_prefix": "159c0e318a4ea68a69779ad74d58b324c8968e8730a41bd441722f1cdee4469e",
+        "size_in_bytes": 61984
+      },
+      {
+        "_path": "site-packages/xclim/core/locales.py",
+        "path_type": "hardlink",
+        "sha256": "bcb1091f176a08974dd0fd1c10b5ca971376645ee1bed963acb68ce8b445f3a2",
+        "sha256_in_prefix": "bcb1091f176a08974dd0fd1c10b5ca971376645ee1bed963acb68ce8b445f3a2",
+        "size_in_bytes": 11856
+      },
+      {
+        "_path": "site-packages/xclim/core/missing.py",
+        "path_type": "hardlink",
+        "sha256": "ecdcb109304a514d2585778b9522362f2f5831fc3cafd43dfae78616ba6c23d1",
+        "sha256_in_prefix": "ecdcb109304a514d2585778b9522362f2f5831fc3cafd43dfae78616ba6c23d1",
+        "size_in_bytes": 16225
+      },
+      {
+        "_path": "site-packages/xclim/core/options.py",
+        "path_type": "hardlink",
+        "sha256": "e78d79fa6ed447eab56e54d217608c94783f2418cc16ecad977ec252640ac4c3",
+        "sha256_in_prefix": "e78d79fa6ed447eab56e54d217608c94783f2418cc16ecad977ec252640ac4c3",
+        "size_in_bytes": 7207
+      },
+      {
+        "_path": "site-packages/xclim/core/units.py",
+        "path_type": "hardlink",
+        "sha256": "bf355829e499e71c2cc7911f4c7fdc91a12dfd2f41b7013a24a459af97546554",
+        "sha256_in_prefix": "bf355829e499e71c2cc7911f4c7fdc91a12dfd2f41b7013a24a459af97546554",
+        "size_in_bytes": 23090
+      },
+      {
+        "_path": "site-packages/xclim/core/utils.py",
+        "path_type": "hardlink",
+        "sha256": "fdaa18c3b674ec9cec053e1d0507b3b449bedd2b71e56718d9d5e30ce787f7df",
+        "sha256_in_prefix": "fdaa18c3b674ec9cec053e1d0507b3b449bedd2b71e56718d9d5e30ce787f7df",
+        "size_in_bytes": 22839
+      },
+      {
+        "_path": "site-packages/xclim/data/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/xclim/data/anuclim.yml",
+        "path_type": "hardlink",
+        "sha256": "494cd0fcfc6502b4d35de2cf11873d5d5b920919595c2263e53485804aa9c01e",
+        "sha256_in_prefix": "494cd0fcfc6502b4d35de2cf11873d5d5b920919595c2263e53485804aa9c01e",
+        "size_in_bytes": 5521
+      },
+      {
+        "_path": "site-packages/xclim/data/cf.yml",
+        "path_type": "hardlink",
+        "sha256": "32c80ee22d544f5f8534fbfdf4812fd1e63d6eba54d58d14a8c38189acfd160a",
+        "sha256_in_prefix": "32c80ee22d544f5f8534fbfdf4812fd1e63d6eba54d58d14a8c38189acfd160a",
+        "size_in_bytes": 28527
+      },
+      {
+        "_path": "site-packages/xclim/data/fr.json",
+        "path_type": "hardlink",
+        "sha256": "4f95facbf934a430c26e0c397fca513b74ea803db612136ec7a0e44472fde173",
+        "sha256_in_prefix": "4f95facbf934a430c26e0c397fca513b74ea803db612136ec7a0e44472fde173",
+        "size_in_bytes": 63845
+      },
+      {
+        "_path": "site-packages/xclim/data/icclim.yml",
+        "path_type": "hardlink",
+        "sha256": "393d1ce7b310c5ac1531c6a43b1d8d84c89ae8e33129fa63637ecbf1c537fe89",
+        "sha256_in_prefix": "393d1ce7b310c5ac1531c6a43b1d8d84c89ae8e33129fa63637ecbf1c537fe89",
+        "size_in_bytes": 8503
+      },
+      {
+        "_path": "site-packages/xclim/data/schema.yml",
+        "path_type": "hardlink",
+        "sha256": "be3db19a3e8203ac8026140a1d89a049a9e8210df23a189e8dc5c55ad97c0add",
+        "sha256_in_prefix": "be3db19a3e8203ac8026140a1d89a049a9e8210df23a189e8dc5c55ad97c0add",
+        "size_in_bytes": 1086
+      },
+      {
+        "_path": "site-packages/xclim/data/variables.yml",
+        "path_type": "hardlink",
+        "sha256": "86ef225d1c12db845d1d8699d66bf14cf4f218230d689a51274b958b04c9390e",
+        "sha256_in_prefix": "86ef225d1c12db845d1d8699d66bf14cf4f218230d689a51274b958b04c9390e",
+        "size_in_bytes": 5770
+      },
+      {
+        "_path": "site-packages/xclim/ensembles/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "f6e269e1aa2a2a56655ba055a375ddee6d8fa62c80d1b4618316fcba9a2859d7",
+        "sha256_in_prefix": "f6e269e1aa2a2a56655ba055a375ddee6d8fa62c80d1b4618316fcba9a2859d7",
+        "size_in_bytes": 508
+      },
+      {
+        "_path": "site-packages/xclim/ensembles/_base.py",
+        "path_type": "hardlink",
+        "sha256": "54d4a36e9ad270eda7ec9f2e4698c1da689047202e0d09355ab18b0aea2ba795",
+        "sha256_in_prefix": "54d4a36e9ad270eda7ec9f2e4698c1da689047202e0d09355ab18b0aea2ba795",
+        "size_in_bytes": 12612
+      },
+      {
+        "_path": "site-packages/xclim/ensembles/_reduce.py",
+        "path_type": "hardlink",
+        "sha256": "6eab78e92f0a38f763c2eb6fbd4711973dccb36da578da7303ed4784802d9e19",
+        "sha256_in_prefix": "6eab78e92f0a38f763c2eb6fbd4711973dccb36da578da7303ed4784802d9e19",
+        "size_in_bytes": 18816
+      },
+      {
+        "_path": "site-packages/xclim/ensembles/_robustness.py",
+        "path_type": "hardlink",
+        "sha256": "4cd7b462d35202e2048a1c9d34c5ccbd49ce92bfbfedcf3155a4301187759e75",
+        "sha256_in_prefix": "4cd7b462d35202e2048a1c9d34c5ccbd49ce92bfbfedcf3155a4301187759e75",
+        "size_in_bytes": 13340
+      },
+      {
+        "_path": "site-packages/xclim/indicators/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "501fc390cee7fd18938a4f7319bcf4596e7259317d3a88ba8367c45b407e939e",
+        "sha256_in_prefix": "501fc390cee7fd18938a4f7319bcf4596e7259317d3a88ba8367c45b407e939e",
+        "size_in_bytes": 928
+      },
+      {
+        "_path": "site-packages/xclim/indicators/atmos/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "6598f3c23c5b53f1501a016aefa9973b58b822584b602928e757cceb94813383",
+        "sha256_in_prefix": "6598f3c23c5b53f1501a016aefa9973b58b822584b602928e757cceb94813383",
+        "size_in_bytes": 578
+      },
+      {
+        "_path": "site-packages/xclim/indicators/atmos/_conversion.py",
+        "path_type": "hardlink",
+        "sha256": "2cc9af6598d206b1d3ed454b6e3345e783d1ba8a69306c1152a98f17bb6244d2",
+        "sha256_in_prefix": "2cc9af6598d206b1d3ed454b6e3345e783d1ba8a69306c1152a98f17bb6244d2",
+        "size_in_bytes": 7472
+      },
+      {
+        "_path": "site-packages/xclim/indicators/atmos/_precip.py",
+        "path_type": "hardlink",
+        "sha256": "458169e69e7ff72b29b4b8e954b377fc75bbf49f86999d82f659b40c93babcd8",
+        "sha256_in_prefix": "458169e69e7ff72b29b4b8e954b377fc75bbf49f86999d82f659b40c93babcd8",
+        "size_in_bytes": 11968
+      },
+      {
+        "_path": "site-packages/xclim/indicators/atmos/_preciptemp.py",
+        "path_type": "hardlink",
+        "sha256": "c0bc088c59ccfd3d367924bcd596f3d7f0767fa039694d998fa19ab1ba84ddc6",
+        "sha256_in_prefix": "c0bc088c59ccfd3d367924bcd596f3d7f0767fa039694d998fa19ab1ba84ddc6",
+        "size_in_bytes": 1740
+      },
+      {
+        "_path": "site-packages/xclim/indicators/atmos/_temperature.py",
+        "path_type": "hardlink",
+        "sha256": "12d751fe224366c8c7597f9923a8c60c6c1373325c19a1a8bc9c95bf6529c631",
+        "sha256_in_prefix": "12d751fe224366c8c7597f9923a8c60c6c1373325c19a1a8bc9c95bf6529c631",
+        "size_in_bytes": 35387
+      },
+      {
+        "_path": "site-packages/xclim/indicators/atmos/_wind.py",
+        "path_type": "hardlink",
+        "sha256": "82d0e02bcc9935e4e3e1045d90d5b2eb69aebc36311d338a9f9b7b1ab6ed93cd",
+        "sha256_in_prefix": "82d0e02bcc9935e4e3e1045d90d5b2eb69aebc36311d338a9f9b7b1ab6ed93cd",
+        "size_in_bytes": 930
+      },
+      {
+        "_path": "site-packages/xclim/indicators/land/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "72e0d305d9d46f7bd2cb07a946c9a37b712265a0c825694b1549a57feaffe0ca",
+        "sha256_in_prefix": "72e0d305d9d46f7bd2cb07a946c9a37b712265a0c825694b1549a57feaffe0ca",
+        "size_in_bytes": 106
+      },
+      {
+        "_path": "site-packages/xclim/indicators/land/_snow.py",
+        "path_type": "hardlink",
+        "sha256": "443c6c7850f237ce184e6a3786dc94b1a35aa90d8eebb421c9eb8ca716f1ef89",
+        "sha256_in_prefix": "443c6c7850f237ce184e6a3786dc94b1a35aa90d8eebb421c9eb8ca716f1ef89",
+        "size_in_bytes": 3051
+      },
+      {
+        "_path": "site-packages/xclim/indicators/land/_streamflow.py",
+        "path_type": "hardlink",
+        "sha256": "e8010f90e78f332cebbc3a275cf34b57d44cd9dab914c24b832893abcfb53d0d",
+        "sha256_in_prefix": "e8010f90e78f332cebbc3a275cf34b57d44cd9dab914c24b832893abcfb53d0d",
+        "size_in_bytes": 4012
+      },
+      {
+        "_path": "site-packages/xclim/indicators/seaIce/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "f697aa2b418fadf6e4f716174186a5818ec1c1835d520a8da5403884f7fdaaec",
+        "sha256_in_prefix": "f697aa2b418fadf6e4f716174186a5818ec1c1835d520a8da5403884f7fdaaec",
+        "size_in_bytes": 95
+      },
+      {
+        "_path": "site-packages/xclim/indicators/seaIce/_seaice.py",
+        "path_type": "hardlink",
+        "sha256": "19aff8101c5e04f9e3ef79b7eb15550a30ce830a4e8d1a89773dbab60cb6ce40",
+        "sha256_in_prefix": "19aff8101c5e04f9e3ef79b7eb15550a30ce830a4e8d1a89773dbab60cb6ce40",
+        "size_in_bytes": 962
+      },
+      {
+        "_path": "site-packages/xclim/indices/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e8a435706ef541406f9db804e58edd5536cd898847dd8a3c19b3b237399034d6",
+        "sha256_in_prefix": "e8a435706ef541406f9db804e58edd5536cd898847dd8a3c19b3b237399034d6",
+        "size_in_bytes": 4092
+      },
+      {
+        "_path": "site-packages/xclim/indices/_agro.py",
+        "path_type": "hardlink",
+        "sha256": "24591593edc5e8fbb21c437201eb4267aea9701c21ce6ba4df8a1af7c19ddeff",
+        "sha256_in_prefix": "24591593edc5e8fbb21c437201eb4267aea9701c21ce6ba4df8a1af7c19ddeff",
+        "size_in_bytes": 29680
+      },
+      {
+        "_path": "site-packages/xclim/indices/_anuclim.py",
+        "path_type": "hardlink",
+        "sha256": "64c661ab9c47cc2eb4277e31c27332a74362346b55191d396a68367998bf6fb4",
+        "sha256_in_prefix": "64c661ab9c47cc2eb4277e31c27332a74362346b55191d396a68367998bf6fb4",
+        "size_in_bytes": 18899
+      },
+      {
+        "_path": "site-packages/xclim/indices/_conversion.py",
+        "path_type": "hardlink",
+        "sha256": "fd3bb5168eba19ff4eac7c44401a4bff2a18b726914713fa0741210ae43575a8",
+        "sha256_in_prefix": "fd3bb5168eba19ff4eac7c44401a4bff2a18b726914713fa0741210ae43575a8",
+        "size_in_bytes": 37430
+      },
+      {
+        "_path": "site-packages/xclim/indices/_hydrology.py",
+        "path_type": "hardlink",
+        "sha256": "213b72a7eabedf01ba204b47c31f3b33ae79c3a667d83eacf15fa63db7b0fcd7",
+        "sha256_in_prefix": "213b72a7eabedf01ba204b47c31f3b33ae79c3a667d83eacf15fa63db7b0fcd7",
+        "size_in_bytes": 5695
+      },
+      {
+        "_path": "site-packages/xclim/indices/_multivariate.py",
+        "path_type": "hardlink",
+        "sha256": "fd341ad6bf6b071878aa2eec3b1ab8d5c49219b79083a10c2b0087e97017ce1e",
+        "sha256_in_prefix": "fd341ad6bf6b071878aa2eec3b1ab8d5c49219b79083a10c2b0087e97017ce1e",
+        "size_in_bytes": 58239
+      },
+      {
+        "_path": "site-packages/xclim/indices/_simple.py",
+        "path_type": "hardlink",
+        "sha256": "15f60450ae292a2581b68e7000e4302064a89c210804b6a4a42fa5a1396ea127",
+        "sha256_in_prefix": "15f60450ae292a2581b68e7000e4302064a89c210804b6a4a42fa5a1396ea127",
+        "size_in_bytes": 13924
+      },
+      {
+        "_path": "site-packages/xclim/indices/_threshold.py",
+        "path_type": "hardlink",
+        "sha256": "944744e16c3226527ad1527e389746b10f9057dae51a0448dd38e27564ac1ec5",
+        "sha256_in_prefix": "944744e16c3226527ad1527e389746b10f9057dae51a0448dd38e27564ac1ec5",
+        "size_in_bytes": 70130
+      },
+      {
+        "_path": "site-packages/xclim/indices/fwi.py",
+        "path_type": "hardlink",
+        "sha256": "8e8c46ebafc165b70060cf01af02f4fbd4303e082a79961ca42f496fe3984713",
+        "sha256_in_prefix": "8e8c46ebafc165b70060cf01af02f4fbd4303e082a79961ca42f496fe3984713",
+        "size_in_bytes": 59656
+      },
+      {
+        "_path": "site-packages/xclim/indices/generic.py",
+        "path_type": "hardlink",
+        "sha256": "5745efc107dee872e2352e8443bff7b385f51d1208c645d130937b39a9cdf92c",
+        "sha256_in_prefix": "5745efc107dee872e2352e8443bff7b385f51d1208c645d130937b39a9cdf92c",
+        "size_in_bytes": 24809
+      },
+      {
+        "_path": "site-packages/xclim/indices/run_length.py",
+        "path_type": "hardlink",
+        "sha256": "20e4991256c3fccde1b0e5f7a0355a178ba9ecc26743a933c0af5df1f7b1c8b0",
+        "sha256_in_prefix": "20e4991256c3fccde1b0e5f7a0355a178ba9ecc26743a933c0af5df1f7b1c8b0",
+        "size_in_bytes": 40812
+      },
+      {
+        "_path": "site-packages/xclim/indices/stats.py",
+        "path_type": "hardlink",
+        "sha256": "6536106175175759764e237b1bfc580fa14bce8aec3fae78efd348ffa56ac6e5",
+        "sha256_in_prefix": "6536106175175759764e237b1bfc580fa14bce8aec3fae78efd348ffa56ac6e5",
+        "size_in_bytes": 15125
+      },
+      {
+        "_path": "site-packages/xclim/sdba/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "36fe3d65728a115940ae9ed6216abf070acf943de97ae9bbc7853a11718f60f8",
+        "sha256_in_prefix": "36fe3d65728a115940ae9ed6216abf070acf943de97ae9bbc7853a11718f60f8",
+        "size_in_bytes": 5170
+      },
+      {
+        "_path": "site-packages/xclim/sdba/_adjustment.py",
+        "path_type": "hardlink",
+        "sha256": "e8741271d7922bfb7377f836faaf729b4d1f59bd933fc2d0dbb577c39d7fcebc",
+        "sha256_in_prefix": "e8741271d7922bfb7377f836faaf729b4d1f59bd933fc2d0dbb577c39d7fcebc",
+        "size_in_bytes": 9170
+      },
+      {
+        "_path": "site-packages/xclim/sdba/_processing.py",
+        "path_type": "hardlink",
+        "sha256": "8c1dae7cd90b9d92d6c3faf2524f354939907c6ca8e851068866d03462fb7fb8",
+        "sha256_in_prefix": "8c1dae7cd90b9d92d6c3faf2524f354939907c6ca8e851068866d03462fb7fb8",
+        "size_in_bytes": 5791
+      },
+      {
+        "_path": "site-packages/xclim/sdba/adjustment.py",
+        "path_type": "hardlink",
+        "sha256": "9ae07efdf57e222d7b2ff5b1efcff44d6ab8156626fff93fd9ec59711da4e2f8",
+        "sha256_in_prefix": "9ae07efdf57e222d7b2ff5b1efcff44d6ab8156626fff93fd9ec59711da4e2f8",
+        "size_in_bytes": 47307
+      },
+      {
+        "_path": "site-packages/xclim/sdba/base.py",
+        "path_type": "hardlink",
+        "sha256": "6581ed5d80fc411a816f176cdb8e129422c0b3d95118d3104dafb2c7bee580bb",
+        "sha256_in_prefix": "6581ed5d80fc411a816f176cdb8e129422c0b3d95118d3104dafb2c7bee580bb",
+        "size_in_bytes": 28553
+      },
+      {
+        "_path": "site-packages/xclim/sdba/detrending.py",
+        "path_type": "hardlink",
+        "sha256": "180639e9c1d3a5cfc648c14434ec81f0328d5cbe2c0b710d603e56aa1c8d6350",
+        "sha256_in_prefix": "180639e9c1d3a5cfc648c14434ec81f0328d5cbe2c0b710d603e56aa1c8d6350",
+        "size_in_bytes": 10910
+      },
+      {
+        "_path": "site-packages/xclim/sdba/loess.py",
+        "path_type": "hardlink",
+        "sha256": "ca3c6f99759325c6621adeff299de3a3f0048088f65482190209d601cd2ca4e0",
+        "sha256_in_prefix": "ca3c6f99759325c6621adeff299de3a3f0048088f65482190209d601cd2ca4e0",
+        "size_in_bytes": 8623
+      },
+      {
+        "_path": "site-packages/xclim/sdba/nbutils.py",
+        "path_type": "hardlink",
+        "sha256": "f0f7f9f0f6450b4ffbfb973f1c1f739b295c1fdd31a275d36d25c30cf6e1a819",
+        "sha256_in_prefix": "f0f7f9f0f6450b4ffbfb973f1c1f739b295c1fdd31a275d36d25c30cf6e1a819",
+        "size_in_bytes": 5230
+      },
+      {
+        "_path": "site-packages/xclim/sdba/processing.py",
+        "path_type": "hardlink",
+        "sha256": "94e58cdca9f60fc0bef0545fde01d9c4b7645a6d1de5342b0792e05db66ad047",
+        "sha256_in_prefix": "94e58cdca9f60fc0bef0545fde01d9c4b7645a6d1de5342b0792e05db66ad047",
+        "size_in_bytes": 20565
+      },
+      {
+        "_path": "site-packages/xclim/sdba/utils.py",
+        "path_type": "hardlink",
+        "sha256": "d793119fa7ab01a2d2657aa9724e7a427eb1d9f02160bb141dcaa4fb7d5c201e",
+        "sha256_in_prefix": "d793119fa7ab01a2d2657aa9724e7a427eb1d9f02160bb141dcaa4fb7d5c201e",
+        "size_in_bytes": 24989
+      },
+      {
+        "_path": "site-packages/xclim/subset.py",
+        "path_type": "hardlink",
+        "sha256": "457ae984bea6f01840ad4b6a80c78484115f2e38e4d23bf7984eb642040890ce",
+        "sha256_in_prefix": "457ae984bea6f01840ad4b6a80c78484115f2e38e4d23bf7984eb642040890ce",
+        "size_in_bytes": 830
+      },
+      {
+        "_path": "site-packages/xclim/testing/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "7e754e6074a1a881c022d49279e32bbeb90b429cdcbe2240fe0180a19ebc0e32",
+        "sha256_in_prefix": "7e754e6074a1a881c022d49279e32bbeb90b429cdcbe2240fe0180a19ebc0e32",
+        "size_in_bytes": 55
+      },
+      {
+        "_path": "site-packages/xclim/testing/_utils.py",
+        "path_type": "hardlink",
+        "sha256": "abd51c255f9dca58665b36574dc8ce54c7a041e5c0081e67b4d3ac7882c4f9f6",
+        "sha256_in_prefix": "abd51c255f9dca58665b36574dc8ce54c7a041e5c0081e67b4d3ac7882c4f9f6",
+        "size_in_bytes": 12715
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "7b404c67ba294243f10e6fc74b66643b527ccc62f3d86266db42ab627f6b7718",
+        "sha256_in_prefix": "7b404c67ba294243f10e6fc74b66643b527ccc62f3d86266db42ab627f6b7718",
+        "size_in_bytes": 46
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/conftest.py",
+        "path_type": "hardlink",
+        "sha256": "254327480d87544d456ba67181c28369a22f20bd10da4632a41c95c5de4f381a",
+        "sha256_in_prefix": "254327480d87544d456ba67181c28369a22f20bd10da4632a41c95c5de4f381a",
+        "size_in_bytes": 14185
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/data.py",
+        "path_type": "hardlink",
+        "sha256": "5912538897d477d4e4248dd29abf4f7e5fc460be3836f70859b26a1333e15dda",
+        "sha256_in_prefix": "5912538897d477d4e4248dd29abf4f7e5fc460be3836f70859b26a1333e15dda",
+        "size_in_bytes": 80
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/data/callendar_1938.txt",
+        "path_type": "hardlink",
+        "sha256": "c24e422e13164f41dd6663d144beeab8e42c64c9abc7dd48b625f6a328622cd3",
+        "sha256_in_prefix": "c24e422e13164f41dd6663d144beeab8e42c64c9abc7dd48b625f6a328622cd3",
+        "size_in_bytes": 752
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/data/eastern_canada.json",
+        "path_type": "hardlink",
+        "sha256": "7e77b9ca3d30909c0801e2d788b2bac2e0c50e8bedea777b05306749f21a7971",
+        "sha256_in_prefix": "7e77b9ca3d30909c0801e2d788b2bac2e0c50e8bedea777b05306749f21a7971",
+        "size_in_bytes": 746
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/data/meridian.json",
+        "path_type": "hardlink",
+        "sha256": "fb39d9c29f04a972b29499281bd0d66dacc63122bb7d67717885e7f46c99a424",
+        "sha256_in_prefix": "fb39d9c29f04a972b29499281bd0d66dacc63122bb7d67717885e7f46c99a424",
+        "size_in_bytes": 876
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/data/meridian_multi.json",
+        "path_type": "hardlink",
+        "sha256": "8a901eb871d9699da119a8fbd99d8cdc823648eb2b7a8e29510a6ba276b755a5",
+        "sha256_in_prefix": "8a901eb871d9699da119a8fbd99d8cdc823648eb2b7a8e29510a6ba276b755a5",
+        "size_in_bytes": 2236
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/data/multi_regions.json",
+        "path_type": "hardlink",
+        "sha256": "07059b49220249ae7133d0ebd362a38f5eea8bf2b3a2954751aff1dd4aa130ef",
+        "sha256_in_prefix": "07059b49220249ae7133d0ebd362a38f5eea8bf2b3a2954751aff1dd4aa130ef",
+        "size_in_bytes": 3334
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/data/poslons.json",
+        "path_type": "hardlink",
+        "sha256": "1333b19276582ddf226a0f0bd0c0d7c51218454c93e02c56c2e900b981296afc",
+        "sha256_in_prefix": "1333b19276582ddf226a0f0bd0c0d7c51218454c93e02c56c2e900b981296afc",
+        "size_in_bytes": 949
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/data/small_geojson.json",
+        "path_type": "hardlink",
+        "sha256": "85e7e9e7c0d9ec179b392d80572cf833b7472f8f65e8c49e6670dbca90c4cb88",
+        "sha256_in_prefix": "85e7e9e7c0d9ec179b392d80572cf833b7472f8f65e8c49e6670dbca90c4cb88",
+        "size_in_bytes": 802
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/data/southern_qc_geojson.json",
+        "path_type": "hardlink",
+        "sha256": "6a3259fa1aa6a0b4fbeee8b7faedf08bfce1d56e3cbb047767a424b62fd05738",
+        "sha256_in_prefix": "6a3259fa1aa6a0b4fbeee8b7faedf08bfce1d56e3cbb047767a424b62fd05738",
+        "size_in_bytes": 1059
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_analog.py",
+        "path_type": "hardlink",
+        "sha256": "e58b5833054ffed9711cb741860f28700fb4b2e65abb35b8744cca7937ff394b",
+        "sha256_in_prefix": "e58b5833054ffed9711cb741860f28700fb4b2e65abb35b8744cca7937ff394b",
+        "size_in_bytes": 9597
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_atmos.py",
+        "path_type": "hardlink",
+        "sha256": "496714258a09d79ac1724c180d95852ccdf6bf7a73b55890f0913969e7e768c2",
+        "sha256_in_prefix": "496714258a09d79ac1724c180d95852ccdf6bf7a73b55890f0913969e7e768c2",
+        "size_in_bytes": 9845
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_bootstrapping.py",
+        "path_type": "hardlink",
+        "sha256": "8f64827d89bd45f6a5438142e00aa07ebd6f5a4450cb25a9213d93d26e6361be",
+        "sha256_in_prefix": "8f64827d89bd45f6a5438142e00aa07ebd6f5a4450cb25a9213d93d26e6361be",
+        "size_in_bytes": 6795
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_calendar.py",
+        "path_type": "hardlink",
+        "sha256": "477d59d8e457080fc18c92c7ca62678252de49f633d01d6abbc9703a09100cb6",
+        "sha256_in_prefix": "477d59d8e457080fc18c92c7ca62678252de49f633d01d6abbc9703a09100cb6",
+        "size_in_bytes": 15400
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_checks.py",
+        "path_type": "hardlink",
+        "sha256": "f541c1b832ad123ad5f5fe0f5caff6dcf7761f2c13016fe7614788f1a1009be9",
+        "sha256_in_prefix": "f541c1b832ad123ad5f5fe0f5caff6dcf7761f2c13016fe7614788f1a1009be9",
+        "size_in_bytes": 5226
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_cli.py",
+        "path_type": "hardlink",
+        "sha256": "4e2fa23126db3511fc7b55d2407027a73bca4cf87117fef4eb2b06230b2ca4e8",
+        "sha256_in_prefix": "4e2fa23126db3511fc7b55d2407027a73bca4cf87117fef4eb2b06230b2ca4e8",
+        "size_in_bytes": 8259
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_ensembles.py",
+        "path_type": "hardlink",
+        "sha256": "6420b230c6ce163e6fdeca5203a4bfa39c316f1afad62566cd5cc0cec3df7044",
+        "sha256_in_prefix": "6420b230c6ce163e6fdeca5203a4bfa39c316f1afad62566cd5cc0cec3df7044",
+        "size_in_bytes": 20915
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_flags.py",
+        "path_type": "hardlink",
+        "sha256": "73aca9e2155245bd19c0ad8a814816a6ef3a91d314395ab0ed60630adb2dc29d",
+        "sha256_in_prefix": "73aca9e2155245bd19c0ad8a814816a6ef3a91d314395ab0ed60630adb2dc29d",
+        "size_in_bytes": 5811
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_formatting.py",
+        "path_type": "hardlink",
+        "sha256": "880f76f65efc2023f463f5ee172f2e29f1d0095934f3901a3f996132d6c7e364",
+        "sha256_in_prefix": "880f76f65efc2023f463f5ee172f2e29f1d0095934f3901a3f996132d6c7e364",
+        "size_in_bytes": 1203
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_fwi.py",
+        "path_type": "hardlink",
+        "sha256": "3eba22acc023ffd0905bcac2673315acaf6f6f3ffd6955be958eb4c97a3350cb",
+        "sha256_in_prefix": "3eba22acc023ffd0905bcac2673315acaf6f6f3ffd6955be958eb4c97a3350cb",
+        "size_in_bytes": 14114
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_generic.py",
+        "path_type": "hardlink",
+        "sha256": "385fff7d1d01ad4b0b97fe5f77897c5a7c65730287879f9a4b7c1f0d1171a194",
+        "sha256_in_prefix": "385fff7d1d01ad4b0b97fe5f77897c5a7c65730287879f9a4b7c1f0d1171a194",
+        "size_in_bytes": 10785
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_hydrology.py",
+        "path_type": "hardlink",
+        "sha256": "a210d7bc1b941dfa6d63385bd1d896841484ed77a5166d801f7c3438acec556c",
+        "sha256_in_prefix": "a210d7bc1b941dfa6d63385bd1d896841484ed77a5166d801f7c3438acec556c",
+        "size_in_bytes": 1333
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_indicators.py",
+        "path_type": "hardlink",
+        "sha256": "08260f0067b0b43fa76ca35f13ddf0f97040f326012744ff1667b478ff0ef11d",
+        "sha256_in_prefix": "08260f0067b0b43fa76ca35f13ddf0f97040f326012744ff1667b478ff0ef11d",
+        "size_in_bytes": 20611
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_indices.py",
+        "path_type": "hardlink",
+        "sha256": "5066e1d856c2499399a2a458bed3a347d9f0d25dd3b10c593d76d3149ce2e80d",
+        "sha256_in_prefix": "5066e1d856c2499399a2a458bed3a347d9f0d25dd3b10c593d76d3149ce2e80d",
+        "size_in_bytes": 85966
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_land.py",
+        "path_type": "hardlink",
+        "sha256": "77d3945309b680ce1ef4e6da75f37484b1e198e8979fac002f35e33e9acf0583",
+        "sha256_in_prefix": "77d3945309b680ce1ef4e6da75f37484b1e198e8979fac002f35e33e9acf0583",
+        "size_in_bytes": 3975
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_locales.py",
+        "path_type": "hardlink",
+        "sha256": "e8e21a08f3fa42111a0d4cc360775e29ef43913225aa8f23f99881adbf00824c",
+        "sha256_in_prefix": "e8e21a08f3fa42111a0d4cc360775e29ef43913225aa8f23f99881adbf00824c",
+        "size_in_bytes": 5690
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_missing.py",
+        "path_type": "hardlink",
+        "sha256": "970ac7412b10d3325c6fb657643fca8face5f9a5d2274341049c6e25d90a7995",
+        "sha256_in_prefix": "970ac7412b10d3325c6fb657643fca8face5f9a5d2274341049c6e25d90a7995",
+        "size_in_bytes": 9671
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_modules.py",
+        "path_type": "hardlink",
+        "sha256": "0b87e8270b8ff708c6b39614c097fddad4ea6ba54b1088dbd0a3c06e32e356f8",
+        "sha256_in_prefix": "0b87e8270b8ff708c6b39614c097fddad4ea6ba54b1088dbd0a3c06e32e356f8",
+        "size_in_bytes": 3918
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_options.py",
+        "path_type": "hardlink",
+        "sha256": "d4279092c1bdb1346a9efb540ebfa924c063902f4f796ed249591cb2fdce5e03",
+        "sha256_in_prefix": "d4279092c1bdb1346a9efb540ebfa924c063902f4f796ed249591cb2fdce5e03",
+        "size_in_bytes": 2432
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_precip.py",
+        "path_type": "hardlink",
+        "sha256": "77fbc0c9ecf9f8b660b8b47b1c1f28216aa97f6849b4438b804a96c0d7844ace",
+        "sha256_in_prefix": "77fbc0c9ecf9f8b660b8b47b1c1f28216aa97f6849b4438b804a96c0d7844ace",
+        "size_in_bytes": 16726
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_preciptemp.py",
+        "path_type": "hardlink",
+        "sha256": "b5de6612f90abd63490ba536d5e3650a003326a69f7c187f2c44c627ecc7a0cd",
+        "sha256_in_prefix": "b5de6612f90abd63490ba536d5e3650a003326a69f7c187f2c44c627ecc7a0cd",
+        "size_in_bytes": 2518
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_run_length.py",
+        "path_type": "hardlink",
+        "sha256": "49bc90a2a131cb09bc8c09dc7784a5d6c47540cf5f304e5c49818848b39e4214",
+        "sha256_in_prefix": "49bc90a2a131cb09bc8c09dc7784a5d6c47540cf5f304e5c49818848b39e4214",
+        "size_in_bytes": 19334
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_sdba/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "b33be55348900c3802e49bd55adeab15047d31faf037d82cfd32f0c0cdb216fe",
+        "sha256_in_prefix": "b33be55348900c3802e49bd55adeab15047d31faf037d82cfd32f0c0cdb216fe",
+        "size_in_bytes": 48
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_sdba/conftest.py",
+        "path_type": "hardlink",
+        "sha256": "3e7b07494c63b6e45c0888a7e8c9f6e4e77a00e7ad9269d1840a16963e6bdf84",
+        "sha256_in_prefix": "3e7b07494c63b6e45c0888a7e8c9f6e4e77a00e7ad9269d1840a16963e6bdf84",
+        "size_in_bytes": 3594
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_sdba/diagnostics.py",
+        "path_type": "hardlink",
+        "sha256": "c020737f9b569507ca11da661a816ac3bbcce156bdac2dd22194eca44385a61f",
+        "sha256_in_prefix": "c020737f9b569507ca11da661a816ac3bbcce156bdac2dd22194eca44385a61f",
+        "size_in_bytes": 5043
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_sdba/test_adjustment.py",
+        "path_type": "hardlink",
+        "sha256": "f1258c84705540b699cdcb423b7f6a6ac6a140033d853dd27677b7bb24c4e26c",
+        "sha256_in_prefix": "f1258c84705540b699cdcb423b7f6a6ac6a140033d853dd27677b7bb24c4e26c",
+        "size_in_bytes": 23778
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_sdba/test_base.py",
+        "path_type": "hardlink",
+        "sha256": "d62c109c2a5ab85d9886750bbecbafc049fb76da531377cef6c3ac1fdce03cdf",
+        "sha256_in_prefix": "d62c109c2a5ab85d9886750bbecbafc049fb76da531377cef6c3ac1fdce03cdf",
+        "size_in_bytes": 6426
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_sdba/test_detrending.py",
+        "path_type": "hardlink",
+        "sha256": "dc05ea0e16fea4b1aa345632470c01fcebe18e31da6b5c0d3790c4d9da805775",
+        "sha256_in_prefix": "dc05ea0e16fea4b1aa345632470c01fcebe18e31da6b5c0d3790c4d9da805775",
+        "size_in_bytes": 2958
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_sdba/test_loess.py",
+        "path_type": "hardlink",
+        "sha256": "51a0e6c37f723c50700a7bf691ddd4852cb652de4a25f716bf87cb867c8fcd97",
+        "sha256_in_prefix": "51a0e6c37f723c50700a7bf691ddd4852cb652de4a25f716bf87cb867c8fcd97",
+        "size_in_bytes": 2023
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_sdba/test_processing.py",
+        "path_type": "hardlink",
+        "sha256": "df283b6c636cdd8712d37934bffab5648ba836032cbd92d89d35d2374452324b",
+        "sha256_in_prefix": "df283b6c636cdd8712d37934bffab5648ba836032cbd92d89d35d2374452324b",
+        "size_in_bytes": 5174
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_sdba/test_utils.py",
+        "path_type": "hardlink",
+        "sha256": "32a07c330ddf4cac7395f5fb07c57957fb710f8978c3e76d3a4781b5b4a636e0",
+        "sha256_in_prefix": "32a07c330ddf4cac7395f5fb07c57957fb710f8978c3e76d3a4781b5b4a636e0",
+        "size_in_bytes": 3655
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_sdba/utils.py",
+        "path_type": "hardlink",
+        "sha256": "3b1ca1fb3ee5f39b3ddd8750da920acf11c4774636e1d892d10b8e5cbd91a4ce",
+        "sha256_in_prefix": "3b1ca1fb3ee5f39b3ddd8750da920acf11c4774636e1d892d10b8e5cbd91a4ce",
+        "size_in_bytes": 1858
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_seaice.py",
+        "path_type": "hardlink",
+        "sha256": "755a86bcf1a3754b52a15ddce578b383f7632bb517e0b1d2a7242a06ae8e6c6e",
+        "sha256_in_prefix": "755a86bcf1a3754b52a15ddce578b383f7632bb517e0b1d2a7242a06ae8e6c6e",
+        "size_in_bytes": 2755
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_snow.py",
+        "path_type": "hardlink",
+        "sha256": "cc7b8822aa5ceeec70c77418ca4fdab94161151c8953a98a0df4cc9edb9956a5",
+        "sha256_in_prefix": "cc7b8822aa5ceeec70c77418ca4fdab94161151c8953a98a0df4cc9edb9956a5",
+        "size_in_bytes": 1891
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_stats.py",
+        "path_type": "hardlink",
+        "sha256": "ad3db8433102f197810148c4ca255a4dffd7f64a5944bd3ed7a1e2a6cc407b0e",
+        "sha256_in_prefix": "ad3db8433102f197810148c4ca255a4dffd7f64a5944bd3ed7a1e2a6cc407b0e",
+        "size_in_bytes": 7767
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_subset.py",
+        "path_type": "hardlink",
+        "sha256": "0dceabcae2438bc0a487398d46dfe4fae34785f0da1e73a794ac47fe51111f47",
+        "sha256_in_prefix": "0dceabcae2438bc0a487398d46dfe4fae34785f0da1e73a794ac47fe51111f47",
+        "size_in_bytes": 34110
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_temperature.py",
+        "path_type": "hardlink",
+        "sha256": "5c73ed5c7efad2f619e7f988f4eb0f4e2ca0dc525c810252064809d4c895473a",
+        "sha256_in_prefix": "5c73ed5c7efad2f619e7f988f4eb0f4e2ca0dc525c810252064809d4c895473a",
+        "size_in_bytes": 44806
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_testing_utils.py",
+        "path_type": "hardlink",
+        "sha256": "576643f362ca4901b0ee743ccb946eff9ca52c5922b8357d4290e698e0705665",
+        "sha256_in_prefix": "576643f362ca4901b0ee743ccb946eff9ca52c5922b8357d4290e698e0705665",
+        "size_in_bytes": 2724
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_units.py",
+        "path_type": "hardlink",
+        "sha256": "0da012e07e29fc0694d99004461991b4f9aa4614a7d250657fad8144ed162ae0",
+        "sha256_in_prefix": "0da012e07e29fc0694d99004461991b4f9aa4614a7d250657fad8144ed162ae0",
+        "size_in_bytes": 6291
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_utils.py",
+        "path_type": "hardlink",
+        "sha256": "d177cba70de476847fa393a2aab5422593f67dbb043622dc77ec8293f57067e6",
+        "sha256_in_prefix": "d177cba70de476847fa393a2aab5422593f67dbb043622dc77ec8293f57067e6",
+        "size_in_bytes": 3603
+      },
+      {
+        "_path": "site-packages/xclim/testing/tests/test_wind.py",
+        "path_type": "hardlink",
+        "sha256": "398c74a78f62882d82e2176038b6eca5ab0b5cefa85664ee6e94258d53b8945c",
+        "sha256_in_prefix": "398c74a78f62882d82e2176038b6eca5ab0b5cefa85664ee6e94258d53b8945c",
+        "size_in_bytes": 620
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/__pycache__/analog.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/__pycache__/cli.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/core/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/core/__pycache__/bootstrapping.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/core/__pycache__/calendar.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/core/__pycache__/cfchecks.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/core/__pycache__/datachecks.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/core/__pycache__/dataflags.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/core/__pycache__/formatting.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/core/__pycache__/indicator.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/core/__pycache__/locales.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/core/__pycache__/missing.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/core/__pycache__/options.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/core/__pycache__/units.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/core/__pycache__/utils.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/data/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/ensembles/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/ensembles/__pycache__/_base.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/ensembles/__pycache__/_reduce.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/ensembles/__pycache__/_robustness.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/indicators/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/indicators/atmos/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/indicators/atmos/__pycache__/_conversion.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/indicators/atmos/__pycache__/_precip.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/indicators/atmos/__pycache__/_preciptemp.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/indicators/atmos/__pycache__/_temperature.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/indicators/atmos/__pycache__/_wind.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/indicators/land/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/indicators/land/__pycache__/_snow.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/indicators/land/__pycache__/_streamflow.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/indicators/seaIce/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/indicators/seaIce/__pycache__/_seaice.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/indices/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/indices/__pycache__/_agro.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/indices/__pycache__/_anuclim.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/indices/__pycache__/_conversion.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/indices/__pycache__/_hydrology.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/indices/__pycache__/_multivariate.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/indices/__pycache__/_simple.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/indices/__pycache__/_threshold.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/indices/__pycache__/fwi.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/indices/__pycache__/generic.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/indices/__pycache__/run_length.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/indices/__pycache__/stats.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/sdba/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/sdba/__pycache__/_adjustment.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/sdba/__pycache__/_processing.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/sdba/__pycache__/adjustment.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/sdba/__pycache__/base.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/sdba/__pycache__/detrending.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/sdba/__pycache__/loess.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/sdba/__pycache__/nbutils.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/sdba/__pycache__/processing.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/sdba/__pycache__/utils.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/__pycache__/subset.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/__pycache__/_utils.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/conftest.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/data.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_analog.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_atmos.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_bootstrapping.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_calendar.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_checks.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_cli.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_ensembles.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_flags.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_formatting.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_fwi.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_generic.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_hydrology.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_indicators.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_indices.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_land.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_locales.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_missing.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_modules.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_options.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_precip.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_preciptemp.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_run_length.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/__pycache__/conftest.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/__pycache__/diagnostics.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/__pycache__/test_adjustment.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/__pycache__/test_base.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/__pycache__/test_detrending.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/__pycache__/test_loess.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/__pycache__/test_processing.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/__pycache__/test_utils.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/test_sdba/__pycache__/utils.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_seaice.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_snow.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_stats.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_subset.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_temperature.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_testing_utils.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_units.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_utils.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/xclim/testing/tests/__pycache__/test_wind.cpython-39.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "xclim==0.31.0=pyhd8ed1ab_0",
+  "sha256": "fe84701b596af9f854128bd55d577209ceb572d2d8836b83e20b1cf80a8bf1c2",
+  "size": 414398,
+  "subdir": "noarch",
+  "timestamp": 1636381384092,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/xclim-0.31.0-pyhd8ed1ab_0.tar.bz2",
+  "version": "0.31.0"
+}

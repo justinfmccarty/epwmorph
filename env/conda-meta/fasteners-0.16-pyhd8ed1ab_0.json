@@ -1,0 +1,312 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "monotonic >=0.1",
+    "python >=3.6",
+    "six"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/fasteners-0.16-pyhd8ed1ab_0",
+  "features": "",
+  "files": [
+    "lib/python3.9/site-packages/fasteners-0.16.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/fasteners-0.16.dist-info/LICENSE",
+    "lib/python3.9/site-packages/fasteners-0.16.dist-info/METADATA",
+    "lib/python3.9/site-packages/fasteners-0.16.dist-info/RECORD",
+    "lib/python3.9/site-packages/fasteners-0.16.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/fasteners-0.16.dist-info/WHEEL",
+    "lib/python3.9/site-packages/fasteners-0.16.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/fasteners-0.16.dist-info/top_level.txt",
+    "lib/python3.9/site-packages/fasteners/__init__.py",
+    "lib/python3.9/site-packages/fasteners/_utils.py",
+    "lib/python3.9/site-packages/fasteners/lock.py",
+    "lib/python3.9/site-packages/fasteners/process_lock.py",
+    "lib/python3.9/site-packages/fasteners/pywin32/__init__.py",
+    "lib/python3.9/site-packages/fasteners/pywin32/pywintypes.py",
+    "lib/python3.9/site-packages/fasteners/pywin32/win32con.py",
+    "lib/python3.9/site-packages/fasteners/pywin32/win32file.py",
+    "lib/python3.9/site-packages/fasteners/test.py",
+    "lib/python3.9/site-packages/fasteners/tests/__init__.py",
+    "lib/python3.9/site-packages/fasteners/tests/test_decorators.py",
+    "lib/python3.9/site-packages/fasteners/tests/test_helpers.py",
+    "lib/python3.9/site-packages/fasteners/tests/test_lock.py",
+    "lib/python3.9/site-packages/fasteners/tests/test_process_lock.py",
+    "lib/python3.9/site-packages/fasteners/tests/test_reader_writer_lock.py",
+    "lib/python3.9/site-packages/fasteners/version.py",
+    "lib/python3.9/site-packages/fasteners/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/fasteners/__pycache__/_utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/fasteners/__pycache__/lock.cpython-39.pyc",
+    "lib/python3.9/site-packages/fasteners/__pycache__/process_lock.cpython-39.pyc",
+    "lib/python3.9/site-packages/fasteners/pywin32/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/fasteners/pywin32/__pycache__/pywintypes.cpython-39.pyc",
+    "lib/python3.9/site-packages/fasteners/pywin32/__pycache__/win32con.cpython-39.pyc",
+    "lib/python3.9/site-packages/fasteners/pywin32/__pycache__/win32file.cpython-39.pyc",
+    "lib/python3.9/site-packages/fasteners/__pycache__/test.cpython-39.pyc",
+    "lib/python3.9/site-packages/fasteners/tests/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/fasteners/tests/__pycache__/test_decorators.cpython-39.pyc",
+    "lib/python3.9/site-packages/fasteners/tests/__pycache__/test_helpers.cpython-39.pyc",
+    "lib/python3.9/site-packages/fasteners/tests/__pycache__/test_lock.cpython-39.pyc",
+    "lib/python3.9/site-packages/fasteners/tests/__pycache__/test_process_lock.cpython-39.pyc",
+    "lib/python3.9/site-packages/fasteners/tests/__pycache__/test_reader_writer_lock.cpython-39.pyc",
+    "lib/python3.9/site-packages/fasteners/__pycache__/version.cpython-39.pyc"
+  ],
+  "fn": "fasteners-0.16-pyhd8ed1ab_0.tar.bz2",
+  "license": "Apache-2.0",
+  "license_family": "APACHE",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/fasteners-0.16-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "8ecec38560a2613704aa01882a8a48c5",
+  "name": "fasteners",
+  "noarch": "python",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/fasteners-0.16-pyhd8ed1ab_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/fasteners-0.16.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/fasteners-0.16.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "d2de2f566d2d0e0b509fb0ea1fa3669f49064ab1de21c57453cab3750a234e8f",
+        "sha256_in_prefix": "d2de2f566d2d0e0b509fb0ea1fa3669f49064ab1de21c57453cab3750a234e8f",
+        "size_in_bytes": 10143
+      },
+      {
+        "_path": "site-packages/fasteners-0.16.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "3e6eb3668a30fc09233aae956d4ab8cd957438686be2a76f0a839eab9b8dd2e0",
+        "sha256_in_prefix": "3e6eb3668a30fc09233aae956d4ab8cd957438686be2a76f0a839eab9b8dd2e0",
+        "size_in_bytes": 6631
+      },
+      {
+        "_path": "site-packages/fasteners-0.16.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "2d24f83df934a4b72aacf76e38601c7ba27e609b70cde941004ecf7dfd57b686",
+        "sha256_in_prefix": "2d24f83df934a4b72aacf76e38601c7ba27e609b70cde941004ecf7dfd57b686",
+        "size_in_bytes": 2913
+      },
+      {
+        "_path": "site-packages/fasteners-0.16.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/fasteners-0.16.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "67e9f2629c2b712ab17ddbb1e4c6e7fc3439db988fec9d831b72601af398c934",
+        "sha256_in_prefix": "67e9f2629c2b712ab17ddbb1e4c6e7fc3439db988fec9d831b72601af398c934",
+        "size_in_bytes": 110
+      },
+      {
+        "_path": "site-packages/fasteners-0.16.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "7b650ed2b32f040d0933ece47390912ca291c2893feee98abad4cc540affa5ed",
+        "sha256_in_prefix": "7b650ed2b32f040d0933ece47390912ca291c2893feee98abad4cc540affa5ed",
+        "size_in_bytes": 105
+      },
+      {
+        "_path": "site-packages/fasteners-0.16.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "333e3672cac8592be57649ded05834db4aca52a1201a2d741094fe0e39c3eac3",
+        "sha256_in_prefix": "333e3672cac8592be57649ded05834db4aca52a1201a2d741094fe0e39c3eac3",
+        "size_in_bytes": 10
+      },
+      {
+        "_path": "site-packages/fasteners/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "d3f0e1c4504ffbc306cf9c3520ce5aa34a7a3a64d3b9f2d992c902b3da8b97dc",
+        "sha256_in_prefix": "d3f0e1c4504ffbc306cf9c3520ce5aa34a7a3a64d3b9f2d992c902b3da8b97dc",
+        "size_in_bytes": 1328
+      },
+      {
+        "_path": "site-packages/fasteners/_utils.py",
+        "path_type": "hardlink",
+        "sha256": "b71e9846dcbccd2e302ad675b5313568bc37405311d2d269a2cf102475b32379",
+        "sha256_in_prefix": "b71e9846dcbccd2e302ad675b5313568bc37405311d2d269a2cf102475b32379",
+        "size_in_bytes": 4974
+      },
+      {
+        "_path": "site-packages/fasteners/lock.py",
+        "path_type": "hardlink",
+        "sha256": "b3e7d8a85e8966a472d7c0377a317c8fd9e5c021ec6e0e2c6b064bcb0d6b78d9",
+        "sha256_in_prefix": "b3e7d8a85e8966a472d7c0377a317c8fd9e5c021ec6e0e2c6b064bcb0d6b78d9",
+        "size_in_bytes": 10560
+      },
+      {
+        "_path": "site-packages/fasteners/process_lock.py",
+        "path_type": "hardlink",
+        "sha256": "6b7ea60151d3bf3f942640f84806629bd2cb37faee4e768382cd4c1b1aa92ee9",
+        "sha256_in_prefix": "6b7ea60151d3bf3f942640f84806629bd2cb37faee4e768382cd4c1b1aa92ee9",
+        "size_in_bytes": 19158
+      },
+      {
+        "_path": "site-packages/fasteners/pywin32/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "3429a3b6a212f8620e91e5b292d0d813b8598a93fd13e16205065f17cf23e9de",
+        "sha256_in_prefix": "3429a3b6a212f8620e91e5b292d0d813b8598a93fd13e16205065f17cf23e9de",
+        "size_in_bytes": 163
+      },
+      {
+        "_path": "site-packages/fasteners/pywin32/pywintypes.py",
+        "path_type": "hardlink",
+        "sha256": "46439d1019d8126dfbbe59fadc2d22b646050520142913bf52b448a1fb213822",
+        "sha256_in_prefix": "46439d1019d8126dfbbe59fadc2d22b646050520142913bf52b448a1fb213822",
+        "size_in_bytes": 701
+      },
+      {
+        "_path": "site-packages/fasteners/pywin32/win32con.py",
+        "path_type": "hardlink",
+        "sha256": "3c52cb48ffc271a64b0b1124dc86bf73a0c3174aa4aa8b4c37cfdd59aa57b11d",
+        "sha256_in_prefix": "3c52cb48ffc271a64b0b1124dc86bf73a0c3174aa4aa8b4c37cfdd59aa57b11d",
+        "size_in_bytes": 64
+      },
+      {
+        "_path": "site-packages/fasteners/pywin32/win32file.py",
+        "path_type": "hardlink",
+        "sha256": "889737cc787dc335e8938317799a5064a2db4e29ec8b90030d906cba062b6cb6",
+        "sha256_in_prefix": "889737cc787dc335e8938317799a5064a2db4e29ec8b90030d906cba062b6cb6",
+        "size_in_bytes": 860
+      },
+      {
+        "_path": "site-packages/fasteners/test.py",
+        "path_type": "hardlink",
+        "sha256": "14eaf4db39591d540b50e78d2476eb451c50407c53e70553ffd37cc4c8b2439d",
+        "sha256_in_prefix": "14eaf4db39591d540b50e78d2476eb451c50407c53e70553ffd37cc4c8b2439d",
+        "size_in_bytes": 766
+      },
+      {
+        "_path": "site-packages/fasteners/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/fasteners/tests/test_decorators.py",
+        "path_type": "hardlink",
+        "sha256": "22c78110d494692f5f7225a4213f09dcff3db4c0ca85450491ab39d993926e2a",
+        "sha256_in_prefix": "22c78110d494692f5f7225a4213f09dcff3db4c0ca85450491ab39d993926e2a",
+        "size_in_bytes": 2547
+      },
+      {
+        "_path": "site-packages/fasteners/tests/test_helpers.py",
+        "path_type": "hardlink",
+        "sha256": "ced8e5287905200b9f0421e65c172aa1350fb5e399683f4e5204031f50321afa",
+        "sha256_in_prefix": "ced8e5287905200b9f0421e65c172aa1350fb5e399683f4e5204031f50321afa",
+        "size_in_bytes": 995
+      },
+      {
+        "_path": "site-packages/fasteners/tests/test_lock.py",
+        "path_type": "hardlink",
+        "sha256": "8ae7b5c767f109511c11a349ce428ce73a937e2721719e67dfe6e6af60dc0047",
+        "sha256_in_prefix": "8ae7b5c767f109511c11a349ce428ce73a937e2721719e67dfe6e6af60dc0047",
+        "size_in_bytes": 13620
+      },
+      {
+        "_path": "site-packages/fasteners/tests/test_process_lock.py",
+        "path_type": "hardlink",
+        "sha256": "fc5bb0969e754181d6bed9dfc457ee463a8815c7660586513962eb35b53623bf",
+        "sha256_in_prefix": "fc5bb0969e754181d6bed9dfc457ee463a8815c7660586513962eb35b53623bf",
+        "size_in_bytes": 8309
+      },
+      {
+        "_path": "site-packages/fasteners/tests/test_reader_writer_lock.py",
+        "path_type": "hardlink",
+        "sha256": "11de68653f0759cf7e07d42df6e581b378dcf4c02a39a077244a15cded5d5b4a",
+        "sha256_in_prefix": "11de68653f0759cf7e07d42df6e581b378dcf4c02a39a077244a15cded5d5b4a",
+        "size_in_bytes": 8118
+      },
+      {
+        "_path": "site-packages/fasteners/version.py",
+        "path_type": "hardlink",
+        "sha256": "ef7be9e5f344779d59986e999ca72503099dd64bf0210701c4ab7f57d77180db",
+        "sha256_in_prefix": "ef7be9e5f344779d59986e999ca72503099dd64bf0210701c4ab7f57d77180db",
+        "size_in_bytes": 780
+      },
+      {
+        "_path": "lib/python3.9/site-packages/fasteners/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/fasteners/__pycache__/_utils.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/fasteners/__pycache__/lock.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/fasteners/__pycache__/process_lock.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/fasteners/pywin32/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/fasteners/pywin32/__pycache__/pywintypes.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/fasteners/pywin32/__pycache__/win32con.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/fasteners/pywin32/__pycache__/win32file.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/fasteners/__pycache__/test.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/fasteners/tests/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/fasteners/tests/__pycache__/test_decorators.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/fasteners/tests/__pycache__/test_helpers.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/fasteners/tests/__pycache__/test_lock.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/fasteners/tests/__pycache__/test_process_lock.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/fasteners/tests/__pycache__/test_reader_writer_lock.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/fasteners/__pycache__/version.cpython-39.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "fasteners==0.16=pyhd8ed1ab_0",
+  "sha256": "27d4e66a20271697abab553a52388e030d735d53acc75cbc9e6b973697256790",
+  "size": 26005,
+  "subdir": "noarch",
+  "timestamp": 1621500345407,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/fasteners-0.16-pyhd8ed1ab_0.tar.bz2",
+  "version": "0.16"
+}

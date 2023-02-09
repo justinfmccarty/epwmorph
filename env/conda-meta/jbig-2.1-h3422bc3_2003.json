@@ -1,0 +1,74 @@
+{
+  "build": "h3422bc3_2003",
+  "build_number": 2003,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/jbig-2.1-h3422bc3_2003",
+  "features": "",
+  "files": [
+    "include/jbig.h",
+    "include/jbig85.h",
+    "include/jbig_ar.h",
+    "lib/libjbig.a",
+    "lib/libjbig85.a"
+  ],
+  "fn": "jbig-2.1-h3422bc3_2003.tar.bz2",
+  "license": "GPL-2.0-or-later",
+  "license_family": "GPL",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/jbig-2.1-h3422bc3_2003",
+    "type": 1
+  },
+  "md5": "38e4745944cf5b4598ad7f1cfed5430d",
+  "name": "jbig",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/jbig-2.1-h3422bc3_2003.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/jbig.h",
+        "path_type": "hardlink",
+        "sha256": "4c55c6dcd8beab3c330a7c2334d9352b7951154c7ebd90037d120fce1dde1e73",
+        "sha256_in_prefix": "4c55c6dcd8beab3c330a7c2334d9352b7951154c7ebd90037d120fce1dde1e73",
+        "size_in_bytes": 9623
+      },
+      {
+        "_path": "include/jbig85.h",
+        "path_type": "hardlink",
+        "sha256": "1c87939e042d7b03a19412dd3f8d0e9614ebbacc1aad5c4f2cfbd9bf11bd514e",
+        "sha256_in_prefix": "1c87939e042d7b03a19412dd3f8d0e9614ebbacc1aad5c4f2cfbd9bf11bd514e",
+        "size_in_bytes": 6942
+      },
+      {
+        "_path": "include/jbig_ar.h",
+        "path_type": "hardlink",
+        "sha256": "c5dcac0af444f6b5b4470775a3b1f020243970692e8d776767e717154f3de7fa",
+        "sha256_in_prefix": "c5dcac0af444f6b5b4470775a3b1f020243970692e8d776767e717154f3de7fa",
+        "size_in_bytes": 2259
+      },
+      {
+        "_path": "lib/libjbig.a",
+        "path_type": "hardlink",
+        "sha256": "942af9544e5abca8a8bd9b005fab3e1851766d58741bf74a1299129c45ee7c3a",
+        "sha256_in_prefix": "942af9544e5abca8a8bd9b005fab3e1851766d58741bf74a1299129c45ee7c3a",
+        "size_in_bytes": 47320
+      },
+      {
+        "_path": "lib/libjbig85.a",
+        "path_type": "hardlink",
+        "sha256": "a29bac0c6eea772a9f54e6028782728f62b0c24262eb7187e47b3af0edc9dbc9",
+        "sha256_in_prefix": "a29bac0c6eea772a9f54e6028782728f62b0c24262eb7187e47b3af0edc9dbc9",
+        "size_in_bytes": 14800
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "jbig==2.1=h3422bc3_2003",
+  "sha256": "c4d83d09092224522f96fb2bd92bab4ce25af5bfffa36d3a4f317e106d9dcce3",
+  "size": 43001,
+  "subdir": "osx-arm64",
+  "timestamp": 1621514956496,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/jbig-2.1-h3422bc3_2003.tar.bz2",
+  "version": "2.1"
+}

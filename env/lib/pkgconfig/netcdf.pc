@@ -1,0 +1,13 @@
+prefix=/Users/jmccarty/GitHub/epwmorph/env
+exec_prefix=/Users/jmccarty/GitHub/epwmorph/env
+libdir=/Users/jmccarty/GitHub/epwmorph/env/lib
+includedir=/Users/jmccarty/GitHub/epwmorph/env/include
+ccompiler=/Users/runner/miniforge3/conda-bld/libnetcdf_1630368161103/_build_env/bin/arm64-apple-darwin20.0.0-clang
+
+Name: netCDF
+Description: NetCDF Client Library for C
+URL: http://www.unidata.ucar.edu/netcdf
+Version: 4.8.1
+Libs: -L${libdir} -lnetcdf
+Libs.private: -lmfhdf -ldf -lhdf5_hl -lhdf5 -lm -lcurl -lzip
+Cflags: -I${includedir}

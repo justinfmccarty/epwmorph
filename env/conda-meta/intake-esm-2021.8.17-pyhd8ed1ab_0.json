@@ -1,0 +1,211 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "dask",
+    "fastprogress >=0.2.6",
+    "fsspec >=0.8.0",
+    "h5netcdf >=0.8.1",
+    "intake >=0.6.0",
+    "netcdf4 >=1.5.5",
+    "pandas >=1.0.0",
+    "python >=3.7",
+    "requests >=2.24.0",
+    "xarray >=0.16.2",
+    "zarr >=2.5"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/intake-esm-2021.8.17-pyhd8ed1ab_0",
+  "features": "",
+  "files": [
+    "lib/python3.9/site-packages/intake_esm-2021.8.17.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/intake_esm-2021.8.17.dist-info/LICENSE",
+    "lib/python3.9/site-packages/intake_esm-2021.8.17.dist-info/METADATA",
+    "lib/python3.9/site-packages/intake_esm-2021.8.17.dist-info/RECORD",
+    "lib/python3.9/site-packages/intake_esm-2021.8.17.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/intake_esm-2021.8.17.dist-info/WHEEL",
+    "lib/python3.9/site-packages/intake_esm-2021.8.17.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/intake_esm-2021.8.17.dist-info/entry_points.txt",
+    "lib/python3.9/site-packages/intake_esm-2021.8.17.dist-info/top_level.txt",
+    "lib/python3.9/site-packages/intake_esm/__init__.py",
+    "lib/python3.9/site-packages/intake_esm/_types.py",
+    "lib/python3.9/site-packages/intake_esm/core.py",
+    "lib/python3.9/site-packages/intake_esm/merge_util.py",
+    "lib/python3.9/site-packages/intake_esm/search.py",
+    "lib/python3.9/site-packages/intake_esm/source.py",
+    "lib/python3.9/site-packages/intake_esm/utils.py",
+    "lib/python3.9/site-packages/intake_esm/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake_esm/__pycache__/_types.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake_esm/__pycache__/core.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake_esm/__pycache__/merge_util.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake_esm/__pycache__/search.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake_esm/__pycache__/source.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake_esm/__pycache__/utils.cpython-39.pyc"
+  ],
+  "fn": "intake-esm-2021.8.17-pyhd8ed1ab_0.tar.bz2",
+  "license": "Apache-2.0",
+  "license_family": "Apache",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/intake-esm-2021.8.17-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "fee875d1653a0dae25c0e37006739935",
+  "name": "intake-esm",
+  "noarch": "python",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/intake-esm-2021.8.17-pyhd8ed1ab_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/intake_esm-2021.8.17.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/intake_esm-2021.8.17.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "641d88f7f9853a82e39aae9ca6920a7a5cea52f7240de44f157892768a132826",
+        "sha256_in_prefix": "641d88f7f9853a82e39aae9ca6920a7a5cea52f7240de44f157892768a132826",
+        "size_in_bytes": 11390
+      },
+      {
+        "_path": "site-packages/intake_esm-2021.8.17.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "1da1b723775896462a2d10cd129899ee7a61f3105bf426b7ac68c3ae8a547633",
+        "sha256_in_prefix": "1da1b723775896462a2d10cd129899ee7a61f3105bf426b7ac68c3ae8a547633",
+        "size_in_bytes": 7562
+      },
+      {
+        "_path": "site-packages/intake_esm-2021.8.17.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "fd4cfad43c9b4f12fced534292b69a9639cc2a8a509036706c636e60573a991f",
+        "sha256_in_prefix": "fd4cfad43c9b4f12fced534292b69a9639cc2a8a509036706c636e60573a991f",
+        "size_in_bytes": 1713
+      },
+      {
+        "_path": "site-packages/intake_esm-2021.8.17.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/intake_esm-2021.8.17.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "7b0c04b9e8a8d42d977874ef4f5ee7f1d6542603afc82582b7459534b0a53fda",
+        "sha256_in_prefix": "7b0c04b9e8a8d42d977874ef4f5ee7f1d6542603afc82582b7459534b0a53fda",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "site-packages/intake_esm-2021.8.17.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "9a6df4def9b2c16a84a8a629306c99d827b1f961b93d2f2837f0af78d408e717",
+        "sha256_in_prefix": "9a6df4def9b2c16a84a8a629306c99d827b1f961b93d2f2837f0af78d408e717",
+        "size_in_bytes": 106
+      },
+      {
+        "_path": "site-packages/intake_esm-2021.8.17.dist-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "2cad0ecb041dd9236b468c6198333eb24dbecf213e26da8eff9fb921110f8ea7",
+        "sha256_in_prefix": "2cad0ecb041dd9236b468c6198333eb24dbecf213e26da8eff9fb921110f8ea7",
+        "size_in_bytes": 165
+      },
+      {
+        "_path": "site-packages/intake_esm-2021.8.17.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "85a8f4a68ae55aff4842f75c413b9c5b1e1c91614ef43d2cba2a946557c0d690",
+        "sha256_in_prefix": "85a8f4a68ae55aff4842f75c413b9c5b1e1c91614ef43d2cba2a946557c0d690",
+        "size_in_bytes": 11
+      },
+      {
+        "_path": "site-packages/intake_esm/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "c5d198a8cf4d7359b55eb73e90b2dc569355b6dceeacc8ca49c90d94218651a7",
+        "sha256_in_prefix": "c5d198a8cf4d7359b55eb73e90b2dc569355b6dceeacc8ca49c90d94218651a7",
+        "size_in_bytes": 444
+      },
+      {
+        "_path": "site-packages/intake_esm/_types.py",
+        "path_type": "hardlink",
+        "sha256": "f0f82be389b2ca41fa51c004a49aa6ff3d2889d9df323e23250d82ba5d0a01e3",
+        "sha256_in_prefix": "f0f82be389b2ca41fa51c004a49aa6ff3d2889d9df323e23250d82ba5d0a01e3",
+        "size_in_bytes": 2323
+      },
+      {
+        "_path": "site-packages/intake_esm/core.py",
+        "path_type": "hardlink",
+        "sha256": "fbf4c4227772eeba185206b2c17e8b25b22f54a8b916f285013305e48da24177",
+        "sha256_in_prefix": "fbf4c4227772eeba185206b2c17e8b25b22f54a8b916f285013305e48da24177",
+        "size_in_bytes": 36987
+      },
+      {
+        "_path": "site-packages/intake_esm/merge_util.py",
+        "path_type": "hardlink",
+        "sha256": "63e9aa6b76c81c9c6c0dbe8df52519bcff5895cc518ce9e03583865489d4a15b",
+        "sha256_in_prefix": "63e9aa6b76c81c9c6c0dbe8df52519bcff5895cc518ce9e03583865489d4a15b",
+        "size_in_bytes": 10841
+      },
+      {
+        "_path": "site-packages/intake_esm/search.py",
+        "path_type": "hardlink",
+        "sha256": "4e12d81ded3af2c24f63b4790d5d1e6c001e300aa218f21b8599c10a3c3fbfab",
+        "sha256_in_prefix": "4e12d81ded3af2c24f63b4790d5d1e6c001e300aa218f21b8599c10a3c3fbfab",
+        "size_in_bytes": 4737
+      },
+      {
+        "_path": "site-packages/intake_esm/source.py",
+        "path_type": "hardlink",
+        "sha256": "f355e397fba0291427a0a29e372905b6b4110d11df5df23d9c4c53251b311987",
+        "sha256_in_prefix": "f355e397fba0291427a0a29e372905b6b4110d11df5df23d9c4c53251b311987",
+        "size_in_bytes": 8560
+      },
+      {
+        "_path": "site-packages/intake_esm/utils.py",
+        "path_type": "hardlink",
+        "sha256": "2e8cb847415f3f34210f0d4456c2149e4c99fbd90eba5adba68e06dc61a1e903",
+        "sha256_in_prefix": "2e8cb847415f3f34210f0d4456c2149e4c99fbd90eba5adba68e06dc61a1e903",
+        "size_in_bytes": 4630
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake_esm/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake_esm/__pycache__/_types.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake_esm/__pycache__/core.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake_esm/__pycache__/merge_util.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake_esm/__pycache__/search.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake_esm/__pycache__/source.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake_esm/__pycache__/utils.cpython-39.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "intake-esm==2021.8.17=pyhd8ed1ab_0",
+  "sha256": "3fffb15ef823966b8002fc237ff3bf161745234e4001a05ffde0c9f966f3f536",
+  "size": 27941,
+  "subdir": "noarch",
+  "timestamp": 1629245666892,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/intake-esm-2021.8.17-pyhd8ed1ab_0.tar.bz2",
+  "version": "2021.8.17"
+}

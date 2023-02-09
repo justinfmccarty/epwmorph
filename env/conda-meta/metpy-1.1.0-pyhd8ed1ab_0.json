@@ -1,0 +1,1124 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "cartopy >=0.17.0",
+    "importlib_metadata >=1.0.0",
+    "importlib_resources >=1.3.0",
+    "matplotlib-base >=3.0.1",
+    "numpy >=1.17",
+    "pandas >=0.24.0",
+    "pint >=0.10.1",
+    "pooch >=0.1",
+    "pyproj >=2.3.0",
+    "python >=3.7",
+    "scipy >=1.2.0",
+    "traitlets >=4.3.0",
+    "xarray >=0.14.1"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/metpy-1.1.0-pyhd8ed1ab_0",
+  "features": "",
+  "files": [
+    "lib/python3.9/site-packages/MetPy-1.1.0.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/MetPy-1.1.0.dist-info/LICENSE",
+    "lib/python3.9/site-packages/MetPy-1.1.0.dist-info/METADATA",
+    "lib/python3.9/site-packages/MetPy-1.1.0.dist-info/RECORD",
+    "lib/python3.9/site-packages/MetPy-1.1.0.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/MetPy-1.1.0.dist-info/WHEEL",
+    "lib/python3.9/site-packages/MetPy-1.1.0.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/MetPy-1.1.0.dist-info/top_level.txt",
+    "lib/python3.9/site-packages/MetPy-1.1.0.dist-info/zip-safe",
+    "lib/python3.9/site-packages/metpy/__init__.py",
+    "lib/python3.9/site-packages/metpy/_vendor/__init__.py",
+    "lib/python3.9/site-packages/metpy/_vendor/xarray.py",
+    "lib/python3.9/site-packages/metpy/_version.py",
+    "lib/python3.9/site-packages/metpy/calc/__init__.py",
+    "lib/python3.9/site-packages/metpy/calc/basic.py",
+    "lib/python3.9/site-packages/metpy/calc/cross_sections.py",
+    "lib/python3.9/site-packages/metpy/calc/exceptions.py",
+    "lib/python3.9/site-packages/metpy/calc/indices.py",
+    "lib/python3.9/site-packages/metpy/calc/kinematics.py",
+    "lib/python3.9/site-packages/metpy/calc/thermo.py",
+    "lib/python3.9/site-packages/metpy/calc/tools.py",
+    "lib/python3.9/site-packages/metpy/calc/turbulence.py",
+    "lib/python3.9/site-packages/metpy/cbook.py",
+    "lib/python3.9/site-packages/metpy/constants.py",
+    "lib/python3.9/site-packages/metpy/deprecation.py",
+    "lib/python3.9/site-packages/metpy/future.py",
+    "lib/python3.9/site-packages/metpy/interpolate/__init__.py",
+    "lib/python3.9/site-packages/metpy/interpolate/geometry.py",
+    "lib/python3.9/site-packages/metpy/interpolate/grid.py",
+    "lib/python3.9/site-packages/metpy/interpolate/one_dimension.py",
+    "lib/python3.9/site-packages/metpy/interpolate/points.py",
+    "lib/python3.9/site-packages/metpy/interpolate/slices.py",
+    "lib/python3.9/site-packages/metpy/interpolate/tools.py",
+    "lib/python3.9/site-packages/metpy/io/__init__.py",
+    "lib/python3.9/site-packages/metpy/io/_metar_parser/Makefile",
+    "lib/python3.9/site-packages/metpy/io/_metar_parser/metar_parser.peg",
+    "lib/python3.9/site-packages/metpy/io/_metar_parser/metar_parser.py",
+    "lib/python3.9/site-packages/metpy/io/_nexrad_msgs/__init__.py",
+    "lib/python3.9/site-packages/metpy/io/_nexrad_msgs/msg18.py",
+    "lib/python3.9/site-packages/metpy/io/_nexrad_msgs/msg3.py",
+    "lib/python3.9/site-packages/metpy/io/_tools.py",
+    "lib/python3.9/site-packages/metpy/io/gempak.py",
+    "lib/python3.9/site-packages/metpy/io/gini.py",
+    "lib/python3.9/site-packages/metpy/io/metar.py",
+    "lib/python3.9/site-packages/metpy/io/nexrad.py",
+    "lib/python3.9/site-packages/metpy/io/station_data.py",
+    "lib/python3.9/site-packages/metpy/package_tools.py",
+    "lib/python3.9/site-packages/metpy/pandas.py",
+    "lib/python3.9/site-packages/metpy/plots/__init__.py",
+    "lib/python3.9/site-packages/metpy/plots/_mpl.py",
+    "lib/python3.9/site-packages/metpy/plots/_static/metpy_150x150.png",
+    "lib/python3.9/site-packages/metpy/plots/_static/metpy_75x75.png",
+    "lib/python3.9/site-packages/metpy/plots/_static/unidata_150x150.png",
+    "lib/python3.9/site-packages/metpy/plots/_static/unidata_75x75.png",
+    "lib/python3.9/site-packages/metpy/plots/_util.py",
+    "lib/python3.9/site-packages/metpy/plots/cartopy_utils.py",
+    "lib/python3.9/site-packages/metpy/plots/colortable_files/Carbone42.tbl",
+    "lib/python3.9/site-packages/metpy/plots/colortable_files/NWS8bitVel.tbl",
+    "lib/python3.9/site-packages/metpy/plots/colortable_files/NWSReflectivity.tbl",
+    "lib/python3.9/site-packages/metpy/plots/colortable_files/NWSReflectivityExpanded.tbl",
+    "lib/python3.9/site-packages/metpy/plots/colortable_files/NWSSpectrumWidth.tbl",
+    "lib/python3.9/site-packages/metpy/plots/colortable_files/NWSStormClearReflectivity.tbl",
+    "lib/python3.9/site-packages/metpy/plots/colortable_files/NWSVelocity.tbl",
+    "lib/python3.9/site-packages/metpy/plots/colortable_files/WVCIMSS.tbl",
+    "lib/python3.9/site-packages/metpy/plots/colortable_files/ir_bd.tbl",
+    "lib/python3.9/site-packages/metpy/plots/colortable_files/ir_drgb.tbl",
+    "lib/python3.9/site-packages/metpy/plots/colortable_files/ir_rgbv.tbl",
+    "lib/python3.9/site-packages/metpy/plots/colortable_files/ir_tpc.tbl",
+    "lib/python3.9/site-packages/metpy/plots/colortable_files/ir_tv1.tbl",
+    "lib/python3.9/site-packages/metpy/plots/colortable_files/precipitation.tbl",
+    "lib/python3.9/site-packages/metpy/plots/colortable_files/rainbow.tbl",
+    "lib/python3.9/site-packages/metpy/plots/colortable_files/wv_tpc.tbl",
+    "lib/python3.9/site-packages/metpy/plots/ctables.py",
+    "lib/python3.9/site-packages/metpy/plots/declarative.py",
+    "lib/python3.9/site-packages/metpy/plots/fonts/wx_symbols.ttf",
+    "lib/python3.9/site-packages/metpy/plots/fonts/wx_symbols_license.md",
+    "lib/python3.9/site-packages/metpy/plots/mapping.py",
+    "lib/python3.9/site-packages/metpy/plots/nexrad_tables/cc_table.tbl",
+    "lib/python3.9/site-packages/metpy/plots/nexrad_tables/et_table.tbl",
+    "lib/python3.9/site-packages/metpy/plots/nexrad_tables/hmc_table.tbl",
+    "lib/python3.9/site-packages/metpy/plots/nexrad_tables/kdp_table.tbl",
+    "lib/python3.9/site-packages/metpy/plots/nexrad_tables/lcr_tabl.tbl",
+    "lib/python3.9/site-packages/metpy/plots/nexrad_tables/ml_table.tbl",
+    "lib/python3.9/site-packages/metpy/plots/nexrad_tables/osw_table.tbl",
+    "lib/python3.9/site-packages/metpy/plots/nexrad_tables/precip_table.tbl",
+    "lib/python3.9/site-packages/metpy/plots/nexrad_tables/ref_table.tbl",
+    "lib/python3.9/site-packages/metpy/plots/nexrad_tables/ref_table8.tbl",
+    "lib/python3.9/site-packages/metpy/plots/nexrad_tables/spw_table.tbl",
+    "lib/python3.9/site-packages/metpy/plots/nexrad_tables/srm_table.tbl",
+    "lib/python3.9/site-packages/metpy/plots/nexrad_tables/ulr_table.tbl",
+    "lib/python3.9/site-packages/metpy/plots/nexrad_tables/vad_table.tbl",
+    "lib/python3.9/site-packages/metpy/plots/nexrad_tables/vel_table.tbl",
+    "lib/python3.9/site-packages/metpy/plots/nexrad_tables/vel_table8.tbl",
+    "lib/python3.9/site-packages/metpy/plots/nexrad_tables/vil_table.tbl",
+    "lib/python3.9/site-packages/metpy/plots/nexrad_tables/vwp_table.tbl",
+    "lib/python3.9/site-packages/metpy/plots/nexrad_tables/zdr_table.tbl",
+    "lib/python3.9/site-packages/metpy/plots/skewt.py",
+    "lib/python3.9/site-packages/metpy/plots/station_plot.py",
+    "lib/python3.9/site-packages/metpy/plots/wx_symbols.py",
+    "lib/python3.9/site-packages/metpy/static-data-manifest.txt",
+    "lib/python3.9/site-packages/metpy/testing.py",
+    "lib/python3.9/site-packages/metpy/units.py",
+    "lib/python3.9/site-packages/metpy/xarray.py",
+    "lib/python3.9/site-packages/metpy/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/_vendor/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/_vendor/__pycache__/xarray.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/__pycache__/_version.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/calc/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/calc/__pycache__/basic.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/calc/__pycache__/cross_sections.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/calc/__pycache__/exceptions.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/calc/__pycache__/indices.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/calc/__pycache__/kinematics.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/calc/__pycache__/thermo.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/calc/__pycache__/tools.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/calc/__pycache__/turbulence.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/__pycache__/cbook.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/__pycache__/constants.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/__pycache__/deprecation.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/__pycache__/future.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/interpolate/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/interpolate/__pycache__/geometry.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/interpolate/__pycache__/grid.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/interpolate/__pycache__/one_dimension.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/interpolate/__pycache__/points.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/interpolate/__pycache__/slices.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/interpolate/__pycache__/tools.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/io/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/io/_metar_parser/__pycache__/metar_parser.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/io/_nexrad_msgs/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/io/_nexrad_msgs/__pycache__/msg18.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/io/_nexrad_msgs/__pycache__/msg3.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/io/__pycache__/_tools.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/io/__pycache__/gempak.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/io/__pycache__/gini.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/io/__pycache__/metar.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/io/__pycache__/nexrad.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/io/__pycache__/station_data.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/__pycache__/package_tools.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/__pycache__/pandas.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/plots/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/plots/__pycache__/_mpl.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/plots/__pycache__/_util.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/plots/__pycache__/cartopy_utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/plots/__pycache__/ctables.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/plots/__pycache__/declarative.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/plots/__pycache__/mapping.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/plots/__pycache__/skewt.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/plots/__pycache__/station_plot.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/plots/__pycache__/wx_symbols.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/__pycache__/testing.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/__pycache__/units.cpython-39.pyc",
+    "lib/python3.9/site-packages/metpy/__pycache__/xarray.cpython-39.pyc"
+  ],
+  "fn": "metpy-1.1.0-pyhd8ed1ab_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/metpy-1.1.0-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "95db8380271dbbaad231e0473755222b",
+  "name": "metpy",
+  "noarch": "python",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/metpy-1.1.0-pyhd8ed1ab_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/MetPy-1.1.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/MetPy-1.1.0.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "7a06ef04a974bd3f91cb0cb15a90f782ec41430054d01edc62b1a31c34f4a025",
+        "sha256_in_prefix": "7a06ef04a974bd3f91cb0cb15a90f782ec41430054d01edc62b1a31c34f4a025",
+        "size_in_bytes": 1521
+      },
+      {
+        "_path": "site-packages/MetPy-1.1.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "90644b1e0295b47e2721e54bbc941b230b34943654ef76e0e4cbc2f08c9e73cb",
+        "sha256_in_prefix": "90644b1e0295b47e2721e54bbc941b230b34943654ef76e0e4cbc2f08c9e73cb",
+        "size_in_bytes": 8204
+      },
+      {
+        "_path": "site-packages/MetPy-1.1.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "22cafc1ac27f40d5398c044d4268f3840e52dd68e14198eecc0e941c88b9fbd7",
+        "sha256_in_prefix": "22cafc1ac27f40d5398c044d4268f3840e52dd68e14198eecc0e941c88b9fbd7",
+        "size_in_bytes": 11579
+      },
+      {
+        "_path": "site-packages/MetPy-1.1.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/MetPy-1.1.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "3aa464174798e461ecb0ca2b16395b4c8ab4ef6be91e917ad1f21003a952f710",
+        "sha256_in_prefix": "3aa464174798e461ecb0ca2b16395b4c8ab4ef6be91e917ad1f21003a952f710",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "site-packages/MetPy-1.1.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "d7bd4eac2730b9957d2c496e41fed467643de603de71946f3145fe61ae83f39c",
+        "sha256_in_prefix": "d7bd4eac2730b9957d2c496e41fed467643de603de71946f3145fe61ae83f39c",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "site-packages/MetPy-1.1.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "ebceaad609de0a71f391b3a3193cd4a8b4fa2dce8fd30101c298e1852fc85dd4",
+        "sha256_in_prefix": "ebceaad609de0a71f391b3a3193cd4a8b4fa2dce8fd30101c298e1852fc85dd4",
+        "size_in_bytes": 6
+      },
+      {
+        "_path": "site-packages/MetPy-1.1.0.dist-info/zip-safe",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "site-packages/metpy/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "a207da2b3cdcd29cf5bc6f5de76dab19226f2e0212c5a037363fead473bb26da",
+        "sha256_in_prefix": "a207da2b3cdcd29cf5bc6f5de76dab19226f2e0212c5a037363fead473bb26da",
+        "size_in_bytes": 1174
+      },
+      {
+        "_path": "site-packages/metpy/_vendor/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "20c76f5d07ae7b99b19544211611aa0e41ddb3c58100fe7460af5859adb76c92",
+        "sha256_in_prefix": "20c76f5d07ae7b99b19544211611aa0e41ddb3c58100fe7460af5859adb76c92",
+        "size_in_bytes": 189
+      },
+      {
+        "_path": "site-packages/metpy/_vendor/xarray.py",
+        "path_type": "hardlink",
+        "sha256": "b48e487ca2597b74ef90860535c7a04efa3795e551cb636b41dfad82ec8098ab",
+        "sha256_in_prefix": "b48e487ca2597b74ef90860535c7a04efa3795e551cb636b41dfad82ec8098ab",
+        "size_in_bytes": 2816
+      },
+      {
+        "_path": "site-packages/metpy/_version.py",
+        "path_type": "hardlink",
+        "sha256": "d035c7ede5913bfd8700a30a0350263505171cb9fb9bff91d1c19f8608bc24a2",
+        "sha256_in_prefix": "d035c7ede5913bfd8700a30a0350263505171cb9fb9bff91d1c19f8608bc24a2",
+        "size_in_bytes": 905
+      },
+      {
+        "_path": "site-packages/metpy/calc/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "2865e17a0caa5a707f29087a6f7317d26d79da79274dbb60cd446f812629a8ef",
+        "sha256_in_prefix": "2865e17a0caa5a707f29087a6f7317d26d79da79274dbb60cd446f812629a8ef",
+        "size_in_bytes": 1085
+      },
+      {
+        "_path": "site-packages/metpy/calc/basic.py",
+        "path_type": "hardlink",
+        "sha256": "99353b8bd256f6cff0ac79f8cb94a1c2d6e8b88ff1c13a49f67ffcf891e2f076",
+        "sha256_in_prefix": "99353b8bd256f6cff0ac79f8cb94a1c2d6e8b88ff1c13a49f67ffcf891e2f076",
+        "size_in_bytes": 42670
+      },
+      {
+        "_path": "site-packages/metpy/calc/cross_sections.py",
+        "path_type": "hardlink",
+        "sha256": "492f903a603962b56dd2ceca9612f1ca96008510736b166f356bcbfd6aa6d38d",
+        "sha256_in_prefix": "492f903a603962b56dd2ceca9612f1ca96008510736b166f356bcbfd6aa6d38d",
+        "size_in_bytes": 9892
+      },
+      {
+        "_path": "site-packages/metpy/calc/exceptions.py",
+        "path_type": "hardlink",
+        "sha256": "3ab51ddaab52616181fd067e20b2cc63c8d8fe6fabbdb1b3f79683dff5de13ce",
+        "sha256_in_prefix": "3ab51ddaab52616181fd067e20b2cc63c8d8fe6fabbdb1b3f79683dff5de13ce",
+        "size_in_bytes": 325
+      },
+      {
+        "_path": "site-packages/metpy/calc/indices.py",
+        "path_type": "hardlink",
+        "sha256": "917c1b2a45f61cf8f4a43fb82cd5258aeda996a7a018491869d7d4693ef8baeb",
+        "sha256_in_prefix": "917c1b2a45f61cf8f4a43fb82cd5258aeda996a7a018491869d7d4693ef8baeb",
+        "size_in_bytes": 15850
+      },
+      {
+        "_path": "site-packages/metpy/calc/kinematics.py",
+        "path_type": "hardlink",
+        "sha256": "52824b6817165157fdab7a9767e6d3bdf2da54d5c824d4be3a4bd31762143476",
+        "sha256_in_prefix": "52824b6817165157fdab7a9767e6d3bdf2da54d5c824d4be3a4bd31762143476",
+        "size_in_bytes": 42273
+      },
+      {
+        "_path": "site-packages/metpy/calc/thermo.py",
+        "path_type": "hardlink",
+        "sha256": "48ce55023b0c71b79b590d34c65200a164958cc283808579dd7f37e4b7dc53b7",
+        "sha256_in_prefix": "48ce55023b0c71b79b590d34c65200a164958cc283808579dd7f37e4b7dc53b7",
+        "size_in_bytes": 113418
+      },
+      {
+        "_path": "site-packages/metpy/calc/tools.py",
+        "path_type": "hardlink",
+        "sha256": "799b73334f37a0805f270f48b2d7c49ca34f2308e857960fb7fcd51e8de33f11",
+        "sha256_in_prefix": "799b73334f37a0805f270f48b2d7c49ca34f2308e857960fb7fcd51e8de33f11",
+        "size_in_bytes": 56894
+      },
+      {
+        "_path": "site-packages/metpy/calc/turbulence.py",
+        "path_type": "hardlink",
+        "sha256": "ff59261c7d40f645fdb395215a04ad343e96f1408ed9349e14df321bf178cd08",
+        "sha256_in_prefix": "ff59261c7d40f645fdb395215a04ad343e96f1408ed9349e14df321bf178cd08",
+        "size_in_bytes": 7679
+      },
+      {
+        "_path": "site-packages/metpy/cbook.py",
+        "path_type": "hardlink",
+        "sha256": "9fbfcfa3f6bd753ea1cbf66e96114453b67fd5321bc114a8df52267b19b505c1",
+        "sha256_in_prefix": "9fbfcfa3f6bd753ea1cbf66e96114453b67fd5321bc114a8df52267b19b505c1",
+        "size_in_bytes": 2771
+      },
+      {
+        "_path": "site-packages/metpy/constants.py",
+        "path_type": "hardlink",
+        "sha256": "3e944f95c6dfcd5d3119d0fcbe22734d10aeb18dde7fe61985e7e1520b625544",
+        "sha256_in_prefix": "3e944f95c6dfcd5d3119d0fcbe22734d10aeb18dde7fe61985e7e1520b625544",
+        "size_in_bytes": 8758
+      },
+      {
+        "_path": "site-packages/metpy/deprecation.py",
+        "path_type": "hardlink",
+        "sha256": "74494f570c7086e146f20ba59a65e4a6ca9a34c903c445d0eb6c1eaa85e59c0d",
+        "sha256_in_prefix": "74494f570c7086e146f20ba59a65e4a6ca9a34c903c445d0eb6c1eaa85e59c0d",
+        "size_in_bytes": 11236
+      },
+      {
+        "_path": "site-packages/metpy/future.py",
+        "path_type": "hardlink",
+        "sha256": "1529e2b9a19c99462aa77195f3b1ec47f6a98e44b95021e1a89176c81c4e2fdc",
+        "sha256_in_prefix": "1529e2b9a19c99462aa77195f3b1ec47f6a98e44b95021e1a89176c81c4e2fdc",
+        "size_in_bytes": 285
+      },
+      {
+        "_path": "site-packages/metpy/interpolate/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "8dfe49c55ed1010cf6073c41b0aeca931bcd5e1a208232e3454699718254f111",
+        "sha256_in_prefix": "8dfe49c55ed1010cf6073c41b0aeca931bcd5e1a208232e3454699718254f111",
+        "size_in_bytes": 778
+      },
+      {
+        "_path": "site-packages/metpy/interpolate/geometry.py",
+        "path_type": "hardlink",
+        "sha256": "d56c6788accc02ce324cb3f9078299b77469d0efbd84642935b08faaa8a9dd3b",
+        "sha256_in_prefix": "d56c6788accc02ce324cb3f9078299b77469d0efbd84642935b08faaa8a9dd3b",
+        "size_in_bytes": 10452
+      },
+      {
+        "_path": "site-packages/metpy/interpolate/grid.py",
+        "path_type": "hardlink",
+        "sha256": "1f35ecc5bb8bb33cc51fc79eed9f432d6d355d4ea1d539e6ae9de2e2b2787dec",
+        "sha256_in_prefix": "1f35ecc5bb8bb33cc51fc79eed9f432d6d355d4ea1d539e6ae9de2e2b2787dec",
+        "size_in_bytes": 12465
+      },
+      {
+        "_path": "site-packages/metpy/interpolate/one_dimension.py",
+        "path_type": "hardlink",
+        "sha256": "7b01334854c5aa3adf06eb23d790d831c703ed2dd7caed945c7bfadd7c30c5d5",
+        "sha256_in_prefix": "7b01334854c5aa3adf06eb23d790d831c703ed2dd7caed945c7bfadd7c30c5d5",
+        "size_in_bytes": 7375
+      },
+      {
+        "_path": "site-packages/metpy/interpolate/points.py",
+        "path_type": "hardlink",
+        "sha256": "8b78919f3eb0d912b5a2f6bb264566006037a3a1e876a247907c87c5b4114376",
+        "sha256_in_prefix": "8b78919f3eb0d912b5a2f6bb264566006037a3a1e876a247907c87c5b4114376",
+        "size_in_bytes": 12978
+      },
+      {
+        "_path": "site-packages/metpy/interpolate/slices.py",
+        "path_type": "hardlink",
+        "sha256": "a063eb5f3fa05619cd892fa7b289f81e8e3168e050a2d72b48d18d9324a3378f",
+        "sha256_in_prefix": "a063eb5f3fa05619cd892fa7b289f81e8e3168e050a2d72b48d18d9324a3378f",
+        "size_in_bytes": 6857
+      },
+      {
+        "_path": "site-packages/metpy/interpolate/tools.py",
+        "path_type": "hardlink",
+        "sha256": "7bed3ddaba8722094e793de3f456ef625f493acd24f4960f5f8651c012df64d6",
+        "sha256_in_prefix": "7bed3ddaba8722094e793de3f456ef625f493acd24f4960f5f8651c012df64d6",
+        "size_in_bytes": 4440
+      },
+      {
+        "_path": "site-packages/metpy/io/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "6d41dc9298cc6b3570a681ec07592b1f1f20c301534768ebb0086df850591327",
+        "sha256_in_prefix": "6d41dc9298cc6b3570a681ec07592b1f1f20c301534768ebb0086df850591327",
+        "size_in_bytes": 1038
+      },
+      {
+        "_path": "site-packages/metpy/io/_metar_parser/Makefile",
+        "path_type": "hardlink",
+        "sha256": "77442e395a5e56c1638a8e1fffce1979cb5dd7905563b2908f7388d0d7dc9585",
+        "sha256_in_prefix": "77442e395a5e56c1638a8e1fffce1979cb5dd7905563b2908f7388d0d7dc9585",
+        "size_in_bytes": 59
+      },
+      {
+        "_path": "site-packages/metpy/io/_metar_parser/metar_parser.peg",
+        "path_type": "hardlink",
+        "sha256": "267eec8cacd82d269d4f1ab0b0069ebb797f1367d80c98a96cd7522eebb9ddc2",
+        "sha256_in_prefix": "267eec8cacd82d269d4f1ab0b0069ebb797f1367d80c98a96cd7522eebb9ddc2",
+        "size_in_bytes": 1587
+      },
+      {
+        "_path": "site-packages/metpy/io/_metar_parser/metar_parser.py",
+        "path_type": "hardlink",
+        "sha256": "92d149eb2e041a9ac1f817fe4a814a3a26e0a90d823bcdde96dec4b4dd55728d",
+        "sha256_in_prefix": "92d149eb2e041a9ac1f817fe4a814a3a26e0a90d823bcdde96dec4b4dd55728d",
+        "size_in_bytes": 222789
+      },
+      {
+        "_path": "site-packages/metpy/io/_nexrad_msgs/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "5c16908c08063304359a5b9e564435630db28ce7c89c6a30731caedea83dad3e",
+        "sha256_in_prefix": "5c16908c08063304359a5b9e564435630db28ce7c89c6a30731caedea83dad3e",
+        "size_in_bytes": 203
+      },
+      {
+        "_path": "site-packages/metpy/io/_nexrad_msgs/msg18.py",
+        "path_type": "hardlink",
+        "sha256": "ca0ee5ea6e2cdbc9313aa4e377d2a3ad86f6b178e63183dff4ba32f4191d4bad",
+        "sha256_in_prefix": "ca0ee5ea6e2cdbc9313aa4e377d2a3ad86f6b178e63183dff4ba32f4191d4bad",
+        "size_in_bytes": 43236
+      },
+      {
+        "_path": "site-packages/metpy/io/_nexrad_msgs/msg3.py",
+        "path_type": "hardlink",
+        "sha256": "e2972afc5ca6aa0bd904ce4d2a278b95e70994692ed73c5ef8853baad71c2ee9",
+        "sha256_in_prefix": "e2972afc5ca6aa0bd904ce4d2a278b95e70994692ed73c5ef8853baad71c2ee9",
+        "size_in_bytes": 18946
+      },
+      {
+        "_path": "site-packages/metpy/io/_tools.py",
+        "path_type": "hardlink",
+        "sha256": "18eaf570877ad3c8c12ab90920ec3ce98284338c1a5e94a715650f771415d9f7",
+        "sha256_in_prefix": "18eaf570877ad3c8c12ab90920ec3ce98284338c1a5e94a715650f771415d9f7",
+        "size_in_bytes": 11935
+      },
+      {
+        "_path": "site-packages/metpy/io/gempak.py",
+        "path_type": "hardlink",
+        "sha256": "eba0c1b9745cf0fd406939dd8874d709e6324dfb34a331f39e2d47b1d2a3d8d8",
+        "sha256_in_prefix": "eba0c1b9745cf0fd406939dd8874d709e6324dfb34a331f39e2d47b1d2a3d8d8",
+        "size_in_bytes": 111566
+      },
+      {
+        "_path": "site-packages/metpy/io/gini.py",
+        "path_type": "hardlink",
+        "sha256": "bb03136d6c14e2b70b05d2d974d88a4c9934236f8fa36edea83cd02287c1bc74",
+        "sha256_in_prefix": "bb03136d6c14e2b70b05d2d974d88a4c9934236f8fa36edea83cd02287c1bc74",
+        "size_in_bytes": 17130
+      },
+      {
+        "_path": "site-packages/metpy/io/metar.py",
+        "path_type": "hardlink",
+        "sha256": "5db30f48e2e5258b33f151486c8de3f720157a9b61ecbec1ed411e6e86958698",
+        "sha256_in_prefix": "5db30f48e2e5258b33f151486c8de3f720157a9b61ecbec1ed411e6e86958698",
+        "size_in_bytes": 18739
+      },
+      {
+        "_path": "site-packages/metpy/io/nexrad.py",
+        "path_type": "hardlink",
+        "sha256": "00aa825ea166cf6452febf702c25efb52b9632afae30da14a877b483b7fd5024",
+        "sha256_in_prefix": "00aa825ea166cf6452febf702c25efb52b9632afae30da14a877b483b7fd5024",
+        "size_in_bytes": 118026
+      },
+      {
+        "_path": "site-packages/metpy/io/station_data.py",
+        "path_type": "hardlink",
+        "sha256": "c2e8ff84829bf6d1821dc8af8bb4b9b044fc37c44e551f2d739d5a86415b62c6",
+        "sha256_in_prefix": "c2e8ff84829bf6d1821dc8af8bb4b9b044fc37c44e551f2d739d5a86415b62c6",
+        "size_in_bytes": 6776
+      },
+      {
+        "_path": "site-packages/metpy/package_tools.py",
+        "path_type": "hardlink",
+        "sha256": "a944bded44ea78c083914469fd167a64530710ef01d3b11620d105da213be7da",
+        "sha256_in_prefix": "a944bded44ea78c083914469fd167a64530710ef01d3b11620d105da213be7da",
+        "size_in_bytes": 2178
+      },
+      {
+        "_path": "site-packages/metpy/pandas.py",
+        "path_type": "hardlink",
+        "sha256": "95458c4321cabc55a6af51b82a05cc71470aecdc08b2921b7bb444b6eb85d9fa",
+        "sha256_in_prefix": "95458c4321cabc55a6af51b82a05cc71470aecdc08b2921b7bb444b6eb85d9fa",
+        "size_in_bytes": 826
+      },
+      {
+        "_path": "site-packages/metpy/plots/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "0cf63d0832a5142fd0205a323d3472f80c6cc88d933a7bee7e2f076622f476c4",
+        "sha256_in_prefix": "0cf63d0832a5142fd0205a323d3472f80c6cc88d933a7bee7e2f076622f476c4",
+        "size_in_bytes": 1611
+      },
+      {
+        "_path": "site-packages/metpy/plots/_mpl.py",
+        "path_type": "hardlink",
+        "sha256": "d2320dc2a9f12e94d4bf3360dd02c283cd4a7d850536f2c2aa523747ddcfb84d",
+        "sha256_in_prefix": "d2320dc2a9f12e94d4bf3360dd02c283cd4a7d850536f2c2aa523747ddcfb84d",
+        "size_in_bytes": 9663
+      },
+      {
+        "_path": "site-packages/metpy/plots/_static/metpy_150x150.png",
+        "path_type": "hardlink",
+        "sha256": "9797cf270ab4bc266a4505b0919489f75f4efac4547367266065592c62521a40",
+        "sha256_in_prefix": "9797cf270ab4bc266a4505b0919489f75f4efac4547367266065592c62521a40",
+        "size_in_bytes": 8107
+      },
+      {
+        "_path": "site-packages/metpy/plots/_static/metpy_75x75.png",
+        "path_type": "hardlink",
+        "sha256": "24d8110bd9903712ac927b9f50b8386befebc0e4c8ddfdfe1bc1883246da85d5",
+        "sha256_in_prefix": "24d8110bd9903712ac927b9f50b8386befebc0e4c8ddfdfe1bc1883246da85d5",
+        "size_in_bytes": 10814
+      },
+      {
+        "_path": "site-packages/metpy/plots/_static/unidata_150x150.png",
+        "path_type": "hardlink",
+        "sha256": "22749385e69c82ae685d206ec5aefb6442d7d242b8461ff7bedca241a777bd16",
+        "sha256_in_prefix": "22749385e69c82ae685d206ec5aefb6442d7d242b8461ff7bedca241a777bd16",
+        "size_in_bytes": 27463
+      },
+      {
+        "_path": "site-packages/metpy/plots/_static/unidata_75x75.png",
+        "path_type": "hardlink",
+        "sha256": "a981bc20592e65d05e5153847bc541df863903a98e8f38a5ab28c9d90852c344",
+        "sha256_in_prefix": "a981bc20592e65d05e5153847bc541df863903a98e8f38a5ab28c9d90852c344",
+        "size_in_bytes": 11438
+      },
+      {
+        "_path": "site-packages/metpy/plots/_util.py",
+        "path_type": "hardlink",
+        "sha256": "a335241df1ce6b9e530f7a1f690e91e855ddb6837d03e4d34d9f22a90946af59",
+        "sha256_in_prefix": "a335241df1ce6b9e530f7a1f690e91e855ddb6837d03e4d34d9f22a90946af59",
+        "size_in_bytes": 9167
+      },
+      {
+        "_path": "site-packages/metpy/plots/cartopy_utils.py",
+        "path_type": "hardlink",
+        "sha256": "975bdd6e3dd304f1bfcd59fb19f09a42b7a3124ac41e36efefd1117af21a7cbc",
+        "sha256_in_prefix": "975bdd6e3dd304f1bfcd59fb19f09a42b7a3124ac41e36efefd1117af21a7cbc",
+        "size_in_bytes": 2769
+      },
+      {
+        "_path": "site-packages/metpy/plots/colortable_files/Carbone42.tbl",
+        "path_type": "hardlink",
+        "sha256": "ca88db5292a51cc3e200c1772a2dba08e9dc53d1159285aa69f46643ad88458d",
+        "sha256_in_prefix": "ca88db5292a51cc3e200c1772a2dba08e9dc53d1159285aa69f46643ad88458d",
+        "size_in_bytes": 2396
+      },
+      {
+        "_path": "site-packages/metpy/plots/colortable_files/NWS8bitVel.tbl",
+        "path_type": "hardlink",
+        "sha256": "8b58867eda8d3e4c3764f2bea137e420ed4f1e9addbb47d6f088c23763023608",
+        "sha256_in_prefix": "8b58867eda8d3e4c3764f2bea137e420ed4f1e9addbb47d6f088c23763023608",
+        "size_in_bytes": 6200
+      },
+      {
+        "_path": "site-packages/metpy/plots/colortable_files/NWSReflectivity.tbl",
+        "path_type": "hardlink",
+        "sha256": "f73f0d6264d420cb55efe79d58415ca056391a0cc607fa0efa061f3331418e2f",
+        "sha256_in_prefix": "f73f0d6264d420cb55efe79d58415ca056391a0cc607fa0efa061f3331418e2f",
+        "size_in_bytes": 464
+      },
+      {
+        "_path": "site-packages/metpy/plots/colortable_files/NWSReflectivityExpanded.tbl",
+        "path_type": "hardlink",
+        "sha256": "0b228f97778433488502e9a36da808558a57b94e9053123fd488ac28c3b7b558",
+        "sha256_in_prefix": "0b228f97778433488502e9a36da808558a57b94e9053123fd488ac28c3b7b558",
+        "size_in_bytes": 348
+      },
+      {
+        "_path": "site-packages/metpy/plots/colortable_files/NWSSpectrumWidth.tbl",
+        "path_type": "hardlink",
+        "sha256": "b4b7f01aff229ed0ca1f48ed88c1950348ce719d12368c92362cad3389215d77",
+        "sha256_in_prefix": "b4b7f01aff229ed0ca1f48ed88c1950348ce719d12368c92362cad3389215d77",
+        "size_in_bytes": 273
+      },
+      {
+        "_path": "site-packages/metpy/plots/colortable_files/NWSStormClearReflectivity.tbl",
+        "path_type": "hardlink",
+        "sha256": "aa43294c24a4f6d45f6f2db9af3ebca7967c64ff341ef9c193b5a4da1c8b5292",
+        "sha256_in_prefix": "aa43294c24a4f6d45f6f2db9af3ebca7967c64ff341ef9c193b5a4da1c8b5292",
+        "size_in_bytes": 6014
+      },
+      {
+        "_path": "site-packages/metpy/plots/colortable_files/NWSVelocity.tbl",
+        "path_type": "hardlink",
+        "sha256": "aad6b08c7a65c7c8c22c59aa3f2316b8aa5042adbc333516319a2c97e670fab8",
+        "sha256_in_prefix": "aad6b08c7a65c7c8c22c59aa3f2316b8aa5042adbc333516319a2c97e670fab8",
+        "size_in_bytes": 507
+      },
+      {
+        "_path": "site-packages/metpy/plots/colortable_files/WVCIMSS.tbl",
+        "path_type": "hardlink",
+        "sha256": "70e7d80b3564227c4e4630870d54bb3a267bdf10073023e4c3df890f947f2d75",
+        "sha256_in_prefix": "70e7d80b3564227c4e4630870d54bb3a267bdf10073023e4c3df890f947f2d75",
+        "size_in_bytes": 4526
+      },
+      {
+        "_path": "site-packages/metpy/plots/colortable_files/ir_bd.tbl",
+        "path_type": "hardlink",
+        "sha256": "c44e13ace4034fa11b872e9490cd7d551e10424eb34b51c56e73a8a16b4bbb38",
+        "sha256_in_prefix": "c44e13ace4034fa11b872e9490cd7d551e10424eb34b51c56e73a8a16b4bbb38",
+        "size_in_bytes": 6138
+      },
+      {
+        "_path": "site-packages/metpy/plots/colortable_files/ir_drgb.tbl",
+        "path_type": "hardlink",
+        "sha256": "dc505224e45527f12b3b8f7fdc108d0ebd399d24f88d683f896a80e8b48fb3d4",
+        "sha256_in_prefix": "dc505224e45527f12b3b8f7fdc108d0ebd399d24f88d683f896a80e8b48fb3d4",
+        "size_in_bytes": 1798
+      },
+      {
+        "_path": "site-packages/metpy/plots/colortable_files/ir_rgbv.tbl",
+        "path_type": "hardlink",
+        "sha256": "f5bc1450aa0045bba4068b3ec45b128dc37dce2a857d7c0b3ae515fa0b5f0b7b",
+        "sha256_in_prefix": "f5bc1450aa0045bba4068b3ec45b128dc37dce2a857d7c0b3ae515fa0b5f0b7b",
+        "size_in_bytes": 1767
+      },
+      {
+        "_path": "site-packages/metpy/plots/colortable_files/ir_tpc.tbl",
+        "path_type": "hardlink",
+        "sha256": "b74da160e7e6eeeaa2200eda7ca962d9793b79743ee3cbf35531586618318faf",
+        "sha256_in_prefix": "b74da160e7e6eeeaa2200eda7ca962d9793b79743ee3cbf35531586618318faf",
+        "size_in_bytes": 7936
+      },
+      {
+        "_path": "site-packages/metpy/plots/colortable_files/ir_tv1.tbl",
+        "path_type": "hardlink",
+        "sha256": "4a6d6f02f00b6f0beeaf9f55a8d2668bf9d6ae6de08aa6da12dc949407b2408a",
+        "sha256_in_prefix": "4a6d6f02f00b6f0beeaf9f55a8d2668bf9d6ae6de08aa6da12dc949407b2408a",
+        "size_in_bytes": 4929
+      },
+      {
+        "_path": "site-packages/metpy/plots/colortable_files/precipitation.tbl",
+        "path_type": "hardlink",
+        "sha256": "ebf01112a31de9c6133373132e9b31bb740cbdef942b984a1265510e726271e1",
+        "sha256_in_prefix": "ebf01112a31de9c6133373132e9b31bb740cbdef942b984a1265510e726271e1",
+        "size_in_bytes": 921
+      },
+      {
+        "_path": "site-packages/metpy/plots/colortable_files/rainbow.tbl",
+        "path_type": "hardlink",
+        "sha256": "69a1398e9ee8139985db96531419e9fb62bf409e82657e37a09e71d51ee25014",
+        "sha256_in_prefix": "69a1398e9ee8139985db96531419e9fb62bf409e82657e37a09e71d51ee25014",
+        "size_in_bytes": 6014
+      },
+      {
+        "_path": "site-packages/metpy/plots/colortable_files/wv_tpc.tbl",
+        "path_type": "hardlink",
+        "sha256": "5aea43592ac50c1969615c3264268f20a03d046885e32c60a27d2d06ca537d5d",
+        "sha256_in_prefix": "5aea43592ac50c1969615c3264268f20a03d046885e32c60a27d2d06ca537d5d",
+        "size_in_bytes": 3658
+      },
+      {
+        "_path": "site-packages/metpy/plots/ctables.py",
+        "path_type": "hardlink",
+        "sha256": "0de4438cb3fa9460210ed1bb806b8b5e6ab3f4b8fe870a03c1699c4dd69ae61e",
+        "sha256_in_prefix": "0de4438cb3fa9460210ed1bb806b8b5e6ab3f4b8fe870a03c1699c4dd69ae61e",
+        "size_in_bytes": 8925
+      },
+      {
+        "_path": "site-packages/metpy/plots/declarative.py",
+        "path_type": "hardlink",
+        "sha256": "ebbf16fbff272764ebec51a0f92d2ade7291396df1d431b482c112d0a59a222a",
+        "sha256_in_prefix": "ebbf16fbff272764ebec51a0f92d2ade7291396df1d431b482c112d0a59a222a",
+        "size_in_bytes": 83249
+      },
+      {
+        "_path": "site-packages/metpy/plots/fonts/wx_symbols.ttf",
+        "path_type": "hardlink",
+        "sha256": "110f8c675dec96e68cead16e4fe4e94d5fe7516eb8dc4953c9ccb9261c4dc637",
+        "sha256_in_prefix": "110f8c675dec96e68cead16e4fe4e94d5fe7516eb8dc4953c9ccb9261c4dc637",
+        "size_in_bytes": 51028
+      },
+      {
+        "_path": "site-packages/metpy/plots/fonts/wx_symbols_license.md",
+        "path_type": "hardlink",
+        "sha256": "e125894a0477ace09aecf10b5e6a0cf2e0d0f1ed4c3ac4f5c4ea3c3c8d131a3a",
+        "sha256_in_prefix": "e125894a0477ace09aecf10b5e6a0cf2e0d0f1ed4c3ac4f5c4ea3c3c8d131a3a",
+        "size_in_bytes": 327
+      },
+      {
+        "_path": "site-packages/metpy/plots/mapping.py",
+        "path_type": "hardlink",
+        "sha256": "43e633d86781093852f97e2a6f90177ce5c21173408d5f8206c9f033c0b923ef",
+        "sha256_in_prefix": "43e633d86781093852f97e2a6f90177ce5c21173408d5f8206c9f033c0b923ef",
+        "size_in_bytes": 7855
+      },
+      {
+        "_path": "site-packages/metpy/plots/nexrad_tables/cc_table.tbl",
+        "path_type": "hardlink",
+        "sha256": "90e81b8efaf599040aa9cebe964fb6b12467beb3c7b41fc236f975f33e5abc53",
+        "sha256_in_prefix": "90e81b8efaf599040aa9cebe964fb6b12467beb3c7b41fc236f975f33e5abc53",
+        "size_in_bytes": 160
+      },
+      {
+        "_path": "site-packages/metpy/plots/nexrad_tables/et_table.tbl",
+        "path_type": "hardlink",
+        "sha256": "0909299a57af77a4c8581ba83a2720fafb679b069ddda134a62c183e463249f4",
+        "sha256_in_prefix": "0909299a57af77a4c8581ba83a2720fafb679b069ddda134a62c183e463249f4",
+        "size_in_bytes": 160
+      },
+      {
+        "_path": "site-packages/metpy/plots/nexrad_tables/hmc_table.tbl",
+        "path_type": "hardlink",
+        "sha256": "8b4ffc4b3f34057b0743bec4f5df213a33001cfe0cc89c9388b89ec71349352f",
+        "sha256_in_prefix": "8b4ffc4b3f34057b0743bec4f5df213a33001cfe0cc89c9388b89ec71349352f",
+        "size_in_bytes": 160
+      },
+      {
+        "_path": "site-packages/metpy/plots/nexrad_tables/kdp_table.tbl",
+        "path_type": "hardlink",
+        "sha256": "957dddbb79782ea8d919843d3818f08e282fedfae6694062fd3d1aa1e11ba6d3",
+        "sha256_in_prefix": "957dddbb79782ea8d919843d3818f08e282fedfae6694062fd3d1aa1e11ba6d3",
+        "size_in_bytes": 160
+      },
+      {
+        "_path": "site-packages/metpy/plots/nexrad_tables/lcr_tabl.tbl",
+        "path_type": "hardlink",
+        "sha256": "90b1c50452c256c29061ad7f7d3ea835e743d6ec42658d2f70c3943fbfd9b788",
+        "sha256_in_prefix": "90b1c50452c256c29061ad7f7d3ea835e743d6ec42658d2f70c3943fbfd9b788",
+        "size_in_bytes": 80
+      },
+      {
+        "_path": "site-packages/metpy/plots/nexrad_tables/ml_table.tbl",
+        "path_type": "hardlink",
+        "sha256": "e14288acd95d742d9bc1ca907d979ac79525db55c38cd4a6c6d38c8477686751",
+        "sha256_in_prefix": "e14288acd95d742d9bc1ca907d979ac79525db55c38cd4a6c6d38c8477686751",
+        "size_in_bytes": 40
+      },
+      {
+        "_path": "site-packages/metpy/plots/nexrad_tables/osw_table.tbl",
+        "path_type": "hardlink",
+        "sha256": "dae238844238d2b9b0a59a24b5705e36eb775ee7f155567ce1128f8c792bf1ce",
+        "sha256_in_prefix": "dae238844238d2b9b0a59a24b5705e36eb775ee7f155567ce1128f8c792bf1ce",
+        "size_in_bytes": 160
+      },
+      {
+        "_path": "site-packages/metpy/plots/nexrad_tables/precip_table.tbl",
+        "path_type": "hardlink",
+        "sha256": "dae238844238d2b9b0a59a24b5705e36eb775ee7f155567ce1128f8c792bf1ce",
+        "sha256_in_prefix": "dae238844238d2b9b0a59a24b5705e36eb775ee7f155567ce1128f8c792bf1ce",
+        "size_in_bytes": 160
+      },
+      {
+        "_path": "site-packages/metpy/plots/nexrad_tables/ref_table.tbl",
+        "path_type": "hardlink",
+        "sha256": "dd91443521b17403bca3536f0df2389258d610d4a48b77ea751664f856c7834d",
+        "sha256_in_prefix": "dd91443521b17403bca3536f0df2389258d610d4a48b77ea751664f856c7834d",
+        "size_in_bytes": 160
+      },
+      {
+        "_path": "site-packages/metpy/plots/nexrad_tables/ref_table8.tbl",
+        "path_type": "hardlink",
+        "sha256": "90b1c50452c256c29061ad7f7d3ea835e743d6ec42658d2f70c3943fbfd9b788",
+        "sha256_in_prefix": "90b1c50452c256c29061ad7f7d3ea835e743d6ec42658d2f70c3943fbfd9b788",
+        "size_in_bytes": 80
+      },
+      {
+        "_path": "site-packages/metpy/plots/nexrad_tables/spw_table.tbl",
+        "path_type": "hardlink",
+        "sha256": "ea2fb685156eb7344827e27bea6b132b2489f55a8b62eb3af95559327beb8a52",
+        "sha256_in_prefix": "ea2fb685156eb7344827e27bea6b132b2489f55a8b62eb3af95559327beb8a52",
+        "size_in_bytes": 80
+      },
+      {
+        "_path": "site-packages/metpy/plots/nexrad_tables/srm_table.tbl",
+        "path_type": "hardlink",
+        "sha256": "5c78e519acf903170bef24599dc272af1bba30fade6b3eb26b7ec7ff808afa5e",
+        "sha256_in_prefix": "5c78e519acf903170bef24599dc272af1bba30fade6b3eb26b7ec7ff808afa5e",
+        "size_in_bytes": 160
+      },
+      {
+        "_path": "site-packages/metpy/plots/nexrad_tables/ulr_table.tbl",
+        "path_type": "hardlink",
+        "sha256": "dd91443521b17403bca3536f0df2389258d610d4a48b77ea751664f856c7834d",
+        "sha256_in_prefix": "dd91443521b17403bca3536f0df2389258d610d4a48b77ea751664f856c7834d",
+        "size_in_bytes": 160
+      },
+      {
+        "_path": "site-packages/metpy/plots/nexrad_tables/vad_table.tbl",
+        "path_type": "hardlink",
+        "sha256": "1a55cb4bfbfdd4ccfb46859c8d786cf3cb6273abe6f1bf31e5f2bd18cc991a6c",
+        "sha256_in_prefix": "1a55cb4bfbfdd4ccfb46859c8d786cf3cb6273abe6f1bf31e5f2bd18cc991a6c",
+        "size_in_bytes": 80
+      },
+      {
+        "_path": "site-packages/metpy/plots/nexrad_tables/vel_table.tbl",
+        "path_type": "hardlink",
+        "sha256": "11f55acb675ef7d4cbcc8330bfcdb34a94b1eec4717f0bf8a90b8ba5d925c32c",
+        "sha256_in_prefix": "11f55acb675ef7d4cbcc8330bfcdb34a94b1eec4717f0bf8a90b8ba5d925c32c",
+        "size_in_bytes": 160
+      },
+      {
+        "_path": "site-packages/metpy/plots/nexrad_tables/vel_table8.tbl",
+        "path_type": "hardlink",
+        "sha256": "f3322b5c99d9b4d2094dc426545b1ad0f5d2a8e6ce9ab4148a303c87f35db5a3",
+        "sha256_in_prefix": "f3322b5c99d9b4d2094dc426545b1ad0f5d2a8e6ce9ab4148a303c87f35db5a3",
+        "size_in_bytes": 80
+      },
+      {
+        "_path": "site-packages/metpy/plots/nexrad_tables/vil_table.tbl",
+        "path_type": "hardlink",
+        "sha256": "6ebe9acc9ad3ccfb475e3e4a09e4ec1911e30d48ce6c0eb885c503b52925fd71",
+        "sha256_in_prefix": "6ebe9acc9ad3ccfb475e3e4a09e4ec1911e30d48ce6c0eb885c503b52925fd71",
+        "size_in_bytes": 160
+      },
+      {
+        "_path": "site-packages/metpy/plots/nexrad_tables/vwp_table.tbl",
+        "path_type": "hardlink",
+        "sha256": "28545d1b9afbc70d4a938ad71d84c81b279b9c83666a8c037cb47700f23fa663",
+        "sha256_in_prefix": "28545d1b9afbc70d4a938ad71d84c81b279b9c83666a8c037cb47700f23fa663",
+        "size_in_bytes": 50
+      },
+      {
+        "_path": "site-packages/metpy/plots/nexrad_tables/zdr_table.tbl",
+        "path_type": "hardlink",
+        "sha256": "36c54931f52ebb7d2b23216858dc1024e17c7e05498f24aac682ac8f1b614144",
+        "sha256_in_prefix": "36c54931f52ebb7d2b23216858dc1024e17c7e05498f24aac682ac8f1b614144",
+        "size_in_bytes": 160
+      },
+      {
+        "_path": "site-packages/metpy/plots/skewt.py",
+        "path_type": "hardlink",
+        "sha256": "84c1c3c272d882b69f48f6e6bddefa1ee5aa39420788b37305c327b325a3aa50",
+        "sha256_in_prefix": "84c1c3c272d882b69f48f6e6bddefa1ee5aa39420788b37305c327b325a3aa50",
+        "size_in_bytes": 36705
+      },
+      {
+        "_path": "site-packages/metpy/plots/station_plot.py",
+        "path_type": "hardlink",
+        "sha256": "77fcb098eec5ede4cd38bd565356e51234886aced20312be8f8c934f83742faa",
+        "sha256_in_prefix": "77fcb098eec5ede4cd38bd565356e51234886aced20312be8f8c934f83742faa",
+        "size_in_bytes": 27789
+      },
+      {
+        "_path": "site-packages/metpy/plots/wx_symbols.py",
+        "path_type": "hardlink",
+        "sha256": "de959e9846c315fef7040a61b79a8333d8017be9c738ba82281b58175b37a268",
+        "sha256_in_prefix": "de959e9846c315fef7040a61b79a8333d8017be9c738ba82281b58175b37a268",
+        "size_in_bytes": 11069
+      },
+      {
+        "_path": "site-packages/metpy/static-data-manifest.txt",
+        "path_type": "hardlink",
+        "sha256": "ae048b9da19c9cc6a4d57ccb147a46b13b374d63a0acc712565254130e438ba9",
+        "sha256_in_prefix": "ae048b9da19c9cc6a4d57ccb147a46b13b374d63a0acc712565254130e438ba9",
+        "size_in_bytes": 21512
+      },
+      {
+        "_path": "site-packages/metpy/testing.py",
+        "path_type": "hardlink",
+        "sha256": "fc85d944f5823cd2996b31cd5acec72bd876429dbc9a15fec2dcc3606d08fc35",
+        "sha256_in_prefix": "fc85d944f5823cd2996b31cd5acec72bd876429dbc9a15fec2dcc3606d08fc35",
+        "size_in_bytes": 7306
+      },
+      {
+        "_path": "site-packages/metpy/units.py",
+        "path_type": "hardlink",
+        "sha256": "9d457e3dddffb0c426af00df95ae90f7cdbf70c6c49e757d7cf3bafa090de303",
+        "sha256_in_prefix": "9d457e3dddffb0c426af00df95ae90f7cdbf70c6c49e757d7cf3bafa090de303",
+        "size_in_bytes": 9002
+      },
+      {
+        "_path": "site-packages/metpy/xarray.py",
+        "path_type": "hardlink",
+        "sha256": "cc144e62caab2b8456ad47cf0d23dc299ebcb2b7f478b4db05100982a6480a8d",
+        "sha256_in_prefix": "cc144e62caab2b8456ad47cf0d23dc299ebcb2b7f478b4db05100982a6480a8d",
+        "size_in_bytes": 65118
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/_vendor/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/_vendor/__pycache__/xarray.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/__pycache__/_version.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/calc/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/calc/__pycache__/basic.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/calc/__pycache__/cross_sections.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/calc/__pycache__/exceptions.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/calc/__pycache__/indices.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/calc/__pycache__/kinematics.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/calc/__pycache__/thermo.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/calc/__pycache__/tools.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/calc/__pycache__/turbulence.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/__pycache__/cbook.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/__pycache__/constants.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/__pycache__/deprecation.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/__pycache__/future.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/interpolate/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/interpolate/__pycache__/geometry.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/interpolate/__pycache__/grid.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/interpolate/__pycache__/one_dimension.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/interpolate/__pycache__/points.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/interpolate/__pycache__/slices.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/interpolate/__pycache__/tools.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/io/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/io/_metar_parser/__pycache__/metar_parser.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/io/_nexrad_msgs/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/io/_nexrad_msgs/__pycache__/msg18.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/io/_nexrad_msgs/__pycache__/msg3.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/io/__pycache__/_tools.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/io/__pycache__/gempak.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/io/__pycache__/gini.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/io/__pycache__/metar.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/io/__pycache__/nexrad.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/io/__pycache__/station_data.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/__pycache__/package_tools.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/__pycache__/pandas.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/plots/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/plots/__pycache__/_mpl.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/plots/__pycache__/_util.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/plots/__pycache__/cartopy_utils.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/plots/__pycache__/ctables.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/plots/__pycache__/declarative.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/plots/__pycache__/mapping.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/plots/__pycache__/skewt.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/plots/__pycache__/station_plot.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/plots/__pycache__/wx_symbols.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/__pycache__/testing.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/__pycache__/units.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/metpy/__pycache__/xarray.cpython-39.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "metpy==1.1.0=pyhd8ed1ab_0",
+  "sha256": "0c714d4af7648639457b3d646be330acc977b7ebee1c878b5b759f2e968ada91",
+  "size": 312918,
+  "subdir": "noarch",
+  "timestamp": 1628530875220,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/metpy-1.1.0-pyhd8ed1ab_0.tar.bz2",
+  "version": "1.1.0"
+}

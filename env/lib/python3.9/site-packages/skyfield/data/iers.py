@@ -1,0 +1,61 @@
+"""Parse data files from the International Earth Rotation Service.
+
+See:
+https://datacenter.iers.org/eop.php
+ftp://cddis.gsfc.nasa.gov/pub/products/iers/readme.finals2000A
+
+"""
+import numpy as np
+from ..constants import DAY_S
+
+inf = float('inf')
+
+# This regular expression must remain a plain string; attempting to
+# compile it triggers a bug in older NumPy versions like 1.14.3:
+# https://github.com/skyfielders/python-skyfield/issues/372
+_R = (b'(?m)^......(.........) . '
+      b'(.\d.......)......... '
+      b'(.\d.......).........  '
+      b'.(.\d........)')
+
+def parse_x_y_dut1_from_finals_all(f):
+    return np.fromregex(f, _R, [
+        ('utc_mjd', float),
+        ('x_arcseconds', float),
+        ('y_arcseconds', float),
+        ('dut1', float),
+    ])
+
+def install_polar_motion_table(ts, finals_data):
+    t = ts.utc(1858, 11, 17.0 + finals_data['utc_mjd'])
+    ts.polar_motion_table = (
+        t.tt,
+        np.array(finals_data['x_arcseconds']),
+        np.array(finals_data['y_arcseconds']),
+    )
+
+def build_timescale_arrays(utc_mjd, dut1):
+    big_jumps = np.diff(dut1) > 0.9
+    leap_second_mask = np.concatenate([[False], big_jumps])
+    tt_minus_utc = np.cumsum(leap_second_mask) + 32.184 + 12.0
+
+    daily_tt = utc_mjd + tt_minus_utc / DAY_S + 2400000.5
+    daily_delta_t = (tt_minus_utc - dut1).round(7)
+    leap_dates = utc_mjd[leap_second_mask]
+
+    # Since "finals2000A.all" starts on 1973-01-02 and leaves out the
+    # first two leap seconds, add them back.  (But check first, in case
+    # the user loads a more complete data file than "finals2000A.all".)
+    first_leap = leap_dates[0] if len(leap_dates) else 0
+    more_leaps = [mjd for mjd in (41499.0, 41683.0) if first_leap > mjd]
+    leap_dates = np.concatenate([more_leaps, leap_dates])
+
+    leap_dates += 2400000.5
+    leap_offsets = np.arange(11.0, len(leap_dates) + 11.0)
+    return daily_tt, daily_delta_t, leap_dates, leap_offsets
+
+# Compatibility with older Skyfield versions:
+
+def parse_dut1_from_finals_all(f):
+    data = parse_x_y_dut1_from_finals_all(f)
+    return data['utc_mjd'], data['dut1']

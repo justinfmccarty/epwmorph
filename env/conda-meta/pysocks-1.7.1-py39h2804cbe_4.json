@@ -1,0 +1,134 @@
+{
+  "build": "py39h2804cbe_4",
+  "build_number": 4,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "python >=3.9,<3.10.0a0",
+    "python >=3.9,<3.10.0a0 *_cpython",
+    "python_abi 3.9.* *_cp39"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/pysocks-1.7.1-py39h2804cbe_4",
+  "features": "",
+  "files": [
+    "lib/python3.9/site-packages/PySocks-1.7.1.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/PySocks-1.7.1.dist-info/LICENSE",
+    "lib/python3.9/site-packages/PySocks-1.7.1.dist-info/METADATA",
+    "lib/python3.9/site-packages/PySocks-1.7.1.dist-info/RECORD",
+    "lib/python3.9/site-packages/PySocks-1.7.1.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/PySocks-1.7.1.dist-info/WHEEL",
+    "lib/python3.9/site-packages/PySocks-1.7.1.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/PySocks-1.7.1.dist-info/top_level.txt",
+    "lib/python3.9/site-packages/__pycache__/socks.cpython-39.pyc",
+    "lib/python3.9/site-packages/__pycache__/sockshandler.cpython-39.pyc",
+    "lib/python3.9/site-packages/socks.py",
+    "lib/python3.9/site-packages/sockshandler.py"
+  ],
+  "fn": "pysocks-1.7.1-py39h2804cbe_4.tar.bz2",
+  "license": "BSD 3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/pysocks-1.7.1-py39h2804cbe_4",
+    "type": 1
+  },
+  "md5": "770a25ef670b5154e54c854f561d667d",
+  "name": "pysocks",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/pysocks-1.7.1-py39h2804cbe_4.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.9/site-packages/PySocks-1.7.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.9/site-packages/PySocks-1.7.1.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "7027e214e014eb78b7adcc1ceda5aca713a79fc4f6a0c52c9da5b3e707e6ffe9",
+        "sha256_in_prefix": "7027e214e014eb78b7adcc1ceda5aca713a79fc4f6a0c52c9da5b3e707e6ffe9",
+        "size_in_bytes": 1401
+      },
+      {
+        "_path": "lib/python3.9/site-packages/PySocks-1.7.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "731ad8723eeb283dca474a099fcd8334af067b1ece2d218c7df32e69782db77b",
+        "sha256_in_prefix": "731ad8723eeb283dca474a099fcd8334af067b1ece2d218c7df32e69782db77b",
+        "size_in_bytes": 13257
+      },
+      {
+        "_path": "lib/python3.9/site-packages/PySocks-1.7.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "5c0f9a4f9714da280e9ce641c79b0260ffa7497114c4bc087108edeaeb151df8",
+        "sha256_in_prefix": "5c0f9a4f9714da280e9ce641c79b0260ffa7497114c4bc087108edeaeb151df8",
+        "size_in_bytes": 882
+      },
+      {
+        "_path": "lib/python3.9/site-packages/PySocks-1.7.1.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.9/site-packages/PySocks-1.7.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "7b0c04b9e8a8d42d977874ef4f5ee7f1d6542603afc82582b7459534b0a53fda",
+        "sha256_in_prefix": "7b0c04b9e8a8d42d977874ef4f5ee7f1d6542603afc82582b7459534b0a53fda",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "lib/python3.9/site-packages/PySocks-1.7.1.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "a65059cd77947306bf39e1e59aa12d0356b36fbe6f13817c444ec5592f4096e7",
+        "sha256_in_prefix": "a65059cd77947306bf39e1e59aa12d0356b36fbe6f13817c444ec5592f4096e7",
+        "size_in_bytes": 95
+      },
+      {
+        "_path": "lib/python3.9/site-packages/PySocks-1.7.1.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "4ca48e21f0850682bd118f050586d8a82dcf59ddfef86d79a61f67f3e4073c39",
+        "sha256_in_prefix": "4ca48e21f0850682bd118f050586d8a82dcf59ddfef86d79a61f67f3e4073c39",
+        "size_in_bytes": 19
+      },
+      {
+        "_path": "lib/python3.9/site-packages/__pycache__/socks.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "3448ba473ff554862eca0f6c6e632133d335da78949a96f2e1aa38916ee18769",
+        "sha256_in_prefix": "3448ba473ff554862eca0f6c6e632133d335da78949a96f2e1aa38916ee18769",
+        "size_in_bytes": 21363
+      },
+      {
+        "_path": "lib/python3.9/site-packages/__pycache__/sockshandler.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "87bf8c070fbf18b94dca21e5eea1b3843b4ec3a307f239c0c30a759af879eb80",
+        "sha256_in_prefix": "87bf8c070fbf18b94dca21e5eea1b3843b4ec3a307f239c0c30a759af879eb80",
+        "size_in_bytes": 4214
+      },
+      {
+        "_path": "lib/python3.9/site-packages/socks.py",
+        "path_type": "hardlink",
+        "sha256": "c4e627dbbb7d206adb4c1cd6b1452e3dad1806ea6582253293390e0795798856",
+        "sha256_in_prefix": "c4e627dbbb7d206adb4c1cd6b1452e3dad1806ea6582253293390e0795798856",
+        "size_in_bytes": 31086
+      },
+      {
+        "_path": "lib/python3.9/site-packages/sockshandler.py",
+        "path_type": "hardlink",
+        "sha256": "d926068fea70b7592380ba19026c9e6845c27990d64667d54bf406ea412b1ad6",
+        "sha256_in_prefix": "d926068fea70b7592380ba19026c9e6845c27990d64667d54bf406ea412b1ad6",
+        "size_in_bytes": 3966
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "pysocks==1.7.1=py39h2804cbe_4",
+  "sha256": "12498497977cfe2e71f8026a0dc56ed55fcb3e46a076ac5898727b3f1d52076b",
+  "size": 28794,
+  "subdir": "osx-arm64",
+  "timestamp": 1635862898380,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/pysocks-1.7.1-py39h2804cbe_4.tar.bz2",
+  "version": "1.7.1"
+}

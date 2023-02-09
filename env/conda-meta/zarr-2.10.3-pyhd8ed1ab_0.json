@@ -1,0 +1,548 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "asciitree",
+    "fasteners",
+    "numcodecs >=0.6.4",
+    "numpy >=1.7",
+    "python >=3.5"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/zarr-2.10.3-pyhd8ed1ab_0",
+  "features": "",
+  "files": [
+    "lib/python3.9/site-packages/zarr-2.10.3.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/zarr-2.10.3.dist-info/LICENSE",
+    "lib/python3.9/site-packages/zarr-2.10.3.dist-info/METADATA",
+    "lib/python3.9/site-packages/zarr-2.10.3.dist-info/RECORD",
+    "lib/python3.9/site-packages/zarr-2.10.3.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/zarr-2.10.3.dist-info/WHEEL",
+    "lib/python3.9/site-packages/zarr-2.10.3.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/zarr-2.10.3.dist-info/top_level.txt",
+    "lib/python3.9/site-packages/zarr/__init__.py",
+    "lib/python3.9/site-packages/zarr/_storage/__init__.py",
+    "lib/python3.9/site-packages/zarr/_storage/absstore.py",
+    "lib/python3.9/site-packages/zarr/attrs.py",
+    "lib/python3.9/site-packages/zarr/codecs.py",
+    "lib/python3.9/site-packages/zarr/convenience.py",
+    "lib/python3.9/site-packages/zarr/core.py",
+    "lib/python3.9/site-packages/zarr/creation.py",
+    "lib/python3.9/site-packages/zarr/errors.py",
+    "lib/python3.9/site-packages/zarr/hierarchy.py",
+    "lib/python3.9/site-packages/zarr/indexing.py",
+    "lib/python3.9/site-packages/zarr/meta.py",
+    "lib/python3.9/site-packages/zarr/meta_v1.py",
+    "lib/python3.9/site-packages/zarr/n5.py",
+    "lib/python3.9/site-packages/zarr/storage.py",
+    "lib/python3.9/site-packages/zarr/sync.py",
+    "lib/python3.9/site-packages/zarr/tests/__init__.py",
+    "lib/python3.9/site-packages/zarr/tests/conftest.py",
+    "lib/python3.9/site-packages/zarr/tests/test_attrs.py",
+    "lib/python3.9/site-packages/zarr/tests/test_convenience.py",
+    "lib/python3.9/site-packages/zarr/tests/test_core.py",
+    "lib/python3.9/site-packages/zarr/tests/test_creation.py",
+    "lib/python3.9/site-packages/zarr/tests/test_dim_separator.py",
+    "lib/python3.9/site-packages/zarr/tests/test_filters.py",
+    "lib/python3.9/site-packages/zarr/tests/test_hierarchy.py",
+    "lib/python3.9/site-packages/zarr/tests/test_indexing.py",
+    "lib/python3.9/site-packages/zarr/tests/test_info.py",
+    "lib/python3.9/site-packages/zarr/tests/test_meta.py",
+    "lib/python3.9/site-packages/zarr/tests/test_storage.py",
+    "lib/python3.9/site-packages/zarr/tests/test_sync.py",
+    "lib/python3.9/site-packages/zarr/tests/test_util.py",
+    "lib/python3.9/site-packages/zarr/tests/util.py",
+    "lib/python3.9/site-packages/zarr/util.py",
+    "lib/python3.9/site-packages/zarr/version.py",
+    "lib/python3.9/site-packages/zarr/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/_storage/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/_storage/__pycache__/absstore.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/__pycache__/attrs.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/__pycache__/codecs.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/__pycache__/convenience.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/__pycache__/core.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/__pycache__/creation.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/__pycache__/errors.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/__pycache__/hierarchy.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/__pycache__/indexing.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/__pycache__/meta.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/__pycache__/meta_v1.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/__pycache__/n5.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/__pycache__/storage.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/__pycache__/sync.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/tests/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/tests/__pycache__/conftest.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/tests/__pycache__/test_attrs.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/tests/__pycache__/test_convenience.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/tests/__pycache__/test_core.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/tests/__pycache__/test_creation.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/tests/__pycache__/test_dim_separator.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/tests/__pycache__/test_filters.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/tests/__pycache__/test_hierarchy.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/tests/__pycache__/test_indexing.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/tests/__pycache__/test_info.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/tests/__pycache__/test_meta.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/tests/__pycache__/test_storage.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/tests/__pycache__/test_sync.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/tests/__pycache__/test_util.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/tests/__pycache__/util.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/__pycache__/util.cpython-39.pyc",
+    "lib/python3.9/site-packages/zarr/__pycache__/version.cpython-39.pyc"
+  ],
+  "fn": "zarr-2.10.3-pyhd8ed1ab_0.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/zarr-2.10.3-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "e3e09051fcbef944db14078e1ac96a5d",
+  "name": "zarr",
+  "noarch": "python",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/zarr-2.10.3-pyhd8ed1ab_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/zarr-2.10.3.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/zarr-2.10.3.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "d5b09ccf93b54491f13c2ed83ddd18ce025498a2e487e1e63c3d62a1bbdd49a6",
+        "sha256_in_prefix": "d5b09ccf93b54491f13c2ed83ddd18ce025498a2e487e1e63c3d62a1bbdd49a6",
+        "size_in_bytes": 1125
+      },
+      {
+        "_path": "site-packages/zarr-2.10.3.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "49ddb806ab61e874862058b3178ef53249df38c6de2f83f83d8b64cfc2ca6813",
+        "sha256_in_prefix": "49ddb806ab61e874862058b3178ef53249df38c6de2f83f83d8b64cfc2ca6813",
+        "size_in_bytes": 4613
+      },
+      {
+        "_path": "site-packages/zarr-2.10.3.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "2a3ea8cbb6cdef14043c0c636c003b667b2438fc570b0be2d0408f23c2feda2e",
+        "sha256_in_prefix": "2a3ea8cbb6cdef14043c0c636c003b667b2438fc570b0be2d0408f23c2feda2e",
+        "size_in_bytes": 4960
+      },
+      {
+        "_path": "site-packages/zarr-2.10.3.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/zarr-2.10.3.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "7b0c04b9e8a8d42d977874ef4f5ee7f1d6542603afc82582b7459534b0a53fda",
+        "sha256_in_prefix": "7b0c04b9e8a8d42d977874ef4f5ee7f1d6542603afc82582b7459534b0a53fda",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "site-packages/zarr-2.10.3.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "c58d3c9b2c0a7433aa7ab56fdf315eccaafe4200b6b6ad1ce61d655da22f1304",
+        "sha256_in_prefix": "c58d3c9b2c0a7433aa7ab56fdf315eccaafe4200b6b6ad1ce61d655da22f1304",
+        "size_in_bytes": 100
+      },
+      {
+        "_path": "site-packages/zarr-2.10.3.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "98550fbb38e7990973626584d0db5a3235a31d61afcf077c02d518026020f725",
+        "sha256_in_prefix": "98550fbb38e7990973626584d0db5a3235a31d61afcf077c02d518026020f725",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/zarr/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e923a8111ae26d4ea04442c9f772b3b8544bcf37cbd88d91a945452e09f9999c",
+        "sha256_in_prefix": "e923a8111ae26d4ea04442c9f772b3b8544bcf37cbd88d91a945452e09f9999c",
+        "size_in_bytes": 1096
+      },
+      {
+        "_path": "site-packages/zarr/_storage/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/zarr/_storage/absstore.py",
+        "path_type": "hardlink",
+        "sha256": "8ad08b27dac7eee0f352212b740994e1360c482b0686fff1515457d39f5592d4",
+        "sha256_in_prefix": "8ad08b27dac7eee0f352212b740994e1360c482b0686fff1515457d39f5592d4",
+        "size_in_bytes": 7252
+      },
+      {
+        "_path": "site-packages/zarr/attrs.py",
+        "path_type": "hardlink",
+        "sha256": "af61359aa98beac5de56856c790c4f1aa56c6aa61b3b0570d022721732b4c81b",
+        "sha256_in_prefix": "af61359aa98beac5de56856c790c4f1aa56c6aa61b3b0570d022721732b4c81b",
+        "size_in_bytes": 3869
+      },
+      {
+        "_path": "site-packages/zarr/codecs.py",
+        "path_type": "hardlink",
+        "sha256": "70adfc2ff45b7c0fab870001fa7abc519271537c6b442f1fc88a91bbca282a41",
+        "sha256_in_prefix": "70adfc2ff45b7c0fab870001fa7abc519271537c6b442f1fc88a91bbca282a41",
+        "size_in_bytes": 158
+      },
+      {
+        "_path": "site-packages/zarr/convenience.py",
+        "path_type": "hardlink",
+        "sha256": "d2cc1dcb031723cb37cdf90312dfe4a0b583fb21d817544fb952676015f46d67",
+        "sha256_in_prefix": "d2cc1dcb031723cb37cdf90312dfe4a0b583fb21d817544fb952676015f46d67",
+        "size_in_bytes": 41176
+      },
+      {
+        "_path": "site-packages/zarr/core.py",
+        "path_type": "hardlink",
+        "sha256": "294a815c8821ccfcdbf1209ff9adaa9394bae1f2d7e4e99e34a4e6dc5ae89414",
+        "sha256_in_prefix": "294a815c8821ccfcdbf1209ff9adaa9394bae1f2d7e4e99e34a4e6dc5ae89414",
+        "size_in_bytes": 85132
+      },
+      {
+        "_path": "site-packages/zarr/creation.py",
+        "path_type": "hardlink",
+        "sha256": "ca9bb7edf8a33384baf677d662a90755717be8a4622a61da80d4fca15cd6ded3",
+        "sha256_in_prefix": "ca9bb7edf8a33384baf677d662a90755717be8a4622a61da80d4fca15cd6ded3",
+        "size_in_bytes": 20314
+      },
+      {
+        "_path": "site-packages/zarr/errors.py",
+        "path_type": "hardlink",
+        "sha256": "2916631205a1bb6af4876328886d60752e7136dc9fb9c6508b62b7492b6caca4",
+        "sha256_in_prefix": "2916631205a1bb6af4876328886d60752e7136dc9fb9c6508b62b7492b6caca4",
+        "size_in_bytes": 1849
+      },
+      {
+        "_path": "site-packages/zarr/hierarchy.py",
+        "path_type": "hardlink",
+        "sha256": "21e51fecbe951290609110bec984f84f590d334b59c79ebcd79d0a8202eb13d0",
+        "sha256_in_prefix": "21e51fecbe951290609110bec984f84f590d334b59c79ebcd79d0a8202eb13d0",
+        "size_in_bytes": 40258
+      },
+      {
+        "_path": "site-packages/zarr/indexing.py",
+        "path_type": "hardlink",
+        "sha256": "9c2a0b70e2143ed2fd3b82bb2750cfbd6e7d00efb7523b48cfb0a51d826f4426",
+        "sha256_in_prefix": "9c2a0b70e2143ed2fd3b82bb2750cfbd6e7d00efb7523b48cfb0a51d826f4426",
+        "size_in_bytes": 32267
+      },
+      {
+        "_path": "site-packages/zarr/meta.py",
+        "path_type": "hardlink",
+        "sha256": "c94276d517bff48f2900bdeac746f727d9a3f3938c340438677d83eced978489",
+        "sha256_in_prefix": "c94276d517bff48f2900bdeac746f727d9a3f3938c340438677d83eced978489",
+        "size_in_bytes": 6812
+      },
+      {
+        "_path": "site-packages/zarr/meta_v1.py",
+        "path_type": "hardlink",
+        "sha256": "e116907e227b833460ab378fca0dc881df1fe24fe2ca4cbd13ca89e06d0ca873",
+        "sha256_in_prefix": "e116907e227b833460ab378fca0dc881df1fe24fe2ca4cbd13ca89e06d0ca873",
+        "size_in_bytes": 1655
+      },
+      {
+        "_path": "site-packages/zarr/n5.py",
+        "path_type": "hardlink",
+        "sha256": "5cffaa20e0615fe9a363281731a099b1fdf05db6403f4464ffcf590095b6051d",
+        "sha256_in_prefix": "5cffaa20e0615fe9a363281731a099b1fdf05db6403f4464ffcf590095b6051d",
+        "size_in_bytes": 30948
+      },
+      {
+        "_path": "site-packages/zarr/storage.py",
+        "path_type": "hardlink",
+        "sha256": "26a5137a3332d19cd2efa9c7fcde3d7a326d67af1664b8b423c1ae683511e79f",
+        "sha256_in_prefix": "26a5137a3332d19cd2efa9c7fcde3d7a326d67af1664b8b423c1ae683511e79f",
+        "size_in_bytes": 87560
+      },
+      {
+        "_path": "site-packages/zarr/sync.py",
+        "path_type": "hardlink",
+        "sha256": "b3d46d34a1d26e6ebab8e7fc1e187122776a8aecb1cc46d799bd41fb23d0a274",
+        "sha256_in_prefix": "b3d46d34a1d26e6ebab8e7fc1e187122776a8aecb1cc46d799bd41fb23d0a274",
+        "size_in_bytes": 1184
+      },
+      {
+        "_path": "site-packages/zarr/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/zarr/tests/conftest.py",
+        "path_type": "hardlink",
+        "sha256": "359cf077e28f9791af24ddcaa96e60f12ea1a9ae479cb8391b0e925568a3d0fc",
+        "sha256_in_prefix": "359cf077e28f9791af24ddcaa96e60f12ea1a9ae479cb8391b0e925568a3d0fc",
+        "size_in_bytes": 125
+      },
+      {
+        "_path": "site-packages/zarr/tests/test_attrs.py",
+        "path_type": "hardlink",
+        "sha256": "c7f898efc430032a527c4c1b469a1f940dbb1857f8eb03901725c5e47b780606",
+        "sha256_in_prefix": "c7f898efc430032a527c4c1b469a1f940dbb1857f8eb03901725c5e47b780606",
+        "size_in_bytes": 7464
+      },
+      {
+        "_path": "site-packages/zarr/tests/test_convenience.py",
+        "path_type": "hardlink",
+        "sha256": "9a0df7395ee4bd76681aa076edf8e5e745292424182c112abf56c39851f7d04f",
+        "sha256_in_prefix": "9a0df7395ee4bd76681aa076edf8e5e745292424182c112abf56c39851f7d04f",
+        "size_in_bytes": 23438
+      },
+      {
+        "_path": "site-packages/zarr/tests/test_core.py",
+        "path_type": "hardlink",
+        "sha256": "739537d2bb57d5753da7e77cd226404022b0a0d0fadc1cbb7c249575e2450693",
+        "sha256_in_prefix": "739537d2bb57d5753da7e77cd226404022b0a0d0fadc1cbb7c249575e2450693",
+        "size_in_bytes": 100225
+      },
+      {
+        "_path": "site-packages/zarr/tests/test_creation.py",
+        "path_type": "hardlink",
+        "sha256": "9390549a04dec083341af5c07ab923bf4b99b94523c3397880b93ed2fc85775a",
+        "sha256_in_prefix": "9390549a04dec083341af5c07ab923bf4b99b94523c3397880b93ed2fc85775a",
+        "size_in_bytes": 14797
+      },
+      {
+        "_path": "site-packages/zarr/tests/test_dim_separator.py",
+        "path_type": "hardlink",
+        "sha256": "41aeffd1372b739ec5c2e72f6004cc832da8b965dfcd15615ea24fc04b98bf9a",
+        "sha256_in_prefix": "41aeffd1372b739ec5c2e72f6004cc832da8b965dfcd15615ea24fc04b98bf9a",
+        "size_in_bytes": 4450
+      },
+      {
+        "_path": "site-packages/zarr/tests/test_filters.py",
+        "path_type": "hardlink",
+        "sha256": "22c8c302d62d51301564708979e2c84e04782c8a0350ae64c9024997d7262260",
+        "sha256_in_prefix": "22c8c302d62d51301564708979e2c84e04782c8a0350ae64c9024997d7262260",
+        "size_in_bytes": 5896
+      },
+      {
+        "_path": "site-packages/zarr/tests/test_hierarchy.py",
+        "path_type": "hardlink",
+        "sha256": "8fb6643481c9d6b5578f81af2a33e4b649da2cf5d7245b54bebebd601dabd7b2",
+        "sha256_in_prefix": "8fb6643481c9d6b5578f81af2a33e4b649da2cf5d7245b54bebebd601dabd7b2",
+        "size_in_bytes": 41792
+      },
+      {
+        "_path": "site-packages/zarr/tests/test_indexing.py",
+        "path_type": "hardlink",
+        "sha256": "435b4e61c82da41a04fac221907c0f39b5708fa6e7b13541f101091a94264d80",
+        "sha256_in_prefix": "435b4e61c82da41a04fac221907c0f39b5708fa6e7b13541f101091a94264d80",
+        "size_in_bytes": 43217
+      },
+      {
+        "_path": "site-packages/zarr/tests/test_info.py",
+        "path_type": "hardlink",
+        "sha256": "372d67335d3f0540419a38fa1612a4e5e6d4de91003ff0e508c72bd91d122c07",
+        "sha256_in_prefix": "372d67335d3f0540419a38fa1612a4e5e6d4de91003ff0e508c72bd91d122c07",
+        "size_in_bytes": 999
+      },
+      {
+        "_path": "site-packages/zarr/tests/test_meta.py",
+        "path_type": "hardlink",
+        "sha256": "e91c569c2bfe7effb9d90027acbc1ab1827e453eaaf0c203a554307bd0cedff2",
+        "sha256_in_prefix": "e91c569c2bfe7effb9d90027acbc1ab1827e453eaaf0c203a554307bd0cedff2",
+        "size_in_bytes": 14597
+      },
+      {
+        "_path": "site-packages/zarr/tests/test_storage.py",
+        "path_type": "hardlink",
+        "sha256": "b6cb475da3268d647748e2a83f88658afd55c6604f5394465caeac2f38749a6e",
+        "sha256_in_prefix": "b6cb475da3268d647748e2a83f88658afd55c6604f5394465caeac2f38749a6e",
+        "size_in_bytes": 73435
+      },
+      {
+        "_path": "site-packages/zarr/tests/test_sync.py",
+        "path_type": "hardlink",
+        "sha256": "8de5c368cd2210761b2da0fbdbf8c4d67b2a73bb03e8ba449487095092a76563",
+        "sha256_in_prefix": "8de5c368cd2210761b2da0fbdbf8c4d67b2a73bb03e8ba449487095092a76563",
+        "size_in_bytes": 9313
+      },
+      {
+        "_path": "site-packages/zarr/tests/test_util.py",
+        "path_type": "hardlink",
+        "sha256": "2ed6b85ca920622e92f6c93fd870aa41769445ecc610c79211fad7f2447ba9c8",
+        "sha256_in_prefix": "2ed6b85ca920622e92f6c93fd870aa41769445ecc610c79211fad7f2447ba9c8",
+        "size_in_bytes": 7364
+      },
+      {
+        "_path": "site-packages/zarr/tests/util.py",
+        "path_type": "hardlink",
+        "sha256": "7dd5a6d69b30cb8fe33fbf4c2d0e310619bb04cc107f886dc260054aefca9a62",
+        "sha256_in_prefix": "7dd5a6d69b30cb8fe33fbf4c2d0e310619bb04cc107f886dc260054aefca9a62",
+        "size_in_bytes": 2117
+      },
+      {
+        "_path": "site-packages/zarr/util.py",
+        "path_type": "hardlink",
+        "sha256": "e093e8f1740700b1513d61377f4f5f893b167c984ca4c88c90252e620a38f43c",
+        "sha256_in_prefix": "e093e8f1740700b1513d61377f4f5f893b167c984ca4c88c90252e620a38f43c",
+        "size_in_bytes": 19696
+      },
+      {
+        "_path": "site-packages/zarr/version.py",
+        "path_type": "hardlink",
+        "sha256": "263a85f60185e6dc10870191670e2140b54e03ba7f3d4d5a195be0e9265f75ee",
+        "sha256_in_prefix": "263a85f60185e6dc10870191670e2140b54e03ba7f3d4d5a195be0e9265f75ee",
+        "size_in_bytes": 144
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/_storage/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/_storage/__pycache__/absstore.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/__pycache__/attrs.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/__pycache__/codecs.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/__pycache__/convenience.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/__pycache__/core.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/__pycache__/creation.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/__pycache__/errors.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/__pycache__/hierarchy.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/__pycache__/indexing.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/__pycache__/meta.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/__pycache__/meta_v1.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/__pycache__/n5.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/__pycache__/storage.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/__pycache__/sync.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/tests/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/tests/__pycache__/conftest.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/tests/__pycache__/test_attrs.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/tests/__pycache__/test_convenience.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/tests/__pycache__/test_core.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/tests/__pycache__/test_creation.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/tests/__pycache__/test_dim_separator.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/tests/__pycache__/test_filters.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/tests/__pycache__/test_hierarchy.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/tests/__pycache__/test_indexing.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/tests/__pycache__/test_info.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/tests/__pycache__/test_meta.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/tests/__pycache__/test_storage.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/tests/__pycache__/test_sync.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/tests/__pycache__/test_util.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/tests/__pycache__/util.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/__pycache__/util.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zarr/__pycache__/version.cpython-39.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "zarr==2.10.3=pyhd8ed1ab_0",
+  "sha256": "61734e44285c7f07e44f0ed751a7305c1cd1ab25cd1d038e0b857377a28d849d",
+  "size": 113142,
+  "subdir": "noarch",
+  "timestamp": 1637318556315,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/zarr-2.10.3-pyhd8ed1ab_0.tar.bz2",
+  "version": "2.10.3"
+}

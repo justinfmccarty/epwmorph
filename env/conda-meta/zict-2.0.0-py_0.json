@@ -1,0 +1,203 @@
+{
+  "build": "py_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "heapdict",
+    "python"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/zict-2.0.0-py_0",
+  "features": "",
+  "files": [
+    "lib/python3.9/site-packages/zict-2.0.0-py2.7.egg-info/PKG-INFO",
+    "lib/python3.9/site-packages/zict-2.0.0-py2.7.egg-info/SOURCES.txt",
+    "lib/python3.9/site-packages/zict-2.0.0-py2.7.egg-info/dependency_links.txt",
+    "lib/python3.9/site-packages/zict-2.0.0-py2.7.egg-info/not-zip-safe",
+    "lib/python3.9/site-packages/zict-2.0.0-py2.7.egg-info/requires.txt",
+    "lib/python3.9/site-packages/zict-2.0.0-py2.7.egg-info/top_level.txt",
+    "lib/python3.9/site-packages/zict/__init__.py",
+    "lib/python3.9/site-packages/zict/buffer.py",
+    "lib/python3.9/site-packages/zict/common.py",
+    "lib/python3.9/site-packages/zict/file.py",
+    "lib/python3.9/site-packages/zict/func.py",
+    "lib/python3.9/site-packages/zict/lmdb.py",
+    "lib/python3.9/site-packages/zict/lru.py",
+    "lib/python3.9/site-packages/zict/sieve.py",
+    "lib/python3.9/site-packages/zict/zip.py",
+    "lib/python3.9/site-packages/zict/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/zict/__pycache__/buffer.cpython-39.pyc",
+    "lib/python3.9/site-packages/zict/__pycache__/common.cpython-39.pyc",
+    "lib/python3.9/site-packages/zict/__pycache__/file.cpython-39.pyc",
+    "lib/python3.9/site-packages/zict/__pycache__/func.cpython-39.pyc",
+    "lib/python3.9/site-packages/zict/__pycache__/lmdb.cpython-39.pyc",
+    "lib/python3.9/site-packages/zict/__pycache__/lru.cpython-39.pyc",
+    "lib/python3.9/site-packages/zict/__pycache__/sieve.cpython-39.pyc",
+    "lib/python3.9/site-packages/zict/__pycache__/zip.cpython-39.pyc"
+  ],
+  "fn": "zict-2.0.0-py_0.tar.bz2",
+  "license": "BSD 3-Clause",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/zict-2.0.0-py_0",
+    "type": 1
+  },
+  "md5": "4750152be22f24d695b3004c5e1712d3",
+  "name": "zict",
+  "noarch": "python",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/zict-2.0.0-py_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/zict-2.0.0-py2.7.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "b7c2e9281be82b33b9aceb4d13be8766a7a536d1abb61bea81a37dbe98c5e2d5",
+        "sha256_in_prefix": "b7c2e9281be82b33b9aceb4d13be8766a7a536d1abb61bea81a37dbe98c5e2d5",
+        "size_in_bytes": 801
+      },
+      {
+        "_path": "site-packages/zict-2.0.0-py2.7.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "a4f409ec277f8d5e63ab13f9c9305aef1ce2035728c94e3e2ac85ef500d25099",
+        "sha256_in_prefix": "a4f409ec277f8d5e63ab13f9c9305aef1ce2035728c94e3e2ac85ef500d25099",
+        "size_in_bytes": 577
+      },
+      {
+        "_path": "site-packages/zict-2.0.0-py2.7.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "site-packages/zict-2.0.0-py2.7.egg-info/not-zip-safe",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "site-packages/zict-2.0.0-py2.7.egg-info/requires.txt",
+        "path_type": "hardlink",
+        "sha256": "4aa2165a4f7fb22d2518da04292232a8a0efa380840fbc116f393e407a7c455f",
+        "sha256_in_prefix": "4aa2165a4f7fb22d2518da04292232a8a0efa380840fbc116f393e407a7c455f",
+        "size_in_bytes": 9
+      },
+      {
+        "_path": "site-packages/zict-2.0.0-py2.7.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "aeee32aaf6831a66c50d778489fe2f2413c9bdef3a5a081e712b99d3b6dd6088",
+        "sha256_in_prefix": "aeee32aaf6831a66c50d778489fe2f2413c9bdef3a5a081e712b99d3b6dd6088",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/zict/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "46151936a88730d4a70e217abd7ee10001b82d9975153f40ca241a552704940e",
+        "sha256_in_prefix": "46151936a88730d4a70e217abd7ee10001b82d9975153f40ca241a552704940e",
+        "size_in_bytes": 186
+      },
+      {
+        "_path": "site-packages/zict/buffer.py",
+        "path_type": "hardlink",
+        "sha256": "fc1f05fde30b028f927f8f617df75a4006177e0ee52246293e91943c7752302b",
+        "sha256_in_prefix": "fc1f05fde30b028f927f8f617df75a4006177e0ee52246293e91943c7752302b",
+        "size_in_bytes": 3823
+      },
+      {
+        "_path": "site-packages/zict/common.py",
+        "path_type": "hardlink",
+        "sha256": "e9de30b19fa6e62c2dfccacd3acb40116b442890f28edadfd03e447a7bf23836",
+        "sha256_in_prefix": "e9de30b19fa6e62c2dfccacd3acb40116b442890f28edadfd03e447a7bf23836",
+        "size_in_bytes": 1419
+      },
+      {
+        "_path": "site-packages/zict/file.py",
+        "path_type": "hardlink",
+        "sha256": "ebf821da3f7d1da33c75247cb405b0b798cbfc21ad70ce041760997bd4925200",
+        "sha256_in_prefix": "ebf821da3f7d1da33c75247cb405b0b798cbfc21ad70ce041760997bd4925200",
+        "size_in_bytes": 2549
+      },
+      {
+        "_path": "site-packages/zict/func.py",
+        "path_type": "hardlink",
+        "sha256": "d1d3cb01da27a3b5bfc06879b664804311710b37b378cfce9ea9da6fef6c7721",
+        "sha256_in_prefix": "d1d3cb01da27a3b5bfc06879b664804311710b37b378cfce9ea9da6fef6c7721",
+        "size_in_bytes": 1865
+      },
+      {
+        "_path": "site-packages/zict/lmdb.py",
+        "path_type": "hardlink",
+        "sha256": "3d35735284b10ce13e8b0a94cf6304a9ef79b7fa765851a4ca8f8b0fccff90be",
+        "sha256_in_prefix": "3d35735284b10ce13e8b0a94cf6304a9ef79b7fa765851a4ca8f8b0fccff90be",
+        "size_in_bytes": 2553
+      },
+      {
+        "_path": "site-packages/zict/lru.py",
+        "path_type": "hardlink",
+        "sha256": "48718c6f4ef3880af167c19283f71a68c4f621fe35bf1500ccfd46d512619d55",
+        "sha256_in_prefix": "48718c6f4ef3880af167c19283f71a68c4f621fe35bf1500ccfd46d512619d55",
+        "size_in_bytes": 2982
+      },
+      {
+        "_path": "site-packages/zict/sieve.py",
+        "path_type": "hardlink",
+        "sha256": "9bbe5e5393f64ff836e08c632626d9d6da8210d6e2c1a8fa4c944e6c07a6af2a",
+        "sha256_in_prefix": "9bbe5e5393f64ff836e08c632626d9d6da8210d6e2c1a8fa4c944e6c07a6af2a",
+        "size_in_bytes": 3102
+      },
+      {
+        "_path": "site-packages/zict/zip.py",
+        "path_type": "hardlink",
+        "sha256": "a25537c5d8d6545fbacbe35f6e2cc40ee8cd4116ab1c59da083fbc35f25ae642",
+        "sha256_in_prefix": "a25537c5d8d6545fbacbe35f6e2cc40ee8cd4116ab1c59da083fbc35f25ae642",
+        "size_in_bytes": 1874
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zict/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zict/__pycache__/buffer.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zict/__pycache__/common.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zict/__pycache__/file.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zict/__pycache__/func.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zict/__pycache__/lmdb.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zict/__pycache__/lru.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zict/__pycache__/sieve.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zict/__pycache__/zip.cpython-39.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "zict==2.0.0=py_0",
+  "sha256": "68ed5103b4d9315b767e66272eadc034d53f8ba2e76876e501240b4da699b35a",
+  "size": 10161,
+  "subdir": "noarch",
+  "timestamp": 1582941863718,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/zict-2.0.0-py_0.tar.bz2",
+  "version": "2.0.0"
+}

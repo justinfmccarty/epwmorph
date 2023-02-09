@@ -1,0 +1,60 @@
+{
+  "build": "hbdafb3b_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "libcxx >=11.1.0"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/lerc-3.0-hbdafb3b_0",
+  "features": "",
+  "files": [
+    "include/Lerc_c_api.h",
+    "include/Lerc_types.h",
+    "lib/libLerc.dylib"
+  ],
+  "fn": "lerc-3.0-hbdafb3b_0.tar.bz2",
+  "license": "Apache-2.0",
+  "license_family": "Apache",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/lerc-3.0-hbdafb3b_0",
+    "type": 1
+  },
+  "md5": "8f210e26ca368c3d2b418f213b903aef",
+  "name": "lerc",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/lerc-3.0-hbdafb3b_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/Lerc_c_api.h",
+        "path_type": "hardlink",
+        "sha256": "c0f0a3e8a91dd4e9727bb363153096132b601338123847308cdd8bf683fc700b",
+        "sha256_in_prefix": "c0f0a3e8a91dd4e9727bb363153096132b601338123847308cdd8bf683fc700b",
+        "size_in_bytes": 11652
+      },
+      {
+        "_path": "include/Lerc_types.h",
+        "path_type": "hardlink",
+        "sha256": "2e2b19cb5d049f9bbebe2f3acd8be2ab920176cd1f48dea70dcc6c91e19b6249",
+        "sha256_in_prefix": "2e2b19cb5d049f9bbebe2f3acd8be2ab920176cd1f48dea70dcc6c91e19b6249",
+        "size_in_bytes": 939
+      },
+      {
+        "_path": "lib/libLerc.dylib",
+        "path_type": "hardlink",
+        "sha256": "66198e4535a96b8dc4613aed951be0b85f49c4dca8186b23db5d4c876e1d7bc7",
+        "sha256_in_prefix": "66198e4535a96b8dc4613aed951be0b85f49c4dca8186b23db5d4c876e1d7bc7",
+        "size_in_bytes": 471216
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "lerc==3.0=hbdafb3b_0",
+  "sha256": "a4aeaccb486269b34c0d5672b1f4031ba85c21356f3828289166c5b5b06c5c7c",
+  "size": 148218,
+  "subdir": "osx-arm64",
+  "timestamp": 1632753673762,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/lerc-3.0-hbdafb3b_0.tar.bz2",
+  "version": "3.0"
+}

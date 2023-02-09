@@ -1,0 +1,107 @@
+{
+  "build": "py_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/heapdict-1.0.1-py_0",
+  "features": "",
+  "files": [
+    "lib/python3.9/site-packages/HeapDict-1.0.1.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/HeapDict-1.0.1.dist-info/LICENSE",
+    "lib/python3.9/site-packages/HeapDict-1.0.1.dist-info/METADATA",
+    "lib/python3.9/site-packages/HeapDict-1.0.1.dist-info/RECORD",
+    "lib/python3.9/site-packages/HeapDict-1.0.1.dist-info/WHEEL",
+    "lib/python3.9/site-packages/HeapDict-1.0.1.dist-info/top_level.txt",
+    "lib/python3.9/site-packages/HeapDict-1.0.1.dist-info/zip-safe",
+    "lib/python3.9/site-packages/heapdict.py",
+    "lib/python3.9/site-packages/__pycache__/heapdict.cpython-39.pyc"
+  ],
+  "fn": "heapdict-1.0.1-py_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/heapdict-1.0.1-py_0",
+    "type": 1
+  },
+  "md5": "77242bfb1e74a627fb06319b5a2d3b95",
+  "name": "heapdict",
+  "noarch": "python",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/heapdict-1.0.1-py_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/HeapDict-1.0.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/HeapDict-1.0.1.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "1363ba6c467e3b4d7f0ecbe8d2a8b219d05aeb97d3228e3f1b84f8475d79300b",
+        "sha256_in_prefix": "1363ba6c467e3b4d7f0ecbe8d2a8b219d05aeb97d3228e3f1b84f8475d79300b",
+        "size_in_bytes": 1451
+      },
+      {
+        "_path": "site-packages/HeapDict-1.0.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "dc763846290709bb21c55786c5a5227c69ecb43160c29a29a12506ff660b09e8",
+        "sha256_in_prefix": "dc763846290709bb21c55786c5a5227c69ecb43160c29a29a12506ff660b09e8",
+        "size_in_bytes": 1942
+      },
+      {
+        "_path": "site-packages/HeapDict-1.0.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "194cb1db029e9cbd1dc48e8890899ed96d4d2e11fa2e10ed52598bd3b99acf78",
+        "sha256_in_prefix": "194cb1db029e9cbd1dc48e8890899ed96d4d2e11fa2e10ed52598bd3b99acf78",
+        "size_in_bytes": 657
+      },
+      {
+        "_path": "site-packages/HeapDict-1.0.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "23bf6aa29589ebd9794fac196b2b7d55438c79c19918fceedbf89c6d16168e92",
+        "sha256_in_prefix": "23bf6aa29589ebd9794fac196b2b7d55438c79c19918fceedbf89c6d16168e92",
+        "size_in_bytes": 93
+      },
+      {
+        "_path": "site-packages/HeapDict-1.0.1.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "4aa2165a4f7fb22d2518da04292232a8a0efa380840fbc116f393e407a7c455f",
+        "sha256_in_prefix": "4aa2165a4f7fb22d2518da04292232a8a0efa380840fbc116f393e407a7c455f",
+        "size_in_bytes": 9
+      },
+      {
+        "_path": "site-packages/HeapDict-1.0.1.dist-info/zip-safe",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "site-packages/heapdict.py",
+        "path_type": "hardlink",
+        "sha256": "a433ee2f086c43223841b33de4f6e19b3eaff00ea41996484c46b3362ccc22b3",
+        "sha256_in_prefix": "a433ee2f086c43223841b33de4f6e19b3eaff00ea41996484c46b3362ccc22b3",
+        "size_in_bytes": 2947
+      },
+      {
+        "_path": "lib/python3.9/site-packages/__pycache__/heapdict.cpython-39.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "heapdict==1.0.1=py_0",
+  "sha256": "37e5013a0bfbd5d446b06d125b2a9ba2de0e65a9195f0ef0aecd8d9da1355d17",
+  "size": 7003,
+  "subdir": "noarch",
+  "timestamp": 1569521251296,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/heapdict-1.0.1-py_0.tar.bz2",
+  "version": "1.0.1"
+}

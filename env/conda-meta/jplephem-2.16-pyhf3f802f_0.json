@@ -1,0 +1,285 @@
+{
+  "build": "pyhf3f802f_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "numpy",
+    "python >=3.3"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/jplephem-2.16-pyhf3f802f_0",
+  "features": "",
+  "files": [
+    "lib/python3.9/site-packages/jplephem-2.16.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/jplephem-2.16.dist-info/LICENSE.txt",
+    "lib/python3.9/site-packages/jplephem-2.16.dist-info/METADATA",
+    "lib/python3.9/site-packages/jplephem-2.16.dist-info/RECORD",
+    "lib/python3.9/site-packages/jplephem-2.16.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/jplephem-2.16.dist-info/WHEEL",
+    "lib/python3.9/site-packages/jplephem-2.16.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/jplephem-2.16.dist-info/top_level.txt",
+    "lib/python3.9/site-packages/jplephem/__init__.py",
+    "lib/python3.9/site-packages/jplephem/__main__.py",
+    "lib/python3.9/site-packages/jplephem/ascii.py",
+    "lib/python3.9/site-packages/jplephem/commandline.py",
+    "lib/python3.9/site-packages/jplephem/daf.py",
+    "lib/python3.9/site-packages/jplephem/descriptorlib.py",
+    "lib/python3.9/site-packages/jplephem/ephem.py",
+    "lib/python3.9/site-packages/jplephem/exceptions.py",
+    "lib/python3.9/site-packages/jplephem/excerpter.py",
+    "lib/python3.9/site-packages/jplephem/jpltest.py",
+    "lib/python3.9/site-packages/jplephem/names.py",
+    "lib/python3.9/site-packages/jplephem/pck.py",
+    "lib/python3.9/site-packages/jplephem/spk.py",
+    "lib/python3.9/site-packages/jplephem/test.py",
+    "lib/python3.9/site-packages/jplephem/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/jplephem/__pycache__/__main__.cpython-39.pyc",
+    "lib/python3.9/site-packages/jplephem/__pycache__/ascii.cpython-39.pyc",
+    "lib/python3.9/site-packages/jplephem/__pycache__/commandline.cpython-39.pyc",
+    "lib/python3.9/site-packages/jplephem/__pycache__/daf.cpython-39.pyc",
+    "lib/python3.9/site-packages/jplephem/__pycache__/descriptorlib.cpython-39.pyc",
+    "lib/python3.9/site-packages/jplephem/__pycache__/ephem.cpython-39.pyc",
+    "lib/python3.9/site-packages/jplephem/__pycache__/exceptions.cpython-39.pyc",
+    "lib/python3.9/site-packages/jplephem/__pycache__/excerpter.cpython-39.pyc",
+    "lib/python3.9/site-packages/jplephem/__pycache__/jpltest.cpython-39.pyc",
+    "lib/python3.9/site-packages/jplephem/__pycache__/names.cpython-39.pyc",
+    "lib/python3.9/site-packages/jplephem/__pycache__/pck.cpython-39.pyc",
+    "lib/python3.9/site-packages/jplephem/__pycache__/spk.cpython-39.pyc",
+    "lib/python3.9/site-packages/jplephem/__pycache__/test.cpython-39.pyc"
+  ],
+  "fn": "jplephem-2.16-pyhf3f802f_0.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/jplephem-2.16-pyhf3f802f_0",
+    "type": 1
+  },
+  "md5": "02aa7f5bf2c0e68aba1ee33802df4361",
+  "name": "jplephem",
+  "noarch": "python",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/jplephem-2.16-pyhf3f802f_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/jplephem-2.16.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/jplephem-2.16.dist-info/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "31bbf940baa5da362ef4e16ccda663cf09a096673b9eac30413f899c1055981d",
+        "sha256_in_prefix": "31bbf940baa5da362ef4e16ccda663cf09a096673b9eac30413f899c1055981d",
+        "size_in_bytes": 1084
+      },
+      {
+        "_path": "site-packages/jplephem-2.16.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "1102e789844c556baca183e600d53c33cb091ad48a61be4f7754b0660596367a",
+        "sha256_in_prefix": "1102e789844c556baca183e600d53c33cb091ad48a61be4f7754b0660596367a",
+        "size_in_bytes": 21542
+      },
+      {
+        "_path": "site-packages/jplephem-2.16.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "51550eeb1038944660f0af52e908ee4c752f20eeafa7bea13f512b2a65fe42e9",
+        "sha256_in_prefix": "51550eeb1038944660f0af52e908ee4c752f20eeafa7bea13f512b2a65fe42e9",
+        "size_in_bytes": 2396
+      },
+      {
+        "_path": "site-packages/jplephem-2.16.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/jplephem-2.16.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "7b0c04b9e8a8d42d977874ef4f5ee7f1d6542603afc82582b7459534b0a53fda",
+        "sha256_in_prefix": "7b0c04b9e8a8d42d977874ef4f5ee7f1d6542603afc82582b7459534b0a53fda",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "site-packages/jplephem-2.16.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "45bc1e3bc3e24182220ec78c2e2cf9fb84b62c5c43823b56f62bbb7f7e7fc668",
+        "sha256_in_prefix": "45bc1e3bc3e24182220ec78c2e2cf9fb84b62c5c43823b56f62bbb7f7e7fc668",
+        "size_in_bytes": 104
+      },
+      {
+        "_path": "site-packages/jplephem-2.16.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "bbed36f7b8d71a9a31187622b0495fa71e9a8115d9ebaba5f6e0c81710ea21cf",
+        "sha256_in_prefix": "bbed36f7b8d71a9a31187622b0495fa71e9a8115d9ebaba5f6e0c81710ea21cf",
+        "size_in_bytes": 9
+      },
+      {
+        "_path": "site-packages/jplephem/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "b2bf461b1112e3d301b6305df3670aec77fc2bd4b090c5c6d7984974e6e738d5",
+        "sha256_in_prefix": "b2bf461b1112e3d301b6305df3670aec77fc2bd4b090c5c6d7984974e6e738d5",
+        "size_in_bytes": 20812
+      },
+      {
+        "_path": "site-packages/jplephem/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "97492749d60940e4890000f8f89a0cf190a9f9970ff40d2cf0156ad79043dc0f",
+        "sha256_in_prefix": "97492749d60940e4890000f8f89a0cf190a9f9970ff40d2cf0156ad79043dc0f",
+        "size_in_bytes": 90
+      },
+      {
+        "_path": "site-packages/jplephem/ascii.py",
+        "path_type": "hardlink",
+        "sha256": "9ae81b16bf24bb92a8d4ab0294439e22bcdcfb97597118b9df30ff45026989f6",
+        "sha256_in_prefix": "9ae81b16bf24bb92a8d4ab0294439e22bcdcfb97597118b9df30ff45026989f6",
+        "size_in_bytes": 1578
+      },
+      {
+        "_path": "site-packages/jplephem/commandline.py",
+        "path_type": "hardlink",
+        "sha256": "07e4a9fb6d392268ef73edf01bae40f7eea43e24cf08f19ef7f64c0ceb3b1820",
+        "sha256_in_prefix": "07e4a9fb6d392268ef73edf01bae40f7eea43e24cf08f19ef7f64c0ceb3b1820",
+        "size_in_bytes": 3875
+      },
+      {
+        "_path": "site-packages/jplephem/daf.py",
+        "path_type": "hardlink",
+        "sha256": "6ae143bbf90d193b99350b4aa189555df2fb9b94fe50e65c2d8e716d1fe99cf6",
+        "sha256_in_prefix": "6ae143bbf90d193b99350b4aa189555df2fb9b94fe50e65c2d8e716d1fe99cf6",
+        "size_in_bytes": 10193
+      },
+      {
+        "_path": "site-packages/jplephem/descriptorlib.py",
+        "path_type": "hardlink",
+        "sha256": "41147668a55e011d92b78839e46bade16b40d1e9d8fdaaef655c6802ab619c23",
+        "sha256_in_prefix": "41147668a55e011d92b78839e46bade16b40d1e9d8fdaaef655c6802ab619c23",
+        "size_in_bytes": 430
+      },
+      {
+        "_path": "site-packages/jplephem/ephem.py",
+        "path_type": "hardlink",
+        "sha256": "6f3b20c503ec8694e93163cf56977b42aaa45b08bed236a9c00bca572c00dd08",
+        "sha256_in_prefix": "6f3b20c503ec8694e93163cf56977b42aaa45b08bed236a9c00bca572c00dd08",
+        "size_in_bytes": 7987
+      },
+      {
+        "_path": "site-packages/jplephem/exceptions.py",
+        "path_type": "hardlink",
+        "sha256": "d4f8b543d53a9b544bf33ecd085c583158fccaf1cbf56fadcbdfcf434a17f13f",
+        "sha256_in_prefix": "d4f8b543d53a9b544bf33ecd085c583158fccaf1cbf56fadcbdfcf434a17f13f",
+        "size_in_bytes": 664
+      },
+      {
+        "_path": "site-packages/jplephem/excerpter.py",
+        "path_type": "hardlink",
+        "sha256": "bcdd7913f58788dd57740572eb4bfe36a0b6343a4f925613b943919777842d99",
+        "sha256_in_prefix": "bcdd7913f58788dd57740572eb4bfe36a0b6343a4f925613b943919777842d99",
+        "size_in_bytes": 2712
+      },
+      {
+        "_path": "site-packages/jplephem/jpltest.py",
+        "path_type": "hardlink",
+        "sha256": "3ddf4974ee851a2589026faee35bad850786b7509520d6c67924027e6c091f5e",
+        "sha256_in_prefix": "3ddf4974ee851a2589026faee35bad850786b7509520d6c67924027e6c091f5e",
+        "size_in_bytes": 3871
+      },
+      {
+        "_path": "site-packages/jplephem/names.py",
+        "path_type": "hardlink",
+        "sha256": "dd49b91db15ee33d107afa675c11ba7cd12cfb8da50b09ffd997c1f9ce093d84",
+        "sha256_in_prefix": "dd49b91db15ee33d107afa675c11ba7cd12cfb8da50b09ffd997c1f9ce093d84",
+        "size_in_bytes": 15425
+      },
+      {
+        "_path": "site-packages/jplephem/pck.py",
+        "path_type": "hardlink",
+        "sha256": "1ecb6dd1cb09dc9cc07a17d8cae744735f55ec18a54cc8de3ea12433b3d3a54b",
+        "sha256_in_prefix": "1ecb6dd1cb09dc9cc07a17d8cae744735f55ec18a54cc8de3ea12433b3d3a54b",
+        "size_in_bytes": 6338
+      },
+      {
+        "_path": "site-packages/jplephem/spk.py",
+        "path_type": "hardlink",
+        "sha256": "b193c8066b9469e9bc156731229bb44b814b633168bd40eb8a88a4941c375bd1",
+        "sha256_in_prefix": "b193c8066b9469e9bc156731229bb44b814b633168bd40eb8a88a4941c375bd1",
+        "size_in_bytes": 11717
+      },
+      {
+        "_path": "site-packages/jplephem/test.py",
+        "path_type": "hardlink",
+        "sha256": "0f5e14c06e2db093ed5bd5ca3eebc83f5ddeb32326d21b0c735649f2f3d9e6c4",
+        "sha256_in_prefix": "0f5e14c06e2db093ed5bd5ca3eebc83f5ddeb32326d21b0c735649f2f3d9e6c4",
+        "size_in_bytes": 18406
+      },
+      {
+        "_path": "lib/python3.9/site-packages/jplephem/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/jplephem/__pycache__/__main__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/jplephem/__pycache__/ascii.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/jplephem/__pycache__/commandline.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/jplephem/__pycache__/daf.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/jplephem/__pycache__/descriptorlib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/jplephem/__pycache__/ephem.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/jplephem/__pycache__/exceptions.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/jplephem/__pycache__/excerpter.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/jplephem/__pycache__/jpltest.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/jplephem/__pycache__/names.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/jplephem/__pycache__/pck.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/jplephem/__pycache__/spk.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/jplephem/__pycache__/test.cpython-39.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "jplephem==2.16=pyhf3f802f_0",
+  "sha256": "45b71126936628a07d4971aa8a4144d1f56b83bd43c944a2face4c41a9c62823",
+  "size": 38460,
+  "subdir": "noarch",
+  "timestamp": 1637232850605,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/jplephem-2.16-pyhf3f802f_0.tar.bz2",
+  "version": "2.16"
+}

@@ -1,0 +1,47 @@
+# NetCDF C Configuration Summary
+==============================
+
+# General
+-------
+NetCDF Version:		4.8.1
+Dispatch Version:       3
+Configured On:		Tue Aug 31 00:10:17 UTC 2021
+Host System:		x86_64-Darwin-19.6.0
+Build Directory: 	/Users/runner/miniforge3/conda-bld/libnetcdf_1630368161103/work
+Install Prefix:         /Users/jmccarty/GitHub/epwmorph/env
+
+# Compiling Options
+-----------------
+C Compiler:		/Users/runner/miniforge3/conda-bld/libnetcdf_1630368161103/_build_env/bin/arm64-apple-darwin20.0.0-clang
+CFLAGS:			-ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /Users/jmccarty/GitHub/epwmorph/env/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/libnetcdf_1630368161103/work=/usr/local/src/conda/libnetcdf-4.8.1 -fdebug-prefix-map=/Users/jmccarty/GitHub/epwmorph/env=/usr/local/src/conda-prefix -fno-strict-aliasing -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -O3 -DNDEBUG
+CPPFLAGS:		 
+LDFLAGS:		-Wl,-pie -Wl,-headerpad_max_install_names  -Wl,-rpath,/Users/jmccarty/GitHub/epwmorph/env/lib -L/Users/jmccarty/GitHub/epwmorph/env/lib 
+AM_CFLAGS:		
+AM_CPPFLAGS:		
+AM_LDFLAGS:		
+Shared Library:		yes
+Static Library:		no
+Extra libraries:	-lmfhdf -ldf -lhdf5_hl -lhdf5 -lm -lcurl -lzip
+
+# Features
+--------
+NetCDF-2 API:		yes
+HDF4 Support:		yes
+HDF5 Support:		yes
+NetCDF-4 API:		yes
+NC-4 Parallel Support:	no
+PnetCDF Support:	no
+DAP2 Support:		yes
+DAP4 Support:		yes
+Byte-Range Support:	yes
+Diskless Support:	yes
+MMap Support:		yes
+JNA Support:		no
+CDF5 Support:		yes
+ERANGE Fill Support:	yes
+Relaxed Boundary Check:	yes
+SZIP Support:           no
+SZIP Write Support:     no
+Parallel Filters:       yes
+NCZarr Support:		yes
+Multi-Filter Support:	yes

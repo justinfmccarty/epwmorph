@@ -1,0 +1,129 @@
+{
+  "build": "py39h20ef057_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "numpy >=1.19.5,<2.0a0",
+    "python >=3.9,<3.10.0a0",
+    "python >=3.9,<3.10.0a0 *_cpython",
+    "python_abi 3.9.* *_cp39"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/cftime-1.5.1.1-py39h20ef057_1",
+  "features": "",
+  "files": [
+    "lib/python3.9/site-packages/cftime-1.5.1.1.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/cftime-1.5.1.1.dist-info/LICENSE",
+    "lib/python3.9/site-packages/cftime-1.5.1.1.dist-info/METADATA",
+    "lib/python3.9/site-packages/cftime-1.5.1.1.dist-info/RECORD",
+    "lib/python3.9/site-packages/cftime-1.5.1.1.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/cftime-1.5.1.1.dist-info/WHEEL",
+    "lib/python3.9/site-packages/cftime-1.5.1.1.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/cftime-1.5.1.1.dist-info/top_level.txt",
+    "lib/python3.9/site-packages/cftime/__init__.py",
+    "lib/python3.9/site-packages/cftime/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/cftime/_cftime.cpython-39-darwin.so"
+  ],
+  "fn": "cftime-1.5.1.1-py39h20ef057_1.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/cftime-1.5.1.1-py39h20ef057_1",
+    "type": 1
+  },
+  "md5": "37601ae585e06ef61357e613ee87de11",
+  "name": "cftime",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/cftime-1.5.1.1-py39h20ef057_1.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.9/site-packages/cftime-1.5.1.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.9/site-packages/cftime-1.5.1.1.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "7fdd0c2647de9ed5aa549c21c46778374867793c2f874497b5480df22c7778ff",
+        "sha256_in_prefix": "7fdd0c2647de9ed5aa549c21c46778374867793c2f874497b5480df22c7778ff",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/python3.9/site-packages/cftime-1.5.1.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "a21d13ab31fa7f8c576204088d42b1ffbf51cf18b97801d5ca3ca4829e620a79",
+        "sha256_in_prefix": "a21d13ab31fa7f8c576204088d42b1ffbf51cf18b97801d5ca3ca4829e620a79",
+        "size_in_bytes": 7797
+      },
+      {
+        "_path": "lib/python3.9/site-packages/cftime-1.5.1.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "062b917e976e2516a7c47829778858f4393b453494a924c74ba0ef06b09c74d9",
+        "sha256_in_prefix": "062b917e976e2516a7c47829778858f4393b453494a924c74ba0ef06b09c74d9",
+        "size_in_bytes": 886
+      },
+      {
+        "_path": "lib/python3.9/site-packages/cftime-1.5.1.1.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.9/site-packages/cftime-1.5.1.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "f39fd3a2ae1423b119d6cf35c1a611e913cdb159cdd4d9823404ae4b2dfb2271",
+        "sha256_in_prefix": "f39fd3a2ae1423b119d6cf35c1a611e913cdb159cdd4d9823404ae4b2dfb2271",
+        "size_in_bytes": 108
+      },
+      {
+        "_path": "lib/python3.9/site-packages/cftime-1.5.1.1.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "7c52f120aeedbbcde4303988ffb5e630f838ffe7a4f24f056d3f94c005635423",
+        "sha256_in_prefix": "7c52f120aeedbbcde4303988ffb5e630f838ffe7a4f24f056d3f94c005635423",
+        "size_in_bytes": 94
+      },
+      {
+        "_path": "lib/python3.9/site-packages/cftime-1.5.1.1.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "d3f3d00ed5a5680772176fb4acaf76aa4568988d33e201d2e420f746688da897",
+        "sha256_in_prefix": "d3f3d00ed5a5680772176fb4acaf76aa4568988d33e201d2e420f746688da897",
+        "size_in_bytes": 7
+      },
+      {
+        "_path": "lib/python3.9/site-packages/cftime/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "252837303659ded93b8ec5bd4f5cec3edebd42bc2ad895924f1be147776b20bc",
+        "sha256_in_prefix": "252837303659ded93b8ec5bd4f5cec3edebd42bc2ad895924f1be147776b20bc",
+        "size_in_bytes": 627
+      },
+      {
+        "_path": "lib/python3.9/site-packages/cftime/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "3812a5c154e6dc376826468041437263231a933c9e95e829a44cdfc1dd1632b7",
+        "sha256_in_prefix": "3812a5c154e6dc376826468041437263231a933c9e95e829a44cdfc1dd1632b7",
+        "size_in_bytes": 794
+      },
+      {
+        "_path": "lib/python3.9/site-packages/cftime/_cftime.cpython-39-darwin.so",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/cftime_1636280966211/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl",
+        "sha256": "3e750944797837664a86aa463a20368ac31ff101fe592392d7461d1db1956174",
+        "sha256_in_prefix": "ac19f61bc06807b56e7a8a4939b70c6a4ae6fc76571feaeac154e292aca297e9",
+        "size_in_bytes": 520096
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "cftime==1.5.1.1=py39h20ef057_1",
+  "sha256": "7df791d80f57b5ac86ab3fd01b6c2dbbdc7357e82164950401ab58be89eb8fd8",
+  "size": 198639,
+  "subdir": "osx-arm64",
+  "timestamp": 1636281171765,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/cftime-1.5.1.1-py39h20ef057_1.tar.bz2",
+  "version": "1.5.1.1"
+}

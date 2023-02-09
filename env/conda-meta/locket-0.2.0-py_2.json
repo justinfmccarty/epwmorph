@@ -1,0 +1,90 @@
+{
+  "build": "py_2",
+  "build_number": 2,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/locket-0.2.0-py_2",
+  "features": "",
+  "files": [
+    "lib/python3.9/site-packages/locket-0.2.0-py2.7.egg-info/PKG-INFO",
+    "lib/python3.9/site-packages/locket-0.2.0-py2.7.egg-info/SOURCES.txt",
+    "lib/python3.9/site-packages/locket-0.2.0-py2.7.egg-info/dependency_links.txt",
+    "lib/python3.9/site-packages/locket-0.2.0-py2.7.egg-info/installed-files.txt",
+    "lib/python3.9/site-packages/locket-0.2.0-py2.7.egg-info/top_level.txt",
+    "lib/python3.9/site-packages/locket/__init__.py",
+    "lib/python3.9/site-packages/locket/__pycache__/__init__.cpython-39.pyc"
+  ],
+  "fn": "locket-0.2.0-py_2.tar.bz2",
+  "license": "BSD 2-Clause",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/locket-0.2.0-py_2",
+    "type": 1
+  },
+  "md5": "709e8671651c7ec3d1ad07800339ff1d",
+  "name": "locket",
+  "noarch": "python",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/locket-0.2.0-py_2.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/locket-0.2.0-py2.7.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "b34ecb7d8a844cf4c743c8bca7fd9a36a037083744459ae35435b620743a0b25",
+        "sha256_in_prefix": "b34ecb7d8a844cf4c743c8bca7fd9a36a037083744459ae35435b620743a0b25",
+        "size_in_bytes": 2717
+      },
+      {
+        "_path": "site-packages/locket-0.2.0-py2.7.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "844b65179c41ee767784ba2bba5a6dcc586866cd04aa1444b6c1452d8a9e5350",
+        "sha256_in_prefix": "844b65179c41ee767784ba2bba5a6dcc586866cd04aa1444b6c1452d8a9e5350",
+        "size_in_bytes": 149
+      },
+      {
+        "_path": "site-packages/locket-0.2.0-py2.7.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "site-packages/locket-0.2.0-py2.7.egg-info/installed-files.txt",
+        "path_type": "hardlink",
+        "sha256": "eb080cbe2d1fdb67ae9e1f3b89d21c6badb28bd018a7295e26f8080fc7153ca5",
+        "sha256_in_prefix": "eb080cbe2d1fdb67ae9e1f3b89d21c6badb28bd018a7295e26f8080fc7153ca5",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "site-packages/locket-0.2.0-py2.7.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "b058cfe4454182c4120bb5c90a77dca9f0729f9326e521c926be510eec3ed408",
+        "sha256_in_prefix": "b058cfe4454182c4120bb5c90a77dca9f0729f9326e521c926be510eec3ed408",
+        "size_in_bytes": 7
+      },
+      {
+        "_path": "site-packages/locket/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "11a9cb824dd8beb48b1b7e4338bdc219184863e5cbefa7be4b9039d1a45293f0",
+        "sha256_in_prefix": "11a9cb824dd8beb48b1b7e4338bdc219184863e5cbefa7be4b9039d1a45293f0",
+        "size_in_bytes": 4384
+      },
+      {
+        "_path": "lib/python3.9/site-packages/locket/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "locket==0.2.0=py_2",
+  "sha256": "3239ff4a0d652c9307a0ee516b805239217da942ac6a655a1802e11bdaea9537",
+  "size": 5699,
+  "subdir": "noarch",
+  "timestamp": 1532138350498,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/locket-0.2.0-py_2.tar.bz2",
+  "version": "0.2.0"
+}

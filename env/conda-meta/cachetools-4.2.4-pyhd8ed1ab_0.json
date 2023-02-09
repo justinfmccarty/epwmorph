@@ -1,0 +1,232 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python >=3.5"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/cachetools-4.2.4-pyhd8ed1ab_0",
+  "features": "",
+  "files": [
+    "lib/python3.9/site-packages/cachetools-4.2.4.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/cachetools-4.2.4.dist-info/LICENSE",
+    "lib/python3.9/site-packages/cachetools-4.2.4.dist-info/METADATA",
+    "lib/python3.9/site-packages/cachetools-4.2.4.dist-info/RECORD",
+    "lib/python3.9/site-packages/cachetools-4.2.4.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/cachetools-4.2.4.dist-info/WHEEL",
+    "lib/python3.9/site-packages/cachetools-4.2.4.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/cachetools-4.2.4.dist-info/top_level.txt",
+    "lib/python3.9/site-packages/cachetools/__init__.py",
+    "lib/python3.9/site-packages/cachetools/cache.py",
+    "lib/python3.9/site-packages/cachetools/fifo.py",
+    "lib/python3.9/site-packages/cachetools/func.py",
+    "lib/python3.9/site-packages/cachetools/keys.py",
+    "lib/python3.9/site-packages/cachetools/lfu.py",
+    "lib/python3.9/site-packages/cachetools/lru.py",
+    "lib/python3.9/site-packages/cachetools/mru.py",
+    "lib/python3.9/site-packages/cachetools/rr.py",
+    "lib/python3.9/site-packages/cachetools/ttl.py",
+    "lib/python3.9/site-packages/cachetools/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/cachetools/__pycache__/cache.cpython-39.pyc",
+    "lib/python3.9/site-packages/cachetools/__pycache__/fifo.cpython-39.pyc",
+    "lib/python3.9/site-packages/cachetools/__pycache__/func.cpython-39.pyc",
+    "lib/python3.9/site-packages/cachetools/__pycache__/keys.cpython-39.pyc",
+    "lib/python3.9/site-packages/cachetools/__pycache__/lfu.cpython-39.pyc",
+    "lib/python3.9/site-packages/cachetools/__pycache__/lru.cpython-39.pyc",
+    "lib/python3.9/site-packages/cachetools/__pycache__/mru.cpython-39.pyc",
+    "lib/python3.9/site-packages/cachetools/__pycache__/rr.cpython-39.pyc",
+    "lib/python3.9/site-packages/cachetools/__pycache__/ttl.cpython-39.pyc"
+  ],
+  "fn": "cachetools-4.2.4-pyhd8ed1ab_0.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/cachetools-4.2.4-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "059a8732c1d81ffc93997cb8a236331f",
+  "name": "cachetools",
+  "noarch": "python",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/cachetools-4.2.4-pyhd8ed1ab_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/cachetools-4.2.4.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/cachetools-4.2.4.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "7091047dad86fad179a77b2696e0720cb017e0f468d474ff3ef5ca2e97b5a906",
+        "sha256_in_prefix": "7091047dad86fad179a77b2696e0720cb017e0f468d474ff3ef5ca2e97b5a906",
+        "size_in_bytes": 1085
+      },
+      {
+        "_path": "site-packages/cachetools-4.2.4.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "0529af8252d1e36ffc51c27665ddb6a22636b8254385a2a1c241fbfe5a1dd4d5",
+        "sha256_in_prefix": "0529af8252d1e36ffc51c27665ddb6a22636b8254385a2a1c241fbfe5a1dd4d5",
+        "size_in_bytes": 4827
+      },
+      {
+        "_path": "site-packages/cachetools-4.2.4.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "847c02ea33cee99e4ee3b730ee61519c03d5514841cab06589584e758c3d2a35",
+        "sha256_in_prefix": "847c02ea33cee99e4ee3b730ee61519c03d5514841cab06589584e758c3d2a35",
+        "size_in_bytes": 1899
+      },
+      {
+        "_path": "site-packages/cachetools-4.2.4.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/cachetools-4.2.4.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "7b0c04b9e8a8d42d977874ef4f5ee7f1d6542603afc82582b7459534b0a53fda",
+        "sha256_in_prefix": "7b0c04b9e8a8d42d977874ef4f5ee7f1d6542603afc82582b7459534b0a53fda",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "site-packages/cachetools-4.2.4.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "4cea604510f422197ff969200c451d7f8b077663d2fd593541bca1b33f067fb5",
+        "sha256_in_prefix": "4cea604510f422197ff969200c451d7f8b077663d2fd593541bca1b33f067fb5",
+        "size_in_bytes": 106
+      },
+      {
+        "_path": "site-packages/cachetools-4.2.4.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "6a2d851fbf131b0a017028157e8a9bce4e48402b670ee91d4ace332ae54fbc3b",
+        "sha256_in_prefix": "6a2d851fbf131b0a017028157e8a9bce4e48402b670ee91d4ace332ae54fbc3b",
+        "size_in_bytes": 11
+      },
+      {
+        "_path": "site-packages/cachetools/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "b204a7cc69a3cdeeaa837f272129ac54de4346fef0634ed7e04ec9b59a80fa72",
+        "sha256_in_prefix": "b204a7cc69a3cdeeaa837f272129ac54de4346fef0634ed7e04ec9b59a80fa72",
+        "size_in_bytes": 16837
+      },
+      {
+        "_path": "site-packages/cachetools/cache.py",
+        "path_type": "hardlink",
+        "sha256": "fc318dee8383908202d0face65e72eb69f40cc4d7ddf8ffa5fd3accb38305ba3",
+        "sha256_in_prefix": "fc318dee8383908202d0face65e72eb69f40cc4d7ddf8ffa5fd3accb38305ba3",
+        "size_in_bytes": 141
+      },
+      {
+        "_path": "site-packages/cachetools/fifo.py",
+        "path_type": "hardlink",
+        "sha256": "e953d11908eb7ebe8e9419cbe869c1e80356162a17c46de5a91fec45a6686565",
+        "sha256_in_prefix": "e953d11908eb7ebe8e9419cbe869c1e80356162a17c46de5a91fec45a6686565",
+        "size_in_bytes": 148
+      },
+      {
+        "_path": "site-packages/cachetools/func.py",
+        "path_type": "hardlink",
+        "sha256": "56e1b20adedc3a594dd4552e123062535a9082c5b3adf087b9a8de4ee7d0c240",
+        "sha256_in_prefix": "56e1b20adedc3a594dd4552e123062535a9082c5b3adf087b9a8de4ee7d0c240",
+        "size_in_bytes": 4906
+      },
+      {
+        "_path": "site-packages/cachetools/keys.py",
+        "path_type": "hardlink",
+        "sha256": "49f18f9c5e46a28d5bf15fa5ae107d27182a777be6f3447d879d24d21b000233",
+        "sha256_in_prefix": "49f18f9c5e46a28d5bf15fa5ae107d27182a777be6f3447d879d24d21b000233",
+        "size_in_bytes": 1466
+      },
+      {
+        "_path": "site-packages/cachetools/lfu.py",
+        "path_type": "hardlink",
+        "sha256": "a5bbb8578767c902f7787e0acf86b9fd063e44775557546496aafd3a793de72a",
+        "sha256_in_prefix": "a5bbb8578767c902f7787e0acf86b9fd063e44775557546496aafd3a793de72a",
+        "size_in_bytes": 145
+      },
+      {
+        "_path": "site-packages/cachetools/lru.py",
+        "path_type": "hardlink",
+        "sha256": "1df5855c1490b80c3f876813e529384c98c4354559e40604f6d536971691f61a",
+        "sha256_in_prefix": "1df5855c1490b80c3f876813e529384c98c4354559e40604f6d536971691f61a",
+        "size_in_bytes": 145
+      },
+      {
+        "_path": "site-packages/cachetools/mru.py",
+        "path_type": "hardlink",
+        "sha256": "8150bf90ecaa1a5ad26b2571aecd6b6f6dd6616234d937a321020f72e62a6a14",
+        "sha256_in_prefix": "8150bf90ecaa1a5ad26b2571aecd6b6f6dd6616234d937a321020f72e62a6a14",
+        "size_in_bytes": 145
+      },
+      {
+        "_path": "site-packages/cachetools/rr.py",
+        "path_type": "hardlink",
+        "sha256": "e33517752562390d0e6451ec6808533bf4597e22fd07fc11333cd8ba1dea9a94",
+        "sha256_in_prefix": "e33517752562390d0e6451ec6808533bf4597e22fd07fc11333cd8ba1dea9a94",
+        "size_in_bytes": 142
+      },
+      {
+        "_path": "site-packages/cachetools/ttl.py",
+        "path_type": "hardlink",
+        "sha256": "6936e15f7fa2817bc2c4a3593f2bd537ad0bc7d71672dbbe627fdd964e3cd542",
+        "sha256_in_prefix": "6936e15f7fa2817bc2c4a3593f2bd537ad0bc7d71672dbbe627fdd964e3cd542",
+        "size_in_bytes": 145
+      },
+      {
+        "_path": "lib/python3.9/site-packages/cachetools/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/cachetools/__pycache__/cache.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/cachetools/__pycache__/fifo.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/cachetools/__pycache__/func.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/cachetools/__pycache__/keys.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/cachetools/__pycache__/lfu.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/cachetools/__pycache__/lru.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/cachetools/__pycache__/mru.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/cachetools/__pycache__/rr.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/cachetools/__pycache__/ttl.cpython-39.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "cachetools==4.2.4=pyhd8ed1ab_0",
+  "sha256": "c73709b168d12c802532706961dc8e54418b61cf99341fd6738bae060460c477",
+  "size": 12742,
+  "subdir": "noarch",
+  "timestamp": 1633011054959,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/cachetools-4.2.4-pyhd8ed1ab_0.tar.bz2",
+  "version": "4.2.4"
+}

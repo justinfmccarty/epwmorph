@@ -1,0 +1,36 @@
+{
+  "build": "hd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "importlib-metadata >=4.8.2,<4.8.3.0a0"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/importlib_metadata-4.8.2-hd8ed1ab_0",
+  "features": "",
+  "files": [],
+  "fn": "importlib_metadata-4.8.2-hd8ed1ab_0.tar.bz2",
+  "license": "Apache-2.0",
+  "license_family": "APACHE",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/importlib_metadata-4.8.2-hd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "4fcc9776fdf4c35c5a10662bbbd21a61",
+  "name": "importlib_metadata",
+  "noarch": "generic",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/importlib_metadata-4.8.2-hd8ed1ab_0.tar.bz2",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "importlib_metadata==4.8.2=hd8ed1ab_0",
+  "sha256": "402f8ddc502fbc6837f512278bcea65566a17df0e19ae1d70d461760a30e04d4",
+  "size": 3832,
+  "subdir": "noarch",
+  "timestamp": 1636431612032,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/importlib_metadata-4.8.2-hd8ed1ab_0.tar.bz2",
+  "version": "4.8.2"
+}

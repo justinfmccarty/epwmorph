@@ -1,0 +1,34 @@
+{
+  "build": "11_0_1_hf114ba7_23",
+  "build_number": 23,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "libgfortran5"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libgfortran-5.0.0.dev0-11_0_1_hf114ba7_23",
+  "features": "",
+  "files": [],
+  "fn": "libgfortran-5.0.0.dev0-11_0_1_hf114ba7_23.tar.bz2",
+  "license": "GPL-3.0-only WITH GCC-exception-3.1",
+  "license_family": "GPL",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libgfortran-5.0.0.dev0-11_0_1_hf114ba7_23",
+    "type": 1
+  },
+  "md5": "75f6bd23c894fbb8d353c75edb7041d6",
+  "name": "libgfortran",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libgfortran-5.0.0.dev0-11_0_1_hf114ba7_23.tar.bz2",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "libgfortran==5.0.0.dev0=11_0_1_hf114ba7_23",
+  "sha256": "75059ff4bea47ab13c2ec13c7f4252dfd2ce7491d0375dd646bb7c9d776d735f",
+  "size": 19704,
+  "subdir": "osx-arm64",
+  "timestamp": 1627441350142,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libgfortran-5.0.0.dev0-11_0_1_hf114ba7_23.tar.bz2",
+  "version": "5.0.0.dev0"
+}

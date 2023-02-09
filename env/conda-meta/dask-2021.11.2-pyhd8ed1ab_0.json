@@ -1,0 +1,45 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [
+    "openssl !=1.1.1e"
+  ],
+  "depends": [
+    "bokeh >=1.0.0,!=2.0.0",
+    "cytoolz >=0.8.2",
+    "dask-core 2021.11.2.*",
+    "distributed 2021.11.2.*",
+    "jinja2",
+    "numpy >=1.18",
+    "pandas >=1.0",
+    "python >=3.7"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/dask-2021.11.2-pyhd8ed1ab_0",
+  "features": "",
+  "files": [],
+  "fn": "dask-2021.11.2-pyhd8ed1ab_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/dask-2021.11.2-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "984834c5daa0ee3edbb0cefa53b873a5",
+  "name": "dask",
+  "noarch": "python",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/dask-2021.11.2-pyhd8ed1ab_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "dask==2021.11.2=pyhd8ed1ab_0",
+  "sha256": "a6ae58dc64afb1c8b7e36e9bdc90096cb58aa3a8c045df9f70f277e33b9b81af",
+  "size": 4667,
+  "subdir": "noarch",
+  "timestamp": 1637385980340,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/dask-2021.11.2-pyhd8ed1ab_0.tar.bz2",
+  "version": "2021.11.2"
+}

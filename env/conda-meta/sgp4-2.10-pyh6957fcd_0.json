@@ -1,0 +1,279 @@
+{
+  "build": "pyh6957fcd_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/sgp4-2.10-pyh6957fcd_0",
+  "features": "",
+  "files": [
+    "lib/python3.9/site-packages/sgp4-2.10.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/sgp4-2.10.dist-info/METADATA",
+    "lib/python3.9/site-packages/sgp4-2.10.dist-info/RECORD",
+    "lib/python3.9/site-packages/sgp4-2.10.dist-info/WHEEL",
+    "lib/python3.9/site-packages/sgp4-2.10.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/sgp4-2.10.dist-info/top_level.txt",
+    "lib/python3.9/site-packages/sgp4/SGP4-VER.TLE",
+    "lib/python3.9/site-packages/sgp4/__init__.py",
+    "lib/python3.9/site-packages/sgp4/api.py",
+    "lib/python3.9/site-packages/sgp4/conveniences.py",
+    "lib/python3.9/site-packages/sgp4/earth_gravity.py",
+    "lib/python3.9/site-packages/sgp4/exporter.py",
+    "lib/python3.9/site-packages/sgp4/ext.py",
+    "lib/python3.9/site-packages/sgp4/functions.py",
+    "lib/python3.9/site-packages/sgp4/io.py",
+    "lib/python3.9/site-packages/sgp4/model.py",
+    "lib/python3.9/site-packages/sgp4/propagation.py",
+    "lib/python3.9/site-packages/sgp4/tcppver.out",
+    "lib/python3.9/site-packages/sgp4/tests.py",
+    "lib/python3.9/site-packages/sgp4/vallado_cpp.cpython-36m-x86_64-linux-gnu.so",
+    "lib/python3.9/site-packages/sgp4/wrapper.py",
+    "lib/python3.9/site-packages/sgp4/wulfgar.py",
+    "lib/python3.9/site-packages/sgp4/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/sgp4/__pycache__/api.cpython-39.pyc",
+    "lib/python3.9/site-packages/sgp4/__pycache__/conveniences.cpython-39.pyc",
+    "lib/python3.9/site-packages/sgp4/__pycache__/earth_gravity.cpython-39.pyc",
+    "lib/python3.9/site-packages/sgp4/__pycache__/exporter.cpython-39.pyc",
+    "lib/python3.9/site-packages/sgp4/__pycache__/ext.cpython-39.pyc",
+    "lib/python3.9/site-packages/sgp4/__pycache__/functions.cpython-39.pyc",
+    "lib/python3.9/site-packages/sgp4/__pycache__/io.cpython-39.pyc",
+    "lib/python3.9/site-packages/sgp4/__pycache__/model.cpython-39.pyc",
+    "lib/python3.9/site-packages/sgp4/__pycache__/propagation.cpython-39.pyc",
+    "lib/python3.9/site-packages/sgp4/__pycache__/tests.cpython-39.pyc",
+    "lib/python3.9/site-packages/sgp4/__pycache__/wrapper.cpython-39.pyc",
+    "lib/python3.9/site-packages/sgp4/__pycache__/wulfgar.cpython-39.pyc"
+  ],
+  "fn": "sgp4-2.10-pyh6957fcd_0.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/sgp4-2.10-pyh6957fcd_0",
+    "type": 1
+  },
+  "md5": "1b489d19f01cdfb2e0250aaced3e2b5f",
+  "name": "sgp4",
+  "noarch": "python",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/sgp4-2.10-pyh6957fcd_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/sgp4-2.10.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/sgp4-2.10.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "1b1cc975db61e25db2d1965f71a2385a3f525f4a605c5f578beaa5caa5a697ad",
+        "sha256_in_prefix": "1b1cc975db61e25db2d1965f71a2385a3f525f4a605c5f578beaa5caa5a697ad",
+        "size_in_bytes": 17745
+      },
+      {
+        "_path": "site-packages/sgp4-2.10.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "89977b39dc6901bf750915acb1acfb4a9f2740a8836cdc4c5b9288b2dc7a6469",
+        "sha256_in_prefix": "89977b39dc6901bf750915acb1acfb4a9f2740a8836cdc4c5b9288b2dc7a6469",
+        "size_in_bytes": 2235
+      },
+      {
+        "_path": "site-packages/sgp4-2.10.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "3ad3a8ff7af0c02580925482d81842a81309fd1ddd74eea20419c3ac1f7ac19c",
+        "sha256_in_prefix": "3ad3a8ff7af0c02580925482d81842a81309fd1ddd74eea20419c3ac1f7ac19c",
+        "size_in_bytes": 104
+      },
+      {
+        "_path": "site-packages/sgp4-2.10.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "e661b92f9f0212f32dbc5ddfa0c9e667f34683a71c7d0aeaf87984e8eaa42179",
+        "sha256_in_prefix": "e661b92f9f0212f32dbc5ddfa0c9e667f34683a71c7d0aeaf87984e8eaa42179",
+        "size_in_bytes": 100
+      },
+      {
+        "_path": "site-packages/sgp4-2.10.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "dedcab91e4e292e862e76d03c184c213d047c09678c182d9864bee816492778e",
+        "sha256_in_prefix": "dedcab91e4e292e862e76d03c184c213d047c09678c182d9864bee816492778e",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/sgp4/SGP4-VER.TLE",
+        "path_type": "hardlink",
+        "sha256": "d246d1d9d768ace445a38a965713fa9ba52d80fd8a41a0502ff83d7acffe2881",
+        "sha256_in_prefix": "d246d1d9d768ace445a38a965713fa9ba52d80fd8a41a0502ff83d7acffe2881",
+        "size_in_bytes": 8616
+      },
+      {
+        "_path": "site-packages/sgp4/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "2ff3ebd87c53a711ec08929905ecfa5a323524f6f4987c2d46a3314c7e836c66",
+        "sha256_in_prefix": "2ff3ebd87c53a711ec08929905ecfa5a323524f6f4987c2d46a3314c7e836c66",
+        "size_in_bytes": 15812
+      },
+      {
+        "_path": "site-packages/sgp4/api.py",
+        "path_type": "hardlink",
+        "sha256": "ede9163dd148aa1405e857cdabccc761a48a72bf3a05269b858144e24aa5005d",
+        "sha256_in_prefix": "ede9163dd148aa1405e857cdabccc761a48a72bf3a05269b858144e24aa5005d",
+        "size_in_bytes": 852
+      },
+      {
+        "_path": "site-packages/sgp4/conveniences.py",
+        "path_type": "hardlink",
+        "sha256": "4f10e9bfba8a03a4b601ea9e80ec8306ba39235a0906a10b782bb1f81734e6b1",
+        "sha256_in_prefix": "4f10e9bfba8a03a4b601ea9e80ec8306ba39235a0906a10b782bb1f81734e6b1",
+        "size_in_bytes": 2307
+      },
+      {
+        "_path": "site-packages/sgp4/earth_gravity.py",
+        "path_type": "hardlink",
+        "sha256": "70057a3a1ed33c96b8c191c28c4012b4d2fdbd55b5775ec9bdaaabf78f418879",
+        "sha256_in_prefix": "70057a3a1ed33c96b8c191c28c4012b4d2fdbd55b5775ec9bdaaabf78f418879",
+        "size_in_bytes": 375
+      },
+      {
+        "_path": "site-packages/sgp4/exporter.py",
+        "path_type": "hardlink",
+        "sha256": "01814c3e0f10a07cedd7593cd90f33abe5ac8e7b739ba2c70d0a523e1b112f8d",
+        "sha256_in_prefix": "01814c3e0f10a07cedd7593cd90f33abe5ac8e7b739ba2c70d0a523e1b112f8d",
+        "size_in_bytes": 3102
+      },
+      {
+        "_path": "site-packages/sgp4/ext.py",
+        "path_type": "hardlink",
+        "sha256": "31240fe331e03d3427adf8afc113838a6a09ab769d5c484b8c13c7cbf1fc6287",
+        "sha256_in_prefix": "31240fe331e03d3427adf8afc113838a6a09ab769d5c484b8c13c7cbf1fc6287",
+        "size_in_bytes": 17276
+      },
+      {
+        "_path": "site-packages/sgp4/functions.py",
+        "path_type": "hardlink",
+        "sha256": "f563c28faabfbeba25a08fe8f733c4bb886ea605213719dd86dccf49039ae77d",
+        "sha256_in_prefix": "f563c28faabfbeba25a08fe8f733c4bb886ea605213719dd86dccf49039ae77d",
+        "size_in_bytes": 3120
+      },
+      {
+        "_path": "site-packages/sgp4/io.py",
+        "path_type": "hardlink",
+        "sha256": "4f96bf7b24c780d4ddd02a10328229436b0f12b6ac4eca8a72aed819e12de910",
+        "sha256_in_prefix": "4f96bf7b24c780d4ddd02a10328229436b0f12b6ac4eca8a72aed819e12de910",
+        "size_in_bytes": 10402
+      },
+      {
+        "_path": "site-packages/sgp4/model.py",
+        "path_type": "hardlink",
+        "sha256": "b5564106f6bed9ffb943d06050737ed46c8a0ea088908507cec1870ba859e1b5",
+        "sha256_in_prefix": "b5564106f6bed9ffb943d06050737ed46c8a0ea088908507cec1870ba859e1b5",
+        "size_in_bytes": 8021
+      },
+      {
+        "_path": "site-packages/sgp4/propagation.py",
+        "path_type": "hardlink",
+        "sha256": "c3b8defe9005dd2ece623e6e79021b3b77e8af8edb14bcff485db482d50cac75",
+        "sha256_in_prefix": "c3b8defe9005dd2ece623e6e79021b3b77e8af8edb14bcff485db482d50cac75",
+        "size_in_bytes": 74125
+      },
+      {
+        "_path": "site-packages/sgp4/tcppver.out",
+        "path_type": "hardlink",
+        "sha256": "687bf28dbe52df86e8e60ab5cb4a08d1aa3dbcaf4e63b1f7ab95f044fbe3833b",
+        "sha256_in_prefix": "687bf28dbe52df86e8e60ab5cb4a08d1aa3dbcaf4e63b1f7ab95f044fbe3833b",
+        "size_in_bytes": 140162
+      },
+      {
+        "_path": "site-packages/sgp4/tests.py",
+        "path_type": "hardlink",
+        "sha256": "2eaa9e98c1d4c49fa8686423e84be6b80f72fa771b2581940bfe157db732f7a7",
+        "sha256_in_prefix": "2eaa9e98c1d4c49fa8686423e84be6b80f72fa771b2581940bfe157db732f7a7",
+        "size_in_bytes": 21391
+      },
+      {
+        "_path": "site-packages/sgp4/vallado_cpp.cpython-36m-x86_64-linux-gnu.so",
+        "path_type": "hardlink",
+        "sha256": "fd05527edaa7b745e39e89ab0ccc6ab874be8b661b8a2ca1b11144cb710354f7",
+        "sha256_in_prefix": "fd05527edaa7b745e39e89ab0ccc6ab874be8b661b8a2ca1b11144cb710354f7",
+        "size_in_bytes": 72776
+      },
+      {
+        "_path": "site-packages/sgp4/wrapper.py",
+        "path_type": "hardlink",
+        "sha256": "f73cbaf65e1594c3b6b565212677f066b90efc9ebec31ea3633a893ea3116d67",
+        "sha256_in_prefix": "f73cbaf65e1594c3b6b565212677f066b90efc9ebec31ea3633a893ea3116d67",
+        "size_in_bytes": 2283
+      },
+      {
+        "_path": "site-packages/sgp4/wulfgar.py",
+        "path_type": "hardlink",
+        "sha256": "78dcf4f36b94188f2c8e4179b252cc59f2b65ae7812854d1f70993e54fcfa331",
+        "sha256_in_prefix": "78dcf4f36b94188f2c8e4179b252cc59f2b65ae7812854d1f70993e54fcfa331",
+        "size_in_bytes": 815
+      },
+      {
+        "_path": "lib/python3.9/site-packages/sgp4/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/sgp4/__pycache__/api.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/sgp4/__pycache__/conveniences.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/sgp4/__pycache__/earth_gravity.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/sgp4/__pycache__/exporter.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/sgp4/__pycache__/ext.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/sgp4/__pycache__/functions.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/sgp4/__pycache__/io.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/sgp4/__pycache__/model.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/sgp4/__pycache__/propagation.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/sgp4/__pycache__/tests.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/sgp4/__pycache__/wrapper.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/sgp4/__pycache__/wulfgar.cpython-39.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "sgp4==2.10=pyh6957fcd_0",
+  "sha256": "59a2e0171263be75bac41c53e1d264d0922c62fa340c6052927933a233f17d4a",
+  "size": 131185,
+  "subdir": "noarch",
+  "timestamp": 1590240277132,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/sgp4-2.10-pyh6957fcd_0.tar.bz2",
+  "version": "2.10"
+}

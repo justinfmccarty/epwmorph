@@ -17,7 +17,7 @@ from dask.diagnostics import progress
 import fsspec
 import pandas as pd
 from xclim import ensembles
-
+import os
 __author__ = "Justin McCarty"
 __copyright__ = "Copyright 2020, justinmccarty"
 __credits__ = ["Justin McCarty"]
@@ -34,9 +34,10 @@ config_file = os.path.join(os.path.dirname(__file__), 'default.config')
 def processcmip(variable, pathway):
     latitude = float(parse('latitude'))
     longitude = float(parse('longitude'))
-
     gcsfs.GCSFileSystem(token='anon')
-    col = intake.open_esm_datastore("https://storage.googleapis.com/cmip6/pangeo-cmip6.json")  # TODO make local
+    datastore_json = os.path.join(os.path.dirname(os.getcwd()),'gather','cloud_resources','pangeo-cmip6.json')
+    col = intake.open_esm_datastore.from_df(datastore_json)
+    # col = intake.open_esm_datastore("https://storage.googleapis.com/cmip6/pangeo-cmip6.json")
     sl_df = pd.DataFrame(pd.read_csv(parse('modelsources')))
     sourcelist = sl_df[sl_df['in_ensemble'] == 'Yes']['source_id'].values.tolist()
     print('Gathering the ensemble members for variable - {}'.format(variable))
@@ -155,16 +156,16 @@ def initialize_project():
                 print(f'{pathway} exists, moving on.')
                 continue
             else:
-                os.makedirs(os.path.join(output_path, pathway))
+                os.mkdir(os.path.join(output_path, pathway))
                 print(f'Downloading {pathway} CMIP6 data.')
                 exportcmip(pathway)
     else:
-        os.makedirs(output_path)
+        os.mkdir(output_path)
         print('Initializing project with historical CMIP6 data download.')
-        os.makedirs(os.path.join(output_path, 'historical'))
+        os.mkdir(os.path.join(output_path, 'historical'))
         exportcmip('historical')
         for pathway in parse('pathwaylist').split(','):
-            os.makedirs(os.path.join(output_path, pathway))
+            os.mkdir(os.path.join(output_path, pathway))
             print(f'Continuing with {pathway} CMIP6 data download.')
             exportcmip(pathway)
     return print('Climate model data has been downloaded.')

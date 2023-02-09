@@ -1,0 +1,360 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "pyasn1 >=0.1.3",
+    "python >=3.6"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/rsa-4.8-pyhd8ed1ab_0",
+  "features": "",
+  "files": [
+    "lib/python3.9/site-packages/CHANGELOG.md",
+    "lib/python3.9/site-packages/LICENSE",
+    "lib/python3.9/site-packages/README.md",
+    "lib/python3.9/site-packages/rsa-4.8.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/rsa-4.8.dist-info/LICENSE",
+    "lib/python3.9/site-packages/rsa-4.8.dist-info/METADATA",
+    "lib/python3.9/site-packages/rsa-4.8.dist-info/RECORD",
+    "lib/python3.9/site-packages/rsa-4.8.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/rsa-4.8.dist-info/WHEEL",
+    "lib/python3.9/site-packages/rsa-4.8.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/rsa-4.8.dist-info/entry_points.txt",
+    "lib/python3.9/site-packages/rsa/__init__.py",
+    "lib/python3.9/site-packages/rsa/_compat.py",
+    "lib/python3.9/site-packages/rsa/asn1.py",
+    "lib/python3.9/site-packages/rsa/cli.py",
+    "lib/python3.9/site-packages/rsa/common.py",
+    "lib/python3.9/site-packages/rsa/core.py",
+    "lib/python3.9/site-packages/rsa/key.py",
+    "lib/python3.9/site-packages/rsa/parallel.py",
+    "lib/python3.9/site-packages/rsa/pem.py",
+    "lib/python3.9/site-packages/rsa/pkcs1.py",
+    "lib/python3.9/site-packages/rsa/pkcs1_v2.py",
+    "lib/python3.9/site-packages/rsa/prime.py",
+    "lib/python3.9/site-packages/rsa/py.typed",
+    "lib/python3.9/site-packages/rsa/randnum.py",
+    "lib/python3.9/site-packages/rsa/transform.py",
+    "lib/python3.9/site-packages/rsa/util.py",
+    "lib/python3.9/site-packages/rsa/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/rsa/__pycache__/_compat.cpython-39.pyc",
+    "lib/python3.9/site-packages/rsa/__pycache__/asn1.cpython-39.pyc",
+    "lib/python3.9/site-packages/rsa/__pycache__/cli.cpython-39.pyc",
+    "lib/python3.9/site-packages/rsa/__pycache__/common.cpython-39.pyc",
+    "lib/python3.9/site-packages/rsa/__pycache__/core.cpython-39.pyc",
+    "lib/python3.9/site-packages/rsa/__pycache__/key.cpython-39.pyc",
+    "lib/python3.9/site-packages/rsa/__pycache__/parallel.cpython-39.pyc",
+    "lib/python3.9/site-packages/rsa/__pycache__/pem.cpython-39.pyc",
+    "lib/python3.9/site-packages/rsa/__pycache__/pkcs1.cpython-39.pyc",
+    "lib/python3.9/site-packages/rsa/__pycache__/pkcs1_v2.cpython-39.pyc",
+    "lib/python3.9/site-packages/rsa/__pycache__/prime.cpython-39.pyc",
+    "lib/python3.9/site-packages/rsa/__pycache__/randnum.cpython-39.pyc",
+    "lib/python3.9/site-packages/rsa/__pycache__/transform.cpython-39.pyc",
+    "lib/python3.9/site-packages/rsa/__pycache__/util.cpython-39.pyc",
+    "bin/pyrsa-priv2pub",
+    "bin/pyrsa-keygen",
+    "bin/pyrsa-encrypt",
+    "bin/pyrsa-decrypt",
+    "bin/pyrsa-sign",
+    "bin/pyrsa-verify"
+  ],
+  "fn": "rsa-4.8-pyhd8ed1ab_0.tar.bz2",
+  "license": "Apache-2.0",
+  "license_family": "APACHE",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/rsa-4.8-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "0fdcca8ad4e0e66bde199c40f2d1019a",
+  "name": "rsa",
+  "noarch": "python",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/rsa-4.8-pyhd8ed1ab_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/CHANGELOG.md",
+        "path_type": "hardlink",
+        "sha256": "e8fbfbaa196dddff42792dc3c8148e5d79f3b4825a6caa9ebaee83500c12e4f5",
+        "sha256_in_prefix": "e8fbfbaa196dddff42792dc3c8148e5d79f3b4825a6caa9ebaee83500c12e4f5",
+        "size_in_bytes": 8731
+      },
+      {
+        "_path": "site-packages/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "073f28b7d389c8fe74f607e17c27f81eaa5ace69edc43a884f23f41b41c5c726",
+        "sha256_in_prefix": "073f28b7d389c8fe74f607e17c27f81eaa5ace69edc43a884f23f41b41c5c726",
+        "size_in_bytes": 577
+      },
+      {
+        "_path": "site-packages/README.md",
+        "path_type": "hardlink",
+        "sha256": "203695f4a978f4d76fccd776d4a388934c2fde8aa80a823f7749f7f5ee852dc8",
+        "sha256_in_prefix": "203695f4a978f4d76fccd776d4a388934c2fde8aa80a823f7749f7f5ee852dc8",
+        "size_in_bytes": 1928
+      },
+      {
+        "_path": "site-packages/rsa-4.8.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/rsa-4.8.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "073f28b7d389c8fe74f607e17c27f81eaa5ace69edc43a884f23f41b41c5c726",
+        "sha256_in_prefix": "073f28b7d389c8fe74f607e17c27f81eaa5ace69edc43a884f23f41b41c5c726",
+        "size_in_bytes": 577
+      },
+      {
+        "_path": "site-packages/rsa-4.8.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "03c07b91f5ce53b23863ae4214dc0b62186f6ee61996ef79592de42fea69fe39",
+        "sha256_in_prefix": "03c07b91f5ce53b23863ae4214dc0b62186f6ee61996ef79592de42fea69fe39",
+        "size_in_bytes": 3061
+      },
+      {
+        "_path": "site-packages/rsa-4.8.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "0e12e274f6c9c31a052642b044fc9525f6c2e4b13fca3920eaa8b1fe91f15e9c",
+        "sha256_in_prefix": "0e12e274f6c9c31a052642b044fc9525f6c2e4b13fca3920eaa8b1fe91f15e9c",
+        "size_in_bytes": 3065
+      },
+      {
+        "_path": "site-packages/rsa-4.8.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/rsa-4.8.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "cb778389a15548d4cf6e0cdf367d27627e6d127d5c5fa5ab75eb43950338c56c",
+        "sha256_in_prefix": "cb778389a15548d4cf6e0cdf367d27627e6d127d5c5fa5ab75eb43950338c56c",
+        "size_in_bytes": 83
+      },
+      {
+        "_path": "site-packages/rsa-4.8.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "798f7615690b239f909c6de57e0b74b8618cf13f9d0e827195c3655d1948672b",
+        "sha256_in_prefix": "798f7615690b239f909c6de57e0b74b8618cf13f9d0e827195c3655d1948672b",
+        "size_in_bytes": 99
+      },
+      {
+        "_path": "site-packages/rsa-4.8.dist-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "a749d5b1ece63d28e6e71e060cc0f86bd4ac85cf6e91d7f0d649263a6a5a02ed",
+        "sha256_in_prefix": "a749d5b1ece63d28e6e71e060cc0f86bd4ac85cf6e91d7f0d649263a6a5a02ed",
+        "size_in_bytes": 201
+      },
+      {
+        "_path": "site-packages/rsa/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "4b818c39ad0415a2426af84052389e7560a64c971c6c65a9307d5f9ed2f7ffdc",
+        "sha256_in_prefix": "4b818c39ad0415a2426af84052389e7560a64c971c6c65a9307d5f9ed2f7ffdc",
+        "size_in_bytes": 1605
+      },
+      {
+        "_path": "site-packages/rsa/_compat.py",
+        "path_type": "hardlink",
+        "sha256": "4f178fd9431fcf304b2289efb0e0097948c652cb3926acf17ff38167ff94e795",
+        "sha256_in_prefix": "4f178fd9431fcf304b2289efb0e0097948c652cb3926acf17ff38167ff94e795",
+        "size_in_bytes": 1486
+      },
+      {
+        "_path": "site-packages/rsa/asn1.py",
+        "path_type": "hardlink",
+        "sha256": "7d93e81dd555fbc11165a70633a59ada95b6977177d4782119fa93f6a21fb3d6",
+        "sha256_in_prefix": "7d93e81dd555fbc11165a70633a59ada95b6977177d4782119fa93f6a21fb3d6",
+        "size_in_bytes": 1740
+      },
+      {
+        "_path": "site-packages/rsa/cli.py",
+        "path_type": "hardlink",
+        "sha256": "2b8b424e035a63587c1fd73d5154624a07b2bc7b328ba3319208fc9b9e5b9ef2",
+        "sha256_in_prefix": "2b8b424e035a63587c1fd73d5154624a07b2bc7b328ba3319208fc9b9e5b9ef2",
+        "size_in_bytes": 9862
+      },
+      {
+        "_path": "site-packages/rsa/common.py",
+        "path_type": "hardlink",
+        "sha256": "c3452e5791cdbe4142e2c04c8cc0cef094d4242a17bec2f372826b02eab32e90",
+        "sha256_in_prefix": "c3452e5791cdbe4142e2c04c8cc0cef094d4242a17bec2f372826b02eab32e90",
+        "size_in_bytes": 4679
+      },
+      {
+        "_path": "site-packages/rsa/core.py",
+        "path_type": "hardlink",
+        "sha256": "c808f42e0d86d07371b1aeb11cc23e445f8e708944ec61f3a018163bbff6cf98",
+        "sha256_in_prefix": "c808f42e0d86d07371b1aeb11cc23e445f8e708944ec61f3a018163bbff6cf98",
+        "size_in_bytes": 1661
+      },
+      {
+        "_path": "site-packages/rsa/key.py",
+        "path_type": "hardlink",
+        "sha256": "7e9cced9a122fb4d7235239cc46ebf4e840a7fb66bf9ad00d462d1a94faf8140",
+        "sha256_in_prefix": "7e9cced9a122fb4d7235239cc46ebf4e840a7fb66bf9ad00d462d1a94faf8140",
+        "size_in_bytes": 27531
+      },
+      {
+        "_path": "site-packages/rsa/parallel.py",
+        "path_type": "hardlink",
+        "sha256": "969f259f99c4c399966c1afdca87a0bc711c6b06d1f7a19592008a8f03c761b9",
+        "sha256_in_prefix": "969f259f99c4c399966c1afdca87a0bc711c6b06d1f7a19592008a8f03c761b9",
+        "size_in_bytes": 2309
+      },
+      {
+        "_path": "site-packages/rsa/pem.py",
+        "path_type": "hardlink",
+        "sha256": "ede66de14f629b484bb8231038031a3c78b615ec7143e6bb1555f2cdb252fc73",
+        "sha256_in_prefix": "ede66de14f629b484bb8231038031a3c78b615ec7143e6bb1555f2cdb252fc73",
+        "size_in_bytes": 3989
+      },
+      {
+        "_path": "site-packages/rsa/pkcs1.py",
+        "path_type": "hardlink",
+        "sha256": "487063274b8ec3da8f226f506cfe57fe43d7a4caf132d63b0d1d0ac4fc3cf2d1",
+        "sha256_in_prefix": "487063274b8ec3da8f226f506cfe57fe43d7a4caf132d63b0d1d0ac4fc3cf2d1",
+        "size_in_bytes": 16149
+      },
+      {
+        "_path": "site-packages/rsa/pkcs1_v2.py",
+        "path_type": "hardlink",
+        "sha256": "a58db687e1091d5ee369e78d8ea8e57a7d026cc825f943fb77d0ac41c787a5e9",
+        "sha256_in_prefix": "a58db687e1091d5ee369e78d8ea8e57a7d026cc825f943fb77d0ac41c787a5e9",
+        "size_in_bytes": 3449
+      },
+      {
+        "_path": "site-packages/rsa/prime.py",
+        "path_type": "hardlink",
+        "sha256": "385a55205dc98d7cde3167587861275edd45cb77189c7432b2d725b60a5fa11d",
+        "sha256_in_prefix": "385a55205dc98d7cde3167587861275edd45cb77189c7432b2d725b60a5fa11d",
+        "size_in_bytes": 5106
+      },
+      {
+        "_path": "site-packages/rsa/py.typed",
+        "path_type": "hardlink",
+        "sha256": "6f37766bc73c4e91e250cc49cf5a5477b77d2ca168ef5c35371a46d5f47bdc90",
+        "sha256_in_prefix": "6f37766bc73c4e91e250cc49cf5a5477b77d2ca168ef5c35371a46d5f47bdc90",
+        "size_in_bytes": 63
+      },
+      {
+        "_path": "site-packages/rsa/randnum.py",
+        "path_type": "hardlink",
+        "sha256": "db797680e518f55bfd7faee677fd7ab4036b6c10e950fedd5b512e0dd124954b",
+        "sha256_in_prefix": "db797680e518f55bfd7faee677fd7ab4036b6c10e950fedd5b512e0dd124954b",
+        "size_in_bytes": 2657
+      },
+      {
+        "_path": "site-packages/rsa/transform.py",
+        "path_type": "hardlink",
+        "sha256": "9f8e033eb3b50992e029762d2644e4be1c32153708b7586b6c3fe333429106ed",
+        "sha256_in_prefix": "9f8e033eb3b50992e029762d2644e4be1c32153708b7586b6c3fe333429106ed",
+        "size_in_bytes": 2200
+      },
+      {
+        "_path": "site-packages/rsa/util.py",
+        "path_type": "hardlink",
+        "sha256": "0c2dbb0fa2d1e44f6938fbf1330953035638e88af1df4621e605b7b42ca9e371",
+        "sha256_in_prefix": "0c2dbb0fa2d1e44f6938fbf1330953035638e88af1df4621e605b7b42ca9e371",
+        "size_in_bytes": 2993
+      },
+      {
+        "_path": "lib/python3.9/site-packages/rsa/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/rsa/__pycache__/_compat.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/rsa/__pycache__/asn1.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/rsa/__pycache__/cli.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/rsa/__pycache__/common.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/rsa/__pycache__/core.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/rsa/__pycache__/key.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/rsa/__pycache__/parallel.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/rsa/__pycache__/pem.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/rsa/__pycache__/pkcs1.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/rsa/__pycache__/pkcs1_v2.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/rsa/__pycache__/prime.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/rsa/__pycache__/randnum.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/rsa/__pycache__/transform.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/rsa/__pycache__/util.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "bin/pyrsa-priv2pub",
+        "path_type": "unix_python_entry_point"
+      },
+      {
+        "_path": "bin/pyrsa-keygen",
+        "path_type": "unix_python_entry_point"
+      },
+      {
+        "_path": "bin/pyrsa-encrypt",
+        "path_type": "unix_python_entry_point"
+      },
+      {
+        "_path": "bin/pyrsa-decrypt",
+        "path_type": "unix_python_entry_point"
+      },
+      {
+        "_path": "bin/pyrsa-sign",
+        "path_type": "unix_python_entry_point"
+      },
+      {
+        "_path": "bin/pyrsa-verify",
+        "path_type": "unix_python_entry_point"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "rsa==4.8=pyhd8ed1ab_0",
+  "sha256": "744989567c8163c7cd806901be3f0d4f4f909e4307514b431f798b13f7b2fcd9",
+  "size": 32167,
+  "subdir": "noarch",
+  "timestamp": 1637781254864,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/rsa-4.8-pyhd8ed1ab_0.tar.bz2",
+  "version": "4.8"
+}

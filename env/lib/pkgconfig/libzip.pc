@@ -1,0 +1,15 @@
+prefix=/Users/jmccarty/GitHub/epwmorph/env
+exec_prefix=${prefix}
+bindir=/Users/jmccarty/GitHub/epwmorph/env/bin
+libdir=/Users/jmccarty/GitHub/epwmorph/env/lib
+includedir=/Users/jmccarty/GitHub/epwmorph/env/include
+
+zipcmp=/Users/jmccarty/GitHub/epwmorph/env/bin/zipcmp
+
+Name: libzip
+Description: library for handling zip archives
+Version: 1.8.0
+Libs:  -L${libdir} -lzip
+Libs.private:  -lbz2 -lssl -lcrypto -lz
+Cflags: -I${includedir}
+

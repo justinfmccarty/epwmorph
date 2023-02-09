@@ -1,0 +1,79 @@
+{
+  "build": "hf114ba7_23",
+  "build_number": 23,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [
+    "libgfortran 5.0.0.dev0 *_23"
+  ],
+  "depends": [
+    "llvm-openmp >=8.0.0"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libgfortran5-11.0.1.dev0-hf114ba7_23",
+  "features": "",
+  "files": [
+    "lib/libgcc_s.2.dylib",
+    "lib/libgfortran.5.dylib",
+    "lib/libgfortran.dylib",
+    "lib/libgomp.1.dylib",
+    "lib/libgomp.dylib"
+  ],
+  "fn": "libgfortran5-11.0.1.dev0-hf114ba7_23.tar.bz2",
+  "license": "GPL-3.0-only WITH GCC-exception-3.1",
+  "license_family": "GPL",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libgfortran5-11.0.1.dev0-hf114ba7_23",
+    "type": 1
+  },
+  "md5": "402c05211a9c339c71a1e82ac8b7ad81",
+  "name": "libgfortran5",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libgfortran5-11.0.1.dev0-hf114ba7_23.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libgcc_s.2.dylib",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/gfortran_impl_osx-arm64_1627437361805/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "af01966b7f1b5de02d72230884cf6d7ab1db7ff98ec639c7a683c38a5f8c8b95",
+        "sha256_in_prefix": "2e72e321fc0eb83f3f6f1905b675d36d968a74d1a651868695566601d9728fd4",
+        "size_in_bytes": 111504
+      },
+      {
+        "_path": "lib/libgfortran.5.dylib",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/gfortran_impl_osx-arm64_1627437361805/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "5c964c7379ac5d8c2db78079222f550688e3ada8531c19cc6953f51813a3dbf2",
+        "sha256_in_prefix": "be0bc1f7d7a89dbf66910030f4f123121cc8226e905791f6b302e1d7f472aafb",
+        "size_in_bytes": 3291760
+      },
+      {
+        "_path": "lib/libgfortran.dylib",
+        "path_type": "softlink",
+        "sha256": "5c964c7379ac5d8c2db78079222f550688e3ada8531c19cc6953f51813a3dbf2",
+        "size_in_bytes": 3291760
+      },
+      {
+        "_path": "lib/libgomp.1.dylib",
+        "path_type": "softlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/libgomp.dylib",
+        "path_type": "softlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "libgfortran5==11.0.1.dev0=hf114ba7_23",
+  "sha256": "ec83120a3f1e0fe5903cdc075e9095982d6d663b0f80b1aa9f3f1ef47c8e5660",
+  "size": 922637,
+  "subdir": "osx-arm64",
+  "timestamp": 1627441261110,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libgfortran5-11.0.1.dev0-hf114ba7_23.tar.bz2",
+  "version": "11.0.1.dev0"
+}

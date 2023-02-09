@@ -1,0 +1,75 @@
+{
+  "build": "h642e427_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libev-4.33-h642e427_1",
+  "features": "",
+  "files": [
+    "include/ev++.h",
+    "include/ev.h",
+    "lib/libev.4.dylib",
+    "lib/libev.dylib",
+    "share/man/man3/ev.3"
+  ],
+  "fn": "libev-4.33-h642e427_1.tar.bz2",
+  "license": "BSD-2-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libev-4.33-h642e427_1",
+    "type": 1
+  },
+  "md5": "566dbf70fe79eacdb3c3d3d195a27f55",
+  "name": "libev",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libev-4.33-h642e427_1.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/ev++.h",
+        "path_type": "hardlink",
+        "sha256": "918c757dc7f2ccf58012326b9aa6e5060d3b951b5e2c0542111204762df936e7",
+        "sha256_in_prefix": "918c757dc7f2ccf58012326b9aa6e5060d3b951b5e2c0542111204762df936e7",
+        "size_in_bytes": 20549
+      },
+      {
+        "_path": "include/ev.h",
+        "path_type": "hardlink",
+        "sha256": "6622bd23ae922f066cecbba48b3290a6c9325c879db158484cf0899ca95687d2",
+        "sha256_in_prefix": "6622bd23ae922f066cecbba48b3290a6c9325c879db158484cf0899ca95687d2",
+        "size_in_bytes": 30257
+      },
+      {
+        "_path": "lib/libev.4.dylib",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/libev_1598867888023/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla",
+        "sha256": "ee5cd75adcc2e35bfca02cdb3f43c569de058713b00c788fb8a507c3ce2abe15",
+        "sha256_in_prefix": "ea017412d1acc396069d36bffd41a20559cb2f5c44c1203804108e70eed72bcf",
+        "size_in_bytes": 90392
+      },
+      {
+        "_path": "lib/libev.dylib",
+        "path_type": "softlink",
+        "sha256": "ee5cd75adcc2e35bfca02cdb3f43c569de058713b00c788fb8a507c3ce2abe15",
+        "size_in_bytes": 90392
+      },
+      {
+        "_path": "share/man/man3/ev.3",
+        "path_type": "hardlink",
+        "sha256": "178fb4d367b9626165733a0927f0b597686ee24675424b9ab6dc2f9cd9a86952",
+        "sha256_in_prefix": "178fb4d367b9626165733a0927f0b597686ee24675424b9ab6dc2f9cd9a86952",
+        "size_in_bytes": 273163
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "libev==4.33=h642e427_1",
+  "sha256": "eb7325eb2e6bd4c291cb9682781b35b8c0f68cb72651c35a5b9dd22707ebd25c",
+  "size": 100668,
+  "subdir": "osx-arm64",
+  "timestamp": 1598868103393,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libev-4.33-h642e427_1.tar.bz2",
+  "version": "4.33"
+}

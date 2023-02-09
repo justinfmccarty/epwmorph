@@ -1,0 +1,12 @@
+prefix=/Users/jmccarty/GitHub/epwmorph/env
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: GEOS
+Description: Geometry Engine, Open Source - C API
+Requires:
+Version: 3.10.1
+Cflags: -I${includedir}
+Libs: -L${libdir} -lgeos_c
+Libs.private: -lgeos -lstdc++ -lm

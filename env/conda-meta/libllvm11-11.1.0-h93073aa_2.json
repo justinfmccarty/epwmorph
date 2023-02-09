@@ -1,0 +1,61 @@
+{
+  "build": "h93073aa_2",
+  "build_number": 2,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "libcxx >=11.a0",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libllvm11-11.1.0-h93073aa_2",
+  "features": "",
+  "files": [
+    "lib/libLLVM-11.dylib",
+    "lib/libLTO.11.dylib",
+    "lib/libRemarks.11.dylib"
+  ],
+  "fn": "libllvm11-11.1.0-h93073aa_2.tar.bz2",
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "license_family": "Apache",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libllvm11-11.1.0-h93073aa_2",
+    "type": 1
+  },
+  "md5": "7b10812086a5d2affcfae96b6d06e617",
+  "name": "libllvm11",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libllvm11-11.1.0-h93073aa_2.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libLLVM-11.dylib",
+        "path_type": "hardlink",
+        "sha256": "c75433da6c2c3d0ec99aa13dbc6c82be89d7cb4cf24e9576c24c3ee3f67ccda8",
+        "sha256_in_prefix": "c75433da6c2c3d0ec99aa13dbc6c82be89d7cb4cf24e9576c24c3ee3f67ccda8",
+        "size_in_bytes": 78184832
+      },
+      {
+        "_path": "lib/libLTO.11.dylib",
+        "path_type": "hardlink",
+        "sha256": "383f665265ef6692ff1d6978c8da137950b88da87f6634d07b80b3efc4ad9d86",
+        "sha256_in_prefix": "383f665265ef6692ff1d6978c8da137950b88da87f6634d07b80b3efc4ad9d86",
+        "size_in_bytes": 118752
+      },
+      {
+        "_path": "lib/libRemarks.11.dylib",
+        "path_type": "hardlink",
+        "sha256": "4332cfddf248b36783fb5c97472edc606416f6dae978b9d43154351619af5d8f",
+        "sha256_in_prefix": "4332cfddf248b36783fb5c97472edc606416f6dae978b9d43154351619af5d8f",
+        "size_in_bytes": 36336
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "libllvm11==11.1.0=h93073aa_2",
+  "sha256": "dbe6d9078562369cc6a7872fbf22be328d7f56e36e6368add61d79275cbfcaa4",
+  "size": 21891251,
+  "subdir": "osx-arm64",
+  "timestamp": 1617662621716,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libllvm11-11.1.0-h93073aa_2.tar.bz2",
+  "version": "11.1.0"
+}

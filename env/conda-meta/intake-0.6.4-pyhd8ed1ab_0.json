@@ -1,0 +1,1239 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "appdirs",
+    "cloudpickle >=0.2.2",
+    "dask >=1.0",
+    "entrypoints",
+    "fsspec >=0.7.4",
+    "jinja2",
+    "msgpack-python",
+    "numpy",
+    "partd >=0.3.10",
+    "python >=3.6",
+    "pyyaml",
+    "requests",
+    "toolz >=0.8.2"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/intake-0.6.4-pyhd8ed1ab_0",
+  "features": "",
+  "files": [
+    "lib/python3.9/site-packages/intake-0.6.4.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/intake-0.6.4.dist-info/LICENSE",
+    "lib/python3.9/site-packages/intake-0.6.4.dist-info/METADATA",
+    "lib/python3.9/site-packages/intake-0.6.4.dist-info/RECORD",
+    "lib/python3.9/site-packages/intake-0.6.4.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/intake-0.6.4.dist-info/WHEEL",
+    "lib/python3.9/site-packages/intake-0.6.4.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/intake-0.6.4.dist-info/entry_points.txt",
+    "lib/python3.9/site-packages/intake-0.6.4.dist-info/pbr.json",
+    "lib/python3.9/site-packages/intake-0.6.4.dist-info/top_level.txt",
+    "lib/python3.9/site-packages/intake/__init__.py",
+    "lib/python3.9/site-packages/intake/_version.py",
+    "lib/python3.9/site-packages/intake/auth/__init__.py",
+    "lib/python3.9/site-packages/intake/auth/base.py",
+    "lib/python3.9/site-packages/intake/auth/secret.py",
+    "lib/python3.9/site-packages/intake/catalog/__init__.py",
+    "lib/python3.9/site-packages/intake/catalog/base.py",
+    "lib/python3.9/site-packages/intake/catalog/default.py",
+    "lib/python3.9/site-packages/intake/catalog/entry.py",
+    "lib/python3.9/site-packages/intake/catalog/exceptions.py",
+    "lib/python3.9/site-packages/intake/catalog/gui.py",
+    "lib/python3.9/site-packages/intake/catalog/local.py",
+    "lib/python3.9/site-packages/intake/catalog/remote.py",
+    "lib/python3.9/site-packages/intake/catalog/tests/catalog_search/example_packages/ep-0.1.dist-info/entry_points.txt",
+    "lib/python3.9/site-packages/intake/catalog/tests/catalog_search/example_packages/ep/__init__.py",
+    "lib/python3.9/site-packages/intake/catalog/tests/catalog_search/yaml.yml",
+    "lib/python3.9/site-packages/intake/catalog/utils.py",
+    "lib/python3.9/site-packages/intake/catalog/zarr.py",
+    "lib/python3.9/site-packages/intake/cli/__init__.py",
+    "lib/python3.9/site-packages/intake/cli/bootstrap.py",
+    "lib/python3.9/site-packages/intake/cli/client/__init__.py",
+    "lib/python3.9/site-packages/intake/cli/client/__main__.py",
+    "lib/python3.9/site-packages/intake/cli/client/subcommands/__init__.py",
+    "lib/python3.9/site-packages/intake/cli/client/subcommands/cache.py",
+    "lib/python3.9/site-packages/intake/cli/client/subcommands/config.py",
+    "lib/python3.9/site-packages/intake/cli/client/subcommands/describe.py",
+    "lib/python3.9/site-packages/intake/cli/client/subcommands/discover.py",
+    "lib/python3.9/site-packages/intake/cli/client/subcommands/drivers.py",
+    "lib/python3.9/site-packages/intake/cli/client/subcommands/example.py",
+    "lib/python3.9/site-packages/intake/cli/client/subcommands/exists.py",
+    "lib/python3.9/site-packages/intake/cli/client/subcommands/get.py",
+    "lib/python3.9/site-packages/intake/cli/client/subcommands/info.py",
+    "lib/python3.9/site-packages/intake/cli/client/subcommands/list.py",
+    "lib/python3.9/site-packages/intake/cli/client/subcommands/precache.py",
+    "lib/python3.9/site-packages/intake/cli/sample/states_1.csv",
+    "lib/python3.9/site-packages/intake/cli/sample/states_2.csv",
+    "lib/python3.9/site-packages/intake/cli/sample/us_states.yml",
+    "lib/python3.9/site-packages/intake/cli/server/__init__.py",
+    "lib/python3.9/site-packages/intake/cli/server/__main__.py",
+    "lib/python3.9/site-packages/intake/cli/server/server.py",
+    "lib/python3.9/site-packages/intake/cli/server/templates/index.html",
+    "lib/python3.9/site-packages/intake/cli/util.py",
+    "lib/python3.9/site-packages/intake/compat.py",
+    "lib/python3.9/site-packages/intake/config.py",
+    "lib/python3.9/site-packages/intake/conftest.py",
+    "lib/python3.9/site-packages/intake/container/__init__.py",
+    "lib/python3.9/site-packages/intake/container/base.py",
+    "lib/python3.9/site-packages/intake/container/dataframe.py",
+    "lib/python3.9/site-packages/intake/container/ndarray.py",
+    "lib/python3.9/site-packages/intake/container/persist.py",
+    "lib/python3.9/site-packages/intake/container/semistructured.py",
+    "lib/python3.9/site-packages/intake/container/serializer.py",
+    "lib/python3.9/site-packages/intake/interface/__init__.py",
+    "lib/python3.9/site-packages/intake/interface/base.py",
+    "lib/python3.9/site-packages/intake/interface/catalog/__init__.py",
+    "lib/python3.9/site-packages/intake/interface/catalog/add.py",
+    "lib/python3.9/site-packages/intake/interface/catalog/gui.py",
+    "lib/python3.9/site-packages/intake/interface/catalog/search.py",
+    "lib/python3.9/site-packages/intake/interface/catalog/select.py",
+    "lib/python3.9/site-packages/intake/interface/conftest.py",
+    "lib/python3.9/site-packages/intake/interface/gui.py",
+    "lib/python3.9/site-packages/intake/interface/icons/baseline-check-24px.svg",
+    "lib/python3.9/site-packages/intake/interface/icons/baseline-error-24px.svg",
+    "lib/python3.9/site-packages/intake/interface/icons/logo.png",
+    "lib/python3.9/site-packages/intake/interface/server.py",
+    "lib/python3.9/site-packages/intake/interface/source/__init__.py",
+    "lib/python3.9/site-packages/intake/interface/source/defined_plots.py",
+    "lib/python3.9/site-packages/intake/interface/source/description.py",
+    "lib/python3.9/site-packages/intake/interface/source/gui.py",
+    "lib/python3.9/site-packages/intake/interface/source/select.py",
+    "lib/python3.9/site-packages/intake/source/__init__.py",
+    "lib/python3.9/site-packages/intake/source/base.py",
+    "lib/python3.9/site-packages/intake/source/cache.py",
+    "lib/python3.9/site-packages/intake/source/csv.py",
+    "lib/python3.9/site-packages/intake/source/decompress.py",
+    "lib/python3.9/site-packages/intake/source/derived.py",
+    "lib/python3.9/site-packages/intake/source/discovery.py",
+    "lib/python3.9/site-packages/intake/source/npy.py",
+    "lib/python3.9/site-packages/intake/source/tests/plugin_searchpath/collision_foo/__init__.py",
+    "lib/python3.9/site-packages/intake/source/tests/plugin_searchpath/collision_foo2/__init__.py",
+    "lib/python3.9/site-packages/intake/source/tests/plugin_searchpath/driver_with_entrypoints/__init__.py",
+    "lib/python3.9/site-packages/intake/source/tests/plugin_searchpath/intake_foo/__init__.py",
+    "lib/python3.9/site-packages/intake/source/tests/plugin_searchpath/not_intake_foo/__init__.py",
+    "lib/python3.9/site-packages/intake/source/textfiles.py",
+    "lib/python3.9/site-packages/intake/source/utils.py",
+    "lib/python3.9/site-packages/intake/source/zarr.py",
+    "lib/python3.9/site-packages/intake/util_tests.py",
+    "lib/python3.9/site-packages/intake/utils.py",
+    "lib/python3.9/site-packages/intake/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/__pycache__/_version.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/auth/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/auth/__pycache__/base.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/auth/__pycache__/secret.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/catalog/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/catalog/__pycache__/base.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/catalog/__pycache__/default.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/catalog/__pycache__/entry.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/catalog/__pycache__/exceptions.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/catalog/__pycache__/gui.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/catalog/__pycache__/local.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/catalog/__pycache__/remote.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/catalog/tests/catalog_search/example_packages/ep/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/catalog/__pycache__/utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/catalog/__pycache__/zarr.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/cli/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/cli/__pycache__/bootstrap.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/cli/client/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/cli/client/__pycache__/__main__.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/cli/client/subcommands/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/cli/client/subcommands/__pycache__/cache.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/cli/client/subcommands/__pycache__/config.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/cli/client/subcommands/__pycache__/describe.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/cli/client/subcommands/__pycache__/discover.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/cli/client/subcommands/__pycache__/drivers.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/cli/client/subcommands/__pycache__/example.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/cli/client/subcommands/__pycache__/exists.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/cli/client/subcommands/__pycache__/get.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/cli/client/subcommands/__pycache__/info.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/cli/client/subcommands/__pycache__/list.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/cli/client/subcommands/__pycache__/precache.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/cli/server/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/cli/server/__pycache__/__main__.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/cli/server/__pycache__/server.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/cli/__pycache__/util.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/__pycache__/compat.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/__pycache__/config.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/__pycache__/conftest.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/container/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/container/__pycache__/base.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/container/__pycache__/dataframe.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/container/__pycache__/ndarray.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/container/__pycache__/persist.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/container/__pycache__/semistructured.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/container/__pycache__/serializer.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/interface/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/interface/__pycache__/base.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/interface/catalog/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/interface/catalog/__pycache__/add.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/interface/catalog/__pycache__/gui.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/interface/catalog/__pycache__/search.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/interface/catalog/__pycache__/select.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/interface/__pycache__/conftest.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/interface/__pycache__/gui.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/interface/__pycache__/server.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/interface/source/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/interface/source/__pycache__/defined_plots.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/interface/source/__pycache__/description.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/interface/source/__pycache__/gui.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/interface/source/__pycache__/select.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/source/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/source/__pycache__/base.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/source/__pycache__/cache.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/source/__pycache__/csv.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/source/__pycache__/decompress.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/source/__pycache__/derived.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/source/__pycache__/discovery.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/source/__pycache__/npy.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/source/tests/plugin_searchpath/collision_foo/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/source/tests/plugin_searchpath/collision_foo2/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/source/tests/plugin_searchpath/driver_with_entrypoints/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/source/tests/plugin_searchpath/intake_foo/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/source/tests/plugin_searchpath/not_intake_foo/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/source/__pycache__/textfiles.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/source/__pycache__/utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/source/__pycache__/zarr.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/__pycache__/util_tests.cpython-39.pyc",
+    "lib/python3.9/site-packages/intake/__pycache__/utils.cpython-39.pyc",
+    "bin/intake-server",
+    "bin/intake"
+  ],
+  "fn": "intake-0.6.4-pyhd8ed1ab_0.tar.bz2",
+  "license": "BSD-2-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/intake-0.6.4-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "f12cb55e65ed79bedf1723692eeb7c2f",
+  "name": "intake",
+  "noarch": "python",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/intake-0.6.4-pyhd8ed1ab_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/intake-0.6.4.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/intake-0.6.4.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "ca0d95cdb44c606e01d5d70f4bf338df795fa57a739777a10b602453a7172f11",
+        "sha256_in_prefix": "ca0d95cdb44c606e01d5d70f4bf338df795fa57a739777a10b602453a7172f11",
+        "size_in_bytes": 1286
+      },
+      {
+        "_path": "site-packages/intake-0.6.4.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "e990a8c4ad2dc3f2b189136122ff257dfb79c9355b3ed81a8244fe9e367bcc2f",
+        "sha256_in_prefix": "e990a8c4ad2dc3f2b189136122ff257dfb79c9355b3ed81a8244fe9e367bcc2f",
+        "size_in_bytes": 4404
+      },
+      {
+        "_path": "site-packages/intake-0.6.4.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "9de66ce8b7e77c30e6ae9eb54731e290e6d970f9b670be674c16e64ed2584bca",
+        "sha256_in_prefix": "9de66ce8b7e77c30e6ae9eb54731e290e6d970f9b670be674c16e64ed2584bca",
+        "size_in_bytes": 13504
+      },
+      {
+        "_path": "site-packages/intake-0.6.4.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/intake-0.6.4.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "7b0c04b9e8a8d42d977874ef4f5ee7f1d6542603afc82582b7459534b0a53fda",
+        "sha256_in_prefix": "7b0c04b9e8a8d42d977874ef4f5ee7f1d6542603afc82582b7459534b0a53fda",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "site-packages/intake-0.6.4.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "a5115e873447d0bbf86b50c8c7e92a9e20ec9234a15442409132de4a5083f1b4",
+        "sha256_in_prefix": "a5115e873447d0bbf86b50c8c7e92a9e20ec9234a15442409132de4a5083f1b4",
+        "size_in_bytes": 102
+      },
+      {
+        "_path": "site-packages/intake-0.6.4.dist-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "2c270a5dbd798db343a8de5787a15b40c162d296b777680f02e71885141ba3c6",
+        "sha256_in_prefix": "2c270a5dbd798db343a8de5787a15b40c162d296b777680f02e71885141ba3c6",
+        "size_in_bytes": 580
+      },
+      {
+        "_path": "site-packages/intake-0.6.4.dist-info/pbr.json",
+        "path_type": "hardlink",
+        "sha256": "906643398c2adcf8d89a6ecd88eac5ec96c02219300870f3292e2a2052411357",
+        "sha256_in_prefix": "906643398c2adcf8d89a6ecd88eac5ec96c02219300870f3292e2a2052411357",
+        "size_in_bytes": 46
+      },
+      {
+        "_path": "site-packages/intake-0.6.4.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "cde45ca47b140b33d9f4bc72b138223491285f1fd6cc983822e3d9a0cd67ccd5",
+        "sha256_in_prefix": "cde45ca47b140b33d9f4bc72b138223491285f1fd6cc983822e3d9a0cd67ccd5",
+        "size_in_bytes": 7
+      },
+      {
+        "_path": "site-packages/intake/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "57a4e291a79d1be111564e97d5264237c4d0609361c9788ede81efe77dd90f84",
+        "sha256_in_prefix": "57a4e291a79d1be111564e97d5264237c4d0609361c9788ede81efe77dd90f84",
+        "size_in_bytes": 5900
+      },
+      {
+        "_path": "site-packages/intake/_version.py",
+        "path_type": "hardlink",
+        "sha256": "507386e9670298bffe5a2b09096fe4df295febb6409eee6b1a61b1c043794f0d",
+        "sha256_in_prefix": "507386e9670298bffe5a2b09096fe4df295febb6409eee6b1a61b1c043794f0d",
+        "size_in_bytes": 497
+      },
+      {
+        "_path": "site-packages/intake/auth/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e88dce1a18abc85e0c7e6a28b70935c527408d16416425a2c08e262c5b494aa5",
+        "sha256_in_prefix": "e88dce1a18abc85e0c7e6a28b70935c527408d16416425a2c08e262c5b494aa5",
+        "size_in_bytes": 326
+      },
+      {
+        "_path": "site-packages/intake/auth/base.py",
+        "path_type": "hardlink",
+        "sha256": "1dc7b022ded405689d6353a08a6a45971b8bf88021809e5bf446f849dd57f3f8",
+        "sha256_in_prefix": "1dc7b022ded405689d6353a08a6a45971b8bf88021809e5bf446f849dd57f3f8",
+        "size_in_bytes": 2386
+      },
+      {
+        "_path": "site-packages/intake/auth/secret.py",
+        "path_type": "hardlink",
+        "sha256": "684725e4aa495e86035f950b219effb41927056116805969e38a81ccdaee02f2",
+        "sha256_in_prefix": "684725e4aa495e86035f950b219effb41927056116805969e38a81ccdaee02f2",
+        "size_in_bytes": 1884
+      },
+      {
+        "_path": "site-packages/intake/catalog/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "26c6945293cde54eb37f31baac31b6f14b145975ab7e91fc09eb6fb611cf2d94",
+        "sha256_in_prefix": "26c6945293cde54eb37f31baac31b6f14b145975ab7e91fc09eb6fb611cf2d94",
+        "size_in_bytes": 867
+      },
+      {
+        "_path": "site-packages/intake/catalog/base.py",
+        "path_type": "hardlink",
+        "sha256": "0b1080cbcf9cd3e8f4a7c119f3a2482105a717c98a7003d08056008ca601185f",
+        "sha256_in_prefix": "0b1080cbcf9cd3e8f4a7c119f3a2482105a717c98a7003d08056008ca601185f",
+        "size_in_bytes": 15575
+      },
+      {
+        "_path": "site-packages/intake/catalog/default.py",
+        "path_type": "hardlink",
+        "sha256": "d1278777bef25bcf32161cdf3ac081391125e86577e358d09edc9e930b7b5da7",
+        "sha256_in_prefix": "d1278777bef25bcf32161cdf3ac081391125e86577e358d09edc9e930b7b5da7",
+        "size_in_bytes": 3127
+      },
+      {
+        "_path": "site-packages/intake/catalog/entry.py",
+        "path_type": "hardlink",
+        "sha256": "d6ce907dab41a48b082428997a213065fdbceb145aee9a25a3ce305cd7f00553",
+        "sha256_in_prefix": "d6ce907dab41a48b082428997a213065fdbceb145aee9a25a3ce305cd7f00553",
+        "size_in_bytes": 5379
+      },
+      {
+        "_path": "site-packages/intake/catalog/exceptions.py",
+        "path_type": "hardlink",
+        "sha256": "ee5b02caa0ad17b1b0574a5984feb506c8d44ec9f1aeef57ea82ce5a2fdbbd86",
+        "sha256_in_prefix": "ee5b02caa0ad17b1b0574a5984feb506c8d44ec9f1aeef57ea82ce5a2fdbbd86",
+        "size_in_bytes": 2521
+      },
+      {
+        "_path": "site-packages/intake/catalog/gui.py",
+        "path_type": "hardlink",
+        "sha256": "4b3f708c279f437fd00f40f445a149ba4724fb01ec44d75385a1bd2044966a90",
+        "sha256_in_prefix": "4b3f708c279f437fd00f40f445a149ba4724fb01ec44d75385a1bd2044966a90",
+        "size_in_bytes": 4105
+      },
+      {
+        "_path": "site-packages/intake/catalog/local.py",
+        "path_type": "hardlink",
+        "sha256": "3f105eaf271604c5d0226d78e45210f69f18a53ab6ec9af9b427685e51f85d70",
+        "sha256_in_prefix": "3f105eaf271604c5d0226d78e45210f69f18a53ab6ec9af9b427685e51f85d70",
+        "size_in_bytes": 34261
+      },
+      {
+        "_path": "site-packages/intake/catalog/remote.py",
+        "path_type": "hardlink",
+        "sha256": "6fe943231825b4ef1495cdb529d5d5f4518117dcf4e279aa89e0e323b947a462",
+        "sha256_in_prefix": "6fe943231825b4ef1495cdb529d5d5f4518117dcf4e279aa89e0e323b947a462",
+        "size_in_bytes": 20296
+      },
+      {
+        "_path": "site-packages/intake/catalog/tests/catalog_search/example_packages/ep-0.1.dist-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "0d06afb028362c97575cdf32fe40662e72cb086c86cf6749783f127900d24e46",
+        "sha256_in_prefix": "0d06afb028362c97575cdf32fe40662e72cb086c86cf6749783f127900d24e46",
+        "size_in_bytes": 39
+      },
+      {
+        "_path": "site-packages/intake/catalog/tests/catalog_search/example_packages/ep/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "671d2952f36bc0209512ef8bc256ca1b41b2961315cbb322175463ee7a22fe0b",
+        "sha256_in_prefix": "671d2952f36bc0209512ef8bc256ca1b41b2961315cbb322175463ee7a22fe0b",
+        "size_in_bytes": 27
+      },
+      {
+        "_path": "site-packages/intake/catalog/tests/catalog_search/yaml.yml",
+        "path_type": "hardlink",
+        "sha256": "4141e8467616ff507afe9771940f1fc781e40f32693a602f01959783cbe43b36",
+        "sha256_in_prefix": "4141e8467616ff507afe9771940f1fc781e40f32693a602f01959783cbe43b36",
+        "size_in_bytes": 168
+      },
+      {
+        "_path": "site-packages/intake/catalog/utils.py",
+        "path_type": "hardlink",
+        "sha256": "b0b9f3fa29ee08f11932f363fdbdaccd091a77d8c3dc6fb4473555324c19e270",
+        "sha256_in_prefix": "b0b9f3fa29ee08f11932f363fdbdaccd091a77d8c3dc6fb4473555324c19e270",
+        "size_in_bytes": 10562
+      },
+      {
+        "_path": "site-packages/intake/catalog/zarr.py",
+        "path_type": "hardlink",
+        "sha256": "b0d37381731371e26abf6589edfb48026f14c7197e6ea1ce86be9688c3c442f4",
+        "sha256_in_prefix": "b0d37381731371e26abf6589edfb48026f14c7197e6ea1ce86be9688c3c442f4",
+        "size_in_bytes": 3436
+      },
+      {
+        "_path": "site-packages/intake/cli/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "3337229662b9651c65ddea96ed0443cc6b110eac690a2cc9057fa052709e2601",
+        "sha256_in_prefix": "3337229662b9651c65ddea96ed0443cc6b110eac690a2cc9057fa052709e2601",
+        "size_in_bytes": 436
+      },
+      {
+        "_path": "site-packages/intake/cli/bootstrap.py",
+        "path_type": "hardlink",
+        "sha256": "a32a65657e77f02af55d72d94be2fdda8afa1c4d6ec311be9c21ad868712ea83",
+        "sha256_in_prefix": "a32a65657e77f02af55d72d94be2fdda8afa1c4d6ec311be9c21ad868712ea83",
+        "size_in_bytes": 2117
+      },
+      {
+        "_path": "site-packages/intake/cli/client/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e88dce1a18abc85e0c7e6a28b70935c527408d16416425a2c08e262c5b494aa5",
+        "sha256_in_prefix": "e88dce1a18abc85e0c7e6a28b70935c527408d16416425a2c08e262c5b494aa5",
+        "size_in_bytes": 326
+      },
+      {
+        "_path": "site-packages/intake/cli/client/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "08d647ba02292d66046cb8bd3104144ae01e1cbcc85aeaf5f8f064ff78c28973",
+        "sha256_in_prefix": "08d647ba02292d66046cb8bd3104144ae01e1cbcc85aeaf5f8f064ff78c28973",
+        "size_in_bytes": 1079
+      },
+      {
+        "_path": "site-packages/intake/cli/client/subcommands/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "6b2735c86ecfa5761caad781c6767a112bf97809a584ddb4b5e01fc3d8d3764e",
+        "sha256_in_prefix": "6b2735c86ecfa5761caad781c6767a112bf97809a584ddb4b5e01fc3d8d3764e",
+        "size_in_bytes": 729
+      },
+      {
+        "_path": "site-packages/intake/cli/client/subcommands/cache.py",
+        "path_type": "hardlink",
+        "sha256": "e1326431da6c4513d4c2e8a5da28bd960b69a0a85affd57ddbd90d31ee210846",
+        "sha256_in_prefix": "e1326431da6c4513d4c2e8a5da28bd960b69a0a85affd57ddbd90d31ee210846",
+        "size_in_bytes": 2678
+      },
+      {
+        "_path": "site-packages/intake/cli/client/subcommands/config.py",
+        "path_type": "hardlink",
+        "sha256": "8c4944c3df7e5ab80c55b835a822c3e4b341cd868d7fa25b519c0b1861d8dc25",
+        "sha256_in_prefix": "8c4944c3df7e5ab80c55b835a822c3e4b341cd868d7fa25b519c0b1861d8dc25",
+        "size_in_bytes": 2610
+      },
+      {
+        "_path": "site-packages/intake/cli/client/subcommands/describe.py",
+        "path_type": "hardlink",
+        "sha256": "ee215a1cd26260d7533ae3aaef1a4a1316ffd983dd7c418b82e0ff504a0d6f2a",
+        "sha256_in_prefix": "ee215a1cd26260d7533ae3aaef1a4a1316ffd983dd7c418b82e0ff504a0d6f2a",
+        "size_in_bytes": 1284
+      },
+      {
+        "_path": "site-packages/intake/cli/client/subcommands/discover.py",
+        "path_type": "hardlink",
+        "sha256": "77ce55b18d6f63f50d9c5a08608b315feda0329ac838266ba5d75b43cb01ac00",
+        "sha256_in_prefix": "77ce55b18d6f63f50d9c5a08608b315feda0329ac838266ba5d75b43cb01ac00",
+        "size_in_bytes": 1290
+      },
+      {
+        "_path": "site-packages/intake/cli/client/subcommands/drivers.py",
+        "path_type": "hardlink",
+        "sha256": "60ea85c1c6ea88d90e90a72bca67e0c559ee57b96b19b329a7e7fc865a5256f8",
+        "sha256_in_prefix": "60ea85c1c6ea88d90e90a72bca67e0c559ee57b96b19b329a7e7fc865a5256f8",
+        "size_in_bytes": 3990
+      },
+      {
+        "_path": "site-packages/intake/cli/client/subcommands/example.py",
+        "path_type": "hardlink",
+        "sha256": "a5cbc56f1ec23f01ea1f3ce53f706b4c788e491f1d4201929ed6a31bdf48310a",
+        "sha256_in_prefix": "a5cbc56f1ec23f01ea1f3ce53f706b4c788e491f1d4201929ed6a31bdf48310a",
+        "size_in_bytes": 1899
+      },
+      {
+        "_path": "site-packages/intake/cli/client/subcommands/exists.py",
+        "path_type": "hardlink",
+        "sha256": "e49d745b3d48c57b3f2ea715530405ddd2655c5fbd353be37ae02556f714e0d0",
+        "sha256_in_prefix": "e49d745b3d48c57b3f2ea715530405ddd2655c5fbd353be37ae02556f714e0d0",
+        "size_in_bytes": 1270
+      },
+      {
+        "_path": "site-packages/intake/cli/client/subcommands/get.py",
+        "path_type": "hardlink",
+        "sha256": "e3198a2aa778453a4d1ba1de4e0fece532905d3384be7317fe6b3dcf8ed14f1c",
+        "sha256_in_prefix": "e3198a2aa778453a4d1ba1de4e0fece532905d3384be7317fe6b3dcf8ed14f1c",
+        "size_in_bytes": 1271
+      },
+      {
+        "_path": "site-packages/intake/cli/client/subcommands/info.py",
+        "path_type": "hardlink",
+        "sha256": "258e32599329ff3ab173828185f6cf2b1d4e9aea80adb3c07ef858febd1dfbf5",
+        "sha256_in_prefix": "258e32599329ff3ab173828185f6cf2b1d4e9aea80adb3c07ef858febd1dfbf5",
+        "size_in_bytes": 1806
+      },
+      {
+        "_path": "site-packages/intake/cli/client/subcommands/list.py",
+        "path_type": "hardlink",
+        "sha256": "fbd366c76ee1607d2457d444fb45f3b7087a81284d453907cc1003a4af07043e",
+        "sha256_in_prefix": "fbd366c76ee1607d2457d444fb45f3b7087a81284d453907cc1003a4af07043e",
+        "size_in_bytes": 1360
+      },
+      {
+        "_path": "site-packages/intake/cli/client/subcommands/precache.py",
+        "path_type": "hardlink",
+        "sha256": "e92abcb310c1a8ad176198f55d9a3c4f79c29dc99531f9724f9035adea0d3efa",
+        "sha256_in_prefix": "e92abcb310c1a8ad176198f55d9a3c4f79c29dc99531f9724f9035adea0d3efa",
+        "size_in_bytes": 1461
+      },
+      {
+        "_path": "site-packages/intake/cli/sample/states_1.csv",
+        "path_type": "hardlink",
+        "sha256": "49834885683c694156d7b964d9ade147d5e203953203b08e2fec294afa0a9bbf",
+        "sha256_in_prefix": "49834885683c694156d7b964d9ade147d5e203953203b08e2fec294afa0a9bbf",
+        "size_in_bytes": 14735
+      },
+      {
+        "_path": "site-packages/intake/cli/sample/states_2.csv",
+        "path_type": "hardlink",
+        "sha256": "37a338823f90b52fee168004af4ecc9c036db33575a70cfa8536762bf4eb8ce9",
+        "sha256_in_prefix": "37a338823f90b52fee168004af4ecc9c036db33575a70cfa8536762bf4eb8ce9",
+        "size_in_bytes": 15656
+      },
+      {
+        "_path": "site-packages/intake/cli/sample/us_states.yml",
+        "path_type": "hardlink",
+        "sha256": "00de48d4dc0fb8092be023975eb4ea685be001057fbd46a31779e92cd1e72faa",
+        "sha256_in_prefix": "00de48d4dc0fb8092be023975eb4ea685be001057fbd46a31779e92cd1e72faa",
+        "size_in_bytes": 284
+      },
+      {
+        "_path": "site-packages/intake/cli/server/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e88dce1a18abc85e0c7e6a28b70935c527408d16416425a2c08e262c5b494aa5",
+        "sha256_in_prefix": "e88dce1a18abc85e0c7e6a28b70935c527408d16416425a2c08e262c5b494aa5",
+        "size_in_bytes": 326
+      },
+      {
+        "_path": "site-packages/intake/cli/server/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "fd807bce9f62326ff6497a2385ae656976414c499a8cac5cacef25a34bab0774",
+        "sha256_in_prefix": "fd807bce9f62326ff6497a2385ae656976414c499a8cac5cacef25a34bab0774",
+        "size_in_bytes": 3123
+      },
+      {
+        "_path": "site-packages/intake/cli/server/server.py",
+        "path_type": "hardlink",
+        "sha256": "7f97820d671f6cd897eb8bebafba61a31f5922a86c101d49c04de5525db31e3e",
+        "sha256_in_prefix": "7f97820d671f6cd897eb8bebafba61a31f5922a86c101d49c04de5525db31e3e",
+        "size_in_bytes": 15929
+      },
+      {
+        "_path": "site-packages/intake/cli/server/templates/index.html",
+        "path_type": "hardlink",
+        "sha256": "dfac20fde012d29f82a51b7e1d3c4b4fed0389564ad0c66c72f4105fb01f7f76",
+        "sha256_in_prefix": "dfac20fde012d29f82a51b7e1d3c4b4fed0389564ad0c66c72f4105fb01f7f76",
+        "size_in_bytes": 2167
+      },
+      {
+        "_path": "site-packages/intake/cli/util.py",
+        "path_type": "hardlink",
+        "sha256": "89450f89efc294644e929865c25abf2ec3f8de3c52b91e7d36e9dff314a5e57c",
+        "sha256_in_prefix": "89450f89efc294644e929865c25abf2ec3f8de3c52b91e7d36e9dff314a5e57c",
+        "size_in_bytes": 3297
+      },
+      {
+        "_path": "site-packages/intake/compat.py",
+        "path_type": "hardlink",
+        "sha256": "f4da029e95a20fdada5b3dca8fb89add4fea97111d89643279956244e6106f8f",
+        "sha256_in_prefix": "f4da029e95a20fdada5b3dca8fb89add4fea97111d89643279956244e6106f8f",
+        "size_in_bytes": 914
+      },
+      {
+        "_path": "site-packages/intake/config.py",
+        "path_type": "hardlink",
+        "sha256": "d2ebe265574234776f3b378e91624a6a34c67d8f4f5a44e6dcfd30600ba5e6bb",
+        "sha256_in_prefix": "d2ebe265574234776f3b378e91624a6a34c67d8f4f5a44e6dcfd30600ba5e6bb",
+        "size_in_bytes": 3849
+      },
+      {
+        "_path": "site-packages/intake/conftest.py",
+        "path_type": "hardlink",
+        "sha256": "fc2f87de93705283c0f183b041c588ad2e26957e1bfaa0a2fb3631b1c0a16c3b",
+        "sha256_in_prefix": "fc2f87de93705283c0f183b041c588ad2e26957e1bfaa0a2fb3631b1c0a16c3b",
+        "size_in_bytes": 5407
+      },
+      {
+        "_path": "site-packages/intake/container/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "185f011a1d62ad8b1048507bf73e59bf81a9c8629182539a9bb86e0dede1dbb6",
+        "sha256_in_prefix": "185f011a1d62ad8b1048507bf73e59bf81a9c8629182539a9bb86e0dede1dbb6",
+        "size_in_bytes": 3683
+      },
+      {
+        "_path": "site-packages/intake/container/base.py",
+        "path_type": "hardlink",
+        "sha256": "478bd4372986fe4147c51f21ef4765dcdadcd8be4f1433e4515a9e74e70007aa",
+        "sha256_in_prefix": "478bd4372986fe4147c51f21ef4765dcdadcd8be4f1433e4515a9e74e70007aa",
+        "size_in_bytes": 4431
+      },
+      {
+        "_path": "site-packages/intake/container/dataframe.py",
+        "path_type": "hardlink",
+        "sha256": "6f9db02ed8a9197c5628a984edeeb3473f1fdc04678eee227fa596f2d862c45b",
+        "sha256_in_prefix": "6f9db02ed8a9197c5628a984edeeb3473f1fdc04678eee227fa596f2d862c45b",
+        "size_in_bytes": 6376
+      },
+      {
+        "_path": "site-packages/intake/container/ndarray.py",
+        "path_type": "hardlink",
+        "sha256": "cfed0999576a3e08d0152b03c839bb257879a0c8464c1c6508c1714988a16e74",
+        "sha256_in_prefix": "cfed0999576a3e08d0152b03c839bb257879a0c8464c1c6508c1714988a16e74",
+        "size_in_bytes": 3790
+      },
+      {
+        "_path": "site-packages/intake/container/persist.py",
+        "path_type": "hardlink",
+        "sha256": "216de6ec1c7cd07ff44e2f95025be328adff3add8b47133ec51162de21ca5887",
+        "sha256_in_prefix": "216de6ec1c7cd07ff44e2f95025be328adff3add8b47133ec51162de21ca5887",
+        "size_in_bytes": 6406
+      },
+      {
+        "_path": "site-packages/intake/container/semistructured.py",
+        "path_type": "hardlink",
+        "sha256": "e059dc02d93f397f9063e78706d0dce8d52b550ae07e297b18c5e5be3498a73b",
+        "sha256_in_prefix": "e059dc02d93f397f9063e78706d0dce8d52b550ae07e297b18c5e5be3498a73b",
+        "size_in_bytes": 3504
+      },
+      {
+        "_path": "site-packages/intake/container/serializer.py",
+        "path_type": "hardlink",
+        "sha256": "f5c4c5a9016491b12f3357cac0e5440351897e40f86d82891bc9f7ee1751b7ae",
+        "sha256_in_prefix": "f5c4c5a9016491b12f3357cac0e5440351897e40f86d82891bc9f7ee1751b7ae",
+        "size_in_bytes": 4208
+      },
+      {
+        "_path": "site-packages/intake/interface/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "f86ffa92b27511ebdbef105f207c442ec1dc51d5060504143877f2967c7b7c07",
+        "sha256_in_prefix": "f86ffa92b27511ebdbef105f207c442ec1dc51d5060504143877f2967c7b7c07",
+        "size_in_bytes": 1816
+      },
+      {
+        "_path": "site-packages/intake/interface/base.py",
+        "path_type": "hardlink",
+        "sha256": "7373bd25613fcc914162a166c306198ab68dc905ae6bd41e79e1a38de266fd47",
+        "sha256_in_prefix": "7373bd25613fcc914162a166c306198ab68dc905ae6bd41e79e1a38de266fd47",
+        "size_in_bytes": 8974
+      },
+      {
+        "_path": "site-packages/intake/interface/catalog/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "a8edb81c8b368c374a81bd49184f699dd6c4990e2729784f0534d8a7bb11d4ed",
+        "sha256_in_prefix": "a8edb81c8b368c374a81bd49184f699dd6c4990e2729784f0534d8a7bb11d4ed",
+        "size_in_bytes": 325
+      },
+      {
+        "_path": "site-packages/intake/interface/catalog/add.py",
+        "path_type": "hardlink",
+        "sha256": "38dda13bb984d6ae35dcbce0eb6d5093a35592278e5c2504e1523d7e4d476d41",
+        "sha256_in_prefix": "38dda13bb984d6ae35dcbce0eb6d5093a35592278e5c2504e1523d7e4d476d41",
+        "size_in_bytes": 11433
+      },
+      {
+        "_path": "site-packages/intake/interface/catalog/gui.py",
+        "path_type": "hardlink",
+        "sha256": "1511f8a4dcd711a44e899915592e2dd1264942f277dfd57aab1a0046e9329d9b",
+        "sha256_in_prefix": "1511f8a4dcd711a44e899915592e2dd1264942f277dfd57aab1a0046e9329d9b",
+        "size_in_bytes": 6088
+      },
+      {
+        "_path": "site-packages/intake/interface/catalog/search.py",
+        "path_type": "hardlink",
+        "sha256": "07f57b705fcb6682bb5ab3a34843ff33be055dc4b0f4b5067312b5237c989256",
+        "sha256_in_prefix": "07f57b705fcb6682bb5ab3a34843ff33be055dc4b0f4b5067312b5237c989256",
+        "size_in_bytes": 5527
+      },
+      {
+        "_path": "site-packages/intake/interface/catalog/select.py",
+        "path_type": "hardlink",
+        "sha256": "cdfd48a891082c9ba003ace2d8bb993e311f7f89f6ae7dae6b167164528cef1e",
+        "sha256_in_prefix": "cdfd48a891082c9ba003ace2d8bb993e311f7f89f6ae7dae6b167164528cef1e",
+        "size_in_bytes": 6151
+      },
+      {
+        "_path": "site-packages/intake/interface/conftest.py",
+        "path_type": "hardlink",
+        "sha256": "1715884845bf968f9d9d79ac14413fc330412a8c7965b65d0b219dd35bcc7466",
+        "sha256_in_prefix": "1715884845bf968f9d9d79ac14413fc330412a8c7965b65d0b219dd35bcc7466",
+        "size_in_bytes": 1396
+      },
+      {
+        "_path": "site-packages/intake/interface/gui.py",
+        "path_type": "hardlink",
+        "sha256": "a9955ad1588353dab1ec75fe30dff6ee03b0d89615e5af5d496b99257c09a034",
+        "sha256_in_prefix": "a9955ad1588353dab1ec75fe30dff6ee03b0d89615e5af5d496b99257c09a034",
+        "size_in_bytes": 3835
+      },
+      {
+        "_path": "site-packages/intake/interface/icons/baseline-check-24px.svg",
+        "path_type": "hardlink",
+        "sha256": "e258cd6faa990554287e435a72e95dbbdbf0e966896e284db4607000b7194d1c",
+        "sha256_in_prefix": "e258cd6faa990554287e435a72e95dbbdbf0e966896e284db4607000b7194d1c",
+        "size_in_bytes": 187
+      },
+      {
+        "_path": "site-packages/intake/interface/icons/baseline-error-24px.svg",
+        "path_type": "hardlink",
+        "sha256": "6110d07b4bd66af8045b43edbf08b656b75186d5accb8b6d956e09dc37a26db5",
+        "sha256_in_prefix": "6110d07b4bd66af8045b43edbf08b656b75186d5accb8b6d956e09dc37a26db5",
+        "size_in_bytes": 234
+      },
+      {
+        "_path": "site-packages/intake/interface/icons/logo.png",
+        "path_type": "hardlink",
+        "sha256": "afa2249d7ffcf9183c1eae6534d476a37296af1f34d68b5a79441e9359b5eb39",
+        "sha256_in_prefix": "afa2249d7ffcf9183c1eae6534d476a37296af1f34d68b5a79441e9359b5eb39",
+        "size_in_bytes": 1556
+      },
+      {
+        "_path": "site-packages/intake/interface/server.py",
+        "path_type": "hardlink",
+        "sha256": "7bdb1558d769ea084557093f78c1eccdeee3dad396f3390a56b2d608590b8564",
+        "sha256_in_prefix": "7bdb1558d769ea084557093f78c1eccdeee3dad396f3390a56b2d608590b8564",
+        "size_in_bytes": 529
+      },
+      {
+        "_path": "site-packages/intake/interface/source/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "a8edb81c8b368c374a81bd49184f699dd6c4990e2729784f0534d8a7bb11d4ed",
+        "sha256_in_prefix": "a8edb81c8b368c374a81bd49184f699dd6c4990e2729784f0534d8a7bb11d4ed",
+        "size_in_bytes": 325
+      },
+      {
+        "_path": "site-packages/intake/interface/source/defined_plots.py",
+        "path_type": "hardlink",
+        "sha256": "108b38f677e2fb1a8c226144aa1f26783de6c17869e043c436833d5d150f24a2",
+        "sha256_in_prefix": "108b38f677e2fb1a8c226144aa1f26783de6c17869e043c436833d5d150f24a2",
+        "size_in_bytes": 6505
+      },
+      {
+        "_path": "site-packages/intake/interface/source/description.py",
+        "path_type": "hardlink",
+        "sha256": "207d3044d9f56ece81e7c263a326adaf5d161ae704e87e960c98bba423111e14",
+        "sha256_in_prefix": "207d3044d9f56ece81e7c263a326adaf5d161ae704e87e960c98bba423111e14",
+        "size_in_bytes": 2179
+      },
+      {
+        "_path": "site-packages/intake/interface/source/gui.py",
+        "path_type": "hardlink",
+        "sha256": "77764b0ecc61ff8afd28624eeed25230dcafb1bce59e49adaedce0b65291908b",
+        "sha256_in_prefix": "77764b0ecc61ff8afd28624eeed25230dcafb1bce59e49adaedce0b65291908b",
+        "size_in_bytes": 8463
+      },
+      {
+        "_path": "site-packages/intake/interface/source/select.py",
+        "path_type": "hardlink",
+        "sha256": "c914521e894f1de0d6ea6126c9db4e59c09ae5b5dc0f7156786be85494047f96",
+        "sha256_in_prefix": "c914521e894f1de0d6ea6126c9db4e59c09ae5b5dc0f7156786be85494047f96",
+        "size_in_bytes": 4541
+      },
+      {
+        "_path": "site-packages/intake/source/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "2c347bfe3d7a0f4884130ccb1a036b14c0315ba722542b0c08799eb453831be2",
+        "sha256_in_prefix": "2c347bfe3d7a0f4884130ccb1a036b14c0315ba722542b0c08799eb453831be2",
+        "size_in_bytes": 3189
+      },
+      {
+        "_path": "site-packages/intake/source/base.py",
+        "path_type": "hardlink",
+        "sha256": "915b41e0e6342234a94e3bb69e28727cbac76598a1f504a061acff0f319b71f6",
+        "sha256_in_prefix": "915b41e0e6342234a94e3bb69e28727cbac76598a1f504a061acff0f319b71f6",
+        "size_in_bytes": 15880
+      },
+      {
+        "_path": "site-packages/intake/source/cache.py",
+        "path_type": "hardlink",
+        "sha256": "b58f62c876d0abf503393233561fcf29f7ca28d9ca046976b5e2c0337560e4e4",
+        "sha256_in_prefix": "b58f62c876d0abf503393233561fcf29f7ca28d9ca046976b5e2c0337560e4e4",
+        "size_in_bytes": 19383
+      },
+      {
+        "_path": "site-packages/intake/source/csv.py",
+        "path_type": "hardlink",
+        "sha256": "893bcca5b73f2f2dcc0b85ce3b4e3326d6620a12ffa25bfece3aa341a22c73de",
+        "sha256_in_prefix": "893bcca5b73f2f2dcc0b85ce3b4e3326d6620a12ffa25bfece3aa341a22c73de",
+        "size_in_bytes": 5469
+      },
+      {
+        "_path": "site-packages/intake/source/decompress.py",
+        "path_type": "hardlink",
+        "sha256": "352970787ff1a0f0bc6b89e918a6671ac9397595d500bad6851d34de8b3ba6d7",
+        "sha256_in_prefix": "352970787ff1a0f0bc6b89e918a6671ac9397595d500bad6851d34de8b3ba6d7",
+        "size_in_bytes": 2085
+      },
+      {
+        "_path": "site-packages/intake/source/derived.py",
+        "path_type": "hardlink",
+        "sha256": "7f1d8e3c8a4d33bd3002a67404462883918c674c6e421f54499cd532fd3f3e6f",
+        "sha256_in_prefix": "7f1d8e3c8a4d33bd3002a67404462883918c674c6e421f54499cd532fd3f3e6f",
+        "size_in_bytes": 9886
+      },
+      {
+        "_path": "site-packages/intake/source/discovery.py",
+        "path_type": "hardlink",
+        "sha256": "db9edb8d2aea4cc90300d09016cdd41ceae809aee4d13d59435855c0308e9673",
+        "sha256_in_prefix": "db9edb8d2aea4cc90300d09016cdd41ceae809aee4d13d59435855c0308e9673",
+        "size_in_bytes": 13560
+      },
+      {
+        "_path": "site-packages/intake/source/npy.py",
+        "path_type": "hardlink",
+        "sha256": "42078e7f56b8d5920b40e2caa2d2fde7f33dee7710872bfa3853c04c369aa42a",
+        "sha256_in_prefix": "42078e7f56b8d5920b40e2caa2d2fde7f33dee7710872bfa3853c04c369aa42a",
+        "size_in_bytes": 5254
+      },
+      {
+        "_path": "site-packages/intake/source/tests/plugin_searchpath/collision_foo/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "3558fec9021ed67a049729cbd621fac76f71ce7e066570f2cd046d6b90fd522e",
+        "sha256_in_prefix": "3558fec9021ed67a049729cbd621fac76f71ce7e066570f2cd046d6b90fd522e",
+        "size_in_bytes": 494
+      },
+      {
+        "_path": "site-packages/intake/source/tests/plugin_searchpath/collision_foo2/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "3558fec9021ed67a049729cbd621fac76f71ce7e066570f2cd046d6b90fd522e",
+        "sha256_in_prefix": "3558fec9021ed67a049729cbd621fac76f71ce7e066570f2cd046d6b90fd522e",
+        "size_in_bytes": 494
+      },
+      {
+        "_path": "site-packages/intake/source/tests/plugin_searchpath/driver_with_entrypoints/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "b6da5f47d2e314a67ef2de22b7d3d232f47e19501c01f9697a5fdb6fe9ba2c73",
+        "sha256_in_prefix": "b6da5f47d2e314a67ef2de22b7d3d232f47e19501c01f9697a5fdb6fe9ba2c73",
+        "size_in_bytes": 30
+      },
+      {
+        "_path": "site-packages/intake/source/tests/plugin_searchpath/intake_foo/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "4a9c7aedb4f00c0a54f74052616ab8f5889ab25e01e8bddad0d047d089bd74c4",
+        "sha256_in_prefix": "4a9c7aedb4f00c0a54f74052616ab8f5889ab25e01e8bddad0d047d089bd74c4",
+        "size_in_bytes": 542
+      },
+      {
+        "_path": "site-packages/intake/source/tests/plugin_searchpath/not_intake_foo/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "77bef2260c268375a9beb5a37fba57380738297dfd9e2c7145d71929e92cd02e",
+        "sha256_in_prefix": "77bef2260c268375a9beb5a37fba57380738297dfd9e2c7145d71929e92cd02e",
+        "size_in_bytes": 547
+      },
+      {
+        "_path": "site-packages/intake/source/textfiles.py",
+        "path_type": "hardlink",
+        "sha256": "342d6fb4c39cf68d4e535d827ea7e7d47cc5a420d39033a5197496519eaa67f8",
+        "sha256_in_prefix": "342d6fb4c39cf68d4e535d827ea7e7d47cc5a420d39033a5197496519eaa67f8",
+        "size_in_bytes": 4495
+      },
+      {
+        "_path": "site-packages/intake/source/utils.py",
+        "path_type": "hardlink",
+        "sha256": "dd02e963a6529e483ea964b765762cd1b90b724bb1d2cc506c6a7429188b6fab",
+        "sha256_in_prefix": "dd02e963a6529e483ea964b765762cd1b90b724bb1d2cc506c6a7429188b6fab",
+        "size_in_bytes": 9751
+      },
+      {
+        "_path": "site-packages/intake/source/zarr.py",
+        "path_type": "hardlink",
+        "sha256": "b8919f655ad89bd980eae75d07926b50657a57cafbeb99828ec4ca6f5cc1b838",
+        "sha256_in_prefix": "b8919f655ad89bd980eae75d07926b50657a57cafbeb99828ec4ca6f5cc1b838",
+        "size_in_bytes": 2916
+      },
+      {
+        "_path": "site-packages/intake/util_tests.py",
+        "path_type": "hardlink",
+        "sha256": "4f76c9bee1376cd0c60adf8353869cce88a202d1a4adc2b208e598445d32140a",
+        "sha256_in_prefix": "4f76c9bee1376cd0c60adf8353869cce88a202d1a4adc2b208e598445d32140a",
+        "size_in_bytes": 1778
+      },
+      {
+        "_path": "site-packages/intake/utils.py",
+        "path_type": "hardlink",
+        "sha256": "a6bd39f84c837cb22601735b32e17d2335d154f5060c3fbc0c179150f5b9256b",
+        "sha256_in_prefix": "a6bd39f84c837cb22601735b32e17d2335d154f5060c3fbc0c179150f5b9256b",
+        "size_in_bytes": 9135
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/__pycache__/_version.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/auth/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/auth/__pycache__/base.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/auth/__pycache__/secret.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/catalog/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/catalog/__pycache__/base.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/catalog/__pycache__/default.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/catalog/__pycache__/entry.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/catalog/__pycache__/exceptions.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/catalog/__pycache__/gui.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/catalog/__pycache__/local.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/catalog/__pycache__/remote.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/catalog/tests/catalog_search/example_packages/ep/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/catalog/__pycache__/utils.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/catalog/__pycache__/zarr.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/cli/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/cli/__pycache__/bootstrap.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/cli/client/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/cli/client/__pycache__/__main__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/cli/client/subcommands/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/cli/client/subcommands/__pycache__/cache.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/cli/client/subcommands/__pycache__/config.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/cli/client/subcommands/__pycache__/describe.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/cli/client/subcommands/__pycache__/discover.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/cli/client/subcommands/__pycache__/drivers.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/cli/client/subcommands/__pycache__/example.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/cli/client/subcommands/__pycache__/exists.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/cli/client/subcommands/__pycache__/get.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/cli/client/subcommands/__pycache__/info.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/cli/client/subcommands/__pycache__/list.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/cli/client/subcommands/__pycache__/precache.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/cli/server/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/cli/server/__pycache__/__main__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/cli/server/__pycache__/server.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/cli/__pycache__/util.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/__pycache__/compat.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/__pycache__/config.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/__pycache__/conftest.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/container/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/container/__pycache__/base.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/container/__pycache__/dataframe.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/container/__pycache__/ndarray.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/container/__pycache__/persist.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/container/__pycache__/semistructured.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/container/__pycache__/serializer.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/interface/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/interface/__pycache__/base.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/interface/catalog/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/interface/catalog/__pycache__/add.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/interface/catalog/__pycache__/gui.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/interface/catalog/__pycache__/search.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/interface/catalog/__pycache__/select.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/interface/__pycache__/conftest.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/interface/__pycache__/gui.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/interface/__pycache__/server.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/interface/source/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/interface/source/__pycache__/defined_plots.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/interface/source/__pycache__/description.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/interface/source/__pycache__/gui.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/interface/source/__pycache__/select.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/source/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/source/__pycache__/base.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/source/__pycache__/cache.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/source/__pycache__/csv.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/source/__pycache__/decompress.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/source/__pycache__/derived.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/source/__pycache__/discovery.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/source/__pycache__/npy.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/source/tests/plugin_searchpath/collision_foo/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/source/tests/plugin_searchpath/collision_foo2/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/source/tests/plugin_searchpath/driver_with_entrypoints/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/source/tests/plugin_searchpath/intake_foo/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/source/tests/plugin_searchpath/not_intake_foo/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/source/__pycache__/textfiles.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/source/__pycache__/utils.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/source/__pycache__/zarr.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/__pycache__/util_tests.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intake/__pycache__/utils.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "bin/intake-server",
+        "path_type": "unix_python_entry_point"
+      },
+      {
+        "_path": "bin/intake",
+        "path_type": "unix_python_entry_point"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "intake==0.6.4=pyhd8ed1ab_0",
+  "sha256": "7bc48f558671cdf157e39cd69d5edc70d823e36bfa8668051f410bcc116dccfd",
+  "size": 113026,
+  "subdir": "noarch",
+  "timestamp": 1633987528252,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/intake-0.6.4-pyhd8ed1ab_0.tar.bz2",
+  "version": "0.6.4"
+}

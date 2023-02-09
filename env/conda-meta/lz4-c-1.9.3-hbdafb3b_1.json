@@ -1,0 +1,162 @@
+{
+  "build": "hbdafb3b_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "libcxx >=11.1.0"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/lz4-c-1.9.3-hbdafb3b_1",
+  "features": "",
+  "files": [
+    "bin/lz4",
+    "bin/lz4c",
+    "bin/lz4cat",
+    "bin/unlz4",
+    "include/lz4.h",
+    "include/lz4frame.h",
+    "include/lz4frame_static.h",
+    "include/lz4hc.h",
+    "lib/liblz4.1.9.3.dylib",
+    "lib/liblz4.1.dylib",
+    "lib/liblz4.dylib",
+    "lib/pkgconfig/liblz4.pc",
+    "share/man/man1/lz4.1",
+    "share/man/man1/lz4c.1",
+    "share/man/man1/lz4cat.1",
+    "share/man/man1/unlz4.1"
+  ],
+  "fn": "lz4-c-1.9.3-hbdafb3b_1.tar.bz2",
+  "license": "BSD-2-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/lz4-c-1.9.3-hbdafb3b_1",
+    "type": 1
+  },
+  "md5": "074b9beb2e563515c0dd46229b18d521",
+  "name": "lz4-c",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/lz4-c-1.9.3-hbdafb3b_1.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/lz4",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/lz4-c_1627668970282/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla",
+        "sha256": "2f1182f43d87f4b4c28ca32a93176414bedb43db1c7e1aa879209dba7d97fcc2",
+        "sha256_in_prefix": "0988e2aaaae1956a15c7fac5fca670aa242f683183217cf2a6c544839a8eca3b",
+        "size_in_bytes": 248112
+      },
+      {
+        "_path": "bin/lz4c",
+        "path_type": "softlink",
+        "sha256": "2f1182f43d87f4b4c28ca32a93176414bedb43db1c7e1aa879209dba7d97fcc2",
+        "size_in_bytes": 248112
+      },
+      {
+        "_path": "bin/lz4cat",
+        "path_type": "softlink",
+        "sha256": "2f1182f43d87f4b4c28ca32a93176414bedb43db1c7e1aa879209dba7d97fcc2",
+        "size_in_bytes": 248112
+      },
+      {
+        "_path": "bin/unlz4",
+        "path_type": "softlink",
+        "sha256": "2f1182f43d87f4b4c28ca32a93176414bedb43db1c7e1aa879209dba7d97fcc2",
+        "size_in_bytes": 248112
+      },
+      {
+        "_path": "include/lz4.h",
+        "path_type": "hardlink",
+        "sha256": "c9b52a14c2c93fe5c435a09054cc8f1bf5d94a3ce1a38dc51296a92ce409f8e4",
+        "sha256_in_prefix": "c9b52a14c2c93fe5c435a09054cc8f1bf5d94a3ce1a38dc51296a92ce409f8e4",
+        "size_in_bytes": 40861
+      },
+      {
+        "_path": "include/lz4frame.h",
+        "path_type": "hardlink",
+        "sha256": "69edc35d9a4e62cfc5639150cfebff4e4749c4923bf7d89e77a8d5eda8daf661",
+        "sha256_in_prefix": "69edc35d9a4e62cfc5639150cfebff4e4749c4923bf7d89e77a8d5eda8daf661",
+        "size_in_bytes": 28899
+      },
+      {
+        "_path": "include/lz4frame_static.h",
+        "path_type": "hardlink",
+        "sha256": "1662c6453229a8d65bfa349b9cd3c01d1fee440ada16a8e99a7083d6cb08a4c0",
+        "sha256_in_prefix": "1662c6453229a8d65bfa349b9cd3c01d1fee440ada16a8e99a7083d6cb08a4c0",
+        "size_in_bytes": 2044
+      },
+      {
+        "_path": "include/lz4hc.h",
+        "path_type": "hardlink",
+        "sha256": "295d766cd0769ffc74c63e83ca5b1dfc0da16916be79286f5eb5de5abd1611da",
+        "sha256_in_prefix": "295d766cd0769ffc74c63e83ca5b1dfc0da16916be79286f5eb5de5abd1611da",
+        "size_in_bytes": 20165
+      },
+      {
+        "_path": "lib/liblz4.1.9.3.dylib",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/lz4-c_1627668970282/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla",
+        "sha256": "1f32b3267f987c9ae41681846555d65f7c827a1bf008e5715fa763db307e5f06",
+        "sha256_in_prefix": "a2eea5d2aca13d54b05da5a01d076ff4753f79a4ef80bb9f650c893781c52e20",
+        "size_in_bytes": 191072
+      },
+      {
+        "_path": "lib/liblz4.1.dylib",
+        "path_type": "softlink",
+        "sha256": "1f32b3267f987c9ae41681846555d65f7c827a1bf008e5715fa763db307e5f06",
+        "size_in_bytes": 191072
+      },
+      {
+        "_path": "lib/liblz4.dylib",
+        "path_type": "softlink",
+        "sha256": "1f32b3267f987c9ae41681846555d65f7c827a1bf008e5715fa763db307e5f06",
+        "size_in_bytes": 191072
+      },
+      {
+        "_path": "lib/pkgconfig/liblz4.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/lz4-c_1627668970282/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla",
+        "sha256": "fc3938cc55a80562767ee5bc8651fc3b9ae45440b4ac536bb2718d990383213c",
+        "sha256_in_prefix": "c264f204c1ae94c0c7d014a3dccd7cb5f2ad33921f91fe744e5e03e710843223",
+        "size_in_bytes": 1632
+      },
+      {
+        "_path": "share/man/man1/lz4.1",
+        "path_type": "hardlink",
+        "sha256": "22796ed3ff4fa56da7fee26a4e5f8407bb758f99183a3283cfd1a93c68373017",
+        "sha256_in_prefix": "22796ed3ff4fa56da7fee26a4e5f8407bb758f99183a3283cfd1a93c68373017",
+        "size_in_bytes": 9077
+      },
+      {
+        "_path": "share/man/man1/lz4c.1",
+        "path_type": "softlink",
+        "sha256": "22796ed3ff4fa56da7fee26a4e5f8407bb758f99183a3283cfd1a93c68373017",
+        "size_in_bytes": 9077
+      },
+      {
+        "_path": "share/man/man1/lz4cat.1",
+        "path_type": "softlink",
+        "sha256": "22796ed3ff4fa56da7fee26a4e5f8407bb758f99183a3283cfd1a93c68373017",
+        "size_in_bytes": 9077
+      },
+      {
+        "_path": "share/man/man1/unlz4.1",
+        "path_type": "softlink",
+        "sha256": "22796ed3ff4fa56da7fee26a4e5f8407bb758f99183a3283cfd1a93c68373017",
+        "size_in_bytes": 9077
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "lz4-c==1.9.3=hbdafb3b_1",
+  "sha256": "00941ba659571e2618c86f1463e9ad91d87e5ca36c807d633d527328ebc9803f",
+  "size": 150614,
+  "subdir": "osx-arm64",
+  "timestamp": 1627669120662,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/lz4-c-1.9.3-hbdafb3b_1.tar.bz2",
+  "version": "1.9.3"
+}

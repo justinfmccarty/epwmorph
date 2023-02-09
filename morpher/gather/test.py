@@ -35,6 +35,7 @@ def test2():
     startTime = time.time()
     # Your code here !
     util.build_epw_list()
+    print(con)
     print('The script took {0} second !'.format(time.time() - startTime))
 
 def view_epw():

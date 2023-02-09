@@ -1,0 +1,345 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python >=2.7",
+    "six"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/pyu2f-0.1.5-pyhd8ed1ab_0",
+  "features": "",
+  "files": [
+    "lib/python3.9/site-packages/pyu2f-0.1.5.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/pyu2f-0.1.5.dist-info/LICENSE",
+    "lib/python3.9/site-packages/pyu2f-0.1.5.dist-info/METADATA",
+    "lib/python3.9/site-packages/pyu2f-0.1.5.dist-info/RECORD",
+    "lib/python3.9/site-packages/pyu2f-0.1.5.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/pyu2f-0.1.5.dist-info/WHEEL",
+    "lib/python3.9/site-packages/pyu2f-0.1.5.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/pyu2f-0.1.5.dist-info/top_level.txt",
+    "lib/python3.9/site-packages/pyu2f-0.1.5.dist-info/zip-safe",
+    "lib/python3.9/site-packages/pyu2f/__init__.py",
+    "lib/python3.9/site-packages/pyu2f/apdu.py",
+    "lib/python3.9/site-packages/pyu2f/convenience/__init__.py",
+    "lib/python3.9/site-packages/pyu2f/convenience/authenticator.py",
+    "lib/python3.9/site-packages/pyu2f/convenience/baseauthenticator.py",
+    "lib/python3.9/site-packages/pyu2f/convenience/customauthenticator.py",
+    "lib/python3.9/site-packages/pyu2f/convenience/localauthenticator.py",
+    "lib/python3.9/site-packages/pyu2f/errors.py",
+    "lib/python3.9/site-packages/pyu2f/hardware.py",
+    "lib/python3.9/site-packages/pyu2f/hid/__init__.py",
+    "lib/python3.9/site-packages/pyu2f/hid/base.py",
+    "lib/python3.9/site-packages/pyu2f/hid/linux.py",
+    "lib/python3.9/site-packages/pyu2f/hid/macos.py",
+    "lib/python3.9/site-packages/pyu2f/hid/try.py",
+    "lib/python3.9/site-packages/pyu2f/hid/windows.py",
+    "lib/python3.9/site-packages/pyu2f/hidtransport.py",
+    "lib/python3.9/site-packages/pyu2f/model.py",
+    "lib/python3.9/site-packages/pyu2f/u2f.py",
+    "lib/python3.9/site-packages/pyu2f/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pyu2f/__pycache__/apdu.cpython-39.pyc",
+    "lib/python3.9/site-packages/pyu2f/convenience/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pyu2f/convenience/__pycache__/authenticator.cpython-39.pyc",
+    "lib/python3.9/site-packages/pyu2f/convenience/__pycache__/baseauthenticator.cpython-39.pyc",
+    "lib/python3.9/site-packages/pyu2f/convenience/__pycache__/customauthenticator.cpython-39.pyc",
+    "lib/python3.9/site-packages/pyu2f/convenience/__pycache__/localauthenticator.cpython-39.pyc",
+    "lib/python3.9/site-packages/pyu2f/__pycache__/errors.cpython-39.pyc",
+    "lib/python3.9/site-packages/pyu2f/__pycache__/hardware.cpython-39.pyc",
+    "lib/python3.9/site-packages/pyu2f/hid/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pyu2f/hid/__pycache__/base.cpython-39.pyc",
+    "lib/python3.9/site-packages/pyu2f/hid/__pycache__/linux.cpython-39.pyc",
+    "lib/python3.9/site-packages/pyu2f/hid/__pycache__/macos.cpython-39.pyc",
+    "lib/python3.9/site-packages/pyu2f/hid/__pycache__/try.cpython-39.pyc",
+    "lib/python3.9/site-packages/pyu2f/hid/__pycache__/windows.cpython-39.pyc",
+    "lib/python3.9/site-packages/pyu2f/__pycache__/hidtransport.cpython-39.pyc",
+    "lib/python3.9/site-packages/pyu2f/__pycache__/model.cpython-39.pyc",
+    "lib/python3.9/site-packages/pyu2f/__pycache__/u2f.cpython-39.pyc"
+  ],
+  "fn": "pyu2f-0.1.5-pyhd8ed1ab_0.tar.bz2",
+  "license": "Apache-2.0",
+  "license_family": "APACHE",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/pyu2f-0.1.5-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "caabbeaa83928d0c3e3949261daa18eb",
+  "name": "pyu2f",
+  "noarch": "python",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/pyu2f-0.1.5-pyhd8ed1ab_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/pyu2f-0.1.5.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/pyu2f-0.1.5.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "sha256_in_prefix": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "size_in_bytes": 11358
+      },
+      {
+        "_path": "site-packages/pyu2f-0.1.5.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "bf95edc6d0e0923691fa3a58f95a4007d295b92cd52a7a1f1b69b3b1498db1a2",
+        "sha256_in_prefix": "bf95edc6d0e0923691fa3a58f95a4007d295b92cd52a7a1f1b69b3b1498db1a2",
+        "size_in_bytes": 898
+      },
+      {
+        "_path": "site-packages/pyu2f-0.1.5.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "c6573d41d26e0a64f034b99743748f71cf901249e173562c4803177035e05d4f",
+        "sha256_in_prefix": "c6573d41d26e0a64f034b99743748f71cf901249e173562c4803177035e05d4f",
+        "size_in_bytes": 3077
+      },
+      {
+        "_path": "site-packages/pyu2f-0.1.5.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/pyu2f-0.1.5.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "11546323af45e6a5639bf620a9c4d73e74c0bf705f494af4595007b923f75e8a",
+        "sha256_in_prefix": "11546323af45e6a5639bf620a9c4d73e74c0bf705f494af4595007b923f75e8a",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "site-packages/pyu2f-0.1.5.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "ce775c045c0d4db705f5a4f4300e801c83b5e79b5aa8654bb2f8a1b1d2687ca2",
+        "sha256_in_prefix": "ce775c045c0d4db705f5a4f4300e801c83b5e79b5aa8654bb2f8a1b1d2687ca2",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "site-packages/pyu2f-0.1.5.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "e5c43189469d4194032925d9fd2e28d11cdaeb3215b09c721202de2569fbca76",
+        "sha256_in_prefix": "e5c43189469d4194032925d9fd2e28d11cdaeb3215b09c721202de2569fbca76",
+        "size_in_bytes": 6
+      },
+      {
+        "_path": "site-packages/pyu2f-0.1.5.dist-info/zip-safe",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "site-packages/pyu2f/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "f8760b9b9f04ab3731193e2f8f4ca53064cfbf39bb158974c9637040fe60b100",
+        "sha256_in_prefix": "f8760b9b9f04ab3731193e2f8f4ca53064cfbf39bb158974c9637040fe60b100",
+        "size_in_bytes": 651
+      },
+      {
+        "_path": "site-packages/pyu2f/apdu.py",
+        "path_type": "hardlink",
+        "sha256": "4774f63a6393c41798ca6c3d9951d3ddeb0f95d53d716f5279f3c76697101a9f",
+        "sha256_in_prefix": "4774f63a6393c41798ca6c3d9951d3ddeb0f95d53d716f5279f3c76697101a9f",
+        "size_in_bytes": 3945
+      },
+      {
+        "_path": "site-packages/pyu2f/convenience/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "08f9255a94a9f018fe24dcacce5ff2fd49b396a8f357025480470656779b0ac6",
+        "sha256_in_prefix": "08f9255a94a9f018fe24dcacce5ff2fd49b396a8f357025480470656779b0ac6",
+        "size_in_bytes": 659
+      },
+      {
+        "_path": "site-packages/pyu2f/convenience/authenticator.py",
+        "path_type": "hardlink",
+        "sha256": "29a780f0f77213ccadcff8886fc7795d70e44becc9dd9a049f727060f28807f4",
+        "sha256_in_prefix": "29a780f0f77213ccadcff8886fc7795d70e44becc9dd9a049f727060f28807f4",
+        "size_in_bytes": 1871
+      },
+      {
+        "_path": "site-packages/pyu2f/convenience/baseauthenticator.py",
+        "path_type": "hardlink",
+        "sha256": "5cd216139975a8d26ea8cf1312f7f6668f3012314a786a1b7234e89509236734",
+        "sha256_in_prefix": "5cd216139975a8d26ea8cf1312f7f6668f3012314a786a1b7234e89509236734",
+        "size_in_bytes": 2202
+      },
+      {
+        "_path": "site-packages/pyu2f/convenience/customauthenticator.py",
+        "path_type": "hardlink",
+        "sha256": "2b95e12ed4691233cc2961df9edf304506573d8f72e5efd25e368acc5987c617",
+        "sha256_in_prefix": "2b95e12ed4691233cc2961df9edf304506573d8f72e5efd25e368acc5987c617",
+        "size_in_bytes": 8415
+      },
+      {
+        "_path": "site-packages/pyu2f/convenience/localauthenticator.py",
+        "path_type": "hardlink",
+        "sha256": "876b019003bd71b255e6579820cf01f808371bac16186cebae65f872d1464753",
+        "sha256_in_prefix": "876b019003bd71b255e6579820cf01f808371bac16186cebae65f872d1464753",
+        "size_in_bytes": 2507
+      },
+      {
+        "_path": "site-packages/pyu2f/errors.py",
+        "path_type": "hardlink",
+        "sha256": "e45c73f49e9f994d35d725cd80d1734f2b51371fa3b84d06a334a2fd3eed1bf4",
+        "sha256_in_prefix": "e45c73f49e9f994d35d725cd80d1734f2b51371fa3b84d06a334a2fd3eed1bf4",
+        "size_in_bytes": 2154
+      },
+      {
+        "_path": "site-packages/pyu2f/hardware.py",
+        "path_type": "hardlink",
+        "sha256": "6db3d8c55eae6400b0f3f83b951353ed04c8f9aebc89bf5d621bb7a40d6ca7bb",
+        "sha256_in_prefix": "6db3d8c55eae6400b0f3f83b951353ed04c8f9aebc89bf5d621bb7a40d6ca7bb",
+        "size_in_bytes": 5699
+      },
+      {
+        "_path": "site-packages/pyu2f/hid/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "343fc29ecd62367065dd9bf6bd1c2b9e1a6a1b0fdfcac45a86a2d1af3bc1d622",
+        "sha256_in_prefix": "343fc29ecd62367065dd9bf6bd1c2b9e1a6a1b0fdfcac45a86a2d1af3bc1d622",
+        "size_in_bytes": 1598
+      },
+      {
+        "_path": "site-packages/pyu2f/hid/base.py",
+        "path_type": "hardlink",
+        "sha256": "1bf2f86219547157032ebdd0c9047dcf0d069f32f816893891e469ab5194f8c4",
+        "sha256_in_prefix": "1bf2f86219547157032ebdd0c9047dcf0d069f32f816893891e469ab5194f8c4",
+        "size_in_bytes": 2716
+      },
+      {
+        "_path": "site-packages/pyu2f/hid/linux.py",
+        "path_type": "hardlink",
+        "sha256": "64327d2b1316584b355d1837961915b221acc98850c17dc7c68937ddc529c2c1",
+        "sha256_in_prefix": "64327d2b1316584b355d1837961915b221acc98850c17dc7c68937ddc529c2c1",
+        "size_in_bytes": 7039
+      },
+      {
+        "_path": "site-packages/pyu2f/hid/macos.py",
+        "path_type": "hardlink",
+        "sha256": "7e7f1db089ba22846d10b6d9add60e7ddb7ee716a79e7f3bd56394b55bdafe76",
+        "sha256_in_prefix": "7e7f1db089ba22846d10b6d9add60e7ddb7ee716a79e7f3bd56394b55bdafe76",
+        "size_in_bytes": 15972
+      },
+      {
+        "_path": "site-packages/pyu2f/hid/try.py",
+        "path_type": "hardlink",
+        "sha256": "0ec66696b1c7ed20cd0c0260eb3112ec12be6b23a913551ecaea0163ddeb6009",
+        "sha256_in_prefix": "0ec66696b1c7ed20cd0c0260eb3112ec12be6b23a913551ecaea0163ddeb6009",
+        "size_in_bytes": 890
+      },
+      {
+        "_path": "site-packages/pyu2f/hid/windows.py",
+        "path_type": "hardlink",
+        "sha256": "880f62166e764091bb897cfee9fa1842b726659cdac82056d163d257de05c047",
+        "sha256_in_prefix": "880f62166e764091bb897cfee9fa1842b726659cdac82056d163d257de05c047",
+        "size_in_bytes": 12676
+      },
+      {
+        "_path": "site-packages/pyu2f/hidtransport.py",
+        "path_type": "hardlink",
+        "sha256": "db11bf1eb0cbf401a295f6e38aca9c87ef950c1b15e77c7463c1d008314b0990",
+        "sha256_in_prefix": "db11bf1eb0cbf401a295f6e38aca9c87ef950c1b15e77c7463c1d008314b0990",
+        "size_in_bytes": 11458
+      },
+      {
+        "_path": "site-packages/pyu2f/model.py",
+        "path_type": "hardlink",
+        "sha256": "272e9a7de9590d964011a4592899ec08df50c970aa7270a312fc7448c726e5b0",
+        "sha256_in_prefix": "272e9a7de9590d964011a4592899ec08df50c970aa7270a312fc7448c726e5b0",
+        "size_in_bytes": 2644
+      },
+      {
+        "_path": "site-packages/pyu2f/u2f.py",
+        "path_type": "hardlink",
+        "sha256": "7ef5b92944412e126d75f29dd4b515dc4a096634a6243bec9c5717dc56baab25",
+        "sha256_in_prefix": "7ef5b92944412e126d75f29dd4b515dc4a096634a6243bec9c5717dc56baab25",
+        "size_in_bytes": 7037
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pyu2f/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pyu2f/__pycache__/apdu.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pyu2f/convenience/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pyu2f/convenience/__pycache__/authenticator.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pyu2f/convenience/__pycache__/baseauthenticator.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pyu2f/convenience/__pycache__/customauthenticator.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pyu2f/convenience/__pycache__/localauthenticator.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pyu2f/__pycache__/errors.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pyu2f/__pycache__/hardware.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pyu2f/hid/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pyu2f/hid/__pycache__/base.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pyu2f/hid/__pycache__/linux.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pyu2f/hid/__pycache__/macos.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pyu2f/hid/__pycache__/try.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pyu2f/hid/__pycache__/windows.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pyu2f/__pycache__/hidtransport.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pyu2f/__pycache__/model.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pyu2f/__pycache__/u2f.cpython-39.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "pyu2f==0.1.5=pyhd8ed1ab_0",
+  "sha256": "667a5a30b65a60b15f38fa4cb09efd6d2762b5a0a9563acd9555eaa5e0b953a2",
+  "size": 31876,
+  "subdir": "noarch",
+  "timestamp": 1604249020971,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/pyu2f-0.1.5-pyhd8ed1ab_0.tar.bz2",
+  "version": "0.1.5"
+}
