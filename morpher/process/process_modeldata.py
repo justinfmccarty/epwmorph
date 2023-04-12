@@ -23,18 +23,35 @@ def calc_model_climatologies(var, percentile, futurestart, futureend, pathway):
     outputs_path = parse('output')
     hist_path = os.path.join(outputs_path, 'historical', f'historical-{var}.csv')
     var_path = os.path.join(outputs_path, pathway, f'{pathway}-{var}.csv')
+    hist_init = pd.DataFrame(pd.read_csv(hist_path, usecols=[percentile, 'date']))
+    var_init = pd.DataFrame(pd.read_csv(var_path, usecols=[percentile, 'date']))
 
-    hist_init = pd.DataFrame(pd.read_csv(hist_path, usecols=[percentile,'date']))
-    hist_init['date'] = pd.to_datetime(hist_init['date'])
-    hist_init = hist_init.set_index('date')
-    hist_init = hist_init['{}-01-01'.format(baselinestart) :'{}-12-01'.format(baselineend)]
+    init_df = pd.concat([hist_init, var_init])
+    init_df['date'] = pd.to_datetime(init_df['date'])
+    init_df = init_df.set_index('date')
+
+    # hist_init['date'] = pd.to_datetime(hist_init['date'])
+    # hist_init = hist_init.set_index('date')
+    # hist_init = hist_init['{}-01-01'.format(baselinestart) :'{}-12-01'.format(baselineend)]
+    # hist_init = hist_init.groupby(hist_init.index.month).mean()
+    # hist_init = pd.Series(hist_init[percentile]).rename(var)
+    #
+    #
+    # var_init['date'] = pd.to_datetime(var_init['date'])
+    # var_init = var_init.set_index('date')
+    # var_init = var_init['{}-01-01'.format(futurestart) :'{}-12-01'.format(futureend)]
+    # var_init = var_init.groupby(var_init.index.month).mean()
+    # var_init = pd.Series(var_init[percentile]).rename(var)
+    #
+    # return var_init, hist_init
+
+    hist_init = init_df['{}-01-01'.format(baselinestart):'{}-12-01'.format(baselineend)].copy()
     hist_init = hist_init.groupby(hist_init.index.month).mean()
     hist_init = pd.Series(hist_init[percentile]).rename(var)
 
-    var_init = pd.DataFrame(pd.read_csv(var_path, usecols=[percentile,'date']))
-    var_init['date'] = pd.to_datetime(var_init['date'])
-    var_init = var_init.set_index('date')
-    var_init = var_init['{}-01-01'.format(futurestart) :'{}-12-01'.format(futureend)]
+    # var_init['date'] = pd.to_datetime(var_init['date'])
+    # var_init = var_init.set_index('date')
+    var_init = init_df['{}-01-01'.format(futurestart):'{}-12-01'.format(futureend)]
     var_init = var_init.groupby(var_init.index.month).mean()
     var_init = pd.Series(var_init[percentile]).rename(var)
 

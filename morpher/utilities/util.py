@@ -17,6 +17,9 @@ from skyfield import api, almanac
 import numpy as np
 import pandas as pd
 
+from pvlib import solarposition
+from timezonefinder import TimezoneFinder
+
 __author__ = "Justin McCarty"
 __copyright__ = "Copyright 2020, justinmccarty"
 __credits__ = ["Justin McCarty"]
@@ -231,29 +234,26 @@ def persistence(hourly_clearness, rise_set, row_number):
         return (hourly_clearness[row_number - 1] + hourly_clearness[row_number + 1]) / 2
 
 
-def solar_geometry(df, longitude, latitude):
+def solar_geometry(longitude, latitude):
     utc = int(float(parse('utcoffset')))
     longitude = float(longitude)
     latitude = float(latitude)
-    df['simple_day_angle'] = df.apply(lambda x: _calc_simple_day_angle(x['dayofyear']), axis=1)
-    df['bday'] = df.apply(lambda x: calc_bday(x['simple_day_angle']), axis=1)
-    df['equation_of_time'] = df.apply(lambda x: calc_equation_of_time(x['bday']), axis=1)
-    df['local_time_meridian'] = df.apply(lambda x: calc_local_time_meridian(utc), axis=1)
-    df['time_correction'] = df.apply(lambda x: calc_time_correction(longitude,
-                                                                    x['local_time_meridian'],
-                                                                    x['equation_of_time']), axis=1)
-    df['local_solar_time'] = df.apply(lambda x: calc_local_solar_time(x['hour'],
-                                                                      x['time_correction']), axis=1)
-    df['hour_angle'] = df.apply(lambda x: calc_hour_angle(x['local_solar_time']), axis=1)
-    df['declination'] = df.apply(lambda x: declination_spencer71(x['dayofyear']), axis=1)
-    df['zenith'] = df.apply(lambda x: calc_zenith(longitude,
-                                                  latitude,
-                                                  utc,
-                                                  x['dayofyear'],
-                                                  x['hour']), axis=1)
-    # df['solar_alt'] = df.apply(lambda x: calc_solar_alt(x['zenith']),axis=1)
-    print(df['time_correction'].max())
-    return df
+
+    tz = TimezoneFinder().timezone_at(lng=longitude, lat=latitude)
+    times = pd.date_range('2019-01-01 00:00:00', periods=8760, freq='H', tz=tz)
+
+    solar_df = solarposition.get_solarposition(times, latitude, longitude)
+    solar_df['hour'] = solar_df.index.hour
+    solar_df['doy'] = solar_df.index.dayofyear
+
+    solar_df['equation_of_time'] = solar_df.apply(lambda x: solarposition.equation_of_time_spencer71(x['doy']), axis=1)
+    solar_df['local_time_meridian'] = solar_df.apply(lambda x: calc_local_time_meridian(utc), axis=1)
+    solar_df['time_correction'] = solar_df.apply(lambda x: calc_time_correction(longitude,
+                                                                                x['local_time_meridian'],
+                                                                                x['equation_of_time']), axis=1)
+    solar_df['local_solar_time'] = solar_df.apply(lambda x: calc_local_solar_time(x['hour'],
+                                                                                  x['time_correction']), axis=1)
+    return solar_df
 
 
 def calc_clearness(new_glohor, exthor):
@@ -364,6 +364,7 @@ def build_epw_list():
     df.to_csv(os.path.join(epwdir, 'epwlist.csv'))
     return df
 
+
 def dni(ghi, dhi, zenith, clearsky_dni=None,
         clearsky_tolerance=1.1,
         zenith_threshold_for_zero_dni=88.0,
@@ -397,5 +398,3 @@ def dni(ghi, dhi, zenith, clearsky_dni=None,
             (dni > max_dni)] = max_dni
 
     return dni
-
-

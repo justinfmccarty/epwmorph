@@ -69,6 +69,10 @@ def morph_routine(weather_path, future_climatolgy, historical_climatology, longi
     print("Resetting dew point using drybulb temp and humidity")
     dewpt = mm.morph_dewpt(dbt, hurs)
 
+    # ### wet bulb
+    # print("Resetting wet bulb using drybulb temp and humidity")
+    # wetbulb = mm.morph_wetbulb(dbt, hurs)
+
     ### irradiance
     if "clt" in variables:
         print("irradiance detected in variables, morphing global horizontal")
