@@ -34,6 +34,7 @@ def morph_dbt(df, fut_tas, hist_tas, fut_tmax, hist_tmax, fut_tmin, hist_tmin):
     tas_change = dict(zip(months, tas_change))
     dbt_scale = dict(zip(months, (tmax_change - tmin_change) / (dbt_max_mean - dbt_min_mean)))
     dbt_mean = dict(zip(months, dbt_mean))
+    # shift stretch
     return round(df.apply(lambda x: x['drybulb_C'] + tas_change[x['month']] + dbt_scale[x['month']] * (
             x['drybulb_C'] - dbt_mean[x['month']]), axis=1).astype(float), 1).rename("drybulb_C")
 
@@ -43,6 +44,7 @@ def morph_relhum(df, fut_relhum, hist_relhum):
     months = list(range(1, 12 + 1, 1))
     delta = 1 + ((fut_relhum - hist_relhum) / hist_relhum)
     relhum_change = dict(zip(months, delta.values.tolist()))
+    # stretch
     return np.clip(df.apply(lambda x: x['relhum_percent'] * relhum_change[x['month']], axis=1).rename("relhum_percent"),
                    1, 100)
 
@@ -89,6 +91,27 @@ def morph_glohor(df, hist_glohor, fut_glohor):
     return df.apply(lambda x: x['glohorrad_Whm2'] * glohor_scale_list[x['month']], axis=1).rename(
         "glohorrad_Whm2").astype(int)
 
+def morph_rad(df, rad_var, hist_rsds, fut_rsds):
+    df['single'] = 1
+    months = list(range(1, 12 + 1, 1))
+
+    month_hours = dict(zip(months, df['single'].resample('M').sum().tolist()))  # hours
+    month_glohor = dict(zip(months, df[rad_var].resample('M').sum().tolist()))  # watt-hours per m2
+    month_rad_mean_list = []
+    for key in month_hours:
+        mean = (month_glohor[key]) / month_hours[key]
+        month_rad_mean_list.append(mean)
+    month_rad_mean_list = dict(zip(months, month_rad_mean_list))  # watt per m2
+    delta = fut_rsds - hist_rsds
+    rad_change = dict(zip(months, delta.values.tolist()))
+    rad_scale_list = []
+    for key in month_rad_mean_list:
+        rad_scale = 1 + (rad_change[key] / month_rad_mean_list[key])
+        rad_scale_list.append(rad_scale)
+    glohor_scale_list = dict(zip(months, rad_scale_list))
+
+    return df.apply(lambda x: x[rad_var] * glohor_scale_list[x['month']], axis=1).rename(
+        rad_var).astype(int)
 
 def calc_diffhor(f_df, longitude, latitude):
     # print(f_df['solar_alt'])
@@ -97,12 +120,11 @@ def calc_diffhor(f_df, longitude, latitude):
     f_df['local_solar_time'] = solar_df['local_solar_time'].values.tolist()
     f_df['zenith'] = solar_df['zenith'].values.tolist()
     f_df['solar_alt'] = f_df.apply(lambda x: util.calc_solar_alt(x['zenith']), axis=1)
-
-    return f_df.apply(lambda x: x['glohorrad_Whm2'] * (1 / (1 + math.exp(-5.38 + 6.63 * x['hourly_clearness'] +
+    diff_hor = f_df.apply(lambda x: x['glohorrad_Whm2'] * (1 / (1 + math.exp(-5.38 + 6.63 * x['hourly_clearness'] +
                                                                          0.006 * x['local_solar_time'] - 0.007 *
                                                                          x['solar_alt'] + 1.75 * x['daily_clearness'] +
-                                                                         1.31 * x['persisted_index']))), axis=1).astype(
-        int)
+                                                                         1.31 * x['persisted_index']))), axis=1).fillna(0).astype(int)
+    return diff_hor
 
 
 # def calc_dirnor(future_df):
@@ -111,12 +133,19 @@ def calc_diffhor(f_df, longitude, latitude):
 
 
 def calc_dirnor(future_df):
-    return future_df.apply(lambda x: util.dni(x['glohorrad_Whm2'],
-                                              x['difhorrad_Whm2'],
-                                              x['zenith'],
-                                              clearsky_tolerance=1.1,
-                                              zenith_threshold_for_zero_dni=88.0,
-                                              zenith_threshold_for_clearsky_limit=80.0), axis=1)
+    ghi = future_df['glohorrad_Whm2'].values
+    dni = future_df['difhorrad_Whm2'].values
+    zenith = future_df['zenith'].values
+    hours = pd.date_range('{}-01-01'.format(2020),
+                        '{}-01-01'.format(2020 + 1),
+                        freq='1H')[0:8760]
+    return util.dni(ghi, dni, zenith, hours)
+
+    # return future_df.apply(lambda x: util.dni(x['glohorrad_Whm2'],
+    #                                           x['difhorrad_Whm2'],
+    #                                           x['zenith'],
+    #                                           x['date_range']
+    #                                           ), axis=1)
 
 
 def calc_tsc(df, hist_clt, fut_clt):

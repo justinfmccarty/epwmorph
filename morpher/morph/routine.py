@@ -4,15 +4,23 @@ Sequence of the morphing routines returning a messy dataframe with the new serie
 """
 
 # imports
-
+import calendar
 import datetime as dt
 from morpher.config import parse
 from morpher.process import process_modeldata
 import os
+from pathlib import Path
 import pandas as pd
 from morpher.utilities import util
 from morpher.process import manipulate_epw
 import morpher.morph.procedures as mm
+from epw import epw
+import numpy as np
+from tzwhere import tzwhere
+import warnings
+warnings.filterwarnings("ignore", category=np.VisibleDeprecationWarning)
+
+
 __author__ = "Justin McCarty"
 __copyright__ = "Copyright 2020, justinmccarty"
 __credits__ = ["Justin McCarty"]
@@ -23,8 +31,9 @@ __email__ = "mccarty.justin.f@gmail.com"
 __status__ = "Production"
 
 
-def morph_routine(weather_path, future_climatolgy, historical_climatology, longitude, latitude, pathway):
-    tmy_df = manipulate_epw.epw_to_dataframe(weather_path, urban=parse('uwg'))
+def morph_routine(out_dir, future_climatolgy, historical_climatology, longitude, latitude, pathway):
+    modified_hist_epw = os.path.join(out_dir, 'historical', 'EPWs', 'baseline.epw')
+    tmy_df = manipulate_epw.epw_to_dataframe(modified_hist_epw, urban=parse('uwg'))
     variables = parse('variables')
 
     year = int(tmy_df['year'][0:1].values)
@@ -76,7 +85,7 @@ def morph_routine(weather_path, future_climatolgy, historical_climatology, longi
     ### irradiance
     if "clt" in variables:
         print("irradiance detected in variables, morphing global horizontal")
-        glohor = mm.morph_glohor(tmy_df, fut['rsds'], hist['rsds'])
+        glohor = mm.morph_rad(tmy_df, 'glohorrad_Whm2', fut['rsds'], hist['rsds'])
     else:
         print("irradiance NOT detected in variables, using original global horizontal")
         glohor = tmy_df['glohorrad_Whm2']
@@ -88,10 +97,17 @@ def morph_routine(weather_path, future_climatolgy, historical_climatology, longi
             "glohorrad_Whm2": glohor.values}
 
     fut_df = pd.DataFrame.from_dict(data)
+
+    # deal with the index and timnezone
     idx = pd.date_range('{}-01-01'.format(year),
                         '{}-01-01'.format(year + 1),
                         freq='1H')
+    if calendar.isleap(year):
+        idx = idx[~((idx.month == 2) & (idx.day == 29))]
     idx = idx[0:8760]
+    idx = util.timezone_operation(idx)
+
+    fut_df['date_range'] = idx
     fut_df['dayofyear'] = idx.dayofyear
     fut_df['hour'] = idx.hour
 
@@ -112,11 +128,16 @@ def morph_routine(weather_path, future_climatolgy, historical_climatology, longi
     ### diff hor irrad
     if "clt" in variables:
         print("irradiance detected in variables, morphing diffuse horizontal")
-        diffhor = mm.calc_diffhor(fut_df, longitude, latitude)
+        # diffhor = mm.calc_diffhor(fut_df, longitude, latitude)
+        diffhor = mm.morph_rad(tmy_df, 'difhorrad_Whm2', fut['rsds'], hist['rsds'])
         fut_df['difhorrad_Whm2'] = diffhor.values
         print("irradiance detected in variables, morphing direct normal")
-        dirnor = mm.calc_dirnor(fut_df)
-        fut_df['dirnorrad_Whm2'] = dirnor.values
+
+        # dirnor = pd.Series(mm.calc_dirnor(fut_df)).fillna(0).values
+        new_solar = util.calc_irrad_profile(fut_df)
+        fut_df['dirnorrad_Whm2'] = new_solar['dni'].fillna(0).values
+        fut_df['difhorrad_Whm2'] = new_solar['dhi'].fillna(0).values
+        fut_df['glohorrad_Whm2'] = new_solar['ghi'].fillna(0).values
     else:
         print("irradiance NOT detected in variables, using original diffuse horizontal")
         fut_df['difhorrad_Whm2'] = tmy_df['difhorrad_Whm2'].values
@@ -154,7 +175,30 @@ def morph_main():
 
     for pathway in parse('pathwaylist').split(','):
         if pathway=='historical':
-            pass
+            # write epw file for historical data that has modeled DNI for consistency
+            epw_outputpath = os.path.join(output_config, pathway, 'EPWs')
+            if os.path.exists(epw_outputpath):
+                pass
+            else:
+                # load epw object
+                print("Correcting historical DNI.")
+                existing_epw = parse('epw')
+                base_epw = epw()
+                base_epw.read(existing_epw)
+                epw_df = base_epw.dataframe
+
+                new_solar = util.calc_irrad_profile(epw_df)
+                epw_df['Direct Normal Radiation'] = new_solar['dni'].fillna(0).values
+                epw_df['Diffuse Horizontal Radiation'] = new_solar['dhi'].fillna(0).values
+                epw_df['Global Horizontal Radiation'] = new_solar['ghi'].fillna(0).values
+                filename = f'baseline.epw'
+                out_fname = os.path.join(epw_outputpath, filename)
+                if os.path.exists(epw_outputpath):
+                    pass
+                else:
+                    os.makedirs(epw_outputpath)
+                util.simple_out_epw(base_epw, out_fname)
+
         else:
             epw_outputpath = os.path.join(output_config, pathway, 'EPWs')
 
@@ -171,10 +215,13 @@ def morph_main():
                     end = int(list(i.split(','))[1])
                     year = int((start + end) / 2)
                     pathway_df, historical_df = process_modeldata.climatologies(str(ptile), start, end, pathway)
-                    df = morph_routine(weather_path, pathway_df, historical_df, longitude, latitude, pathway)
-                    filename = '{}_{}_{}-{}.epw'.format(pathway,ptile,start,end)
-                    out = os.path.join(epw_outputpath, filename)
-                    manipulate_epw.out_epw(ptile, df, out, pathway, year=year)
+
+
+                    df = morph_routine(output_config, pathway_df, historical_df, longitude, latitude, pathway)
+
+                    filename = '{}_{}_{}-{}.epw'.format(pathway, ptile, start, end)
+                    outpath = os.path.join(epw_outputpath, filename)
+                    manipulate_epw.out_epw(ptile, df, outpath, pathway, year=year)
 
     return print('Morphing completed.')
 

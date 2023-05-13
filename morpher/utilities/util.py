@@ -4,8 +4,10 @@ General utility functions, solar geometry calculations, and meteorological calcu
 """
 
 # imports
+import calendar
 from math import radians, cos, sin, asin, sqrt
 import metpy.calc as mpcalc
+import pvlib.irradiance
 from metpy.units import units
 import math
 import os
@@ -16,6 +18,11 @@ from morpher.config import parse_set
 from skyfield import api, almanac
 import numpy as np
 import pandas as pd
+import numpy as np
+from tzwhere import tzwhere
+import warnings
+
+warnings.filterwarnings("ignore", category=np.VisibleDeprecationWarning)
 
 from pvlib import solarposition
 from timezonefinder import TimezoneFinder
@@ -365,36 +372,98 @@ def build_epw_list():
     return df
 
 
-def dni(ghi, dhi, zenith, clearsky_dni=None,
-        clearsky_tolerance=1.1,
-        zenith_threshold_for_zero_dni=88.0,
-        zenith_threshold_for_clearsky_limit=80.0):
+def dni(ghi, dhi, zenith, hours):
     # https://pvlib-python.readthedocs.io/en/stable/_modules/pvlib/irradiance.html#dirint
-
-    # calculate DNI
-    dni = (ghi - dhi) / np.cos(np.radians(zenith))
-
-    # cutoff negative values
-    if dni < 0:
-        dni = 0
-    else:
-        dni = dni
-
-    # set non-zero DNI values for zenith angles >=
-    # zenith_threshold_for_zero_dni to NaN
-    if zenith >= zenith_threshold_for_zero_dni and dni != 0:
-        dni = 0
-    else:
-        dni = dni
-
-    # correct DNI values for zenith angles greater or equal to the
-    # zenith_threshold_for_clearsky_limit and smaller than the
-    # upper_cutoff_zenith that are greater than the clearsky DNI (times
-    # clearsky_tolerance)
-    if clearsky_dni is not None:
-        max_dni = clearsky_dni * clearsky_tolerance
-        dni[(zenith >= zenith_threshold_for_clearsky_limit) &
-            (zenith < zenith_threshold_for_zero_dni) &
-            (dni > max_dni)] = max_dni
+    # major change (12 May 2023) switched to PV lib DNI to avoid runaway values
+    print(hours.dtype)
+    dni = pvlib.irradiance.dirint(ghi, zenith, hours)
+    # # calculate DNI
+    # # dni = (ghi - dhi) / np.cos(np.radians(zenith))
+    #
+    # # cutoff negative values
+    # if dni < 0:
+    #     dni = 0
+    # else:
+    #     dni = dni
+    #
+    # # set non-zero DNI values for zenith angles >=
+    # # zenith_threshold_for_zero_dni to NaN
+    # if zenith >= zenith_threshold_for_zero_dni and dni != 0:
+    #     dni = 0
+    # else:
+    #     dni = dni
+    #
+    # # correct DNI values for zenith angles greater or equal to the
+    # # zenith_threshold_for_clearsky_limit and smaller than the
+    # # upper_cutoff_zenith that are greater than the clearsky DNI (times
+    # # clearsky_tolerance)
+    # if clearsky_dni is not None:
+    #     max_dni = clearsky_dni * clearsky_tolerance
+    #     dni[(zenith >= zenith_threshold_for_clearsky_limit) &
+    #         (zenith < zenith_threshold_for_zero_dni) &
+    #         (dni > max_dni)] = max_dni
 
     return dni
+
+
+def timezone_operation(idx):
+    tz = tzwhere.tzwhere(forceTZ=True)
+    timezone = tz.tzNameAt(float(parse('latitude')), float(parse('longitude')), forceTZ=True)
+    utc_number = int(float(parse('utcoffset')))
+    if utc_number < 0:
+        idx = idx.tz_localize("UTC").tz_convert(timezone) + pd.Timedelta(
+            hours=abs(utc_number))
+    else:
+        idx = idx.tz_localize("UTC").tz_convert(timezone) - pd.Timedelta(
+            hours=utc_number)
+
+    return idx
+
+def ts_8760(year=2022):
+    index = pd.date_range(start=f"01-01-{year} 00:00", end=f"12-31-{year} 23:00", freq="h")
+
+    if calendar.isleap(year):
+        index = index[~((index.month == 2) & (index.day == 29))]
+    return index
+
+def calc_irrad_profile(df):
+    df = df.copy()
+    idx = ts_8760(year=2020)
+    df.index = timezone_operation(idx)
+
+    try:
+        pressure = df['atmos_Pa']
+        temperature = df['drybulb_C']
+        og_ghi = df['glohorrad_Whm2']
+    except KeyError:
+        pressure = df['Atmospheric Station Pressure']
+        temperature = df['Dry Bulb Temperature']
+        og_ghi = df['Global Horizontal Radiation']
+
+    solarpos = pvlib.solarposition.get_solarposition(df.index.shift(freq="-30T"),
+                                                     latitude=float(parse('latitude')),
+                                                     longitude=float(parse('longitude')),
+                                                     altitude=float(parse('elevation(m)')),
+                                                     pressure=pressure,
+                                                     temperature=temperature
+                                                     )
+    solarpos.index = df.index  # reset index to end of the hour
+
+    out_disc = pvlib.irradiance.disc(og_ghi,
+                                     solarpos.zenith,
+                                     df.index,
+                                     pressure)
+    df_complete = pvlib.irradiance.complete_irradiance(solar_zenith=solarpos.apparent_zenith,
+                                                       ghi=og_ghi,
+                                                       dni=out_disc.dni,
+                                                       dhi=None  # df['difhorrad_Whm2']
+                                                       )
+    # out_disc = out_disc.rename(columns={'dni': 'dni_disc'})
+    # out_disc['dhi_disc'] = df_complete.dhi
+
+    return df_complete
+
+
+
+def simple_out_epw(epw_object,file_path):
+    epw_object.write(file_path)
